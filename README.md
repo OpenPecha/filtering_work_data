@@ -7,18 +7,17 @@
 
 <!-- Replace with 1-sentence description about what this tool is or does.-->
 
-<h3 align="center">Use this repo template for all new Python projects.</h3>
+<h3 align="center">Filter works with both umed and OCRed modern publication.</h3>
 
 ## Description
 
-Project description goes here.
+The task at hand involves filtering works with both UMED and Optical Character Recognition (OCR'ed) modern publications in a given dataset. This process will result in a list of works that fulfill this criteria, and it will include URLs for downloading the eText files.
 
 ## Project owner(s)
 
 <!-- Link to the repo owners' github profiles -->
 
-- [@10zinten](https://github.com/10zinten)
-- [@evanyerburgh](https://github.com/evanyerburgh)
+- [@gangagyatso4364](https://github.com/gangagyatso4364)
 
 ## Integrations
 
