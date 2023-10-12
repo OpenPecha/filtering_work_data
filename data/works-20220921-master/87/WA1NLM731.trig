@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM731 {
+    bda:LG04347ACDC4D3C1F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG49CCCEDDD1B69D03
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-06T14:57:43.057Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBB84647D3EFB9F93
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:42.335Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM731"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM731  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM731 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "87/WA1NLM731.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM731 ;
+        adm:logEntry        bda:LG04347ACDC4D3C1F4 , bda:LG49CCCEDDD1B69D03 , bda:LGBB84647D3EFB9F93 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR87C62862A2F2EED3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9737 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM731  a        :Work ;
+        skos:altLabel       "grub dbang dam pa'i man ngag me tog phreng mdzes las rten 'brel dang 'khyug dpyad sogs phyogs gcig tu bsdom pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dam pa'i man ngag me tog phreng mdzes las rten 'brel dang 'khyug dpyad sogs phyogs gcig tu bsdom pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of method of practices and examinations by Gyerap Dorjee and other ritual text."@en ;
+        :creator            bdr:CR87C62862A2F2EED3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM731 , bdr:W1NLM731 ;
+        :workIsAbout        bdr:T1234 .
+}

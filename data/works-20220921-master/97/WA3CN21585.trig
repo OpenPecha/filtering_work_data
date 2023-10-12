@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21585 {
+    bda:LG657B9A75847EC2D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-29T15:08:18.358Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6AD42D4761E0DF46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-10-29T15:08:44.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7EC68AAD426068FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8A35218596D03BFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGAA1163F6DCA9D4C9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-29T13:10:02.564Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB84B4088EB792BA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:WA3CN21585  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21585 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "97/WA3CN21585.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21585 ;
+        adm:logEntry        bda:LG657B9A75847EC2D9 , bda:LG6AD42D4761E0DF46 , bda:LG7EC68AAD426068FF , bda:LG8A35218596D03BFD , bda:LGAA1163F6DCA9D4C9 , bda:LGB84B4088EB792BA8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN21585  skos:altLabel  "珀东班禅吉美札巴传"@zh-hans .
+
+    bdr:WA3CN21585  a       :Work ;
+        skos:prefLabel      "bo dong paN chen 'jigs med grags pa'i rnam thar ngo mtshar gyi phreng ba/"@bo-x-ewts , "珀东班禅吉美札巴传"@zh-hans ;
+        :catalogInfo        "Biography of Bodong Panchen Jimmy Drakpa (1376-1451)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN21585 , bdr:W3CN21585 ;
+        :workIsAbout        bdr:P2627 .
+}

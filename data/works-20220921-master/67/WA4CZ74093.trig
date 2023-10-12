@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ74093 {
+    bda:LG3B2C141011C000D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-04T14:50:12.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG57B78E25745339B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T14:46:11.137Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to released from accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG83D262FAEB4C1DBF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-04T12:19:40.805Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA4CZ74093  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ74093 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/WA4CZ74093.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ74093 ;
+        adm:logEntry        bda:LG3B2C141011C000D4 , bda:LG57B78E25745339B7 , bda:LG83D262FAEB4C1DBF , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCA2B3B0EDF986154
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1709 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ74093  a       :Work ;
+        skos:altLabel       "'od gsal rdzogs pa chen po las/ 'pho ba'i 'khrid yig mi 'gyur gnad kyi gzer thebs/"@bo-x-ewts ;
+        skos:prefLabel      "'pho ba'i 'khrid yig mi 'gyur gnad kyi gzer thebs/"@bo-x-ewts ;
+        :catalogInfo        "Transference of consciousness ('pho ba) practice."@en ;
+        :creator            bdr:CRCA2B3B0EDF986154 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ74093 , bdr:W4CZ74093 ;
+        :workIsAbout        bdr:T15 .
+}

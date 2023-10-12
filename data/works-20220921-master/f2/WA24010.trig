@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24010 {
+    bda:LG47D6FC438C1423D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-22T13:01:52.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added writing date"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5D70E80A97E4390C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T12:19:21.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG82F9488297799A45
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-28T12:46:22.015Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4F3C2F64F7838F7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24010  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24010 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "f2/WA24010.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24010 ;
+        adm:logEntry        bda:LG47D6FC438C1423D7 , bda:LG5D70E80A97E4390C , bda:LG82F9488297799A45 , bda:LGC4F3C2F64F7838F7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR505A1A9640084E6B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P787 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVFA45D1E63C9EE9CE
+        a                   :CompletedEvent ;
+        :onYear             "1633"^^xsd:gYear .
+
+    bdr:MW24010  skos:altLabel  "dam pa'i chos mnon pa mdzod kyi spyi don ji sned ses bya'i gsal byed nag gi sgron me : a general exegesis of the meaning of vasubandhu's abhidharmakosa verses"@en-x-mixed .
+
+    bdr:WA24010  a          :Work ;
+        skos:prefLabel      "chos mngon pa mdzod kyi spyi don/"@bo-x-ewts , "dam pa'i chos mnon pa mdzod kyi spyi don ji sned ses bya'i gsal byed nag gi sgron me : a general exegesis of the meaning of vasubandhu's abhidharmakosa verses"@en-x-mixed ;
+        :catalogInfo        "Commentary on Vasubhandu's Abhidharmakosa. Written by the Sakya scholar Ngawang Chodrak (1572-1641)."@en ;
+        :creator            bdr:CR505A1A9640084E6B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVFA45D1E63C9EE9CE ;
+        :workGenre          bdr:T132 , bdr:T1763 ;
+        :workHasInstance    bdr:MW24010 , bdr:W24010 ;
+        :workIsAbout        bdr:WA19720 .
+}

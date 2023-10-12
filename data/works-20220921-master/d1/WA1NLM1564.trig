@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1564 {
+    bda:LG20B5DB5E116175CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-20T10:15:26.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDF0C3B44CB948269
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1564"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1564  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1564 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d1/WA1NLM1564.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1564 ;
+        adm:logEntry        bda:LG20B5DB5E116175CB , bda:LGDF0C3B44CB948269 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1564  a       :Work ;
+        skos:prefLabel      "gtsang ma'i klu 'bum dkar nag khra gsum sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dge ldan lugs bzang rgyas pa'i smon lam grub pa'i bden tshig 2 lan chags gtor ma gtong tshul/ 3 dpal 'khor lo bde mchog gi bstod pa rkang brgyad 'don thabs/ 4 gsol 'debs/ 5 bcom ldan 'das sman bla'i mdo chog gi snying po bsdus pa yid bzhin gyi nor bu/ 6 sman bla bsdus pa'i kha skong / 7 dpal rdo rje 'jigs byed/ 8 lan chags gtor ma gtong ba'i tshul/ 9 rdo rje sems dpa'i bsgom bzlas khrus byed/ 10 rgod ma'i 'bras mchod mdos/ 11 'byung bzhi gtor ma/ 12 rje btsun sgrol ma'i bzlog bsgyur gyi bcos thabs/ 13 rta mgrin gsang sgrub kyi sgo nas byabs khrus byed tshul bdud rtsi'i bum bzang / 14 khyung nag byabs khrus/ 15 thun mong rten 'brel sgrig byed pa'iHlha rnams mnyes byed bsangs mchod/ 16 khro ba sme brtsegs pa'i byabs khrus/ 17 gser skyems kyi gzhung / 18 'khor lo sdom pa'i tshogs 'khor gyi cho ga bde chen rol pa/ 19 ltas ngan brgyad bcu'i bzlog 20 rgyal yum phongs sel sgrol ma'i bstod sgrub maN+Dal bzhi pa'i cho ga"@en , "Vessel burial ritual of Naga; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM1564 , bdr:W1NLM1564 ;
+        :workIsAbout        bdr:T35 , bdr:T884 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN9074 {
+    bda:LG7F8C5A703B078D49
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-02T09:52:28.289Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC6348910BE31391B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-02T10:34:42.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN9074  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN9074 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c3/WA3CN9074.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN9074 ;
+        adm:logEntry        bda:LG7F8C5A703B078D49 , bda:LGC6348910BE31391B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC155B298684441BE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P889 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN9074  a        :Work ;
+        skos:prefLabel      "phyag rgya chen po ma rig mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Presentations of Mahamudra by"@en ;
+        :creator            bdr:CRC155B298684441BE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN9074 , bdr:W3CN9074 ;
+        :workIsAbout        bdr:T199 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS36294 {
+    bda:LG1BA47CFD9A3200F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-23T09:28:05.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA57BAB53E04F0A36
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-23T09:26:48.435Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS36294  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS36294 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bc/WA8LS36294.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS36294 ;
+        adm:logEntry        bda:LG1BA47CFD9A3200F7 , bda:LGA57BAB53E04F0A36 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBDE9659FC8F67B9F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS36294  a       :Work ;
+        skos:altLabel       "dbu ma la 'jug pa'i rnam bshad dpal ldan dus gsum mkhyen pa' zhal lung dwags brgyud grub pa'i shing rta/ stod cha dang smad cha/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i TI ka dwags brgyud grub shing / stod cha dang smad cha/"@bo-x-ewts ;
+        :catalogInfo        "An extended commentary on the Madhyamakavatara by 8th Karmapa Mikyo Dorjee."@en ;
+        :creator            bdr:CRBDE9659FC8F67B9F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS36294 , bdr:W8LS36294 ;
+        :workIsAbout        bdr:WA19458 .
+}

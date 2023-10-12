@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22943 {
+    bda:LG0E448772A681033C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-25T10:18:36.442Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG83F629040DA355E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG9D38A1D10A95D73A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-25T10:19:31.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG22943  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22943 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ee/WA1KG22943.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22943 ;
+        adm:logEntry        bda:LG0E448772A681033C , bda:LG83F629040DA355E4 , bda:LG9D38A1D10A95D73A , bda:LGIM4394141E , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA821A0EC0E9E324A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG22943  skos:altLabel  "宗教源流史"@zh-hans .
+
+    bdr:WA1KG22943  a       :Work ;
+        skos:altLabel       "zong jiao yuan liu shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "thu'u bkwan grub mtha'"@bo-x-ewts , "宗教源流史"@zh-hans ;
+        :catalogInfo        "Extensive survey of philosophical tenets from India, Tibet and China by Tukwan Lobzang Chokyi Nyima (1737-1802)."@en ;
+        :creator            bdr:CRA821A0EC0E9E324A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T385 ;
+        :workHasInstance    bdr:MW1KG22943 , bdr:W1KG22943 .
+}

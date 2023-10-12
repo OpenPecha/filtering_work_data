@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM39 {
+    bda:LG744204F1C7D53BC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-17T10:10:05.816Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG836D90C73DB06256
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGAF9531A1A0414C1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-06T18:14:17.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added bib note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBD3ABBDBB9F95F9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:37.457Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC69014080A043828
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:14.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM39"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM39  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM39 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "02/WA1NLM39.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM39 ;
+        adm:logEntry        bda:LG744204F1C7D53BC3 , bda:LG836D90C73DB06256 , bda:LGAF9531A1A0414C1E , bda:LGBD3ABBDBB9F95F9D , bda:LGC69014080A043828 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREAFE490AAF45863E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P261 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM39  a         :Work ;
+        skos:altLabel       "gsung thor bu phyogs gcig tu sdebs pa/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ blo bzang tshul khrims 'jigs med bstan pa'i rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Miscellany writings of Khalkha Jetsun Dampa."@en ;
+        :creator            bdr:CREAFE490AAF45863E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW1NLM39 , bdr:W1NLM39 ;
+        :workIsAbout        bdr:T819 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG91169 {
+    bda:LG300E5259C770B9DE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-02T12:58:50.957Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6DB1FC9DC9F0F097
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-02T13:30:39.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG91169  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG91169 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7c/WA1KG91169.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG91169 ;
+        adm:logEntry        bda:LG300E5259C770B9DE , bda:LG6DB1FC9DC9F0F097 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBC674B9353352D3F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG91993 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG91169  a       :Work ;
+        skos:prefLabel      "sog po'i mkhas pas bod yig tu bris pa dang bsgyur ba'i brtsams chos khag cig gi dkar chag"@bo-x-ewts , "mongolchuudyn tȯvd khėlėėr tuurvisan mongol khėlėnd orchuulsan nom zu̇ĭn bu̇rtgėl = the bibliographical guide of the mongolian writers in the tibetan language and the mongolian translations"@en ;
+        :catalogInfo        "The catalogue of the works written by Mongolian Buddhist scholars in Tibetan and about Mongolian translations of mainly Tibetan books."@en ;
+        :creator            bdr:CRBC674B9353352D3F ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangMn ;
+        :workGenre          bdr:T13 , bdr:T2196 ;
+        :workHasInstance    bdr:MW1KG91169 , bdr:W1KG91169 .
+}

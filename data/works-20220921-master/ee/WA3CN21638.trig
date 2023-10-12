@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21638 {
+    bda:LG3E4B4BA1165F82BD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-29T16:47:54.771Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4DC47FC38B20239B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T16:47:08.565Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG62566A0891724E8F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-07T15:52:57.369Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21638  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21638 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ee/WA3CN21638.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21638 ;
+        adm:logEntry        bda:LG3E4B4BA1165F82BD , bda:LG4DC47FC38B20239B , bda:LG62566A0891724E8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR929923AEF5446FF1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5636 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21638  skos:altLabel  "降央多吉文集"@zh-hans .
+
+    bdr:WA3CN21638  a       :Work ;
+        skos:altLabel       "mkhan po 'jam dbyangs rdo rje'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ 'jam dbyangs rdo rje/"@bo-x-ewts , "降央多吉文集"@zh-hans ;
+        :catalogInfo        "Collected works of Nyingma master Nyoshul Khenpo Jamyang Dorjee."@en ;
+        :creator            bdr:CR929923AEF5446FF1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN21638 , bdr:W3CN21638 ;
+        :workIsAbout        bdr:T1082 .
+}

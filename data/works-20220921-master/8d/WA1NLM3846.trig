@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3846 {
+    bda:LGA39B49D7BFC0109E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-30T09:15:04.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3846"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3846  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3846 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8d/WA1NLM3846.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3846 ;
+        adm:logEntry        bda:LGA39B49D7BFC0109E , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF89F37F0D6BA8D3D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P882 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3846  a       :Work ;
+        skos:prefLabel      "yang zab dkon mchog spyi 'dus kyi 'phrin las rang gzhung kha skong dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 pad+ma 'byung gnas kyi le'u bdun ma/ 2 dbu phar gyi dka' gnad 'ga' zhig las brtsams pa'i dri ba dng / dris lan rags bsdus/ 3 khyung khra bo'i byabs bsrungs rjes gnang bya tshul/ 4 sa bdag gdan bcos/ 5 seng gdong ma/ gar lam ra lan gsum/ 6 dmigs brtse ma'i byabs khrus/ 7 rang yid rgyud bcos slob tshig blo sbyong gsal byed blo ldan spro spel rin chen bzhi rgyus thag pa bu ram ro bcud/ 8 u rgyan rin po che mdzad pa tshe smon gur gyi mdos/ 9 bcom ldan 'das rdo rje rnam par 'joms pa'i sgo nas dkar phyogs skyong pa'i srung ma lha klu gzhi bdag rnams la yul khrus bya tshul/"@en , "A supplementary to the Konchok Chidus by Jatson Nyingpo."@en ;
+        :creator            bdr:CRF89F37F0D6BA8D3D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 ;
+        :workHasInstance    bdr:MW1NLM3846 , bdr:W1NLM3846 ;
+        :workIsAbout        bdr:T1686 .
+}

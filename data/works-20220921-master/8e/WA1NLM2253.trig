@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2253 {
+    bda:LG35BBA8E26F04FB20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-10T09:35:47.63Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4D8B16D7ADF154F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2253"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2253  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2253 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8e/WA1NLM2253.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2253 ;
+        adm:logEntry        bda:LG35BBA8E26F04FB20 , bda:LG4D8B16D7ADF154F9 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR54BF525284A60997
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2AG1 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2253  a       :Work ;
+        skos:prefLabel      "dpal ldan lha mo dmag zor ma'i sgo nas rno mthong sgrub tshul dang de'i 'bras bshad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bcom ldan 'das rgyal pa mi 'khrugs pa la brten pa'i phyag mchod bya tshul sgrib gnyis kyi ba mo 'joms pa'i nyi ma'i 'od zer/ 2 klu bsangs dgos pa kun 'grub/ 3 dpal ldan don lnga'i gser skyems/ 4 chos skyong dregs pa lcan sring gis mdz' rdo rje'i rgyug mdo/ 5 klu bsangs/ 6 g.yang dkar lug gi brang mchod/ 7 rta mchog rol pa'i rnal 'byor bas/ /mchog dman mgron la gtor ma ngas/ gser skyems bsangs sogs gtong ba'i skabs/ 'dod gsol kha bsgyur byed tshul/ 8 ston pa bcom ldan 'das thub pa chen po nyal chog 9 chos skyong lcam sring gi mchod gtor mdor bsdus/ 10 chos skyong dregs pa lcam sring gis kha mchu dgra dang 'thabs rtsod byed pa'i nag po sems mi'i lus ngag yid gsum yan lag 'chings pa/ 11 spyang khu bsangs/ 12 rab gnas rta thug dkar po/ 13 lha chen A tha chen po'i gsol mchod/"@en , "A practice of wrathful Shridevi' dice prognostication and its result; other text also included."@en ;
+        :creator            bdr:CR54BF525284A60997 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2253 , bdr:W1NLM2253 ;
+        :workIsAbout        bdr:T1248 , bdr:T405 , bdr:T926 .
+}

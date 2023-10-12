@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20137 {
+    bda:LG32A90A6D02BF9A44
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-23T23:11:14.787Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaning up subjects"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG80E07DC683DED813
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-01T15:54:17.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG87676FB07E5F6BDC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF881F2CC0D827CE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T15:58:57.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added t1134"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20137  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20137 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9e/WA20137.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20137 ;
+        adm:logEntry        bda:LG32A90A6D02BF9A44 , bda:LG80E07DC683DED813 , bda:LG87676FB07E5F6BDC , bda:LGF881F2CC0D827CE0 , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2184637458EADA8D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6474 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA20137  a          :Work ;
+        skos:altLabel       "kirti dgon gyi chags rim/"@bo-x-ewts ;
+        skos:prefLabel      "rnga yul kirti dgon gyi chags rim/"@bo-x-ewts ;
+        :creator            bdr:CR2184637458EADA8D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW20137 , bdr:W20137 ;
+        :workIsAbout        bdr:G3190 .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20025 {
+    bda:LG0E6DD8C9D01E19BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-02T16:48:56.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA5B634F9B981009D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGE18464ED1E5CC920
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20025  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20025 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c6/WA20025.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20025 ;
+        adm:logEntry        bda:LG0E6DD8C9D01E19BA , bda:LGA5B634F9B981009D , bda:LGE18464ED1E5CC920 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW20025  skos:altLabel  "zang zhuan fo jiao ge jiao pai zong shu ji zhu shi"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA20025  a          :Work ;
+        skos:altLabel       "tsang chuan fo chiao ko chiao p`ai tsung shu chi chu shih"@zh-latn-wadegile ;
+        skos:prefLabel      "sgrub brgyud shing rta chen mo brgyad kyi bsdus 'grel gangs can rig brgya'i nyin byed mdun bsu'i skya rengs dang po/"@bo-x-ewts , "zang zhuan fo jiao ge jiao pai zong shu ji zhu shi"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Interpretation of Buddhist doctrines according to different schools of Tibet."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20025 , bdr:W20025 ;
+        :workIsAbout        bdr:T235 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM346 {
+    bda:LG56FCD079E1095721
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG655F2DE29555CD15
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-12T16:23:33.481Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBA167EC49D2638BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T12:32:13.248Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM346"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM346  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM346 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "23/WA1NLM346.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM346 ;
+        adm:logEntry        bda:LG56FCD079E1095721 , bda:LG655F2DE29555CD15 , bda:LGBA167EC49D2638BB , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5DCE8ECE0E54420F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM346  a        :Work ;
+        skos:prefLabel      "bslab pa yongs su sbyong ba'i cho ga sdom brtson dgyes byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "Rituals to bestow upon Pratimoksha vows by Losang Norbu Sherab and other related texts."@en ;
+        :creator            bdr:CR5DCE8ECE0E54420F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM346 , bdr:W1NLM346 ;
+        :workIsAbout        bdr:T2GS983 .
+}

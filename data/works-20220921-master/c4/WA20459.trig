@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20459 {
+    bda:LG1C9B2737948BA3E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG5EA48E5E9C1E28CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-02-02T17:00:23.932Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG808F625877BEF9E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-15T11:59:41.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG977CD23E9F042F42
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20459  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20459 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c4/WA20459.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20459 ;
+        adm:logEntry        bda:LG1C9B2737948BA3E2 , bda:LG5EA48E5E9C1E28CC , bda:LG808F625877BEF9E1 , bda:LG977CD23E9F042F42 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ1859 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR294778912593E22A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5298 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CRCB225654DFBC3D4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA20459  a          :Work ;
+        skos:altLabel       "legs bshad rin po che'i gter rtsa 'grel/"@bo-x-ewts ;
+        skos:prefLabel      "legs par bshad pa rin po che'i gter dang 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Didactic work by Sakya Pandita Kunga Gyaltsen (1182-1251) with commentary by the 13th century author Rinchen Pel."@en ;
+        :creator            bdr:CR294778912593E22A , bdr:CRCB225654DFBC3D4D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T245 ;
+        :workHasInstance    bdr:MW1KG1592 , bdr:MW1NLM1144 , bdr:MW8LS75935 , bdr:W1KG1592 , bdr:W1NLM1144 , bdr:W8LS75935 ;
+        :workIsAbout        bdr:WA11399 .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3702 {
+    bda:LG36DCE13576AD2F8A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-10-19T15:55:26.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA3C21A048C9C1BB7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-10-19T15:50:17.421Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB60319FAA68D2536
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-21T12:03:20.724Z"^^xsd:dateTime ;
+        adm:logMessage      "added T2077"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG3702  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3702 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c6/WA1KG3702.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3702 ;
+        adm:logEntry        bda:LG36DCE13576AD2F8A , bda:LGA3C21A048C9C1BB7 , bda:LGB60319FAA68D2536 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREE1EB4D7E747701E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3702  a        :Work ;
+        skos:altLabel       "stong thun seng+ge'i nga ro/"@bo-x-ewts ;
+        skos:prefLabel      "bde gshegs snying po'i stong thun chen mo seng+ge'i nga ro/"@bo-x-ewts ;
+        :catalogInfo        "Writings by the Nyingma master Ju Mipham Namgyal Gyatso (1846-1912) on the essential meaning of buddhanature."@en ;
+        :creator            bdr:CREE1EB4D7E747701E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG3702 , bdr:MW1PD76231_B29D0F , bdr:MW23468_584602 , bdr:MW25983_6857BD , bdr:MW2DB16631_87ADD4 , bdr:MW5062_D244DC , bdr:W1KG3702 ;
+        :workIsAbout        bdr:T1CZ50 , bdr:T2077 .
+}

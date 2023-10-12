@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS23415 {
+    bda:LG019D680D1FDE1450
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-07T15:11:32.844Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG64A0EB15EFC2165D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-07T15:12:29.854Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG84F6708795EAEFE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T15:18:16.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added edition"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS23415  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS23415 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/WA8LS23415.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS23415 ;
+        adm:logEntry        bda:LG019D680D1FDE1450 , bda:LG64A0EB15EFC2165D , bda:LG84F6708795EAEFE1 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS23415  a       :Work ;
+        skos:prefLabel      "rnam rig pa'i lta grub dang nang pa'i tshad ma'i rnam gzhag"@bo-x-ewts ;
+        :catalogInfo        "An analysis of Buddhist Sidhanta and logic; edited by Doobum Tulku and Thupten Chokdrup."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T385 ;
+        :workHasInstance    bdr:MW8LS23415 , bdr:W8LS23415 ;
+        :workIsAbout        bdr:T370 .
+}

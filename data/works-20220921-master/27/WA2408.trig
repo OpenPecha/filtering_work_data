@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2408 {
+    bda:LG07293122FB0E042E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-03-14T15:32:58.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG075F2627A228B238
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T19:52:39.038Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T958 to T824"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG38BB2D762E9F00DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-14T15:31:34.6Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG400DBD94FC8444DC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG685C30B5D32DF9F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-08T11:49:34.656Z"^^xsd:dateTime ;
+        adm:logMessage      "changed accessioned to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9A041617720A9530
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-03T11:38:06.594Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2408  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2408 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "27/WA2408.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2408 ;
+        adm:logEntry        bda:LG07293122FB0E042E , bda:LG075F2627A228B238 , bda:LG38BB2D762E9F00DC , bda:LG400DBD94FC8444DC , bda:LG685C30B5D32DF9F6 , bda:LG9A041617720A9530 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDDC2D6B64C256E59
+        a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2408  a           :Work ;
+        skos:altLabel       "bsnyen yig don gsal snying po/"@bo-x-ewts , "bya rgyud rigs gsum gyi bsnyen yig don gsal snying po/"@bo-x-ewts ;
+        skos:prefLabel      "rigs gsum mgon po'i bsnyen yig"@bo-x-ewts ;
+        :catalogInfo        "Manual for recitation and the performance of sevavidhi for deities of Trikula according to the Kriyatantra class."@en ;
+        :creator            bdr:CRDDC2D6B64C256E59 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ28 ;
+        :workHasInstance    bdr:MW2408 , bdr:W2408 ;
+        :workIsAbout        bdr:T824 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73604 {
+    bda:LG5C880C9722D542A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-23T09:50:12.26Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA7BDA34CC8CB0155
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-23T09:50:52.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73604  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73604 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "28/WA8LS73604.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73604 ;
+        adm:logEntry        bda:LG5C880C9722D542A4 , bda:LGA7BDA34CC8CB0155 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9F99955FFF88E743
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5957 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73604  a       :Work ;
+        skos:prefLabel      "lta ba bka' rtags kyi phyag rgya bzhi'i gnad don gsal ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the four fundamental seal of Buddha's teaching by Gen Lamrimpa Ngawang Phuntshok."@en ;
+        :creator            bdr:CR9F99955FFF88E743 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS73604 , bdr:W8LS73604 ;
+        :workIsAbout        bdr:T1KG5756 .
+}

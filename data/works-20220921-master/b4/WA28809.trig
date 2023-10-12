@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28809 {
+    bda:LGB924E4B1F745B80A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-11T14:57:34.589Z"^^xsd:dateTime ;
+        adm:logMessage      "released & add W28809"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD0926115EA7ED082
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-09T16:25:00.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGF4EB31B627E17BBB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA28809  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28809 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b4/WA28809.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28809 ;
+        adm:logEntry        bda:LGB924E4B1F745B80A , bda:LGD0926115EA7ED082 , bda:LGF4EB31B627E17BBB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA24052 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF3CFB2042907835D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4796 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA28809  a          :Work ;
+        skos:altLabel       "nges pa don gyi mkhas grub chen po dpal ldan 'bras spungs bkra shis sgo mang gi gdan rabs so gnyis pa rje btsun ngag dbang nyi ma'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_ngag dbang nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Gomang Denrab 72 Ngawang Nyima (1907-1990)."@en ;
+        :creator            bdr:CRF3CFB2042907835D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW28809 ;
+        :workIsAbout        bdr:T819 .
+}

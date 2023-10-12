@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3530 {
+    bda:LG4EB101A2B33EB93B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-19T12:45:42.502Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3530"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3530  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3530 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/WA1NLM3530.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3530 ;
+        adm:logEntry        bda:LG4EB101A2B33EB93B , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA24CF3847A3FE6FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN2 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3530  a       :Work ;
+        skos:prefLabel      "gsang spyod snyan rgyud las chu mig brgya rtsa sgrub pa'i zhal bkod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dge slong gi phyir bcos dang sdom tshig dang bcas pa'i bslab bya mdor bsdus/ 2 bla ma'i rnal 'byor dga' ldan lha rgya'i ma'i dngos grub kun 'byung / 3 'dul ba mdo rtsa ba'i bshad lung gi brgyud 'debs/ 4 'phags pa shes rab kyi pha rol tu phyin pa yon tan rin po che sdud pa/ 5 rta mgrin gsang sgrub kyi chos skor gyi yan lag bsangs kyi cho ga bkra shis dbyangs snyan/ 6 pad+ma saM+b+ha wa'i phyag na rdo rje zhus pa la reg dugs bsang / 7 mi lam gsol thabs/ 8 ye shes mkha' 'gro seng ge'i gdong pa can gyi sgo nas bzlog sgyur byed tshul/ 9 dpal gsang ba'i bdag po phyag na rdo rje'i sgrub thabs srid zhig gdung sel/ 10 'phags pa rgyan mtshan gyi rtse mo'i dpung rgyan/ 11 'jig rten la gnod par byed pa'i the'u rang gi bcos thabs/ 12 phyag drug ye shes mgon po'i gser skyems/ 13 rje btsun yum la brten pa'i 'da' kha ma'i nyams len khrid zin bris/ 14 gsang spyod snyan rgyud las rdo rje phag mo'i sgrub thabs/ 15 thugs yum chen mo'i bsnyen ji ltar bya ba'i tshul/ 16 brtan bzhugs kyi 'don cha go rim/ 17 gsang spyod snyan brgyud kyi bsnyen pa'i lag len kha yar bklags chog tu bkod pa/"@en , "A detail process for the practice of hundred spring spots according to the secret Nyengyud tradition; other text also included."@en ;
+        :creator            bdr:CRA24CF3847A3FE6FD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3530 , bdr:W1NLM3530 ;
+        :workIsAbout        bdr:T1248 , bdr:T194 , bdr:T2MS13267 .
+}

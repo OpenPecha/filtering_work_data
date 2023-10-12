@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1119 {
+    bda:LG2920DA2254EB7201
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-16T15:32:32.335Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4B86BE5778A6E4A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1119"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1119  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1119 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "78/WA1NLM1119.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1119 ;
+        adm:logEntry        bda:LG2920DA2254EB7201 , bda:LG4B86BE5778A6E4A7 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR01860775B928EF9D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1119  a       :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu gsum pa man ngag gi rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "man ngag gi rgyud/"@bo-x-ewts ;
+        :catalogInfo        "The third chapter of the four medical tantra by Yuthok Yonten Gonpo."@en ;
+        :creator            bdr:CR01860775B928EF9D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1119 , bdr:W1NLM1119 ;
+        :workIsAbout        bdr:T241 , bdr:T3JT13430 .
+}

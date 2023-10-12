@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM200 {
+    bda:LG19D03C7884A48A26
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-20T16:44:18.944Z"^^xsd:dateTime ;
+        adm:logMessage      "Full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG404B106AFA1C6C0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGC4922B20FA6129F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T19:05:11.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM200"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM200  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM200 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "51/WA1NLM200.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM200 ;
+        adm:logEntry        bda:LG19D03C7884A48A26 , bda:LG404B106AFA1C6C0B , bda:LGC4922B20FA6129F5 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM200  a        :Work ;
+        skos:prefLabel      "dpal ldan lha mo'i cho ga dang 'brel bar ma mo 'khrugs skongs gtong tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM200 , bdr:W1NLM200 .
+}

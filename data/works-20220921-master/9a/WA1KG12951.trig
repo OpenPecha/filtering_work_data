@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12951 {
+    bda:LG064938D087A1F4BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG2DF4AF391255BBA4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-07T11:25:32.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG528294C4F3A752D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-02T15:52:43.805Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG12951  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12951 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9a/WA1KG12951.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12951 ;
+        adm:logEntry        bda:LG064938D087A1F4BB , bda:LG2DF4AF391255BBA4 , bda:LG528294C4F3A752D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA12837 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR18080BACC3FA493A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1591 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG12951  a       :Work ;
+        skos:altLabel       "bcom ldan 'das thams cad rig pa'i rnam bshad/"@bo-x-ewts ;
+        skos:prefLabel      "kun rig rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Survey of the practices associated with the Sarvadurgatiparisodhana Tantra; a work by one of the most important students of Tsongkapa"@en ;
+        :creator            bdr:CR18080BACC3FA493A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workIsAbout        bdr:T976 .
+}

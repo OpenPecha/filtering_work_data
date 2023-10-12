@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25256 {
+    bda:LG11DDA3BE45FC481E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-08T12:14:22.794Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5F75ED84CC7224C7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEE84CA6D2BCB2550
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-08T12:13:00.529Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA25256  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25256 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bf/WA25256.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25256 ;
+        adm:logEntry        bda:LG11DDA3BE45FC481E , bda:LG5F75ED84CC7224C7 , bda:LGEE84CA6D2BCB2550 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3D7336B3B6AE49BE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6621 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CREB63B926D1865EA9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6289 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA25256  a          :Work ;
+        skos:altLabel       "zang wen shu yu xue li lun"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "brda chad rig pa'i gzhung lugs mdor bsdus/"@bo-x-ewts , "Brda chad rig paʼi gźuṅ lugs mdor bsdus /Khri Bsam-gtan, Dge-ʼdun."@en-x-mixed , "藏文术语学理论"@zh-hans ;
+        :catalogInfo        "Study on terminology."@en ;
+        :creator            bdr:CR3D7336B3B6AE49BE , bdr:CREB63B926D1865EA9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
+        :workHasInstance    bdr:MW25256 , bdr:W25256 ;
+        :workIsAbout        bdr:T1985 .
+}

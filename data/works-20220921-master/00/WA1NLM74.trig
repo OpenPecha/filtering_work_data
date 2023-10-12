@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM74 {
+    bda:LG487F35C23C35E435
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG6ECF493652667E88
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:49.327Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG92A02A6CA9224203
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:01.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM74"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM74  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM74 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "00/WA1NLM74.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM74 ;
+        adm:logEntry        bda:LG487F35C23C35E435 , bda:LG6ECF493652667E88 , bda:LG92A02A6CA9224203 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM74  a         :Work ;
+        skos:prefLabel      "mi kha dgra mchu gcod tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM74 , bdr:W1NLM74 .
+}

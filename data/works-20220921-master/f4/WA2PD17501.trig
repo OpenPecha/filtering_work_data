@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17501 {
+    bda:LG35B7A34C28AADB7E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-14T07:50:16.73Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGA72FF7FF853B8B6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE58EEFCCF729365D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-12T07:26:00.887Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA2PD17501  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17501 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/WA2PD17501.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17501 ;
+        adm:logEntry        bda:LG35B7A34C28AADB7E , bda:LGA72FF7FF853B8B6B , bda:LGE58EEFCCF729365D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA2DB16630 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRDBA6CCB8FD41FED8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7746 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA2PD17501  a       :Work ;
+        skos:prefLabel      "chos rgyal gling pa'i gter chos/"@bo-x-ewts ;
+        :creator            bdr:CRDBA6CCB8FD41FED8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workIsAbout        bdr:T1082 .
+}

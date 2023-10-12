@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68469 {
+    bda:LG453D0FD42F231AB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-04T09:14:21.782Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4F5EFEB2436BA3BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T14:06:02.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD8827667D5117263
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-04T09:14:56.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFFF5695B8FEEE41C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS68469  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68469 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA8LS68469.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68469 ;
+        adm:logEntry        bda:LG453D0FD42F231AB9 , bda:LG4F5EFEB2436BA3BE , bda:LGD8827667D5117263 , bda:LGFFF5695B8FEEE41C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS68469  a       :Work ;
+        skos:prefLabel      "bod kyi spyi skad rig dpyad tshogs 'du'i dpyad rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of the Tibetan Language confernece's research paper."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T003JR155 , bdr:T1081 ;
+        :workHasInstance    bdr:MW8LS68469 , bdr:W8LS68469 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN26468 {
+    bda:LG46561EA50CAF7D55
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-01T10:41:03.265Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG89680F65B8B76C03
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T17:04:59.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAEC0BF4A3DC35141
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T17:09:26.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF3992823C23462AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGF5CAB61A69EDFE36
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-01T10:43:39.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN26468  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN26468 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "36/WA3CN26468.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN26468 ;
+        adm:logEntry        bda:LG46561EA50CAF7D55 , bda:LG89680F65B8B76C03 , bda:LGAEC0BF4A3DC35141 , bda:LGF3992823C23462AF , bda:LGF5CAB61A69EDFE36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN26468  skos:altLabel  "西藏阿里地区珍贵古籍图录"@zh-hans .
+
+    bdr:WA3CN26468  a       :Work ;
+        skos:prefLabel      "bod ljongs mnga' ris sa khul gyi rtsa che'i gna' dpe'i dpar mdzod/"@bo-x-ewts , "西藏阿里地区珍贵古籍图录"@zh-hans ;
+        :catalogInfo        "Notes of content about old manuscripts found from Aris reagion."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T298 ;
+        :workHasInstance    bdr:MW3CN26468 , bdr:W3CN26468 ;
+        :workIsAbout        bdr:T1940 .
+}

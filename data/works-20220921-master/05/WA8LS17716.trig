@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17716 {
+    bda:LG3108E4EB1C7586F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T10:32:58.159Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG81F0559D9ECA0BEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T10:31:48.105Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE817772BDCBACC50
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17716  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17716 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "05/WA8LS17716.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17716 ;
+        adm:logEntry        bda:LG3108E4EB1C7586F6 , bda:LG81F0559D9ECA0BEC , bda:LGE817772BDCBACC50 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17716  a       :Work ;
+        skos:altLabel       "'jam dpal gshin rje gshed ki kaM rlung sgrub dmar chung gi brgyud 'debs/"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje gshed ki kaM rlung sgrub brgyud 'debs/"@bo-x-ewts ;
+        :catalogInfo        "Prayer to teachers of the transmisiion lineage of Yamantaka by unknown author."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T11 ;
+        :workHasInstance    bdr:MW8LS17716 , bdr:W8LS17716 ;
+        :workIsAbout        bdr:T1734 .
+}

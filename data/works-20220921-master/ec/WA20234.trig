@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20234 {
+    bda:LG62A87AD64CD3BAE8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG79D6CAC5845B2995
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-01T15:19:39.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD14623B076E1D05C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-27T16:04:28.734Z"^^xsd:dateTime ;
+        adm:logMessage      "add sublect"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE873D0566836CD76
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-25T07:12:36.203Z"^^xsd:dateTime ;
+        adm:logMessage      "archive info; web; annotation added"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF0BEBAA54D50F30D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T18:53:01.42Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF3273B4F95D83588
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-02T13:03:17.639Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20234  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20234 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ec/WA20234.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20234 ;
+        adm:logEntry        bda:LG62A87AD64CD3BAE8 , bda:LG79D6CAC5845B2995 , bda:LGD14623B076E1D05C , bda:LGE873D0566836CD76 , bda:LGF0BEBAA54D50F30D , bda:LGF3273B4F95D83588 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA20234  a          :Work ;
+        skos:prefLabel      "chu shur rdzong /"@bo-x-ewts ;
+        :catalogInfo        "Gazetteer of Chushu Dzong, Lhasa Prefecture, TAR."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW20234 , bdr:W20234 ;
+        :workIsAbout        bdr:G2128 .
+}

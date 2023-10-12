@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD362 {
+    bda:LG003678D1A7579359
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T02:52:58.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG61CEF3EF341E2B94
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7538027854D0B9EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T12:00:55.231Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDE395DF3673EB90F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-22T22:06:17.301Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFD5C7A1AE0878290
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-04T17:41:52.88Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3PD362  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD362 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5c/WA3PD362.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD362 ;
+        adm:logEntry        bda:LG003678D1A7579359 , bda:LG61CEF3EF341E2B94 , bda:LG7538027854D0B9EE , bda:LGDE395DF3673EB90F , bda:LGFD5C7A1AE0878290 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3PD362  skos:altLabel  "中国历史文化名城一拉萨"@zh-hans .
+
+    bdr:WA3PD362  a         :Work ;
+        skos:altLabel       "zhong guo li shi wen hua ming cheng -la sa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "krung go'i lo rgyus rig gnas grags can grong khyer/_lha sa/"@bo-x-ewts , "中国历史文化名城一拉萨"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3PD362 , bdr:W3PD362 ;
+        :workIsAbout        bdr:G1819 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17165 {
+    bda:LG00BCF4D9C8733707
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-26T10:45:26.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7BAB7E6766BFCFE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-26T10:43:17.093Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG823E90457E123FBB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCED7D9AB1A9CA474
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-26T10:44:09.829Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17165  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17165 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3d/WA8LS17165.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17165 ;
+        adm:logEntry        bda:LG00BCF4D9C8733707 , bda:LG7BAB7E6766BFCFE3 , bda:LG823E90457E123FBB , bda:LGCED7D9AB1A9CA474 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD2E7C4AA9DCA4113
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17165  a       :Work ;
+        skos:altLabel       "mdzad pa bcu gnyis las brtsams pa'i thub bstod/ gdung dbyangs gsol 'debs dang gzhi gsum cho ga thar gling du bgrod pa'i gru chen bzang po/"@bo-x-ewts ;
+        skos:prefLabel      "thub bstod/ gdung dbyangs gsol 'debs dang gzhi gsum cho ga"@bo-x-ewts ;
+        :catalogInfo        "An eulogy of Shakyamuni Buddha extracting from his tweleve life accounts, reverential petition and ritual text of trinisiksani. The last text is authored by Minling Lochen Dharmashri."@en ;
+        :creator            bdr:CRD2E7C4AA9DCA4113 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T67 ;
+        :workHasInstance    bdr:MW8LS17165 , bdr:W8LS17165 ;
+        :workIsAbout        bdr:P7326 , bdr:T949 .
+}

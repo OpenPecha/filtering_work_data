@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1773 {
+    bda:LG00EB7C0E60D2DEC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG4E8BE8EA153C4C57
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-03T09:12:21.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1773"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1773  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1773 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9a/WA1NLM1773.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1773 ;
+        adm:logEntry        bda:LG00EB7C0E60D2DEC5 , bda:LG4E8BE8EA153C4C57 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1773  a       :Work ;
+        skos:prefLabel      "lha mo gtad dkar 'gro bzang mo'i sgrub chog dang 'brel ba'i dus mchod bya tshul phyug g.yang 'gug byed don yod lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 khro bo sme ba brtsegs pa'i sbyin bsreg 'gong po mthar byed/ 2 rgyal ba'i bstan srung gyi gtso bo yongs su grags pa rnams mchod par 'bul tshul rgyun gyi rnal 'byor du bya ba'i tshul/ 3 dpal rdo rje rnam 'joms kyi mngon rtogs bum pa sgrub tshul bla ma dkon mchog gsum gyi byin rlabs char 'bebs/ 4 rnam 'dren bu ram shing ba'i bstan pa la/ 5 'byung gzhi gtor ma gtong bar 'dod pa/ 6 lta 'phye la mchod gtor 'bul tshul/ 7 'phags pa 'jam dpal la phyag 'tshal lo/ 8 'jam dbyangs kyi sgrub thabs/ 9 chos skyong lcam sring gi bzlog bsgyur/ 10 rta mgrin gsang sgrub kyi sgo nas grib sel bya tshul nor bu ke ta ka"@bo-x-ewts , "Sadhana offering and daily ritual of protective deity; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1773 , bdr:W1NLM1773 ;
+        :workIsAbout        bdr:T1CZ29 , bdr:T2188 , bdr:T2DB4587 .
+}

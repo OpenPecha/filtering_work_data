@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21843 {
+    bda:LGC5B98B2E3763EB16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-10T11:39:05.358Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCCEE3D8F441438B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-10T14:02:27.813Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF5BF5C16EFBD8ECD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN21843  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21843 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "94/WA3CN21843.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21843 ;
+        adm:logEntry        bda:LGC5B98B2E3763EB16 , bda:LGCCEE3D8F441438B2 , bda:LGF5BF5C16EFBD8ECD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR43EC11FC72DE330F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7911 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21843  skos:altLabel  "东西方文化对谈"@zh-hans .
+
+    bdr:WA3CN21843  a       :Work ;
+        skos:prefLabel      "'dzam gling shar nub kyi gna' deng rig pa'i rnam gzhag"@bo-x-ewts , "东西方文化对谈"@zh-hans ;
+        :catalogInfo        "Analysis of world philosophy schools by Larung Khenpo Tsultrim Lodro."@en ;
+        :creator            bdr:CR43EC11FC72DE330F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW3CN21843 , bdr:W3CN21843 ;
+        :workIsAbout        bdr:T388 .
+}

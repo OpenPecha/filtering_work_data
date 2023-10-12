@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4776 {
+    bda:LG02122E3DFC1BE0CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-04-14T10:04:43.427Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCCCF4EA6F9136CD4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-13T16:57:53.892Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG4776  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4776 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "3d/WA1KG4776.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4776 ;
+        adm:logEntry        bda:LG02122E3DFC1BE0CD , bda:LGCCCF4EA6F9136CD4 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC90623A07C7CCBE5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG4776  skos:altLabel  "supplementary texts for the study of the perfection of wisdom at sera mey tibetan monastic university"@en .
+
+    bdr:WA1KG4776  a        :Work ;
+        skos:altLabel       "ser smad thos bsam nor bu'i gling gi yig cha/ zur bkol/"@bo-x-ewts , "Ser-smad Thos-bsam-nor-gliṅ gi yig cha, zur bkol :supplementary texts for the study of the perfection of wisdom at Sera Mey Tibetan Monastic University /including works by Rje Tzong-kha-pa Blo-bzang-grags-pa ... [et al.]."@en-x-mixed ;
+        skos:prefLabel      "ser smad zur bkol/"@bo-x-ewts , "supplementary texts for the study of the perfection of wisdom at sera mey tibetan monastic university"@en ;
+        :catalogInfo        "Anthology of supplementary textbooks on philosophical doctrines studied at Sera Mey College and its affiliates."@en ;
+        :creator            bdr:CRC90623A07C7CCBE5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG4776 , bdr:W1KG4776 ;
+        :workIsAbout        bdr:G237 , bdr:T447 , bdr:T942 .
+}

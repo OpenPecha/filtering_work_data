@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1639 {
+    bda:LG2EED465E93AD8621
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG30BF46AF27522DE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T20:40:10.389Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8147838B81E73297
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T16:04:23.11Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog, reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFD36277C745D2242
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T10:04:52.908Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1639"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1639  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1639 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "00/WA1NLM1639.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1639 ;
+        adm:logEntry        bda:LG2EED465E93AD8621 , bda:LG30BF46AF27522DE6 , bda:LG8147838B81E73297 , bda:LGFD36277C745D2242 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C32E62CB8D4DD0A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA5DEA085F36417CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1639  a       :Work ;
+        skos:altLabel       "'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "bla ma yi dam sangs rgyas byang sems dpa' bo mkha' 'gro chos skyong seung ma rnams la gsol 'debs bsam don lhun grub/"@bo-x-ewts , "skyabs 'gro'i nyams len bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "bslab pa yongs su sbyong ba'i cho ga sdom brtson dgyes byed/"@bo-x-ewts ;
+        :catalogInfo        "On the three disciplinary codes practiced by Buddhist monks and nuns during gso sbyong (posoda), dbyar gnas (varsika), and dgag dbye (pravarana) observance periods, longevity sutra and other other miscellaneous rituals"@en ;
+        :creator            bdr:CR1C32E62CB8D4DD0A , bdr:CRA5DEA085F36417CA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1639 , bdr:W1NLM1639 ;
+        :workIsAbout        bdr:T201 .
+}

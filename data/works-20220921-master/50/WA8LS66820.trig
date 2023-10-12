@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66820 {
+    bda:LG3D904466FE7DB99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG7DA16963E59ECAD6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T15:56:14.99Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG92428D8FFB46B687
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T15:28:20.226Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA0B4C22F008AFAD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T15:55:44.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66820  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66820 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "50/WA8LS66820.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66820 ;
+        adm:logEntry        bda:LG3D904466FE7DB99D , bda:LG7DA16963E59ECAD6 , bda:LG92428D8FFB46B687 , bda:LGA0B4C22F008AFAD5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR79F2A00AB0F2F078
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2079 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7A42085DDD1F82C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1836 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF4BD220A6D170583
+        a                   :AgentAsCreator ;
+        :agent              bdr:P0RK972 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66820  a       :Work ;
+        skos:prefLabel      "rgyal sras thogs med bzang po'i rnam thar phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Gyalsey Thokme Zangpo's biography."@en ;
+        :creator            bdr:CR79F2A00AB0F2F078 , bdr:CR7A42085DDD1F82C9 , bdr:CRF4BD220A6D170583 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T3 ;
+        :workHasInstance    bdr:MW8LS66820 , bdr:W8LS66820 ;
+        :workIsAbout        bdr:P1830 .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ10401 {
+    bda:LG2F546D5DB881A03B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-01-04T12:08:37.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9B7D68E432F889B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-12-02T12:53:37.925Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCE6152C83A8A6B4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-01-09T11:06:25.021Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEE8E982EA5CAFFB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-01-04T12:06:00.87Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected tbrc holdings"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA4CZ10401  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ10401 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ea/WA4CZ10401.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ10401 ;
+        adm:logEntry        bda:LG2F546D5DB881A03B , bda:LG9B7D68E432F889B4 , bda:LGCE6152C83A8A6B4C , bda:LGEE8E982EA5CAFFB3 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2B844D05F798810B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3163 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ10401  a       :Work ;
+        skos:altLabel       "'dul ba'i sde snod mtha' dag gi dgongs pa phyin ci ma log par 'grel par byed pa'i legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba'i TIk chen legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts , "ʼDir ʼdul baʼi sde snod mthaʼ dag gi dgoṅs pa phyin ci ma log par ʼgrel bar byed paʼi legs bśad skal bzaṅ nor buʼi phreṅ ba źes bya ba."@en-x-mixed ;
+        :catalogInfo        "General exegesis on Buddhist monastic discipline from the curriculum manuals at Sera Je College and its affiliates."@en ;
+        :creator            bdr:CR2B844D05F798810B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ10401 , bdr:W4CZ10401 ;
+        :workIsAbout        bdr:T447 , bdr:T55 .
+}

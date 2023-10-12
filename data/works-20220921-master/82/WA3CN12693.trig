@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN12693 {
+    bda:LG22DA49372900AE7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-11T16:09:19.022Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG264947CB9F05CEC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-11T15:49:08.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4E618EE321084CE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-11T11:36:05.468Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4EE4C83B554C6F41
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGA391646423F0013B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN12693  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN12693 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "82/WA3CN12693.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN12693 ;
+        adm:logEntry        bda:LG22DA49372900AE7C , bda:LG264947CB9F05CEC8 , bda:LG4E618EE321084CE3 , bda:LG4EE4C83B554C6F41 , bda:LGA391646423F0013B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCBD40F68E90A49D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P828 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN12693  a       :Work ;
+        skos:altLabel       "karma pa bdud 'dul rdo rje'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ karma pa bdud 'dul rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by 13th Karmapa Dudul Dorje (1733-1797)."@en ;
+        :creator            bdr:CRCBD40F68E90A49D7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN12693 , bdr:W3CN12693 ;
+        :workIsAbout        bdr:T1386 .
+}

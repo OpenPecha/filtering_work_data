@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM520 {
+    bda:LG2532221509E0473F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T09:38:11.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG28BCAE7E24448B57
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG9185B6D156199F46
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-04T10:37:30.579Z"^^xsd:dateTime ;
+        adm:logMessage      "complete catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM520"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM520  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM520 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "59/WA1NLM520.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM520 ;
+        adm:logEntry        bda:LG2532221509E0473F , bda:LG28BCAE7E24448B57 , bda:LG9185B6D156199F46 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2F626AE4011A41BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7E88BE058BBD6D18
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC45719C60DB6E788
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM520  a        :Work ;
+        skos:altLabel       "dpal gsang ba 'dus pa 'phags lugs dang mthun pa'i sngags kyis lam rnam gzhag legs bshad skal bzhag 'jug ngogs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gsang dus 'phags lugs dang mthun pa'i sngags kyis lam rnam gzhag legs bshad skal bzhag 'jug ngogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1. Explanation of the stages (sa) and the path (lam) for obtaining perfection according to the system expounded in the guhysamaja according to arya tradition. 2. Notes on lectures on the mahamudra precepts current in the dge lugs pa sect by 'jam dbyangs bzhad pa 02Konchog Jigme Wangpo (1728-1791); written at the behest of ye shes rgya mtsho, a lama of sechen khan of khalkha. 3. idactic story in verse by Gungthng Konchog Tenpe Dronme. 4."@en ;
+        :creator            bdr:CR2F626AE4011A41BB , bdr:CR7E88BE058BBD6D18 , bdr:CRC45719C60DB6E788 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM520 , bdr:W1NLM520 ;
+        :workIsAbout        bdr:T11MS11 , bdr:T1357 , bdr:T1430 .
+}

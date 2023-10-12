@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ65563 {
+    bda:LG31EACF0DB8B77AF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T16:18:24.764Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3C1E16A0A1044D43
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-26T16:19:59.341Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG45891D032D2F4CA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG910819159D22EE79
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T16:21:40.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ65563  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ65563 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "80/WA4CZ65563.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ65563 ;
+        adm:logEntry        bda:LG31EACF0DB8B77AF5 , bda:LG3C1E16A0A1044D43 , bda:LG45891D032D2F4CA2 , bda:LG910819159D22EE79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7BA6853A614686A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1PD92831 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ65563  a       :Work ;
+        skos:altLabel       "sman bla'i sgo nas gshin po rjes 'dzin lho sgo'i cho ga nyam thag g.yang sgrol/"@bo-x-ewts ;
+        skos:prefLabel      "gshin po rjes 'dzin lho sgo'i cho ga nyam thag g.yang sgrol/"@bo-x-ewts ;
+        :catalogInfo        "Funeral ritual using the sarvavid Bhaisajyaguru practice"@en ;
+        :creator            bdr:CR7BA6853A614686A2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW4CZ65563 , bdr:W4CZ65563 ;
+        :workIsAbout        bdr:T568 .
+}

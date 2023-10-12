@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23667 {
+    bda:LG50200E98EA0CE9E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-02T12:44:51.777Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBB596F280783A949
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-02T12:45:23.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23667  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23667 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cc/WA1KG23667.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23667 ;
+        adm:logEntry        bda:LG50200E98EA0CE9E2 , bda:LGBB596F280783A949 , bda:LGIM206EC9B06D , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23667  a       :Work ;
+        skos:altLabel       "blo bzang dgongs rgyn mu tig phreng mdzes/ (deb nyer lnga pa/)"@bo-x-ewts ;
+        skos:prefLabel      "gnas brtan phyag mchod sogs cho ga'i rim pa 'ga' zhig"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual text of Gelug pa tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG23667 , bdr:W1KG23667 ;
+        :workIsAbout        bdr:T819 .
+}

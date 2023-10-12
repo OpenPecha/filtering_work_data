@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75789 {
+    bda:LG0C5118E8A4B0D79E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-04T12:19:15.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG19FB4883C7F012B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T10:09:51.679Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4926FC69B9CBA88D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-04T12:18:49.248Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS75789  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75789 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/WA8LS75789.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75789 ;
+        adm:logEntry        bda:LG0C5118E8A4B0D79E , bda:LG19FB4883C7F012B9 , bda:LG4926FC69B9CBA88D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBD5C85BE43E5572B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75790 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS75789  a       :Work ;
+        skos:prefLabel      "gtam rgyud lnga pa las byis pa'i ched du nyer btus ri mo'i sgrung deb dang po/"@bo-x-ewts ;
+        :catalogInfo        "Translation of narrative concerning children from the Panchtantra; translated by Dumkhang Phuntsok Namgyal and edited by Doboom Tulku."@en ;
+        :creator            bdr:CRBD5C85BE43E5572B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG26395 , bdr:T276 ;
+        :workHasInstance    bdr:MW8LS75789 , bdr:W8LS75789 .
+}

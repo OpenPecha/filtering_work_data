@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2920 {
+    bda:LG3AA2E3BCD19A1C1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG4F4FD40DAE76A563
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-21T09:51:44.423Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2920"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2920  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2920 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b5/WA1NLM2920.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2920 ;
+        adm:logEntry        bda:LG3AA2E3BCD19A1C1C , bda:LG4F4FD40DAE76A563 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C3962223358324B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR4CE1B6F8C058720B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR525218BCC5D42831
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9472 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9AB3C73DED8BB233
+        a                   :AgentAsCreator ;
+        :agent              bdr:P432 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB3121077867AEFC5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2920  a       :Work ;
+        skos:prefLabel      "mnyam med rje btsun tsong kha pa chen pos mdzad pa'i byang chub lam rim chen mo'i dka' ba'i gnad rnams mchan bu bzhi'i sgo nas legs par bshad pa theg chen lam gyi gsal sgron/"@bo-x-ewts ;
+        :catalogInfo        "Four annotated commentary on the Tsongkhapa's graduated approach."@en ;
+        :creator            bdr:CR1C3962223358324B , bdr:CR4CE1B6F8C058720B , bdr:CR525218BCC5D42831 , bdr:CR9AB3C73DED8BB233 , bdr:CRB3121077867AEFC5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 , bdr:T304 ;
+        :workHasInstance    bdr:MW1NLM2920 , bdr:W1NLM2920 .
+}

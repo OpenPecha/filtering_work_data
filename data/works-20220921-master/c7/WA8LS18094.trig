@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18094 {
+    bda:LG49B711D9E017AE8D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-23T14:23:56.654Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG565ACA62E21CA5C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG7F5AC2087B09B9DC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-23T14:25:06.137Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS18094  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18094 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c7/WA8LS18094.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18094 ;
+        adm:logEntry        bda:LG49B711D9E017AE8D , bda:LG565ACA62E21CA5C6 , bda:LG7F5AC2087B09B9DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8BC51BF7410C996A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1195 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18094  a       :Work ;
+        skos:altLabel       "lo ma gyon mar brten pa'i las tshogs nas ril sgrub tshul gyi ngag 'don/"@bo-x-ewts ;
+        skos:prefLabel      "lo ma gyon mar brten pa'i ril sgrub kyi ngag 'don/"@bo-x-ewts ;
+        :catalogInfo        "liturgical recitation for production of medicinal pellets on the basis of Panasavari by the 88th Gaden Tripa Cangyabpa Khyenrab Yonten."@en ;
+        :creator            bdr:CR8BC51BF7410C996A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T536 ;
+        :workHasInstance    bdr:MW8LS18094 , bdr:W8LS18094 ;
+        :workIsAbout        bdr:T1GS148157 , bdr:T454 .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21023 {
+    bda:LG0726DD1DCA26A57B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-10T09:32:15.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG5317DE45B47ACC68
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T15:28:10.284Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG89B011BC94C5F472
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-17T10:04:49.662Z"^^xsd:dateTime ;
+        adm:logMessage      "completed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9DB3BD57ED90D193
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC3150CFA2541739D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21023  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21023 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c7/WA21023.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21023 ;
+        adm:logEntry        bda:LG0726DD1DCA26A57B , bda:LG5317DE45B47ACC68 , bda:LG89B011BC94C5F472 , bda:LG9DB3BD57ED90D193 , bda:LGC3150CFA2541739D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBD132A904F3A0E99
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7081 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW21023  skos:altLabel  "collected revelations (gter chos) and writings of brtul-zugs-glin-pa"@en-x-mixed .
+
+    bdr:WA21023  a          :Work ;
+        skos:altLabel       "collected revelations of brtul-zugs-glin-pa"@en-x-mixed ;
+        skos:prefLabel      "gter chos/_brtul zhugs gling pa/"@bo-x-ewts , "collected revelations (gter chos) and writings of brtul-zugs-glin-pa"@en-x-mixed ;
+        :catalogInfo        "Collected Treasure Revelations by 20th century Nyingma visionary Tulzhuk Lingpa."@en ;
+        :creator            bdr:CRBD132A904F3A0E99 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW21023 , bdr:W21023 ;
+        :workIsAbout        bdr:T1082 .
+}

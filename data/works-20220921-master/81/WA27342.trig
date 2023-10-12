@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27342 {
+    bda:LGC9D126D6A8AA5128
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-24T08:45:09.144Z"^^xsd:dateTime ;
+        adm:logMessage      "removed archive info"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGCD41BABA4DC52CD6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA27342  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27342 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "81/WA27342.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27342 ;
+        adm:logEntry        bda:LGC9D126D6A8AA5128 , bda:LGCD41BABA4DC52CD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRBBED0013D3A59D0B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVBBFD515BF890917C
+        a                   :CompletedEvent ;
+        :onYear             "1628"^^xsd:gYear .
+
+    bdr:WA27342  a          :Work ;
+        skos:altLabel       "dpal kyai rdo rje'i rtsa ba'i sngags kyi rnam par bshad pa zab don rgyas pa'i nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "kyai rdo rje'i rtsa ba'i sngags kyi rnam par bshad pa zab don rgyas pa'i nyin byed/"@bo-x-ewts ;
+        :creator            bdr:CRBBED0013D3A59D0B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVBBFD515BF890917C ;
+        :workHasInstance    bdr:MW27342 ;
+        :workIsAbout        bdr:T130 , bdr:T2121 .
+}

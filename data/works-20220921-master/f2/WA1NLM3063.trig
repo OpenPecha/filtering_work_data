@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3063 {
+    bda:LG314BDBA30C3513D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-15T12:27:27.415Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE7CEE9802EC47676
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3063"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3063  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3063 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f2/WA1NLM3063.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3063 ;
+        adm:logEntry        bda:LG314BDBA30C3513D8 , bda:LGE7CEE9802EC47676 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3063  a       :Work ;
+        skos:prefLabel      "gnod sbyin lcam dral gyi phyi rten 'jug pa'i man ngag sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 cha gsum gtor ma/ 2 sangs rgyas stong gi rab gnas bsdus pa/ 3 mgon po dbang dud/ 4 rlung rta bsang mchod/ 5 phyag drug ye shes kyi mgon po 'bul pa'i gshegs gtor/ 6 klu'i rnams la rten 'bul/ 7 klu chen brgyad kyi bsang mchod dngos grub char 'bebs/ 8 dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs bdud las rnam rgyal/ 9 sgrol ma las tshogs/ 10 tshul gyi ru ston/ 11 dpal mgon 'don lnga'i gser skyems/ 12 rje bdag nyid chen po bstod pa dad pa'i pad+mo rgyas par byed pa'i nyi ma mchan bu can/ 13 rje btsun sgrol ma'i 'chi bslu/ 14 spyod 'jug smon lam/ 15 nor sgrub nor lha nor bdag longs spyod g.yang 'gugs 'phel ba'i bsangs mchod phyug la god kha me 'byung gsang ba man ngag 16 rnam dag bsangs/ 17 bde mchog dril bu pa'i bla brgyud gsol 'debs dang / dpal 'khor lo bde mchog dril u lha lnga'i dbang chog bde chen snying po/ 18 phyugs glud bgegs gtor ma/ 19 rta mgrin gsang sgrub kyi gsar rnying lugs sgrub thabs shin tu mdor bsdus/"@en , "Method of erecting object of brother and sister protector; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM3063 , bdr:W1NLM3063 ;
+        :workIsAbout        bdr:T1707 , bdr:T2GS1134 .
+}

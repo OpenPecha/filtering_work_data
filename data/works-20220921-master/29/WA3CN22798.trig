@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22798 {
+    bda:LG2E8153588B33EDCB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-18T21:33:53.491Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB7F4E8C4EA1368E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC879B269F1D0694F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-19T14:12:53.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22798  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22798 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "29/WA3CN22798.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22798 ;
+        adm:logEntry        bda:LG2E8153588B33EDCB , bda:LGB7F4E8C4EA1368E8 , bda:LGC879B269F1D0694F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN22798  a       :Work ;
+        skos:prefLabel      "dbu ma'i mtha' dpyod skal bzang 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Critical analysis of the Madhyamaka."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN22798 , bdr:W3CN22798 ;
+        :workIsAbout        bdr:T1215 , bdr:T233 .
+}

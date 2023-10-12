@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21507 {
+    bda:LG6AFA24AD62BBF429
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-21T11:11:33.41Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG70E0F29194E4AB58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-21T11:12:11.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8CBCB93535439007
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDF0A9B7B5060C354
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T14:54:52.004Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21507  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21507 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f4/WA3CN21507.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21507 ;
+        adm:logEntry        bda:LG6AFA24AD62BBF429 , bda:LG70E0F29194E4AB58 , bda:LG8CBCB93535439007 , bda:LGDF0A9B7B5060C354 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR34251B25840DBCB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21687 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21507  skos:altLabel  "西藏古钟历史文化研究"@zh-hans .
+
+    bdr:WA3CN21507  a       :Work ;
+        skos:prefLabel      "bod kyi gna' rabs cong dril zhib 'jug"@bo-x-ewts , "西藏古钟历史文化研究"@zh-hans ;
+        :catalogInfo        "Research on the history and culture of ancient bells in Tibet by Nyiten."@en ;
+        :creator            bdr:CR34251B25840DBCB4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN21507 , bdr:W3CN21507 ;
+        :workIsAbout        bdr:T1940 .
+}

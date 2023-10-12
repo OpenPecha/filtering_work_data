@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS25033 {
+    bda:LG1873D70000EAE706
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-05T14:53:55.374Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6BEE68171CD94D44
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-05T14:54:55.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS25033  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS25033 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "35/WA8LS25033.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS25033 ;
+        adm:logEntry        bda:LG1873D70000EAE706 , bda:LG6BEE68171CD94D44 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB93B8C33EA86924D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS25033  a       :Work ;
+        skos:prefLabel      "snyan ngag me long /"@bo-x-ewts ;
+        :catalogInfo        "Situ Chokyi Jungney's translation of Kavyadarsha."@en ;
+        :creator            bdr:CRB93B8C33EA86924D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS25033 , bdr:W8LS25033 ;
+        :workIsAbout        bdr:T204 , bdr:WA22919 .
+}

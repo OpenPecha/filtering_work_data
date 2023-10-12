@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3931 {
+    bda:LG89E2D9D356256C64
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T11:27:13.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3931"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3931  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3931 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "31/WA1NLM3931.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3931 ;
+        adm:logEntry        bda:LG89E2D9D356256C64 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3931  a       :Work ;
+        skos:prefLabel      "'phags pa tshe dpag tu med pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 nyi ma dang zla ba'i mdo/ 2 lhag pa'i smon lam thems skas ma/ 3 'phags pa gtsug to rnam par rgyal ma'i gzungs rtog pa dang bcas pa/ 4 bla ma'i bka' drin dran cing thugs rje bskul ba'i gsol 'debs byin rlabs 'phreng ba/ 5 dmigs brtse ma'i ril sgrub/ 6 gtsug tor gdugs dkar mo'i bsgom bzlas bde ba can gyi zhing du bgrod pa'i gdams pa bya rgyal khyung gi rta pho/ 7 bla med ston pa ma/ 8 tha 'og chos kyi rgyal po'i gtor 'bul/ 9 thog mtha' bar gsum du dge ba'i smon lam/ 10 blo sbyong mgur/ 11 bshes gnyen rab rtse'i blo sbyong rgyal sras thogs med bzang po dpal gyi gsung / 12 rje tsong kha pa'i gzigs pa rnams pa lnga'i sku brnyan mtshan bstod/ 13 byang chub lam gyi sgron me/ 14 sku 'bum byams pa gling gi rten gyi gtso bo tsan dan ljong shing gi lo rgyus/"@bo-x-ewts , "Mahayana sutra known as Arya Aparimita Ayurjnana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3931 , bdr:W1NLM3931 ;
+        :workIsAbout        bdr:T1KG3717 .
+}

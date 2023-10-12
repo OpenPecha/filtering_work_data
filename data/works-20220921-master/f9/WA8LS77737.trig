@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77737 {
+    bda:LG769E77172B84D4F8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-10T08:24:13.23Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF2960F24AE3EF734
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-10T08:24:35.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77737  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77737 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f9/WA8LS77737.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77737 ;
+        adm:logEntry        bda:LG769E77172B84D4F8 , bda:LGF2960F24AE3EF734 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4B8CBB1446B7CF70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P66 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB4F2D78E0BF0B4F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77737  a       :Work ;
+        skos:prefLabel      "nges don phyag rgya chen po'i smon lam gyi 'grel pa grub pa mchog gi zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "Prayer of Mahamudra by 3rd Karmapa Rangjung Dorjee and its commentary by 8th Situ Chokyi Jungney."@en ;
+        :creator            bdr:CR4B8CBB1446B7CF70 , bdr:CRB4F2D78E0BF0B4F8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T34 ;
+        :workHasInstance    bdr:MW8LS77737 , bdr:W8LS77737 ;
+        :workIsAbout        bdr:T199 .
+}

@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30483 {
+    bda:LG21993E8E5052239C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-23T15:13:32.425Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG922400526D264A6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T09:56:12.401Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG95F6CE6931BFB795
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBE4015739D05851B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T11:21:04.905Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCF084605EFD87E26
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGE30845D1EE953884
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-06T11:22:24.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA30483  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30483 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "52/WA30483.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30483 ;
+        adm:logEntry        bda:LG21993E8E5052239C , bda:LG922400526D264A6F , bda:LG95F6CE6931BFB795 , bda:LGBE4015739D05851B , bda:LGCF084605EFD87E26 , bda:LGE30845D1EE953884 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16796 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR21903437E6DCA984
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7277 ;
+        :role               bdr:R0ER0012 .
+
+    bdr:MW30483  skos:altLabel  "姜岭之战"@zh-hans .
+
+    bdr:WA30483  a          :Work ;
+        skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / 'jang gling g.yul 'gyed/"@bo-x-ewts , "jiang ling zhi zhan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'jang gling g.yul 'gyed/"@bo-x-ewts , "姜岭之战"@zh-hans ;
+        :catalogInfo        "An episode from the Gesar epic."@en ;
+        :creator            bdr:CR21903437E6DCA984 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30483 ;
+        :workIsAbout        bdr:T248 .
+}

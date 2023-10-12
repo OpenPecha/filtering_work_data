@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS155 {
+    bda:LG084267CF5432ED77
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG6110B26A602D366C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-13T10:36:28.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG71988C292D72EB75
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-03T15:55:28.192Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted old incomplete volumemaps"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAD16F84C9CD54302
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-03T16:03:30.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB4EFBA8A16D3DC3E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-09T23:00:44.596Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:WA3MS155  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS155 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/WA3MS155.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS155 ;
+        adm:logEntry        bda:LG084267CF5432ED77 , bda:LG6110B26A602D366C , bda:LG71988C292D72EB75 , bda:LGAD16F84C9CD54302 , bda:LGB4EFBA8A16D3DC3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS155  a         :Work ;
+        skos:prefLabel      "gnas 'go dgon du bzhugs pa'i dpe dkon phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts preserved at Neago Monastery in Garze."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS155 , bdr:W3MS155 ;
+        :workIsAbout        bdr:G3660 .
+}

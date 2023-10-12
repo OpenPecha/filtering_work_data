@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23712 {
+    bda:LG9CD5C195315FF853
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-09T10:15:47.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC938A377C8F3E078
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-09T13:12:27.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC988ACBDAA179B16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-09T10:14:59.22Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23712  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23712 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/WA1KG23712.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23712 ;
+        adm:logEntry        bda:LG9CD5C195315FF853 , bda:LGC938A377C8F3E078 , bda:LGC988ACBDAA179B16 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23712  a       :Work ;
+        skos:altLabel       "rje bdag nyid chen po'i bstod 'grel dang / gsang chen rgyud sde bzhi'i man ngag dkon rigs kyis btus pa rig 'dzin dgyes rol/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb lnga bcu nga drug pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous writings of Gelugpa masters."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 , bdr:T67 ;
+        :workHasInstance    bdr:MW1KG23712 , bdr:W1KG23712 ;
+        :workIsAbout        bdr:P64 , bdr:T1871 .
+}

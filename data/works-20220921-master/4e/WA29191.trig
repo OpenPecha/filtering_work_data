@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29191 {
+    bda:LG379A65BA2113B2AE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7FD4A3E853610B90
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-29T16:08:09.03Z"^^xsd:dateTime ;
+        adm:logMessage      "མཚན་བྱང་བཅོས།"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG838994887AA777F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-19T03:09:14.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL12"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LGDE3197D3E856E0FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T11:23:14.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA29191  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29191 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4e/WA29191.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29191 ;
+        adm:logEntry        bda:LG379A65BA2113B2AE , bda:LG7FD4A3E853610B90 , bda:LG838994887AA777F8 , bda:LGDE3197D3E856E0FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR881529895CA1BE2B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29191  a          :Work ;
+        skos:prefLabel      "rje'i gsung bka' rgya ma/"@bo-x-ewts ;
+        :creator            bdr:CR881529895CA1BE2B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW29191 , bdr:MW2CZ5670 , bdr:W29191 , bdr:W2CZ5670 ;
+        :workIsAbout        bdr:T1GS108153 , bdr:T819 .
+}

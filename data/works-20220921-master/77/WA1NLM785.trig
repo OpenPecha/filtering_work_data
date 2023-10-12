@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM785 {
+    bda:LG2AF1266397A93DBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T14:52:58.028Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7C7D64B08E0D8EDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-15T15:21:59.557Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF255471DEA3D26A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM785"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM785  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM785 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "77/WA1NLM785.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM785 ;
+        adm:logEntry        bda:LG2AF1266397A93DBE , bda:LG7C7D64B08E0D8EDE , bda:LGF255471DEA3D26A8 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1538 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM785  a        :Work ;
+        skos:prefLabel      "dpal gsang ba 'dus pa'i bdag bskyed ngag 'don bkra shis lhun po rgyud pa grwa tshang gi 'don rgyun la rje thams cad mkhyen pas zhus dag mdzad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Tashi Lhunpo tantric college's liturgical recitation text for self generation of Guhyasamaja and other liturgical ext."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T457 , bdr:T536 ;
+        :workIsAbout        bdr:T417 .
+}

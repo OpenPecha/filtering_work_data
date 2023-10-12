@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18314 {
+    bda:LG8DC26D1B4CA3E8C8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-08-14T12:21:33.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG935AB5158F6801F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-14T12:12:04.531Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG18314  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18314 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f9/WA1KG18314.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18314 ;
+        adm:logEntry        bda:LG8DC26D1B4CA3E8C8 , bda:LG935AB5158F6801F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG18314  a       :Work ;
+        skos:altLabel       "sog po rta rdzongs/"@bo-x-ewts ;
+        skos:prefLabel      "sog po rta rdzong /"@bo-x-ewts ;
+        :catalogInfo        "An episode from Gesar epic on the conquest of sog po rta rdzong, a legendary character."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG18314 , bdr:MW20085 , bdr:MW22056 , bdr:MW3PD393 , bdr:W1KG18314 , bdr:W20085 , bdr:W22056 , bdr:W3PD393 ;
+        :workIsAbout        bdr:T248 .
+}

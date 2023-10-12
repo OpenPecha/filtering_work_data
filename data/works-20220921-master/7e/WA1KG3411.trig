@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3411 {
+    bda:LG9254215F211CB145
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-15T10:14:11.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB61F2A3008154493
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-15T09:07:29.173Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG3411  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3411 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "7e/WA1KG3411.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3411 ;
+        adm:logEntry        bda:LG9254215F211CB145 , bda:LGB61F2A3008154493 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2C7A3390380FCA67
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7257 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR96458799B8280404
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016642 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRE8F298024DF4DF94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9963 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3411  a        :Work ;
+        skos:altLabel       "bcom ldan 'das ma shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi 'grel pa shes rab sgron ma'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "mngon rtogs rgyan gyi 'grel pa shes rab sgron ma'i phreng ba sogs 'grel pa khag cig"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara of the Prajnaparamita. Written by Buddhasrijnana, Ratnakarasanti, and Dharmasri."@en ;
+        :creator            bdr:CR2C7A3390380FCA67 , bdr:CR96458799B8280404 , bdr:CRE8F298024DF4DF94 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG3411 , bdr:W1KG3411 ;
+        :workIsAbout        bdr:WA19716 .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23741 {
+    bda:LG2C646D31FC3585EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG3D921B180AC418DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T16:32:30.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG3FA1B2C47DB74457
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T12:25:59.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG82E57A2664C4FB88
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23741  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23741 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "42/WA23741.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23741 ;
+        adm:logEntry        bda:LG2C646D31FC3585EF , bda:LG3D921B180AC418DB , bda:LG3FA1B2C47DB74457 , bda:LG82E57A2664C4FB88 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA19990 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRE93D8B3C53F2222A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23741  skos:altLabel  "dag yig mkhas pa'i 'byun gnas : the monumental buddhist terminological lexicon"@en-x-mixed .
+
+    bdr:WA23741  a          :Work ;
+        skos:prefLabel      "dag yig mkhas pa'i 'byung gnas/"@bo-x-ewts , "dag yig mkhas pa'i 'byun gnas : the monumental buddhist terminological lexicon"@en-x-mixed ;
+        :catalogInfo        "Terminological dictionary of the Tibetan language. Written with Mongolian equivalents for use in the transation of the canon. Compiled by Changkya Rolpai Dorje (1717-1786). Scanned with the generous support of Nathan Hill."@en ;
+        :creator            bdr:CRE93D8B3C53F2222A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T218 ;
+        :workHasInstance    bdr:MW23741 ;
+        :workIsAbout        bdr:T1197 .
+}

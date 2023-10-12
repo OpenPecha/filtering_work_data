@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM80 {
+    bda:LG174304F4288291DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-27T12:40:04.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics, cat info, contents and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG47BEAB9C2B504CA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA91BE6BEDF2B0EFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-22T18:26:54.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB8471A8C31753E6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:04.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM80"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM80  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM80 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "2a/WA1NLM80.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM80 ;
+        adm:logEntry        bda:LG174304F4288291DE , bda:LG47BEAB9C2B504CA7 , bda:LGA91BE6BEDF2B0EFC , bda:LGB8471A8C31753E6D , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2C0028A3C757C8E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P357 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR64375B63B06EFA22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM80  a         :Work ;
+        skos:prefLabel      "dpyad mchog gtar kha'i gdams pa nyes 'khrugs rnyogs drung 'byin byed ka rke ta sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts concerning Instruction or methods for drawing bad blood by Deumar Geshes Tenzin phuntshok, medicinal preparation, healing infectious diseases, protection of virus-instruction of Zurkhar Lodro Gyalpo instruction of moxibustion by Deumar geshes Tenzin Phuntshok, averting smallpox, removal of defilement, fire offering and offering of medicine buddha."@en ;
+        :creator            bdr:CR2C0028A3C757C8E2 , bdr:CR64375B63B06EFA22 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM80 , bdr:W1NLM80 ;
+        :workIsAbout        bdr:T1121 , bdr:T1153 , bdr:T1654 , bdr:T1783 , bdr:T1GS139157 , bdr:T424 , bdr:T568 , bdr:T86 .
+}

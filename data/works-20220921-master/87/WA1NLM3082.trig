@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3082 {
+    bda:LG775D4BC7B4AC70B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG8A377E12731DBDC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T09:27:05.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3082"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3082  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3082 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "87/WA1NLM3082.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3082 ;
+        adm:logEntry        bda:LG775D4BC7B4AC70B4 , bda:LG8A377E12731DBDC1 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3082  a       :Work ;
+        skos:prefLabel      "chos skyongs chen po rgyal po kun 'dus la gsol mchod zhes bya ba bzhugs so//_/'dir chos skyongs chen po kun 'dus la gsol mchod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sa bdag gdan bcos/ 2 sa bdag klu gnyan gyi gdon grol/ 3 sa bdag klu gnyan gyi nag po gdon grol zhes pa'i bcos thabs/ 4 rgyal mdos bcos thabs/ 5 dus min 'chi ba 'jigs pa las grol par bed pa bdud rtsi'i gser zhun/ 6 ye shes kyi mkha' 'gro ma seng ge'i gdong pa can gyi mngon rtogs bskangs bshags bstod bskul dang bcas pa/ 7 sme bdun zhes pa'i skar ma'i mchod 'bul/ 8 myur mdzad ye shes mgon po phyag drug pa'i sgo nas mi kha dgra bzlog gri gug spu gri 9 mgon po phyag drug pa la brten pa'i bzlog pa stobs chen shugs bzlog pa'i man ngag nyams su len tshul/ 10 kha 'bar ma dkar nag khra gsum gyi gtor ma'i cho ga klag pas don 'grub/ 11 ye shes kyi mkha' 'gro seng+ge gdong pa can thus rje bdag nyid shis brjod/ 12 bstan 'bar ma/ 13 rgya nag skag bzlog dor bsdus/ 14 rgyal po'i gsol mchod dregs pa'i re ba skong byed/ 15 btsan gyi gsol mchod 'phrl gyi mchod sbyin/"@en , "Ritual offering of protective deities by author signed as Ngawang Jampa Lhundrup; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3082 , bdr:W1NLM3082 ;
+        :workIsAbout        bdr:T249 , bdr:T406 .
+}

@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23833 {
+    bda:LG2C7F96E6811883CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T16:35:59.83Z"^^xsd:dateTime ;
+        adm:logMessage      "moved bib title to position 1"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG3DDE574BD3D20C3B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8082DA497B5FCB77
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG86DB0EBB0E698544
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T15:49:11.403Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23833  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23833 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "36/WA23833.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23833 ;
+        adm:logEntry        bda:LG2C7F96E6811883CF , bda:LG3DDE574BD3D20C3B , bda:LG8082DA497B5FCB77 , bda:LG86DB0EBB0E698544 , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREBED31EB25D3E47F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P399 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23833  skos:altLabel  "dam chos dgons pa yan zab kyi khrid dan sgrub skor : a collection of texts from the dam chos dgons pa yan zab revelations of gter-ston rin-chen-phun-tshogs"@en-x-mixed .
+
+    bdr:WA23833  a          :Work ;
+        skos:prefLabel      "dam chos dgongs pa yang zab kyi khrid dang sgrub skor/"@bo-x-ewts , "dam chos dgons pa yan zab kyi khrid dan sgrub skor : a collection of texts from the dam chos dgons pa yan zab revelations of gter-ston rin-chen-phun-tshogs"@en-x-mixed ;
+        :catalogInfo        "Revealed terma teachings of the Drikung Kagyu order."@en ;
+        :creator            bdr:CREBED31EB25D3E47F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23833 , bdr:W23833 ;
+        :workIsAbout        bdr:T1190 .
+}

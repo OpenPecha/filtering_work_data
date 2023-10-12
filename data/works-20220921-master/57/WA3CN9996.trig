@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN9996 {
+    bda:LG23CF4BE18460B97D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-06T15:06:35.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA2281C392FCB3550
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-06T14:58:47.055Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN9996  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN9996 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "57/WA3CN9996.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN9996 ;
+        adm:logEntry        bda:LG23CF4BE18460B97D , bda:LGA2281C392FCB3550 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16212 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR3E3DDE17DB4A38A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6080 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN9996  a        :Work ;
+        skos:altLabel       "lugs zung gsung bshad bslab btus/ gsung rtsom phyogs bsgris deb phreng lnga pa/"@bo-x-ewts ;
+        skos:prefLabel      "lugs zung gsung bshad bslab btus/"@bo-x-ewts ;
+        :catalogInfo        "Selection of speeches on spiritual and temporal by Kirti Lobsang Tenzin."@en ;
+        :creator            bdr:CR3E3DDE17DB4A38A2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN9996 ;
+        :workIsAbout        bdr:T58 .
+}

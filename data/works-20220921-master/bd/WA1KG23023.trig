@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23023 {
+    bda:LG3C5D7755738FD816
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB0496293C028A623
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-10T12:42:43.196Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB5436ED0DDE947BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-22T09:36:20.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23023  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23023 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/WA1KG23023.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23023 ;
+        adm:logEntry        bda:LG3C5D7755738FD816 , bda:LGB0496293C028A623 , bda:LGB5436ED0DDE947BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23023  a       :Work ;
+        skos:prefLabel      "bon gyi 'don cha dang cho ga sna tshogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts of Bon tradition with miniature printed images of deities."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG23023 , bdr:W1KG23023 ;
+        :workIsAbout        bdr:T00AG01412 , bdr:T247 .
+}

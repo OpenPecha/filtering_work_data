@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1439 {
+    bda:LG9B13AAB5F705266C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-11T11:31:55.388Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5949AD059F82423
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1439"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1439  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1439 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/WA1NLM1439.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1439 ;
+        adm:logEntry        bda:LG9B13AAB5F705266C , bda:LGE5949AD059F82423 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1415 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2D65B3FD526A2275
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1439  a       :Work ;
+        skos:prefLabel      "theg pa chen po rgyud bla ma'i Tik+ka"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on Maitreya's Ratnagotravibhaga-uttaratantra-shastra, by Gyaltsab Darma Rinchen."@en ;
+        :creator            bdr:CR2D65B3FD526A2275 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA1GS1563 .
+}

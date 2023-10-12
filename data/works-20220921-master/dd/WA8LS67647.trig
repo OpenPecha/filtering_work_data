@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS67647 {
+    bda:LG228A2F543A9B444E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-19T09:30:25.934Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG316ED4979E0A34B7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-19T09:31:59.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE536E9DAE9762CB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T09:04:11.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS67647  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS67647 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dd/WA8LS67647.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS67647 ;
+        adm:logEntry        bda:LG228A2F543A9B444E , bda:LG316ED4979E0A34B7 , bda:LGE536E9DAE9762CB1 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS67647  a       :Work ;
+        skos:prefLabel      "mtsho sngon bod kyi slob gso'i dpyad rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of paper on education."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T1081 ;
+        :workHasInstance    bdr:MW8LS67647 , bdr:W8LS67647 ;
+        :workIsAbout        bdr:T234 .
+}

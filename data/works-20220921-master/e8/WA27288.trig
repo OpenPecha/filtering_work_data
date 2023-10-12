@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27288 {
+    bda:LG3446C94679ABFBC2
+        a                   adm:InitialDataCreation .
+
+    bda:LG6EAFB690AC58CD0C
+        a                   adm:UpdateData .
+
+    bda:W27288  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W27288 ;
+        adm:replaceWith     bdr:WA27288 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA27288  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27288 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/WA27288.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27288 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBCA278A264815A73
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8573 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT1195814607443F79
+        a                   :Note ;
+        :noteText           "canonical text fround in both the sna tshogs and jo bo'i chos chung section of the bstan 'gyur\ntoh 4392 and 4517"@en .
+
+    bdr:WA27288  a          :Work ;
+        skos:prefLabel      "smon lam bdun cu pa zhes bya ba'i tshigs su bcad pa/"@bo-x-ewts , "pranidhanasaptati-nama-gatha"@sa-alalc97 ;
+        :creator            bdr:CRBCA278A264815A73 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT1195814607443F79 .
+}

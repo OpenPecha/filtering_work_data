@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66764 {
+    bda:LG07F564681519ACBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG1F5343D80176C256
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-26T11:49:42.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG55BE057ADC13E03F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-26T11:49:11.801Z"^^xsd:dateTime ;
+        adm:logMessage      "added page number and author statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6988A999131A8325
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-04T12:15:01.22Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF936DE59D3DC803C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T11:51:28.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66764  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66764 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "40/WA8LS66764.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66764 ;
+        adm:logEntry        bda:LG07F564681519ACBF , bda:LG1F5343D80176C256 , bda:LG55BE057ADC13E03F , bda:LG6988A999131A8325 , bda:LGF936DE59D3DC803C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6193360F1C5672ED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75479 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66764  a       :Work ;
+        skos:prefLabel      "na chung rig 'phel lam bzang /"@bo-x-ewts ;
+        :catalogInfo        "Collection of short stories."@en ;
+        :creator            bdr:CR6193360F1C5672ED ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW8LS66764 , bdr:W8LS66764 .
+}

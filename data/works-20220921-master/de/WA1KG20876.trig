@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20876 {
+    bda:LG056C2C35A8B69230
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-18T12:44:27.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8516F1BE2703D4CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG95B1FC77D66DA7C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-18T12:42:08.263Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20876  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20876 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/WA1KG20876.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20876 ;
+        adm:logEntry        bda:LG056C2C35A8B69230 , bda:LG8516F1BE2703D4CF , bda:LG95B1FC77D66DA7C7 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12668 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW1KG20876  skos:altLabel  "a version of the story of gzugs-kyi-nyi-ma"@en .
+
+    bdr:WA1KG20876  a       :Work ;
+        skos:altLabel       "drang srong gi bu mo bram ze gzugs kyi nyi ma'i rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "gzugs kyi nyi ma'i rnam thar/"@bo-x-ewts , "a version of the story of gzugs-kyi-nyi-ma"@en ;
+        :catalogInfo        "Folk opera based on the spiritual biography of Gautama Sakyamuni Buddha."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P1KG20918 , bdr:T2034 .
+}

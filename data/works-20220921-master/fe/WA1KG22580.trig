@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22580 {
+    bda:LGAD33021D12CF5D34
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T09:58:48.832Z"^^xsd:dateTime ;
+        adm:logMessage      "changed editer's P#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDCF30928E8D57A69
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-04T15:46:50.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG22580  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22580 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fe/WA1KG22580.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22580 ;
+        adm:logEntry        bda:LGAD33021D12CF5D34 , bda:LGDCF30928E8D57A69 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG22580  a       :Work ;
+        skos:altLabel       "xi zang zi zhi qu tu shu guan gu ji mu lu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod rang skyong ljongs dpe mdzod khang gi gna' dpe'i dkar chag"@bo-x-ewts , "西藏自治区图书馆古籍目录"@zh-hans ;
+        :catalogInfo        "Catalog of Tibetan texts held in the Tibet Autonomous Region Library, Lhasa."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T13 , bdr:T2196 ;
+        :workHasInstance    bdr:MW1KG22580 , bdr:W1KG22580 ;
+        :workIsAbout        bdr:G1KG22586 .
+}

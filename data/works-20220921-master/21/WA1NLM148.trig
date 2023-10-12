@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM148 {
+    bda:LGC23AF9E43B6C0692
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-11T09:28:14.88Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCA5436EF4AE78BB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:36:02.767Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFBEAAC956BAA8103
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM148"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM148  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM148 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "21/WA1NLM148.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM148 ;
+        adm:logEntry        bda:LGC23AF9E43B6C0692 , bda:LGCA5436EF4AE78BB2 , bda:LGFBEAAC956BAA8103 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM148  a        :Work ;
+        skos:prefLabel      "bsangs mchod 'dod dgur 'khyil ba'i dga' ston sogs/"@bo-x-ewts ;
+        :catalogInfo        "Incense offering and other ritual offering text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM148 , bdr:MW1NLM1699 , bdr:W1NLM148 , bdr:W1NLM1699 ;
+        :workIsAbout        bdr:T173 .
+}

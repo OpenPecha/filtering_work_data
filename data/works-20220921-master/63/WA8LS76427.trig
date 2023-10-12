@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76427 {
+    bda:LG23D47894B32BD91F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T11:24:00.132Z"^^xsd:dateTime ;
+        adm:logMessage      "marked copy right"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG56E06B2485F72E90
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-29T09:21:30.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8AAD76A13BC55878
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-29T09:20:59.559Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76427  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76427 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "63/WA8LS76427.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76427 ;
+        adm:logEntry        bda:LG23D47894B32BD91F , bda:LG56E06B2485F72E90 , bda:LG8AAD76A13BC55878 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFC9DB4C78743C427
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8980 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76427  a       :Work ;
+        skos:altLabel       "brag dgon 'jam dbyangs bstan pa rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ brag dgon 'jam dbyangs bstan pa rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of the 5th Drakgon Jamyang Tenpa Gyatsho."@en ;
+        :creator            bdr:CRFC9DB4C78743C427 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS76427 , bdr:W8LS76427 ;
+        :workIsAbout        bdr:P8980 , bdr:T819 .
+}

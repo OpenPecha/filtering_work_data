@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22947 {
+    bda:LG1BD7CBECD98DCB7A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-30T20:14:38.002Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG421CAACA9197ED28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-01T18:40:35.799Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD0B5774673AA442F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-01T18:48:33.946Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD2E2B2F82154F1E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22947  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22947 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/WA3CN22947.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22947 ;
+        adm:logEntry        bda:LG1BD7CBECD98DCB7A , bda:LG421CAACA9197ED28 , bda:LGD0B5774673AA442F , bda:LGD2E2B2F82154F1E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR86BFA5538EC8FB6D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1043 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22947  a       :Work ;
+        skos:altLabel       "snyan ngag gi bstan bcos chen mo me long gi don gyi rgyan gyi yongs su bcad pa gnyis pa'i bshad sbyar/"@bo-x-ewts ;
+        skos:prefLabel      "snyan ngag me long gi don rgyan gnyis pa'i bshad sbyar/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on 2nd chapter of kavyadarsa by Mipham Gelek Namgyal (1618-1685)."@en ;
+        :creator            bdr:CR86BFA5538EC8FB6D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN22947 , bdr:W3CN22947 ;
+        :workIsAbout        bdr:WA22919 .
+}

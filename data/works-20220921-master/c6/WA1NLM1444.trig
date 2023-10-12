@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1444 {
+    bda:LG34F4BA0C89D53D90
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD6B51FA9B16E6149
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-25T13:38:58.425Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1444"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1444  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1444 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c6/WA1NLM1444.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1444 ;
+        adm:logEntry        bda:LG34F4BA0C89D53D90 , bda:LGD6B51FA9B16E6149 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR151250F3F33442C5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR304E22C41BFEE137
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1444  a       :Work ;
+        skos:prefLabel      "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa legs bshad nyin byed dbang po'i snang ba las/_ye shes bstan pa zhes bya ba gnas bdun pa'i rnam par bshad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on the eight chapters of the Abhidharmakosa (chapter 1-3, 5,6 are missing in this volume) by the 19th century scholar Lobzang Trinle Namgyal of Sera Mey. Included other texts such as summary of Abhidharma, praise to spiritual teacher, rituals and Biography of the Indian mahasiddha Virupa."@en ;
+        :creator            bdr:CR151250F3F33442C5 , bdr:CR304E22C41BFEE137 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 , bdr:T61 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM1444 , bdr:W1NLM1444 ;
+        :workIsAbout        bdr:P3293 , bdr:WA19720 .
+}

@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA18127 {
+    bda:LG6955A45D7517DFC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-09T11:00:07.51Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7F2ED214F7665EE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA941998862A51367
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB1388DC9A1190B57
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T16:20:55.738Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEFD65EC874723839
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-09T11:01:35.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA18127  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA18127 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "74/WA18127.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA18127 ;
+        adm:logEntry        bda:LG6955A45D7517DFC2 , bda:LG7F2ED214F7665EE9 , bda:LGA941998862A51367 , bda:LGB1388DC9A1190B57 , bda:LGEFD65EC874723839 , bda:LGIM4D99209C62 , bda:LGIM74A445C794 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW18127  skos:altLabel  "拉伊对唱集"@zh-hans .
+
+    bdr:WA18127  a          :Work ;
+        skos:altLabel       "a mdo'i shags 'gyed la gzhas/-lab/ : 370"@bo-x-ewts , "la yi dui chang ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a mdo'i shags 'gyed la gzhas lab/"@bo-x-ewts , "拉伊对唱集"@zh-hans ;
+        :catalogInfo        "Collection of satirical poems from Amdo, Tibet."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW18127 , bdr:W18127 ;
+        :workIsAbout        bdr:T251 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1098 {
+    bda:LG3262F4D69D71A759
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG640A3857E7DE87DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-12T10:58:09.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1098"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1098  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1098 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/WA1NLM1098.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1098 ;
+        adm:logEntry        bda:LG3262F4D69D71A759 , bda:LG640A3857E7DE87DA , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB14ACBC148E91979
+        a                   :AgentAsCreator ;
+        :agent              bdr:P196 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1098  a       :Work ;
+        skos:prefLabel      "byang chub bde lam gyi khrid dmigs skyong tshul shin tu gsal bar bkod pa dge legs 'od snang 'gyed pa'i nyin byed/"@bo-x-ewts ;
+        :catalogInfo        "Stages of visualization of graduaded path by the fourth Zhamar Gedun Tenzin Gyatsho."@en ;
+        :creator            bdr:CRB14ACBC148E91979 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM1098 , bdr:W1NLM1098 ;
+        :workIsAbout        bdr:T475 .
+}

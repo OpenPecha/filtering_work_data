@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12661 {
+    bda:LG0F855F94660D025F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-08-07T14:56:35.744Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3498FBB2C7671790
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-14T15:06:01.65Z"^^xsd:dateTime ;
+        adm:logMessage      "changed accessioned to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6A62954941A97BB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGC151A89C0C4DAB26
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-08-08T14:20:28.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD66F93D72E7C2FDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T14:08:50.684Z"^^xsd:dateTime ;
+        adm:logMessage      "Added T10MS14462 (chos drug)"@en ;
+        adm:logWho          bdu:U00043 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12661  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12661 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "60/WA1KG12661.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12661 ;
+        adm:logEntry        bda:LG0F855F94660D025F , bda:LG3498FBB2C7671790 , bda:LG6A62954941A97BB9 , bda:LGC151A89C0C4DAB26 , bda:LGD66F93D72E7C2FDB , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2D9D450DEA704D09
+        a                   :AgentAsCreator ;
+        :agent              bdr:P466 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR82A04D741E5411AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P399 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW1KG12661  skos:altLabel  "'bri-gun bka'-brgyud-pa exegesis of mahamudra and na-ro chos drug practice"@en .
+
+    bdr:WA1KG12661  a       :Work ;
+        skos:prefLabel      "lnga ldan nor 'phreng gi gsal byed dang / chos drug gi khrid rim gsal byed rin po che dbang gi rgyal po'i 'phreng ba sogs/"@bo-x-ewts , "'bri-gun bka'-brgyud-pa exegesis of mahamudra and na-ro chos drug practice"@en ;
+        :catalogInfo        "Collection of writings on Mahamudra and six yogas of Naropa."@en ;
+        :creator            bdr:CR2D9D450DEA704D09 , bdr:CR82A04D741E5411AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1AT670 ;
+        :workHasInstance    bdr:MW1KG12661 , bdr:W1KG12661 ;
+        :workIsAbout        bdr:T199 , bdr:T394 .
+}

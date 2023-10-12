@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17181 {
+    bda:LG4209F75DF925EF77
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-28T12:29:43.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC24B47B2515B7F44
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-28T12:28:12.581Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC62CF4BCFF6CB2B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17181  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17181 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1f/WA8LS17181.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17181 ;
+        adm:logEntry        bda:LG4209F75DF925EF77 , bda:LGC24B47B2515B7F44 , bda:LGC62CF4BCFF6CB2B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR19C7F4F37A58A729
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7382DBFA0FB9AB3A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17181  a       :Work ;
+        skos:altLabel       "'phags pa'i gsol 'debs zhal mthong ma dang ser ba lam bsgyur/"@bo-x-ewts ;
+        skos:prefLabel      "gsol 'debs zhal mthong ma dang ser ba lam bsgyur/"@bo-x-ewts ;
+        :catalogInfo        "A reverential petition of Arya by Jigme Lingpa and golden water offering by Ju Mipham Namgyal Gyatso."@en ;
+        :creator            bdr:CR19C7F4F37A58A729 , bdr:CR7382DBFA0FB9AB3A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW8LS17181 , bdr:W8LS17181 ;
+        :workIsAbout        bdr:T26 .
+}

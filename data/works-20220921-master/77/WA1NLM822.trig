@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM822 {
+    bda:LG1C5C2DF738019673
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-11T09:39:23.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG93EE5FF0E10DE10E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-27T12:39:38.618Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD81EA9377DBBDB2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM822"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM822  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM822 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "77/WA1NLM822.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM822 ;
+        adm:logEntry        bda:LG1C5C2DF738019673 , bda:LG93EE5FF0E10DE10E , bda:LGD81EA9377DBBDB2F , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM350 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM822  a        :Work ;
+        skos:altLabel       "rta mchog rol ba'i sgrub thabs bskyed rim mdor bsdus bcas dngos grub sgo brgya 'byed pa'i lde mig sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sgrub thabs sna tshogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected sadhana focusing upon various deities"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1181 , bdr:T1338 .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24482 {
+    bda:LG5249062DFFFF198D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-07-25T14:41:13.089Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected identification of place"@en ;
+        adm:logWho          bdu:U00002 .
+
+    bda:LGC82B4F423CEF3ADD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA24482  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24482 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b6/WA24482.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24482 ;
+        adm:logEntry        bda:LG5249062DFFFF198D , bda:LGC82B4F423CEF3ADD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR7D548E67344C798D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24482  a          :Work ;
+        skos:prefLabel      "rdzong shod bsangs/"@bo-x-ewts ;
+        :creator            bdr:CR7D548E67344C798D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24482 ;
+        :workIsAbout        bdr:G3828 , bdr:T173 .
+}

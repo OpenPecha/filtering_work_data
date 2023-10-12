@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19790 {
+    bda:LG2A1FF1A8EE265A67
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-22T09:24:40.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA6323C698289605D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T16:34:45.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19790  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19790 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3e/WA8LS19790.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19790 ;
+        adm:logEntry        bda:LG2A1FF1A8EE265A67 , bda:LGA6323C698289605D , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS19790  a       :Work ;
+        skos:prefLabel      "lam rim rin po che'i rtsa ba rdo rje'i tshig rkang 'grel pa rin chen gsal ba'i sgron ma dang bcas nges pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary of Dorje Tshikang, a text on graduated path."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T238 ;
+        :workHasInstance    bdr:MW8LS19790 , bdr:W8LS19790 .
+}

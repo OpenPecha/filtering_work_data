@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21683 {
+    bda:LG40CABE3F1AAA85DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG4FAF6B35454D1A0F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-10-25T16:46:22.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8DE85B26EF233A14
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGCBA059D1FABBE2A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-12-18T11:19:39.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added person"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFBBF08583DB571B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-02T14:32:46.687Z"^^xsd:dateTime ;
+        adm:logMessage      "changed onhold to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21683  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21683 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "10/WA21683.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21683 ;
+        adm:logEntry        bda:LG40CABE3F1AAA85DE , bda:LG4FAF6B35454D1A0F , bda:LG8DE85B26EF233A14 , bda:LGCBA059D1FABBE2A0 , bda:LGFBBF08583DB571B5 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12668 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW21683  skos:altLabel  "苏吉尼玛"@zh-hans .
+
+    bdr:WA21683  a          :Work ;
+        skos:altLabel       "su ji ni ma"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gzugs kyi nyi ma'i rnam thar/"@bo-x-ewts , "苏吉尼玛"@zh-hans ;
+        :catalogInfo        "Folk opera based on the spiritual biography of Gautama Sakyamuni Buddha."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P1KG20918 , bdr:T2034 .
+}

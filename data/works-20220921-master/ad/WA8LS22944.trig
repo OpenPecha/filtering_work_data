@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22944 {
+    bda:LGCBDFC89EA5EE663E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-02T11:49:06.878Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE4D39E43B66DF5D3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-02T11:50:11.844Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS22944  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22944 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ad/WA8LS22944.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22944 ;
+        adm:logEntry        bda:LGCBDFC89EA5EE663E , bda:LGE4D39E43B66DF5D3 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA8LS22929 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRCAF281C382148F38
+        a                   :AgentAsCreator ;
+        :agent              bdr:P249 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22944  a       :Work ;
+        skos:altLabel       "phar phyin skor/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad 'od dkar phreng ba/ (5)"@bo-x-ewts ;
+        :catalogInfo        "The selected works on Paramita."@en ;
+        :creator            bdr:CRCAF281C382148F38 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS22944 ;
+        :workIsAbout        bdr:T36 .
+}

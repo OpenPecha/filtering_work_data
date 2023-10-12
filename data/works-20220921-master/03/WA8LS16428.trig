@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16428 {
+    bda:LG9096A1D008CBF7A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T11:49:12.718Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA46F2FDA7E425076
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-30T14:34:47.497Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFE2B34D814C82A0B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-30T14:35:43.557Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16428  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16428 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "03/WA8LS16428.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16428 ;
+        adm:logEntry        bda:LG9096A1D008CBF7A0 , bda:LGA46F2FDA7E425076 , bda:LGFE2B34D814C82A0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC8310A1DCB70A513
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1686 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16428  a       :Work ;
+        skos:altLabel       "bka' brgyad bder gshegs yongs 'dus chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "klong gsal chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Rediscovered teachings of Longsel Nyingpo, scribed by Pedma Kunsang Tobchen and Tashi Lodro."@en ;
+        :creator            bdr:CRC8310A1DCB70A513 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 , bdr:T448 ;
+        :workHasInstance    bdr:MW8LS16428 , bdr:W8LS16428 .
+}

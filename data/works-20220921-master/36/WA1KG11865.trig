@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG11865 {
+    bda:LG42687780E8C7D15B
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-07T15:04:48.681Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5EEC7A178D1EC8B4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-07T15:05:31.467Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6D2435D2CBFA1428
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGD257F395150E4582
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-27T14:42:37.98Z"^^xsd:dateTime ;
+        adm:logMessage      "provisional"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG11865  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG11865 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "36/WA1KG11865.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG11865 ;
+        adm:logEntry        bda:LG42687780E8C7D15B , bda:LG5EEC7A178D1EC8B4 , bda:LG6D2435D2CBFA1428 , bda:LGD257F395150E4582 , bda:LGIM569A8014B1 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG11865  a       :Work ;
+        skos:altLabel       "Ritual and liturgical texts of the ʾBri-guṅ Bkaʾ-brgyud-pa tradition."@en-x-mixed ;
+        skos:prefLabel      "'bri gung bka' brgyud kyi 'don chog skor/"@bo-x-ewts , "ritual and liturgical texts of the 'bri-gun bka'-brgyud-pa tradition"@en ;
+        :catalogInfo        "Collection of ritual and liturgical texts of the Drikung Kagyu tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1KG11865 , bdr:W1KG11865 ;
+        :workIsAbout        bdr:T1190 .
+}

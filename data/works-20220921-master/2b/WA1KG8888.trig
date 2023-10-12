@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG8888 {
+    bda:LG11C8D6DD27C20901
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-07T11:05:06.56Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8FF393AA0B454EFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-03-07T11:06:52.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBCEB7E4D6C42FF46
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-03T16:50:10.059Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE16AD9C9B0A8E1D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T09:11:34.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG8888  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG8888 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "2b/WA1KG8888.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG8888 ;
+        adm:logEntry        bda:LG11C8D6DD27C20901 , bda:LG8FF393AA0B454EFA , bda:LGBCEB7E4D6C42FF46 , bda:LGE16AD9C9B0A8E1D3 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B3964A75164BEE5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7297 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CRB9320573A8029B88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG8888  a        :Work ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan ces bya ba'i 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "mngon par rtogs pa'i rgyan ces bya ba'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara of the Prajnaparamita."@en ;
+        :creator            bdr:CR5B3964A75164BEE5 , bdr:CRB9320573A8029B88 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG8888 , bdr:W1KG8888 ;
+        :workIsAbout        bdr:WA19716 .
+}

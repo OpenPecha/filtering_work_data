@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32777 {
+    bda:LG49B1EFC0CAA70743
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-27T16:05:40.631Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD9215331A5E38FE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGE0F2F0AB57291D22
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-27T16:06:50.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32777  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32777 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "73/WA8LS32777.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32777 ;
+        adm:logEntry        bda:LG49B1EFC0CAA70743 , bda:LGD9215331A5E38FE4 , bda:LGE0F2F0AB57291D22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA81F92A3B8CC84EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32777  a       :Work ;
+        skos:altLabel       "rtsis kyi bstan bcos mkhas pa'i snying nor gyi dkar chag legs par bshad pa chos dung g.yas 'khyil/"@bo-x-ewts ;
+        skos:prefLabel      "thu'u bkwan rtsis gzhung /"@bo-x-ewts ;
+        :catalogInfo        "Astronomy texts written by Thuken Losang Chokyi Nyima."@en ;
+        :creator            bdr:CRA81F92A3B8CC84EC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T203 ;
+        :workHasInstance    bdr:MW8LS32777 , bdr:W8LS32777 .
+}

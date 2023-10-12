@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22781 {
+    bda:LG05BBAF413283ADB1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-01T12:16:25.32Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG14F2033B338BD314
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-30T09:45:08.996Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG677662D6F474AF7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFB3F76A03AB369B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-01T14:23:12.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22781  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22781 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4b/WA3CN22781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22781 ;
+        adm:logEntry        bda:LG05BBAF413283ADB1 , bda:LG14F2033B338BD314 , bda:LG677662D6F474AF7D , bda:LGFB3F76A03AB369B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR915E442EEFBB55E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3354 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22781  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ blo bzang tshul khrims/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of Geluk master Drupkhang Lobsang Tsultrim (18th Cent.)"@en ;
+        :creator            bdr:CR915E442EEFBB55E3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN22781 , bdr:W3CN22781 ;
+        :workIsAbout        bdr:T819 .
+}

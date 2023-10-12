@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17966 {
+    bda:LGA59934F162759496
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-29T10:35:18.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFC647854B9F3AB22
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-29T10:34:30.255Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFDEFC6EA5C469181
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T11:21:47.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS17966  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17966 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "36/WA8LS17966.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17966 ;
+        adm:logEntry        bda:LGA59934F162759496 , bda:LGFC647854B9F3AB22 , bda:LGFDEFC6EA5C469181 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR537616172C51F139
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS17967 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17966  a       :Work ;
+        skos:altLabel       "bod dmag gcig gi mi tshe/"@bo-x-ewts , "sku srung ru dpon bsod nams bkra shis kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "bsod nams bkra shis kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "An autobiography of Kuzung Rupon Sonam Tashi or Rupon Sotey who served as commander of Tibetan government's bodyguard. This work also included account of Tibetan army."@en ;
+        :creator            bdr:CR537616172C51F139 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS17966 , bdr:W8LS17966 ;
+        :workIsAbout        bdr:P8LS17967 , bdr:T2214 .
+}

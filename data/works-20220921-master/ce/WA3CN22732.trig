@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22732 {
+    bda:LG1E1DA7C2C18722DC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-30T23:48:50.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG26F3511F07C76051
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-23T10:14:44.236Z"^^xsd:dateTime ;
+        adm:logMessage      "catalloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB668A1CDE3EFCD94
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE1ED61B578C8E303
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-01T13:19:32.152Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22732  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22732 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ce/WA3CN22732.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22732 ;
+        adm:logEntry        bda:LG1E1DA7C2C18722DC , bda:LG26F3511F07C76051 , bda:LGB668A1CDE3EFCD94 , bda:LGE1ED61B578C8E303 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00CHZ0103343 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR9511C66339967FCB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22732  a       :Work ;
+        skos:prefLabel      "rgya gar chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "History of Buddhism in India by Jonang Jetsun Taranatha (1575-1634)."@en ;
+        :creator            bdr:CR9511C66339967FCB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW3CN22732 ;
+        :workIsAbout        bdr:G3188 .
+}

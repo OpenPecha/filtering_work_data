@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25902 {
+    bda:LG6357D31C29A3E3A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-03-02T12:05:15.825Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged & released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6F02A9C468624604
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T17:56:05.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG71C64C2388532E93
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-02T13:20:55.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9E8E5C6D06E674CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T11:35:32.552Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25902  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25902 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d8/WA3CN25902.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25902 ;
+        adm:logEntry        bda:LG6357D31C29A3E3A6 , bda:LG6F02A9C468624604 , bda:LG71C64C2388532E93 , bda:LG9E8E5C6D06E674CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0A657FE331E29760
+        a                   :AgentAsCreator ;
+        :agent              bdr:P219 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW3CN25902  skos:altLabel  "汉文史籍吐蕃资料选译"@zh-hans .
+
+    bdr:WA3CN25902  a       :Work ;
+        skos:prefLabel      "rgya'i lo rgyus las byung ba'i bod kyi rgyal rabs lo rgyus skor/"@bo-x-ewts , "汉文史籍吐蕃资料选译"@zh-hans ;
+        :catalogInfo        "Tibetan history from Chinese history document. Translated to Tibetan by Gedun Chophel and edited by Dorjegyal and Sangyegyal."@en ;
+        :creator            bdr:CR0A657FE331E29760 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN25902 , bdr:W3CN25902 ;
+        :workIsAbout        bdr:T1113 .
+}

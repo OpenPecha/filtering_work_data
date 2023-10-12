@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23903 {
+    bda:LG6936DC084AD43343
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T14:27:19.621Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGEE36C5AFD082667E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23903  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23903 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "25/WA23903.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23903 ;
+        adm:logEntry        bda:LG6936DC084AD43343 , bda:LGEE36C5AFD082667E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA23903  a          :Work ;
+        skos:prefLabel      "gtor ma brgya rtsa 'bri gung lugs/"@bo-x-ewts ;
+        :catalogInfo        "Liturgical texts for performing torma rituals according to the Drikung Kagyu order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23903 , bdr:W23903 ;
+        :workIsAbout        bdr:T1366 .
+}

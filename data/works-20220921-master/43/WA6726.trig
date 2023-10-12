@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA6726 {
+    bda:LGF199B020C0D62055
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA6726  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA6726 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "43/WA6726.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA6726 ;
+        adm:logEntry        bda:LGF199B020C0D62055 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR855B98F931A47D15
+        a                   :AgentAsCreator ;
+        :agent              bdr:P290 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV28F6615D5DFFF446
+        a                   :CompletedEvent ;
+        :onYear             "1837"^^xsd:gYear .
+
+    bdr:WA6726  a           :Work ;
+        skos:altLabel       "rje btsun ma ku ru kulle gsang sgrub lha lnga'i sgrub thabs khams gsum dbang du sdud pa'i ye shes lcags kyu/"@bo-x-ewts ;
+        skos:prefLabel      "ku ru kulle gsang sgrub lha lnga'i sgrub thabs/"@bo-x-ewts ;
+        :creator            bdr:CR855B98F931A47D15 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV28F6615D5DFFF446 ;
+        :workHasInstance    bdr:MW6726 .
+}

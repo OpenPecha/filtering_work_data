@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ1098 {
+    bda:LG14479748A9C76B4A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-21T10:34:12.755Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG37664A60342A6023
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-10-21T10:53:20.538Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7F583BBAE8BC1EAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-21T10:51:23.072Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE76B8C4EF1E44ECB
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-27T10:03:22.982Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA4CZ1098  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ1098 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e3/WA4CZ1098.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ1098 ;
+        adm:logEntry        bda:LG14479748A9C76B4A , bda:LG37664A60342A6023 , bda:LG7F583BBAE8BC1EAD , bda:LGE76B8C4EF1E44ECB , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF908D4653F2B5578
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ1109 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ1098  a        :Work ;
+        skos:altLabel       "dpal ldan bla ma dam pa'i mdzad rnam tshigs bcad du bsdeb pa mA li ka'i do shal/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'dun rin chen gyi rnam thar mA li ka'i do shal/"@bo-x-ewts ;
+        :catalogInfo        "Verse biography of Je Gendun Rinchen."@en ;
+        :creator            bdr:CRF908D4653F2B5578 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ1098 , bdr:W4CZ1098 ;
+        :workIsAbout        bdr:P758 .
+}

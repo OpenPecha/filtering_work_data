@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1804 {
+    bda:LG2A000F16D2839D53
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-15T09:23:54.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG907FC69ECA400D87
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1804"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1804  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1804 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "32/WA1NLM1804.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1804 ;
+        adm:logEntry        bda:LG2A000F16D2839D53 , bda:LG907FC69ECA400D87 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1804  a       :Work ;
+        skos:prefLabel      "stobs bzhi bshags pa'i sgo nas sdig pa dag pa'i gnad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thams cad mkhyen pa sdig sgrib kun sel/ 2 grwa lnga'i mar me nag po bskor ba'i tshul/ 3 lha mo'i bskang gso mdor bsdus/ 4 rma bya'i ming can gyi bsang dang gsol mchod 'bul bar 'dod pa/ 5 dgun gyi rgyal mo la bsangs gtong bar 'dod pa/ 6 dam can gyi dus rgyus gsal ba'i me long 'am dregs byed pho nya/ 7 bdag sogs nam mkha'i mthas gtugs 'gro ba kun/ 8 'dus pa'i rgyud kyi 'don thabs mdor bsdus pa/ 9 khrus gsol bya ba/ 10 drin can rtsa ba'i bla ma'i myur byon/ 11 dpal ldan lha mo la gtor ma 'bul par 'dod pa/ 12 'phags pa bzang po spyod pa'i smon lam gyi rgyal po'i gser skyems 'bul bar 'dod pa/ 13 'phags pa gu ru pad+ma 'byung gnas gter bka'/ rin po che gzungs bsdus bka' 'gyur bstan 'gyur bshad pa'i le'u/ 14 cha gsum gtor ma/ 15 gdugs dkar la brten nas glud rdzongs bya tshul mun sel sgron me/ 16 mi phyug la god kha bsrung ba'i man ngag 17 rgyal sras rin po che'i mdzad pa sgrol ma'i maN+Dal bzhi pa/ 18 rta mgrin gsang sgrub kyi chos skor las/ tshes bcu sogs kyi skabs su nye bar mkho ba slob dpon gyi gsol 'debs bsam pa lhun 'grub mar grags pa/ 19 dam can rdo rje legs pa la mchod gtor 'bul zhing 'phrin las bcol ba'i tshul dpa' bo'i sgra dbyangs/ 20 phar phyin gus 'dud/ 21 rje btsun rdo rje rnal 'byor ma'i tshogs mchod nyung bsdus/ 22 rje btsun nA ro mkha' spyod kyi sgrub thabs shin tu bsdus pa mkha' spyod bsgrod pa'i them skas/ 23 dpal ldan lha mo la zhi ba'i me mchod 'bul tshul mi mthun kun 'joms/ 24 rgyas pa bgegs gtor/ 25 bse rag 'byung po'i gnod pa zhi par byed pa'i zab mo/ 26 spyi'i sde brgyad kyi gser skyems/ 27 gu ru pad+ma 'byung gnas mdzad pa'i pha mes mtshun gsos bsangs mchod/"@en , "Confession of misdeeds on the basis of four power; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1804 , bdr:W1NLM1804 ;
+        :workIsAbout        bdr:T337 .
+}

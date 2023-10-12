@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5234 {
+    bda:LG6FF3639247472534
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-25T11:27:49.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB14DE748B6084086
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:41:54.41Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC490EAF2CAA1C9D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-26T16:38:20.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5234  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5234 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e2/WA3CN5234.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5234 ;
+        adm:logEntry        bda:LG6FF3639247472534 , bda:LGB14DE748B6084086 , bda:LGC490EAF2CAA1C9D3 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC7F695AF09623CE2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228846 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5234  a        :Work ;
+        skos:prefLabel      "nang bstan gso dpyad ke la sha'i chu rgyun/"@bo-x-ewts ;
+        :catalogInfo        "Method of medical treatment on the basis of Budhist philosophy by Drodul Namgyal."@en ;
+        :creator            bdr:CRC7F695AF09623CE2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN5234 , bdr:W3CN5234 ;
+        :workIsAbout        bdr:T770 , bdr:T94 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM224 {
+    bda:LG4047554910E49C4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG40FF06776C336E36
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-16T10:33:42.383Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG86B0BFE715056304
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T11:29:01.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM224"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM224  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM224 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9b/WA1NLM224.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM224 ;
+        adm:logEntry        bda:LG4047554910E49C4B , bda:LG40FF06776C336E36 , bda:LG86B0BFE715056304 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE828A8C17922DA63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM224  a        :Work ;
+        skos:altLabel       "dbu ma 'jug pa'i mtha' dpyod lung rigs gter mdzod zab don kun gsal skal bzang 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma 'jug pa'i mtha' dpyod lung rigs gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "A detailed analysis on the Madhyamakavatara of Candrakirti by Jamyang Zhepai Dorje Ngagwang Tsondru (1648-1721/2)."@en ;
+        :creator            bdr:CRE828A8C17922DA63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM224 , bdr:MW4CZ57174 , bdr:W1NLM224 , bdr:W4CZ57174 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19458 .
+}

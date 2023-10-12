@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76521 {
+    bda:LG4A0A262FE83130C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-10T14:15:27.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8528DE9B9400F0E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-10T14:14:54.557Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76521  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76521 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "70/WA8LS76521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76521 ;
+        adm:logEntry        bda:LG4A0A262FE83130C7 , bda:LG8528DE9B9400F0E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR08CCCEE58318B9D5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG3490 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR0DFF944A254250A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1790 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR1F3054348EF86681
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9963 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR76343E88274FE527
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76521  a       :Work ;
+        skos:prefLabel      "sher 'byung blo gros kyi bsdus don/ kha che gzhon nu dpal gyi bsdus don/ jo bo rje'i bsdus don/ shes rab sgron me'i phreng ba bcas/"@bo-x-ewts ;
+        :catalogInfo        "A summary of Abhisamayalankara by Sherjung Lodro, Khache Pandita Buddha Shrijnana, Atisha and Kumarashribhadra."@en ;
+        :creator            bdr:CR08CCCEE58318B9D5 , bdr:CR0DFF944A254250A0 , bdr:CR1F3054348EF86681 , bdr:CR76343E88274FE527 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW8LS76521 , bdr:W8LS76521 ;
+        :workIsAbout        bdr:T2005 , bdr:WA19716 .
+}

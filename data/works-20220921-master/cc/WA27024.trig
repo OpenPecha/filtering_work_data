@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27024 {
+    bda:LG0351C6A987E30B35
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG23F1578F9EDDAEF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T14:46:49.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added place G#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG35FDE022B95ED928
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-07-11T09:04:13.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG61F03C067B98D343
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7979372F58F971CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-24T14:27:22.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added bib. title"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA27024  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27024 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "cc/WA27024.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27024 ;
+        adm:logEntry        bda:LG0351C6A987E30B35 , bda:LG23F1578F9EDDAEF2 , bda:LG35FDE022B95ED928 , bda:LG61F03C067B98D343 , bda:LG7979372F58F971CC , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ689 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF776F34AB3B34B63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA27024  a          :Work ;
+        skos:altLabel       "myang yul stod smad bar gsum gyi ngo mtshar gtam gyi legs bshad mkhas pa'i 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "myang chos 'byung /"@bo-x-ewts ;
+        :creator            bdr:CRF776F34AB3B34B63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workIsAbout        bdr:G3CN75 .
+}

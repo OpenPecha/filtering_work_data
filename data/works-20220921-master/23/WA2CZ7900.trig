@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7900 {
+    bda:LG6F036F37F211AB1B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-15T11:39:03.384Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG75F015564C8F1160
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-09T11:36:09.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG824742A4BD8CE3E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-09-09T11:37:15.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFDF2D1EB08BD1E05
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T14:00:11.846Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2CZ7900  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7900 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "23/WA2CZ7900.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7900 ;
+        adm:logEntry        bda:LG6F036F37F211AB1B , bda:LG75F015564C8F1160 , bda:LG824742A4BD8CE3E7 , bda:LGFDF2D1EB08BD1E05 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR98ECBC9A44B54933
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1573 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ7900  a        :Work ;
+        skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan rtsa 'grel spyi don rnam bshad snying po rgyan gyi snang ba/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin spyi don/"@bo-x-ewts ;
+        :catalogInfo        "Syllabus for the study of Prajnaparamita philosophy at Mey Dratsang of Sera Monastery."@en ;
+        :creator            bdr:CR98ECBC9A44B54933 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1763 ;
+        :workHasInstance    bdr:MW2CZ7900 , bdr:MW4CZ307787 , bdr:W2CZ7900 , bdr:W4CZ307787 ;
+        :workIsAbout        bdr:T447 , bdr:WA19716 .
+}

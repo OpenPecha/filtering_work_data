@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20177 {
+    bda:LG04EEE42EA4223896
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-03T12:16:46.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG05C2C95ABA7D027C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T14:16:14.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFD6660A7E8CF6894
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T15:10:31.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20177  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20177 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c8/WA8LS20177.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20177 ;
+        adm:logEntry        bda:LG04EEE42EA4223896 , bda:LG05C2C95ABA7D027C , bda:LGFD6660A7E8CF6894 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR34302A3D245DC4AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2400 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20177  a       :Work ;
+        skos:prefLabel      "dam pa'i gsung rgyun zin bris su btab pa bskyud byang dran pa'i lcags kyu/"@bo-x-ewts ;
+        :catalogInfo        "Notes on the three vows; author signed as Gyal."@en ;
+        :creator            bdr:CR34302A3D245DC4AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW8LS20177 , bdr:W8LS20177 ;
+        :workIsAbout        bdr:T201 .
+}

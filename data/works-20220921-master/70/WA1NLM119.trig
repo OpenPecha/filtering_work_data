@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM119 {
+    bda:LG482E69F571553346
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T08:40:16.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAE1CD8B7E6735777
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-30T09:02:35.801Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB1D25A63ADB6A333
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM119"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM119  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM119 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "70/WA1NLM119.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM119 ;
+        adm:logEntry        bda:LG482E69F571553346 , bda:LGAE1CD8B7E6735777 , bda:LGB1D25A63ADB6A333 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM119  a        :Work ;
+        skos:prefLabel      "dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dice prognostication through deity Shri devi."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1171 , bdr:T67 , bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM119 , bdr:MW1NLM1324 , bdr:MW1NLM1597 , bdr:MW1NLM1664 , bdr:W1NLM119 , bdr:W1NLM1324 , bdr:W1NLM1597 , bdr:W1NLM1664 ;
+        :workIsAbout        bdr:T401 , bdr:T405 , bdr:T926 .
+}

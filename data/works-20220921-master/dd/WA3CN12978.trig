@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN12978 {
+    bda:LG47745EFF676228F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T12:56:41.423Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4B7C16AF1A13A2E8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-29T12:58:42.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG83045194006DA991
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-29T13:05:37.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN12978  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN12978 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dd/WA3CN12978.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN12978 ;
+        adm:logEntry        bda:LG47745EFF676228F6 , bda:LG4B7C16AF1A13A2E8 , bda:LG83045194006DA991 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR89F6ABF8D78AA977
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9336 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN12978  a       :Work ;
+        skos:altLabel       "dus rabs bcu gsum par tha snyad rig gnas bod la ji ltar slebs pa las 'phros pa'i dpyad rtsom dang gzhan/"@bo-x-ewts ;
+        skos:prefLabel      "rig pa'i khye'u/"@bo-x-ewts ;
+        :catalogInfo        "Birth of the arts. Papers on the arrival of literary field of knowledge in Tibet during the 13th century and beyond, by modern scholar of tibetology Gedun Rabsal."@en ;
+        :creator            bdr:CR89F6ABF8D78AA977 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN12978 , bdr:W3CN12978 .
+}

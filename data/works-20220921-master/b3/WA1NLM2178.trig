@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2178 {
+    bda:LG2125805DB7AD3AA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-10T09:36:41.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDDCFA83E4006F7B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2178"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2178  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2178 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b3/WA1NLM2178.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2178 ;
+        adm:logEntry        bda:LG2125805DB7AD3AA0 , bda:LGDDCFA83E4006F7B5 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2178  a       :Work ;
+        skos:prefLabel      "'byung rtsis lugs kyi lo keg brtag pa man ngag don bsdus sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal po'i gsol mchod dregs pa'i re ba skong byed/ 2 dur rdzongs / tshe 'das 'dod yong lnga/ dam can chos kyi rgyal po'i sgo nas drag po'i las gshin rje gshed bsad pa'i mdos/ gshin rje'i gshed kyi zhags mchod mdo/ 3 'brul gtor gtong tshul/ 4 mi skar mi chen lnga po la gser skyems 'bul tshul bdud rtsi'i yang zhun/ 5 'go ba'i lha lnga'i tshogs mchod bya tshul dngos grub kun 'byung / 6 mnan gdad rul bshig pa'i gdams pa zab mo'i sbyor ngan kun 'dzin/ 7 g.yang 'gugs kyi sngon 'gro gab 'dre the'u rang byung po bse rags rkun po sri ngan nan pa'i bcos thabs/ 8 'go ba'i lha lnga'i gshegs gtor 'bul tshul/ 9 'go ba'i lha lnga'i gshegs gtor 'bul tshul 'don don myur 'grub/ 10 bdag gi ston pa sangs rgyas bcom ldan 'das/ 11 chos skyong dregs pa lcam sring la mchod gtor 'bul zhing 'phrin las bcol pa'i tshigs su bcad pa las bzhi lhun grub ma/ 12 chos skyong lcam sring la gser skyems 'bul tshul 'phrin las rtsi shing / 13 'go ba'i lha bsrung 'bros pa 'gugs byed kyi gser gyi lcags kyu/ 14 rje btsun yid bzhin 'khor lo'i sgo nas tshe'i dngos grub sgrub par byed par yi ge 'chi med dga' ston/"@bo-x-ewts , "Examination of year and obstacles; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2178 , bdr:W1NLM2178 ;
+        :workIsAbout        bdr:T1234 , bdr:T1443 .
+}

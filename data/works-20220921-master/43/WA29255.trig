@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29255 {
+    bda:LGA48BCB041048765E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T10:36:51.305Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB5750FB06D580F4A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA29255  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29255 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/WA29255.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29255 ;
+        adm:logEntry        bda:LGA48BCB041048765E , bda:LGB5750FB06D580F4A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE9B5D618B4FE8347
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9611 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29255  skos:altLabel  "advanced dzongkha dictionary"@en .
+
+    bdr:WA29255  a          :Work ;
+        skos:prefLabel      "rdzong kha'i tshig mdzod chen mo/"@bo-x-ewts , "advanced dzongkha dictionary"@en ;
+        :catalogInfo        "Advanced Dzongkha to Dzongkha dictionary."@en ;
+        :creator            bdr:CRE9B5D618B4FE8347 ;
+        :isRoot             true ;
+        :language           bdr:LangDz ;
+        :workGenre          bdr:T220 ;
+        :workHasInstance    bdr:MW29255 ;
+        :workIsAbout        bdr:T2416 .
+}

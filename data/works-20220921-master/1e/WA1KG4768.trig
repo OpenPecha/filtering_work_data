@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4768 {
+    bda:LG367A1186D8B4E4E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-13T16:57:50.735Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5ECDBF2A07D4C50C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-04-14T10:00:29.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD1F1A4BE78F90D4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGE46F903D1EB749BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T16:21:16.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added print"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4768  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4768 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "1e/WA1KG4768.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4768 ;
+        adm:logEntry        bda:LG367A1186D8B4E4E5 , bda:LG5ECDBF2A07D4C50C , bda:LGD1F1A4BE78F90D4F , bda:LGE46F903D1EB749BB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8B2357E3FF4949DA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG4768  skos:altLabel  "liturgical texts for the performance of the vajrakila rites of the yang gsang bla med cycle"@en .
+
+    bdr:WA1KG4768  a        :Work ;
+        skos:altLabel       "Rdo rje phur pa yaṅ gsaṅ bla med sogs kyi ʾdon chaʾi skor :liturgical texts for the performance of the Vajrakīla rites of the Yaṅ gsaṅ bla med cycle /revealed by Gter-ston Ratna-gliṅ-pa."@en-x-mixed ;
+        skos:prefLabel      "rdo rje phur pa yang gsang bla med sogs kyi 'don cha'i skor/"@bo-x-ewts , "liturgical texts for the performance of the vajrakila rites of the yang gsang bla med cycle"@en ;
+        :catalogInfo        "Collection of liturgical texts for the performance of Vajrakila rites of the Yangsang Lame cycle. Revealed by Terton Ratna Lingpa (1403-1478)."@en ;
+        :creator            bdr:CR8B2357E3FF4949DA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1KG4768 , bdr:W1KG4768 ;
+        :workIsAbout        bdr:T1239 , bdr:T1786 .
+}

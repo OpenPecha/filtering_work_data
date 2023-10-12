@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238110 {
+    bda:LG3D8B59C9329D3196
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-10-06T08:43:43.557Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG73D49A11AC2D1819
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-06T08:53:50.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG238110  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238110 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fc/WA2KG238110.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238110 ;
+        adm:logEntry        bda:LG3D8B59C9329D3196 , bda:LG73D49A11AC2D1819 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1AC54D8043F9E4A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238110  a      :Work ;
+        skos:prefLabel      "spyir bstan gyi rnam bzhag 'dul gzhung gsal byed/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Vinaya Sutra by Khalka Ngawang Palden (b. 1797)."@en ;
+        :creator            bdr:CR1AC54D8043F9E4A9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW2KG238110 , bdr:W2KG238110 ;
+        :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
+}

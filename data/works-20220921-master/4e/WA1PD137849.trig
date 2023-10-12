@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD137849 {
+    bda:LG24376514BDF66440
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-13T18:15:12.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9B023B77C7B870A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-08-30T16:46:18.373Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDF4287D31E087C20
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T23:03:37.471Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE74316E3B9B7DC72
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-06T11:18:35.617Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFC82FB4BBDC89C63
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-29T23:03:08.75Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFF3261E084DD5313
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-25T05:13:19.163Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1PD137849  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD137849 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "4e/WA1PD137849.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD137849 ;
+        adm:logEntry        bda:LG24376514BDF66440 , bda:LG9B023B77C7B870A8 , bda:LGDF4287D31E087C20 , bda:LGE74316E3B9B7DC72 , bda:LGFC82FB4BBDC89C63 , bda:LGFF3261E084DD5313 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR937FBB1A323EE3C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229172 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD137849  skos:altLabel  "藏传绘画技巧"@zh-hans .
+
+    bdr:WA1PD137849  a      :Work ;
+        skos:altLabel       "zang chuan hui hua ji qiao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod brgyud ri mo'i lag rtsal/"@bo-x-ewts , "藏传绘画技巧"@zh-hans ;
+        :catalogInfo        "Technique and Illustration of drawing Tibetan traditional paintings."@en ;
+        :creator            bdr:CR937FBB1A323EE3C9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1PD137849 , bdr:W1PD137849 ;
+        :workIsAbout        bdr:T1845 , bdr:T350 .
+}

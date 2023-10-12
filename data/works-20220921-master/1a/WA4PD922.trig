@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD922 {
+    bda:LG6281A9020FA4E17F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-26T20:31:07.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG8E0B64B93015AF6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEE6C0E75D0909FAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T13:24:43.919Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF5F63AD7CAE01501
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-08T22:36:44.732Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD922  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD922 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1a/WA4PD922.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD922 ;
+        adm:logEntry        bda:LG6281A9020FA4E17F , bda:LG8E0B64B93015AF6F , bda:LGEE6C0E75D0909FAB , bda:LGF5F63AD7CAE01501 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR08E1A85373B36E11
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD922  a         :Work ;
+        skos:prefLabel      "rgyal sras thogs med kyi gsung phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of minor writings of Kadampa Master, Gyalse Thogme Zangpopal (1295-1985)."@en ;
+        :creator            bdr:CR08E1A85373B36E11 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW4PD922 , bdr:W4PD922 ;
+        :workIsAbout        bdr:T791 .
+}

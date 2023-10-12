@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3031 {
+    bda:LG003E5618CEF2378D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T15:25:54.167Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG13E3F457F655AE7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-29T15:09:17.842Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5CFA7A46976ED60B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-24T09:01:29.226Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5FC571F76F82E015
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T12:01:06.209Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9F6005887A269B0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T15:19:52.909Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status - accessioned to Released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEDB2D29A0F70E17A
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-09-29T15:41:31.798Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN3031  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3031 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "d4/WA3CN3031.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3031 ;
+        adm:logEntry        bda:LG003E5618CEF2378D , bda:LG13E3F457F655AE7D , bda:LG5CFA7A46976ED60B , bda:LG5FC571F76F82E015 , bda:LG9F6005887A269B0C , bda:LGEDB2D29A0F70E17A , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1016EC759C11A9B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAB7888AB71962EC4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB77F178292F37B13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P268 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3031  a        :Work ;
+        skos:altLabel       "gangs ljongs bstan pa'i sgron me mkhas grub chen po dngul chu yab sras kyi gsung 'bum ngo mtshar legs bshad 'phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dngul chu yab sras/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by scholars from Ngulchu Monastery, Ngulchu Dharmabhadra (1772-1851), Yangchan Trubpa Dorje (1809-1887) & Ngagwang Dorje (1720-1803)."@en ;
+        :creator            bdr:CR1016EC759C11A9B8 , bdr:CRAB7888AB71962EC4 , bdr:CRB77F178292F37B13 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN3031 , bdr:W3CN3031 ;
+        :workIsAbout        bdr:T819 .
+}

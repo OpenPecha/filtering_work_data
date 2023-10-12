@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30320 {
+    bda:LG10C5E29CA67DD8E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-09T14:37:49.476Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG2F63FC45614143AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-01-16T14:42:29.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG76F30673B03A72DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA2DDC6F7E2F35FFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-15T11:08:42.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added t1181"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA30320  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30320 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/WA30320.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30320 ;
+        adm:logEntry        bda:LG10C5E29CA67DD8E5 , bda:LG2F63FC45614143AE , bda:LG76F30673B03A72DF , bda:LGA2DDC6F7E2F35FFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW30320  skos:altLabel  "liturgical texts focussing upon the propitiation of mahakala according to the traditions of the kam-tshan"@en-x-mixed .
+
+    bdr:WA30320  a          :Work ;
+        skos:prefLabel      "mgon po ber nag can gyi sgrub skor/"@bo-x-ewts , "liturgical texts focussing upon the propitiation of mahakala according to the traditions of the kam-tshan"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW30320 , bdr:MW4CZ355767 , bdr:W30320 , bdr:W4CZ355767 ;
+        :workIsAbout        bdr:T1181 , bdr:T2338 .
+}

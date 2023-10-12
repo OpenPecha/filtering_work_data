@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18145 {
+    bda:LG05EC1337B3E17F02
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG15022234AD7FE671
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-29T09:17:07.585Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG24C90DB268C03D53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-29T09:15:50.864Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS18145  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18145 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cd/WA8LS18145.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18145 ;
+        adm:logEntry        bda:LG05EC1337B3E17F02 , bda:LG15022234AD7FE671 , bda:LG24C90DB268C03D53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1AAB1222C0F0DA44
+        a                   :AgentAsCreator ;
+        :agent              bdr:P305 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18145  a       :Work ;
+        skos:altLabel       "slob dpon gsang ba 'dus pa'i mdzad pa'i lha bsrung 'khrugs sel/"@bo-x-ewts ;
+        skos:prefLabel      "lha bsrung 'khrugs sel/"@bo-x-ewts ;
+        :catalogInfo        "A wrathful propitiation of protector by Losang Gyeltsan Senge."@en ;
+        :creator            bdr:CR1AAB1222C0F0DA44 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS18145 , bdr:W8LS18145 ;
+        :workIsAbout        bdr:T339 , bdr:T406 .
+}

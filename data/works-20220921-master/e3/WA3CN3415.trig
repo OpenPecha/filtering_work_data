@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3415 {
+    bda:LG5D3C9DB7131E6DD1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T15:18:41.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7423638BC7B6E4D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-21T10:42:06.564Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8D2C8A21CCEA220C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-09T15:33:09.067Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC1A6278FC71B5576
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN3415  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3415 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e3/WA3CN3415.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3415 ;
+        adm:logEntry        bda:LG5D3C9DB7131E6DD1 , bda:LG7423638BC7B6E4D7 , bda:LG8D2C8A21CCEA220C , bda:LGC1A6278FC71B5576 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2021775A28777023
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5941 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3415  a        :Work ;
+        skos:altLabel       "dbon stod mkhyen rab 'od zer gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dbon stod mkhyen rab 'od zer/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Sakya master Wentui Khyenrab Ozer."@en ;
+        :creator            bdr:CR2021775A28777023 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN3415 , bdr:W3CN3415 ;
+        :workIsAbout        bdr:T617 .
+}

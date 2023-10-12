@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354440 {
+    bda:LG190E344DB4C2C595
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T12:03:17.854Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4A149E8444AB6620
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG78B12AE58EC9A3ED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:37:30.275Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog usad"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE312FA2944BD4E32
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-22T16:12:03.895Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354440  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354440 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c9/WA4CZ354440.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354440 ;
+        adm:logEntry        bda:LG190E344DB4C2C595 , bda:LG4A149E8444AB6620 , bda:LG78B12AE58EC9A3ED , bda:LGE312FA2944BD4E32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:EV88C97FBAAEE24755
+        a                   :CompletedEvent ;
+        :onYear             "2002"^^xsd:gYear .
+
+    bdr:WA4CZ354440  a      :Work ;
+        skos:altLabel       "bya bral rnal 'byor ma chen mo mkha' 'gro bskal bzang lha mo'i rnam thar rags bsdus sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro bskal bzang lha mo'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Bon Dakini Kelsang Lhamo by author signed as Zoepa Gyatsho"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV88C97FBAAEE24755 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ354440 , bdr:W4CZ354440 ;
+        :workIsAbout        bdr:P4CZ354960 .
+}

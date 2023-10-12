@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2973 {
+    bda:LG6FE63DEA73C60B4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-12T09:24:45.579Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC7A9262AAF3F1E0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2973"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2973  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2973 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ad/WA1NLM2973.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2973 ;
+        adm:logEntry        bda:LG6FE63DEA73C60B4B , bda:LGC7A9262AAF3F1E0A , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2973  a       :Work ;
+        skos:prefLabel      "'phags pa gser 'od dam pa mdo sde dbang po'i rgyal po las/_tshe rabs thams cad du yo byad phun sum tshogs pa'i le'u ste bcu bdun pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsangs rdzas rnams kyi byin gyi rlabs/ 2 bsangs chu sgrub tshul/ 3 me chu lcags ri gnam sa rlung shing sman/ 4 drag po gsum sgril gyi sgom bzlas pa rjes gnang zin bris/ 5 rta mchog rol pa'i rnal 'byor pas mchog dman mgron lo gtor chog gser skyems bsangs gtong ba'i skabs 'dod gsol kha bsgyur bya tshul/ 5 mkha' 'gro gsang ba ye shes kyi rygun 'khyer/ 6 lha mo gtor 'bul/ 7 yang zab mo stong pa nyid kyi lta ba rtogs dka' bar gsungs ba'i dka' ba'i gnad/ 8 mo rtsis/ 9 nor phyugs 'khor lo/ 10 phyugs bzhi mgo bskor/ 11 grub chen nag po spyod pa'i lugs kyi 'khor lo sdom pa'i rdul mtshon sa chog gi 'don cha go rim/ 12 shes bya mkha' dbyings/ 13 tshe 'gugs kyi dmigs gsal/ 14 dregs pa sde brgyad la gser skyems gtong pa'i tshul/ 15 rlung rta'i rab gnas sgrub par 'dod pa/ 16 lam bsangs/ 17 mgon dkar yid bzhin gyi nor bu'i gtang rag 18 zhang blon rdo rje bdud 'dul gyi gshegs gtor/"@en , "Seventeenth chapter of Aryaradadharani; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2973 , bdr:W1NLM2973 .
+}

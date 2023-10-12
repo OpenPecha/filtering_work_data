@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15416 {
+    bda:LG03851662EA8C8B0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-12T12:57:28.773Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4C22AF9EB7A3B0AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-12T14:19:37.593Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6B2AD4206DF6035E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-10T13:02:39.69Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR4JW5430"@en ;
+        adm:logWhoStr       "add-works-to-PR4JW5430" .
+
+    bda:LGAC4496D34C867822
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-05T11:30:15.028Z"^^xsd:dateTime ;
+        adm:logMessage      "language coding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15416  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15416 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "df/WA1KG15416.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15416 ;
+        adm:logEntry        bda:LG03851662EA8C8B0C , bda:LG4C22AF9EB7A3B0AE , bda:LG6B2AD4206DF6035E , bda:LGAC4496D34C867822 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG15416  a       :Work ;
+        skos:prefLabel      "phug brag bka' 'gyur bris ma'i dkar chag"@bo-x-ewts , "phug brag bka' 'gyur bris ma'i dkar chag : a catalogue of the phug-brag manuscript kanjur"@en ;
+        :catalogInfo        "Catalogue of the phug-brag manuscript Kanjur."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW1KG15416 , bdr:W1KG15416 ;
+        :workIsAbout        bdr:T2423 .
+}

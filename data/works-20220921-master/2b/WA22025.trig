@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22025 {
+    bda:LG0583BF47DE234C39
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:08.654Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG0E05FB34CC638F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-29T13:53:22.045Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG367B7D05954DCFD2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-29T13:53:54.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBA21BD9AE81F321E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBBF0A974F96AE1B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T12:24:06.967Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC2F18FA7BD4EBE4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA22025  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22025 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "2b/WA22025.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22025 ;
+        adm:logEntry        bda:LG0583BF47DE234C39 , bda:LG0E05FB34CC638F36 , bda:LG367B7D05954DCFD2 , bda:LGBA21BD9AE81F321E , bda:LGBBF0A974F96AE1B3 , bda:LGC2F18FA7BD4EBE4E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA21685 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW22025  skos:altLabel  "赤美滚丹"@zh-hans .
+
+    bdr:WA22025  a          :Work ;
+        skos:altLabel       "chos kyi rgyal po dri med kun ldan gyi mdzad tshul rgyas pa mu tig phreng ba/"@bo-x-ewts , "chi mei gun dan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dri med kun ldan gyi rnam thar/"@bo-x-ewts , "赤美滚丹"@zh-hans ;
+        :catalogInfo        "Version of the Jataka story of King Drime Kundan, a previous life of Buddha Shakyamuni."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P1KG21783 , bdr:T2034 , bdr:T256 .
+}

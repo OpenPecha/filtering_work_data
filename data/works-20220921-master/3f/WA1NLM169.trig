@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM169 {
+    bda:LG133B1A2E4B79E636
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG21638DC76B29FAD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:36:12.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3AA91C552ED7C85D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-12T14:37:56.049Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog completed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM169"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM169  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM169 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3f/WA1NLM169.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM169 ;
+        adm:logEntry        bda:LG133B1A2E4B79E636 , bda:LG21638DC76B29FAD2 , bda:LG3AA91C552ED7C85D , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR32B35ED6540EFB50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P285 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM169  a        :Work ;
+        skos:prefLabel      "dpal ldan bla ma dam pa khyab bdag rdo rje sems dpa'i ngo bo yongs 'dzin no min han nges pa don gyi mahA paN+Di ta blo bzang bstan 'dzin dpal bzang po'i zhal snga nas kyi sku gsung thugs kyi rtogs pa brjod pa'i gtam rdzu 'phrul 'od zer phyogs brgyar 'gyed pa'i nyin byed/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Guge yongzin Losang Tenzin Gyatsho."@en ;
+        :creator            bdr:CR32B35ED6540EFB50 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1NLM169 , bdr:W1NLM169 ;
+        :workIsAbout        bdr:P308 .
+}

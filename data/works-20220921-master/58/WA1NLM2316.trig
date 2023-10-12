@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2316 {
+    bda:LG8027EB9214B579EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-09T11:35:56.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBDEA6B7DCD439585
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2316"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2316  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2316 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "58/WA1NLM2316.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2316 ;
+        adm:logEntry        bda:LG8027EB9214B579EE , bda:LGBDEA6B7DCD439585 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFD489787C7EB1198
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2316  a       :Work ;
+        skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sman sbyor/ 2 rin chen thod pa'i lo rgyus/ brags thabs gnyis/ thod mchod/ dmar khrid/ dngos grub dbyangs sa/ thod sgrub/ yang yang thod mchod/ dngos grub sgrub pa'i man ngag rin po che shel gyi sgron me/ 3 mda'i gdong gi sa rgyu sbyor sbyin bdag gis spyi ba'i nas bal tshon blangs la mdos kyi glud steng du bsgyur/ 4 'phags pa yangs pa'i grong khyer du 'jug pa'i mdo/ 5 dpal rdo rje 'jigs byed kyi bsgoms bzlas mdor bsdus bya tshul/"@bo-x-ewts , "Bali offering and sadhana of Shridevi; included other text also."@en ;
+        :creator            bdr:CRFD489787C7EB1198 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM2316 , bdr:W1NLM2316 ;
+        :workIsAbout        bdr:T926 .
+}

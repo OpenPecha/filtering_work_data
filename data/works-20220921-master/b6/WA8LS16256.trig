@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16256 {
+    bda:LG46B9EC0FBB348F9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-03T09:50:09.771Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio and note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG97E425D60F55EAE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-17T09:07:59.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD12C64D93A38184F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-17T09:06:21.26Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16256  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16256 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b6/WA8LS16256.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16256 ;
+        adm:logEntry        bda:LG46B9EC0FBB348F9D , bda:LG97E425D60F55EAE2 , bda:LGD12C64D93A38184F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8FFB069DCB39CA0E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16256  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po gsang ba snying thig ma bu'i bka' srol chu bo gnyis 'dus kyi khrid yig dri med zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs pa chen po gsang ba snying thig ma bu'i khrid yig"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual of great perfection written by Jamgon Kongtrul Lodro Thaye (1813-1889/1890) based primarily on the instructional manual of Minling Jetsun Rinpoche and supplemented from Nyingtik literature also work of Dorje Tsewang Norbu and Karma Nyingtik. Handwritten manuscript in Umed script."@en ;
+        :creator            bdr:CR8FFB069DCB39CA0E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS16256 , bdr:W8LS16256 ;
+        :workIsAbout        bdr:T1875 , bdr:T354 .
+}

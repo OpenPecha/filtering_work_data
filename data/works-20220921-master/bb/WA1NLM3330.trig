@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3330 {
+    bda:LGE3BF3CC0929495E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGF3BCB880EF0276DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-10T10:35:25.016Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3330"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3330  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3330 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bb/WA1NLM3330.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3330 ;
+        adm:logEntry        bda:LGE3BF3CC0929495E1 , bda:LGF3BCB880EF0276DD , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB079C3FF8E6AFE79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3330  a       :Work ;
+        skos:altLabel       "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i gdams ngag rim pa lnga gsal ba'i sgron me'i snying po'i gnad kun bsdus pa zab don gsal ba'i nyi ma/"@bo-x-ewts ;
+        skos:prefLabel      "rim lnga gsal sgron gyi snying po'i gnad kun bsdus pa zab don gsal ba'i nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Instructions for the practice of the Pancakramapradipodyotana, Sampannakrama instruction to the Guhyasamaja Tantra."@en ;
+        :creator            bdr:CRB079C3FF8E6AFE79 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3330 , bdr:W1NLM3330 ;
+        :workIsAbout        bdr:WA513 .
+}

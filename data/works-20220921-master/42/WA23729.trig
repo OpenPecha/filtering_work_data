@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23729 {
+    bda:LG406B1D91E95B827A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5E57A92301AD1756
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T16:31:19.354Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23729  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23729 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "42/WA23729.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23729 ;
+        adm:logEntry        bda:LG406B1D91E95B827A , bda:LG5E57A92301AD1756 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA23729  a          :Work ;
+        skos:prefLabel      "dpal ldan lha mo'i sho ril dkar nag la kha brten pa'i zhi ba'i las tshogs rno mthong sgrub tshul gyi man ngag sgron me zla ba gsar pa/"@bo-x-ewts ;
+        :catalogInfo        "Manual for dice prognostication."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23729 , bdr:W23729 ;
+        :workIsAbout        bdr:P7696 , bdr:T401 , bdr:T405 .
+}

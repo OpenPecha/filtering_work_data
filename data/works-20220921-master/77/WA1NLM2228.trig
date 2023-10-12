@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2228 {
+    bda:LG5D705E777686FF45
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-01T11:59:39.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDFB495A682EA4B5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2228"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2228  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2228 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "77/WA1NLM2228.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2228 ;
+        adm:logEntry        bda:LG5D705E777686FF45 , bda:LGDFB495A682EA4B5C , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XLF02CE49D91F8 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2DDD39468A5CA58E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2228  a       :Work ;
+        skos:prefLabel      "dpal ldan lha mo dmag zor rgyal mo'i gtor chog dang 'brel bar ma mo'i 'khrugs skangs bya tshul gyi cho ga mkha' 'gro mnyes byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 skyabs 'gro'i khrid yig 2 'dod khams bdag mo dpal gyi lha mo'i gser skyems spyan 'dren dang bcas pa/ 3 pad+ma dbang chen yang gsang lha dgu dang zil gnon rnam gnyis bcas la mchod gtor 'bul tshul dbang chen dgyes byed/ 4 rta mgrin gsang sgrub chos skor las brgyud rim/ 5 rta mgrin gsang sgrub chos skor gyi bklag lung mnos pa'i brgyud pa/ 6 byang chub lam rim rnam bzhag mdor bsdus sam nyams mgur lam rim bsdus don gyi brgyud pa/ 7 bcom ldan 'das dpal rta mgrin yang gsang khros pa'i chos skor gyi lung brgyud/ 8 ha ya g+hri wa'i rtags bstod slob dpon pad+mas mdzad pa/ 9 slob dpon pad+ma kA ra'i zhabs kyis mdzad pa'i 'bum bsangs ling+ga dgugs/ 10 'phags pa sa'i dbang po zhes bya ba'i gzungs/ 11 gsol 'debs bsam don lhun grub ma/ 12 myur mdzad ye shes mgon po'i bsangs mchod dgos 'dod kun 'byung / 13 tshe dpag med ma gcig grub rgyal lugs kyi ril sgrub thabs/ 15 yid bzhin 'khor lo'i sgo nas dus min 'chi ba las grol thabs 'chi bdag 'joms pa'i me char/"@en , "A bali offering ritual of Shridevi by Damtshik Dorjee; other text also included."@en ;
+        :creator            bdr:CR2DDD39468A5CA58E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1458 ;
+        :workIsAbout        bdr:T339 , bdr:T926 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3538 {
+    bda:LG9D512472C80BEB0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-24T15:39:23.617Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3538"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3538  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3538 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "76/WA1NLM3538.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3538 ;
+        adm:logEntry        bda:LG9D512472C80BEB0A , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF77187F5781E81EF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3538  a       :Work ;
+        skos:prefLabel      "dam can chos kyi rgyal po phyi sgrub la brten pa'i zor gyi cho ga bstan dgra thal bar rlog pa'i rdo rje'i gnam lcags sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo re ma ti'i mdos glud kyi cho ga phan bde'i 'byung gnas/ 2 dpal ldan dmag zor gyi rgyal mo'i sgo nas srog glud byed tshul/ 3 rgyal yum dpal ldan lha mo'i bskang bzlog gi cho ga rgyas pa bya tshul gyi tho yig bkra shis kun 'byung / 4 dpal ldan lha mo'i baM skongs kyi cho ga nyes pa kun sel/ 5 dpal mgon zhal bzhi pa'i sgo nas bzlog bsgyur/ 6 rgyal rdzongs lag tu blang bde ba/ 7 'go ba'i lha lnga'i rten 'bul/ 8 chos skyong lcam sring gi bzlog bsgyur/ 9 lha lnga gzungs 'dzugs pa'i cho ga 10 lha chen 'go ba'i lha lnga'i sgo nas bzlog bsgyur bya tshul mi mthun kun 'joms/ 11 gtsug tor dkar mo'i bskang gso/ 12 gdugs dkar gyi bzlog bsgyur 'khyer bde pa/ 13 gtsug tor nag po bdag bskyed/"@en , "Socery ritual based on the outer sadhana of Damchen Chogyal protector; other text also included."@en ;
+        :creator            bdr:CRF77187F5781E81EF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3538 , bdr:W1NLM3538 ;
+        :workIsAbout        bdr:T1208 , bdr:T198 , bdr:T1CZ63 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ74556 {
+    bda:LG4A55418597CF2822
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T15:14:57.742Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8D48E9A07AFDBA98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:59:05.946Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA4CZ74556  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ74556 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "68/WA4CZ74556.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ74556 ;
+        adm:logEntry        bda:LG4A55418597CF2822 , bda:LG8D48E9A07AFDBA98 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10C437A19B5E32B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6068 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ74556  a       :Work ;
+        skos:altLabel       "bla ma mchod pa'i cho ga tshogs gnyis myur lam/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga"@bo-x-ewts ;
+        :catalogInfo        "Rituals for guruyoga practices focusing on Guru Pemasambhava"@en ;
+        :creator            bdr:CR10C437A19B5E32B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ74556 , bdr:W4CZ74556 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T138 .
+}

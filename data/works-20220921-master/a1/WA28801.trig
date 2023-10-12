@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28801 {
+    bda:LG142DF3E4AC2FA280
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-17T10:17:59.455Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG703D8A107EC51CC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-14T10:44:16.797Z"^^xsd:dateTime ;
+        adm:logMessage      "CTC5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG9823C68A59746DD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-19T22:19:01.718Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00009 .
+
+    bda:LGBCE42DF541336EAB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA28801  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28801 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a1/WA28801.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28801 ;
+        adm:logEntry        bda:LG142DF3E4AC2FA280 , bda:LG703D8A107EC51CC4 , bda:LG9823C68A59746DD1 , bda:LGBCE42DF541336EAB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6B60C2002A9AEB32
+        a                   :AgentAsCreator ;
+        :agent              bdr:P736 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA28801  a          :Work ;
+        skos:prefLabel      "bod snga rabs pa gsang chen rnying ma'i chos 'byung legs bshad gsar pa'i dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "History of Tibet by Dudjom Rinpoche. First edition."@en ;
+        :creator            bdr:CR6B60C2002A9AEB32 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW28801 , bdr:W28801 ;
+        :workIsAbout        bdr:T1082 .
+}

@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA6474 {
+    bda:LG08B490284161AA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-05T16:17:05.538Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG5CB3618CCBE6D15C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T14:25:49.714Z"^^xsd:dateTime ;
+        adm:logMessage      "add scaned info, publi info and amotations"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG5E41A366E72CE98C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T16:48:47.438Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGE33837E1F611538B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA6474  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA6474 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "86/WA6474.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA6474 ;
+        adm:logEntry        bda:LG08B490284161AA43 , bda:LG5CB3618CCBE6D15C , bda:LG5E41A366E72CE98C , bda:LGE33837E1F611538B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDECD6D05C4D0B8CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVEA60B69B2AA71158
+        a                   :CompletedEvent ;
+        :onYear             "1807"^^xsd:gYear .
+
+    bdr:WA6474  a           :Work ;
+        skos:altLabel       "'od gsal rdzogs pa chen po'i khregs chod lta ba'i glu dbyangs sa lam ma lus myur du bsgrod pa'i rtsal ldan mkha' lding gshog rlabs/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' lding gshog rlabs/"@bo-x-ewts ;
+        :catalogInfo        "Instructions on the practice of the Dzogchen method by Zhabkar Tsodruk Rangdrol (1781-1851)."@en ;
+        :creator            bdr:CRDECD6D05C4D0B8CA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVEA60B69B2AA71158 ;
+        :workHasInstance    bdr:MW6474 , bdr:W6474 ;
+        :workIsAbout        bdr:T354 , bdr:T541 .
+}

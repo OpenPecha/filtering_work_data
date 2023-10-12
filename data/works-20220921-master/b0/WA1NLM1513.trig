@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1513 {
+    bda:LG30B05EFFDC83991C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-17T11:23:01.398Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6F5686C0634EE657
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1513"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1513  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1513 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b0/WA1NLM1513.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1513 ;
+        adm:logEntry        bda:LG30B05EFFDC83991C , bda:LG6F5686C0634EE657 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1513  a       :Work ;
+        skos:prefLabel      "dgra lha dpangs bstod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mchog sprul rin po che'i zhabs brtan smon tshig dge legs 'od 'bar mi 'gyur lhun stug 2 dpal mgon trak+Shad la mchod gtor 'bul ba'i tshul dngos grub kun 'byung / 3 'jig rten chos brgyad ro snyoms kyi rtogs pa myur du rgyud la skye ba'i phyir du gsol ba 'debs tshul gdung sel ga bur/ 4 byang chub lam gyi rim pa'i snying po bsdus pa dngos grub kun 'byung / 5 dag pa'i zhing mchog ri bo rtse lnga'i gnas bstod 'jam dbyangs mchod pa'i me tog 6 rgyud thams cad kyi rgyal po gsang 'dus pa'i zab lam rim pa lnga'i dmar khrid nyams su len tshul 'khyer bde kun mkhyen 'jam dbyangs bzhad pas mdzad pa/ 7 dpal gsang ba 'dus pa'i rdzogs pa'i rim pa nyams su len tshul kun mkhyen bla ma 'jam dbyangs bzhad pa'i rdo rje'i gsung rgyun/ 8 dpal gsang ba 'dus pa'i zab mo rdzogs pa'i rim pa'i dmar khrid kyi sngon 'gro dngos gzhi'i dmigs pa dang bcas pa bla ma'i gsung rgyun bkod pa/"@en , "Incense offering of Dralha; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1513 , bdr:W1NLM1513 ;
+        :workIsAbout        bdr:T1438 , bdr:T173 .
+}

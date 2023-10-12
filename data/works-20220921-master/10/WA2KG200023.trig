@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG200023 {
+    bda:LG5A59C013FBF3D51E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-28T16:17:19.194Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8CA8E63B3AA6C248
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-02-28T16:15:23.826Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG200023  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG200023 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "10/WA2KG200023.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG200023 ;
+        adm:logEntry        bda:LG5A59C013FBF3D51E , bda:LG8CA8E63B3AA6C248 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR63A37DDED70E81B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG200019 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG200023  a      :Work ;
+        skos:prefLabel      "G. H. Luce Papers. Notebooks G-I"@en ;
+        :catalogInfo        "Notebook G, Listed and Unlisted Inscriptions, including index of unlisted inscriptions for this volume and notebooks I, J and O, pp. 1722-2007. Notebook H, Listed Inscriptions, including transcriptions mainly from Pagan and an index of transcriptions of stones in the Mandalay Palace Shed included in other notebooks, pp. 2008-2163. Notebook I, Unlisted Inscriptions, including index of transcriptions in this volume which are mostly from the Sagaing and Myingyan districts and Mandalay, pp. 2164-2321. Reproduction note: Microfilm. London : British Library, 26mm."@en ;
+        :creator            bdr:CR63A37DDED70E81B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG200023 , bdr:W2KG200023 ;
+        :workIsAbout        bdr:T2KG200020 , bdr:T2KG200021 .
+}

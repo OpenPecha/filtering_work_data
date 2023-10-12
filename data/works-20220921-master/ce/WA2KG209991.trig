@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209991 {
+    bda:LG8EE2B7196D9BE9C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-19T10:31:19.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA9BF7996FB1E74AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-19T10:30:10.877Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF1A512998CC549B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T20:47:38.236Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG209991  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209991 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ce/WA2KG209991.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209991 ;
+        adm:logEntry        bda:LG8EE2B7196D9BE9C2 , bda:LGA9BF7996FB1E74AD , bda:LGF1A512998CC549B6 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA50B1929592B5AE6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016961 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG209991  a      :Work ;
+        skos:prefLabel      "sgom sde tshig mdzod chen mo/"@bo-x-ewts ;
+        :catalogInfo        "A Tibetan Buddhist Lexicograph by Gomde Lharampa Thubten Samdup."@en ;
+        :creator            bdr:CRA50B1929592B5AE6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T220 ;
+        :workHasInstance    bdr:MW2KG209991 , bdr:W2KG209991 .
+}

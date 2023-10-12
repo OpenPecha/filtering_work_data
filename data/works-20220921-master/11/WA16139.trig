@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA16139 {
+    bda:LG477DA336B144CD4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-17T09:26:57.365Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA47CDB5ED7C5B255
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAE656B4FA4F02379
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-14T15:14:12.364Z"^^xsd:dateTime ;
+        adm:logMessage      "changed accessioned to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB79C4CD779159988
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-07-18T09:24:51.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA16139  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA16139 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "11/WA16139.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA16139 ;
+        adm:logEntry        bda:LG477DA336B144CD4C , bda:LGA47CDB5ED7C5B255 , bda:LGAE656B4FA4F02379 , bda:LGB79C4CD779159988 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDE3087E37349E210
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4373 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA16139  a          :Work ;
+        skos:altLabel       "bstan pa yongs rdzogs kyi srog shing du lhag par gces pa las 'bras rnam par 'byed cing gsal bar bshad pa'i las 'bras gsal ba'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "las 'bras kyi rnam bzhag gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Description of the karmic law of cause and effect"@en ;
+        :creator            bdr:CRDE3087E37349E210 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW16139 , bdr:W16139 ;
+        :workIsAbout        bdr:T2126 .
+}

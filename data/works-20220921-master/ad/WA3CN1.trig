@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1 {
+    bda:LG3012F7DE9BF1D1AB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-11T18:06:27.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6E22D38685E794EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC7F67DA596726E1C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T02:11:36.396Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN1  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ad/WA3CN1.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1 ;
+        adm:logEntry        bda:LG3012F7DE9BF1D1AB , bda:LG6E22D38685E794EC , bda:LGC7F67DA596726E1C , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN1  a           :Work ;
+        skos:prefLabel      "mdo sngags rtsa ba phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of root texts about Sutras and Tantras."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW3CN1 , bdr:W3CN1 ;
+        :workIsAbout        bdr:T770 .
+}

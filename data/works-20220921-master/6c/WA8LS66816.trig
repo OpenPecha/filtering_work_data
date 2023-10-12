@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66816 {
+    bda:LG1E79464D8F328919
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T15:23:45.085Z"^^xsd:dateTime ;
+        adm:logMessage      "addee author and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG24BEE3AF8D6AC513
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG64498F179EBC6E4C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T12:30:58.735Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA82632F600C9B4D7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T15:24:09.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66816  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66816 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6c/WA8LS66816.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66816 ;
+        adm:logEntry        bda:LG1E79464D8F328919 , bda:LG24BEE3AF8D6AC513 , bda:LG64498F179EBC6E4C , bda:LGA82632F600C9B4D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA25095 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR7B3B76BCA617562F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8064 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66816  a       :Work ;
+        skos:prefLabel      "bod kyi bon dgon khag gi gi lo rgyus dang da lta'i gnas bab/"@bo-x-ewts ;
+        :catalogInfo        "History of Bonpo monasteries and its present status by Sharyul Phuntsok Tsering."@en ;
+        :creator            bdr:CR7B3B76BCA617562F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS66816 ;
+        :workIsAbout        bdr:T247 , bdr:T359 .
+}

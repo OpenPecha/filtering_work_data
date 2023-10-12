@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229576 {
+    bda:LG06C533E6727BC029
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-26T15:06:30.931Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to temp restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG52C20CB11185FC31
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T14:48:55.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8E3BABF0D7799E85
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-28T14:48:28.817Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG229576  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229576 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "51/WA2KG229576.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229576 ;
+        adm:logEntry        bda:LG06C533E6727BC029 , bda:LG52C20CB11185FC31 , bda:LG8E3BABF0D7799E85 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4CF7F10B26D0AEB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1413 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG229576  a      :Work ;
+        skos:altLabel       "bka' brgyud gser gyi phreng ba'i rnam par thar pa/"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyud gser phreng /"@bo-x-ewts ;
+        :catalogInfo        "The Golden Garland of Kagyu. Anthology of the successive life stories of masters in the Kagyu order."@en ;
+        :creator            bdr:CR4CF7F10B26D0AEB8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2KG229576 , bdr:W2KG229576 ;
+        :workIsAbout        bdr:T1187 , bdr:T2620 .
+}

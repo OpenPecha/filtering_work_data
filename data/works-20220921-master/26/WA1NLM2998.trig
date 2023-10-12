@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2998 {
+    bda:LG44DEF1168496F3BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-01T11:32:50.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD5DA2A58DA80EC62
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2998"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2998  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2998 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "26/WA1NLM2998.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2998 ;
+        adm:logEntry        bda:LG44DEF1168496F3BD , bda:LGD5DA2A58DA80EC62 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2998  a       :Work ;
+        skos:prefLabel      "rje bla ma la brten pa'i las tshogs char 'bebs sogs byin rlabs dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 su ru ba zhes bya ba'i gzungs/ 2 mnol bsangs mdos glud byed/ 3 lo ma gyon ma rigs gsum gyi bsgom bzlas rgyun 'khyer ma/ 4 bla ma mchog gsum spyi la bkra shis kyi dge mtshan spel phyir byin 'bebs gsol 'debs e waM char 'bebs/ 5 bzang spyod kyi 'chi bslu byed tshul go bde klag chog tu bkod pa/ 6 grub pa'i dbang phyug chen po ba lang skyong mdzad shrI go rak+Sha la brten pa'i bla ma'i rnal 'byor dge legs 'phel byed/ 7 skya ska'i skad shes pa'i yem cha yod/ 8 gsang ba ye shes kyi mkha' 'gro'i sgo nas phyugs nad sel thabs rdo sems spyin byed/ 9 dpal myur mdzad ye shes mgon po'i bskang bshags/ 10 rje bla ma sman khang gi dag snang dmigs brtse ma'i sgo nas char 'bebs dang sad bsrung gi 'khor lo sgub tshul/ 11 'phags pa kha mchu nag po zhi bar byed pa zhes bya ba theg pa chen po'i mdo/ 12 zur bkol 'dus pa sbyor/ 13 dpal rdo rje 'jigs byed lha bcu gsum ma'i sgrub pa'i thabs rin po che'i za ma tog 14 dpal phyag na rdo rje bsangs mchod/ 15 tshangs pa bse khrab dang rma chen spom ra gnyis kyi bsangs mchod/ 16 dmigs brtse ma'i sgub skor bdun gyi rnam bshad dge ldan rgyal srid nor bu rnam bdun/ 17 bgegs kyi gtor ma/ 18 dga' ldan klha brgya ma'i gzhung bsrangs te mdo sngags cha tshang bar nyams su len pa'i tshul dga' ldan zhing du bgrod pa'i nor bu'i them skas/"@en , "Ritual practices related to Tsongkhapa by unknown author; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T398 ;
+        :workHasInstance    bdr:MW1NLM2998 , bdr:W1NLM2998 ;
+        :workIsAbout        bdr:P64 .
+}

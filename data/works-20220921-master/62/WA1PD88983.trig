@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD88983 {
+    bda:LG0050CD118ED54EAB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-09-13T15:26:23.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG386DD338A9DB41B7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-13T15:23:56.812Z"^^xsd:dateTime ;
+        adm:logMessage      "new created worker number"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5B714EFC7277562F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1PD88983  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD88983 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "62/WA1PD88983.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD88983 ;
+        adm:logEntry        bda:LG0050CD118ED54EAB , bda:LG386DD338A9DB41B7 , bda:LG5B714EFC7277562F , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA15286 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRC7E65CF0466FFD20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3163 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD88983  skos:altLabel  "德勒尼玛律藏注疏"@zh-hans .
+
+    bdr:WA1PD88983  a       :Work ;
+        skos:altLabel       "'dul ba'i sde snod mtha' dag gi dgongs pa phyin ci ma log par 'grel par byed pa'i legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts , "de le ni ma lv zang zhu shu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'dul ba'i 'grel pa legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts , "德勒尼玛律藏注疏"@zh-hans ;
+        :catalogInfo        "general exegesis of buddhist monastic discipline from the obligatory manuals of the byes college of sera monastery and its affiliates"@en ;
+        :creator            bdr:CRC7E65CF0466FFD20 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:T55 .
+}

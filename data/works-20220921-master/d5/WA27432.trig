@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27432 {
+    bda:LG0B4E68531B0A0A0F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA27432  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27432 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d5/WA27432.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27432 ;
+        adm:logEntry        bda:LG0B4E68531B0A0A0F , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR6E975C68132C7C5E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P654 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA27432  a          :Work ;
+        skos:altLabel       "pad+ma ba dz+ra gyi las byang las rim brgya rtsa'i cha lag chos skyong ma ning nag po'ilas byang rdo rje me 'bar dug rlung spu gri reg gcod/"@bo-x-ewts ;
+        skos:prefLabel      "chos skyong ma ning nag po dug rlung spu gri reg gcod/"@bo-x-ewts ;
+        :creator            bdr:CR6E975C68132C7C5E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27432 ;
+        :workIsAbout        bdr:T1833 , bdr:T493 .
+}

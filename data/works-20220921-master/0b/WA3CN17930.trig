@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17930 {
+    bda:LG2719A448FD7B1C5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-15T17:10:05.965Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD72CF0FE8A7C7343
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGED3364FD100937A4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-15T17:11:48.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN17930  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17930 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0b/WA3CN17930.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17930 ;
+        adm:logEntry        bda:LG2719A448FD7B1C5E , bda:LGD72CF0FE8A7C7343 , bda:LGED3364FD100937A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN17930  a       :Work ;
+        skos:altLabel       "de bzhin gshegs pa'i gsung rab thams cad kyi snying po gsal ba'i sgron ma/"@bo-x-ewts , "yon tan mtha' yas par bstod pa'i bsdus don/"@bo-x-ewts ;
+        skos:prefLabel      "dkon brtsegs kyi zin bris sogs bris pod thor bu zhig"@bo-x-ewts ;
+        :catalogInfo        "Notes of ratnakuta mahayana sutra and some other texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW3CN17930 , bdr:W3CN17930 ;
+        :workIsAbout        bdr:WA3JT13415 .
+}

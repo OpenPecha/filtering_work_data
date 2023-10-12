@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD398 {
+    bda:LG03FDF65F211EEB44
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG08A1BD0C96A1EDE9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-05T14:39:33.275Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2769FE65AAAACBC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:11:13.904Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5205DC12ADD6FD2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-05T14:37:24.258Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG9AD9ACAD982D6F26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-19T10:32:02.322Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBB9612DA5300A847
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD398  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD398 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a5/WA3PD398.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD398 ;
+        adm:logEntry        bda:LG03FDF65F211EEB44 , bda:LG08A1BD0C96A1EDE9 , bda:LG2769FE65AAAACBC3 , bda:LG5205DC12ADD6FD2D , bda:LG9AD9ACAD982D6F26 , bda:LGBB9612DA5300A847 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3CN8090 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW3PD398  skos:altLabel  "民族典籍精选"@zh-hans .
+
+    bdr:WA3PD398  a         :Work ;
+        skos:altLabel       "zh+w dkar gayung drung bon gyi ches mtho'i slob gnyer ba'i sbyang bya'i glegs bam/ sgo bzhi mdzod lnga'i yang bcud/"@bo-x-ewts , "min zu dian ji jing xuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgo bzhi mdzod lnga'i yang bcud/"@bo-x-ewts , "民族典籍精选"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T247 .
+}

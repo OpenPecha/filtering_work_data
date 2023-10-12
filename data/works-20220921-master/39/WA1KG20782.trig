@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20782 {
+    bda:LG5BB3D3E8FCC556CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG889796238D150BFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T18:58:25.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD2AD1CC1EC19A3AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-08T16:40:00.984Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE9328F8BD9A174ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-08T16:42:56.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20782  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20782 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "39/WA1KG20782.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20782 ;
+        adm:logEntry        bda:LG5BB3D3E8FCC556CD , bda:LG889796238D150BFB , bda:LGD2AD1CC1EC19A3AC , bda:LGE9328F8BD9A174ED , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG20782  skos:altLabel  "颂词释解汇编"@zh-hans .
+
+    bdr:WA1KG20782  a       :Work ;
+        skos:altLabel       "dpal mnyam med ri bo dge ldan pa'i chos spyod sna tshogs kyi 'grel pa phyogs bsgrigs thub bstan yang gsal sgron me/"@bo-x-ewts , "song ci shi jie hui bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal ri bo dge ldan pa'i chos spyod sna tshogs kyi 'grel pa phyogs bsgrigs/"@bo-x-ewts , "颂词释解汇编"@zh-hans ;
+        :catalogInfo        "Commentaries on various liturgical texts of Gelug sect."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T225 ;
+        :workHasInstance    bdr:MW1KG20782 , bdr:W1KG20782 ;
+        :workIsAbout        bdr:T819 .
+}

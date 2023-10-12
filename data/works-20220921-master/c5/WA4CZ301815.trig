@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ301815 {
+    bda:LG859C68B688819C70
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-25T15:00:33.726Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works Images from the DVDs of Paltsek, 2013 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG871CA968E37CF6CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:19:07.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG90477C666AD4CE9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T13:24:14.174Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF2C2CDEE72CC7316
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-14T14:13:52.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF7E2C77BD477E8DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-14T13:54:36.846Z"^^xsd:dateTime ;
+        adm:logMessage      "new and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ301815  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ301815 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c5/WA4CZ301815.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ301815 ;
+        adm:logEntry        bda:LG859C68B688819C70 , bda:LG871CA968E37CF6CE , bda:LG90477C666AD4CE9A , bda:LGF2C2CDEE72CC7316 , bda:LGF7E2C77BD477E8DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAE8B3ADE69FC78CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4441 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVB1FE49220A78CA45
+        a                   :CompletedEvent ;
+        :onYear             "1643"^^xsd:gYear .
+
+    bdr:WA4CZ301815  a      :Work ;
+        skos:altLabel       "grub thob gtsang pa smyon pa'i rnam thar dad pa'i spu slong g.yo' ba/"@bo-x-ewts ;
+        skos:prefLabel      "gtsang smyon pa'i rnam thar dad pa'i spu slong g.yo ba/"@bo-x-ewts ;
+        :catalogInfo        "Biography of gtsang smyon Heruka, written by Dragkar Taso Lhatsun Rinchen Namgyal in 1643"@en ;
+        :creator            bdr:CRAE8B3ADE69FC78CC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVB1FE49220A78CA45 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ301815 , bdr:W4CZ301815 ;
+        :workIsAbout        bdr:P442 .
+}

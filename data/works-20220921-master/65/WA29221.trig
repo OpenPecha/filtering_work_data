@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29221 {
+    bda:LG21C0C7B5AE1FEC58
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:52:22.883Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T2418 to T2516"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5919EB0C5B6DB8E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC64C04EE22DEA326
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T10:33:39.643Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFCA61B57D2CA31E8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-18T11:18:07.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29221  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29221 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "65/WA29221.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29221 ;
+        adm:logEntry        bda:LG21C0C7B5AE1FEC58 , bda:LG5919EB0C5B6DB8E0 , bda:LGC64C04EE22DEA326 , bda:LGFCA61B57D2CA31E8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1D121FCD60F6ED82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9578 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29221  a          :Work ;
+        skos:altLabel       "'brug gi khyim bzo'i rnam bshad kun phan snang ba/"@bo-x-ewts ;
+        skos:prefLabel      "'brug gi khyim bzo'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Traditional architectural description of Bhutan"@en ;
+        :creator            bdr:CR1D121FCD60F6ED82 ;
+        :isRoot             true ;
+        :language           bdr:LangDz ;
+        :workHasInstance    bdr:MW29221 , bdr:W29221 ;
+        :workIsAbout        bdr:G3205 , bdr:T2516 .
+}

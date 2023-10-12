@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9888 {
+    bda:LG10EF823297ADE766
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5A803F44A3EDA89D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-06T12:58:24.172Z"^^xsd:dateTime ;
+        adm:logMessage      "change link about persons"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG91B51BC1EEEDC9CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD1083E5D6DB93D88
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-06T11:13:11.855Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA9888  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9888 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "dc/WA9888.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9888 ;
+        adm:logEntry        bda:LG10EF823297ADE766 , bda:LG5A803F44A3EDA89D , bda:LG91B51BC1EEEDC9CD , bda:LGD1083E5D6DB93D88 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA61ABD4ACDF5EA66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P724 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW9888  skos:altLabel  "kanbu aqu zi zhuna"@zh-latn-wadegile .
+
+    bdr:WA9888  a           :Work ;
+        skos:altLabel       "'od gsal rin chen snying po pad+ma las 'brel rtsal gyi rtogs brjod ngo mtshar sgyu ma'i rol gar/"@bo-x-ewts , "mkhan po ngag chung gi rang rnam/"@bo-x-ewts ;
+        skos:prefLabel      "ngag dbang dpal bzang gi rang gi rnam thar/"@bo-x-ewts , "kanbu aqu zi zhuna"@zh-latn-wadegile ;
+        :creator            bdr:CRA61ABD4ACDF5EA66 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW22946_110131 , bdr:MW9888 , bdr:W9888 ;
+        :workIsAbout        bdr:P724 .
+}

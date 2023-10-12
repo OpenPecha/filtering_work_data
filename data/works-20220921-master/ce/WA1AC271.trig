@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC271 {
+    bda:LG3BBBCCADC2120AF6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-20T03:54:31.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG694EA61B29D6854F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:36:55.767Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,Added Author, Cat info, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8A5B7BB9543A7DCC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-20T03:53:12.31Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG93B0B73FA39D692E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-18T22:36:28.104Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGAD58CAF5FA0D5869
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-15T17:02:15.112Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC285CD2D779FFFB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-25T02:52:17.257Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGCD02C00F834F1F73
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-20T03:57:09.588Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC271  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC271 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ce/WA1AC271.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC271 ;
+        adm:logEntry        bda:LG3BBBCCADC2120AF6 , bda:LG694EA61B29D6854F , bda:LG8A5B7BB9543A7DCC , bda:LG93B0B73FA39D692E , bda:LGAD58CAF5FA0D5869 , bda:LGC285CD2D779FFFB3 , bda:LGCD02C00F834F1F73 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1AC271  skos:altLabel  "喜马拉雅献歌"@zh-hans .
+
+    bdr:WA1AC271  a         :Work ;
+        skos:altLabel       "xi ma la ya xian ge"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "hi ma la ya'i gdung glu/"@bo-x-ewts , "喜马拉雅献歌"@zh-hans ;
+        :catalogInfo        "Collection of poems written by Tibetan authors from inside of Tibet"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1AC271 , bdr:W1AC271 ;
+        :workIsAbout        bdr:T1979 .
+}

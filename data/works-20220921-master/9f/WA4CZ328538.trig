@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ328538 {
+    bda:LGA2DCA37596423AE4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-25T15:38:02.232Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEA17EFE086E9B885
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-25T16:10:17.495Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ328538  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ328538 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9f/WA4CZ328538.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ328538 ;
+        adm:logEntry        bda:LGA2DCA37596423AE4 , bda:LGEA17EFE086E9B885 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ328538  a      :Work ;
+        skos:altLabel       "mdo khams tsha ba gzhis byes gnyis kyi brtan bzhugs chen mo/"@bo-x-ewts ;
+        skos:prefLabel      "tsha ba gzhis byes gnyis kyi brtan bzhugs chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Tshawa long live offering to H.H. Holiness 114th Dalai Lama and related pictures"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T9 ;
+        :workHasInstance    bdr:MW4CZ328538 , bdr:W4CZ328538 ;
+        :workIsAbout        bdr:P1649 .
+}

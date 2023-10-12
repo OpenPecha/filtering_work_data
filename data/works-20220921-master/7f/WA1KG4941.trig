@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4941 {
+    bda:LG2F54F755170167FF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-05-05T14:39:24.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA9F260AC6EEB3934
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T16:21:23.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added print"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGC22A3B094C85BE47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-05-05T12:38:20.429Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4941  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4941 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "7f/WA1KG4941.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4941 ;
+        adm:logEntry        bda:LG2F54F755170167FF , bda:LGA9F260AC6EEB3934 , bda:LGC22A3B094C85BE47 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA74B79F7DDA79741
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1CZ2379 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG4941  a        :Work ;
+        skos:prefLabel      "yig rigs brgya yi ma phyi 'dzam gling mkhas dgu'i mdzes rgyan phyogs las rnam rgyal/"@bo-x-ewts ;
+        :catalogInfo        "On different patterns of Tibetan calligraphy."@en ;
+        :creator            bdr:CRA74B79F7DDA79741 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG4941 , bdr:W1KG4941 ;
+        :workIsAbout        bdr:T213 , bdr:T265 .
+}

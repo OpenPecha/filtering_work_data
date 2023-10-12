@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24700 {
+    bda:LG0ADA0D12E550DF51
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-09-17T12:34:47.065Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7C841389FDD9EEE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-17T14:58:10.368Z"^^xsd:dateTime ;
+        adm:logMessage      "annotate"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG83B258196955F833
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-09-17T13:09:07.828Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9287431DB74CB43D
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-01-10T13:59:47.361Z"^^xsd:dateTime ;
+        adm:logMessage      "checked QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB8A9252796D72C68
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE0D701E77570B657
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T10:30:06.104Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24700  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24700 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ac/WA24700.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24700 ;
+        adm:logEntry        bda:LG0ADA0D12E550DF51 , bda:LG7C841389FDD9EEE1 , bda:LG83B258196955F833 , bda:LG9287431DB74CB43D , bda:LGB8A9252796D72C68 , bda:LGE0D701E77570B657 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5D0FDC46412C8E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1217 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24700  a          :Work ;
+        skos:prefLabel      "chos mngon pa kun las btus pa'i rgyan gyi me tog"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Asanga's Abhidharmasamuccaya by a master of the Kadam order."@en ;
+        :creator            bdr:CRC5D0FDC46412C8E7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW24700 , bdr:W24700 ;
+        :workIsAbout        bdr:WA23639 .
+}

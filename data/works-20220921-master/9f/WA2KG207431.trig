@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG207431 {
+    bda:LG735294FE9731F4BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-20T15:47:45.974Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA989196F970DAC5D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-20T16:15:26.801Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBEC56B2345EECFD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-16T19:16:38.268Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1PD116111 to T504"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA426AA936269BCF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG207431  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG207431 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9f/WA2KG207431.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG207431 ;
+        adm:logEntry        bda:LG735294FE9731F4BC , bda:LGA989196F970DAC5D , bda:LGBEC56B2345EECFD5 , bda:LGFA426AA936269BCF , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG207431  a      :Work ;
+        skos:prefLabel      "dpal rta mgrin yang gsang khros pa'i bsangs mchod legs tshogs char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts of smoke-offering and rituals of repair and fulfillment."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG207431 , bdr:W2KG207431 ;
+        :workIsAbout        bdr:T1111 , bdr:T173 , bdr:T19 , bdr:T504 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN489 {
+    bda:LG7BDAF024959498AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-29T20:31:20.704Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA970F0C14EF1D67E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-21T14:25:12.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# & accessione"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDAD57C5026A844DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T15:04:04.973Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN489  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN489 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8a/WA3CN489.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN489 ;
+        adm:logEntry        bda:LG7BDAF024959498AC , bda:LGA970F0C14EF1D67E , bda:LGDAD57C5026A844DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:WA3CN489  a         :Work ;
+        skos:altLabel       "rme ba bstan 'gyur/"@bo-x-ewts ;
+        skos:prefLabel      "bstan 'gyur/"@bo-x-ewts ;
+        :catalogInfo        "New version of Mewa Tenjur based on Dege wood block Tenjur with clear print and high image quality that are processed by new computer image recovery technique."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN489 ;
+        :workIsAbout        bdr:G1KR248 , bdr:T3CN2023 .
+}

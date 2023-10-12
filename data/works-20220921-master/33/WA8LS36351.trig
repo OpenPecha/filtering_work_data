@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS36351 {
+    bda:LG529420DD95FEC543
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T09:15:45.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG56B225705A02E86A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-26T10:05:57.34Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8271FBD9016A3AE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T09:16:39.351Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD846799EBEBDCC74
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-26T10:07:33.402Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS36351  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS36351 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "33/WA8LS36351.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS36351 ;
+        adm:logEntry        bda:LG529420DD95FEC543 , bda:LG56B225705A02E86A , bda:LG8271FBD9016A3AE3 , bda:LGD846799EBEBDCC74 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR141B176CC30ADA50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75374 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS36351  a       :Work ;
+        skos:prefLabel      "rdo rje dbang phyug gi rtsom yig phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of articles wirtten by Dorjee Wangchuk."@en ;
+        :creator            bdr:CR141B176CC30ADA50 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T258 ;
+        :workHasInstance    bdr:MW8LS36351 , bdr:W8LS36351 .
+}

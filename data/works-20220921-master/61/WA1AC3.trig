@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC3 {
+    bda:LG107E459B0D021134
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-28T10:41:10.69Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG3A02683B56D2BED4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:59.636Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6BAD8E6364FD31A2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T23:26:19.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG849EDFED9B708BCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB8E00568D92804F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-31T21:37:58.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added p#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFA1278645979DD32
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-28T23:20:59.716Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFF5D3A582C2392D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T23:55:36.811Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC3  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC3 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "61/WA1AC3.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC3 ;
+        adm:logEntry        bda:LG107E459B0D021134 , bda:LG3A02683B56D2BED4 , bda:LG6BAD8E6364FD31A2 , bda:LG849EDFED9B708BCE , bda:LGB8E00568D92804F5 , bda:LGFA1278645979DD32 , bda:LGFF5D3A582C2392D9 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR20C1F9681B5B1D57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN22972 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1AC3  a           :Work ;
+        skos:altLabel       "zang chuan fo jiao jiao yi chan shi yan jiu wen ji （di yi ji）"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod brgyud nang bstan gyi dgongs 'grel skor gyi dpyad rtsom phyogs bsgrigs/ (deb dang po/)"@bo-x-ewts , "藏传佛教教义阐释研究文集 （第一辑）"@zh-hans ;
+        :catalogInfo        "Collection of research paper on the Tibetan Buddhist commentary intent, edited by Dr. Dradul."@en ;
+        :creator            bdr:CR20C1F9681B5B1D57 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T003JR155 , bdr:T1081 ;
+        :workHasInstance    bdr:MW1AC3 , bdr:MW2PD17406 , bdr:W1AC3 , bdr:W2PD17406 ;
+        :workIsAbout        bdr:T350 , bdr:T770 .
+}

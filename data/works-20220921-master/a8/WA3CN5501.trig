@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5501 {
+    bda:LG73895F86F451DE35
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T11:20:47.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAA9C2B221B0073DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-02T15:13:43.601Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC09260A7B4C86CC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGFEFFD926A0991BB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-06-02T15:18:47.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN5501  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5501 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a8/WA3CN5501.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5501 ;
+        adm:logEntry        bda:LG73895F86F451DE35 , bda:LGAA9C2B221B0073DF , bda:LGC09260A7B4C86CC3 , bda:LGFEFFD926A0991BB3 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFFC4F549E602EA18
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1033 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN5501  skos:altLabel  "拉喇嘛益西沃传及注释"@zh-hans .
+
+    bdr:WA3CN5501  a        :Work ;
+        skos:prefLabel      "lha bla ma ye shes 'od kyi rnam thar rgyas pa/"@bo-x-ewts , "拉喇嘛益西沃传及注释"@zh-hans ;
+        :catalogInfo        "A detailed biography of Lha Lama Yeshewo by Guge Pandita Drackpa Gyaltsen."@en ;
+        :creator            bdr:CRFFC4F549E602EA18 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN5501 , bdr:W3CN5501 ;
+        :workIsAbout        bdr:P8344 .
+}

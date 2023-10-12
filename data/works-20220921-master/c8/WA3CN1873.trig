@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1873 {
+    bda:LG078C23C368944181
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-29T12:26:54.095Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG0D58A14E74892929
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-29T12:12:09.168Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3D2886F233D4D8E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T11:32:31.987Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7623C8DDADB367CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-29T14:36:19.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added titles"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD816FB63641E5F8D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGE6891CE773EF3DB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-21T12:50:52.762Z"^^xsd:dateTime ;
+        adm:logMessage      "removed T# space"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1873  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1873 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c8/WA3CN1873.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1873 ;
+        adm:logEntry        bda:LG078C23C368944181 , bda:LG0D58A14E74892929 , bda:LG3D2886F233D4D8E4 , bda:LG7623C8DDADB367CD , bda:LGD816FB63641E5F8D , bda:LGE6891CE773EF3DB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1884F2DF0F6FDB6E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CR1FD9E6F5297DA2D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR89D4D583A7E98AD3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:MW3CN1873  skos:altLabel  "suvarnaprabhasa"@sa-x-ndia , "金光明经"@zh-hans .
+
+    bdr:WA3CN1873  a        :Work ;
+        skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "Jin guang ming jing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po/"@bo-x-ewts , "suvarnaprabhasa"@sa-x-ndia , "金光明经"@zh-hans ;
+        :catalogInfo        "The Golden Light Sutra, Mahayana Buddhist canonical text that focuses on the confession of faults."@en ;
+        :creator            bdr:CR1884F2DF0F6FDB6E , bdr:CR1FD9E6F5297DA2D8 , bdr:CR89D4D583A7E98AD3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW3CN1873 , bdr:W3CN1873 .
+}

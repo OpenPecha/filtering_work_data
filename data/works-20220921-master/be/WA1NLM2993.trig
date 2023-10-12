@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2993 {
+    bda:LG433BB7351EF664A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-15T11:29:53.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG61DB809BE01AFA2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2993"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2993  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2993 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "be/WA1NLM2993.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2993 ;
+        adm:logEntry        bda:LG433BB7351EF664A9 , bda:LG61DB809BE01AFA2A , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR59DD3A25563EC11E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P733 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2993  a       :Work ;
+        skos:prefLabel      "ma 'ongs lung bstan gsal byed sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'go pa'i lha lnga'i bsangs mchod/ 2 phyag na rdo rje drag po gsum dril gyi sgrub thabs/ 3 ja phud phul ba'i drag po rim pa/ 4 dpal ldan lha mo'i bsang mchod/ 5 khro rgyal rta mgrin dmar po'i bgegs gtor/ 6 bayng chub ltung bshags/ 7 mar me'i smon lam/ 8 sman pa'i rgyal po smon lam gso rig 'dzin pa/ 9 u rgyan pad+ma 'byung gnas kyis mdzad pa na shi dur gsum mdos/ 10 shul 'brum pa/ 11 tshangs pa dung thod pas thugs rje chen po la zhus pa'i lung bstan/ 12 gros 'debs snying gi thur ma/ 13 rten la sku khrus gsol ba'i tshul bzhin dang 'brel ba/ 14 'go ba'i lha lnga'i gsol mchod/ 15 gdugs dkar gser skyems/ 16 lhag pa'i lha mo 'od zer can ma la bsangs mchod 'brel tshul lhag bsam dpal 'byor rgya mtsho'i zegs ma kun phan bdud rtsi'i char rgyun/ 17 rgyal yum 'phags ma sgrol ma'i phyag 'tshal nyi shu rtsa gcig 18 dpal rdo rje 'jigs byed kyi bla brgyud gsol 'debs bstod pa/ 19 shing gis tshe thar/"@en , "Explanation of prophecy by Jamyng Chokyi Lodro; other text also included."@en ;
+        :creator            bdr:CR59DD3A25563EC11E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1AT670 , bdr:T33 ;
+        :workHasInstance    bdr:MW1NLM2993 , bdr:W1NLM2993 .
+}

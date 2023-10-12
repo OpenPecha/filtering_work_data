@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1059 {
+    bda:LG6EB73324C87AF51F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-06T10:06:24.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB109C782A0E03DDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1059"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1059  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1059 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "01/WA1NLM1059.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1059 ;
+        adm:logEntry        bda:LG6EB73324C87AF51F , bda:LGB109C782A0E03DDC , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1059  a       :Work ;
+        skos:prefLabel      "brgya bzhi'i cho ga klags pas don grub ces bya ba'i sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bcom ldan 'das ma so sor 'brang ma'i smyung bar gnas pa'i cho ga bya tshul gyi ngag 'don shin tu bsdus pa gang+ga'i chu rgyun/ 2 brgya bzhi'i cho ga bklags pa'i don grub/ 3 dpal ldan dmag zor ma la brten pa'i mdos glud cho ga phan bde 'byung gnas/ 4 'phags ma gdugs gtsug gtor dkar mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal rdo rje mtshon cha/ 5 rta mgrin gsang sgrub kyi chos skor las/ klu gtor rgyas bsdus gyi cho ga bdud rtsi'i rol mtsho/ 6 rta mgrin gsang sgrub kyi sgo nas 'byung glud gtong thabs 'byung po tshim byed/ 7 gzhi bdag klu rnams la bsangs mchod khrus byed chog ga kun phan nyi 'od/ 8 gsang ba'i bdag po phyag na rdo rje'i byabs khrus/"@en , "Benefits to be derived from recitating four hundred offering liturgical text by Tsunpa Tenzin; also included other text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1059 , bdr:W1NLM1059 ;
+        :workIsAbout        bdr:T1240 , bdr:T161 .
+}

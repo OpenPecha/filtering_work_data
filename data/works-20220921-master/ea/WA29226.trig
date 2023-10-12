@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29226 {
+    bda:LG24F62BD3E9002B04
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG692EC382473CA920
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T17:50:19.24Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P9594 to P1KG856"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA29226  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29226 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ea/WA29226.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29226 ;
+        adm:logEntry        bda:LG24F62BD3E9002B04 , bda:LG692EC382473CA920 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR09FB1E5D83CAE997
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7854 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR91115C10F41ACDF2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9593 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR95CBF866665DE4CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG856 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA29226  a          :Work ;
+        skos:prefLabel      "the biography of pha 'brug-sgom zhig-po called the current of compassion"@en ;
+        :creator            bdr:CR09FB1E5D83CAE997 , bdr:CR91115C10F41ACDF2 , bdr:CR95CBF866665DE4CD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW29226 ;
+        :workIsAbout        bdr:P7852 .
+}

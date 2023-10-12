@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19550 {
+    bda:LG0E9D3142C8CCD03A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-07T10:23:39.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG85E2AEA1D07BFA7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-01T14:21:24.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, author, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19550  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19550 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "af/WA8LS19550.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19550 ;
+        adm:logEntry        bda:LG0E9D3142C8CCD03A , bda:LG85E2AEA1D07BFA7C , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6070A3F4AB0C35FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3709 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRE57791C1BCE1FAF1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15117 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19550  a       :Work ;
+        skos:altLabel       "de bzhin gshegs pa thams cad kyi gtsug tor nas byung ba gdugs dkar can gyi gzungs zhes bya ba'i 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "gtsug tor nas byung ba gdugs dkar can gyi gzungs zhes bya ba'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary of Sitatapatra's Dharani by Shuramga Vajra and translated by Zangkar Lotsawa Phakpa Sherap."@en ;
+        :creator            bdr:CR6070A3F4AB0C35FE , bdr:CRE57791C1BCE1FAF1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T933 ;
+        :workHasInstance    bdr:MW8LS19550 , bdr:W8LS19550 ;
+        :workIsAbout        bdr:T1725 .
+}

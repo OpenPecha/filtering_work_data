@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10305 {
+    bda:LG12C5F449EFC279C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-29T16:10:11.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added to WMDL and WMDL09"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LGB868379BAB681EBB
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-08T15:58:19.083Z"^^xsd:dateTime ;
+        adm:logMessage      "edited annotation"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGF021C7AB4BF9FB6F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA10305  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10305 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f2/WA10305.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10305 ;
+        adm:logEntry        bda:LG12C5F449EFC279C3 , bda:LGB868379BAB681EBB , bda:LGF021C7AB4BF9FB6F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCE9D70028F094453
+        a                   :AgentAsCreator ;
+        :agent              bdr:P787 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW10305  skos:altLabel  "the collection works of mkyen-chen ngag-dwang chos-grags."@en-x-mixed .
+
+    bdr:WA10305  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_ngag dbang chos grags/"@bo-x-ewts , "the collection works of mkyen-chen ngag-dwang chos-grags."@en-x-mixed ;
+        :catalogInfo        "Collected Works by Sakya master Ngawang Chodrak (1572-1641). Includes various commentaries on subjects ranging from Pramana, Abhidharma and Prajnaparamita as well as the author's works on Sakya Pandita Kunga Gyaltsen's (1182-1251) Dompa sum."@en ;
+        :creator            bdr:CRCE9D70028F094453 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW10305 , bdr:MW1KG8900 , bdr:W10305 , bdr:W1KG8900 ;
+        :workIsAbout        bdr:T617 .
+}

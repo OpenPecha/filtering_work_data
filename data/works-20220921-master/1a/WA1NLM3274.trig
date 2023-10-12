@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3274 {
+    bda:LG40FBEF4472940F44
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T09:20:00.32Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBF6EE487063F7C00
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3274"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3274  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3274 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1a/WA1NLM3274.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3274 ;
+        adm:logEntry        bda:LG40FBEF4472940F44 , bda:LGBF6EE487063F7C00 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7422805269FB1964
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB1CB6009AEABF18F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD7FFFD400349B353
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3274  a       :Work ;
+        skos:altLabel       "dpal dus kyi 'khor lo'i sku gsung thugs yongs rdzogs sgrub thabs dngos grub bdud rtsi'i 'byung gnas sogs/"@bo-x-ewts , "dpal kyai rdo rje'i sgrub thabs 'khrul spongs/"@bo-x-ewts , "rta mchog rol pa'i sgrub thabs pad+ma rA ga'i phreng ba/"@bo-x-ewts , "sbyor drug rdo rje'i tshigs bcad/_de'i bshad pa/_dus 'khor gyi zin bris/_dus 'khor gyi mngon rtogs dang dbang gi zin bris/_sbyor drug nyer mkho'i zin bris/_'chi zhags dang tshe lhag ji tsam dpyad pa rnams/"@bo-x-ewts ;
+        skos:prefLabel      "so sor thar pa'i sdom pa gtan la dbab pa 'dul ba rgya mtsho'i snying po bsdus pa'i 'grel bshad mdor bsdus thar pa'i lam bzang /"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the Tsongkhapa's religious observance described in the pratimoksha Sutra, collection of six minor works on the sadangayoga of the Kalacakra tantra: a Vajragatha with commentary; lecture notes on the Kalacakra; lecture notes on the visualization of the Kalacakra and its abhiseka; lecture notes on the sadangayoga as the practice; a method for determining the time of death and sadhana of Hayagriva"@en ;
+        :creator            bdr:CR7422805269FB1964 , bdr:CRB1CB6009AEABF18F , bdr:CRD7FFFD400349B353 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3274 , bdr:W1NLM3274 .
+}

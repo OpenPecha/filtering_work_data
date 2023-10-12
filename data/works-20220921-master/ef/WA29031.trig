@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29031 {
+    bda:LG496ECA3C3C8F51BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAA6B6D2BE46A5507
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-11-29T13:01:21.003Z"^^xsd:dateTime ;
+        adm:logMessage      "changed author P8850"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29031  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29031 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ef/WA29031.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29031 ;
+        adm:logEntry        bda:LG496ECA3C3C8F51BD , bda:LGAA6B6D2BE46A5507 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9A1295E5398871CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8850 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA29031  a          :Work ;
+        skos:prefLabel      "gter chos/_'gro 'dul gar dbang gling pa/"@bo-x-ewts ;
+        :creator            bdr:CR9A1295E5398871CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW29031 , bdr:W29031 ;
+        :workIsAbout        bdr:T1082 .
+}

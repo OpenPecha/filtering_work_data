@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1016929 {
+    bda:LGA1C2C1D09014ED8E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-17T21:10:04.515Z"^^xsd:dateTime ;
+        adm:logMessage      "published for creation of scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD471AF8A6AEE8A9C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-22T16:22:54.658Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00EGS1016929
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1016929 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "53/WA00EGS1016929.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1016929 ;
+        adm:logEntry        bda:LGA1C2C1D09014ED8E , bda:LGD471AF8A6AEE8A9C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3B8FD7A462617DBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8013 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00EGS1016929
+        a                   :Work ;
+        skos:altLabel       "mi tshe'i lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "mi tshe'i byung ba dngos sum gsal bar 'char ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Biography of a minor cabinet minister who served as a language instructor at the Tibetan Medical Institute in Dharamsala."@en ;
+        :creator            bdr:CR3B8FD7A462617DBC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW00EGS1016929 , bdr:W00EGS1016929 ;
+        :workIsAbout        bdr:P8013 .
+}

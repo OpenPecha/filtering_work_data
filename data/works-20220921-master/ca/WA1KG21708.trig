@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21708 {
+    bda:LG1DA5AD6D29A8E0AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG964FC6CEA1DCEABC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T12:34:06.072Z"^^xsd:dateTime ;
+        adm:logMessage      "reviwed by LS, KG, Cn and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBE28B0CF7EC1522D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-17T14:45:02.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCF4F0AC7D6D5930D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-17T14:44:37.199Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21708  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21708 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ca/WA1KG21708.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21708 ;
+        adm:logEntry        bda:LG1DA5AD6D29A8E0AE , bda:LG964FC6CEA1DCEABC , bda:LGBE28B0CF7EC1522D , bda:LGCF4F0AC7D6D5930D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFC8364B11F88A88F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG02332 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21708  skos:altLabel  "妇幼保健常识"@zh-hans .
+
+    bdr:WA1KG21708  a       :Work ;
+        skos:altLabel       "fu you bao jian chang shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ma bu bde srung gi rgyun shes/"@bo-x-ewts , "妇幼保健常识"@zh-hans ;
+        :catalogInfo        "Do's and don'ts of pregnancy mother and care of newborn baby."@en ;
+        :creator            bdr:CRFC8364B11F88A88F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG21708 , bdr:W1KG21708 ;
+        :workIsAbout        bdr:T1142 , bdr:T85 .
+}

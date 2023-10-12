@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG872 {
+    bda:LG971A6FE382D47C80
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-21T11:06:33.588Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyrighpagetitles"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGAA1EC1A699DD82E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T16:09:42.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD9107B6ABB7C99ED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-10-27T16:34:55.608Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDEF431D44225669F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-10-28T09:35:23.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEBDF696E8AFA04FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG872  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG872 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "93/WA1KG872.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG872 ;
+        adm:logEntry        bda:LG971A6FE382D47C80 , bda:LGAA1EC1A699DD82E6 , bda:LGD9107B6ABB7C99ED , bda:LGDEF431D44225669F , bda:LGEBDF696E8AFA04FD , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR569E494FD6C4AA02
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3007 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR89DC9F84A0A41BBA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1217 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG872  skos:altLabel  "龙王与大比丘的问答"@zh-hans .
+
+    bdr:WA1KG872  a         :Work ;
+        skos:altLabel       "long wang yu da bi qiu de wen da"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "klu rgyal 'jog po dang dge slong chen po'i zhus lan/"@bo-x-ewts , "龙王与大比丘的问答"@zh-hans ;
+        :catalogInfo        "A dialogue between the king of Naga and Mahabhikshu concerning the diseases and its remedies."@en ;
+        :creator            bdr:CR569E494FD6C4AA02 , bdr:CR89DC9F84A0A41BBA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG872 , bdr:W1KG872 ;
+        :workIsAbout        bdr:T615 , bdr:T85 .
+}

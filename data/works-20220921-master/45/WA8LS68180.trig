@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68180 {
+    bda:LG472534785E709955
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG65A200899E751B9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-27T12:37:46.778Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA8D8C7E1C60715C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-27T12:38:13.533Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD5C1EB945833EF7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T12:36:37.768Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68180  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68180 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "45/WA8LS68180.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68180 ;
+        adm:logEntry        bda:LG472534785E709955 , bda:LG65A200899E751B9B , bda:LGA8D8C7E1C60715C1 , bda:LGD5C1EB945833EF7D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8457796AA3C5731B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS60376 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68180  a       :Work ;
+        skos:altLabel       "mtsho sngon slob grwa chen mo'i bod kyi gso rig ched las zhib 'jug slob ma'i mu 'brel slob deb/ 'dzam gling srol rgyun gso rig spyi bshad/"@bo-x-ewts ;
+        skos:prefLabel      "'dzam gling srol rgyun gso rig spyi bshad/"@bo-x-ewts ;
+        :catalogInfo        "A survey of Tibetan traditional science of medicine; edited by Kelsang Dorjee and Otshang Tshokchen."@en ;
+        :creator            bdr:CR8457796AA3C5731B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68180 , bdr:W8LS68180 ;
+        :workIsAbout        bdr:T85 , bdr:T916 .
+}

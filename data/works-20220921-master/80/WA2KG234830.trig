@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG234830 {
+    bda:LG93185B7636915E1A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T15:34:40.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC355A84A7A14D9F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-16T17:52:23.274Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD38C8B7E8A083541
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:43.107Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG234830  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG234830 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "80/WA2KG234830.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG234830 ;
+        adm:logEntry        bda:LG93185B7636915E1A , bda:LGC355A84A7A14D9F7 , bda:LGD38C8B7E8A083541 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR28CD63FAE15B7134
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7471 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG234830  a      :Work ;
+        skos:altLabel       "bsdus grwa blo gsal mig 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "blo gsal rigs lam mi 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Explanation on the subject of the collected topics."@en ;
+        :creator            bdr:CR28CD63FAE15B7134 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG234830 , bdr:W2KG234830 ;
+        :workIsAbout        bdr:T1235 , bdr:T1420 , bdr:T96 .
+}

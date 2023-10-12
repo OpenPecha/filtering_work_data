@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG0618 {
+    bda:LG57C2DA2168F70273
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-03-29T13:16:20.773Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog work"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG751295D41DD1DDEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7B020D0C0ED5A791
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-08T15:54:18.079Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA15FDDF007254E6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-25T15:22:24.543Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB8C05EB40081C6A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-25T15:23:01.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA00KG0618  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG0618 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8e/WA00KG0618.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG0618 ;
+        adm:logEntry        bda:LG57C2DA2168F70273 , bda:LG751295D41DD1DDEF , bda:LG7B020D0C0ED5A791 , bda:LGA15FDDF007254E6B , bda:LGB8C05EB40081C6A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW00KG0618  skos:altLabel  "中国加入世界贸易组织知识读本"@zh-hans .
+
+    bdr:WA00KG0618  a       :Work ;
+        skos:altLabel       "zhong guo jia ru shi jie mao yi zu zhi zhi shi du ben"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "krung go 'dzam gling tshong don tshogs par zhugs pa'i skor gyi shes bya'i klog deb/"@bo-x-ewts , "中国加入世界贸易组织知识读本"@zh-hans ;
+        :catalogInfo        "About the China's joining in the World Trade Organization and basic knowledge of World Trade Organization."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00KG0618 , bdr:W00KG0618 ;
+        :workIsAbout        bdr:T00KG0635 .
+}

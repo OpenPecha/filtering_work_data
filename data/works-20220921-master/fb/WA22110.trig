@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22110 {
+    bda:LG15B1BBBBF3A0EB86
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG1C47387818F2F950
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-31T12:13:22.457Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG20701D0EEC63FC63
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG3FC4883B9B7C84F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-10T10:31:43.508Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6BD731D9DAE2B407
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-08T16:17:23.679Z"^^xsd:dateTime ;
+        adm:logMessage      "remove from CTC6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGCE36DEDA61BE6C25
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-15T14:05:50.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDBB0BEB881308EF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T16:19:22.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE7B5B79B5B5ADDCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-29T16:08:07.884Z"^^xsd:dateTime ;
+        adm:logMessage      "མཚན་བྱང་བཅོས།"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF673A3C492B9C4D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-22T10:23:37.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL10"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:WA22110  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22110 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "fb/WA22110.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22110 ;
+        adm:logEntry        bda:LG15B1BBBBF3A0EB86 , bda:LG1C47387818F2F950 , bda:LG20701D0EEC63FC63 , bda:LG3FC4883B9B7C84F5 , bda:LG6BD731D9DAE2B407 , bda:LGCE36DEDA61BE6C25 , bda:LGDBB0BEB881308EF4 , bda:LGE7B5B79B5B5ADDCB , bda:LGF673A3C492B9C4D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG15910 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR5C6D13A1F83A828B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22110  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_rgyal tshab rje/"@bo-x-ewts ;
+        :creator            bdr:CR5C6D13A1F83A828B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW22110 ;
+        :workIsAbout        bdr:T819 .
+}

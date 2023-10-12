@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG235409 {
+    bda:LG4CF11FF4AB3AB33A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-16T17:53:04.732Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG84DDD759775F6611
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:17:43.799Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG235409  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG235409 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/WA2KG235409.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG235409 ;
+        adm:logEntry        bda:LG4CF11FF4AB3AB33A , bda:LG84DDD759775F6611 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCE4F9484C2FEE754
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG235409  a      :Work ;
+        skos:altLabel       "grub pa'i mtha'i rnam par bzhag pa rin po che'i phreng ba/"@bo-x-ewts , "sa lam gyi rnam bzhag theg gsum mdzes rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "grub mtha'i rnam bzhag rin po che'i phreng ba dang sa lam gyi rnam bzhag theg gsum mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "A presentation of Buddhist philosophical systems and the soteriological process of the paths and bhumis by the Gelug lama, Konchok Jigme Wangpo, the second Jamyang Zhepa (1728-1791)."@en ;
+        :creator            bdr:CRCE4F9484C2FEE754 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T385 ;
+        :workHasInstance    bdr:MW2KG235409 , bdr:W2KG235409 ;
+        :workIsAbout        bdr:T1091 .
+}

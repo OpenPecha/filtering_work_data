@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22458 {
+    bda:LGC49D0C81CAED5D74
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-26T16:38:56.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF3CE21E8EB9A71FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-26T16:37:38.264Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS22458  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22458 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "12/WA8LS22458.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22458 ;
+        adm:logEntry        bda:LGC49D0C81CAED5D74 , bda:LGF3CE21E8EB9A71FB , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR62A9772125A812C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7297 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22458  a       :Work ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "'grel pa don gsal/"@bo-x-ewts ;
+        :catalogInfo        "A condensed commentary of Abhisamayalankara by Haribhadra."@en ;
+        :creator            bdr:CR62A9772125A812C9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS22458 , bdr:W8LS22458 ;
+        :workIsAbout        bdr:WA19716 .
+}

@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12277 {
+    bda:LG2994AC6C26205037
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-05-14T16:26:06.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA602222D2C51669E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-05-01T11:38:30.585Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFF9B1D69483F0E7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T11:15:08.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME4B642616A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-27T20:30:28.724Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS11134 to T448"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12277  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12277 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "7f/WA1KG12277.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12277 ;
+        adm:logEntry        bda:LG2994AC6C26205037 , bda:LGA602222D2C51669E , bda:LGFF9B1D69483F0E7F , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME4B642616A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7BF27801923572D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1KG12277  a       :Work ;
+        skos:prefLabel      "zab chos zhi khro dgongs pa rang grol gyi chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected revelations connected with the practice and propitiation of the wrathful and quiescent deities as revealed by the 14th century terton, Karma Lingpa. Basis of the Tibetan Book of the Dead."@en ;
+        :creator            bdr:CR7BF27801923572D4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG12277 , bdr:W1KG12277 ;
+        :workIsAbout        bdr:T351 .
+}

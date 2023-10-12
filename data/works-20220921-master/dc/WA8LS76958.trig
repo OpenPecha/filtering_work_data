@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76958 {
+    bda:LG76BBBF519CAEEA78
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T15:43:43.851Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7A5DCD2EFBCA699D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T15:44:09.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76958  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76958 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dc/WA8LS76958.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76958 ;
+        adm:logEntry        bda:LG76BBBF519CAEEA78 , bda:LG7A5DCD2EFBCA699D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5A69AC8254C3F7E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229573 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS76958  a       :Work ;
+        skos:prefLabel      "chos kyi tshigs su bcad pa/"@bo-x-ewts , "dhammapada"@en ;
+        :catalogInfo        "Translation of Dhammapada into Hindi and Kinauri language also its explanation in Hindi by Dr Wangchuk Dorje Negi."@en ;
+        :creator            bdr:CR5A69AC8254C3F7E4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangHi ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW8LS76958 , bdr:W8LS76958 .
+}

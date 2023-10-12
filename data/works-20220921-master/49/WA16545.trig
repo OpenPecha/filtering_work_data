@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA16545 {
+    bda:LGB47AC660FB5CB625
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGFA7F3F67270CD693
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-23T12:47:58.694Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA16545  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA16545 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "49/WA16545.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA16545 ;
+        adm:logEntry        bda:LGB47AC660FB5CB625 , bda:LGFA7F3F67270CD693 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRE4F5F68922D8E79A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4606 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA16545  a          :Work ;
+        skos:altLabel       "mi tra dang rdo rje phreng ba gnyis kyi dbang gnang ba'i gsung bshad zin bris su bkod pa smin grol bdud rtsi'i thigs phreng /"@bo-x-ewts ;
+        skos:prefLabel      "mi tra dang rdor phreng gi dbang gi gsung bshad/"@bo-x-ewts ;
+        :creator            bdr:CRE4F5F68922D8E79A ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW16545 .
+}

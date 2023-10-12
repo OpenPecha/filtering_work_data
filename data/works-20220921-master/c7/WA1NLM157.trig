@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM157 {
+    bda:LG28405528EE372701
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:36:06.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG496570E7B5C8B6AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T17:00:35.971Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8A73BAB1C3E6246B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGCDCBEB63B6E7C5B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-11T14:53:52.881Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog completed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM157"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM157  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM157 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c7/WA1NLM157.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM157 ;
+        adm:logEntry        bda:LG28405528EE372701 , bda:LG496570E7B5C8B6AF , bda:LG8A73BAB1C3E6246B , bda:LGCDCBEB63B6E7C5B7 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR888D3486FA88606C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4694 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM157  a        :Work ;
+        skos:prefLabel      "tshe'i mthar nye bar phan pa'i man ngag 'khrul snang dbyings grol sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructions at the time of death and the general meaning of logic."@en ;
+        :creator            bdr:CR888D3486FA88606C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM157 , bdr:MW1NLM47 , bdr:W1NLM157 , bdr:W1NLM47 ;
+        :workIsAbout        bdr:T2088 , bdr:T370 , bdr:T846 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM17 {
+    bda:LG3855A460D949F1AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-06T17:25:33.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added bib note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5C25952E8FC90D26
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-26T20:41:07.849Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9DDB8015B133B861
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM17"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM17  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM17 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "57/WA1NLM17.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM17 ;
+        adm:logEntry        bda:LG3855A460D949F1AC , bda:LG5C25952E8FC90D26 , bda:LG9DDB8015B133B861 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM17  a         :Work ;
+        skos:prefLabel      "bcom ldan 'das dam tshig rdo rje bsgom bzlas bya tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sutra texts and liturgical texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM17 , bdr:W1NLM17 ;
+        :workIsAbout        bdr:T876 , bdr:T877 .
+}

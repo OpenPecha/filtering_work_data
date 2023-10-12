@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1560 {
+    bda:LGC1C0ADEE2C1C0446
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGC2DFD008A7FB1328
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-27T16:54:12.792Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCDA0C2CD1D9C19B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-01T11:31:47.295Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD72F28389AAE3E89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-27T16:57:50.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1560  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1560 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "08/WA3CN1560.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1560 ;
+        adm:logEntry        bda:LGC1C0ADEE2C1C0446 , bda:LGC2DFD008A7FB1328 , bda:LGCDA0C2CD1D9C19B1 , bda:LGD72F28389AAE3E89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0RT3216 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR9BED82E011C02413
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6161 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1560  a        :Work ;
+        skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
+        :catalogInfo        "Root text of the Bodhicaryavatara by Shantideva."@en ;
+        :creator            bdr:CR9BED82E011C02413 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG8787 ;
+        :workIsAbout        bdr:T1078 , bdr:WA19740 .
+}

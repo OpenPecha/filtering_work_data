@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS43859 {
+    bda:LGD4032F7D164BF8A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-19T14:44:37.774Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDEBC57D3EDEBDE3A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-19T14:46:38.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS43859  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS43859 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f1/WA8LS43859.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS43859 ;
+        adm:logEntry        bda:LGD4032F7D164BF8A5 , bda:LGDEBC57D3EDEBDE3A , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0DD4F6872E5FA5AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS43860 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS43859  a       :Work ;
+        skos:prefLabel      "bla brang bkra shis 'khyil dang 'brel ba'i 'bel gtam chos srid gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "History of Ladrang Tashi Khyil monastery."@en ;
+        :creator            bdr:CR0DD4F6872E5FA5AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS43859 , bdr:W8LS43859 ;
+        :workIsAbout        bdr:G162 .
+}

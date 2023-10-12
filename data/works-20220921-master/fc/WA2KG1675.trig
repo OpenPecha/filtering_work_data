@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG1675 {
+    bda:LG55DA7DD1BA9ED874
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-27T14:44:14.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7AB9D763529E7D57
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG9963EF773AE96FEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-27T11:24:40.208Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG1675  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG1675 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fc/WA2KG1675.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG1675 ;
+        adm:logEntry        bda:LG55DA7DD1BA9ED874 , bda:LG7AB9D763529E7D57 , bda:LG9963EF773AE96FEC , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR379E79A6CE079D78
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG1675  a        :Work ;
+        skos:prefLabel      "dpal gsang ba'i snying po de kho na nyid nges pa'i rgyud kyi 'grel pa gsang bdag dgongs rgyan/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Guhyagarbha Tantra by Minling Lochen Dharmashri."@en ;
+        :creator            bdr:CR379E79A6CE079D78 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2KG1675 , bdr:W2KG1675 ;
+        :workIsAbout        bdr:T202 , bdr:WA21833 .
+}

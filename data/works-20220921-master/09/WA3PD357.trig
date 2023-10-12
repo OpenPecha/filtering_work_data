@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD357 {
+    bda:LG1ABEB391A45C4EFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T12:00:35.178Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5240D6FDB284DD1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-03T18:00:59.759Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG59C7575DB1B42F1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-22T22:06:06.269Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG81C08808CFFAB880
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T20:38:30.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFB541DEA43659AB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD357  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD357 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "09/WA3PD357.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD357 ;
+        adm:logEntry        bda:LG1ABEB391A45C4EFF , bda:LG5240D6FDB284DD1A , bda:LG59C7575DB1B42F1D , bda:LG81C08808CFFAB880 , bda:LGFB541DEA43659AB4 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA33CAE36011682AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8313 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3PD357  skos:altLabel  "格萨尔新专 . 森岭之战"@zh-hans .
+
+    bdr:WA3PD357  a         :Work ;
+        skos:altLabel       "ge sa er xin zhuan . sen ling zhi zhan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "srin gling g.yul 'gyed zhi drag lhan 'dzing /"@bo-x-ewts , "格萨尔新专 . 森岭之战"@zh-hans ;
+        :creator            bdr:CRA33CAE36011682AD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3PD357 , bdr:W3PD357 ;
+        :workIsAbout        bdr:T248 .
+}

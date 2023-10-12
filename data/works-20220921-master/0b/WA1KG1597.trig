@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG1597 {
+    bda:LG1DEA257047344B30
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-01-30T09:57:04.218Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG50003D5D9E1ED734
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-04-06T11:28:27.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5E5A7C5A385487D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-28T12:22:52.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB5244FE96447BA10
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-30T10:33:10.675Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF140CEBB60A4F467
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-28T15:05:34.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added authorship statement"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG1597  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG1597 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "0b/WA1KG1597.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG1597 ;
+        adm:logEntry        bda:LG1DEA257047344B30 , bda:LG50003D5D9E1ED734 , bda:LG5E5A7C5A385487D0 , bda:LGB5244FE96447BA10 , bda:LGF140CEBB60A4F467 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR80B1000F15F98D7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9505 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR96FAACAABB2BD011
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9902 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV0E83F8DDBFB1BBBD
+        a                   :CompletedEvent ;
+        :onYear             "2006"^^xsd:gYear .
+
+    bdr:WA1KG1597  a        :Work ;
+        skos:altLabel       "dpal sa skya'i gdan sa chen po 'phan yul nA len+d+ra dgon pa'i lo rgyus ngo mtshar 'od stong 'phro ba'i dkyil 'khor/"@bo-x-ewts ;
+        skos:prefLabel      "'phan yul nA len+d+ra dgon pa'i lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "History of the Sakya Monastery Penyul Nalanda. Includes brief introduction to main lineage holders."@en ;
+        :creator            bdr:CR80B1000F15F98D7A , bdr:CR96FAACAABB2BD011 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV0E83F8DDBFB1BBBD ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG1597 , bdr:W1KG1597 ;
+        :workIsAbout        bdr:G233 , bdr:T617 .
+}

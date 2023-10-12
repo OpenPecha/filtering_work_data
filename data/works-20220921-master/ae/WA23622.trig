@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23622 {
+    bda:LG00D62561C0C76C1A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6ECEA99C23100142
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:18:59.931Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG705FA99C5D368A85
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-12-19T14:12:36.924Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG906332BB139EA8D6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-12-19T14:13:07.441Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23622  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23622 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ae/WA23622.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23622 ;
+        adm:logEntry        bda:LG00D62561C0C76C1A , bda:LG6ECEA99C23100142 , bda:LG705FA99C5D368A85 , bda:LG906332BB139EA8D6 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23622  skos:altLabel  "klon chen snin thig gi 'don cha'i skor dpal yul gyi lugs : the texts for the practice of the klon chen snin thig revelations of kun-mkhyen 'jigs-med-glin-pa as used in the dpal-yul tradition in khams"@en-x-mixed .
+
+    bdr:WA23622  a          :Work ;
+        skos:prefLabel      "klong chen snying thig gi 'don cha'i skor dpal yul gyi lugs/"@bo-x-ewts , "klon chen snin thig gi 'don cha'i skor dpal yul gyi lugs : the texts for the practice of the klon chen snin thig revelations of kun-mkhyen 'jigs-med-glin-pa as used in the dpal-yul tradition in khams"@en-x-mixed ;
+        :catalogInfo        "Practice of Llongchen Nyingtik revelations by Kunkyen Jigme Lingpa as used in the Peyul order in Khams. Written by various adepts of the order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW23622 , bdr:W23622 ;
+        :workIsAbout        bdr:T328 .
+}

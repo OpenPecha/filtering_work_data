@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1839 {
+    bda:LG51B62D7948C11324
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG96D13F5D032A904F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-14T12:23:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1839"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1839  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1839 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3a/WA1NLM1839.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1839 ;
+        adm:logEntry        bda:LG51B62D7948C11324 , bda:LG96D13F5D032A904F , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1839  a       :Work ;
+        skos:altLabel       "dga' ldan lha rgya ma'i mjug tu 'don rgyu'i 'dod gsol smon lam/"@bo-x-ewts , "phugs nor bcu'i bslab bya dang 'grel pa don sbyor gsum ldan/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma la 'jug pa/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Madhyamakavatara, the 10 kinds of essential wealth of the goal and commentary and aspiration prayers"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1839 , bdr:W1NLM1839 ;
+        :workIsAbout        bdr:T233 , bdr:T58 .
+}

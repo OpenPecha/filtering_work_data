@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ346629 {
+    bda:LG1DA23B0FFF1CB244
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T10:53:35.42Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB10C59602DE640D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T09:47:57.036Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDC8FF15BBDB7D91D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-01T11:06:00.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ346629  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ346629 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "66/WA4CZ346629.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ346629 ;
+        adm:logEntry        bda:LG1DA23B0FFF1CB244 , bda:LGB10C59602DE640D5 , bda:LGDC8FF15BBDB7D91D , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ346629  a      :Work ;
+        skos:altLabel       "bzang spyod/ (skad gsum shan sbyar/)"@bo-x-ewts , "arya bhadracaryapranidhanaraja"@sa-x-ndia ;
+        skos:prefLabel      "'phags pa bzang po spyod pa'i smon la gyi rgyal po/ (skad gsum shan sbyar/)"@bo-x-ewts , "Samantabhadracarya-praṇidhanaraja"@sa-x-ndia ;
+        :catalogInfo        "Samantabhadracaryā-praṇidhānarāja Bhot̨a-pit̨aka, being The Tibetan Collectanea in the series of Indo Asian Literatures forming the Śatapit̨aka,vol. 4."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangSa , bdr:LangZh ;
+        :workGenre          bdr:T34 , bdr:T769 ;
+        :workHasInstance    bdr:MW4CZ346629 , bdr:W4CZ346629 .
+}

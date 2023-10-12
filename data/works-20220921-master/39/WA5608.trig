@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5608 {
+    bda:LG45E47D13E8EBF895
+        a                   adm:UpdateData .
+
+    bda:LG5A32AF2BFFEB00DC
+        a                   adm:InitialDataCreation .
+
+    bda:W5608  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W5608 ;
+        adm:replaceWith     bdr:WA5608 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA5608  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5608 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "39/WA5608.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5608 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR236381A5FA82F900
+        a                   :AgentAsCreator ;
+        :agent              bdr:P268 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT594EA168BCF6F404
+        a                   :Note ;
+        :noteText           "5 ff. in v. 3 of the three vol. printed gsung 'bum in the Potala collection.\nTOH 6476."@en .
+
+    bdr:NT9FAB8714776C9054
+        a                   :Note ;
+        :noteText           "conceptual work"@en .
+
+    bdr:WA5608  a           :Work ;
+        skos:altLabel       "rtags kyi 'jug pa'i snying po'i don mdo tsam brjod pa dka' gnad gsal ba'i me long /"@bo-x-ewts , "rtags kyi 'jug pa'i snying po don mdo tsam brjod pa/"@bo-x-ewts ;
+        skos:prefLabel      "dka' gnad gsal ba'i me long /"@bo-x-ewts ;
+        :creator            bdr:CR236381A5FA82F900 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT594EA168BCF6F404 , bdr:NT9FAB8714776C9054 .
+}

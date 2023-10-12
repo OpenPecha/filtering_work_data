@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM263 {
+    bda:LG67E1EF41DBA1AEC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE4A7C2200C0E0210
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-22T12:47:34.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF46B3FB227F0201D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:43.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM263"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM263  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM263 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "33/WA1NLM263.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM263 ;
+        adm:logEntry        bda:LG67E1EF41DBA1AEC7 , bda:LGE4A7C2200C0E0210 , bda:LGF46B3FB227F0201D , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3E80DEDFFE08E767
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD3867CBEE90AFB34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5013 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA1NLM263  a        :Work ;
+        skos:prefLabel      "pad+ma dbang chen yang gsang khros pa'i rgyud sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rta mgrin dbang gi lhan thabs/ 2 zab lam bde gshegs kun 'dus las mkha' 'gro gsang ba ye shes kyi rnal 'byor rim bzhi'i lam zab mo nyams su len pa'i khrid yig man ngag gsal sgron/ 3 bcom ldan 'das pad+ma dbang chen rta mgrin bde gshegs 'dus pa'i las byang dregs pa kun 'dul/ 4 dpal rta mgrin gyi bskang gso'i cho ga/ 5 rta mgrin gsang sgrub kyi sgo nas byabs khrus bye tshul bdud rtsi'i bum bzang / 6 gu ru rin po che la gsol 'debs bsam pa myur sgrub ma/ 7 rta mgrin gsang sgrub kyi bla brgyud gsol 'debs/ 8 rta mgrin gsang sgrub kyi tshog 'khor gyi cho ga rnal 'byor rol ba'i dga' ston/ 9 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga/ 10 rta mgrin gyi bzlog pa rnam rgyal stobs kyi mtshon cha/ 11 chos skyong spyi'i gtor chog la nyer mkho man ngag 12 rje btsun ma ku ru ku le+le'i sgrub thabs su ut+pal'i 'phreng ba/ 13 'jam dpal gzhin rje gshed kyi bka' sdod/ 14 bse rag 'byung po'i gnod 'tshe sel thabs kyi cho ga 15 gsang sngags rgyud pa grwa tshang gi tshe chog gi go rim ngag 'don du bsgrigs pa/ 16 gsung rab sgo 'byed ma/ 17 chos mngon pa mdzod kyi dogs pa bcad pa blo gsar rol rtsed/ 18 blo sbyong snyan brgyud chen mo'i khrid yig gzhan phan nyi ma/ 19 gza' rnams gang la spyod pa'i yul/ 20 dpal ldan mnyam med bkra shis lhun po'i gsang sngags rgyud pa grwa tshang gi lo 'khor 'char can gyi lugs srol tshogs 'dus kyi dran tho/"@en , "Padmashawari mahaguhyatantra translated by Vairocana."@en ;
+        :creator            bdr:CR3E80DEDFFE08E767 , bdr:CRD3867CBEE90AFB34 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1NLM263 , bdr:W1NLM263 ;
+        :workIsAbout        bdr:T1111 .
+}

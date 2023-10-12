@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16555 {
+    bda:LGA527823DEEE81ED4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-27T10:18:32.97Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB200AA73644497C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-29T14:24:13.712Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE91F56BA459F521A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-27T10:17:46.088Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16555  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16555 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ae/WA8LS16555.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16555 ;
+        adm:logEntry        bda:LGA527823DEEE81ED4 , bda:LGB200AA73644497C6 , bda:LGE91F56BA459F521A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS16555  a       :Work ;
+        skos:altLabel       "'od gsal rdo rje snying po'i cha lag gshed 'dul ro rtsal rgyan gyi 'khor lo/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje snying po'i cha lag gshed 'dul ro rtsal rgyan gyi 'khor lo/"@bo-x-ewts ;
+        :catalogInfo        "A ritual for the subjugation of evil through the contemplation of great perfection by unknown author."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW8LS16555 , bdr:W8LS16555 ;
+        :workIsAbout        bdr:T2375 .
+}

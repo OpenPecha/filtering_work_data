@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM654 {
+    bda:LG22CF5BC9BB67E61F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-16T15:27:40.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4B3AEB6203F7F03B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM654"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM654  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM654 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "08/WA1NLM654.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM654 ;
+        adm:logEntry        bda:LG22CF5BC9BB67E61F , bda:LG4B3AEB6203F7F03B , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR944D71888C59BB4C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CREA1E12F7AEACF287
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRFBFB288EBD28A50D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM654  a        :Work ;
+        skos:prefLabel      "chos mngon pa mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Root text of Abhidharma and other texts."@en ;
+        :creator            bdr:CR944D71888C59BB4C , bdr:CREA1E12F7AEACF287 , bdr:CRFBFB288EBD28A50D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW1NLM654 , bdr:W1NLM654 ;
+        :workIsAbout        bdr:T59 , bdr:WA19720 .
+}

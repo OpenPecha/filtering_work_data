@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM899 {
+    bda:LGBBBBB9082898207F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-18T10:48:33.544Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEB1229649651F518
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF6D2288A9C005BD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T14:38:59.43Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic and biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM899"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM899  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM899 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bf/WA1NLM899.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM899 ;
+        adm:logEntry        bda:LGBBBBB9082898207F , bda:LGEB1229649651F518 , bda:LGF6D2288A9C005BD9 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0DD25527B481A519
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4797 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM899  a        :Work ;
+        skos:altLabel       "mngon par rtogs pa'i rgyan gyi skabs gnyis pa'i 'grel pa dngos grub kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "skabs gnyis pa nas bzhi pa bar gyi 'grel pa dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        :creator            bdr:CR0DD25527B481A519 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM899 , bdr:W1NLM899 ;
+        :workIsAbout        bdr:WA19716 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG200900 {
+    bda:LG97C5E15D57E65C6A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-29T19:35:57.229Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC1B06FCAEAD1E119
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-29T19:33:48.469Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEBD519DDB25CE0B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2KG200900  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG200900 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "10/WA2KG200900.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG200900 ;
+        adm:logEntry        bda:LG97C5E15D57E65C6A , bda:LGC1B06FCAEAD1E119 , bda:LGEBD519DDB25CE0B7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA23259 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRE2947AED4A0D2B32
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG200900  a      :Work ;
+        skos:altLabel       "chags med ri chos/"@bo-x-ewts ;
+        skos:prefLabel      "ri chos mtshams kyi zhal gdams/ (shing par/)"@bo-x-ewts ;
+        :catalogInfo        "Meditation retreat manual written by Kagyu master Karma Chakme."@en ;
+        :creator            bdr:CRE2947AED4A0D2B32 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1109 .
+}

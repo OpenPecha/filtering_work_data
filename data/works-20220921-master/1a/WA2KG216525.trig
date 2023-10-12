@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG216525 {
+    bda:LG2294EA274FAC5368
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T16:42:03.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2A1DE98651CC986A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-06T11:35:43.646Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG66649C398FA918C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:46:54.067Z"^^xsd:dateTime ;
+        adm:logMessage      "refresh title page title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6EC25228197D7F0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:23:30.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added comments"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG216525  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG216525 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1a/WA2KG216525.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG216525 ;
+        adm:logEntry        bda:LG2294EA274FAC5368 , bda:LG2A1DE98651CC986A , bda:LG66649C398FA918C7 , bda:LG6EC25228197D7F0E , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR129C7A3A1994FFC3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR33D8276A539C083D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG216525  a      :Work ;
+        skos:altLabel       "'pho ba'i man ngag phyogs gcig tu bsdeb pa myur lam zhing mchog bgrod pa'i them skas/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb so gsum pa/"@bo-x-ewts ;
+        :catalogInfo        "A collection of quintessential instruction on the transference of consciousness by Gelug masters."@en ;
+        :creator            bdr:CR129C7A3A1994FFC3 , bdr:CR33D8276A539C083D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW2KG216525 , bdr:W2KG216525 ;
+        :workIsAbout        bdr:T15 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2278 {
+    bda:LG57805ECACAC54F17
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-18T09:04:51.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD23BE6116F1BE170
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2278"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2278  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2278 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "92/WA1NLM2278.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2278 ;
+        adm:logEntry        bda:LG57805ECACAC54F17 , bda:LGD23BE6116F1BE170 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7ECA60BB533C0296
+        a                   :AgentAsCreator ;
+        :agent              bdr:P215 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2278  a       :Work ;
+        skos:prefLabel      "chos skyong dregs pa lcam sring gis mngon rtogs bskang bshags bstod bskul dang rgyas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lha chen drag po gdong bzhi pa'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 2 byis pa'i ngar glud bcos thabs/ 3 chos skyong bsrung ma rnams kyi nang rten btsugs pa'i tshul/ 4 klu la bsangs gtong 'dod pa/ 5 kha mchu nag po'i bzlog bsgyur/ 6 nor lha'i skyed chog g.yang 'bod byed tshul bcas/ 7 rje btsun 'phags ma sgrol brgya bzhi/ 8 grub thob u rgyan pa la mkha' 'gro'i zab mo gnang ba'i grib sel gyi gdams pa zab mo/ 9 slob dpaon pad+ma 'byung gnas kyis mdzad pa'i btsan mdos bcos thabs/ 10 sher snying gi bzlog bsgyur bcos thabs/ 11 g.yang rna bshig pa'i bcos thabs/ 12 rje btsun ma 'phags ma sgrol ma'i bzlog bsgyur/ 13 rgya gar sha bzlog 14 phyag rdor gyi grib bsel/ 15 chos skyong lcam sring gi bzlog bsgyur/ 16 kor tse gsol mchod 'dod yon sprin phung / 17 'bum bsangs bkra shis re bskongs pa'i ling+ga bsgral chog man ngag 18 chos rgyal dbang po'i sder lung gang ba bzang po'i 'bad pa mdzad pa'i thub pa'i dbang po'i bdag bskyed tsa kra bcu gsum/"@en , "An extensive visualization, confession, purification, praise and exhortation of wrathful protector brother and sister; other text also included."@en ;
+        :creator            bdr:CR7ECA60BB533C0296 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T5 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM2278 , bdr:W1NLM2278 ;
+        :workIsAbout        bdr:T1439 , bdr:T1736 , bdr:T1892 .
+}

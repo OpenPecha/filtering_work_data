@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76589 {
+    bda:LG13E7DFC6C0F4F9A0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-10T14:05:35.237Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4DAFDFA0D1CE54B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-04T08:37:25.694Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBC5D28AB213B86CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T15:03:41.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76589  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76589 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "2c/WA8LS76589.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76589 ;
+        adm:logEntry        bda:LG13E7DFC6C0F4F9A0 , bda:LG4DAFDFA0D1CE54B8 , bda:LGBC5D28AB213B86CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR37F9239F9BB5B055
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAE3F32AC23033651
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCA42E4AF4DDE82CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCBFC000456D61D91
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE5D6DEBD0FDCBC13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P711 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76589  a       :Work ;
+        skos:prefLabel      "bslab bya'i skor/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of spiritual instructions."@en ;
+        :creator            bdr:CR37F9239F9BB5B055 , bdr:CRAE3F32AC23033651 , bdr:CRCA42E4AF4DDE82CD , bdr:CRCBFC000456D61D91 , bdr:CRE5D6DEBD0FDCBC13 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW8LS76589 , bdr:W8LS76589 ;
+        :workIsAbout        bdr:T58 .
+}

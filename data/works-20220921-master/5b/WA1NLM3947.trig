@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3947 {
+    bda:LG1CD9937A178BF6E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-27T12:50:21.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3947"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3947  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3947 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5b/WA1NLM3947.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3947 ;
+        adm:logEntry        bda:LG1CD9937A178BF6E6 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR21B253C32E3C0097
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3947  a       :Work ;
+        skos:prefLabel      "dkor sgrib spyod byed zab mo brul gtor gyi gdams pa nyams su len tshul gsal bar bkod pa dag byed bdud rtsi'i bum bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje lder mo'i gzungs/ 2 lha chen drag po gdong bzhi ba'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 3 'phags pa las kyi sgrib pa thams cad nam bar sbyong ba mi 'khrugs gzungs/ 4 grub chen thang stong rgyal po'i rdo rje'i gsung sa skya'i nad grol mar grags pa'i smon lam byin rlabs can/ 5 grub chen thang stong rgyal po'i lugs kyi grib glud bya tshul/ 6 phyag chen gsol 'debs/ 7 rta mgrin gsang sgrub kyi chos skor las/ btsan mdos gtong tshul drega pa mig bsgyur gyi ltad mo/ 8 nad bdag stobs 'joms kyi man ngag don 'dus/ 9 btsan gyi gsol mchod 'phrul khyu mchod sbyin/ 10 lha mo 'od zer can ma'i sgrub thabs/"@bo-x-ewts , "Instructions for bali offering protecting against mishandling of religious funds by Khalkha Damtshik Dorjee."@en ;
+        :creator            bdr:CR21B253C32E3C0097 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM3947 , bdr:W1NLM3947 ;
+        :workIsAbout        bdr:T1783 , bdr:T1GS107985 .
+}

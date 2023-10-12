@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24041 {
+    bda:LGAA95A9B56995704F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-12T14:34:33.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB748F78414DD838B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-12T14:33:12.286Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG24041  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24041 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA1KG24041.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24041 ;
+        adm:logEntry        bda:LGAA95A9B56995704F , bda:LGB748F78414DD838B , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR32DB7E02DBEDC20E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10071 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24041  a       :Work ;
+        skos:prefLabel      "kher rkyang gi bla srog"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings by Chanlung Tsering Droje."@en ;
+        :creator            bdr:CR32DB7E02DBEDC20E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW1KG24041 , bdr:W1KG24041 .
+}

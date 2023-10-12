@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3559 {
+    bda:LGF1477F30BF5B62A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-27T14:34:44.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3559"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3559  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3559 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b5/WA1NLM3559.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3559 ;
+        adm:logEntry        bda:LGF1477F30BF5B62A3 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB7A13341BD05565B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6418 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3559  a       :Work ;
+        skos:prefLabel      "chos skyong dregs pa lcam sring gi gdung 'bod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 yul lha gzhi bdag gnyan po'i tshogs mchod/ 2 bla ma'i brgyud 'debs/ 'jam dbyangs kyi sgrub thabs las tshogs/ 3 rje btsun 'jam dbyangs kyi bzhed pa'i dpe byed gsal ba'i sgron me/ 4 chos skyong dregs pa lcam sring gi bka' bsgo 'dod pa'i bya tshul/ 5 chos skyong dregs pa lcam sring gi khrag chang bsres bshams/ 6 chos skyong dregs pa lcam sring la dngos grub zhu ba'i phyir glu mgur dbyangs/ 7 shAkya btsun blo bzang 'phrin las kyi ngag rnams phyogs su bsgrigs pa las yi ge'i bstan bcos mdor bsdus pa legs bshad bdud rtsi'i chu rgyun/ 8 mchos gtor/ 9 g.yang 'bod/ 10 dkar chag 11 pU du pa'i bstod las chu gtor bya ba'i tshul shin tu bsdus bde ba/ 12 dur khrod bdag po'i gtor 'bul/ 13 chos skyong dregs pa lcam sring gi tshogs 'khor la mchod 'bul tshul/ 14 ja phu byin rlabs/ 15 kha mchu nag po'i bzlog bsgyur/ 16 rje btsun 'jam dbyangs nang sgrub kyi sgrub thabs shes rab snang mdzod/"@en , "Calling upon the wrathful protector Chamsring from the afar; other text also included."@en ;
+        :creator            bdr:CRB7A13341BD05565B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3559 , bdr:W1NLM3559 ;
+        :workIsAbout        bdr:T1439 , bdr:T145 .
+}

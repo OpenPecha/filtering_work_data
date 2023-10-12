@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3062 {
+    bda:LG7640722C773C01F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-15T11:52:41.319Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAD5A9697960841BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3062"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3062  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3062 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e1/WA1NLM3062.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3062 ;
+        adm:logEntry        bda:LG7640722C773C01F4 , bda:LGAD5A9697960841BC , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3062  a       :Work ;
+        skos:prefLabel      "'jam dpal gser po'i bdag bskyed dang /_gshin po'i dur rdzongs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rlung rta nyams pa gso ba'i bya ba/ 2 sgrol ljang ma'i bla ma'i rnal 'byor/ 3 nad rims zhi phyir bsangs gtong bar 'dod pa/ 4 sham+b+ha lar skyes nas rigs ldan drag bo'i sras su 'gyur bar ba'i smon lam/ 5 las bzhi bsangs mchod 'phri las 'grub pa/ 6 'phags pa 'du shes bcu gcig bstan pa'i mdo/ 7 bde gshegs bdun gyi smon lam/ 8 rdzas gcig la brten nas sdig sgrib zhi ba dang / bsnyen pa'i kha bskong ba'i sbyin bsreg dang yi dam gyi lha gang rung la sbyar chog pa/ 9 bsnyen pa'i kha bskong sbyin sreg bsdus pa/ 10 phyag rdor drag po gsum dril gyi mngon rtogs/ 11 lus ngag yid gsum bcings pa las rab tu rgyal bar byed pa zhes bya ba'i gzungs/ 12 rje btsun Arya ta re'i man ngag la brten nas 'chi kha ma'i nyams len/ 13 pany+tsa rak+Sha grib sel/ 14 'phags pa snang brgyad thub chod kun 'dul/ 15 tA ra na tha'i mdzad pa mnol bsangs/ 16 bsnyungs gnas kyi cho ga'i bum pa/ 17 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan/ 19 phar phyin ston mo'i go rim byas pa la sbyor dngos mjug gsum las/ 20 gdug dkar can gyi bsangs/ 21 rta mchog rol pa'i rnal 'byor bas/ mchog dman mgron la gtor ma dang / /gser skyems bsangs sogs gtong ba'i skabs 'dod gsol kha sgyur byed tshul/ 22 ma mo'i mdos glud gtor mugs legs pa rgyal dbang mchog gis mdzad pa/"@en , "Self generation and funeral rites on the basis of Manjugosha as deity; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T457 , bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM3062 , bdr:W1NLM3062 ;
+        :workIsAbout        bdr:T69 .
+}

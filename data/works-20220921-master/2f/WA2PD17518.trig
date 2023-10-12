@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17518 {
+    bda:LG295A50408B949889
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-09T13:21:01.611Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB74DD5BF256EFB59
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-06T06:53:29.418Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF29BDEB283380386
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF7B53C84227D0AE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-06T06:09:41.04Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2PD17518  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17518 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2f/WA2PD17518.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17518 ;
+        adm:logEntry        bda:LG295A50408B949889 , bda:LGB74DD5BF256EFB59 , bda:LGF29BDEB283380386 , bda:LGF7B53C84227D0AE0 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2PD17518  a       :Work ;
+        skos:altLabel       "dpal rdo rje nag po chen po gur gyi mgon po'i sgrub thabs kyi las tshogs rnams/ kun mkhyen lnga pa chen po'i gsan yig gi go rim bzhin bsgrigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "gur gyi mgon po'i sgrub thabs kyi las tshogs rnams kun mkhyen lnga pa chen po'i gsan yig gi go rim bzhin bsgrigs pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on the practice of Mahakala."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T398 ;
+        :workHasInstance    bdr:MW2PD17518 , bdr:W2PD17518 ;
+        :workIsAbout        bdr:T1599 .
+}

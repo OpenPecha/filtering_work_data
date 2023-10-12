@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27888 {
+    bda:LGC38F062144A9EEA1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA27888  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27888 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "08/WA27888.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27888 ;
+        adm:logEntry        bda:LGC38F062144A9EEA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR209BE4025A0682EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P235 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA190078DAD4657F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P625 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW27888  skos:altLabel  "instructions on the development stage"@en .
+
+    bdr:WA27888  a          :Work ;
+        skos:altLabel       "bskyed rim spyi'i rnam par bzhag pa nyung gsal go bder brjod pa rab gsal nor bu'i me long /"@bo-x-ewts , "gsang sngags kyi bskyed rim gyi gnad mdor bsdus su brjod pa rdo rje sems dpa'i dgongs rgyan/"@bo-x-ewts , "two instructions on the development stage practice of the mantrayana tradition"@en ;
+        skos:prefLabel      "bskyed rim spyi'i rnam bzhag"@bo-x-ewts , "instructions on the development stage"@en ;
+        :creator            bdr:CR209BE4025A0682EE , bdr:CRA190078DAD4657F3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27888 , bdr:MW3916_A2F999 , bdr:W27888 ;
+        :workIsAbout        bdr:T164 .
+}

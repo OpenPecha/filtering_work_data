@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23765 {
+    bda:LG88569BD7B62AED82
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-07T15:29:56.581Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDA32F34E7D4621F5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-01T16:54:11.286Z"^^xsd:dateTime ;
+        adm:logMessage      "provision"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23765  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23765 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d8/WA1KG23765.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23765 ;
+        adm:logEntry        bda:LG88569BD7B62AED82 , bda:LGDA32F34E7D4621F5 , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:CRF21259696F58CCB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6666 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23765  a       :Work ;
+        skos:prefLabel      "deng rabs srid 'dzin rig pa'i rnam bshad/"@bo-x-ewts , "Xian dai xing zheng guan li xue"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Study on contemporary political thoughts and administration in China."@en ;
+        :creator            bdr:CRF21259696F58CCB6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG23765 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

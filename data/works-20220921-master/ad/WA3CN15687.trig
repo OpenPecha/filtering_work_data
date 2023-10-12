@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15687 {
+    bda:LG91E84D367ADA44B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T16:54:07.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA28D7FB54F7E8E80
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGA7DF79E413D8305A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-14T16:36:26.464Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN15687  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15687 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ad/WA3CN15687.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15687 ;
+        adm:logEntry        bda:LG91E84D367ADA44B1 , bda:LGA28D7FB54F7E8E80 , bda:LGA7DF79E413D8305A , bda:LGIMA612579E55 , bda:LGIMEAF73E87 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR613677E246165C3E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7471 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15687  a       :Work ;
+        skos:altLabel       "gyi na badz+nyAn shwa rA rang gis rang mtshang brus pa'i gtam/"@bo-x-ewts ;
+        skos:prefLabel      "dge bshes ye shes dbang phyug gi rang rnam/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography by the Sermey Geshe Yeshe Wangchuk (1928-2000)."@en ;
+        :creator            bdr:CR613677E246165C3E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW3CN15687 , bdr:W3CN15687 ;
+        :workIsAbout        bdr:P7471 .
+}

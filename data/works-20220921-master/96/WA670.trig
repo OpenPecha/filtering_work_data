@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA670 {
+    bda:LG3E2509D45BD02687
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG406F121DA4D22873
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-11T10:13:25.96Z"^^xsd:dateTime ;
+        adm:logMessage      "complete catalog"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3296080D33D5DCC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-11T10:13:57.557Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA670  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA670 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "96/WA670.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA670 ;
+        adm:logEntry        bda:LG3E2509D45BD02687 , bda:LG406F121DA4D22873 , bda:LGD3296080D33D5DCC , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR46B568B9DFA687B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA670  a            :Work ;
+        skos:altLabel       "tshad ma rigs thigs kyi 'grel pa legs bshad snying po'i gter/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rigs thigs kyi 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Nyayabindu of Dharmakriti (7th cent.) by Gyaltsab Je, Darma Rinchen (1419-1431)"@en ;
+        :creator            bdr:CR46B568B9DFA687B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW670 , bdr:W670 ;
+        :workIsAbout        bdr:T370 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3306 {
+    bda:LG201FF956372DAF55
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T10:44:09.754Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG38287EE1A3801ADF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGE77009D82C25F54B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:06:03.822Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3306"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3306  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3306 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a0/WA1NLM3306.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3306 ;
+        adm:logEntry        bda:LG201FF956372DAF55 , bda:LG38287EE1A3801ADF , bda:LGE77009D82C25F54B , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1165DA7D2431B8D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB204370AB768EF0A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3306  a       :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa'i bla ma brgyud pa'i rnam par thar pa pad+ma dkar po'i 'phreng ba sogs/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim bla ma brgyud pa'i rnam par thar pa pad+ma dkar po'i 'phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "History of the successive teachers in the transmission of the Lamrim teachings; based on the teachings of PaNnchen Sonam Drakpa and other miscellaneous writings"@en ;
+        :creator            bdr:CR1165DA7D2431B8D4 , bdr:CRB204370AB768EF0A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM3306 , bdr:W1NLM3306 ;
+        :workIsAbout        bdr:T177 .
+}

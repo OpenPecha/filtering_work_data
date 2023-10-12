@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3391 {
+    bda:LG3E3831EDBA35C4DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-24T15:29:12.247Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3391"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3391  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3391 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/WA1NLM3391.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3391 ;
+        adm:logEntry        bda:LG3E3831EDBA35C4DE , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6539F74B817A3E98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3391  a       :Work ;
+        skos:altLabel       "phar phyin skabs brgyad pa'i mtha' dpyod bsam 'phel yid bzhin nor bu'i phreng mdzes skal bzang mig 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "skabs brgyad pa'i mtha' dpyod bsam 'phel yid bzhin nor bu'i phreng mdzes skal bzang mig 'byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the eighth chapter (dharmakayabhisambodha) of the abhisamayalankara and its vrtti by haribhadra, Production stage ritual for creating the actual presence of kalacakra and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CR6539F74B817A3E98 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3391 , bdr:W1NLM3391 ;
+        :workIsAbout        bdr:WA19716 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN7859 {
+    bda:LG22EBC53AF5B4DDC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-18T09:28:20.463Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG41E413EE002BE4F8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T15:56:19.982Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5326B8AB6BC90FED
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-08T15:05:19.349Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN7859  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN7859 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "17/WA3CN7859.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN7859 ;
+        adm:logEntry        bda:LG22EBC53AF5B4DDC2 , bda:LG41E413EE002BE4F8 , bda:LG5326B8AB6BC90FED , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR474801F8B18C2CCC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9505 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN7859  a        :Work ;
+        skos:altLabel       "dbyin bod shan sbyar gyi tshig mdzod snang ba gsal ba/"@bo-x-ewts ;
+        skos:prefLabel      "dbyin bod shan sbyar gyi tshig mdzod/"@bo-x-ewts ;
+        :catalogInfo        "English and Tibetan Dictionary"@en ;
+        :creator            bdr:CR474801F8B18C2CCC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW3CN7859 , bdr:W3CN7859 .
+}

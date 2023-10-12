@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG207563 {
+    bda:LG21803D1689166B03
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-11T15:26:35.258Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to Restricted in China"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG64B96B8014704356
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-11T15:25:17.838Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB63DF8F1FCDB310F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-11T14:52:32.097Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG207563  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG207563 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f0/WA2KG207563.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG207563 ;
+        adm:logEntry        bda:LG21803D1689166B03 , bda:LG64B96B8014704356 , bda:LGB63DF8F1FCDB310F , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0487AB43ED15AC9B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG207969 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR1641975B9DF7C9FA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15783 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG207563  a      :Work ;
+        skos:prefLabel      "bden rdzun gsal ba'i nyi gzhon/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writting on issue of Tibet."@en ;
+        :creator            bdr:CR0487AB43ED15AC9B , bdr:CR1641975B9DF7C9FA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW2KG207563 , bdr:W2KG207563 ;
+        :workIsAbout        bdr:T1113 , bdr:T2CZ10088 .
+}

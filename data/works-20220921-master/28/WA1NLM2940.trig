@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2940 {
+    bda:LG5AFDE03BEB4F375A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGA8B79D5C4937EFF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-24T09:43:27.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2940"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2940  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2940 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "28/WA1NLM2940.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2940 ;
+        adm:logEntry        bda:LG5AFDE03BEB4F375A , bda:LGA8B79D5C4937EFF0 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2940  a       :Work ;
+        skos:prefLabel      "dag yig snying po kun 'dus sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje rnam par 'joms pa'i cho ga phan bde'i 'byung gnas/ 2 btsan mdos 'dza' lugs ma/ 3 thub dbang gnas brtan bcu drug 'khor bcas la spyir phyag mchod bya ba/ 4 rta mgrin gsang sgrub kyi sgo nas byabs khrus byed tsul bdud rtsi bum bzang / 5 'brum pa bsrung phyir sna tshogs yum bsgrub par 'dod pa/ 6 bstan bsrung chen po hang ka'i rgyal po'i bsangs mchod rten 'bul 'dod pa'i re skong / 7 gser skyems 'bul ba'i tshigs bcad bkra shis don grub/ 8 rje btsun 'phags ma sgrol ma brten nas g.yang dgugs bya tshul rin chen lcags kyu/ 9 rta mgrin gsang sgrub kyi chos skor las nad bdag stobs 'joms kyi khyer bde bkod pa kun phan bdud rtsi'i zeg ma/ 10 ku gnyan gdon 'grol/ 11 'go ba'i lha lnga'i gsol mchod phan bde 'dod 'jo/ 12 dpal ldan lha mo'i sgo nas maN+Dal bzhi pa 'bul dgos 'dod kun 'byung dpag bsam ljon pa/ 13 dur bbdag gsang mgon gyi sgo nas nor bsnyeg gi rlung 'khor bya tshul chom rkun phye mar 'thag pa'i 'khurl 'khor/ 14 rta thog rab gnas/ 15 rgyal ba'i gsung rab thams cad kyi gnad bsdus pa byang chub lam gyi rim pa'i dmigs rnam skyong tshul mdor bsdus su bkod pa/"@en , "Tibetan orthographical dictionay by author signed as Dulwa Losang Gaden; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T218 ;
+        :workHasInstance    bdr:MW1NLM2940 , bdr:W1NLM2940 .
+}

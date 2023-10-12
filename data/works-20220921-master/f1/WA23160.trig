@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23160 {
+    bda:LG050DDE3015ABC5A3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG29821FB69FEDD9A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T15:29:04.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG739A51A99AC52C0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-21T11:13:49.495Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23160  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23160 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f1/WA23160.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23160 ;
+        adm:logEntry        bda:LG050DDE3015ABC5A3 , bda:LG29821FB69FEDD9A5 , bda:LG739A51A99AC52C0F , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA23160  a          :Work ;
+        skos:altLabel       "gzhung zhabs rnams la nye bar mkho ba bla dpon rim byon gyi lo rgyus tham deb long ba'i dmigs bu/"@bo-x-ewts ;
+        skos:prefLabel      "long ba'i dmigs bu/"@bo-x-ewts ;
+        :catalogInfo        "Manual of information for officials of the Ganden Podrang. Written in the early years of the 20th century."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW23160 , bdr:W23160 ;
+        :workIsAbout        bdr:T1672 , bdr:T207 .
+}

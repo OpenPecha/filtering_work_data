@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3290 {
+    bda:LG645566A9DF9199BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T09:21:05.849Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9EAAAF58A8B93F1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGD8D13205F0AD0191
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-27T09:24:45.138Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3290"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3290  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3290 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d4/WA1NLM3290.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3290 ;
+        adm:logEntry        bda:LG645566A9DF9199BA , bda:LG9EAAAF58A8B93F1A , bda:LGD8D13205F0AD0191 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR02A21D0F3C9B09CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG208395 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3290  a       :Work ;
+        skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan 'grel dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las bden bzhi'i skor/"@bo-x-ewts ;
+        skos:prefLabel      "mngon rtogs rgyan 'grel dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las bden bzhi'i skor/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Abhisamayalankara focussing on the four truths and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR02A21D0F3C9B09CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3290 , bdr:W1NLM3290 ;
+        :workIsAbout        bdr:WA19716 .
+}

@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1708 {
+    bda:LG07B83C7E038F2223
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA3AFA18AA56EFDC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:44:32.714Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3BC3BE7E7C8E498
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-03T09:29:39.679Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1708"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1708  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1708 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "db/WA1NLM1708.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1708 ;
+        adm:logEntry        bda:LG07B83C7E038F2223 , bda:LGA3AFA18AA56EFDC3 , bda:LGD3BC3BE7E7C8E498 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1CC45CCAA19CCF4A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1708  a       :Work ;
+        skos:prefLabel      "slob dpon chen po'i pad+ma 'byung gnas kyis gsungs pa'i gsol 'debs le'u bdun pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsang chog bkra shis char 'bebs mchod sprin rgya mtsho dang / bsang chog shin tu bsdus pa rnams/ 2 dga' ldan sogs dag zhing du skye ba'i smon lam/ 3 gang ser ma mdo/ 4 sgrol ma 'chi bslu/ 5 yi dza ra han ka'i bsang mchod bkra shis char 'bebs/ 6 mgon po phyag drug pa'i rol chen ni/ 7 kyai sbyin sogs phar phyin chos 'khor gling 'di ru/ 8 mkha' 'gro'i bzhengs bskul dang 'bum bskul pa/ 9 ston pa shAkya'i thub pa'i sgo nas bsrung ba dang 'gal skyen phyi nang gi bar chad tshe dang bsod nams lus dbang thar rlung rta bskyed pa'i thams cad bkra shis legs tshogs 'phel zhing rgyas par byin gyis rlabs/ 10 rje dz+nyA na badzaras mdzad pa swa yaM b+hu dzyo te dang mthun pa'i man ngag 11 sgrol ma'i maN+Dal bzhi pa'i cho ga 12 'khrungs rabs gsol 'debs/ 13 phyugs rnams kyi nad rims god kha bzlog pa'i mdos/ rta glang lugs ra/ 14 lug nad zhi bar byed pa'i gzungs/ 15 lug nad zhi bar byed pa'i gzungs/ 16 nor lha chos skyong rnams kyi bsangs/ 17 dpal ldan lha mo maN+Dal bzhi ba/ 18 phyag rdor gtum chen gyi sgo nas rten rnying ba la tshon gsar 'bul tshul bkra shis dpal ster/ 18 'phags pa nor bu bzang po'i gzungs/ 19 tshab sur gtong bar 'dod pa/"@en , "A seven chapter reverential petition composed by Padmasambhava; other text also included."@en ;
+        :creator            bdr:CR1CC45CCAA19CCF4A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW1NLM1708 , bdr:W1NLM1708 .
+}

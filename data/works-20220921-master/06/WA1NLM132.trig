@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM132 {
+    bda:LG213C7C7B085287CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-08T12:48:11.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added volume and image numbers"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG573468EC3BAC697D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-12T17:12:24.013Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5C56ACA36008D13F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG889967E4FC5BCEC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:14:34.591Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM132"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM132  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM132 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "06/WA1NLM132.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM132 ;
+        adm:logEntry        bda:LG213C7C7B085287CA , bda:LG573468EC3BAC697D , bda:LG5C56ACA36008D13F , bda:LG889967E4FC5BCEC5 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM132  a        :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi chos skor las bum gter gyi cho ga dgos 'dod kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical and ritual texts of various deities."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM132 , bdr:W1NLM132 ;
+        :workIsAbout        bdr:T249 , bdr:T35 .
+}

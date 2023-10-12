@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5026 {
+    bda:LG568733CDBB090FB0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-03T09:50:43.057Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA91C8D873B43DCB5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-03T09:51:45.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF9D7105F89F4F293
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T20:46:45.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1CIHTS00"@en ;
+        adm:logWhoStr       "add-works-to-PR1CIHTS00" .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG5026  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5026 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "58/WA2KG5026.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5026 ;
+        adm:logEntry        bda:LG568733CDBB090FB0 , bda:LGA91C8D873B43DCB5 , bda:LGF9D7105F89F4F293 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD579F19DD310F341
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4859 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG5026  a        :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i bsdus don shAkya'i dge slong chos kyi seng ges sbyar ba/"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug bsdus don/"@bo-x-ewts ;
+        :catalogInfo        "Summaried commentary on the Bodhicaryavatara of Indian scholar Shantideva."@en ;
+        :creator            bdr:CRD579F19DD310F341 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW2KG5026 , bdr:W2KG5026 ;
+        :workIsAbout        bdr:G2KG5024 , bdr:WA19740 .
+}

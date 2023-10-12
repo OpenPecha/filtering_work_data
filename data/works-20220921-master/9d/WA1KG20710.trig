@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20710 {
+    bda:LG3A5C8E40C203D7DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-05T15:24:41.383Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG977487781A9C3688
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T18:57:34.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFE5DF0670BC04314
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-15T15:10:19.562Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20710  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20710 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9d/WA1KG20710.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20710 ;
+        adm:logEntry        bda:LG3A5C8E40C203D7DF , bda:LG977487781A9C3688 , bda:LGFE5DF0670BC04314 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG20710  skos:altLabel  "a collection of 179 tibetan riddles"@en .
+
+    bdr:WA1KG20710  a       :Work ;
+        skos:prefLabel      "bod kyi gab tshig phyogs bsgrigs/"@bo-x-ewts , "a collection of 179 tibetan riddles"@en ;
+        :catalogInfo        "Collection of Tibetan riddles."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1KG20710 , bdr:W1KG20710 ;
+        :workIsAbout        bdr:T1159 .
+}

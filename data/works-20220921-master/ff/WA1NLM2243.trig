@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2243 {
+    bda:LG04C2497E1336349C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG26BF30B5F33FE2F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-05T09:28:14.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2243"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2243  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2243 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/WA1NLM2243.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2243 ;
+        adm:logEntry        bda:LG04C2497E1336349C , bda:LG26BF30B5F33FE2F6 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD227EC507E45B957
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2243  a       :Work ;
+        skos:prefLabel      "zhi khro rigs brgya 'dus pa'i btags grol phung po rang grol sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'chi ltas brtags pa dang 'chi ba bslu ba'i thabs tshe khrid dang bcas pa 'chi med dga' ston/ 2 sgo'i lha mchod pa'i cho ga 3 rta gzungs mdo/ 4 mgon dkar yid bzhin nor bu'i bsangs mchod/ 5 jo bo rjes mdzad pa'i rigs pa'i smon lam/ 6 chos skyong rgyal po sku lnga la mchod gtor dus rgyun du 'bul bar 'dod pa/ 7 dpal rdo rje 'jigs byed kyi bsgoms bzlas mdor bsdus bya tshul/ 8 lhag pa'i lha mchog rgyal mtshan rtse mo dpung rgyan la brten rdo rje ro langs ma'i bskang bshags bstod bskul dang bcas pa 'phrin las lhun grub/ 9 bkra shis brtsegs pa'i g.yang 'gugs/ 10 bstod sprin rgya mtsho'i 'don thabs/ 11 sman bla mched bdun la gsol ba gdab ba'i cho ga 12 mdo sngags zung 'jug lugs kyi nam mkha' sgo 'byed kyi dbang dang gtsug gtor rnam par lta ba zhes bya ba'i ting nge 'dzin kyi dbang / 13 khu sgom chos kyi seng+ge mdo sngags zung 'jug gi lugs gtso bor gsungs pa'i gcod gzhung chags med ngam karma a ra ka si mdzad pa'i gcod kyi chos skor dkar chag 14 sgrol ma'i rgyun khyer/ 15 mngon shes/ 16 rnam kun/ 17 blo sbyong mgur/ 18 bslab pa kun las btus pa/ 19 rje yab sras gsum gyi lung gnang ba'i skabs kyi brgyud pa'i bla ma rnams kyi gsol 'debs/ 20 bka' 'gyur rin po che lung gi brgyud 'debs/ 21 mdo sdud pa mngon rtogs rgyan dbu ma 'jug pa rnams kyi don bsdu/"@en , "Liberation of sign and aggregate of Zhitro; other text also included."@en ;
+        :creator            bdr:CRD227EC507E45B957 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2243 , bdr:W1NLM2243 ;
+        :workIsAbout        bdr:T1316 , bdr:T2270 .
+}

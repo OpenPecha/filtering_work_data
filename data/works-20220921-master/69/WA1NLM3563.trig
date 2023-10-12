@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3563 {
+    bda:LG4783B97E392A3952
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T11:30:43.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3563"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3563  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3563 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "69/WA1NLM3563.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3563 ;
+        adm:logEntry        bda:LG4783B97E392A3952 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCD77F0C08A80737C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3563  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs bdud las rnam rgyal gyi ngag 'don khrig chags su bdebs pa bdud las rnam par rgyal ba'i rgyal mtshan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpa' gcig bdud las rnam rgyal gyi bla brgyud gsol 'debs/ 2 bla ma mchod pa'i cho ga 3 byams pai bsgom bzlas/ 4 kun rig gi bsgom bzlas/ 5 don yod rdo rje bsgom bzlas/ 6 ngan song sbyong ba la cher bsngags pa gzungs chen sde lnga'i 'don thabs/ 7 klu dbang rgyal po'i sgrub thabs/ 8 drag po gsum dril gyi mngon rtogs/ 9 ngan song sbyong ba'i gzungs sde lng'ai 'don thabs/ 10 dkon mchog brtsegs las gsung ba'i sangs rgyas bcu'i mtshan dnag phan yon bcas pa/ 11 sdig bshags gser gyi spu gri/"@en , "Sadhana of the solitary Vajrabairava; other text also included."@en ;
+        :creator            bdr:CRCD77F0C08A80737C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3563 , bdr:W1NLM3563 ;
+        :workIsAbout        bdr:T104 .
+}

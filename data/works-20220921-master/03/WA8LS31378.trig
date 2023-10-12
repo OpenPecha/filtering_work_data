@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31378 {
+    bda:LG0F372BACBBD56568
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-02-20T13:56:53.3Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7AA5F0739B594C31
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-20T13:58:03.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31378  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31378 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "03/WA8LS31378.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31378 ;
+        adm:logEntry        bda:LG0F372BACBBD56568 , bda:LG7AA5F0739B594C31 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR82F2F027EB047B3A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS31378  a       :Work ;
+        skos:altLabel       "rdor sems thugs kyi sgrub pa'i gcod khrid kyi khrid yig skyud byang du bkod pa 'khrul rtog dbyings grol/"@bo-x-ewts , "smin gling rdor sems gcod khrid/"@bo-x-ewts ;
+        skos:prefLabel      "rdor sems thugs kyi sgrub pa'i gcod khrid kyi khrid yig"@bo-x-ewts ;
+        :catalogInfo        "An instructional manual of Chod according to Mingling Dorsem by Minling Dharmashri."@en ;
+        :creator            bdr:CR82F2F027EB047B3A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS31378 , bdr:MW9140_CCC322 , bdr:W8LS31378 ;
+        :workIsAbout        bdr:T00AG01245 , bdr:T194 .
+}

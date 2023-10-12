@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23862 {
+    bda:LG1AECDC4F74C45521
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG23B2780DEC51EB8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5112509AB634EE99
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T18:26:42.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person and modify catalog"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEAB8D43AFF6FD9FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-08T20:29:05.015Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bibliographical title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23862  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23862 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/WA23862.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23862 ;
+        adm:logEntry        bda:LG1AECDC4F74C45521 , bda:LG23B2780DEC51EB8F , bda:LG5112509AB634EE99 , bda:LGEAB8D43AFF6FD9FF , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF65982F34F876F41
+        a                   :AgentAsCreator ;
+        :agent              bdr:P801 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23862  skos:altLabel  "the autobiography of tshul-khrims-rin-chen of sde-dge and other of his selected writings"@en-x-mixed .
+
+    bdr:WA23862  a          :Work ;
+        skos:altLabel       "The autobiography of Tshul-khrims-rin-chen of Sde-dge and other of his selected writings."@en-x-mixed ;
+        skos:prefLabel      "zhu chen gyi rang rnam/"@bo-x-ewts , "the autobiography of tshul-khrims-rin-chen of sde-dge and other of his selected writings"@en-x-mixed ;
+        :catalogInfo        "The autobiography of Sakya master Zhuchen Tsultrim Rinchen (1697-1774) and other of his selected writings."@en ;
+        :creator            bdr:CRF65982F34F876F41 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW23862 , bdr:W23862 ;
+        :workIsAbout        bdr:P801 , bdr:T617 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17772 {
+    bda:LG64C2788371D0C066
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG82F145FD64F544C5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-03T08:52:24.53Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG98D588B2E71F9AB9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-03T08:53:51.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC129E03BAB0883C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T09:41:23.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17772  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17772 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7e/WA8LS17772.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17772 ;
+        adm:logEntry        bda:LG64C2788371D0C066 , bda:LG82F145FD64F544C5 , bda:LG98D588B2E71F9AB9 , bda:LGC129E03BAB0883C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB21D57A902D0D2E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1499 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17772  a       :Work ;
+        skos:altLabel       "rgyal kun mkhyen brtse nus pa'i bdag nyid rdo rje 'chang rje btsun 'jigs med 'phrin las rgya mtsho dpal bzang po'i rnam thar gyi sa bon drang po'i gtam gyi tshangs thig"@bo-x-ewts ;
+        skos:prefLabel      "'jigs med 'phrin las rgya mtsho dpal bzang po'i rnam thar gyi sa bon drang po'i gtam gyi tshangs thig"@bo-x-ewts ;
+        :catalogInfo        "1 dbu ma la 'jug pa'i bshad pa dag rgya che ba'i tshul gsal bar byed pa/"@bo-x-ewts , "Autobiography of Alak Lago Jigme Trinley Gyatsho."@en ;
+        :creator            bdr:CRB21D57A902D0D2E6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS17772 , bdr:W8LS17772 ;
+        :workIsAbout        bdr:P1499 , bdr:T819 .
+}

@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG5488 {
+    bda:LG49B1A26C34871A88
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-06-30T10:19:16.623Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG57F01FF32C4F988C
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-06T02:22:35.968Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF9BF32576DDA3CA8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-30T10:17:41.981Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG5488  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG5488 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "4d/WA1KG5488.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG5488 ;
+        adm:logEntry        bda:LG49B1A26C34871A88 , bda:LG57F01FF32C4F988C , bda:LGF9BF32576DDA3CA8 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR30BAE4A3FE7D9550
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1038 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVC7668E28179ECC71
+        a                   :CompletedEvent ;
+        :onYear             "1484"^^xsd:gYear .
+
+    bdr:WA1KG5488  a        :Work ;
+        skos:altLabel       "'dul ba'i rnam bshad lung rigs gter mdzod/"@bo-x-ewts , "'jam dbyangs zhal gyi pad dkar 'dzum phye nas/ lung rigs gter mdzod ze'u 'bru bzhad pa la/ blo gsal rkang drug ldan rnams 'phur lding rol/ legs bshad sbrang rtsi'i dga' ston 'gyed pa bzhugs/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba lung rigs gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of Buddhist Vinaya monastic discipline codes. Written by Sakya master Jamyang Kunga Chozang (1433-1503)."@en ;
+        :creator            bdr:CR30BAE4A3FE7D9550 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVC7668E28179ECC71 ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG5488 , bdr:W1KG5488 ;
+        :workIsAbout        bdr:T55 .
+}

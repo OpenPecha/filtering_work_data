@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77261 {
+    bda:LG6D7E12077E219041
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-28T11:17:02.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEC0058FE9AB15DBB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-28T11:16:40.157Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77261  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77261 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "72/WA8LS77261.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77261 ;
+        adm:logEntry        bda:LG6D7E12077E219041 , bda:LGEC0058FE9AB15DBB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD15F57136F6663F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77261  a       :Work ;
+        skos:prefLabel      "theg chen blo sbyong gi khrid yig bdud rtsi'i snying po/"@bo-x-ewts ;
+        :catalogInfo        "An instructional manual of Mahayana mind training by Yongzin Yeshe Gyaltshen."@en ;
+        :creator            bdr:CRD15F57136F6663F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS77261 , bdr:W8LS77261 ;
+        :workIsAbout        bdr:T1881 .
+}

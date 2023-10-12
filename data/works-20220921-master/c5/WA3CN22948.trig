@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22948 {
+    bda:LG1543DF762F52F408
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-30T20:43:32.55Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG25687526EF9E30E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-01T18:44:05.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB08A1B59084320A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBC6A1E3449C058CF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-01T18:50:23.861Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22948  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22948 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/WA3CN22948.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22948 ;
+        adm:logEntry        bda:LG1543DF762F52F408 , bda:LG25687526EF9E30E5 , bda:LGB08A1B59084320A0 , bda:LGBC6A1E3449C058CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5E831AAD92A0C1D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM165 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22948  a       :Work ;
+        skos:altLabel       "ma cig lab kyi sgron ma'i rnam thar dang gcod kyi skor/"@bo-x-ewts ;
+        skos:prefLabel      "ma cig lab kyi sgron ma'i rnam thar khag gnyis/"@bo-x-ewts ;
+        :catalogInfo        "Biographies about Macik Labdron (1055-1149)."@en ;
+        :creator            bdr:CR5E831AAD92A0C1D9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN22948 , bdr:W3CN22948 ;
+        :workIsAbout        bdr:P3312 .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ315279 {
+    bda:LG394C18CD68822D29
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T12:10:40.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8125AB91C0EEA80B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-30T16:11:47.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCE0A8DC7502D2956
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-30T16:01:17.033Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD7F1CA7A01DA9412
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-02T11:08:06.403Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ315279  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ315279 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b3/WA4CZ315279.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ315279 ;
+        adm:logEntry        bda:LG394C18CD68822D29 , bda:LG8125AB91C0EEA80B , bda:LGCE0A8DC7502D2956 , bda:LGD7F1CA7A01DA9412 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6AAD6F207623C171
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ321152 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ315279  a      :Work ;
+        skos:altLabel       "rgyal sa lha sa'i rdo ring /"@bo-x-ewts ;
+        skos:prefLabel      "le'u brgya pa/ bod rgya sgo kun tha dad/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Nangchen Drakpa Tendar (b. 1930) of his time in Tibet and after he fled to India."@en ;
+        :creator            bdr:CR6AAD6F207623C171 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW4CZ315279 , bdr:W4CZ315279 ;
+        :workIsAbout        bdr:P4CZ321152 , bdr:T2382 .
+}

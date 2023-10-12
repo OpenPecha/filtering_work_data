@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM252 {
+    bda:LG0118A1934397196D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:39.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG07294C70C2723F84
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-20T10:36:49.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info, content"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE15AA657F11059EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM252"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM252  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM252 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "78/WA1NLM252.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM252 ;
+        adm:logEntry        bda:LG0118A1934397196D , bda:LG07294C70C2723F84 , bda:LGE15AA657F11059EA , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR92B518DF4063CD4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM252  a        :Work ;
+        skos:prefLabel      "dga' ldan lha brgya ma'i gzhung bsrangs te mdo sngags cha tshang bar nyams su len tshul dga' ldan zhing du bgrod pa'i nor bu'i them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi sgo nas bka' bsgo bya tshul/ 2 bzang po spyod pa'i sgo nas 'chi bslu ji ltar bya tshul gyi cho ga'i ngag 'don dus min 'chi 'joms/ 3 chab gtor shAka thub ma dang brgya rtsa gnyis kyo cho ga'i lag len ngag 'don lhan thabs/ 4 rje btsun 'phags ma sgrol ma'i ngo mtshar ba'i che ba dang / gang de'i bstod pa phyag 'tshal nyi shu rtsa gcig ma'i phan yon bcas mdo tsam du brjod pa ut+pala'i phreng mdzes/ 5 'dod khams dbang phyug ma'i sgo nas g.yar gyi bzo rdol bcos pa'i cho ga gso byed bkra shis kun bzang / 6 dpal ldan 'dod khams dbang phyug ma la brten nas bkra shis phywa g.yang 'gugs pa'i cho ga tshe g.yang dpal ster/"@en , "Explanation and practice of Gaden Lhagya ma by Gungthang Konchok Tenpe Dronme."@en ;
+        :creator            bdr:CR92B518DF4063CD4B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM252 , bdr:W1NLM252 ;
+        :workIsAbout        bdr:T430 , bdr:T541 .
+}

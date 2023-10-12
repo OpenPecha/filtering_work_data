@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23843 {
+    bda:LG2A463A22392E65DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG31CC6EE889CBCE4C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-23T15:25:04.741Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG980AF825A1859033
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:49:44.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEE560287E61A111A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-23T15:25:43.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23843  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23843 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6d/WA1KG23843.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23843 ;
+        adm:logEntry        bda:LG2A463A22392E65DB , bda:LG31CC6EE889CBCE4C , bda:LG980AF825A1859033 , bda:LGEE560287E61A111A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23843  a       :Work ;
+        skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ gso rig lo rgyus/"@bo-x-ewts , "zang yi yao xue shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gso rig lo rgyus/ (bcos sgrig ma/)"@bo-x-ewts , "藏医药学史"@zh-hans ;
+        :catalogInfo        "Experimental textbook for Tibetan ayurvedic medical study focussed on history of Tibetan ayurvedic medicine."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T1134 , bdr:T266 ;
+        :workHasInstance    bdr:MW1KG23843 , bdr:W1KG23843 ;
+        :workIsAbout        bdr:T85 .
+}

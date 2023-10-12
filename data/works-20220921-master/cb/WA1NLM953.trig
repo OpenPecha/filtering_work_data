@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM953 {
+    bda:LG0F5C6BBDAAF87C73
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG2A40C2570B94A2C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-23T13:37:45.684Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3E098DD72087FE67
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T16:52:00.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM953"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM953  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM953 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cb/WA1NLM953.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM953 ;
+        adm:logEntry        bda:LG0F5C6BBDAAF87C73 , bda:LG2A40C2570B94A2C7 , bda:LG3E098DD72087FE67 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFA583DF2EA13971C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8506 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CRFFF9D27B2DB8E801
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM953  a        :Work ;
+        skos:prefLabel      "'dul ba rgya mtsho'i dka' gnad mdor bsdus nor bu'i 'phreng mdzes kyi tshig don gsal ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "A summary of key points in the Vinaya, Dulwa Gyatsho by Gungthang Konchok Tenpai Dronme and an explanation by Rabjam Mrawa Samten Gyatso."@en ;
+        :creator            bdr:CRFA583DF2EA13971C , bdr:CRFFF9D27B2DB8E801 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW1NLM953 , bdr:W1NLM953 ;
+        :workIsAbout        bdr:T2339 , bdr:T55 , bdr:WA4CZ354411 .
+}

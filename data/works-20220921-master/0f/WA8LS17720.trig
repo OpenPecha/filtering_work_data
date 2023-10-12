@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17720 {
+    bda:LG62E21F814AC7B069
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T12:47:04.153Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7B7A5544E0E9C8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGAC3786D9109D9F42
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T12:48:14.259Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17720  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17720 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0f/WA8LS17720.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17720 ;
+        adm:logEntry        bda:LG62E21F814AC7B069 , bda:LG7B7A5544E0E9C8AB , bda:LGAC3786D9109D9F42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17720  a       :Work ;
+        skos:altLabel       "'phags pa sa'i snying po la brten nas sa bdag snying gter 'bul tshul gyi cho ga dpag bsam ljon pa/"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa sa'i snying po la brten nas sa bdag snying gter 'bul tshul/"@bo-x-ewts ;
+        :catalogInfo        "A ritual text invoking Kshitigarbha to perform the Sadak Nyingter ritual by unknown author."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW8LS17720 , bdr:W8LS17720 ;
+        :workIsAbout        bdr:T1448 , bdr:T2GS1131 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25892 {
+    bda:LG18AFB619C610EF40
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-02-23T09:18:45.108Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged & released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG564C1F8FD5C18EA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T12:13:19.654Z"^^xsd:dateTime ;
+        adm:logMessage      "added ISBN"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB3538D73D844EC11
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T14:51:12.511Z"^^xsd:dateTime ;
+        adm:logMessage      "added auhor"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDEB3350C016BC775
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-02T12:13:46.062Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25892  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25892 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f8/WA3CN25892.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25892 ;
+        adm:logEntry        bda:LG18AFB619C610EF40 , bda:LG564C1F8FD5C18EA7 , bda:LGB3538D73D844EC11 , bda:LGDEB3350C016BC775 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBD0A7AF3507174C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12055 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN25892  a       :Work ;
+        skos:altLabel       "dus rabs nyer gcig pa'i 'gros dang mthun pa'i bde skyid kyi bgrod lam/"@bo-x-ewts ;
+        skos:prefLabel      "rang sems rang gi mgon skyabs/"@bo-x-ewts ;
+        :catalogInfo        "Introduction of buddhism by Geshe Lobsang Gyaltsen."@en ;
+        :creator            bdr:CRBD0A7AF3507174C0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
+        :workHasInstance    bdr:MW3CN25892 , bdr:W3CN25892 ;
+        :workIsAbout        bdr:T770 .
+}

@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21621 {
+    bda:LG0AD1FB684A0D510E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG2FA5E492AC52A65F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-17T16:19:41.432Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6B0908C53B17ADA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-27T20:14:44.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9A1CED10BEB14BDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-09T11:27:21.37Z"^^xsd:dateTime ;
+        adm:logMessage      "may dup and Marked as Editing"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD10DBA4DDE0D5030
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGEC3C046CF37679C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-27T19:12:30.068Z"^^xsd:dateTime ;
+        adm:logMessage      "re-cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21621  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21621 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ee/WA3CN21621.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21621 ;
+        adm:logEntry        bda:LG0AD1FB684A0D510E , bda:LG2FA5E492AC52A65F , bda:LG6B0908C53B17ADA7 , bda:LG9A1CED10BEB14BDD , bda:LGD10DBA4DDE0D5030 , bda:LGEC3C046CF37679C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN21621  a       :Work ;
+        skos:prefLabel      "gzungs sngags zab mo phyogs gcig tu bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dharanis collected from all the sutras etc."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T933 ;
+        :workHasInstance    bdr:MW3CN21621 , bdr:W3CN21621 .
+}

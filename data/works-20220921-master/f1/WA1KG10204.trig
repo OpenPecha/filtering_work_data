@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10204 {
+    bda:LG31382F0931399544
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-07-27T11:22:30.145Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5D6FB99C84CA83F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-07-27T10:36:28.9Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG724EF223A1E58B0C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-07-27T12:03:11.996Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4D7F0304BD83825
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:37:17.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10204  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10204 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f1/WA1KG10204.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10204 ;
+        adm:logEntry        bda:LG31382F0931399544 , bda:LG5D6FB99C84CA83F3 , bda:LG724EF223A1E58B0C , bda:LGC4D7F0304BD83825 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR825E81657DFF06B2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7419 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1KG10204  a       :Work ;
+        skos:altLabel       "tshe bdag gi sgom khog zhal gdams sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje'i gshed lcags sdig skor/"@bo-x-ewts ;
+        :catalogInfo        "Select terma texts on the wrathful manifestaion of Manjushri."@en ;
+        :creator            bdr:CR825E81657DFF06B2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG10204 , bdr:W1KG10204 ;
+        :workIsAbout        bdr:T1734 .
+}

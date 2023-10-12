@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG109097 {
+    bda:LG828707135732F819
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-27T16:54:30.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8E9B23438F8161F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-27T12:47:04.698Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG109097  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG109097 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/WA1KG109097.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG109097 ;
+        adm:logEntry        bda:LG828707135732F819 , bda:LG8E9B23438F8161F6 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE6180DC0C107739D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG109104 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG109097  skos:altLabel  "qing chun de jiao bu sheng"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA1KG109097  a      :Work ;
+        skos:altLabel       "青春的脚步声"@zh-hans ;
+        skos:prefLabel      "lang tsho'i gom sgra/"@bo-x-ewts , "qing chun de jiao bu sheng"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Collection of writings of Palden Lhundrup."@en ;
+        :creator            bdr:CRE6180DC0C107739D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW1KG109097 , bdr:W1KG109097 .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC4 {
+    bda:LG080D1295C500EAD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-28T16:26:58.393Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG2DBC25442BC94F4D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T03:24:19.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3A49A3B8658BC7DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-12T11:50:59.467Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGB08F32EE5AB1F046
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-18T03:55:53.087Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE51824523579453F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T17:37:53.182Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, add Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC4  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC4 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "20/WA1AC4.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC4 ;
+        adm:logEntry        bda:LG080D1295C500EAD5 , bda:LG2DBC25442BC94F4D , bda:LG3A49A3B8658BC7DD , bda:LGB08F32EE5AB1F046 , bda:LGE51824523579453F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8121BA5B7C829692
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS56009 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1AC4  skos:altLabel  "kagyupa school"@en , "西藏宗教历史文化之噶举派"@zh-hans .
+
+    bdr:WA1AC4  a           :Work ;
+        skos:altLabel       "xi zang zong jiao li shi wen hua zhi ga ju pai"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bka' brgyud pa'i grub mtha' spyi bshad/"@bo-x-ewts , "kagyupa school"@en , "西藏宗教历史文化之噶举派"@zh-hans ;
+        :catalogInfo        "A general explanation of the Kagyu religious doctrine གུང་ཐང་བློ་གྲོས་རྒྱ་མཚོ"@en ;
+        :creator            bdr:CR8121BA5B7C829692 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T385 ;
+        :workHasInstance    bdr:MW1AC4 , bdr:W1AC4 ;
+        :workIsAbout        bdr:T1193 , bdr:T916 .
+}

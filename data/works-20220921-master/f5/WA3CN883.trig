@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN883 {
+    bda:LG0DBC1F309DA7896D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-12T16:24:45.801Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEE67F58B78CBDC06
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-12T16:26:22.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN883  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN883 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f5/WA3CN883.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN883 ;
+        adm:logEntry        bda:LG0DBC1F309DA7896D , bda:LGEE67F58B78CBDC06 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1195DE21D9A6A473
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR6F54661626B15F17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC0FD776164013D07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10203 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA3CN883  a         :Work ;
+        skos:altLabel       "legs par bshad pa rin po che'i gter las sngon byung gi rtogs pa brjod pa rags rim zhig gsal bar byas pa/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad rin po che'i gter gyi phreng ba/"@bo-x-ewts ;
+        :creator            bdr:CR1195DE21D9A6A473 , bdr:CR6F54661626B15F17 , bdr:CRC0FD776164013D07 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T245 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN883 , bdr:W3CN883 .
+}

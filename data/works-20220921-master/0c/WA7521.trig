@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA7521 {
+    bda:LG5A54389D02494585
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG9954D33B6B4D406B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD6761CF36877A75B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-05T15:43:00.997Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info and annotation"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD729A187016181CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-19T15:25:17.724Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA7521  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA7521 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0c/WA7521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA7521 ;
+        adm:logEntry        bda:LG5A54389D02494585 , bda:LG9954D33B6B4D406B , bda:LGD6761CF36877A75B , bda:LGD729A187016181CE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE893B52EDB29BD45
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA7521  a           :Work ;
+        skos:altLabel       "dpyad mchog gtar ga'i gdams pa nyes 'khrug rnyog drung 'byin byed ke ta ka"@bo-x-ewts ;
+        skos:prefLabel      "me btsa'i gdams pa rgyas spros shel dkar me long /"@bo-x-ewts ;
+        :catalogInfo        "Instructions on the methods of moxibustion and acupuncture in Tibetan medicine. Written by the 17th century author Deumar Tenzin Puntsok."@en ;
+        :creator            bdr:CRE893B52EDB29BD45 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW7521 , bdr:W7521 ;
+        :workIsAbout        bdr:T1153 , bdr:T85 , bdr:T94 .
+}

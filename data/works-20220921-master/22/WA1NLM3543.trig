@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3543 {
+    bda:LG70FDAF6E9359209A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T14:29:38.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3543"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3543  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3543 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "22/WA1NLM3543.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3543 ;
+        adm:logEntry        bda:LG70FDAF6E9359209A , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR060A2BD0200CF8C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1317 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR45DA55872F2E00E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3543  a       :Work ;
+        skos:prefLabel      "gsang ba'i bdag po dpal phyag na rdo rje'i bskang bshags bstod bskul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ri yi bdag po nag phyogs lha'i gser skyems mdo ba gu ru pa+mas mdzad pa la/ 2 rdo rje sems dpa'i mnol bsangs/ pad+ma tshul 'thum mnol bsangs/ 'bum bsangs/ rlung rta bsangs/ 3 'phags pa dzam b+ha la'i gzungs/ 4 rlung lha la gtor ma 'bul ba/ 5 'phags pa yangs pa'i gron khyer du 'jug pa'i mdo chen po/ 6 'byung ba chu la sa ts+tsha btab pa'i tshul/ 7 kang+ga'i mdo spu gri tshig zhur/ 8 bar do 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 9 jo bo a ri sha'i mo/ 10 chos bsrung rnams la chen er rti ni jo bo'i gtsug lag khang dang bcas pa gnyer gtad bka' bsgo gnang ba/ 11 dpal lha mo nor rgyun ma'i gzungs/ 12 nyi ma dang zla ba'i khrus gsol/"@en , "Confession and purification, praise and exhortation of Vajrapani; other text also included."@en ;
+        :creator            bdr:CR060A2BD0200CF8C9 , bdr:CR45DA55872F2E00E3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3543 , bdr:W1NLM3543 ;
+        :workIsAbout        bdr:T1736 , bdr:T1892 , bdr:T390 .
+}

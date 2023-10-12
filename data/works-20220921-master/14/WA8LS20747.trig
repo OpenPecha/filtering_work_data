@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20747 {
+    bda:LG24E1A4002A9986FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-04T11:19:45.012Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4DF3F7B80010115C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T14:47:27.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5910C4BC66DE8ED4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-04T11:21:28.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS20747  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20747 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "14/WA8LS20747.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20747 ;
+        adm:logEntry        bda:LG24E1A4002A9986FF , bda:LG4DF3F7B80010115C , bda:LG5910C4BC66DE8ED4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR09C82B5B33127C8A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG08369 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20747  a       :Work ;
+        skos:altLabel       "'dzam gling ge sar rgyal po'i 'khrungs yul sa skyid lci sos yag dang 'brel ba'i gnas yul dag na gling rje'i gna' shul ji ltar bzhugs pa rnams phyogs gcig tu brjod pa ngo mtshar gtam gyi mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "mdo khams gling yul zhib nyul/"@bo-x-ewts ;
+        :catalogInfo        "Identification of sites connected to the Gesar epic; written by Rabten Gelek Phuntsok."@en ;
+        :creator            bdr:CR09C82B5B33127C8A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS20747 , bdr:W8LS20747 ;
+        :workIsAbout        bdr:T11MS60 , bdr:T248 , bdr:T2GS1006 .
+}

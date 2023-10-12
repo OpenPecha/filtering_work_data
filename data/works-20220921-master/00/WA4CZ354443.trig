@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354443 {
+    bda:LG12AD8A6D1B407FDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9591F81661ECE492
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T12:04:58.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE1D56259118FE875
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:37:46.381Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog usad"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354443  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354443 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "00/WA4CZ354443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354443 ;
+        adm:logEntry        bda:LG12AD8A6D1B407FDC , bda:LG9591F81661ECE492 , bda:LGE1D56259118FE875 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD895F58A25D37EFE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1746 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ354443  a      :Work ;
+        skos:altLabel       "snyan ngag gi bstan bcos chen po me long las bstan pa'i don rgyan so lnga'i dper brjod pa snyan ngag bung ba myos pa'i glu dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "don rgyan so lnga'i dper brjod snyan ngag bung ba myos pa'i glu dbyangs/"@bo-x-ewts ;
+        :catalogInfo        "Poetic examples for the 35 Alankara of Kavyadarsa"@en ;
+        :creator            bdr:CRD895F58A25D37EFE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ354443 , bdr:W4CZ354443 ;
+        :workIsAbout        bdr:T205 , bdr:WA22919 .
+}

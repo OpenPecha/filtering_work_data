@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354413 {
+    bda:LG5894EBEFC8493641
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-07T19:04:20.891Z"^^xsd:dateTime ;
+        adm:logMessage      "open access"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG671CA3EBAF177925
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGA30359E87429ACD2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-27T14:59:33.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB715B3199EBA98F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T09:47:57.966Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF9E9EEF178C5542A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-26T14:56:33.595Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ354413  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354413 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "db/WA4CZ354413.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354413 ;
+        adm:logEntry        bda:LG5894EBEFC8493641 , bda:LG671CA3EBAF177925 , bda:LGA30359E87429ACD2 , bda:LGB715B3199EBA98F4 , bda:LGF9E9EEF178C5542A , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3D8969ACEA96425B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366701 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ354413  a      :Work ;
+        skos:altLabel       "phyi snod 'jig rten chags tshul/"@bo-x-ewts ;
+        skos:prefLabel      "theg pa'i rim pa gsal ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Then synthetic treatise on Bonpo cosmology ans the vehicle of Bonpo practice and realization by Paltsun Namkha Zangpo."@en ;
+        :creator            bdr:CR3D8969ACEA96425B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ354413 , bdr:W4CZ354413 ;
+        :workIsAbout        bdr:T247 , bdr:T2551 .
+}

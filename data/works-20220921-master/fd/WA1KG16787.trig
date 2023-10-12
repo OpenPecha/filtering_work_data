@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16787 {
+    bda:LG44373CB92AC1F324
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-05T09:42:44.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88C4CC5A98332887
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:17:10.07Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LG9B1EF60354F0FD0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGF67B244A0ABDD3D2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-03-05T09:40:38.082Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16787  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16787 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "fd/WA1KG16787.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16787 ;
+        adm:logEntry        bda:LG44373CB92AC1F324 , bda:LG88C4CC5A98332887 , bda:LG9B1EF60354F0FD0A , bda:LGF67B244A0ABDD3D2 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5A1403E1DD40D537
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7277 ;
+        :role               bdr:R0ER0012 .
+
+    bdr:MW1KG16787  skos:altLabel  "查瓦绒箭宗"@zh-hans .
+
+    bdr:WA1KG16787  a       :Work ;
+        skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / tsha ba ring mda' rdzong /"@bo-x-ewts , "cha wa rong jian zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tsha ba ring mda' rdzong /"@bo-x-ewts , "查瓦绒箭宗"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :creator            bdr:CR5A1403E1DD40D537 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG16787 , bdr:W1KG16787 ;
+        :workIsAbout        bdr:T1863 , bdr:T248 .
+}

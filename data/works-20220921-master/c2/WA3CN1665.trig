@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1665 {
+    bda:LG0FC02442ECA99E87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-19T15:52:47.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1EC3A17F975AB31E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-21T12:08:52.952Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG65E69F7D34277CD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-19T15:50:12.86Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC1C98B3ACAB035DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-19T15:59:54.033Z"^^xsd:dateTime ;
+        adm:logMessage      "revised"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFDB128ABCEEAB5A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:WA3CN1665  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1665 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c2/WA3CN1665.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1665 ;
+        adm:logEntry        bda:LG0FC02442ECA99E87 , bda:LG1EC3A17F975AB31E , bda:LG65E69F7D34277CD5 , bda:LGC1C98B3ACAB035DA , bda:LGFDB128ABCEEAB5A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3910F35C42FD744C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN1666 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1665  a        :Work ;
+        skos:altLabel       "brda gsar rnying gi rnam gzhag legs par ston pa gsar bu'i nyer mkho/"@bo-x-ewts ;
+        skos:prefLabel      "brda yig nyer mkho/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of common orthography composed by Lhundrub Loden."@en ;
+        :creator            bdr:CR3910F35C42FD744C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T218 ;
+        :workHasInstance    bdr:MW3CN1665 , bdr:W3CN1665 ;
+        :workIsAbout        bdr:T443 .
+}

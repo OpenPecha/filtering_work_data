@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29142 {
+    bda:LGC130E302CFE5F5AB
+        a                   adm:UpdateData .
+
+    bda:LGCD584DA5A16B2F98
+        a                   adm:InitialDataCreation .
+
+    bda:W29142  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W29142 ;
+        adm:replaceWith     bdr:WA29142 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA29142  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29142 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ea/WA29142.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29142 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR087FCB252C0E092F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29142  a          :Work ;
+        skos:altLabel       "snyan 'grel dbyangs can dgyes glu/"@bo-x-ewts ;
+        skos:prefLabel      "snyan ngag me long gi dka' 'grel dbyangs can dgyes pa'i glu dbyangs/"@bo-x-ewts ;
+        :creator            bdr:CR087FCB252C0E092F ;
+        :isRoot             true ;
+        :language           bdr:LangBo .
+}

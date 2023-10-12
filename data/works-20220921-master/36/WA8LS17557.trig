@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17557 {
+    bda:LGCB8A63E19091C32F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-02T09:18:54.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD144251DAD10D1B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-02T09:17:39.486Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEB55AA905A2585A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17557  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17557 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "36/WA8LS17557.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17557 ;
+        adm:logEntry        bda:LGCB8A63E19091C32F , bda:LGD144251DAD10D1B3 , bda:LGEB55AA905A2585A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0E4199301CA6625F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS12326 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17557  a       :Work ;
+        skos:altLabel       "rang sems chos la bskul ba'i bslab mgur sras bcas rgyal ba dgyes pa'i kun bzang mchod sprin sogs phyogs bsdus 'ga' zhig"@bo-x-ewts ;
+        skos:prefLabel      "rje blo gsal tshang gi bslab mgur/"@bo-x-ewts ;
+        :catalogInfo        "A collection of instruction and spiritual songs of Losel Gyatsho."@en ;
+        :creator            bdr:CR0E4199301CA6625F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW8LS17557 , bdr:W8LS17557 ;
+        :workIsAbout        bdr:T58 .
+}

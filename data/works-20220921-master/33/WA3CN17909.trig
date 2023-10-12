@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17909 {
+    bda:LG7B2E601800C22315
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-14T10:05:46.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG940FF884620A626C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-14T10:02:53.738Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB5B874001F675355
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN17909  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17909 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/WA3CN17909.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17909 ;
+        adm:logEntry        bda:LG7B2E601800C22315 , bda:LG940FF884620A626C , bda:LGB5B874001F675355 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR47D6345EE9A2A572
+        a                   :AgentAsCreator ;
+        :agent              bdr:P822 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17909  a       :Work ;
+        skos:altLabel       "dpal rdo rje'i tshig zab mo nang gi don gyi 'grel bshad sems kyi rnam par thar pa gsal bar byed pa'i brgyan/"@bo-x-ewts , "zab mo nang don gyi 'grel bshad dang rtsa ba/"@bo-x-ewts ;
+        skos:prefLabel      "zab mo nang don gyi 'grel bshad sems kyi rnam thar gsal byed rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Profound Inner Meaning, a core treatise by Karmapa 03 Rangjung Dorje. On tantric physiology and the subtle body, astrology, and esoteric yoga."@en ;
+        :creator            bdr:CR47D6345EE9A2A572 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN17909 , bdr:W3CN17909 ;
+        :workIsAbout        bdr:T307 , bdr:WA1KG13830 .
+}

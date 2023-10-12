@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22934 {
+    bda:LG6640BF576BB71C12
+        a                   adm:UpdateData .
+
+    bda:LGAB593D2171CEEEAB
+        a                   adm:InitialDataCreation .
+
+    bda:LGC39ECE593F3EEA09
+        a                   adm:UpdateData .
+
+    bda:W22934  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W22934 ;
+        adm:replaceWith     bdr:WA22934 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA22934  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22934 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "86/WA22934.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22934 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:NTB5E4A7C5082E6719
+        a                   :Note ;
+        :noteText           "toh 381."@en .
+
+    bdr:WA22934  a          :Work ;
+        skos:altLabel       "saṃpuṭa mahātantra"@sa-x-iast , "saṃpūṭa-nāma-mahātantra"@sa-x-iast ;
+        skos:prefLabel      "saṃpūṭi nāma mahātantra"@sa-x-iast ;
+        :isRoot             true ;
+        :language           bdr:LangInc ;
+        :note               bdr:NTB5E4A7C5082E6719 ;
+        :workHasInstance    bdr:MW0IA_HOD37 , bdr:W0IA_HOD37 ;
+        :workHasParallelsIn  bdr:WA0RK0381 .
+}

@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM257 {
+    bda:LG17E0EF18C1D4C68D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG5D2431346FC5263C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-20T15:31:12.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG730C39B1D4ADBF70
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:41.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM257"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM257  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM257 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b2/WA1NLM257.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM257 ;
+        adm:logEntry        bda:LG17E0EF18C1D4C68D , bda:LG5D2431346FC5263C , bda:LG730C39B1D4ADBF70 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1FE3D6EB442334EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR58AF27FDE870EFBA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5778 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR5B56B6CACCF7655B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM257  a        :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal gsang ba'i bdag po 'khor lo chen po'i dbang gis bla ma brgyud pa'i gsol 'debs rdo rje lhun po brtsegs pa'i rgyan zhes bya ba zur brgyan/"@bo-x-ewts ;
+        :catalogInfo        "A supplementary to the prayer of teacher in the transmission lineage of Vajrapani by Jigme Gyatsho and other author."@en ;
+        :creator            bdr:CR1FE3D6EB442334EA , bdr:CR58AF27FDE870EFBA , bdr:CR5B56B6CACCF7655B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 , bdr:T11 ;
+        :workHasInstance    bdr:MW1NLM257 , bdr:W1NLM257 ;
+        :workIsAbout        bdr:T390 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1772 {
+    bda:LG0A5EA201A322C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-02T15:07:39.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3F6F9AFAEA588DF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1772"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1772  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1772 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d4/WA1NLM1772.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1772 ;
+        adm:logEntry        bda:LG0A5EA201A322C976 , bda:LG3F6F9AFAEA588DF9 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR571C048E43079D00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1772  a       :Work ;
+        skos:prefLabel      "gtor ma brgya rtsa'i khrid yig dngos grub kun ‘byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gso sbyong byin gyis brlab tshul thar pa'i them skas/ 2 gang gi sku ni mtshan dpe'i dpal gyis rnam par bkra/ 3 rgyal dbang dge 'dun grub pas mdzad pa'i seng gdong ma'i sgrub thabs/ 4 rgyal dbang dge 'dun grub kyis mdzad pa'i seng gdong ma'i sgrub thabs kyi zur rgyan/ 5 lha mo sgrol dkar yid bzhin 'khor lo'i zhi ba'i sbyin sreg 6 rje btsun sgrol ma'i zhi ba'i sbyin bsreg gi cho ga 7 bcom ldan 'das dpal rdo rje 'jigs byed kyi zhi ba'i sbyin sreg ji ltar bya ba'i cho ga'i ngag 'don blo gsar nyin byed dbang po/"@bo-x-ewts , "Instructional manual of hundred bali offering by Kachen Yeshe Gyaltshen, composed at Dewacan residence of Potala; other text also included."@en ;
+        :creator            bdr:CR571C048E43079D00 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1772 , bdr:W1NLM1772 ;
+        :workIsAbout        bdr:T1366 .
+}

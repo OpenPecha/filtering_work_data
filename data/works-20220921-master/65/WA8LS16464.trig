@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16464 {
+    bda:LG2163CFC5C99C14CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T15:32:16.337Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6D51380141DB4905
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-08T14:55:21.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG740636DC9FBCB2AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-08T14:54:28.834Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16464  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16464 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "65/WA8LS16464.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16464 ;
+        adm:logEntry        bda:LG2163CFC5C99C14CE , bda:LG6D51380141DB4905 , bda:LG740636DC9FBCB2AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3150F5DB7CC04E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P336 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV756A4FD63DFD621F
+        a                   :CompletedEvent ;
+        :onYear             "1732"^^xsd:gYear .
+
+    bdr:WA8LS16464  a       :Work ;
+        skos:altLabel       "ma ti sA ras mdzad pa'i gdung 'bod bslu med ma/"@bo-x-ewts ;
+        skos:prefLabel      "gdung 'bod bslu med ma/"@bo-x-ewts ;
+        :catalogInfo        "A reverential petition of Tara by the fourth Takpu Losang Tenpai Gyaltsen also known as Takpu Mati, composed at the age of nineteen at Pangar Namgyal Ling."@en ;
+        :creator            bdr:CRE3150F5DB7CC04E6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV756A4FD63DFD621F ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW8LS16464 , bdr:W8LS16464 ;
+        :workIsAbout        bdr:T619 .
+}

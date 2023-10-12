@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC306 {
+    bda:LG0C7C810EDA8D57D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-07T11:57:04.26Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG288ED74F61838402
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG2F1E99A79754584D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-18T22:37:10.725Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG4B501297A509B868
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T11:02:10.861Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG6D27156449A41BA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-25T05:10:13.851Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG93CB70CDCF6C3108
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-01T22:35:09.031Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG98FBAE15D254C04F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T02:31:52.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB20DD4AB584A6E57
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T10:55:58.452Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC306  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC306 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "79/WA1AC306.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC306 ;
+        adm:logEntry        bda:LG0C7C810EDA8D57D6 , bda:LG288ED74F61838402 , bda:LG2F1E99A79754584D , bda:LG4B501297A509B868 , bda:LG6D27156449A41BA5 , bda:LG93CB70CDCF6C3108 , bda:LG98FBAE15D254C04F , bda:LGB20DD4AB584A6E57 , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE2E7CC04F0EF2FCA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5659 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1AC306  skos:altLabel  "静命尊者著作集"@zh-hant .
+
+    bdr:WA1AC306  a         :Work ;
+        skos:altLabel       "mkha' chen zhi ba 'tsho'i gsung 'bum/"@bo-x-ewts , "jiang ming zun zhe zhu zuo ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsung 'bum/_zhi ba 'tsho/"@bo-x-ewts , "静命尊者著作集"@zh-hant ;
+        :creator            bdr:CRE2E7CC04F0EF2FCA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1AC306 , bdr:W1AC306 ;
+        :workIsAbout        bdr:P5659 .
+}

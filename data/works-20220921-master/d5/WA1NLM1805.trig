@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1805 {
+    bda:LG1060F9EF8AD61926
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG1B9B0F3A72A5CCA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-15T10:30:13.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1805"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1805 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d5/WA1NLM1805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1805 ;
+        adm:logEntry        bda:LG1060F9EF8AD61926 , bda:LG1B9B0F3A72A5CCA8 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1805  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal dus kyi 'khor lo'i byis pa lhar 'jug pa'i dbang bdun len pa'i cho ga'i nags 'gros gtang rag gi mchod pa 'bul tshul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos skyog dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul dang bcas pa/ 2 blo bur rkyen bzlog ser ba'i sgra dbyangs/ chos skyong dregs pa lcam sring gi glud rdzongs/ 3 chos skyong dregs pa lcam sring gi glo bur las bcol gyi gtor ma 'phen cho ga nag po'i g.yul rgyal/ 4 dpal dus kyi 'khor lo bsdus pa'i rgyud kyi rgyal po las/ phyi 'jig rten khams kyi le'u mdor bsdus pa ste/ le'u dang por'i rgyud kyi snying po/ 5 mi skar mi chen lnga po la bsangs mchod gser skyems 'bul tshul/ 6 sangs rgyas bcom ldan 'das kyi gsungH slob dpon rin po che gter lasHbgegs dang log 'dren thams cad lcags kyi phur bu nges par 'dul pa/ 7 rigs su skye rlung /"@en , "Method of thanksgiving offering ritual after receiving seven Kalacakra empowerment; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T48 ;
+        :workHasInstance    bdr:MW1NLM1805 , bdr:W1NLM1805 ;
+        :workIsAbout        bdr:T1GS108073 , bdr:T74 .
+}

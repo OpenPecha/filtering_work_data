@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29266 {
+    bda:LGAEF729BDFC7ECE7A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29266  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29266 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "74/WA29266.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29266 ;
+        adm:logEntry        bda:LGAEF729BDFC7ECE7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRA2F2D501E16FD7D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7800 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29266  a          :Work ;
+        skos:prefLabel      "the treasure revealer bhutan : pemalingpa, the terma tradition, and its critics"@en ;
+        :creator            bdr:CRA2F2D501E16FD7D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29266 ;
+        :workIsAbout        bdr:G3205 , bdr:P1693 , bdr:P7314 .
+}

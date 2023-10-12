@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA447 {
+    bda:LG04FB1513D7A3B211
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-27T03:47:45.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL13"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LG4AB4E14FF8BE31F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T17:17:13.288Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG845859E4C7E931B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-19T16:04:15.814Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGDB0E5AB2BCCA1D52
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDCE3C1885080AB23
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T12:07:59.195Z"^^xsd:dateTime ;
+        adm:logMessage      "CTC5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGE9A68DD13851B4F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T14:14:07.549Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA447  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA447 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "22/WA447.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA447 ;
+        adm:logEntry        bda:LG04FB1513D7A3B211 , bda:LG4AB4E14FF8BE31F0 , bda:LG845859E4C7E931B5 , bda:LGDB0E5AB2BCCA1D52 , bda:LGDCE3C1885080AB23 , bda:LGE9A68DD13851B4F7 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG2144 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRB2E03C470118924D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P58 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW447  skos:altLabel  "the collected works (gsun 'bum) of spyan-sna blo-gros-rgyal-mtshan of rgya-ma rin-chen-sgan"@en-x-mixed .
+
+    bdr:WA447  a            :Work ;
+        skos:prefLabel      "gsung 'bum/_blo gros rgyal mtshan/"@bo-x-ewts , "the collected works (gsun 'bum) of spyan-sna blo-gros-rgyal-mtshan of rgya-ma rin-chen-sgan"@en-x-mixed ;
+        :catalogInfo        "Collected Works by early Geluk master Lodro Gyaltsen (1402-1472)."@en ;
+        :creator            bdr:CRB2E03C470118924D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW447 ;
+        :workIsAbout        bdr:T819 .
+}

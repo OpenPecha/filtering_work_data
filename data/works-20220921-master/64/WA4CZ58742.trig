@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ58742 {
+    bda:LG055C2DA42A9786A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-27T12:27:27.113Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1E4CC6CE88193573
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-27T12:27:05.382Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4E29353A28B92146
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T11:47:31.31Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG62EC2D074829B328
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4CZ58742  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ58742 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "64/WA4CZ58742.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ58742 ;
+        adm:logEntry        bda:LG055C2DA42A9786A1 , bda:LG1E4CC6CE88193573 , bda:LG4E29353A28B92146 , bda:LG62EC2D074829B328 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR86E21037DA26CD3A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366713 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ58742  a       :Work ;
+        skos:altLabel       "a dkar dri med kyi gdung sbyong lag len man ngag gnad dkrol gsal sgron/"@bo-x-ewts ;
+        skos:prefLabel      "gdung sbyong lag len man ngag gnad dkrol gsal sgron/"@bo-x-ewts ;
+        :catalogInfo        "Funeral rite of Sarvavid according Bon tradition."@en ;
+        :creator            bdr:CR86E21037DA26CD3A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW4CZ58742 , bdr:W4CZ58742 ;
+        :workIsAbout        bdr:T247 .
+}

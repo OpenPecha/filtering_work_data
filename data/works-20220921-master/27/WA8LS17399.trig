@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17399 {
+    bda:LGA0D68BF079723A3B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-10T09:20:10.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB0A524809C98F1DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-10T09:18:59.747Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBED7AD3C634912CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T15:02:37.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS17399  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17399 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "27/WA8LS17399.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17399 ;
+        adm:logEntry        bda:LGA0D68BF079723A3B , bda:LGB0A524809C98F1DD , bda:LGBED7AD3C634912CB , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6ED96F77F084024A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P396 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17399  a       :Work ;
+        skos:altLabel       "yul gangs can gyi ljongs su bstan pa'i snying po dbu ma'i gzhung lugs pa chen po rnams kyi snyan du springs pa tshangs pa'i 'khor los rang bzo'i dregs pa nyams byed/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i spring yig tshangs pa'i 'khor lo/"@bo-x-ewts ;
+        :catalogInfo        "A short introduction of Madhyamika philosophy in the form of letter by Panchen Shakya Chokden."@en ;
+        :creator            bdr:CR6ED96F77F084024A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T221 ;
+        :workHasInstance    bdr:MW8LS17399 , bdr:W8LS17399 ;
+        :workIsAbout        bdr:T233 .
+}

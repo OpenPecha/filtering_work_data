@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21519 {
+    bda:LG6293942A405D06C6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-08T15:46:44.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC36F9C6F34FBF44E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-08T15:45:11.223Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD2602D5BEC698C51
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD2ACB561B9698D35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T15:56:43.194Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE2828768C56C6B49
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T18:30:02.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21519  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21519 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b7/WA3CN21519.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21519 ;
+        adm:logEntry        bda:LG6293942A405D06C6 , bda:LGC36F9C6F34FBF44E , bda:LGD2602D5BEC698C51 , bda:LGD2ACB561B9698D35 , bda:LGE2828768C56C6B49 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN21519  a       :Work ;
+        skos:prefLabel      "a khyung lo rgyus bden gtam gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "History of Palgon Zong and story of King Akhyung."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN21519 , bdr:W3CN21519 ;
+        :workIsAbout        bdr:G2143 .
+}

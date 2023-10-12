@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA12500 {
+    bda:LG3BC88E3D5398F3B2
+        a                   adm:UpdateData .
+
+    bda:LG8398B96519EC4BE6
+        a                   adm:InitialDataCreation .
+
+    bda:W12500  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W12500 ;
+        adm:replaceWith     bdr:WA12500 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA12500  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA12500 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b2/WA12500.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA12500 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9E2F0DEC813CBD05
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1457 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT4938E779B800A106
+        a                   :Note ;
+        :noteText           "conceptual work"@en .
+
+    bdr:NT61584F52764BD6DA
+        a                   :Note ;
+        :noteText           "Bod kyi brda yig mkhas pa'i ngag gi sgron ma zhes bya ba bzhugs so. \n49 ff. new blockprint from new blocks from Gsang-zab Slob-khang at Simtokha in Bhutan.\nWritten at the behest of Byang-pa 'Tsho-mdzad Karma-'od-zer at the Karma-sgar.\nCopy TBRC."@en .
+
+    bdr:NTBD2E481B0E75939A
+        a                   :Note ;
+        :contentLocationStatement  "p. 324" ;
+        :noteSource         bdr:MW21015 ;
+        :noteText           "date of writing of dag yig ngag sgron confirmed as 1538"@en .
+
+    bdr:WA12500  a          :Work ;
+        skos:altLabel       "bod kyi brda'i bye brag gsal bar byed pa'i bstan bcos tshig le'ur byas pa mkhas pa'i ngag gi sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "dag yig ngag gi sgron me/"@bo-x-ewts ;
+        :creator            bdr:CR9E2F0DEC813CBD05 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT4938E779B800A106 , bdr:NT61584F52764BD6DA , bdr:NTBD2E481B0E75939A .
+}

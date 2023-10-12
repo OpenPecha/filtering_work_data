@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20218 {
+    bda:LG59CEE9E246D81D1C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-12T15:26:53.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD796E7E365CFF9EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-12T15:26:16.912Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDB045E46318D770D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-26T12:49:43.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added loc info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFB298C8C0DAA3C1B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20218  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20218 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "44/WA20218.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20218 ;
+        adm:logEntry        bda:LG59CEE9E246D81D1C , bda:LGD796E7E365CFF9EC , bda:LGDB045E46318D770D , bda:LGFB298C8C0DAA3C1B , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR505F76B47776079A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6662 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20218  skos:altLabel  "Klu ʾbum mi rgod /Nag-po Skal-bzaṅ gis brtsams."@en-x-mixed , "鲁奔门国"@zh-hans .
+
+    bdr:WA20218  a          :Work ;
+        skos:altLabel       "lu ben men guo"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "klu 'bum mi rgod/"@bo-x-ewts , "Klu ʾbum mi rgod /Nag-po Skal-bzaṅ gis brtsams."@en-x-mixed , "鲁奔门国"@zh-hans ;
+        :catalogInfo        "Novel in Tibetan language."@en ;
+        :creator            bdr:CR505F76B47776079A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW20218 , bdr:W20218 .
+}

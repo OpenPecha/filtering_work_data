@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM71 {
+    bda:LG1931067F32C7FA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE7DFC66AE7FBDCA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:00.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFD7D2036B38EC344
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:48.279Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM71"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM71  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM71 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f9/WA1NLM71.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM71 ;
+        adm:logEntry        bda:LG1931067F32C7FA43 , bda:LGE7DFC66AE7FBDCA4 , bda:LGFD7D2036B38EC344 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM582 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM71  a         :Work ;
+        skos:altLabel       "sa bdag chab gtor gtong tshul rkyen ngan kun sel sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rgyun mkho'i cho ga sna tshogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Vidhi of water torma offering, burnt offering, aspiration prayers etc by great masters"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workIsAbout        bdr:T1448 , bdr:T1GS47741 .
+}

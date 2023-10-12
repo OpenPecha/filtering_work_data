@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4948 {
+    bda:LG4B5712542E7E4C99
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-05-05T14:48:04.27Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAF35E15F287CD96D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-05-05T12:38:39.135Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG4948  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4948 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ab/WA1KG4948.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4948 ;
+        adm:logEntry        bda:LG4B5712542E7E4C99 , bda:LGAF35E15F287CD96D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1DEBDBB9CFB8E91A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1650 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG4948  skos:altLabel  "Kun gzigs Pan-chen Rin-po-cheʼi bkaʼ rtsom gces bsgrigs."@en-x-mixed .
+
+    bdr:WA1KG4948  a        :Work ;
+        skos:prefLabel      "kun gzigs paN chen rin po che'i bka' rtsom gces bsgrigs/"@bo-x-ewts , "Kun gzigs Pan-chen Rin-po-cheʼi bkaʼ rtsom gces bsgrigs."@en-x-mixed ;
+        :catalogInfo        "Collected speeches by Panchen Lama 10 (1938-1989), reflecting the present social conditions in Tibet."@en ;
+        :creator            bdr:CR1DEBDBB9CFB8E91A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1884 ;
+        :workHasInstance    bdr:IE1KG4948 , bdr:MW1KG4948 , bdr:W1KG4948 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16816 {
+    bda:LG49F6BBE91E87EE0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-19T12:21:33.338Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG51A032F0AF4235FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-19T12:22:44.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8BC30789ED3D1C13
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS16816  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16816 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "00/WA8LS16816.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16816 ;
+        adm:logEntry        bda:LG49F6BBE91E87EE0B , bda:LG51A032F0AF4235FA , bda:LG8BC30789ED3D1C13 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3641F620E85BDFAD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16816  a       :Work ;
+        skos:altLabel       "rong ston shes bya kun mkhyen gyis mdzad pa'i bon chos rnam 'byed snang gsal rig pa'i me mong /"@bo-x-ewts ;
+        skos:prefLabel      "bon chos rnam 'byed snang gsal rig pa'i me mong /"@bo-x-ewts ;
+        :catalogInfo        "A detailed analysis of Bonpo philosophical views by Rongton Sheja Kunrik; composed at the Samdrup Senge palace of Gyalrong King Rabten."@en ;
+        :creator            bdr:CR3641F620E85BDFAD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ4665 , bdr:T385 ;
+        :workHasInstance    bdr:MW8LS16816 , bdr:W8LS16816 ;
+        :workIsAbout        bdr:T247 .
+}

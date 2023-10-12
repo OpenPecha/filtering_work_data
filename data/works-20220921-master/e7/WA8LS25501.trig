@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS25501 {
+    bda:LG5224098D79500286
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-13T08:34:34.544Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG67F69AF688161E50
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-13T08:35:41.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS25501  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS25501 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/WA8LS25501.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS25501 ;
+        adm:logEntry        bda:LG5224098D79500286 , bda:LG67F69AF688161E50 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00EGS1017325 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA8LS25501  a       :Work ;
+        skos:altLabel       "bla ma'i rnal 'byor dang yi dam khag gi bdag bskyed sogs zhal don gces btus/"@bo-x-ewts ;
+        skos:prefLabel      "zhal don gces btus/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of ritual prayer text concerning yoga and tutelary deities."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1PD128746 , bdr:T225 ;
+        :workIsAbout        bdr:T1338 , bdr:T439 .
+}

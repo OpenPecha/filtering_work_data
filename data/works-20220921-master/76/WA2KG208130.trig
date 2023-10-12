@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208130 {
+    bda:LG1BBC741023EB3FA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-09T16:39:26.504Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3BB757B0B2BA3443
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-09T16:41:09.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE009D6CFF6B0D11B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA2KG208130  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208130 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "76/WA2KG208130.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208130 ;
+        adm:logEntry        bda:LG1BBC741023EB3FA6 , bda:LG3BB757B0B2BA3443 , bda:LGE009D6CFF6B0D11B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1174 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR24E76DA2E32ACFB1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P106 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208130  a      :Work ;
+        skos:altLabel       "paN chen thams cad mkhyen pa blo bzang ye shes dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang ye shes/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Panchen Lama 02 Lobzang Yeshe (1662-1737). In this set, volume 1 and 2 are missing."@en ;
+        :creator            bdr:CR24E76DA2E32ACFB1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T819 .
+}

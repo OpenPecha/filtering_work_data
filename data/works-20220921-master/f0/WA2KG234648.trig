@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG234648 {
+    bda:LG678FB82F249B6526
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T10:22:48.894Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA19FE4F120EAF81A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:09:13.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE3CA361CCD8D50FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T12:45:04.92Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG234648  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG234648 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/WA2KG234648.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG234648 ;
+        adm:logEntry        bda:LG678FB82F249B6526 , bda:LGA19FE4F120EAF81A , bda:LGE3CA361CCD8D50FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0F9AB5F4CB3D4DBB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR52EB9D6BB0301E24
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:WA2KG234648  a      :Work ;
+        skos:altLabel       "mdo sde'i rgyan gyi bshad pa/"@bo-x-ewts ;
+        skos:prefLabel      "theg pa chen po'i mdo sde'i rgyan rtsa 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Sutralankara of Maitreyanatha."@en ;
+        :creator            bdr:CR0F9AB5F4CB3D4DBB , bdr:CR52EB9D6BB0301E24 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
+        :workHasInstance    bdr:MW2KG234648 , bdr:W2KG234648 ;
+        :workIsAbout        bdr:T2055 , bdr:WA22208 .
+}

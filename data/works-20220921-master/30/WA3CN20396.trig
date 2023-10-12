@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN20396 {
+    bda:LG1C57F86A2FAF9F16
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-21T16:14:03.055Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG225FF52084213540
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-21T16:15:24.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG604347093C603D58
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-21T16:11:54.091Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG708E6F48A9E52170
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN20396  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN20396 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "30/WA3CN20396.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN20396 ;
+        adm:logEntry        bda:LG1C57F86A2FAF9F16 , bda:LG225FF52084213540 , bda:LG604347093C603D58 , bda:LG708E6F48A9E52170 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR87EF51F3B52AD2D0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN20396  a       :Work ;
+        skos:prefLabel      "chos mngon mdzod kyi tshig le'ur byas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1)chos mngon mdzod kyi tshig le'ur byas pa/2)thog mtha' bar gsum dge ba'i smon lam/3)sgrol bstod/4)skyabs 'gro mdor bsdus dang gang blo ma gnyis/5)dga' ldan lha brgya ma/5)sgrol dkar bstod pa/6)thub bstod skabs gsum pa/7)rtan 'brel bstod pa/"@bo-x-ewts , "The root text of Abhidharamakhosha by Indian master Vasubandhu."@en ;
+        :creator            bdr:CR87EF51F3B52AD2D0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW3CN20396 , bdr:W3CN20396 ;
+        :workIsAbout        bdr:T59 .
+}

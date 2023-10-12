@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368817 {
+    bda:LG33123AC61A89C23C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:10:12.433Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG351DC7280118136F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:53.341Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGACC4A97726595BE4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:26:40.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368817  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368817 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "72/WA4CZ368817.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368817 ;
+        adm:logEntry        bda:LG33123AC61A89C23C , bda:LG351DC7280118136F , bda:LGACC4A97726595BE4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1DACCD91AA13F1FC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6968 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ368817  a      :Work ;
+        skos:altLabel       "mkhas pa lde'us mdzad pa'i rgya bod kyi chos 'byung rgyas pa/"@bo-x-ewts ;
+        skos:prefLabel      "lde'u chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "Detaliled religion history of India and Tibet"@en ;
+        :creator            bdr:CR1DACCD91AA13F1FC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW4CZ368817 , bdr:W4CZ368817 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1681 {
+    bda:LG3C4ED4474EDAD534
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:26:18.62Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8DB01BA83008E66F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-27T12:22:41.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG91CC4D5D0CA4B97E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1681"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1681  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1681 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dd/WA1NLM1681.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1681 ;
+        adm:logEntry        bda:LG3C4ED4474EDAD534 , bda:LG8DB01BA83008E66F , bda:LG91CC4D5D0CA4B97E , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1681  a       :Work ;
+        skos:prefLabel      "rab gnas bkra shis snye ma lhan thabs dang bsres te nag 'gros su bkod pa 'khyer bde kun phan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 shes snying bdud bzlog dang bcas pa dang / seng gdong ma/ 2 dpal rdo rje 'jigs byed la brten pa'i tshogs kyi 'khor lo'i cho ga bde ba chen po'i rgya mtsho/ 3 rdo rje rnam par 'joms pa dang / lha mo 'od zer can gyi gzungs/ 'da' ka ye shes rnams/ 4 cha gsum gtor ma gtong ba'i tshul/"@bo-x-ewts , "Explanation of consecration ritual; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM1681 , bdr:W1NLM1681 .
+}

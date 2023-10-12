@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12958 {
+    bda:LG5D3A1CFCE09F0A80
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-08T16:18:08.532Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG937AAD05174427A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-26T11:35:15.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA0D9E5AA8BE826A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGC294E41070BC3C04
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-08T16:19:00.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG12958  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12958 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c0/WA1KG12958.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12958 ;
+        adm:logEntry        bda:LG5D3A1CFCE09F0A80 , bda:LG937AAD05174427A2 , bda:LGA0D9E5AA8BE826A5 , bda:LGC294E41070BC3C04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRECECBDB8FCA44923
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG12958  a       :Work ;
+        skos:prefLabel      "shel gong shel phreng /"@bo-x-ewts ;
+        :catalogInfo        "Two classics of Tibetan medical science by the 18th century Dilmar Geshe Tenzin Puntsok (b. 1672)"@en ;
+        :creator            bdr:CRECECBDB8FCA44923 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG12958 , bdr:MW1KG1573 , bdr:MW1PD6 , bdr:MW2PD17470 , bdr:MW7516 , bdr:W1KG12958 , bdr:W1KG1573 , bdr:W1PD6 , bdr:W2PD17470 , bdr:W7516 ;
+        :workIsAbout        bdr:T237 , bdr:T2MS13793 , bdr:T85 .
+}

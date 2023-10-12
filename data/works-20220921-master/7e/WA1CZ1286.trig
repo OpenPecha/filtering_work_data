@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1286 {
+    bda:LG041647E3B942646F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-24T14:34:52.545Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG94969F00E3D57353
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-17T10:08:53.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9FC8C89583023B05
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-24T14:51:03.62Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDD94EE92D878CC3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T14:41:43.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA1CZ1286  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1286 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7e/WA1CZ1286.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1286 ;
+        adm:logEntry        bda:LG041647E3B942646F , bda:LG94969F00E3D57353 , bda:LG9FC8C89583023B05 , bda:LGDD94EE92D878CC3A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR736FAD3466010429
+        a                   :AgentAsCreator ;
+        :agent              bdr:P796 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1286  a        :Work ;
+        skos:prefLabel      "mi g.yo ba sngon po'i sgrub thabs rjes gnang dang bcas pa/"@bo-x-ewts ;
+        :creator            bdr:CR736FAD3466010429 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T7 ;
+        :workHasInstance    bdr:MW1CZ1286 , bdr:W1CZ1286 ;
+        :workIsAbout        bdr:T665 .
+}

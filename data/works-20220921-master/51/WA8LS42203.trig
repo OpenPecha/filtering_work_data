@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42203 {
+    bda:LG2982F301DEF21E31
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:07:07.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7262D15C8756F36C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-12-17T09:48:31.052Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG87BD3BB14FBED09A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-12-17T09:47:08.858Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC49CE4CCA766E6FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-17T09:49:15.159Z"^^xsd:dateTime ;
+        adm:logMessage      "marked restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42203  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42203 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "51/WA8LS42203.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42203 ;
+        adm:logEntry        bda:LG2982F301DEF21E31 , bda:LG7262D15C8756F36C , bda:LG87BD3BB14FBED09A , bda:LGC49CE4CCA766E6FC , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14633555ABE58A2F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75410 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42203  a       :Work ;
+        skos:prefLabel      "bod la thabs rtsal dgos/"@bo-x-ewts ;
+        :catalogInfo        "A collection of essays translated from Chinese to Tibetan by Yeshe Tenzin."@en ;
+        :creator            bdr:CR14633555ABE58A2F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T258 ;
+        :workHasInstance    bdr:MW8LS42203 , bdr:W8LS42203 .
+}

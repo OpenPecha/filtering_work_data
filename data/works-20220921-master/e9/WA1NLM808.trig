@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM808 {
+    bda:LG503A94C797874479
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T16:06:54.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5DF6F05C1F63D0AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-27T12:39:35.134Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF978F0A6D55611AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM808"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM808  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM808 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e9/WA1NLM808.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM808 ;
+        adm:logEntry        bda:LG503A94C797874479 , bda:LG5DF6F05C1F63D0AD , bda:LGF978F0A6D55611AE , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR13C77B4C88A8002B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5644 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC340AE3792E599A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD9F286CCA3439EE7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM808  a        :Work ;
+        skos:prefLabel      "gcig tu bral gyi yig cha'i dka' gnas kha skang dang bcas pa gsal bar bshad pa'i rnam bzhag blo gsar dga' skyed bai DUrya'i mgul rgyan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1) Clarification of Devoid of being one or many( gcig du bral) , Abhidharmakosha and The 20 kinds of practitioners/Sangha. 2) Presentation of the three kinds of objects of valid cognition. 3) Introduction to the principles of buddhist logic .(hetuvidya) 4) Pedagogical exegesis of the first chapter (rang don rjes dpag; svarthanumana) of the pramanavarttika of Dharmakirti."@en ;
+        :creator            bdr:CR13C77B4C88A8002B , bdr:CRC340AE3792E599A1 , bdr:CRD9F286CCA3439EE7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM808 , bdr:W1NLM808 ;
+        :workIsAbout        bdr:T370 .
+}

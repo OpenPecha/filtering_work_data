@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23229 {
+    bda:LG458613D829611CD8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8B9AF2B38A140746
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-03-12T14:02:15.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGE170DADF50E83E24
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:24:40.573Z"^^xsd:dateTime ;
+        adm:logMessage      "added CW"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23229  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23229 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4c/WA23229.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23229 ;
+        adm:logEntry        bda:LG458613D829611CD8 , bda:LG8B9AF2B38A140746 , bda:LGE170DADF50E83E24 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFEF0C14A687A3C16
+        a                   :AgentAsCreator ;
+        :agent              bdr:P724 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23229  skos:altLabel  "Rdzogs pa chen po klong chen snyin thig gi sngon ʼgroʼi khrid yig Kun-bzang-bla-maʼi zhal lung gi zin bris /notes by Mkhan-po Ngag-dbang-dpal-bzang (1879-1941) upon Dpal-sprul Rin-po-che's famed Kun-bzang Bla-maʼi zhal lung."@en-x-mixed .
+
+    bdr:WA23229  a          :Work ;
+        skos:altLabel       "rdzogs pa chen po klong chen snying thig gi sngon 'gro'i khrid yig kun bzang bla ma'i zhal lung gi zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "kun bzang bla ma'i zhal lung gi zin bris/"@bo-x-ewts , "Rdzogs pa chen po klong chen snyin thig gi sngon ʼgroʼi khrid yig Kun-bzang-bla-maʼi zhal lung gi zin bris /notes by Mkhan-po Ngag-dbang-dpal-bzang (1879-1941) upon Dpal-sprul Rin-po-che's famed Kun-bzang Bla-maʼi zhal lung."@en-x-mixed ;
+        :catalogInfo        "Exegetic remarks by Khenpo Ngagga (1879-1941 ) to the famed introduction to the Longchen Nyingtik practice by Dza Patrul, Words of My Perfect Teacher. Includes two works for retreatants by Chatral Rinpoche."@en ;
+        :creator            bdr:CRFEF0C14A687A3C16 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1478 , bdr:T200 ;
+        :workHasInstance    bdr:MW23229 , bdr:MW3CN5456 , bdr:W23229 , bdr:W3CN5456 ;
+        :workIsAbout        bdr:T179 , bdr:T354 , bdr:WA3JT13393 .
+}

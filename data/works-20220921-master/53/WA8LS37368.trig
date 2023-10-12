@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS37368 {
+    bda:LG983D7B8ACD9FF098
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-13T08:38:47.221Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAFCBF922271AB525
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-13T08:40:20.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCE3A65722032A67A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS37368  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS37368 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "53/WA8LS37368.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS37368 ;
+        adm:logEntry        bda:LG983D7B8ACD9FF098 , bda:LGAFCBF922271AB525 , bda:LGCE3A65722032A67A , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR38C21C48DACD2C95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P131 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE376EEE080A6B58B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P399 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS37368  a       :Work ;
+        skos:altLabel       "spyan snga 'bri gung gling pa'i rnam thar snyan pa'i 'brug sgra dang chos rje 'jig rten mgon po'i rnam thar rdo rje rin po che 'bar ba/"@bo-x-ewts ;
+        skos:prefLabel      "spyan snga 'bri gung gling pa dang 'bri gung skyob pa 'jig rten mgon po'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Drigung Chenga Sherab Jungney and Kyobpa Jigten Gonpo by Gyalwang Rinchen Phuntshok and Chenya Sherab Jungney."@en ;
+        :creator            bdr:CR38C21C48DACD2C95 , bdr:CRE376EEE080A6B58B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS37368 , bdr:W8LS37368 ;
+        :workIsAbout        bdr:P131 , bdr:P16 .
+}

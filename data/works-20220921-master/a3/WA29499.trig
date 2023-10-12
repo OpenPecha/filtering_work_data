@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29499 {
+    bda:LG1734BFE188610931
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-15T14:08:50.044Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed topics"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGAAD48FA32A31EA9F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29499  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29499 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a3/WA29499.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29499 ;
+        adm:logEntry        bda:LG1734BFE188610931 , bda:LGAAD48FA32A31EA9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR1145E95513B42D39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6623 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR97134E45301957A4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8091 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA29499  a          :Work ;
+        skos:prefLabel      "gangs ljongs bstan pa'i rnam bshad pad ma dkar po'i chun po/"@bo-x-ewts , "zang zu zong jiao xue gai lun"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR1145E95513B42D39 , bdr:CR97134E45301957A4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T385 ;
+        :workHasInstance    bdr:MW29499 ;
+        :workIsAbout        bdr:T247 , bdr:T770 .
+}

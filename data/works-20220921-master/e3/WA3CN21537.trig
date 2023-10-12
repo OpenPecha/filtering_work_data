@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21537 {
+    bda:LG07B4267AFF723E81
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T17:54:04.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG12841118995C060F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T17:57:34.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG46A0D791697A820A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T12:56:26.702Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5DF0AA5FEE4B158C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG750F303F4C941706
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-26T11:39:43.385Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBEB474BF6626E549
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-06T15:06:06.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF5AFE8213044C60C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T15:06:38.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21537  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21537 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "e3/WA3CN21537.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21537 ;
+        adm:logEntry        bda:LG07B4267AFF723E81 , bda:LG12841118995C060F , bda:LG46A0D791697A820A , bda:LG5DF0AA5FEE4B158C , bda:LG750F303F4C941706 , bda:LGBEB474BF6626E549 , bda:LGF5AFE8213044C60C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR12E16B301A273178
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26258 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRDF314E78C4CB81E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26259 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW3CN21537  skos:altLabel  "祭语风中"@zh-hans .
+
+    bdr:WA3CN21537  a       :Work ;
+        skos:prefLabel      "rlung khrod kyi mchod sbyin/"@bo-x-ewts , "祭语风中"@zh-hans ;
+        :catalogInfo        "Tibetan modern novel composed in Chinese by Tsering Norbu and translated to Tibetan by Loten."@en ;
+        :creator            bdr:CR12E16B301A273178 , bdr:CRDF314E78C4CB81E3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW3CN21537 , bdr:W3CN21537 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4275 {
+    bda:LG998BB6FBD6A7450E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T12:11:54.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA3CEF6286AB5912C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-15T14:58:16.473Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD053418A307346B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-23T11:56:57.303Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE18D891B06FAE14A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T17:25:00.34Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN4275  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4275 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "44/WA3CN4275.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4275 ;
+        adm:logEntry        bda:LG998BB6FBD6A7450E , bda:LGA3CEF6286AB5912C , bda:LGD053418A307346B8 , bda:LGE18D891B06FAE14A , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG1789 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA3CN4275  a        :Work ;
+        skos:prefLabel      "blo sbyong dang zhal gdams nyer mkho phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Selected texts about mind training and written advices."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workIsAbout        bdr:T393 , bdr:T58 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1857 {
+    bda:LG14A4E60B4E7AED55
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-22T17:02:50.276Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG333304DEB2091403
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:42.446Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG70697B3F550A621C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-22T17:04:52.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG93C17CE8EF086A6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGE9653A808716ABC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-23T10:46:42.251Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1857  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1857 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "47/WA3CN1857.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1857 ;
+        adm:logEntry        bda:LG14A4E60B4E7AED55 , bda:LG333304DEB2091403 , bda:LG70697B3F550A621C , bda:LG93C17CE8EF086A6E , bda:LGE9653A808716ABC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAFB192F503C11609
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4925 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1857  a        :Work ;
+        skos:altLabel       "bsam gzugs kyi rnam bzhag mkhas pa'i mgul rgyan zhes bya ba mkhas pa'i dbang po chos 'byung gnas kyi gsung rgyun mthong ba don ldan/"@bo-x-ewts ;
+        skos:prefLabel      "bsam gzugs kyi rnam bzhag mkhas pa'i mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the mundane path of meditation. Composed by Gungru Chokyi Jongney."@en ;
+        :creator            bdr:CRAFB192F503C11609 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW3CN1857 , bdr:W3CN1857 ;
+        :workIsAbout        bdr:T211 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1775 {
+    bda:LG3F146ABA2ED43C51
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG88DC5FBB66C0D2E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-03T09:33:44.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1775"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1775  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1775 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0e/WA1NLM1775.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1775 ;
+        adm:logEntry        bda:LG3F146ABA2ED43C51 , bda:LG88DC5FBB66C0D2E0 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR591DF2FBB8F37E1D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P303 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1775  a       :Work ;
+        skos:prefLabel      "lam gyi gtso bo rnam gsum gyi 'grel pa 'dod 'jo'i dpag bsam sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thub pa chen po'i nyal chog 2 bka' dring gsol 'debs thugs rgyud bskul ba'i gdung dbyangs/ 3 bcom ldan 'das ma rig byed ma'i bsnyen sgrub kyi rim pa/ 4 'byung bzhi'i gtor ma gtong tshul/ 5 srog rlung nad 'joms bdud rtsi'i chu rgyun/ 6 seng ge'i gdong pa can gyi mdo/ 7 chos skyong la gsol mchod/ 8 bdud tshar bcod pa'i sngags la gangs can skad kyi mchan shan sbyar/"@bo-x-ewts , "A commentary on the three key point of path by Alaksha Ngawang Tender; other text also included."@en ;
+        :creator            bdr:CR591DF2FBB8F37E1D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM1775 , bdr:W1NLM1775 ;
+        :workIsAbout        bdr:T1358 .
+}

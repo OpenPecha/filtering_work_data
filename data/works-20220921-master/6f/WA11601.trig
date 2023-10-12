@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA11601 {
+    bda:LG261CAE076F458FFF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA79D34326C823709
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T18:46:53.11Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T683 to T2GS1161"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA11601  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA11601 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/WA11601.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA11601 ;
+        adm:logEntry        bda:LG261CAE076F458FFF , bda:LGA79D34326C823709 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRD4DC4FC6401EF10F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1132 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA11601  a          :Work ;
+        skos:altLabel       "dpal rdo rje gur nas gsungs pa'i bcom ldan 'das ma shes rab kyi pha rol tu phyin ma dkar mo la bstod pa bstod tshig rgyan gyi phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "sher phyin dkar mo la bstod pa/"@bo-x-ewts ;
+        :creator            bdr:CRD4DC4FC6401EF10F ;
+        :isRoot             true ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW11601 ;
+        :workIsAbout        bdr:T2GS1161 .
+}

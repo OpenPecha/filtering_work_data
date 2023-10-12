@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2007 {
+    bda:LG0B6BE00396D2731A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-26T16:39:50.923Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB3949A2357FAC0EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2007"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2007  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2007 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "32/WA1NLM2007.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2007 ;
+        adm:logEntry        bda:LG0B6BE00396D2731A , bda:LGB3949A2357FAC0EA , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR67CEB15CD404B32E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4943 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1NLM2007  a       :Work ;
+        skos:prefLabel      "o rgyan pad+ma mdzad pa'i bka' thang bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A brief biography of Padmasambhava and included other texts of ritual and rites."@en ;
+        :creator            bdr:CR67CEB15CD404B32E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 , bdr:T34 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2007 , bdr:W1NLM2007 ;
+        :workIsAbout        bdr:P4956 .
+}

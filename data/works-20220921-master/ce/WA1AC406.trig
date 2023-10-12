@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC406 {
+    bda:LG021B3FBD2759409F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-26T12:53:05.012Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2D9A8F8B563AB634
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-30T13:08:41.212Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, Cat info and bibliographical title"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7CDC44C5F309E147
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-27T22:40:44.559Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed and released"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG9849786484A0B236
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-28T03:12:46.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG9B93FCF6D70CAC7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-01T10:38:31.644Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed license"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1AC406  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC406 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ce/WA1AC406.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC406 ;
+        adm:logEntry        bda:LG021B3FBD2759409F , bda:LG2D9A8F8B563AB634 , bda:LG7CDC44C5F309E147 , bda:LG9849786484A0B236 , bda:LG9B93FCF6D70CAC7C , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1AC406  a         :Work ;
+        skos:altLabel       "han zang ying chang yong xin ci yu ci dian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya bod dbyin gsum gsar byung rgyun bkol ming mdzod/(kha skong deb/)"@bo-x-ewts , "Chinese -Tibetan -English Dicictionary of new Daily Vocabulary（Extended Edition）"@en , "汉藏英常用新词语词典 (增补版)"@zh-hans ;
+        :catalogInfo        "Chinese -Tibetan -English Dicictionary of new Daily Vocabulary（Extended Edition）"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
+        :workGenre          bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW1AC406 , bdr:MW8LS30988 , bdr:W1AC406 , bdr:W8LS30988 .
+}

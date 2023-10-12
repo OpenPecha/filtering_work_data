@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3387 {
+    bda:LG1C6961BE69C92A36
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-08T17:32:52.3Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4A8CB80AFC3818B5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:37:26.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG683646987DE12E9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG6A799C7BBC3E104A
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-06T15:42:24.601Z"^^xsd:dateTime ;
+        adm:logMessage      "copyright"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFAF2C8DD77B8F9A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-17T16:16:42.917Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as seekingOut"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN3387  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3387 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d6/WA3CN3387.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3387 ;
+        adm:logEntry        bda:LG1C6961BE69C92A36 , bda:LG4A8CB80AFC3818B5 , bda:LG683646987DE12E9D , bda:LG6A799C7BBC3E104A , bda:LGFAF2C8DD77B8F9A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR61A08ADD85D68828
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1089 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3387  a        :Work ;
+        skos:altLabel       "gnas gsar mkhyen brtse dbang phyug gi gsung pod gnyis/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ gnas gsar mkhyen brtse dbang phyug"@bo-x-ewts ;
+        :catalogInfo        "Collected writings by Sakya master Nesar Khyentse Wangchuk."@en ;
+        :creator            bdr:CR61A08ADD85D68828 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN3387 , bdr:W3CN3387 ;
+        :workIsAbout        bdr:T617 .
+}

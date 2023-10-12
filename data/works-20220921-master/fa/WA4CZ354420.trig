@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354420 {
+    bda:LG5F6B03969B7889FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG7DAAE37BB4139BCD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-27T14:52:00.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7E72354784F01E1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-26T14:56:35.933Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA459EACEEEB75574
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-21T10:58:27.223Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject nyingma"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC8ABCA7B1EC0B6AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-11T12:41:16.292Z"^^xsd:dateTime ;
+        adm:logMessage      "checked and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354420  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354420 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fa/WA4CZ354420.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354420 ;
+        adm:logEntry        bda:LG5F6B03969B7889FC , bda:LG7DAAE37BB4139BCD , bda:LG7E72354784F01E1A , bda:LGA459EACEEEB75574 , bda:LGC8ABCA7B1EC0B6AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C3DDB85FD445EF0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6036 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ354420  a      :Work ;
+        skos:altLabel       "grub pa'i dbang phyug bya bral sangs rgyas rdo rje'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ bya bral sangs rgyas rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of a Nyingma master Chatral Sangye Dorje (1913 -2015)."@en ;
+        :creator            bdr:CR9C3DDB85FD445EF0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ354420 , bdr:W4CZ354420 ;
+        :workIsAbout        bdr:T1082 .
+}

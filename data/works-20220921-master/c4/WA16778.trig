@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA16778 {
+    bda:LG0BBEB72A58E1678F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG114C0E495557CFDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T11:19:52.875Z"^^xsd:dateTime ;
+        adm:logMessage      "added cw, W16778 & T85"@en .
+
+    bda:LG1424EB8007E450CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB0DCB2C1AEF20616
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T11:23:59.847Z"^^xsd:dateTime ;
+        adm:logMessage      "edited out parent work link and added as cw via subject classification"@en .
+
+    bda:LGDAD06BFBB6D1B866
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-18T07:07:03.985Z"^^xsd:dateTime ;
+        adm:logMessage      "created parent relationship to conceptual work"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGECCCF986ABAB1418
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-18T19:25:04.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added parent"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGF947DEFDFCBF37D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-09T15:25:26.538Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA16778  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA16778 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "c4/WA16778.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA16778 ;
+        adm:logEntry        bda:LG0BBEB72A58E1678F , bda:LG114C0E495557CFDB , bda:LG1424EB8007E450CC , bda:LGB0DCB2C1AEF20616 , bda:LGDAD06BFBB6D1B866 , bda:LGECCCF986ABAB1418 , bda:LGF947DEFDFCBF37D3 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB24DC3A2ABE5359D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4655 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA16778  a          :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts , "gso rig rgyud bzhi/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud bzhi/"@bo-x-ewts ;
+        :creator            bdr:CRB24DC3A2ABE5359D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW16778 , bdr:W16778 ;
+        :workIsAbout        bdr:T85 , bdr:WA21667 .
+}

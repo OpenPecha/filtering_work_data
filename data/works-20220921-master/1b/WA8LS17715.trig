@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17715 {
+    bda:LG11FF100D3C88E15D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T10:26:07.868Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCCD7B9CC160234A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T10:27:25.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD0D5183531B74C7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17715  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17715 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1b/WA8LS17715.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17715 ;
+        adm:logEntry        bda:LG11FF100D3C88E15D , bda:LGCCD7B9CC160234A6 , bda:LGD0D5183531B74C7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17715  a       :Work ;
+        skos:altLabel       "bstan srung gza' bdud nag po dug gi spu gri'i las byang 'bring po dgra dpung sa ku tsi yi rkang 'gas 'brug brgya rgod po'i nga ro/"@bo-x-ewts ;
+        skos:prefLabel      "bstan srung gza' bdud nag po'i las byang /"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of Rahula, author signed as Ngak Myon Hrum Nakmebar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS17715 , bdr:W8LS17715 ;
+        :workIsAbout        bdr:T502 .
+}

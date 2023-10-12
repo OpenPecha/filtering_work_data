@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18494 {
+    bda:LG10535E45235E1A04
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T16:44:49.008Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1F1DE5D0129059F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG36117F28665D59DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T13:59:30.346Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarilyRestricted"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4C8ED0FF85DEB0AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:37:06.08Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8125DC94AADAC0B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-28T16:54:17.224Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG915F70BE8B7CEF1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-01T12:59:06.392Z"^^xsd:dateTime ;
+        adm:logMessage      "need to reSend scanRequast for 4 volums"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB5EC41D42E9AE7FE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-01T13:00:58.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE519CB4A7B749591
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-28T16:57:44.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18494  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18494 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "2f/WA3CN18494.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18494 ;
+        adm:logEntry        bda:LG10535E45235E1A04 , bda:LG1F1DE5D0129059F4 , bda:LG36117F28665D59DC , bda:LG4C8ED0FF85DEB0AD , bda:LG8125DC94AADAC0B9 , bda:LG915F70BE8B7CEF1F , bda:LGB5EC41D42E9AE7FE , bda:LGE519CB4A7B749591 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR97FABB504C6F8788
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1857 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18494  a       :Work ;
+        skos:altLabel       "zhang tshal pa brtson 'grus grags pa'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ zhang g.yu brag pa/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Tsondru Drakpa (1123-1193), otherwise known as Zhang Yudrakpa, founder of the Tsalpa Kagyu order."@en ;
+        :creator            bdr:CR97FABB504C6F8788 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN18494 , bdr:W3CN18494 ;
+        :workIsAbout        bdr:T1387 .
+}

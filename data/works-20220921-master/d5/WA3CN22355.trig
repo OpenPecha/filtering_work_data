@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22355 {
+    bda:LG1427327AF721856C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-02T23:35:47.845Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG90EF03DED593B0B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-02T23:38:11.579Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDE9E0354F522A102
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T18:44:52.421Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8467 to P4CZ10506"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFB845FB28C268957
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22355  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22355 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d5/WA3CN22355.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22355 ;
+        adm:logEntry        bda:LG1427327AF721856C , bda:LG90EF03DED593B0B8 , bda:LGDE9E0354F522A102 , bda:LGFB845FB28C268957 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3C639754771795E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10506 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22355  a       :Work ;
+        skos:prefLabel      "phag gru bka' brgyud kyi chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "History of Phagdru Kagyu tradition, by Rase Konchok Gyatso."@en ;
+        :creator            bdr:CRE3C639754771795E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW3CN22355 , bdr:W3CN22355 ;
+        :workIsAbout        bdr:T1385 .
+}

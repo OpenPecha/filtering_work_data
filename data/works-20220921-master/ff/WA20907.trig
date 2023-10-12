@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20907 {
+    bda:LG24764985F34E7324
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG491C524D3BC24F94
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-10T09:32:12.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG54B5F3684EE8566B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-01T14:58:42.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG71C3C0E87C25EF40
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-11-12T17:06:05.926Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected page number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCB6801EA41E75D92
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF37C55EED7A70C98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-19T10:48:47.5Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20907  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20907 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ff/WA20907.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20907 ;
+        adm:logEntry        bda:LG24764985F34E7324 , bda:LG491C524D3BC24F94 , bda:LG54B5F3684EE8566B , bda:LG71C3C0E87C25EF40 , bda:LGCB6801EA41E75D92 , bda:LGF37C55EED7A70C98 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR01090D3EC62E438A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P541 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20907  skos:altLabel  "the life of sgan-sten sprul-sku bstan-'dzin-legs-pa'i-don-grub"@en .
+
+    bdr:WA20907  a          :Work ;
+        skos:altLabel       "rgyal kun khyab bdag 'gro ba'i bla ma bstan 'dzin rin po che legs pa'i don grub zhabs kyi rnam par thar pa ngo mtshar nor bu'i mchod sdong /"@bo-x-ewts , "the life of skyabs-phra mtshams-brag bla-ma nag-dban-'brug-pa"@en ;
+        skos:prefLabel      "sgang steng sprul sku bstan 'dzin legs pa'i don grub dang mtshams brag bla ma ngag dbang 'brug pa'i rnam thar/"@bo-x-ewts , "the life of sgan-sten sprul-sku bstan-'dzin-legs-pa'i-don-grub"@en ;
+        :catalogInfo        "Biographies of two Bhutanese lamas of the Padma Lingpa tradition."@en ;
+        :creator            bdr:CR01090D3EC62E438A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW20907 , bdr:W20907 ;
+        :workIsAbout        bdr:P514 , bdr:P526 .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25261 {
+    bda:LG008256ADF7AFE11D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-04T12:45:28.369Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCDC2D7304DDB7CEA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T14:47:04.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25261  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25261 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/WA1KG25261.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25261 ;
+        adm:logEntry        bda:LG008256ADF7AFE11D , bda:LGCDC2D7304DDB7CEA , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0F854A080580212F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P305 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG25261  a       :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed dpa' bo gcig pa'i rim pa dang po'i legs bshad gsang chen zab lam dang de'i rdzogs rim kyi rnam bzhag 'jam dpal dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i rim pa dang po'i legs bshad gsang chen zab lam dang de'i rdzogs rim kyi rnam bzhag"@bo-x-ewts ;
+        :catalogInfo        "Explanation of sadhana practice focusing on Vajrabhairava as a solitary hero.sadhana focusing on the deity Ekavira Vajrabhairava."@en ;
+        :creator            bdr:CR0F854A080580212F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1KG25261 , bdr:W1KG25261 ;
+        :workIsAbout        bdr:T154 , bdr:T163 , bdr:T164 .
+}

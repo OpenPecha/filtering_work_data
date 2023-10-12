@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN27016 {
+    bda:LG653129F4CB8EDB4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-13T13:27:10.413Z"^^xsd:dateTime ;
+        adm:logMessage      "edited catalogInfo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8D6751CE8B5924CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-05T14:03:51.682Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCFDC236C9EFAAAB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-02T13:31:36.861Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN27016  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN27016 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "47/WA3CN27016.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN27016 ;
+        adm:logEntry        bda:LG653129F4CB8EDB4E , bda:LG8D6751CE8B5924CB , bda:LGCFDC236C9EFAAAB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN27016  skos:altLabel  "Zhaocheng Canon"@en .
+
+    bdr:WA3CN27016  a       :Work ;
+        skos:altLabel       "Zhaocheng Jinzang"@en , "赵城藏"@zh-hans , "金藏"@zh-hans , "趙城藏"@zh-hant , "趙城金藏"@zh-hant ;
+        skos:prefLabel      "Zhaocheng Canon"@en , "赵城金藏"@zh-hans ;
+        :catalogInfo        "Zhaocheng Jinzang\" is a privately engraved Canon, which is carved exactly as it was in \"Kaiyuan Zang\". The existing \"Jinzang\" has the Guangsheng Temple printed copy which was discovered by Zhaocheng. The main body of the text of more than 4,800 volumes (juan) are in the China National Library. There are also scattered texts in various places, 555 volumes of \"Jinzang\" was discovered in Sakya Monastery in 1959 at Tibet, which is now in the library of Beijing National Culture Palace. The entire collection is 6,980 volumes, which have been photocopied many times. In addition to \"Songzang Yizhen\", there are at least three different photocopy versions. We have 965 photocopied texts (?cheking) here."@en ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN27016 .
+}

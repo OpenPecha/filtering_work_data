@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE61 {
+    bda:LG215B5CDE6D2ACE12
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T15:16:46.87Z"^^xsd:dateTime ;
+        adm:logMessage      "first publish"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LG56256A30CCB30796
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T14:21:05.835Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00036 .
+
+    bda:LG64297D94BDC35969
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-12T10:34:18.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBA022B969CAA7E37
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:51:55.248Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGE1B6A1AE2CC8C729
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-04T15:29:38.183Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# of sog yig chos dpe & CW#, edited titles"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1EE61  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE61 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f7/WA1EE61.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE61 ;
+        adm:logEntry        bda:LG215B5CDE6D2ACE12 , bda:LG56256A30CCB30796 , bda:LG64297D94BDC35969 , bda:LGBA022B969CAA7E37 , bda:LGE1B6A1AE2CC8C729 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR69AB97C667EC9B8B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P58 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1EE61  a          :Work ;
+        skos:prefLabel      "thog mar blo sbyong chos kyi sgo 'byed/ (sog yig)"@bo-x-ewts , "bovadhi mor-un jerge-tur angqan-a oyun sudulqu nom-un eguden-i negegci kemegdeku orusiba"@mn-alalc97 ;
+        :catalogInfo        "Basic mind training text by Chenga Lotro Gyaltsen (1402-1472) in the Mongolian language."@en ;
+        :creator            bdr:CR69AB97C667EC9B8B ;
+        :isRoot             true ;
+        :language           bdr:LangMn ;
+        :workHasInstance    bdr:MW1EE61 , bdr:MW23216 , bdr:MW389 , bdr:W1EE61 , bdr:W23216 , bdr:W389 ;
+        :workIsAbout        bdr:T393 .
+}

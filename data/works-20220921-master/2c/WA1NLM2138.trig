@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2138 {
+    bda:LG26C31F6025470A4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG36F9638A09B6F5BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-28T08:59:03.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2138"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2138  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2138 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2c/WA1NLM2138.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2138 ;
+        adm:logEntry        bda:LG26C31F6025470A4B , bda:LG36F9638A09B6F5BE , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2138  a       :Work ;
+        skos:prefLabel      "rab gnas mdor bsdus lag tu blang bde ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ngor lugs kyi ngos nas bshad pa'i rdor sems bsgom bzlas/ 2 sku gsung thugs kyi bshags pa/ 3 sngags kyi rtsa ltung dang sbom po'i ltung ba ngos bzung ba'i sgo nas bshags pa byed tshul/ 4 gar gyi dbang phyug thugs rje'i bdag /bla ma nyid la phyag 'tshal nas/ /snying por dril ba'i sgrub ba'i thabs/ 5 zas mchod/ 6 char gcod sngags/ 7 'dod don smon tshigs bsam don lhun 'grub/ 8 snyan brgyud gsol 'debs 'dod don lhun grub/ 9 rtsa ba'i bla ma rnams la gsol ba btab tshul byin rlabs char chen 'bebs pa'i sptin phung / 10 myur mdzad ye shes kyi phyag drug p dang / 11 'phags mchog thugs rje'i chen por brten pa'i bla ma'i gsol 'debs bdud rtsi'i bum bzang / 12 'phags pa thugs rje chen po la brten pa'i bla ma'i gsol 'debs byin rlabs myur 'jug 13 dge 'dun thugs mthun pa'i phyir nga rje bla ma la gsol ba 'debs tshul/ 14 'chi med tshe lha rnam gsum dril te sgrub pa'i rjes su gnang ba'i cho ga 'chi med rtag pa'i thig le/ 15 spyod rgyud tshe dpag med gsung gi dkyil 'khor bsgom bzlas bde ba can du skye ba'i man ngag pha khyim bu 'gro/ 16 gsang bde 'jigs gsum dang 'brel ba'i bla ma'i rnal 'byor/ 17 las bzhi'i drug bcu pa bsngo tshul rnal 'byor snying thigs/ 18 chos kun rang bzhin mkha' ltar rnam dag kyang / 19 slob dpon pad+ma 'byung gnas kyis mdzad pa'i dbang bsdud kyi man ngag lag tu blang bde bkod pa yid bzhin 'gugs pa'i lcags kyu/ 20 gtor 'bul dngos grub lcags kyu/ 21 rten rnying la tshon gsar 'bul tshul/ 22 bla 'khrid chen mo'i bshad lung gi brgyud pa/ 23 'grel pa bzhi sbrag gi 'chad nyan gyi skabs kyi dris lan/ 24 'grel pa bzhi sbrags kyi bshad lung gi brgyud rim/ 25 rgyal dbang lnga pas mdzad pa'i dmigs brtse ma'i Ti k+ka tshig don rab gsal nag ltar rje bla ma rigs gsum spyi sgrub kyi rjes gnang /"@en , "A short ritual practice of consecration; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 ;
+        :workHasInstance    bdr:MW1NLM2138 , bdr:W1NLM2138 .
+}

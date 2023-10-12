@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1561 {
+    bda:LG67285386FE689056
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB7FEA5A173253C0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-19T15:06:35.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1561"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1561  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1561 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cf/WA1NLM1561.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1561 ;
+        adm:logEntry        bda:LG67285386FE689056 , bda:LGB7FEA5A173253C0A , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0C3D0D751311953E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR28F46BFDC0FD19D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRDC47BBA958BF82BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRE22FF844C5602EB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1NLM1561  a       :Work ;
+        skos:prefLabel      "'phags pa bde bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        :catalogInfo        "Seven Tathagata's Vistara Pranidhana sutra translated by Acharya Jinamitra, Danashila, Shilendrabodhi and lotsava Bende Yeshe De."@en ;
+        :creator            bdr:CR0C3D0D751311953E , bdr:CR28F46BFDC0FD19D7 , bdr:CRDC47BBA958BF82BB , bdr:CRE22FF844C5602EB6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1561 , bdr:MW3PD988_04478A , bdr:W1NLM1561 .
+}

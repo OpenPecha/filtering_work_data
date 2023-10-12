@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2056 {
+    bda:LGC0C248EE7F74C5AF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA2056  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2056 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "af/WA2056.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2056 ;
+        adm:logEntry        bda:LGC0C248EE7F74C5AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRCFF03C2B54C000D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVFC6CFFC275E1A082
+        a                   :CompletedEvent ;
+        :onYear             "1773"^^xsd:gYear .
+
+    bdr:WA2056  a           :Work ;
+        skos:altLabel       "bde bar gshegs pa'i bka'i dgongs 'grel bstan bcos 'gyur ro cog par du sgrub pa'i tshul las nye bar brtsams pa'i gtam yang dag par brjod pa dkar chag nor bu'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "co ne'i bstan 'gyur dkar chag"@bo-x-ewts ;
+        :creator            bdr:CRCFF03C2B54C000D9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVFC6CFFC275E1A082 ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW2056 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21682 {
+    bda:LG3768B1526042B415
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG5FB10530333D643B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC54DD06B2CD6EEF0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-08T11:52:14.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD04E1A0B175110A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-08T11:51:25.847Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGECEAE20E0302610E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA21682  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21682 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "90/WA21682.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21682 ;
+        adm:logEntry        bda:LG3768B1526042B415 , bda:LG5FB10530333D643B , bda:LGC54DD06B2CD6EEF0 , bda:LGD04E1A0B175110A0 , bda:LGECEAE20E0302610E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21682  skos:altLabel  "藏族谚语选"@zh-hans .
+
+    bdr:WA21682  a          :Work ;
+        skos:altLabel       "zang zu yan yu xuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi gtam dpe mthong ba 'dzum shor/"@bo-x-ewts , "藏族谚语选"@zh-hans ;
+        :catalogInfo        "Collection of Tibetan proverbs."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21682 , bdr:W21682 ;
+        :workIsAbout        bdr:T1113 , bdr:T190 .
+}

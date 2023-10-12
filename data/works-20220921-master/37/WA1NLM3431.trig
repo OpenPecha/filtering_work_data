@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3431 {
+    bda:LG33CD15C16DA8CE6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-20T11:24:08.153Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3431"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3431  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3431 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "37/WA1NLM3431.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3431 ;
+        adm:logEntry        bda:LG33CD15C16DA8CE6E , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA690D7F7029DA017
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3431  a       :Work ;
+        skos:prefLabel      "mkha' 'gro tshe ring mched lnga'i gsol mchod dang 'brel ba'i ga.yang 'bod bya tshul 'chi med dga' ston ces bya ba legs par sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 zab lam bla ma mchod pa'i snying po nyams su len tshul dngos grub kun 'byung / 2 bka' 'gyur kha skong / 3 thog mar blo sbyong gi dris lan brda don gsal ba'i me long / 4 rgan rgon pho mo'o lo rgyus dang sbyar ba'i bstan bcos dgra bo 'phrang sgug 5 nye ring sems kyi rang mdangs sdur pa rnam gnyis kyi rtogs brjod brdzun chen gtam rgyud/ 6 bla ma'i zhal gdams thugs rje bskul ba/ 7 paN chen rin po ches mdzad pa'i grib gtor ba/ 8 lha mo nor rgyun ma la brten pa'i g.yang 'gug bya tshul mgon dkar dang dzam+b+hala dkar ser nor lha gzhan la'yng sbyar chog pa/ 9 bde mchog gi tshogs 'khor mdor bsdus bya tshul/ 10 ka po ti'i dkar chag"@en , "Ritual for offering and prosperity ritual of five sister of long life protector; other text included also."@en ;
+        :creator            bdr:CRA690D7F7029DA017 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3431 , bdr:W1NLM3431 ;
+        :workIsAbout        bdr:T22 , bdr:T249 , bdr:T306 .
+}

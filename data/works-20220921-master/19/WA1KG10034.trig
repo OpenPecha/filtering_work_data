@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10034 {
+    bda:LG351F499D541BA978
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-06-21T16:49:02.377Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3D6D77DC6AECF893
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-06-21T16:50:00.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG91C231742AA6E1C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T15:19:47.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10034  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10034 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "19/WA1KG10034.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10034 ;
+        adm:logEntry        bda:LG351F499D541BA978 , bda:LG3D6D77DC6AECF893 , bda:LG91C231742AA6E1C0 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG10034  a       :Work ;
+        skos:altLabel       "bka' brgyud kyi rten dgon/ brten pa sku gsung thugs rten/ mchod pa'i yo byad sogs kyi zin tho/"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyud kyi dgon sde sku gsung thugs rten sogs kyi zin tho/"@bo-x-ewts ;
+        :catalogInfo        "Record of Kagyu monasteries. Includes list of precious objects (sku gsung thugs) in the monasteries and necessary objects of offering."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1KG10034 , bdr:W1KG10034 ;
+        :workIsAbout        bdr:T1187 , bdr:T1906 .
+}

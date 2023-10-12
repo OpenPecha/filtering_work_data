@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30464 {
+    bda:LG8232633D780B9D6D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30464  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30464 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/WA30464.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30464 ;
+        adm:logEntry        bda:LG8232633D780B9D6D , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRD6E3D1335C515C0D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6832 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA30464  a          :Work ;
+        skos:altLabel       "rong bo rab 'byams pa dge 'dun blo bzang gi gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_dge 'dun blo bzang /"@bo-x-ewts , "Roṅ-bo rab ʼbyams pa Dge-ʼdun-blo-bzaṅ gi gsuṅ rtsom phyogs bsgrigs."@en-x-mixed , "gengdengluosang wen ji"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CRD6E3D1335C515C0D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW30464 ;
+        :workIsAbout        bdr:T819 .
+}

@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25590 {
+    bda:LG88DD53C9CC202C92
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-08-26T09:31:17.797Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA6D009B582CEDC9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-08-20T11:10:49.007Z"^^xsd:dateTime ;
+        adm:logMessage      "add more info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD5C10EA11C95D365
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE6C4FDACFC6C63FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-08-20T11:12:44.767Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEA502D296D09CD62
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-10T14:00:29.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA25590  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25590 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ba/WA25590.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25590 ;
+        adm:logEntry        bda:LG88DD53C9CC202C92 , bda:LGA6D009B582CEDC9C , bda:LGD5C10EA11C95D365 , bda:LGE6C4FDACFC6C63FB , bda:LGEA502D296D09CD62 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE75C667A760C0BBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA25590  a          :Work ;
+        skos:altLabel       "rnal 'byor gyi dbang phyug rje btsun grags pa rgyal mtshan gyi rnam par thar pa/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun grags pa rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Sakya Jetsun Drakpa Gyaltsen (1147-1216)."@en ;
+        :creator            bdr:CRE75C667A760C0BBC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW25590 , bdr:W25590 ;
+        :workIsAbout        bdr:P1614 , bdr:T617 .
+}

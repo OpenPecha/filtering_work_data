@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3982 {
+    bda:LG869DC4E33C9AB4DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T15:43:08.294Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA178DED782178A97
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T09:46:17.654Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB7EF874001897775
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-12-07T15:43:36.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFCC62BA1196094FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-07T14:35:30.52Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG3982  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3982 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "d0/WA1KG3982.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3982 ;
+        adm:logEntry        bda:LG869DC4E33C9AB4DD , bda:LGA178DED782178A97 , bda:LGB7EF874001897775 , bda:LGFCC62BA1196094FF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6530F6FF17BB8CEF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P216 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR8A6C8B73C7EC4B67
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG3982  skos:altLabel  "the collected gcod teachings of the dge lugs pa tradition"@en .
+
+    bdr:WA1KG3982  a        :Work ;
+        skos:altLabel       "Gcod tshogs :the collected Gcod teachings of the Dge-lugs-pa tradition /by Ma-ti Bhadra-Kirti, Blo-bzaṅ-don-ldan, and others."@en-x-mixed ;
+        skos:prefLabel      "gcod tshogs/"@bo-x-ewts , "the collected gcod teachings of the dge lugs pa tradition"@en ;
+        :catalogInfo        "Selection of chod teachings from by the Geluk order. Written by Je Tsongkapa Lobzang Drakpa (1357-1419), Chopa Lobzang Dhonden (20th cent.) and other Geluk authors."@en ;
+        :creator            bdr:CR6530F6FF17BB8CEF , bdr:CR8A6C8B73C7EC4B67 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG3982 , bdr:W1KG3982 ;
+        :workIsAbout        bdr:T194 , bdr:T819 .
+}

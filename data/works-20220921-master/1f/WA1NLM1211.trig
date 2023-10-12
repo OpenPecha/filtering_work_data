@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1211 {
+    bda:LG0D02E85B2C4A1D7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG9F0E07DEA3AAB617
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-07T09:43:40.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1211"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1211  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1211 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/WA1NLM1211.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1211 ;
+        adm:logEntry        bda:LG0D02E85B2C4A1D7F , bda:LG9F0E07DEA3AAB617 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1211  a       :Work ;
+        skos:prefLabel      "rgyal po chen po rnam thos sras kyi gshegs gtor 'bul ba'i rim pa rin chen char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan ye shes mgon po'i phyag drug pa gshegs gtor ma/ 2 dpal ldan dmar zor rgyal mo la nyams chag bskor ba'i sbyin bsregs 'bul tshul nyams chag tshad tshir bsregs byed dus mtha' me 'od/ 3 rdor je 'jigs byed klu brgyad dang bcas pa'i sbyin sreg gi sgo nas char 'bebs pa'i gdams ngag phan bde kun byung / 4 grwa lnga lha bcu gsum gyi zhi rgyas kyi sbyin bsreg gi cho ga phan bde'i snang ba rab 'bar/ 5 bsgral chad/ 6 thog mar blo sbyong gi dris lan brda don gsal ba'i me long / 7 smon tshig phan bde'i char 'bebs/ 8 zhwa ser bstan pa'i gsal byed rje btsun ngag dbang chos kyi dbang phyug 'phrin las rgya mtsho'i zhabs brtan smon tshig 9 bla ma mchod pa'i cho ga'i cha lag nyer mkho ba'i yig chung skal bzang dga' bskyed/ 10 ging lnga gza' gdong gi mchod gtor 'bul tshul/ 11 'jig rten pa'i mgron mchod/ 12 dus gsum sangs rgyas kyi bstod pa/"@bo-x-ewts , "Stages of bali offering of Vaishravana; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1211 , bdr:W1NLM1211 ;
+        :workIsAbout        bdr:T1219 , bdr:T197 .
+}

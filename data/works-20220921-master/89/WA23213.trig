@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23213 {
+    bda:LGB7271CE879288856
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-01T11:32:04.571Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBD60EEAF4B26DE33
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGD9343F9C082EBFB9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23213  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23213 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "89/WA23213.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23213 ;
+        adm:logEntry        bda:LGB7271CE879288856 , bda:LGBD60EEAF4B26DE33 , bda:LGD9343F9C082EBFB9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC9A930FF331E2C63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6164 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23213  skos:altLabel  "lo tsha chen po b+hai ro tsa na'i rnam thar 'dra 'bag chen mo : a version of the biography of vairocana, the locchava of pa-gor, in 39 chapters (le'u)"@en-x-mixed .
+
+    bdr:WA23213  a          :Work ;
+        skos:altLabel       "bai ro'i tsa na'i rnam thar 'dra 'bag chen mo/"@bo-x-ewts , "lo ts+tsha ba chen po b+hai ro tsa na'i rnam thar 'dra 'bag chen mo/"@bo-x-ewts ;
+        skos:prefLabel      "bai ro'i rnam thar 'dra 'bag chen mo (le'u 39)"@bo-x-ewts , "lo tsha chen po b+hai ro tsa na'i rnam thar 'dra 'bag chen mo : a version of the biography of vairocana, the locchava of pa-gor, in 39 chapters (le'u)"@en-x-mixed ;
+        :catalogInfo        "Biography of the great master Vairocana of Pagor. Revealed by Terchen Dorje Lingpa (1346-1405). Scanning made possible through a grant from Master Tam Shek-wing at the Vajrayana Buddhism Association."@en ;
+        :creator            bdr:CRC9A930FF331E2C63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW23213 , bdr:W23213 ;
+        :workIsAbout        bdr:P5013 .
+}

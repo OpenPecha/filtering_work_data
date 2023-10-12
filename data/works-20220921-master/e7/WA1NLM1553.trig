@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1553 {
+    bda:LGA4E5793D1BD0D7C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGEA7412341A1C6421
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-05T14:44:25.497Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1553"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1553  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1553 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e7/WA1NLM1553.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1553 ;
+        adm:logEntry        bda:LGA4E5793D1BD0D7C0 , bda:LGEA7412341A1C6421 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR192D68A39C02D529
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1242 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR1E65A7566D818FCE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16848 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:CR3152A97D5B882321
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15090 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CR75FFF3F57715CEE5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6120 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE96B5D797C6E2773
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2551 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:WA1NLM1553  a       :Work ;
+        skos:prefLabel      "tshad ma rnam 'grel gyi tshig le'ur byas pa/"@bo-x-ewts ;
+        :catalogInfo        "Pramanavarttika by Acharya Dharmakirti; translated by Subhutishrishanti and Gelong Gewe Lodroe and revised by Kashmir Pandita Kelden Gyalpo and Lotsava Gelong Loden Sherap."@en ;
+        :creator            bdr:CR192D68A39C02D529 , bdr:CR1E65A7566D818FCE , bdr:CR3152A97D5B882321 , bdr:CR75FFF3F57715CEE5 , bdr:CRE96B5D797C6E2773 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1553 , bdr:W1NLM1553 ;
+        :workIsAbout        bdr:T2062 , bdr:T370 , bdr:WA19721 .
+}

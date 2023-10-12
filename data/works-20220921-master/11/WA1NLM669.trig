@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM669 {
+    bda:LGDA54E8F51CEDBAED
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGDEE8DCE91450E57B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-17T15:44:00.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM669"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM669  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM669 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "11/WA1NLM669.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM669 ;
+        adm:logEntry        bda:LGDA54E8F51CEDBAED , bda:LGDEE8DCE91450E57B , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR188826A1C8D1010C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR4FCB715FB4D7F171
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR99F4DB3C8091B1C3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8210 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRB38D4237945A79F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA1NLM669  a        :Work ;
+        skos:altLabel       "'phags pa de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde brgyad brgya ba/"@bo-x-ewts ;
+        :catalogInfo        "Seven Arya Tathagata's prayer sutra."@en ;
+        :creator            bdr:CR188826A1C8D1010C , bdr:CR4FCB715FB4D7F171 , bdr:CR99F4DB3C8091B1C3 , bdr:CRB38D4237945A79F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM669 , bdr:MW8LS32616 , bdr:W1NLM669 , bdr:W8LS32616 .
+}

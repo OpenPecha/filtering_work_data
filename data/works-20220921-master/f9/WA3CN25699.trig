@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25699 {
+    bda:LGB79D3EC1B0BECEBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T22:01:16.728Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog & released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF7FEBF8EDA3A3181
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-19T10:44:32.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF89E97698611527D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-30T11:16:03.998Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25699  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25699 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f9/WA3CN25699.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25699 ;
+        adm:logEntry        bda:LGB79D3EC1B0BECEBD , bda:LGF7FEBF8EDA3A3181 , bda:LGF89E97698611527D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR238423C16956380D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P326 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN25699  a       :Work ;
+        skos:altLabel       "pad+ma g.yang 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "slob dpon pad+ma 'byung gnas kyi g.yang 'bum rin chen bang mdzod cig"@bo-x-ewts ;
+        :catalogInfo        "Prosperity ritual from Guru Rinpoche, discovery by Guru Chowang (1212-1270)."@en ;
+        :creator            bdr:CR238423C16956380D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW3CN25699 , bdr:W3CN25699 ;
+        :workIsAbout        bdr:T22 .
+}

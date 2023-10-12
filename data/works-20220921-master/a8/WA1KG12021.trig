@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12021 {
+    bda:LG27052150FA0AD8D7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-06T12:01:20.91Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5E4403DDA4C0F8DA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-03-06T12:01:53.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG876978F4B7C001B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-15T16:10:50.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12021  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12021 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a8/WA1KG12021.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12021 ;
+        adm:logEntry        bda:LG27052150FA0AD8D7 , bda:LG5E4403DDA4C0F8DA , bda:LG876978F4B7C001B5 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR53AE3596BC350D45
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG1389 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR63B3BC0FA16139B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1663 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA1KG12021  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa'i dmigs khrid gshen bstan gsal ba'i sgron me dang 'khrid yig dmar mo mdzub tshug gi sngon 'gro'i rnam bshad/"@bo-x-ewts ;
+        :creator            bdr:CR53AE3596BC350D45 , bdr:CR63B3BC0FA16139B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1KG12021 , bdr:W1KG12021 ;
+        :workIsAbout        bdr:T247 , bdr:T475 .
+}

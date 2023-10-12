@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21847 {
+    bda:LG1969316C978232DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-14T14:20:00.574Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG48BB99621E0E7D16
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T11:33:24.971Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5E28B57538142B12
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-15T09:20:26.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE410E5492CC6858C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA1KG21847  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21847 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1a/WA1KG21847.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21847 ;
+        adm:logEntry        bda:LG1969316C978232DB , bda:LG48BB99621E0E7D16 , bda:LG5E28B57538142B12 , bda:LGE410E5492CC6858C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA16079 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR41237F0416058734
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6078 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CR8BA4A1C1DBA798BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4341 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21847  skos:altLabel  "罗摩衍那"@zh-hans .
+
+    bdr:WA1KG21847  a       :Work ;
+        skos:altLabel       "rgyal po rA ma Na'i gtam rgyud las brtsams pa'i snyan ngag gi bstan bcos dri za'i bu mo'i rgyus mang gi sgra dbyangs kyi 'grel ba dri med shel gyi 'bab stegs/"@bo-x-ewts , "luo mo yan na"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rA ma Na'i rtogs brjod/"@bo-x-ewts , "罗摩衍那"@zh-hans ;
+        :catalogInfo        "Commentary on the Ramayana, a Hindu epic of Rama and Sita."@en ;
+        :creator            bdr:CR41237F0416058734 , bdr:CR8BA4A1C1DBA798BA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T276 ;
+        :workIsAbout        bdr:WA3588 .
+}

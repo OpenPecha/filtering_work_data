@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1726 {
+    bda:LG73686999419C933F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG8E8BB7F4E3DF0D41
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-16T09:14:29.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1726"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1726  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1726 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b4/WA1NLM1726.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1726 ;
+        adm:logEntry        bda:LG73686999419C933F , bda:LG8E8BB7F4E3DF0D41 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9BE8DEC2B44270AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1NLM1726  a       :Work ;
+        skos:prefLabel      "zab chos bar do thos grol chen mo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 zab chos zhi khro dgongs pa rang grol asH srid pa bar do'i ngo sprod/ gsal 'debs thos grol chen po/ 2 zab chos zhi khro dgongs pa rang grol lasH chos spyod bag chags rang grol / bar do thos grol gyi cha lagH zhi khro'i 'dus pa'i chos spyod rab gsal bag chags rang grol/ 3 bar do thos grol chen mo ngan song sbyong ba'i yang snyingH 4 bar do rnam pa drug gi rtsa tshig bar do'i 'phrang grol/ 'jigs skyob kyi smon lam/ ra mdar spran pa'i smon lam/ 5 thos grol chen mo'i cha lag gsol 'debs/ sku gsum bla ma'i rnal 'byor gyi gsol 'debs/"@en , "Introducton of intermediate state by Karma Lingpa; also related text included."@en ;
+        :creator            bdr:CR9BE8DEC2B44270AD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1726 , bdr:W1NLM1726 ;
+        :workIsAbout        bdr:T2MS20121 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302708 {
+    bda:LG7D55EF8A5E59D30E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T12:06:08.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD96AF4BF8CB0F957
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGFDEEEFC7FA37C47B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T12:05:38.533Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302708  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302708 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/WA4CZ302708.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302708 ;
+        adm:logEntry        bda:LG7D55EF8A5E59D30E , bda:LGD96AF4BF8CB0F957 , bda:LGFDEEEFC7FA37C47B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR01147548EDE6A927
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302708  a      :Work ;
+        skos:altLabel       "rdzogs pa chen po snying thig ya bzhi las zab mo yang tig gi chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "zab mo yang tig gi chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Zabmo Yangtig, part of Longchen Rabjam's Nyingtig Yashi"@en ;
+        :creator            bdr:CR01147548EDE6A927 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW4CZ302708 , bdr:W4CZ302708 ;
+        :workIsAbout        bdr:T2CZ9234 .
+}

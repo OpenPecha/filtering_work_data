@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302699 {
+    bda:LG47D12FD143845FFC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T11:31:39.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4A4218508A86C47F
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-23T14:26:39.28Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1572 to T104"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG726A6029F18CC7FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGFB355F8BD017FFBD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T11:17:27.408Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302699  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302699 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "61/WA4CZ302699.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302699 ;
+        adm:logEntry        bda:LG47D12FD143845FFC , bda:LG4A4218508A86C47F , bda:LG726A6029F18CC7FF , bda:LGFB355F8BD017FFBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ302699  a      :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed kyi bla brgyud gsol 'debs bstod pa smon lam shis brjod yan lag bdun pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed kyi sgrub skor dang / chos skyong dreg pa lcam sring gi mngon rtogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected sadhana manuals of Yamantaka and and related ritual materials of the of Dharmapalas in Gelug tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ302699 , bdr:W4CZ302699 ;
+        :workIsAbout        bdr:T104 , bdr:T1181 , bdr:T406 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1702 {
+    bda:LG728F843512851401
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:44:30.521Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB6A1C0A6577ED5B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF53D006F55E2E9AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:45:32.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1702"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1702  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1702 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a3/WA1NLM1702.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1702 ;
+        adm:logEntry        bda:LG728F843512851401 , bda:LGB6A1C0A6577ED5B6 , bda:LGF53D006F55E2E9AF , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1702  a       :Work ;
+        skos:prefLabel      "bka' bsrung rnam lnga'i dmar chen gtor zlog gi cho ga 'jigs rung rno ngar mtshon cha'i 'phrul sgyogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bka' bsrung dam can rgya mtsho'i mngon rtogs spyan 'dren bskang bshags bstod bskul dang bcas pa mdor bsdus 'phrin las lhun grub/ 2 rigs drug gi bsangs/ 3 mdo sngags lam rim rnam gnyis kyi smon lam/ 4 lug gi yams nad la lug thug la tshe thar btsugs pa'i cho ga 5 rig grol sprul sku'i zhabs brtan gsol 'debs/ 6 'phags pa bzang po spyod pa'i smon lam gyi rgyal po/ 7 chos rje sprul sku mchog sprul rin po che blo bzang dpal ldan mtshan can gyi brtan bzhugs/ 8 'phags pa gtsug tor rnam rgyal ma'i gzungs rtog dang bcas pa/ 9 gtsug gtor phyogs bzhir gru bzhir bya tshul/ 10 phye lam bcad ba'i bcos thabs/ 11 mda' gzhu/ 12 ni shi dur gsum khug pas gad byed mas bcos thabs/"@bo-x-ewts , "Bali repelling ritual of five protectors by author signed as Ngagrampa Phuntshok Shedrup or Dondrup Dorjee; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1702 , bdr:W1NLM1702 ;
+        :workIsAbout        bdr:T406 , bdr:T905 .
+}

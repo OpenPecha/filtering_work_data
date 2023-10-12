@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229583 {
+    bda:LG82FAF729F2442FF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-26T15:06:33.266Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to temp restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB5F00D08869F6FA9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T14:53:46.538Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD54E5551DF91DA22
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-28T14:40:19.543Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG229583  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229583 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "47/WA2KG229583.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229583 ;
+        adm:logEntry        bda:LG82FAF729F2442FF8 , bda:LGB5F00D08869F6FA9 , bda:LGD54E5551DF91DA22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55EC72F1D1ED1E5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG229583  a      :Work ;
+        skos:altLabel       "chos mngon pa'i mdzod kyi 'grel pa rgyas par spros pa grub bde'i dpyid 'jo/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi 'grel chen grub bde'i dpyid 'jo/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Vasubhandu's Abhidharmakosa. Written by Karmapa 08 Mikyo Dorje (1507-1554)."@en ;
+        :creator            bdr:CR55EC72F1D1ED1E5A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2KG229583 , bdr:W2KG229583 ;
+        :workIsAbout        bdr:T59 , bdr:WA19720 .
+}

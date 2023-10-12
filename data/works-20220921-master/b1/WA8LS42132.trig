@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42132 {
+    bda:LG3F041CE0D11E2414
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-20T11:26:53.944Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5866F22A3999AA59
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T16:12:38.724Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7D8D6D111CCC6A4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T15:51:33.107Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA107E303B0411570
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-20T11:27:57.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42132  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42132 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b1/WA8LS42132.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42132 ;
+        adm:logEntry        bda:LG3F041CE0D11E2414 , bda:LG5866F22A3999AA59 , bda:LG7D8D6D111CCC6A4F , bda:LGA107E303B0411570 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR97026879E25E8171
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75403 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42132  a       :Work ;
+        skos:prefLabel      "mi yul gyi skyo gdung /"@bo-x-ewts ;
+        :catalogInfo        "A collection of poetry by Yeshi Yamaraza."@en ;
+        :creator            bdr:CR97026879E25E8171 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS42132 , bdr:W8LS42132 ;
+        :workIsAbout        bdr:T281 .
+}

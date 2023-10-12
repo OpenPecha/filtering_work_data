@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JW2897 {
+    bda:LG2BF2F604E751AE63
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-15T14:01:54.48Z"^^xsd:dateTime ;
+        adm:logMessage      "publishing unicode text work records"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGAF09E760D9F79C0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-18T17:55:05.251Z"^^xsd:dateTime ;
+        adm:logMessage      "unicode xml"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGCAC093FC722372D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-15T12:27:37.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added t1339"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGDF0C81460BF671C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-07-15T01:29:45.329Z"^^xsd:dateTime ;
+        adm:logMessage      "testing for unicode text changes"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM39CBAA8D  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-withdrawn.xql" ;
+        adm:logDate         "2019-06-19T17:06:17.068Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to onHold"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3JW2897  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JW2897 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "11/WA3JW2897.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JW2897 ;
+        adm:logEntry        bda:LG2BF2F604E751AE63 , bda:LGAF09E760D9F79C0F , bda:LGCAC093FC722372D0 , bda:LGDF0C81460BF671C4 , bda:LGIM39CBAA8D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR1504234BDB9C8BA4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5340 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3JW2897  a        :Work ;
+        skos:prefLabel      "bla ma dgongs pa 'dus pa/"@bo-x-ewts ;
+        :catalogInfo        "Treasury of revealed teachings by Terton Sanggye Lingpa. Reproduced from computerized input based on prints from the Gaje blocks prepared at the initiative of Khenpo Namdrol Rinpoche at Palri Parkhang in Nepal with the support of the Bodhi Foundation and under the direction of Penor Rinpoche."@en ;
+        :creator            bdr:CR1504234BDB9C8BA4 ;
+        :isRoot             true ;
+        :workHasInstance    bdr:IE3JW2897 ;
+        :workIsAbout        bdr:T1339 .
+}

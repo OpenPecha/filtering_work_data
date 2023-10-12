@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22074 {
+    bda:LG0EB2BF993BD11D87
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG1C3035AAAA44932B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-03T17:01:59.277Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB882A2A5863C4A0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-09-16T12:57:49.79Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE8BC43711C8B8A95
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-21T14:36:28.485Z"^^xsd:dateTime ;
+        adm:logMessage      "add subject"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22074  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22074 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "9b/WA22074.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22074 ;
+        adm:logEntry        bda:LG0EB2BF993BD11D87 , bda:LG1C3035AAAA44932B , bda:LGB882A2A5863C4A0A , bda:LGE8BC43711C8B8A95 , bda:LGIM4BF5F96E12 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR46B81C9F6DFC6747
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7468 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22074  skos:altLabel  "Bod chen poʾi rgyal rabs las phyi ʾbrel gyi mdzad phyogs la dpyad paʾi gtam tshaṅs paʾi thig gi spun zla /[Ser-byes Blo-bzaṅ-rnam-rgyal]."@en-x-mixed .
+
+    bdr:WA22074  a          :Work ;
+        skos:prefLabel      "bod chen po'i rgyal rabs las phyi 'brel gyi mdzad phyogs la dpyad pa'i gtam tshangs pa'i thig gi spun zla/"@bo-x-ewts , "Bod chen poʾi rgyal rabs las phyi ʾbrel gyi mdzad phyogs la dpyad paʾi gtam tshaṅs paʾi thig gi spun zla /[Ser-byes Blo-bzaṅ-rnam-rgyal]."@en-x-mixed ;
+        :creator            bdr:CR46B81C9F6DFC6747 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
+        :workHasInstance    bdr:MW22074 , bdr:W22074 ;
+        :workIsAbout        bdr:G3196 .
+}

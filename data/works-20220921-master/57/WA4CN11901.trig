@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CN11901 {
+    bda:LG77D8BF0251506AB4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-02-23T09:23:16.108Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged & released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA86C1F027B431753
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T19:47:39.275Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB5FBCDE364042FB2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-01T19:43:14.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC1587BC5684C0393
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T19:45:31.215Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFEB743E95636A3DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T16:35:33.901Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA4CN11901  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CN11901 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "57/WA4CN11901.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CN11901 ;
+        adm:logEntry        bda:LG77D8BF0251506AB4 , bda:LGA86C1F027B431753 , bda:LGB5FBCDE364042FB2 , bda:LGC1587BC5684C0393 , bda:LGFEB743E95636A3DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR57F175E34D39156B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12053 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA017DEAFF4FCB129
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2PD20572 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW4CN11901  skos:altLabel  "世界经典文学选集 （一 & 二）"@zh-hans .
+
+    bdr:WA4CN11901  a       :Work ;
+        skos:prefLabel      "'dzam gling rtsom rig (deb dang po dang gnyis pa/）"@bo-x-ewts , "世界经典文学选集 （一 & 二）"@zh-hans ;
+        :catalogInfo        "Selected Works of World Classic Literature. Edited by Dongbu and Kyabchen."@en ;
+        :creator            bdr:CR57F175E34D39156B , bdr:CRA017DEAFF4FCB129 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CN11901 , bdr:W4CN11901 ;
+        :workIsAbout        bdr:T1979 , bdr:T1KG26414 .
+}

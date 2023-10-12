@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17332 {
+    bda:LG2879815337938671
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-09T14:09:27.861Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5E525CA3B0CA35E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-09T14:12:53.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG813B888165E1EE1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-07-09T14:14:52.577Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as retrectedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN17332  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17332 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "72/WA3CN17332.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17332 ;
+        adm:logEntry        bda:LG2879815337938671 , bda:LG5E525CA3B0CA35E3 , bda:LG813B888165E1EE1F , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2A3A2ADE81ABED98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN17333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17332  a       :Work ;
+        skos:prefLabel      "bsregs kyang mi 'tshigs pa'i bod/"@bo-x-ewts ;
+        :catalogInfo        "Tibet the undying flame by Kunzang Paljor."@en ;
+        :creator            bdr:CR2A3A2ADE81ABED98 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW3CN17332 , bdr:W3CN17332 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

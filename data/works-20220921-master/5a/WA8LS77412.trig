@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77412 {
+    bda:LG0878946D32B8663A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-18T14:30:35.633Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG46AC6A8D452EA1E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-18T13:43:08.637Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE56E977E4A9080D0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-18T13:43:31.728Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77412  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77412 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5a/WA8LS77412.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77412 ;
+        adm:logEntry        bda:LG0878946D32B8663A , bda:LG46AC6A8D452EA1E7 , bda:LGE56E977E4A9080D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA1131DC0302BA8BF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75345 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS77412  a       :Work ;
+        skos:prefLabel      "nya dang khrab skogs can gyi srog chags/"@bo-x-ewts ;
+        :catalogInfo        "Terminology of fish and crustacean."@en ;
+        :creator            bdr:CRA1131DC0302BA8BF ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T1157 , bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW8LS77412 , bdr:W8LS77412 ;
+        :workIsAbout        bdr:T1197 .
+}

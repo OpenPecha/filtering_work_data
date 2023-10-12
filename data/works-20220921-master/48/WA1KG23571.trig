@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23571 {
+    bda:LG09ACD9B88AED882B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-12T10:07:13.107Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD09557A59FBC17A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-12T10:02:25.734Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23571  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23571 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "48/WA1KG23571.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23571 ;
+        adm:logEntry        bda:LG09ACD9B88AED882B , bda:LGD09557A59FBC17A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG1666 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1KG23571  a       :Work ;
+        skos:altLabel       "grub mtha' ris su ma chad pa'i rnam grangs ming du bsdus pa sde tshan rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts ;
+        :catalogInfo        "Dictionary of Buddhist terminology arranged in numerical enumeration."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1231 .
+}

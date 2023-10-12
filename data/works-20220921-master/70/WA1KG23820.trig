@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23820 {
+    bda:LG5D10C4B853612489
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-15T15:43:13.169Z"^^xsd:dateTime ;
+        adm:logMessage      "provisional"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5C4E028227077AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-07T15:37:32.257Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23820  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23820 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "70/WA1KG23820.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23820 ;
+        adm:logEntry        bda:LG5D10C4B853612489 , bda:LGE5C4E028227077AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:CR21F0F6E21BBA19A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7701 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23820  a       :Work ;
+        skos:altLabel       "nian qing tang la na mu cuo hu jian jie"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gnyan chen thang lha dang gnam mtsho phyug mo'i gnas bshad mdzub mo ri ston/"@bo-x-ewts , "念青唐拉纳木错湖简介"@zh-hans ;
+        :catalogInfo        "On the description of holy places of Gñan-chen Thaṅ-lha mountain and Gnam-mtsho-phyug-mo lake in northern part of Lhasa, Tibet."@en ;
+        :creator            bdr:CR21F0F6E21BBA19A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T25 ;
+        :workHasInstance    bdr:MW1KG23820 ;
+        :workIsAbout        bdr:G2398 , bdr:G3419 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25521 {
+    bda:LG5EBC40C14ADF901E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA25521  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25521 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA25521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25521 ;
+        adm:logEntry        bda:LG5EBC40C14ADF901E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR4061A52D958F5E00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CR730C0131083BA05C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CREDAFF7737EF98A9A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8210 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA25521  a          :Work ;
+        skos:altLabel       "'phags pa 'gro lding ba'i rig sngags kyi rgyal po/"@bo-x-ewts ;
+        skos:prefLabel      "'gro lding ba'i rig sngags kyi rgyal po/"@bo-x-ewts , "dramida-vidyaraja"@sa-alalc97 ;
+        :creator            bdr:CR4061A52D958F5E00 , bdr:CR730C0131083BA05C , bdr:CREDAFF7737EF98A9A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW25521 .
+}

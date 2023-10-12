@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC32 {
+    bda:LG17D76043338473B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T17:47:40.429Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG4CD143A8F1693C1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T23:55:57.563Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG75ECF4E16FA553EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-24T13:52:16.33Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG8AF11716868F01E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T13:28:46.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# & cataInfo, bibTitle ...."@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFAE04B6AE7D1B211
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-18T05:24:59.832Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC32  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC32 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "9d/WA1AC32.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC32 ;
+        adm:logEntry        bda:LG17D76043338473B5 , bda:LG4CD143A8F1693C1F , bda:LG75ECF4E16FA553EB , bda:LG8AF11716868F01E2 , bda:LGFAE04B6AE7D1B211 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD0007EDDFD7B2B4C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1988 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1AC32  a          :Work ;
+        skos:altLabel       "byams me dpon bla blo bzang bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang bstan pa'i nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk master Jamme Lobsang Tenpe Nyima (19th Cent.) from Amdo Kubum monastery."@en ;
+        :creator            bdr:CRD0007EDDFD7B2B4C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1AC32 , bdr:W1AC32 ;
+        :workIsAbout        bdr:T819 .
+}

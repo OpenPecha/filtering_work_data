@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16492 {
+    bda:LG062C81B78D1FF2C5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-14T09:41:15.557Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG34E4F6BE9D48609C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-14T09:42:10.167Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB245DF92A9296566
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T11:51:37.31Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIME4B642616A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-27T20:30:28.724Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS11134 to T448"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16492  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16492 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8c/WA8LS16492.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16492 ;
+        adm:logEntry        bda:LG062C81B78D1FF2C5 , bda:LG34E4F6BE9D48609C , bda:LGB245DF92A9296566 , bda:LGIME4B642616A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR66FC072A68912E81
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6002 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA8LS16492  a       :Work ;
+        skos:altLabel       "gar gyi dbang phyug bzhad pa rtsal gyi gter chos 'od gsal rdo rje gsang mdzod skor/"@bo-x-ewts ;
+        skos:prefLabel      "'od gsal rdo rje gsang mdzod skor/"@bo-x-ewts ;
+        :catalogInfo        "A collection of treasure revelations pertaining to Odsel Dorje Sangdzod teaching cycle by Garwang Zhadpa Tsel or Ajom Drukpa Drodul Pawo Dorje."@en ;
+        :creator            bdr:CR66FC072A68912E81 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW8LS16492 , bdr:W8LS16492 ;
+        :workIsAbout        bdr:T354 .
+}

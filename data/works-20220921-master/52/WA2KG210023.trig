@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210023 {
+    bda:LG30E70A65F4C0C6B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-07T11:53:23.117Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG666D5B96D2A3B494
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-04T14:16:10.93Z"^^xsd:dateTime ;
+        adm:logMessage      "Work Number for CN"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA2FBF0F6CF02FBBE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-20T15:48:07.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA59FB3E59DD491EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2KG210023  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210023 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "52/WA2KG210023.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210023 ;
+        adm:logEntry        bda:LG30E70A65F4C0C6B1 , bda:LG666D5B96D2A3B494 , bda:LGA2FBF0F6CF02FBBE , bda:LGA59FB3E59DD491EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG210023  a      :Work ;
+        skos:altLabel       "dge 'dun chos 'phel/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'dun chos 'phel/ bod kyi deng rabs ri mo'i srol 'byed pa/"@bo-x-ewts ;
+        :catalogInfo        "Gedun Chopel: Tibet's First Modern Artist, edited by Pema Bum and Langtshang Sonam Dorje."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG210023 , bdr:W2KG210023 ;
+        :workIsAbout        bdr:P219 , bdr:T1845 , bdr:T2516 , bdr:T2CZ10088 .
+}

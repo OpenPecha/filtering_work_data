@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32744 {
+    bda:LG0AAF9D954FEAD8A0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-25T15:58:05.492Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4BA5F93026C5942
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGF168CFAD9C51F4EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-25T15:57:06.71Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32744  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32744 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/WA8LS32744.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32744 ;
+        adm:logEntry        bda:LG0AAF9D954FEAD8A0 , bda:LGB4BA5F93026C5942 , bda:LGF168CFAD9C51F4EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREF45625C7EF9DDE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P777 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32744  a       :Work ;
+        skos:prefLabel      "sgrub thabs rgya mtsho nas bshad pa'i lha tshogs rnams kyi mngon rtogs rjes gnang gi cho ga dang bcas pa'i tho yig gam don 'grel 'dod dgu'i ljon shing rin po che'i snye ma/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of abhisamaya and anuja mentioned in the Sadhana mala by Drangti Panchen Namkha Pelsang."@en ;
+        :creator            bdr:CREF45625C7EF9DDE8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T2176 , bdr:T3JT5054 , bdr:T5 , bdr:T7 ;
+        :workHasInstance    bdr:MW8LS32744 , bdr:W8LS32744 .
+}

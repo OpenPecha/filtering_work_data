@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20845 {
+    bda:LG7E3FF5593AF839DA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-09T11:38:19.17Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG95D3FE9844FEA034
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-06-09T11:39:43.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS20845  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20845 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/WA8LS20845.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20845 ;
+        adm:logEntry        bda:LG7E3FF5593AF839DA , bda:LG95D3FE9844FEA034 , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR653E23BBA2EE296A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6962 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20845  a       :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i tshig 'grel 'jam dbyangs bla ma'i zhal lung bdud rtsi'i thigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i tshig 'grel/"@bo-x-ewts ;
+        :catalogInfo        "A word by word commentary of Bodhicaryavatra by Khenpo Kunzang Palden."@en ;
+        :creator            bdr:CR653E23BBA2EE296A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW8LS20845 , bdr:W8LS20845 ;
+        :workIsAbout        bdr:WA19740 .
+}

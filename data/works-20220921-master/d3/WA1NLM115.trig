@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM115 {
+    bda:LG23529DE92F46CF6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-22T12:24:15.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG57A13227B0F452F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG92D7C2E734667572
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-29T15:15:40.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9A289191595481EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T08:40:14.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM115"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM115  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM115 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d3/WA1NLM115.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM115 ;
+        adm:logEntry        bda:LG23529DE92F46CF6F , bda:LG57A13227B0F452F8 , bda:LG92D7C2E734667572 , bda:LG9A289191595481EB , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1046 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM115  a        :Work ;
+        skos:altLabel       "rta mgrin gsang sgrub gyi sgo nas grib sel bya tshul nor bu ke ta ka"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi sgo nas grib sel bya tshul nor bu ke ta ka sogs/"@bo-x-ewts ;
+        :catalogInfo        "An averting defilement through Hayagriva Guhyasadhana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1783 , bdr:T2044 .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17884 {
+    bda:LG08BCBDAE61A143E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T16:14:02.122Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarilyRestricted"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG30B987CE2006C161
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-01T15:14:21.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG46607D1B2EADF775
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG59F9AC5A7C8795B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-04-01T15:12:31.693Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG644CC4320FF0A945
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-29T12:07:32.33Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7E006539ED608A5C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:28:01.688Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN17884  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17884 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "42/WA3CN17884.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17884 ;
+        adm:logEntry        bda:LG08BCBDAE61A143E0 , bda:LG30B987CE2006C161 , bda:LG46607D1B2EADF775 , bda:LG59F9AC5A7C8795B2 , bda:LG644CC4320FF0A945 , bda:LG7E006539ED608A5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCEB8A95C4B181D89
+        a                   :AgentAsCreator ;
+        :agent              bdr:P889 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17884  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ dbang phyug rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by the 9th Karmapa Wangchuk Dorje (1556-1603)."@en ;
+        :creator            bdr:CRCEB8A95C4B181D89 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN17884 , bdr:W3CN17884 ;
+        :workIsAbout        bdr:T1386 .
+}

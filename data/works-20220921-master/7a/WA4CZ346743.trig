@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ346743 {
+    bda:LG0507807E18623D06
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG09AFC4B3F80A7043
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-22T16:12:01.96Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3DFD12556DCDC661
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-04T09:24:06.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added tradition"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG573BEAE87DB20737
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:36:35.016Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog usad"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG87D265A92FAC3E4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGAE1F521C3A9D519F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T10:28:50.76Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ346743  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ346743 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "7a/WA4CZ346743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ346743 ;
+        adm:logEntry        bda:LG0507807E18623D06 , bda:LG09AFC4B3F80A7043 , bda:LG3DFD12556DCDC661 , bda:LG573BEAE87DB20737 , bda:LG87D265A92FAC3E4E , bda:LGAE1F521C3A9D519F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9320DBD073D078F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P122 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ346743  a      :Work ;
+        skos:altLabel       "mkhan po ngag dbang thub bstan rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ ngag dbang thub bstan rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by 3rd Tranye Ngawang Thubten Gyatsho."@en ;
+        :creator            bdr:CR9320DBD073D078F7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ346743 , bdr:W4CZ346743 ;
+        :workIsAbout        bdr:T819 .
+}

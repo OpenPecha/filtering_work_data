@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM344 {
+    bda:LG509C76F158E5911E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-02T16:19:36.778Z"^^xsd:dateTime ;
+        adm:logMessage      "test,"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG85B73A4D3406F823
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T12:32:12.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA75A6D189510F6CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-12T16:23:32.843Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC709554DDD549F9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM344"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM344  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM344 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4c/WA1NLM344.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM344 ;
+        adm:logEntry        bda:LG509C76F158E5911E , bda:LG85B73A4D3406F823 , bda:LGA75A6D189510F6CE , bda:LGC709554DDD549F9A , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM344  a        :Work ;
+        skos:altLabel       "rje rgyal po bi kra mi ji ta'i spyod pa ni shing mi'i dang po las brtsams te shing mi bcu gsum gyi bar du rgyal po chen po arja purja dang phan tshun smra bar byed pa'i lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal po bi kra mi ji ta'i spyod pa ni shing mi'i dang po las brtsams te shing mi bcu gsum gyi bar du rgyal po chen po arja purja dang phan tshun smra bar byed pa'i lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "Parables explaining important concepts Karma, text translated from Mongolian to Tibetan"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T276 ;
+        :workHasInstance    bdr:MW1NLM344 , bdr:W1NLM344 .
+}

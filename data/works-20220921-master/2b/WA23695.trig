@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23695 {
+    bda:LGB37E2021187C1414
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T15:21:45.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGD17B07B2BF1D9933
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-24T10:23:42.554Z"^^xsd:dateTime ;
+        adm:logMessage      "edited author name, note"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGD32C19B0875CFB25
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-09T16:34:22.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGF2468D2E3A26B8A9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23695  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23695 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "2b/WA23695.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23695 ;
+        adm:logEntry        bda:LGB37E2021187C1414 , bda:LGD17B07B2BF1D9933 , bda:LGD32C19B0875CFB25 , bda:LGF2468D2E3A26B8A9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF61FDEDA5AE39520
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2424 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23695  skos:altLabel  "the collected revelations of nyag bla padma bdud 'dul"@en .
+
+    bdr:WA23695  a          :Work ;
+        skos:prefLabel      "nyag bla pad+ma bdud 'dul gyi gter chos skor/"@bo-x-ewts , "the collected revelations of nyag bla padma bdud 'dul"@en ;
+        :catalogInfo        "Revelations by the Nyingma terton Nyarong Pema Dudul (1816-1872)."@en ;
+        :creator            bdr:CRF61FDEDA5AE39520 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23695 , bdr:W23695 ;
+        :workIsAbout        bdr:T1082 .
+}

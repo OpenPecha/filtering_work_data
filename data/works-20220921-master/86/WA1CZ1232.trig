@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1232 {
+    bda:LG230C2F3EA0B61687
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG282F82906D6270EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T12:10:57.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG798749D89DC9F848
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-02-02T11:43:03.225Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG9329F2686C339A8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-23T12:27:25.898Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9E972CD8199A94D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-15T12:31:52.166Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBAD2230DBBD08D66
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-15T12:33:08.744Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEE5DC64A00D1B507
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-13T13:59:35.564Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF057630B03E02B5E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-15T12:34:54.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA1CZ1232  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1232 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "86/WA1CZ1232.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1232 ;
+        adm:logEntry        bda:LG230C2F3EA0B61687 , bda:LG282F82906D6270EF , bda:LG798749D89DC9F848 , bda:LG9329F2686C339A8B , bda:LG9E972CD8199A94D5 , bda:LGBAD2230DBBD08D66 , bda:LGEE5DC64A00D1B507 , bda:LGF057630B03E02B5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1D58A70B6219E1D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P154 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVE3CE1A6C111BB15D
+        a                   :CompletedEvent ;
+        :onYear             "1374"^^xsd:gYear .
+
+    bdr:WA1CZ1232  a        :Work ;
+        skos:altLabel       "'phags pa gtsug gtor dri med kyi cho ga'i lag len khrigs chags ma/"@bo-x-ewts ;
+        skos:prefLabel      "dri med cho ga"@bo-x-ewts ;
+        :creator            bdr:CR1D58A70B6219E1D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVE3CE1A6C111BB15D ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1CZ1232 , bdr:W1CZ1232 ;
+        :workIsAbout        bdr:T1820 , bdr:T1PD114149 , bdr:WA25510 .
+}

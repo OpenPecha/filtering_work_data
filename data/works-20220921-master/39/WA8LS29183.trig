@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29183 {
+    bda:LG596E1FA409D4281F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-31T10:27:18.705Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBAC9E8C01FCA3669
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-31T10:28:26.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29183  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29183 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "39/WA8LS29183.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29183 ;
+        adm:logEntry        bda:LG596E1FA409D4281F , bda:LGBAC9E8C01FCA3669 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS29183  a       :Work ;
+        skos:prefLabel      "lta sgom spyod pa 'bras bu'i do ha'i glu/"@bo-x-ewts ;
+        :catalogInfo        "A collection of spiritual songs known as Doha."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ2184 ;
+        :workHasInstance    bdr:MW1KG10746_E1F9BE , bdr:MW23447_4C9786 , bdr:MW8LS29183 , bdr:W8LS29183 ;
+        :workIsAbout        bdr:T1335 .
+}

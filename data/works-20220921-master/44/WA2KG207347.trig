@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG207347 {
+    bda:LG38728BA132654276
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-31T15:09:07.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7E9CAA279697CCA5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-31T15:06:57.012Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCCE6648B9211A7CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-20T13:18:40.896Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo and cat info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG207347  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG207347 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "44/WA2KG207347.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG207347 ;
+        adm:logEntry        bda:LG38728BA132654276 , bda:LG7E9CAA279697CCA5 , bda:LGCCE6648B9211A7CE , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDBD478624D4744A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6308 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG207347  a      :Work ;
+        skos:altLabel       "chab shog phyogs bsgrigs las pho nya gzhon nu don grub kyi 'grel ba blo bzang 'jam dpal bzhad pa'i sgra dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "chab shog pho nya gzhon nu don grub kyi 'grel ba/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the epistolary poem \"pho nya gzhon nu don grub\" by Sgis-steng Blo-bzang-dpal-ldan (1881-1944) an influential Tibetan Buddhist lama from the area of Rebkong in Amdo."@en ;
+        :creator            bdr:CRDBD478624D4744A1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T221 ;
+        :workHasInstance    bdr:MW2KG207347 , bdr:W2KG207347 ;
+        :workIsAbout        bdr:T281 .
+}

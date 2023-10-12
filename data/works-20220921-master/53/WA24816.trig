@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24816 {
+    bda:LGA55EDFA514176D23
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24816  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24816 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "53/WA24816.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24816 ;
+        adm:logEntry        bda:LGA55EDFA514176D23 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR38957AC84AABD1AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1204 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24816  a          :Work ;
+        skos:prefLabel      "dpal dus kyi 'khor lo'i sgrub thabs mdor bsdus/"@bo-x-ewts , "Rje-btsun A-rol rdo rje ʼchaṅ sku phren gsum pa Blo-bzaṅ-luṅ-rtogs-bstan-paʼi-rgyal-mtshan gyi gsuṅ rtsom phyogs bsgrigs /Mtsho-lho-khul Bod kyi skad yig bya baʼi u yon lhan khaṅ gis tshol sdud legs sgrig byas."@en-x-mixed ;
+        :creator            bdr:CR38957AC84AABD1AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24816 .
+}

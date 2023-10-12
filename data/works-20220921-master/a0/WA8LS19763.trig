@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19763 {
+    bda:LG1D64B3B91FE908FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T15:46:06.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG42B4C4A0FB6F504F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-15T15:07:33.13Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, author, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19763  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19763 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a0/WA8LS19763.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19763 ;
+        adm:logEntry        bda:LG1D64B3B91FE908FA , bda:LG42B4C4A0FB6F504F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR99BFF45725506244
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2943 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB8817CFB64BFFCDC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19763  a       :Work ;
+        skos:altLabel       "mkhas pa mi bzhi'i thugs bcud bka' brgyad bka' ma'i bskyed rim gyi phrin las chog khrigs he ru ka'i dgongs pa'i rgyan dang bka' brgyad rdzongs 'phrang /"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyad bka' ma'i bskyed rim gyi phrin las chog khrigs dang bka' brgyad rdzongs 'phrang /"@bo-x-ewts ;
+        :catalogInfo        "Liturgy text concerning the generating stages of Kagye Kama tradition by the first Kathok Tulku Getse Pandita Gyurme Tsewang Chokdrup; also rediscovered Kagye cycle teachings of Drupthop Ngodup and Nyang Ral Nyima Odzer."@en ;
+        :creator            bdr:CR99BFF45725506244 , bdr:CRB8817CFB64BFFCDC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW8LS19763 , bdr:W8LS19763 ;
+        :workIsAbout        bdr:T1193 , bdr:T164 , bdr:T2579 .
+}

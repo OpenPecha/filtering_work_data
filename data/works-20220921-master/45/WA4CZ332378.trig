@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ332378 {
+    bda:LG92648E6853F26AA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB34577F889B12FB0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-04-02T15:37:32.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF14A4DF591741252
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-04-01T11:04:15.302Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged from usaid"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ332378  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ332378 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "45/WA4CZ332378.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ332378 ;
+        adm:logEntry        bda:LG92648E6853F26AA1 , bda:LGB34577F889B12FB0 , bda:LGF14A4DF591741252 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ332378  a      :Work ;
+        skos:altLabel       "zhang zhung snyan rgyud kyi gsung pod/"@bo-x-ewts ;
+        skos:prefLabel      "zhang zhung snyan rgyud/"@bo-x-ewts ;
+        :catalogInfo        "Collected texts of the direct spoken transmissions from Zhang Zhung of the Bon order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21872_9C6D11 , bdr:MW4CZ332378 , bdr:W4CZ332378 ;
+        :workIsAbout        bdr:T247 , bdr:T354 .
+}

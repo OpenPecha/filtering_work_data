@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25914 {
+    bda:LG1C8131F67DDED7DF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-04T11:41:27.168Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEAEBAD4974877A5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-04T11:38:38.968Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG25914  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25914 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c2/WA1KG25914.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25914 ;
+        adm:logEntry        bda:LG1C8131F67DDED7DF , bda:LGEAEBAD4974877A5E , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE02BBA98FB70C301
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7570 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG25914  a       :Work ;
+        skos:prefLabel      "skyid shod sde pa'i skor/"@bo-x-ewts ;
+        :catalogInfo        "History and genealogy of Kyishod Depa (skyid shod sde pa) family who ruled in Central Tibet from 1593-1720."@en ;
+        :creator            bdr:CRE02BBA98FB70C301 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG25914 , bdr:W1KG25914 ;
+        :workIsAbout        bdr:G1089 , bdr:P720 .
+}

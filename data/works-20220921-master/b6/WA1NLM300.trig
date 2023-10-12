@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM300 {
+    bda:LGC0273D5BCA23545A
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-29T16:32:21.654Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC600BAA5E81996B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF8BFD9EB5076F6F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-05T13:44:39.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM300"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM300  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM300 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/WA1NLM300.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM300 ;
+        adm:logEntry        bda:LGC0273D5BCA23545A , bda:LGC600BAA5E81996B7 , bda:LGF8BFD9EB5076F6F0 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR21461A75DB0B47AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM300  a        :Work ;
+        skos:prefLabel      "byang chub lam rim che ba las/ zhi gnas kyi skabs kyi dbu phyogs so/ byang chub lam gyi rim pa'i zhi gnas kyi skabs kyi mchan 'grel rin chen rnam gsum gyi do shal skal bzang mgul bzang nyi 'od 'bum 'phro/"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary of graduated path focussing on the Samatha by Jamyang Zhedpe Dorjee."@en ;
+        :creator            bdr:CR21461A75DB0B47AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 , bdr:T304 ;
+        :workHasInstance    bdr:MW1NLM300 , bdr:W1NLM300 ;
+        :workIsAbout        bdr:T313 .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66743 {
+    bda:LG60D9D2230439CD35
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T15:01:05.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG72C7708583790CD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-22T14:51:16.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added author statement and page number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4414FD5F33FE957
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-03T11:43:20.29Z"^^xsd:dateTime ;
+        adm:logMessage      "work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBBA0EE7140AA16F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBD211D4DC4E348A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-22T14:52:02.573Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC58A26E15FC20817
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-26T09:41:11.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added other title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66743  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66743 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4f/WA8LS66743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66743 ;
+        adm:logEntry        bda:LG60D9D2230439CD35 , bda:LG72C7708583790CD4 , bda:LGB4414FD5F33FE957 , bda:LGBBA0EE7140AA16F9 , bda:LGBD211D4DC4E348A1 , bda:LGC58A26E15FC20817 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05BC5480EA1BFC10
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75466 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66743  a       :Work ;
+        skos:prefLabel      "rgyun spyod bod skad/"@bo-x-ewts , "Shi Yong Zang Yu"@en ;
+        :catalogInfo        "Tibetan language book."@en ;
+        :creator            bdr:CR05BC5480EA1BFC10 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS66743 , bdr:W8LS66743 ;
+        :workIsAbout        bdr:T265 .
+}

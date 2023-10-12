@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM271 {
+    bda:LG67F42A6C67D34B0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-23T12:04:10.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEB6B7F36D5B9C0E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:46.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF62B322B84BE85CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM271"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM271  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM271 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "95/WA1NLM271.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM271 ;
+        adm:logEntry        bda:LG67F42A6C67D34B0A , bda:LGEB6B7F36D5B9C0E6 , bda:LGF62B322B84BE85CA , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF496AA3384E62E20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1003 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM271  a        :Work ;
+        skos:altLabel       "bla ma sgrub thabs kyi cho ga rgya cher bshad pa/"@bo-x-ewts , "ma Ni pa bsam gtan rgya mtsho'i mdzad pa bla ma'i sgrub thabs/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma'i sgrub thabs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of ritual text of guru sadhana by the first Yingok Manipa Samten Gyatsho."@en ;
+        :creator            bdr:CRF496AA3384E62E20 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1029 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM271 , bdr:W1NLM271 .
+}

@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD90416 {
+    bda:LG3230094EC446A36E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:02:59.113Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG58914D1C8956D209
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-02-03T14:36:57.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8087ECDA6B46009B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-07-28T10:01:19.431Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG898EE879A6C93F5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:52:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGC8E517B73FF84320
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-20T10:27:40.727Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1PD90416  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD90416 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ab/WA1PD90416.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD90416 ;
+        adm:logEntry        bda:LG3230094EC446A36E , bda:LG58914D1C8956D209 , bda:LG8087ECDA6B46009B , bda:LG898EE879A6C93F5E , bda:LGC8E517B73FF84320 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA15269 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR455F573E16E2C272
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3057 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1PD90416  a       :Work ;
+        skos:altLabel       "chos kyi rje thams cad mkhyen pa rdo rje gdan pa chen po kun dga' rnam rgyal dpal bzang po'i rnam par thar pa ngo mtshar rin po che'i gter mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "kun dga' rnam rgyal gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Sakya master Kunga Namgyal (1432-1496). Written by the 15th century author Changchub Wangyal."@en ;
+        :creator            bdr:CR455F573E16E2C272 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P3183 , bdr:T617 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD2074 {
+    bda:LG25D0A91DB38F5F66
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG27BC069DADFCC627
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-29T20:16:45.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3213C3E6892FBAAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T12:41:08.212Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGA000172 to P4333"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3F00E577EC92A743
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-29T15:40:06.032Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD2074  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD2074 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/WA4PD2074.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD2074 ;
+        adm:logEntry        bda:LG25D0A91DB38F5F66 , bda:LG27BC069DADFCC627 , bda:LG3213C3E6892FBAAA , bda:LG3F00E577EC92A743 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR59F579772E9BC617
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD2074  a        :Work ;
+        skos:prefLabel      "g.yu thog snying thig skor phyogs sgrig"@bo-x-ewts ;
+        :catalogInfo        "Collected rituals of a cycle of medical practice deriving from Yutok Yonten Gonpo."@en ;
+        :creator            bdr:CR59F579772E9BC617 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW4PD2074 , bdr:W4PD2074 ;
+        :workIsAbout        bdr:T1795 .
+}

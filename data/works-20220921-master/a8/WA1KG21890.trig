@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21890 {
+    bda:LG2BD984180E04B0AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-11T15:00:04.735Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4E7D6D34718ADF37
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T15:11:27.413Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA152ADF111A6BE3C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-11T15:00:37.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG21890  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21890 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a8/WA1KG21890.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21890 ;
+        adm:logEntry        bda:LG2BD984180E04B0AF , bda:LG4E7D6D34718ADF37 , bda:LGA152ADF111A6BE3C , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG21890  a       :Work ;
+        skos:prefLabel      "mdo dbang gi skor/"@bo-x-ewts , "mdo dban gi skor : a structured presentation of the abhiseka of buddhist practice of the rnin-ma-pa bka'-ma tradition focussing upon the mahayoga, anuyoga, and atiyoga systems of realization from the late 16th century"@en ;
+        :catalogInfo        "A structured presentation of the Abhiseka of Buddhist practice of the Nyingma Kama tradition focussing upon the Mahayoga, Anuyoga, and Atiyoga systems of realization from the late 16th century."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T10MS11187 , bdr:T48 ;
+        :workHasInstance    bdr:MW1KG21890 , bdr:W1KG21890 ;
+        :workIsAbout        bdr:T310 .
+}

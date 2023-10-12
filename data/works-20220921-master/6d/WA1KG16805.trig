@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16805 {
+    bda:LG91D1985C03DA4B0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-03-21T13:42:56.644Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBB052B851A400283
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD189A0FA0BFB8786
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-21T13:43:23.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16805 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6d/WA1KG16805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16805 ;
+        adm:logEntry        bda:LG91D1985C03DA4B0D , bda:LGBB052B851A400283 , bda:LGD189A0FA0BFB8786 , bda:LGIM4394141E , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG16805  skos:altLabel  "阿里金宗"@zh-hans .
+
+    bdr:WA1KG16805  a       :Work ;
+        skos:altLabel       "a li jin zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mnga' ris gser rdzong /"@bo-x-ewts , "阿里金宗"@zh-hans ;
+        :catalogInfo        "An episode of the Gesar epic. On the conquest of Ngari Ser Dzong."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG16805 , bdr:MW22068 , bdr:W1KG16805 , bdr:W22068 ;
+        :workIsAbout        bdr:T248 .
+}

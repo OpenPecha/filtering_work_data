@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17587 {
+    bda:LG4751D7841FC0D343
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-19T11:37:57Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG933BC894CCFE281A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-19T12:00:59.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG17587  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17587 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA1KG17587.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17587 ;
+        adm:logEntry        bda:LG4751D7841FC0D343 , bda:LG933BC894CCFE281A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR94A916FB06C94568
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10486 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAF5BE8D9688E5DEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P408 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17587  a       :Work ;
+        skos:prefLabel      "gu ru drag dmar gyi 'phrin gzhung dregs pa zil gnon dang / dbang chog mthong ba rang grol/ dbyangs yig tshangs dbyangs sems nyid rol mtsho bcas/"@bo-x-ewts ;
+        :creator            bdr:CR94A916FB06C94568 , bdr:CRAF5BE8D9688E5DEB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1746 , bdr:T48 ;
+        :workHasInstance    bdr:MW1KG17587 , bdr:W1KG17587 ;
+        :workIsAbout        bdr:T1152 .
+}

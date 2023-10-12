@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22213 {
+    bda:LG9C1BED9DAF302A6E
+        a                   adm:UpdateData .
+
+    bda:LGE54F1E41002B4FF7
+        a                   adm:InitialDataCreation .
+
+    bda:W22213  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W22213 ;
+        adm:replaceWith     bdr:WA22213 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA22213  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22213 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "20/WA22213.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22213 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR83A9E796114B5981
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT1E115BB58F09EF06
+        a                   :Note ;
+        :noteText           "on the principles of buddhist practice: found in a the collection of minor works of tsong kha pa"@en .
+
+    bdr:WA22213  a          :Work ;
+        skos:prefLabel      "lam gtso rnam gsum/"@bo-x-ewts ;
+        :creator            bdr:CR83A9E796114B5981 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT1E115BB58F09EF06 .
+}

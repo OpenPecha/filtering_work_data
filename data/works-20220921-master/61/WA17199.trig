@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA17199 {
+    bda:LG0D9E0663BF8B5377
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG93445FAFD46D899E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-27T15:02:42.269Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD0608BC9BC2F8F10
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDA300197071E134B
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-01T11:45:13.495Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA12EA5A3932928C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-27T15:01:40.142Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA17199  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA17199 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "61/WA17199.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA17199 ;
+        adm:logEntry        bda:LG0D9E0663BF8B5377 , bda:LG93445FAFD46D899E , bda:LGD0608BC9BC2F8F10 , bda:LGDA300197071E134B , bda:LGFA12EA5A3932928C , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA46A8AB59E06A036
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4852 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW17199  skos:altLabel  "藏医根本医典详释"@zh-hans .
+
+    bdr:WA17199  a          :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu dang po dpal ldan rtsa ba'i rgyud kyi 'grel pa sman bla'i dgongs rgyan/"@bo-x-ewts , "zang yi gen ben yi yan xiang shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtsa rgyud kyi 'grel pa sman bla'i dgongs rgyan/"@bo-x-ewts , "藏医根本医典详释"@zh-hans ;
+        :catalogInfo        "Commentary on the first tantra of the Tibetan fundamental medical text (rgyud bzhi)."@en ;
+        :creator            bdr:CRA46A8AB59E06A036 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW17199 , bdr:W17199 ;
+        :workIsAbout        bdr:T1PD95 , bdr:WA21667 .
+}

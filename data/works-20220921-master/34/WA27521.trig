@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27521 {
+    bda:LG1D3FAFFF2BF76D97
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-27T16:31:40.687Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00009 .
+
+    bda:LG74EB85648A04A213
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:51:48.227Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGCFA02D17700BC35B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD3F91992EB6EDDA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-29T19:55:51.761Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8763 to P5942"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27521  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27521 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "34/WA27521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27521 ;
+        adm:logEntry        bda:LG1D3FAFFF2BF76D97 , bda:LG74EB85648A04A213 , bda:LGCFA02D17700BC35B , bda:LGD3F91992EB6EDDA5 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE627760AED2DA4F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5942 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27521  skos:altLabel  "an exegesis of the 9th chapter of santideva's bodhicaryavatara"@en-x-mixed .
+
+    bdr:WA27521  a          :Work ;
+        skos:altLabel       "a commentary on nagarjunas dharmadhatustava"@bo-alalc97 , "chos kyi dbyins su bstod pa'i 'grel pa nes don zab mo'i gter gyi kha 'byed/"@bo-x-ewts , "spyod 'jug ser le'i rgya cher 'grel mchan snin po'i don gsl ni byed chen po/"@bo-x-ewts , "spyod 'jug sher le'i rgya cher 'grel mchan snying po'i don gsal nyin byed chen po/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi dbyings su bstod pa'i 'grel pa nges don zab mo'i gter gyi kha 'byed/"@bo-x-ewts , "an exegesis of the 9th chapter of santideva's bodhicaryavatara"@en-x-mixed ;
+        :catalogInfo        "Commentaries on Nagarjuna's Dharmadhatustava and Shantideva's Bodhicaryavatara."@en ;
+        :creator            bdr:CRE627760AED2DA4F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW27521 , bdr:W27521 ;
+        :workIsAbout        bdr:WA19740 , bdr:WA24268 .
+}

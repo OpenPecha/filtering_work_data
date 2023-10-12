@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29677 {
+    bda:LGCFE57B08373E900E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGFF56C8A0399A34B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T12:39:06.398Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA29677  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29677 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f8/WA29677.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29677 ;
+        adm:logEntry        bda:LGCFE57B08373E900E , bda:LGFF56C8A0399A34B1 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD13DD1DF65AB3C34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7501 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29677  skos:altLabel  "steps to valid reasoning, a treatise on logics"@en .
+
+    bdr:WA29677  a          :Work ;
+        skos:prefLabel      "tshad ma rigs pa'i them skas/"@bo-x-ewts , "steps to valid reasoning, a treatise on logics"@en ;
+        :creator            bdr:CRD13DD1DF65AB3C34 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29677 , bdr:W29677 ;
+        :workIsAbout        bdr:T370 .
+}

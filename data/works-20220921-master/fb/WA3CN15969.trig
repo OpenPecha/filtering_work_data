@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15969 {
+    bda:LG5A03FDD8073F23FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-06-01T15:00:10.398Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB3A16F74D6229AA9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-08T12:05:20.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE29D2DC0A6FBDDA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN15969  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15969 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fb/WA3CN15969.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15969 ;
+        adm:logEntry        bda:LG5A03FDD8073F23FB , bda:LGB3A16F74D6229AA9 , bda:LGE29D2DC0A6FBDDA0 , bda:LGIM7CC15F8F , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR424B02CD031A1AD0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7368 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN15969  skos:altLabel  "毛主席的五篇哲学著作"@zh-hant .
+
+    bdr:WA3CN15969  a       :Work ;
+        skos:prefLabel      "ma'o kru'u zhi'i mtshan nyid rig pa'i gsung rtsom lnga /"@bo-x-ewts , "毛主席的五篇哲学著作"@zh-hant ;
+        :catalogInfo        "Chairman Mao's Five Philosophical Works."@en ;
+        :creator            bdr:CR424B02CD031A1AD0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN15969 , bdr:W3CN15969 ;
+        :workIsAbout        bdr:T388 , bdr:T8LS16960 .
+}

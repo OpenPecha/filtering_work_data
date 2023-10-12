@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2MS24742 {
+    bda:LG8F83AA059F632C25
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-14T15:51:36.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub title"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGF20A9FB36971A8B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-29T23:07:13.693Z"^^xsd:dateTime ;
+        adm:logMessage      "pub into indium"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGFA1B72B6F2EACABE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-06-14T15:36:21.824Z"^^xsd:dateTime ;
+        adm:logMessage      "created uni child"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGFB9AA6EEA0F66316
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-14T15:46:54.085Z"^^xsd:dateTime ;
+        adm:logMessage      "created uni child"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM39CBAA8D  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-withdrawn.xql" ;
+        adm:logDate         "2019-06-19T17:06:17.068Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to onHold"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2MS24742  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2MS24742 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fb/WA2MS24742.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2MS24742 ;
+        adm:logEntry        bda:LG8F83AA059F632C25 , bda:LGF20A9FB36971A8B8 , bda:LGFA1B72B6F2EACABE , bda:LGFB9AA6EEA0F66316 , bda:LGIM39CBAA8D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR43E0C4899B78BACB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2MS24742  a       :Work ;
+        skos:prefLabel      "dbu ma rtsa ba shes rab TI ka sgron ma gsal byed dang tshig gsal gyi dka' gnad dang spyi sdom bcas/"@bo-x-ewts ;
+        :creator            bdr:CR43E0C4899B78BACB ;
+        :isRoot             true ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:IE2MS24742 ;
+        :workIsAbout        bdr:WA23226 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19951 {
+    bda:LG40B6359AF63010B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-27T09:42:40.375Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8985A37A740BAC61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T14:29:22.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19951  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19951 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "54/WA8LS19951.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19951 ;
+        adm:logEntry        bda:LG40B6359AF63010B8 , bda:LG8985A37A740BAC61 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFBB28A9EA4E2E909
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016624 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19951  a       :Work ;
+        skos:prefLabel      "bar chad lam sel gyi skor las kha byang rtsis kyi them grangs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of reverential petition of Padmasambhava and related text revealed by Domang Terton Dorje Dechen Lingpa."@en ;
+        :creator            bdr:CRFBB28A9EA4E2E909 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW8LS19951 , bdr:W8LS19951 ;
+        :workIsAbout        bdr:P4956 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1754 {
+    bda:LG1D215AEE240F3A7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-25T09:10:02.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG325183E01EBAE8F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1754"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1754  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1754 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "71/WA1NLM1754.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1754 ;
+        adm:logEntry        bda:LG1D215AEE240F3A7A , bda:LG325183E01EBAE8F3 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1754  a       :Work ;
+        skos:prefLabel      "'go ba'i lha lnga'i gsol mchod phan bde 'dod 'jo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje rnam par 'joms pa/ 2 bum bsangs mig nang god kha chod/ 3 byis pa chags pa'i man ngag 4 rje btsun sgrol ma'i bsangs mchod/ gser skyems/ 5 rje btsun sgrol ma nyer gcig gi sgrub thabs/ 6 dpal dus kyi 'khor lo'i bla ma'i rnal 'byor mdor bsdus/ 7 rje btsun ma 'phags ma sgrol ma'i 'chi bslu/ 8 klu bdud nag po'i grib sel/ 9 rub chen g.ya' bzang ba nas brgyud pa'i gza' bcos zab mo nyams su len tshul/ 10 bzang spyod smon lam gyi 'don thabs/ 11 chos skyong dregs pa lcam sring gi rdo rje mda' khri sogs rgyugs 'dor/ 12 ma gcig grub pa'i rgyal mo'i lugs kyi tshe dbang dang bka' bsko bya tshul dngos grub kun 'byung / 13 ye shes khyung khra'i sgrub thabs sdong 'go'i nad kyi gdung ba sel ba'i zla shel/ 14 mkha' spyod ma'i sgrub thabs/ 15 chos sprul bsdod pa rgya chen po/ 16 dpal myur mdzad ye shes mgon po'i 'phen pa'i gshegs gtor/"@bo-x-ewts , "Ritual for offering of the five patron deities; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1754 , bdr:W1NLM1754 ;
+        :workIsAbout        bdr:T1CZ91 , bdr:T249 .
+}

@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA6459 {
+    bda:LG301D00944107B12D
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T15:09:52.247Z"^^xsd:dateTime ;
+        adm:logMessage      "add publi info, sacann info and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG914B6B9E02F0C682
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9152604480B21740
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-19T12:46:24.966Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGAB5A48175CFE69E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T11:57:34.423Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGD3D48C5CCBB26E87
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T17:17:23.821Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA6459  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA6459 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "14/WA6459.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA6459 ;
+        adm:logEntry        bda:LG301D00944107B12D , bda:LG914B6B9E02F0C682 , bda:LG9152604480B21740 , bda:LGAB5A48175CFE69E5 , bda:LGD3D48C5CCBB26E87 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR86823725650889CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA6459  a           :Work ;
+        skos:prefLabel      "rmad byung sprul pa'i glegs bam/"@bo-x-ewts ;
+        :catalogInfo        "Work by Zhabkar Tsodrug Rangdrol (1781-1851)."@en ;
+        :creator            bdr:CR86823725650889CC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 , bdr:T613 ;
+        :workHasInstance    bdr:MW1PD45150_A82C0B , bdr:MW6459 , bdr:MW8LS17769 , bdr:W6459 , bdr:W8LS17769 ;
+        :workIsAbout        bdr:T2413 , bdr:T541 , bdr:T770 .
+}

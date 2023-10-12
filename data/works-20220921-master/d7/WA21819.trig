@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21819 {
+    bda:LG1CE67BD5DF761101
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG4475C387AC7F5EFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-06-07T16:38:11.573Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA42FF6EED22ECEA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T11:45:50.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB095A7C0B91404F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-30T10:22:43.279Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE9B7F5BE37CB9177
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-07T16:37:01.772Z"^^xsd:dateTime ;
+        adm:logMessage      "added title page title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21819  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21819 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d7/WA21819.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21819 ;
+        adm:logEntry        bda:LG1CE67BD5DF761101 , bda:LG4475C387AC7F5EFA , bda:LGA42FF6EED22ECEA0 , bda:LGB095A7C0B91404F4 , bda:LGE9B7F5BE37CB9177 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR32AE5494C99F3109
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRC6F052B0BC5F5EEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P564 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRDB5C6689C0D0C5B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW21819  skos:altLabel  "rdzogs chen sde gsum skor ; revelations of a system of dzogchen practice forming a part of the precepts known as the bai ro tsa na'i snin thig"@en-x-mixed .
+
+    bdr:WA21819  a          :Work ;
+        skos:altLabel       "mchog gling gter byon skor las/ rdzogs chen sde gsum/"@bo-x-ewts , "Rdzogs chen sde gsum skor;revelations of a system of Dzogchen practice forming a part of the precepts known as the \"Bai ro tsa naʾi sñiṅ thig.\"Recovered from its place of concealment at ʾDzom-nang Padma-shel-phug, a meditation cave of the Gu-ru Rin-po-che, by Mchog-gyur-gliṅ-pa, with liturgical instructions by ʾJam-mgon Koṅ-sprul Blo-gros-mthaʾ-yas and Mkhan-po Karma-rin-chen-dar-rgyas. Reproduced from the ms. once preserved at Gnas-brtan Dgon-pa in Khams by Tulku Ugyen Topgyal."@en-x-mixed ;
+        skos:prefLabel      "rdzogs chen sde gsum skor/"@bo-x-ewts , "rdzogs chen sde gsum skor ; revelations of a system of dzogchen practice forming a part of the precepts known as the bai ro tsa na'i snin thig"@en-x-mixed ;
+        :creator            bdr:CR32AE5494C99F3109 , bdr:CRC6F052B0BC5F5EEB , bdr:CRDB5C6689C0D0C5B6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW21819 , bdr:W21819 ;
+        :workIsAbout        bdr:T1082 , bdr:T354 .
+}

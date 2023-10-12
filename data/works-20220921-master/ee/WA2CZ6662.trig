@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ6662 {
+    bda:LG1CE2CFF6166F0709
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-23T13:13:35.06Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG5EC988C71FC3D04B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-03-17T09:40:38.613Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCFBF8F4D283CEBFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-07-24T10:37:15.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD334138D32D45505
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-04-06T14:01:53.691Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2CZ6662  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ6662 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ee/WA2CZ6662.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ6662 ;
+        adm:logEntry        bda:LG1CE2CFF6166F0709 , bda:LG5EC988C71FC3D04B , bda:LGCFBF8F4D283CEBFB , bda:LGD334138D32D45505 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF09DE9B07CE2B1CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV09907CB9B32C8008
+        a                   :CompletedEvent ;
+        :onYear             "1639"^^xsd:gYear .
+
+    bdr:WA2CZ6662  a        :Work ;
+        skos:altLabel       "rgyal ba'i rtogs pa brjod pa dpag bsam 'khri shing gi don 'grel legs par bshad pa tshogs gnyis bsam 'phel nor bu'i phreng mdzes/"@bo-x-ewts ;
+        skos:prefLabel      "rtogs brjod dpag bsam 'khri shing gi don 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Description of the Bodhisattvavadhanakalpalata, on the multiple lives of the Buddha."@en ;
+        :creator            bdr:CRF09DE9B07CE2B1CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV09907CB9B32C8008 ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW29307_D8656C , bdr:MW2CZ6662 , bdr:W2CZ6662 ;
+        :workIsAbout        bdr:WA1CZ1113 .
+}

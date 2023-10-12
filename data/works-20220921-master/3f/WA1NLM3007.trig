@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3007 {
+    bda:LG570C74B5D1E2321E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG9CFD840DA868DDCF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-02T11:30:28.423Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3007"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3007  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3007 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/WA1NLM3007.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3007 ;
+        adm:logEntry        bda:LG570C74B5D1E2321E , bda:LG9CFD840DA868DDCF , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD0045A5D6EDF1D1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7628 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3007  a       :Work ;
+        skos:prefLabel      "zab gsang mkha' 'gro snying thig gi btags grol gyi rgyud drug pa 'das rjes gsum pa dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dam can chos rgyal gyi bsang mchod/ 2 tshe dpag med kyi sgrub thabs/ 3 bkra shis brtsegs pa'i g.yang 'gugs/ 4 zhabs brtan mtshan dpe rab rgyas/ 5 bla ma bka' drin dran pa'i gsol 'debs dngos grub myur du 'gug pa'i lcags kyu/ 6 ltas sna tshogs brtag thabs/ 7 skyabs 'gro/ 8 yi ge sum bcu/ gang gi blo gros ma/ 9 bsang mchod bya tshul mdor bsdus/ 10 khrims su bca' ba'i yi ge zil gnon/ 11 byang chub ltung bshags/ 12 rta mgrin yang gsang khros pa la thugs dam byed pa/ 13 rta mgrin yang gsang krhros pa'i bsangs/ 14 skyabs rje dam pa'i yang srid myur byon gyi smon tshig 15 gu ru drag po sgo nas bzlog bsgyur/"@en , "The sixth chapter of tantra known as liberation by wearing from the Khadro Nyingthik cycle of teachings; other text also included."@en ;
+        :creator            bdr:CRD0045A5D6EDF1D1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1NLM3007 , bdr:W1NLM3007 ;
+        :workIsAbout        bdr:T01JR184 , bdr:T2270 .
+}

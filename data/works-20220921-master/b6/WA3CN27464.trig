@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN27464 {
+    bda:LG8B9CAE2998D3D900
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-06T21:37:26.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG970E4023BA74E3F9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-06T20:10:30.786Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN27464  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN27464 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b6/WA3CN27464.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN27464 ;
+        adm:logEntry        bda:LG8B9CAE2998D3D900 , bda:LG970E4023BA74E3F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN27464  skos:altLabel  "Zhonghua Vinaya Canon"@en .
+
+    bdr:WA3CN27464  a       :Work ;
+        skos:altLabel       "中華律藏"@zh-hant ;
+        skos:prefLabel      "Zhonghua Vinaya Canon"@en , "中华律藏"@zh-hans ;
+        :catalogInfo        "Zhonghua Edition of Chinese Buddhist Vinaya Canon."@en ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN27464 .
+}

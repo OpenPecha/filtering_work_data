@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9728 {
+    bda:LG0BD17AA94659ED30
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-18T10:59:02.162Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG83FDC34D5F4EDD4D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-18T10:59:38.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9A9CCF2B4BCA0F66
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGC1236E02E97C39B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T09:56:49.271Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9728  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9728 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a9/WA1KG9728.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9728 ;
+        adm:logEntry        bda:LG0BD17AA94659ED30 , bda:LG83FDC34D5F4EDD4D , bda:LG9A9CCF2B4BCA0F66 , bda:LGC1236E02E97C39B8 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD09CF2DBBA03F790
+        a                   :AgentAsCreator ;
+        :agent              bdr:P563 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG9728  skos:altLabel  "ye shes mgon po ber nag can gyi sgrub skor/ texts for the highly esoteric sadana of mahakala in the ber-nga-can form according to the tradition followed by the kam-tshang-dkar-brgyud-pa"@en-x-mixed .
+
+    bdr:WA1KG9728  a        :Work ;
+        skos:prefLabel      "ye shes kyi mgon po ber nag can lcam dral gyi bsnyen sgrub skor/"@bo-x-ewts , "ye shes mgon po ber nag can gyi sgrub skor/ texts for the highly esoteric sadana of mahakala in the ber-nga-can form according to the tradition followed by the kam-tshang-dkar-brgyud-pa"@en-x-mixed ;
+        :catalogInfo        "Text for the sadana practice of Mahakala in the form of Berngakcen according to the Kamtsang Kagyu order."@en ;
+        :creator            bdr:CRD09CF2DBBA03F790 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG9728 , bdr:W1KG9728 ;
+        :workIsAbout        bdr:T1181 , bdr:T2338 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM517 {
+    bda:LG77FC3337FF4036F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-04T10:37:29.909Z"^^xsd:dateTime ;
+        adm:logMessage      "complete catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8EA59F7CFD1E6E49
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG92038C4E510043D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T09:38:09.91Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM517"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM517  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM517 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "68/WA1NLM517.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM517 ;
+        adm:logEntry        bda:LG77FC3337FF4036F3 , bda:LG8EA59F7CFD1E6E49 , bda:LG92038C4E510043D5 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM907 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRCF2028BA49718BBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM517  a        :Work ;
+        skos:altLabel       "bcom ldan 'das pad+ma dbang chen yang gsang khros pa lha dgu'i phrin las la brten nas tshogs mchod dang 'brel bar skangs bshags ji ltar bya ba'i rim pa dbang chen dgyes pa'i mchod sprin sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin yang gsang gi sgrub skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected sadhana focusing upon Guhyasadhana of wrathful Hayagriva"@en ;
+        :creator            bdr:CRCF2028BA49718BBE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1111 , bdr:T1181 .
+}

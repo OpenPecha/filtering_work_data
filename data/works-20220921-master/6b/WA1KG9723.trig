@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9723 {
+    bda:LG09970B5005CEB91C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-18T10:09:19.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2D9FE23A91A0086C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T09:56:47.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG69BA83D54E120125
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T14:36:30.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB99A93982F19C010
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGD86316A60D49B23E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-18T10:07:47.473Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG9723  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9723 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "6b/WA1KG9723.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9723 ;
+        adm:logEntry        bda:LG09970B5005CEB91C , bda:LG2D9FE23A91A0086C , bda:LG69BA83D54E120125 , bda:LGB99A93982F19C010 , bda:LGD86316A60D49B23E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3BEAD3C33EF76D19
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG9723  skos:altLabel  "ritual and meditational precepts of the rnying-ma-pa tradition recovered from their place of concealment by ratna-gling-pa"@en-x-mixed .
+
+    bdr:WA1KG9723  a        :Work ;
+        skos:prefLabel      "thugs sgrub yang snying 'dus pa'i chos skor/ (dbu med/)"@bo-x-ewts , "ritual and meditational precepts of the rnying-ma-pa tradition recovered from their place of concealment by ratna-gling-pa"@en-x-mixed ;
+        :catalogInfo        "Collected rituals revealed by Ratna Lingpa (1403-1479)."@en ;
+        :creator            bdr:CR3BEAD3C33EF76D19 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG9723 , bdr:MW30324 , bdr:W1KG9723 , bdr:W30324 ;
+        :workIsAbout        bdr:T1082 , bdr:T1241 .
+}

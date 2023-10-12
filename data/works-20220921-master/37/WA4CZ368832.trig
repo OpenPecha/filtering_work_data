@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368832 {
+    bda:LG51CB3E2B66B27308
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:58.4Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG96019C6D7EBEC6B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:38:53.007Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEB5F093C3E90A199
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T12:04:54.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368832  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368832 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA4CZ368832.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368832 ;
+        adm:logEntry        bda:LG51CB3E2B66B27308 , bda:LG96019C6D7EBEC6B9 , bda:LGEB5F093C3E90A199 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2BE26645D757EAC4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG745 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW4CZ368832  skos:altLabel  "木难历史"@zh-hans .
+
+    bdr:WA4CZ368832  a      :Work ;
+        skos:altLabel       "bod chen po'i yul gru las/ mi nyag lo rgyus deb ther ljang khu/"@bo-x-ewts ;
+        skos:prefLabel      "mi nyag lo rgyus deb ther ljang khu/"@bo-x-ewts , "木难历史"@zh-hans ;
+        :catalogInfo        "Green Annals, History of the Minyag, Kham."@en ;
+        :creator            bdr:CR2BE26645D757EAC4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW4CZ368832 , bdr:W4CZ368832 ;
+        :workIsAbout        bdr:G1033 .
+}

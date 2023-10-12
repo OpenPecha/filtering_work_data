@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23035 {
+    bda:LG7FC2D099EA08C669
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8DCAB4F3225685A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-17T10:43:29.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE863DA4E4098C7D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-17T10:42:18.842Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23035  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23035 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9f/WA1KG23035.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23035 ;
+        adm:logEntry        bda:LG7FC2D099EA08C669 , bda:LG8DCAB4F3225685A5 , bda:LGE863DA4E4098C7D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD5ABE9D3F2F84BCB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23035  a       :Work ;
+        skos:altLabel       "sa 'dzin pad ma'i bla bre/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun blo bzang chos kyi rgyal mtshan gyis mdzad pa'i chab gtor shAka thub ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Vidhi of water torma offering, burnt offering, aspiration prayers etc by great masters."@en ;
+        :creator            bdr:CRD5ABE9D3F2F84BCB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG23035 , bdr:W1KG23035 ;
+        :workIsAbout        bdr:T1219 .
+}

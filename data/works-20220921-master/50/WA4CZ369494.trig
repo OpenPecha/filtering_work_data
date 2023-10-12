@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369494 {
+    bda:LG1F2F5874DFB229E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-21T09:45:05.924Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG52A82B78A155262D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-21T10:04:48.764Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCF25B463559330E1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T09:45:28.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369494  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369494 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "50/WA4CZ369494.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369494 ;
+        adm:logEntry        bda:LG1F2F5874DFB229E9 , bda:LG52A82B78A155262D , bda:LGCF25B463559330E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR02D60E6B32F05F95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369494  a      :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa'i nyams len gyi rnam bzhag mdor bsdus brjed byang du byas pa/"@bo-x-ewts , "phun tshogs dge legs ma/"@bo-x-ewts ;
+        skos:prefLabel      "lam gyi rim pa'i nyams len gyi rnam bzhag mdor bsdus brjed byang du byas pa/"@bo-x-ewts ;
+        :catalogInfo        "Aconcise memorundm on the Bodhipatha krama, generally known as Lamrim chungngu"@en ;
+        :creator            bdr:CR02D60E6B32F05F95 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 , bdr:T238 ;
+        :workHasInstance    bdr:MW4CZ369494 , bdr:W4CZ369494 .
+}

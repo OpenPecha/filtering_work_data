@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28844 {
+    bda:LG025474715BFA51DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T12:51:56.337Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG056DCA3CD69C51B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T13:24:58.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBCBE9BA6D8D8D68A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA28844  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28844 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f5/WA28844.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28844 ;
+        adm:logEntry        bda:LG025474715BFA51DE , bda:LG056DCA3CD69C51B6 , bda:LGBCBE9BA6D8D8D68A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA53033DDD6928368
+        a                   :AgentAsCreator ;
+        :agent              bdr:P219 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRABD0157A83094BDC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6847 ;
+        :role               bdr:R0ER0028 .
+
+    bdr:WA28844  a          :Work ;
+        skos:prefLabel      "mkhas dbang dge 'dun chos 'phel gyi gsar rnyed gsung rtsom/"@bo-x-ewts ;
+        :catalogInfo        "Selected writings on the history of Buddhism in India, Madhyamika philosophy, Tibetan imperial history, and poems."@en ;
+        :creator            bdr:CRA53033DDD6928368 , bdr:CRABD0157A83094BDC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW28844 , bdr:W28844 ;
+        :workIsAbout        bdr:T808 .
+}

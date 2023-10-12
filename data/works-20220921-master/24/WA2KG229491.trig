@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229491 {
+    bda:LG1F349B3F5177607E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-24T19:29:30.38Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88B195FB21239D69
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:04:33.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG229491  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229491 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "24/WA2KG229491.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229491 ;
+        adm:logEntry        bda:LG1F349B3F5177607E , bda:LG88B195FB21239D69 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG229491  a      :Work ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "ārya vajracchedikā nāma prajñāpāramitā mahāyāna sūtra"@sa-x-ndia , "金刚般若波罗蜜经"@zh-hans ;
+        :catalogInfo        "Diamond Cutter Sutra. A Prajnaparamita text in Tibetan and Chinese language."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T240 , bdr:T769 ;
+        :workHasInstance    bdr:MW2KG229491 , bdr:W2KG229491 ;
+        :workIsAbout        bdr:T2005 .
+}

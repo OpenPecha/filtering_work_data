@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73449 {
+    bda:LG2BDD2FF39B4F40F1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-10T11:23:29.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7CD24530F1DEE50B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG82AE909A22839A80
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-10T11:22:17.931Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD0A1104A85E4002F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-10T11:23:06.134Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73449  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73449 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "79/WA8LS73449.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73449 ;
+        adm:logEntry        bda:LG2BDD2FF39B4F40F1 , bda:LG7CD24530F1DEE50B , bda:LG82AE909A22839A80 , bda:LGD0A1104A85E4002F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3DFD3B84EAEC123A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS73450 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73449  a       :Work ;
+        skos:prefLabel      "bstan bcos mngon par rtogs pa'i rgyan gyi tshig 'grel gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Word by word commentary of Abhisamayalankara by Ladang Geshe Serzhul Thupten Yiknyen."@en ;
+        :creator            bdr:CR3DFD3B84EAEC123A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW8LS73449 , bdr:W8LS73449 ;
+        :workIsAbout        bdr:WA19716 .
+}

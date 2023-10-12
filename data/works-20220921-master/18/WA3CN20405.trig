@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN20405 {
+    bda:LG778ABB22ECEDF0C0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-22T11:20:58.333Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9F058B046E138380
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF4A705A02DBF6E4B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-22T11:18:25.615Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN20405  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN20405 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/WA3CN20405.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN20405 ;
+        adm:logEntry        bda:LG778ABB22ECEDF0C0 , bda:LG9F058B046E138380 , bda:LGF4A705A02DBF6E4B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN20405  a       :Work ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa yon tan rin po che sdud pa/"@bo-x-ewts ;
+        skos:prefLabel      "sher phyin yon tan rin po che sdud pa dang 'jigs byed sgrub thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1)sher phyin yon tan rin po che sdud pa/ 2)'jigs byed brgyud 'debs bstod smon sogs/ 3)'jigs byed lha bcu gsum ma'i sgrub thabs rin chen za ma tog"@bo-x-ewts , "Perfection sutra and sadhana practice focusing on thirteen deity vajrabhairava."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW3CN20405 , bdr:W3CN20405 ;
+        :workIsAbout        bdr:T00JR3170 .
+}

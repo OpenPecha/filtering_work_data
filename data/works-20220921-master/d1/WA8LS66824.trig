@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66824 {
+    bda:LG301719C3EA95DF92
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T09:50:59.357Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG819C8AA99E84AE0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8B8E197F074733D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-06T09:50:33.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC5CED5EFAECBEA87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T09:38:01.33Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66824  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66824 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d1/WA8LS66824.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66824 ;
+        adm:logEntry        bda:LG301719C3EA95DF92 , bda:LG819C8AA99E84AE0B , bda:LG8B8E197F074733D2 , bda:LGC5CED5EFAECBEA87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRECDB9934499B5221
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS67945 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66824  a       :Work ;
+        skos:altLabel       "bod lugs gso rig lus gso dang bde thang /'bri lugs gso rig gi man ngag gsal ba'i spyi bshad 'gro phan snying nor phyogs bsgrigs/ deb dang po/"@bo-x-ewts ;
+        skos:prefLabel      "'bri lugs gso rig gi man ngag gsal ba'i spyi bshad 'gro phan snying nor phyogs bsgrigs/ deb dang po/"@bo-x-ewts ;
+        :catalogInfo        "General survey of medical instructions according to the Drigung tradition writen by Choje Zangpo."@en ;
+        :creator            bdr:CRECDB9934499B5221 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW8LS66824 , bdr:W8LS66824 ;
+        :workIsAbout        bdr:T85 , bdr:T916 .
+}

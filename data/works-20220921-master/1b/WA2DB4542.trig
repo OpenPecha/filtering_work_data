@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2DB4542 {
+    bda:LG88161B8AAA601C81
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-24T14:52:20.859Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG9F595B29472166D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-27T09:58:25.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEA2C61B92E711916
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-24T12:40:23.797Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:WA2DB4542  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2DB4542 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/WA2DB4542.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2DB4542 ;
+        adm:logEntry        bda:LG88161B8AAA601C81 , bda:LG9F595B29472166D2 , bda:LGEA2C61B92E711916 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC7E847DFFE5F3622
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB4543 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2DB4542  a        :Work ;
+        skos:altLabel       "dpal zhwa lu gser khang gtsug lag khang gi ngo mtshar rten dang brten par bcas pa'i dkar chag gangs dkar gyi 'dab ma/"@bo-x-ewts ;
+        skos:prefLabel      "dpal zha lu'i gnas yig"@bo-x-ewts ;
+        :creator            bdr:CRC7E847DFFE5F3622 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 , bdr:T25 ;
+        :workHasInstance    bdr:MW2DB4542 , bdr:W2DB4542 ;
+        :workIsAbout        bdr:G275 .
+}

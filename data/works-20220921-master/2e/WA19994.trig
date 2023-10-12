@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA19994 {
+    bda:LG0AC956D3BB892A92
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-05T10:50:08.138Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3DAA4A566F7E382A
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-05T10:49:29.084Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDF542C9C1E40E0CD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA19994  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA19994 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/WA19994.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA19994 ;
+        adm:logEntry        bda:LG0AC956D3BB892A92 , bda:LG3DAA4A566F7E382A , bda:LGDF542C9C1E40E0CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR59E60BF3EF6BC133
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2382 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA19994  a          :Work ;
+        skos:altLabel       "gso byed gnyen po stong dang rtsa gnyis kyi grangs nges zhal lung mdzes rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "zhal lung mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Important one thousand and two medicines and antidote to cure various decease written by Namling Panchen Konchok Chodrak."@en ;
+        :creator            bdr:CR59E60BF3EF6BC133 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW19994 , bdr:W19994 ;
+        :workIsAbout        bdr:T85 , bdr:T94 .
+}

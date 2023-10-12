@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1986 {
+    bda:LG2286EC257290E67B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG969E45C0588ED5B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-16T19:33:07Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1986"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1986  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1986 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/WA1NLM1986.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1986 ;
+        adm:logEntry        bda:LG2286EC257290E67B , bda:LG969E45C0588ED5B7 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1986  a       :Work ;
+        skos:prefLabel      "bse rag 'byung po'i gdon 'tshe sel thabs kyi cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts concerned with the way to remove harms create by demons; exorcise of negative forces; petition-offering, fulfillment and confession, cleansing offering, beverage offered to protectors."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1986 , bdr:W1NLM1986 ;
+        :workIsAbout        bdr:T1622 , bdr:T1726 , bdr:T1892 , bdr:T506 , bdr:T829 .
+}

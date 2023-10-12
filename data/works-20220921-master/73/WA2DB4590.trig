@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2DB4590 {
+    bda:LG712AC17BC4968CE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-26T14:55:30.047Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG831FDE4803338272
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-18T15:08:19.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA6B34E10A6567300
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T09:39:38.126Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloging completed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEDB595A3176F3376
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T14:26:00.076Z"^^xsd:dateTime ;
+        adm:logMessage      "added editior"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2DB4590  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2DB4590 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "73/WA2DB4590.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2DB4590 ;
+        adm:logEntry        bda:LG712AC17BC4968CE3 , bda:LG831FDE4803338272 , bda:LGA6B34E10A6567300 , bda:LGEDB595A3176F3376 , bda:LGIM74A445C794 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2DB4590  a        :Work ;
+        skos:prefLabel      "dpyad rtsom rig pa'i rtsal phreng/ (deb phreng brgyad pa/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of articles by Tibetan scholars on various subjects."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW2DB4590 , bdr:W2DB4590 .
+}

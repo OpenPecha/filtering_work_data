@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22249 {
+    bda:LGBC62A792A0120A26
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE9280C52C4C61B3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T16:21:06.864Z"^^xsd:dateTime ;
+        adm:logMessage      "COORRECTED BIB TITLES"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22249  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22249 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "2d/WA22249.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22249 ;
+        adm:logEntry        bda:LGBC62A792A0120A26 , bda:LGE9280C52C4C61B3B , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC51F89C41FF4A520
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2240 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22249  skos:altLabel  "materials for use in inducing the practice of the phyag chen lnga ldan according to the tradition of the 'bri-gun bka'-brgyud-pa school"@en-x-mixed .
+
+    bdr:WA22249  a          :Work ;
+        skos:altLabel       "grub dbang no no dkon mchog bstan pa'i gsung phyogs bsgrigs/"@bo-x-ewts , "Material for use in inducing the practice of the Phyag chen lṅa ldan according to the tradition of the ʼBri-guṅ Bkaʼ-brgyud-pa school /by Grub-dbaṅ No-no Dkon-mchog-bstan-pa."@en-x-mixed ;
+        skos:prefLabel      "gsung thor bu/_dkon mchog bstan pa/"@bo-x-ewts , "materials for use in inducing the practice of the phyag chen lnga ldan according to the tradition of the 'bri-gun bka'-brgyud-pa school"@en-x-mixed ;
+        :catalogInfo        "Miscellaneous Writings by Drikung Kagyu master from Ladakh, Nono Konchok Tenpa (1781-1862). On Mahamudra."@en ;
+        :creator            bdr:CRC51F89C41FF4A520 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW22249 , bdr:W22249 ;
+        :workIsAbout        bdr:T1190 , bdr:T1216 .
+}

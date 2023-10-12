@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17348 {
+    bda:LG093A20B1EBA7BD83
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-10T11:07:30.061Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA9D2C75148ACDB07
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGF06250222DD2DB40
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-10T11:18:40.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN17348  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17348 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "30/WA3CN17348.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17348 ;
+        adm:logEntry        bda:LG093A20B1EBA7BD83 , bda:LGA9D2C75148ACDB07 , bda:LGF06250222DD2DB40 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB87C6FFD802DE976
+        a                   :AgentAsCreator ;
+        :agent              bdr:P0RK972 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17348  a       :Work ;
+        skos:prefLabel      "dpe chos rin chen spungs pa'i gtam rgyud rin chen 'phreng mdzes/"@bo-x-ewts ;
+        :catalogInfo        "Example stories of Potowa's presentation of the principles of the Kadam teachings."@en ;
+        :creator            bdr:CRB87C6FFD802DE976 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T276 ;
+        :workHasInstance    bdr:MW3CN17348 , bdr:W3CN17348 ;
+        :workIsAbout        bdr:T1167 , bdr:WA1KG14731 .
+}

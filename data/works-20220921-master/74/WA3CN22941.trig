@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22941 {
+    bda:LG102E6BAC6D2CF968
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-29T13:48:46.006Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG56F26546D2AD5BF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG805EFD5109558745
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-01T10:54:30.897Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG93F997C0710EEFE6
+        a                   adm:ScanRequestCreation ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22941  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22941 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "74/WA3CN22941.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22941 ;
+        adm:logEntry        bda:LG102E6BAC6D2CF968 , bda:LG56F26546D2AD5BF0 , bda:LG805EFD5109558745 , bda:LG93F997C0710EEFE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR873B7CE04B6378B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22941  a       :Work ;
+        skos:prefLabel      "mi 'khrugs pa'i dris lan glang chen myos pa'i gom stabs/"@bo-x-ewts ;
+        :catalogInfo        "Questions and responses about deity akshobhya practice by Deumar Geshe Tenzin Phuntsok (17th Cent.)."@en ;
+        :creator            bdr:CR873B7CE04B6378B8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW3CN22941 , bdr:W3CN22941 ;
+        :workIsAbout        bdr:T871 .
+}

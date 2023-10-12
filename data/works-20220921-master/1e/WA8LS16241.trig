@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16241 {
+    bda:LG097F1CA26A712088
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-12T14:33:40.574Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG09EA72E5DD1A1F66
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-03T09:30:56.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note and note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA9B23C36F9BE6A60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-12T14:34:37.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC3AC96302C816FEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-13T13:04:35.091Z"^^xsd:dateTime ;
+        adm:logMessage      "topic changed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16241  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16241 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA8LS16241.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16241 ;
+        adm:logEntry        bda:LG097F1CA26A712088 , bda:LG09EA72E5DD1A1F66 , bda:LGA9B23C36F9BE6A60 , bda:LGC3AC96302C816FEC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7E9690DF7FD44C91
+        a                   :AgentAsCreator ;
+        :agent              bdr:P653 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16241  a       :Work ;
+        skos:prefLabel      "rdzogs chen gyi nyams len spar bcings ma/"@bo-x-ewts ;
+        :catalogInfo        "An instruction on the practice of great perfection composed by the first Dzogchen Pema Rigzin (1625-1697). Handwritten manuscript in Umed script."@en ;
+        :creator            bdr:CR7E9690DF7FD44C91 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS16241 , bdr:W8LS16241 ;
+        :workIsAbout        bdr:T354 , bdr:T541 .
+}

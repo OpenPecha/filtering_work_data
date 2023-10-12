@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG11923 {
+    bda:LGDAB303F37F366A68
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-29T11:00:14.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added place as subject"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE83207CC4F640F57
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-02-21T10:11:24.693Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFE5370245A76DF18
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-02-21T10:09:29.518Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMCC82E7EF  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T17:03:30.76Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG11923  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG11923 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ae/WA1KG11923.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG11923 ;
+        adm:logEntry        bda:LGDAB303F37F366A68 , bda:LGE83207CC4F640F57 , bda:LGFE5370245A76DF18 , bda:LGIM320307B99D , bda:LGIMCC82E7EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG11923  a       :Work ;
+        skos:prefLabel      "rma lho sog shog gi lo rgyus rgyu cha phyogs bsgrigs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG11923 , bdr:W1KG11923 ;
+        :workIsAbout        bdr:G1283 , bdr:G3185 , bdr:G4959 .
+}

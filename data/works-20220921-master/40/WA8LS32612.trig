@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32612 {
+    bda:LG4443BF1E97A996D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-24T11:37:16.128Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6DE0E05524CEE399
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGDA026B12ECBE6FE3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-24T11:38:28.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32612  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32612 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "40/WA8LS32612.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32612 ;
+        adm:logEntry        bda:LG4443BF1E97A996D5 , bda:LG6DE0E05524CEE399 , bda:LGDA026B12ECBE6FE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3D114612B271D930
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4820 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32612  a       :Work ;
+        skos:prefLabel      "gsang chen rdo rje theg pa'i rnam bzhag rig 'dzin dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "An analysis of Vajrayana by Gushir Choje Losang Lhundrup."@en ;
+        :creator            bdr:CR3D114612B271D930 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS32612 , bdr:W8LS32612 ;
+        :workIsAbout        bdr:T1336 .
+}

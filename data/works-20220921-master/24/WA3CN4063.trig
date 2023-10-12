@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4063 {
+    bda:LG1DE195AB6CA71D6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-26T16:35:34.259Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged again"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2B8F258C578EE77C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T16:50:23.991Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8A8BB8C1DA139A2C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:49:24.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBEE352D00E4F4B01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:19:34.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4063  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4063 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "24/WA3CN4063.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4063 ;
+        adm:logEntry        bda:LG1DE195AB6CA71D6F , bda:LG2B8F258C578EE77C , bda:LG8A8BB8C1DA139A2C , bda:LGBEE352D00E4F4B01 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF810C82B1DD47F98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS13400 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4063  a        :Work ;
+        skos:prefLabel      "mthong gling pad+ma 'od zer gyi gsung thor bu/"@bo-x-ewts ;
+        :catalogInfo        "Miscellany writings of the Thongling Pema Ozer."@en ;
+        :creator            bdr:CRF810C82B1DD47F98 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW3CN4063 , bdr:W3CN4063 ;
+        :workIsAbout        bdr:T1190 .
+}

@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23911 {
+    bda:LG03BB00E5B3D37832
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-28T13:34:40.673Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1769 to T194"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3518E0FFFD2F068C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-28T11:21:40.241Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG86826458A6D56865
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9587577D8CDE3A81
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:19:04.702Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC2068C42298ECFD5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-03-10T15:05:48.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC62EA021B1398B54
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-03T13:35:55.516Z"^^xsd:dateTime ;
+        adm:logMessage      "authorship statement"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23911  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23911 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "40/WA23911.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23911 ;
+        adm:logEntry        bda:LG03BB00E5B3D37832 , bda:LG3518E0FFFD2F068C , bda:LG86826458A6D56865 , bda:LG9587577D8CDE3A81 , bda:LGC2068C42298ECFD5 , bda:LGC62EA021B1398B54 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23911  skos:altLabel  "the tradition of pha dam-pa sans-rgyas : a treasured collection of his teachings transmitted"@en-x-mixed .
+
+    bdr:WA23911  a          :Work ;
+        skos:altLabel       "zhi byed snga bar phyi gsum gyi skor"@bo-alalc97 , "The Tradition of Pha Dam-pa Saṅs-rgyas :a treasured collection of his teachings transmitted /by Thugs-sras-Kun-dgaʼ ; edited with an English introduction by Barbara Nimri Aziz."@en-x-mixed ;
+        skos:prefLabel      "zhi byed snga bar phyi gsum gyi skor/"@bo-x-ewts , "the tradition of pha dam-pa sans-rgyas : a treasured collection of his teachings transmitted"@en-x-mixed ;
+        :catalogInfo        "The Tradition of Pha Dampa Sangye: A Treasured Collection of His Teachings Transmitted by Thuse Kunga."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23911 , bdr:W23911 ;
+        :workIsAbout        bdr:T194 .
+}

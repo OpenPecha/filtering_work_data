@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75586 {
+    bda:LG0EA103F5A9BDE312
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-20T10:06:40.478Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG438068ACC420784D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-20T10:05:54.826Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS75586  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75586 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "22/WA8LS75586.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75586 ;
+        adm:logEntry        bda:LG0EA103F5A9BDE312 , bda:LG438068ACC420784D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8DE290CB7CA15275
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS75586  a       :Work ;
+        skos:prefLabel      "khros nag gi las byang cho ga dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana and ritual of Vajravarahi Kalikruddha."@en ;
+        :creator            bdr:CR8DE290CB7CA15275 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T977 ;
+        :workHasInstance    bdr:MW8LS75586 , bdr:W8LS75586 ;
+        :workIsAbout        bdr:T44 .
+}

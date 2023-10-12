@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3817 {
+    bda:LG05EFDF452FAF4F5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T12:47:22.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG0AB55C4A343841C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-01-17T15:12:22.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added lhasa edition"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0F2696140E59CDB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T15:18:13.965Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG581DAB3BD7270DE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7EF9097CF9BF1AF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-09-09T15:21:31.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info and subjects"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD8D978B905261A61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-09-09T15:29:31.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3817  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3817 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "87/WA3817.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3817 ;
+        adm:logEntry        bda:LG05EFDF452FAF4F5D , bda:LG0AB55C4A343841C2 , bda:LG0F2696140E59CDB0 , bda:LG581DAB3BD7270DE9 , bda:LG7EF9097CF9BF1AF3 , bda:LGD8D978B905261A61 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG11781 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR1F7267AF96E556E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2596 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR1FC4A9507CEE783C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P230 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV1221AC1D09F93E21
+        a                   :CompletedEvent ;
+        :notAfter           "1957"^^xsd:gYear ;
+        :notBefore          "1921"^^xsd:gYear .
+
+    bdr:WA3817  a           :Work ;
+        skos:altLabel       "rnam grol lag bcangs su gtod pa'i man ngag zab mo tshang la ma nor ba mtshungs med chos kyi rgyal po'i thugs bcud byang chub lam gyi rim pa'i nyams khrid kyi zin bris gsung rab kun gyi bcud bsdus gdams ngag bdud rtsi'i snying po/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim rnam grol lag bcangs/"@bo-x-ewts ;
+        :catalogInfo        "Notes on teachings by Pabongkapa Dechen Nyingpo (1878-1941) on the graduated lamrim path."@en ;
+        :creator            bdr:CR1F7267AF96E556E7 , bdr:CR1FC4A9507CEE783C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV1221AC1D09F93E21 ;
+        :workGenre          bdr:T132 , bdr:T1478 , bdr:T238 ;
+        :workIsAbout        bdr:WA466 .
+}

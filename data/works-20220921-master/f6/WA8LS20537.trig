@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20537 {
+    bda:LG5B589F2734CF7368
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T09:27:41.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7CDE257EB339142D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:51:52.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA1426082B4608F2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-29T07:38:06.462Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGA8AC1D260205B8FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-15T14:35:43.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20537  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20537 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f6/WA8LS20537.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20537 ;
+        adm:logEntry        bda:LG5B589F2734CF7368 , bda:LG7CDE257EB339142D , bda:LGA1426082B4608F2E , bda:LGA8AC1D260205B8FE , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR410C83ECADC03D1A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75296 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR8381AE4D6A7DF420
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75295 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20537  a       :Work ;
+        skos:altLabel       "srid pa'i glu chung / srid pa'i glu chung khrom pa dgyes pa'i dga' ston/"@bo-x-ewts ;
+        skos:prefLabel      "srid pa'i glu chung khrom pa dgyes pa'i dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "A folk songs collected from the Tshojang area of Amdo; compiled and edited by Dorjee Jam and Sonam Dondup."@en ;
+        :creator            bdr:CR410C83ECADC03D1A , bdr:CR8381AE4D6A7DF420 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T246 ;
+        :workHasInstance    bdr:MW8LS20537 , bdr:W8LS20537 ;
+        :workIsAbout        bdr:G2312 , bdr:T1144 .
+}

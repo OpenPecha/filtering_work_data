@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29899 {
+    bda:LG6B7CEEA2C487FEE3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDE28404C959815FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGE71EE131B499EB7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-29T11:21:52.837Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA29899  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29899 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "80/WA29899.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29899 ;
+        adm:logEntry        bda:LG6B7CEEA2C487FEE3 , bda:LGDE28404C959815FB , bda:LGE71EE131B499EB7C , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14809BACD2D739F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4832 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR16807EBF6E14FE79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4288 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR433B5CB9AD7FF149
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29899  skos:altLabel  "cicao benzhu"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA29899  a          :Work ;
+        skos:altLabel       "mngon brjod kyi bstan bcos mkhas pa'i rna rgyan/"@bo-x-ewts , "tshig gi gter zhes bya ba'i bstan bcos/"@bo-x-ewts , "tshig gter gyi TI ka"@bo-x-ewts ;
+        skos:prefLabel      "mngon brjod/"@bo-x-ewts , "cicao benzhu"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR14809BACD2D739F4 , bdr:CR16807EBF6E14FE79 , bdr:CR433B5CB9AD7FF149 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T372 ;
+        :workHasInstance    bdr:MW29899 , bdr:W29899 .
+}

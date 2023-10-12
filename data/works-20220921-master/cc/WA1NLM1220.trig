@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1220 {
+    bda:LGE99A7835B2E94A69
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF5BEA26F243B40C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-08T14:34:49.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1220"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1220  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1220 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cc/WA1NLM1220.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1220 ;
+        adm:logEntry        bda:LGE99A7835B2E94A69 , bda:LGF5BEA26F243B40C5 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6D2337EF2AC8DD61
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1220  a       :Work ;
+        skos:altLabel       "tshad ma rnam 'grel gyi mtha' dpyod thar lam rab gsal tshad ma'i 'od brgya 'bar ba las le'u dang po'i mtha' dpyod blo gsal mgul rgyan skal bzang 'jug ngogs sogs/(ba)"@bo-x-ewts ;
+        skos:prefLabel      "rnam 'grel le'u dang po'i mtha' dpyod/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the first chapter of Pramanavartika by Jamyang Zhedpe Dorjee; other text also included."@en , "tshad ma'i mtha' dpyod thar lam blo gsal tshad ma' 'od brgya 'bar ba las le'u gnyis pa mtha' dpyod blo gsal mgul rgyan skal bzang 'jug ngogs/"@en ;
+        :creator            bdr:CR6D2337EF2AC8DD61 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG9409_DF575D , bdr:MW1NLM1220 , bdr:MW21503_4B21E1 , bdr:MW22186_00E783 , bdr:W1NLM1220 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19721 .
+}

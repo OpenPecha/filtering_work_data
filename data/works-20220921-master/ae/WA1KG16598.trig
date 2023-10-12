@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16598 {
+    bda:LG22B67A550C68B93D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-03T11:43:35.617Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG33F5B6F64A740886
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T15:21:44.415Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG689756DC3371CC74
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-24T03:51:50.599Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB3ECE70069D828E0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-24T03:47:33.271Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB78CB42E2A46669A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG16598  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16598 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ae/WA1KG16598.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16598 ;
+        adm:logEntry        bda:LG22B67A550C68B93D , bda:LG33F5B6F64A740886 , bda:LG689756DC3371CC74 , bda:LGB3ECE70069D828E0 , bda:LGB78CB42E2A46669A , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFBE84AD6B7F3AB41
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2557 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16598  skos:altLabel  "阿低峡传"@zh-hans .
+
+    bdr:WA1KG16598  a       :Work ;
+        skos:altLabel       "a di xia zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "jo bo dpal ldan a ti sha'i rnam thar bka' gdams pha chos/"@bo-x-ewts , "阿低峡传"@zh-hans ;
+        :catalogInfo        "Hagiographical materials of early bka' gdams pa masters primarily on the biography of Atisha and his principal disciples."@en ;
+        :creator            bdr:CRFBE84AD6B7F3AB41 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG16598 , bdr:W1KG16598 ;
+        :workIsAbout        bdr:P3379 .
+}

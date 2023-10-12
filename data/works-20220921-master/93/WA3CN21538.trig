@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21538 {
+    bda:LG07F8DD8FD6B2F88C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T21:48:57.207Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG155D0447422B66A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG665C88FC14D8759A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-07T12:35:17.847Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7E2255AAF12D0EBD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-07T12:35:47.229Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG892FD38627A13D91
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:WA3CN21538  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21538 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "93/WA3CN21538.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21538 ;
+        adm:logEntry        bda:LG07F8DD8FD6B2F88C , bda:LG155D0447422B66A1 , bda:LG665C88FC14D8759A , bda:LG7E2255AAF12D0EBD , bda:LG892FD38627A13D91 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1946CA61100BB1A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7628 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN21538  a       :Work ;
+        skos:prefLabel      "gter chos/ pad+ma las 'brel rtsal/"@bo-x-ewts ;
+        :catalogInfo        "Collected revelation texts of a Nyingma Terton Padma Ladrel Tsal (1248-1316)."@en ;
+        :creator            bdr:CR1946CA61100BB1A9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 , bdr:T448 ;
+        :workHasInstance    bdr:MW3CN21538 , bdr:MW8LS16551 , bdr:W3CN21538 , bdr:W8LS16551 ;
+        :workIsAbout        bdr:T1082 .
+}

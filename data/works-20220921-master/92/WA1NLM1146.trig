@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1146 {
+    bda:LG5D0AF0F9242C0BAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:07:23.761Z"^^xsd:dateTime ;
+        adm:logMessage      "add CW-W4CZ369314"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC495F1C5039F23DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGDD9C2828FF099A9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-23T09:15:01.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1146"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1146  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1146 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "92/WA1NLM1146.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1146 ;
+        adm:logEntry        bda:LG5D0AF0F9242C0BAB , bda:LGC495F1C5039F23DA , bda:LGDD9C2828FF099A9F , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB3BEE1581802B0CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4610 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1146  a       :Work ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga'i rnam bzhag tshig don rab gsal zung 'jug sgrub pa'i myur lam/"@bo-x-ewts ;
+        :catalogInfo        "Word by word commentary of Panchen Lama's Gurupuja by Choje Ngawang Losang Dondrup."@en ;
+        :creator            bdr:CRB3BEE1581802B0CD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T2397 ;
+        :workHasInstance    bdr:MW1NLM1146 , bdr:W1NLM1146 ;
+        :workIsAbout        bdr:WA4CZ369314 .
+}

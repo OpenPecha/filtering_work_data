@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA6468 {
+    bda:LG1C8AB3ED0AE17749
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-24T16:19:34.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added authorship statement"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG250017A1527FAD09
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG558FAA43832730BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-10T16:51:25.179Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGA9FC6FF88B002835
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC62458B827CC9480
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T13:04:06.776Z"^^xsd:dateTime ;
+        adm:logMessage      "add scan info, subject and publi info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF3F0293DEA71E6DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T14:11:27.099Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA6468  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA6468 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "4e/WA6468.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA6468 ;
+        adm:logEntry        bda:LG1C8AB3ED0AE17749 , bda:LG250017A1527FAD09 , bda:LG558FAA43832730BE , bda:LGA9FC6FF88B002835 , bda:LGC62458B827CC9480 , bda:LGF3F0293DEA71E6DC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBCDF5D5108CA18AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV880DC948387BBCFD
+        a                   :CompletedEvent ;
+        :eventWhen          "ca.1815"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:WA6468  a           :Work ;
+        skos:prefLabel      "'jam dbyangs sprul pa'i glegs bam/"@bo-x-ewts ;
+        :catalogInfo        "Work by Zhabkar Tsodrug Rangdrol (1781-1851)."@en ;
+        :creator            bdr:CRBCDF5D5108CA18AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV880DC948387BBCFD ;
+        :workGenre          bdr:T238 , bdr:T613 ;
+        :workHasInstance    bdr:MW1PD45150_FED5C1 , bdr:MW6468 , bdr:W6468 .
+}

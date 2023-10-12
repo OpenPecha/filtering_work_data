@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22949 {
+    bda:LG326B281252D3BAF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG3DBAEC2A6097BFD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-01T18:46:02.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8142A3FA91D04ECD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-01T18:52:41.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC253006B30E3711F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE4BE597972E1A8C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-30T20:55:11.085Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22949  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22949 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "7e/WA3CN22949.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22949 ;
+        adm:logEntry        bda:LG326B281252D3BAF2 , bda:LG3DBAEC2A6097BFD9 , bda:LG8142A3FA91D04ECD , bda:LGC253006B30E3711F , bda:LGE4BE597972E1A8C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2BA679EEB3BC3CDE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5785 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22949  a       :Work ;
+        skos:altLabel       "mkhan chen kun dga' dbang phyug gi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ kun dga' dbang phyug"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Sakya master Khenchen Kunga Wangchuk (?)."@en ;
+        :creator            bdr:CR2BA679EEB3BC3CDE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN22949 , bdr:W3CN22949 ;
+        :workIsAbout        bdr:T617 .
+}

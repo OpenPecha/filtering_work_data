@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26938 {
+    bda:LG0A53FA5C914ABC21
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-24T09:58:39.813Z"^^xsd:dateTime ;
+        adm:logMessage      "removed archive info"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG342076D45882FB3E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA26938  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26938 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "68/WA26938.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26938 ;
+        adm:logEntry        bda:LG0A53FA5C914ABC21 , bda:LG342076D45882FB3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRBE300AE9C37070C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVE5803A2F026BB694
+        a                   :CompletedEvent ;
+        :onYear             "1625"^^xsd:gYear .
+
+    bdr:WA26938  a          :Work ;
+        skos:altLabel       "srid pa gsum gyi bla ma chos kyi rgyal po 'phags pa rin po che'i gsung rab las bras gsal ba'i me long zhes bya ba'i don 'grel bsod nams rgyas pa'i nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "las 'bras gsal ba'i me long zhes ba ba'i don 'grel bsod nams rgyas pa'i nyin byed/"@bo-x-ewts ;
+        :creator            bdr:CRBE300AE9C37070C4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVE5803A2F026BB694 ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW26938 ;
+        :workIsAbout        bdr:WA26939 .
+}

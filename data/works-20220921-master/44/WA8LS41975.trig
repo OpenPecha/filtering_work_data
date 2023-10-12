@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS41975 {
+    bda:LG5344ADF2E68F7F6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-06T10:04:05.507Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG87A21887655C61EF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-06T10:03:26.008Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD236BB6690B960C8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-06T10:02:03.887Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS41975  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS41975 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "44/WA8LS41975.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS41975 ;
+        adm:logEntry        bda:LG5344ADF2E68F7F6B , bda:LG87A21887655C61EF , bda:LGD236BB6690B960C8 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS41975  a       :Work ;
+        skos:prefLabel      "bod kyi rtsom pa po'i mthun tshogs kyi zhib 'jug deb phreng /dang po/"@bo-x-ewts ;
+        :catalogInfo        "A collection of research paper."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW8LS41975 , bdr:W8LS41975 ;
+        :workIsAbout        bdr:T11MS60 .
+}

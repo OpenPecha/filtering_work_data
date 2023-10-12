@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15723 {
+    bda:LG29F7D4E5A760ADF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T20:52:06.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG501E15225E4AE266
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-24T16:08:39.733Z"^^xsd:dateTime ;
+        adm:logMessage      "restrictedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8821C82AED393272
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-24T16:01:47.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCD2D5B01097FC1DA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-18T16:05:22.08Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN15723  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15723 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d9/WA3CN15723.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15723 ;
+        adm:logEntry        bda:LG29F7D4E5A760ADF5 , bda:LG501E15225E4AE266 , bda:LG8821C82AED393272 , bda:LGCD2D5B01097FC1DA , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN15723  a       :Work ;
+        skos:prefLabel      "mtshar gtam zhal 'dzum snang gsal/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Tibetan joke and folk culture. Collected by Sharling Kunphel."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN15723 , bdr:W3CN15723 ;
+        :workIsAbout        bdr:T1144 , bdr:T190 .
+}

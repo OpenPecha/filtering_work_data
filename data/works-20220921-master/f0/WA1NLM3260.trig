@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3260 {
+    bda:LG5782D9C6E0698142
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGFDF5E4833DD0BFDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-22T15:24:06.628Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3260"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3260  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3260 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f0/WA1NLM3260.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3260 ;
+        adm:logEntry        bda:LG5782D9C6E0698142 , bda:LGFDF5E4833DD0BFDF , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB7ADE063BD6445B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3260  a       :Work ;
+        skos:altLabel       "bstan bcos chen po dbu ma la 'jug pa'i mtha' dpyod lung rigs sgron me zhes bya ba kun mkhyen bla ma 'jam dbyangs bzhad pa'i rdo rje'i gsung rgyun/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma 'jug pa'i mtha' dpyod lung rigs sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Condensed and Pedagogically simplified presentation of the dbu ma la 'jug pa'i bstan bcos lung rigs gtrer mdzod by the author's predecessor, 'jam dbyangs bzhad pa'i rdo rje ngag dbang brtson 'grus (1648-1721). this treatise on Madhyamika dialectics was written at Tashikhyil in 1779 at the behest of Shabdrung Jigme Khechog, Jorpon Konchog Gelek, and Pari Gelong Jigme Damcho with Ngagramspa Chozin Dargye as scribe."@en ;
+        :creator            bdr:CRB7ADE063BD6445B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3260 , bdr:W1NLM3260 .
+}

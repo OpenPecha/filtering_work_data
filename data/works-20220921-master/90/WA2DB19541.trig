@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2DB19541 {
+    bda:LG11FF9BCC697C1DB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-03-11T16:35:44.161Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG2D77B4BCF422BE0D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-03-11T16:41:47.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG57CEB4BF1CCD8313
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T13:35:48.161Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG8168215F56659441
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-03-11T16:23:12.364Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LGC6126A7FDE2453A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T10:34:38.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, cat info, print type"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA2DB19541  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2DB19541 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "90/WA2DB19541.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2DB19541 ;
+        adm:logEntry        bda:LG11FF9BCC697C1DB3 , bda:LG2D77B4BCF422BE0D , bda:LG57CEB4BF1CCD8313 , bda:LG8168215F56659441 , bda:LGC6126A7FDE2453A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE15EC4B87FDB62B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB19542 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2DB19541  a       :Work ;
+        skos:prefLabel      "dge ba'i bshes gnyen chen mo rdo rje dgra 'dul gyi gsung pad+ma dkar po'i do shal/"@bo-x-ewts ;
+        :catalogInfo        "Selected writings of Kalayanmitra Dorjee Dadul."@en ;
+        :creator            bdr:CRE15EC4B87FDB62B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW2DB19541 , bdr:W2DB19541 ;
+        :workIsAbout        bdr:T1082 .
+}

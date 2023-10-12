@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1763 {
+    bda:LG2A2F08933E94EA16
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG69A4B6F4CABF2670
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-01T09:34:14.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1763"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1763  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1763 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6f/WA1NLM1763.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1763 ;
+        adm:logEntry        bda:LG2A2F08933E94EA16 , bda:LG69A4B6F4CABF2670 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR569CD70D543252E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1763  a       :Work ;
+        skos:prefLabel      "slob dpon chen po pad+ma kA ra'i zhabs kyis mang do pa'i 'bum bsangs baiDurya'i sngon po bkra shis 'dod pa'i re skong sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rlung rta nyams pa gso thabs rlung rta sde bzhi'i ka 'dzugs/ 2 dpal phyag na rdo rje'i sgo nas bzlog bsgyur gyi cho ga 3 bstan srung gtso dgos tshangs pa chen po 'bul ba'i tshul gtang rag 4 thugs rje chen po bcu gcig zhal dpal mo'i lugs kyi dbang gi bla ma rgyud pa'i gsol 'debs/ 5 rta mgrin gsang sgrub kyi chos skor las dang gzhan la dge mtshan spel ba'i cho ga dge legs rgya mtsho char 'bebs/"@bo-x-ewts , "Incense offering text by Padmasambhava; other text also included."@en ;
+        :creator            bdr:CR569CD70D543252E4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1763 , bdr:W1NLM1763 ;
+        :workIsAbout        bdr:T10MS14575 .
+}

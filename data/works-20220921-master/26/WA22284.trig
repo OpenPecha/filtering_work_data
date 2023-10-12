@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22284 {
+    bda:LG1490C5FE0C4919DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-14T12:20:09.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added eastern"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG16BC0024440D4B29
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-02T14:32:33.373Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from G830 to G1326"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8904E73664A5F036
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA22284  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22284 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/WA22284.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22284 ;
+        adm:logEntry        bda:LG1490C5FE0C4919DE , bda:LG16BC0024440D4B29 , bda:LG8904E73664A5F036 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRFD365108826C2FC6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7510 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22284  a          :Work ;
+        skos:altLabel       "travels of a consular officer in eastern tibet, together with a history of the relations between china, tibet, and india"@en ;
+        skos:prefLabel      "travels of a consular officer in eastern tibet"@en ;
+        :creator            bdr:CRFD365108826C2FC6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22284 ;
+        :workIsAbout        bdr:G1326 .
+}

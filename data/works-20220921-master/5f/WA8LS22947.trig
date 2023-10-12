@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22947 {
+    bda:LG5993E8D1802B81D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-02T12:08:21.621Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD8FADA83FDA9CE2E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-02T12:09:54.752Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS22947  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22947 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5f/WA8LS22947.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22947 ;
+        adm:logEntry        bda:LG5993E8D1802B81D5 , bda:LGD8FADA83FDA9CE2E , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2021C3565732964B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16217 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7E3FC5DD84ACB877
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5231 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22947  a       :Work ;
+        skos:altLabel       "phar phyin skor/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad 'od dkar phreng ba/ (6)"@bo-x-ewts ;
+        :catalogInfo        "The selected works on Paramita."@en ;
+        :creator            bdr:CR2021C3565732964B , bdr:CR7E3FC5DD84ACB877 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS22947 , bdr:MW8LS22950 , bdr:W8LS22947 , bdr:W8LS22950 ;
+        :workIsAbout        bdr:T36 , bdr:T370 .
+}

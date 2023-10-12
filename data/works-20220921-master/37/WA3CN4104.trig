@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4104 {
+    bda:LG179D5BAD5301D2C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T13:07:13.176Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG513E54AD01903682
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T13:09:00.876Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5200DDD6A40A54BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-04T11:47:38.867Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4104  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4104 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA3CN4104.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4104 ;
+        adm:logEntry        bda:LG179D5BAD5301D2C4 , bda:LG513E54AD01903682 , bda:LG5200DDD6A40A54BB , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN4104  a        :Work ;
+        skos:altLabel       "ka bzhi mi phab gling gi gter 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "ka bzhi gter 'bum/"@bo-x-ewts ;
+        :catalogInfo        "Shatasahashrika Prajnaparamita; handwritten manuscript presently preserved around Kashi monastery of Kham."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 , bdr:T769 ;
+        :workHasInstance    bdr:MW3CN4104 , bdr:W3CN4104 ;
+        :workIsAbout        bdr:T2005 .
+}

@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22345 {
+    bda:LG6C183D767F9246D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-19T04:21:06.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL13"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LG993FBD4FB16F894F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGCA39542E200B0B13
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-01T12:41:12.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGCC079F004E103BBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-12T11:09:27.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3D683E3AA78833E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-11-12T11:10:40.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE85F71557192CC09
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-29T12:23:52.908Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22345  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22345 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "b0/WA22345.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22345 ;
+        adm:logEntry        bda:LG6C183D767F9246D2 , bda:LG993FBD4FB16F894F , bda:LGCA39542E200B0B13 , bda:LGCC079F004E103BBD , bda:LGD3D683E3AA78833E , bda:LGE85F71557192CC09 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFB7606DA6167DAF2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P193 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22345  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_blo bzang bstan pa'i rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk scholar Lobzang Tenpai Gyaltsen (1819-) from Amdo."@en ;
+        :creator            bdr:CRFB7606DA6167DAF2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW22345 , bdr:W22345 ;
+        :workIsAbout        bdr:T819 .
+}

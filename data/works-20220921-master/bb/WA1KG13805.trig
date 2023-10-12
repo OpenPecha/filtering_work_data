@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13805 {
+    bda:LG8DB262B22F194DDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T10:26:56.703Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8FF0F3C2AB812110
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-05T12:37:08.554Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF73511DBD53AF5B0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-28T10:28:03.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG13805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13805 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bb/WA1KG13805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13805 ;
+        adm:logEntry        bda:LG8DB262B22F194DDB , bda:LG8FF0F3C2AB812110 , bda:LGF73511DBD53AF5B0 , bda:LGIMA1F3FB78EA , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR36B7A59230BDA9BC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13805  skos:altLabel  "Spyi nor goṅ sa skyab mgon chen po mchog nas stsal baʼi Kun-bzaṅ bla maʼi źal luṅ sṅon ʼgroʼi gsuṅ chos thar lam gsal baʼi sgron me źes bya ba bźugs so /yig ʼbeb źu ba po, Rnam-grwa Thub-bstan-yar-ʼphel."@en-x-mixed .
+
+    bdr:WA1KG13805  a       :Work ;
+        skos:altLabel       "gong sa skyabs mgon chen po mchog nas stsal ba'i kun bzang bla ma'i zhal lung gi sngon 'gro'i gsung chos thar lam gsal ba'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "thar lam gsal ba'i sgron me/"@bo-x-ewts , "Spyi nor goṅ sa skyab mgon chen po mchog nas stsal baʼi Kun-bzaṅ bla maʼi źal luṅ sṅon ʼgroʼi gsuṅ chos thar lam gsal baʼi sgron me źes bya ba bźugs so /yig ʼbeb źu ba po, Rnam-grwa Thub-bstan-yar-ʼphel."@en-x-mixed ;
+        :catalogInfo        "Transcription of oral explanation on kun bzang bla ma'i zhal lung of Dza Patrul Rinpoche"@en ;
+        :creator            bdr:CR36B7A59230BDA9BC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:IE1KG13805 , bdr:MW1KG13805 , bdr:W1KG13805 ;
+        :workIsAbout        bdr:T179 , bdr:T354 .
+}

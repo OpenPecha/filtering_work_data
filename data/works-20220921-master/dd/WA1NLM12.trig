@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM12 {
+    bda:LG4F2827D1CF45FA20
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG89D9F0B6C4C02F73
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-06T17:25:31.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added bib note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG95C1B6209347B7E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-17T17:31:11.53Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM12"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM12  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM12 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dd/WA1NLM12.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM12 ;
+        adm:logEntry        bda:LG4F2827D1CF45FA20 , bda:LG89D9F0B6C4C02F73 , bda:LG95C1B6209347B7E6 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM12  a         :Work ;
+        skos:prefLabel      "rje btsun 'jam dbyangs kyi bstod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM12 , bdr:W1NLM12 ;
+        :workIsAbout        bdr:T69 .
+}

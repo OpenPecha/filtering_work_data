@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22735 {
+    bda:LG429D7E3C66B99D5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-02T22:33:08.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG987C9B29FEA70BC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-30T23:54:49.73Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAD7F3181967E0849
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDCC25AC795FF698C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-01T13:24:43.145Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE44A39ABD0261200
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-23T12:19:01.531Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22735  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22735 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0a/WA3CN22735.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22735 ;
+        adm:logEntry        bda:LG429D7E3C66B99D5E , bda:LG987C9B29FEA70BC8 , bda:LGAD7F3181967E0849 , bda:LGDCC25AC795FF698C , bda:LGE44A39ABD0261200 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR54162789AD38DEB2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22735  a       :Work ;
+        skos:prefLabel      "gsang sngags rgyud sde bzhi'i rnam gzhag rin chen phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the four classes of Tantra in Tibetan Buddhist tradition."@en ;
+        :creator            bdr:CR54162789AD38DEB2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW3CN22735 , bdr:W3CN22735 ;
+        :workIsAbout        bdr:T1871 .
+}

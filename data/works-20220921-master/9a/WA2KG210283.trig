@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210283 {
+    bda:LG2F7964F2AE7CD761
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG97C186C1A3E4A65B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-21T12:28:57.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9CE92E97775687BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-19T16:12:37.076Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB7D6C4A4CB145795
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T10:25:49.64Z"^^xsd:dateTime ;
+        adm:logMessage      "work number for chungdak la"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG210283  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210283 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/WA2KG210283.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210283 ;
+        adm:logEntry        bda:LG2F7964F2AE7CD761 , bda:LG97C186C1A3E4A65B , bda:LG9CE92E97775687BA , bda:LGB7D6C4A4CB145795 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR507468CF230DD7EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6744 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG210283  a      :Work ;
+        skos:prefLabel      "gsung 'bum/ pad+ma bdz+ra/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Dzogchen Khenpo Pemavajra (1867-1934)."@en ;
+        :creator            bdr:CR507468CF230DD7EC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG210283 , bdr:W2KG210283 ;
+        :workIsAbout        bdr:G16 , bdr:T354 .
+}

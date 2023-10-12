@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17580 {
+    bda:LGD4CF5CA194440E6B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-18T12:30:19.26Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDD2AFAAE9258DEB5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-18T12:30:51.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17580  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17580 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9d/WA1KG17580.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17580 ;
+        adm:logEntry        bda:LGD4CF5CA194440E6B , bda:LGDD2AFAAE9258DEB5 , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG17580  a       :Work ;
+        skos:altLabel       "a d+hI te nar+tha sid+dha nA ma shrI badz+ra ku mA ra sya sA d+hA bi ha ra tisma/"@bo-x-ewts ;
+        skos:prefLabel      "dpal rdo rje gzhon nu'i sgrub thabs bklags pas don grub/"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG17580 , bdr:MW27883_600337 , bdr:W1KG17580 ;
+        :workIsAbout        bdr:T1786 .
+}

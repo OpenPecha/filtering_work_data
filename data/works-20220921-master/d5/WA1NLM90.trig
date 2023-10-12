@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM90 {
+    bda:LG738573415D8B11BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:08.998Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG761F9CCB2875C220
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-28T10:19:04.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDC6102F6CE6A6FB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM90"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM90  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM90 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d5/WA1NLM90.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM90 ;
+        adm:logEntry        bda:LG738573415D8B11BA , bda:LG761F9CCB2875C220 , bda:LGDC6102F6CE6A6FB4 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM90  a         :Work ;
+        skos:prefLabel      "lus ngag yid gsum bcings pa las grol bar byed pa'i gzungs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dharani to liberate from the binding of body, speech and mind."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM90 , bdr:W1NLM90 .
+}

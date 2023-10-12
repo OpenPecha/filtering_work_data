@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29484 {
+    bda:LG4E9B92CF089AFBF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG4F7C1F4D91F83021
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-01T13:07:07.951Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6F996A253488E05E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7B73E2F0AD5434EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T13:47:33.785Z"^^xsd:dateTime ;
+        adm:logMessage      "first publication"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGCAFE72F708E8B298
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-04T11:16:20.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added loction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD04702A2AC968993
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-03-01T14:50:15.415Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE597A46804764568
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-21T14:55:38.857Z"^^xsd:dateTime ;
+        adm:logMessage      "revised annotation; image group corrected"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29484  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29484 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "31/WA29484.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29484 ;
+        adm:logEntry        bda:LG4E9B92CF089AFBF0 , bda:LG4F7C1F4D91F83021 , bda:LG6F996A253488E05E , bda:LG7B73E2F0AD5434EF , bda:LGCAFE72F708E8B298 , bda:LGD04702A2AC968993 , bda:LGE597A46804764568 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR07A5CC48784EBF63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29484  skos:altLabel  "zi shu jing yao"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA29484  a          :Work ;
+        skos:prefLabel      "bu don ma/"@bo-x-ewts , "zi shu jing yao"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Collection of medical formulae attributed to Yutok the Younger."@en ;
+        :creator            bdr:CR07A5CC48784EBF63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29484 , bdr:W29484 ;
+        :workIsAbout        bdr:T85 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66823 {
+    bda:LG4B39800B5FBBD9BE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T09:20:11.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG932CD9F6625119DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-06T09:19:43.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD102C59ECDA7B549
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE70B3BA6CCE96DFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T16:19:23.06Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66823  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66823 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "29/WA8LS66823.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66823 ;
+        adm:logEntry        bda:LG4B39800B5FBBD9BE , bda:LG932CD9F6625119DF , bda:LGD102C59ECDA7B549 , bda:LGE70B3BA6CCE96DFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM532 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRC9C8DE747473D0C6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P155 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66823  a       :Work ;
+        skos:altLabel       "bde bar gshegs pa'i bstan pa'i gsal byed chos kyi 'byung gnas gsung rab rin po che'i mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "bu ston chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "Religious history by Buston Rinchen Drup."@en ;
+        :creator            bdr:CRC9C8DE747473D0C6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW8LS66823 .
+}

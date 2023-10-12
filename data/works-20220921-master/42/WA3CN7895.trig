@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN7895 {
+    bda:LG279BF91CEEA11A5A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:13:24.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3D0B60DAFC16D427
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T17:59:51.556Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN7895  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN7895 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "42/WA3CN7895.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN7895 ;
+        adm:logEntry        bda:LG279BF91CEEA11A5A , bda:LG3D0B60DAFC16D427 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR830244EFB7B2BE9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7911 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN7895  a        :Work ;
+        skos:altLabel       "mi gzhi'i slob gso/ mi chos mdzes rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "mi chos mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Advice by Larung Khenpo Tsultrim Lodro."@en ;
+        :creator            bdr:CR830244EFB7B2BE9C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG5001 ;
+        :workHasInstance    bdr:MW3CN7895 , bdr:W3CN7895 ;
+        :workIsAbout        bdr:T1429 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG212708 {
+    bda:LG23A22ADA3EA2CC59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-15T15:24:00.104Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG32A64932CBD97C3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCA691A823D295B55
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-18T19:22:45.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG212708  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG212708 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fd/WA2KG212708.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG212708 ;
+        adm:logEntry        bda:LG23A22ADA3EA2CC59 , bda:LG32A64932CBD97C3A , bda:LGCA691A823D295B55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREF37E5EA31FA4FCE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG212708  a      :Work ;
+        skos:altLabel       "rje dbal mang paN+Di ta dkon mchog rgyal mtshan gyigasung btus nyer mkho phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dbal mang dkon mchog rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Collection writings by a Geluk master Belmang Tulku 02 Walmang Pandita Konchok Gyaltsen (1764-1853), Labrang Tripa 24."@en ;
+        :creator            bdr:CREF37E5EA31FA4FCE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2KG212708 , bdr:W2KG212708 ;
+        :workIsAbout        bdr:T819 .
+}

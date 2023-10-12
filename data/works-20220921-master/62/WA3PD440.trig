@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD440 {
+    bda:LG0657006E569EA33D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-01T12:22:59.39Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG40B05F3447BEC696
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG49A035AD2CE89972
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-06T13:53:50.455Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG6784692990955862
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-15T05:59:38.919Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB0C5E7CAA4FD2947
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-26T00:39:45.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA3PD440  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD440 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "62/WA3PD440.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD440 ;
+        adm:logEntry        bda:LG0657006E569EA33D , bda:LG40B05F3447BEC696 , bda:LG49A035AD2CE89972 , bda:LG6784692990955862 , bda:LGB0C5E7CAA4FD2947 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14F4868CD65222A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CR80D7B2C73EBD48FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7681 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3PD440  a         :Work ;
+        skos:prefLabel      "zhi khro dgongs pa rang grol gyi bsnyen yig dang zhi khro'i rdzogs rim skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected revelations connected with the practice and propitiation of the wrathful and quiescent deities as revealed by the 14th century terton, Karma Lingpa. Basis of the Tibetan Book of the Dead. Edited by Gyarawa Namka Chokyi Gyatso."@en ;
+        :creator            bdr:CR14F4868CD65222A1 , bdr:CR80D7B2C73EBD48FF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ28 , bdr:T448 ;
+        :workHasInstance    bdr:MW3PD440 , bdr:W3PD440 ;
+        :workIsAbout        bdr:T163 , bdr:T351 .
+}

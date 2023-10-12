@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3348 {
+    bda:LG845452BB0696C0A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGDB04BB46F0DEEBC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-11T15:11:06.813Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3348"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3348  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3348 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bb/WA1NLM3348.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3348 ;
+        adm:logEntry        bda:LG845452BB0696C0A1 , bda:LGDB04BB46F0DEEBC7 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCB4C7D53C0B7B91B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3348  a       :Work ;
+        skos:altLabel       "chos mngon rgya mtsho'i dgongs don brjed byang du bkod pa rin chen sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi brjed byang du bkod pa rin chen sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of the the Abhidharmakosa by Vasubhandu according to the Gomang tradition."@en ;
+        :creator            bdr:CRCB4C7D53C0B7B91B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3348 , bdr:W1NLM3348 ;
+        :workIsAbout        bdr:WA19720 .
+}

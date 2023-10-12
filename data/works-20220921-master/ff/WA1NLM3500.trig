@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3500 {
+    bda:LG58BFC81BA45A420E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-14T09:13:51.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3500"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3500  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3500 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ff/WA1NLM3500.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3500 ;
+        adm:logEntry        bda:LG58BFC81BA45A420E , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR610B0D3F0D883761
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2AG1 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3500  a       :Work ;
+        skos:prefLabel      "myur mdzad ye shes kyi mgon po'i sho mo gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mgon po snying zhugs dang 'brel ba'i bla ma'i rnal 'byor/ 2 ma Ni'i dmigs rim/ 3 dge ba 'phel ba'i sngags/ 4 lho mo gtad dkar 'gro ba bzang mo'i bum sgrub bya tshul/ 5 gsol 'debs dngos grub mchog ster/ 6 bla ma mchog gsum gyi thugs rje bskul ba'i gsol 'debs bsam don lhun grub/ 7 gang mos kyi bla ma la sbyar chog pa'i skyabs 'gro yan lag bdun pa maN+Dal 'dod gsol smon lam dang bcas mdor bsdus pad dkar 'phreng ba/ 8 gnyid rmi gsol 'debs/ 9 bar do'i 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 10 'phags pa shes rab kyi pha rol tu phyin pa'i 'bum lnga'i snying po/ 11 'go ba'i lha lnga'i bsangs mchod/ 12 sna tshogs yum ma'i maN+Dal bzhi pa 'brum nad sogs rims nad zhi zhing yar ba'i phyir sna tshgos yum bshams mchod bzlas ba cho ga gdung sel chu 'dzin/ 13 pad dkar 'phreng mdzes byed ban dzi ka'i do shal/"@en , "A dice divination of Mahakala; other text inluded also."@en ;
+        :creator            bdr:CR610B0D3F0D883761 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3500 , bdr:W1NLM3500 ;
+        :workIsAbout        bdr:T1PD106860 , bdr:T2399 , bdr:T950 .
+}

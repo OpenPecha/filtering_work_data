@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17205 {
+    bda:LG2F03592F019ABC15
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-01T11:08:33.995Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG59B471BFD44D81E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA91BA0014996C2AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-01T11:06:38.051Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17205  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17205 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA8LS17205.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17205 ;
+        adm:logEntry        bda:LG2F03592F019ABC15 , bda:LG59B471BFD44D81E5 , bda:LGA91BA0014996C2AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05D092B3980EFFBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17205  a       :Work ;
+        skos:altLabel       "man ngag lhan thabs kyi lde mig sbyor tshad dmar khrid/ thig rtsa dang las sna tshogs pa'i sngags kyi be bum dgos 'dod kun 'byung gter gyi bum pa bzang po/"@bo-x-ewts ;
+        skos:prefLabel      "man ngag lhan thabs kyi sbyor tshad dmar khrid/ thig rtsa dang sngags kyi be bum/"@bo-x-ewts ;
+        :catalogInfo        "The practical instruction on the difficult points occuring in the Sangye Gyatso's Man Ngag Lhanthab, drawing proportion and collection of mantras focussed upon attaining desired aims by Ju Mipham."@en ;
+        :creator            bdr:CR05D092B3980EFFBE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1202 ;
+        :workHasInstance    bdr:MW8LS17205 , bdr:W8LS17205 ;
+        :workIsAbout        bdr:T215 , bdr:T2366 , bdr:T86 .
+}

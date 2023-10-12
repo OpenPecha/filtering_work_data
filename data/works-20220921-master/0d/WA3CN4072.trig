@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4072 {
+    bda:LG10AA1401F13BC44F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T16:46:15.146Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG21098C5F3FC41D4D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:47:29.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD737A4FEEE7AA0F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-28T11:54:49.485Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4072  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4072 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0d/WA3CN4072.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4072 ;
+        adm:logEntry        bda:LG10AA1401F13BC44F , bda:LG21098C5F3FC41D4D , bda:LGD737A4FEEE7AA0F9 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFB8969DF08968E95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5785 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4072  a        :Work ;
+        skos:altLabel       "mkhan po kun dga' dbang phyug gi rigs gter mchan 'grel/"@bo-x-ewts , "thun mong bsdus dpe blo gsal rnams kyi smra ba'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rigs pa'i gter gyi rang 'grel mchan bu can/"@bo-x-ewts ;
+        :catalogInfo        "Annotated on autocommentary of tshad ma rigs gter by Khenpo Kunga Wangchuk."@en ;
+        :creator            bdr:CRFB8969DF08968E95 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW3CN4072 , bdr:W3CN4072 ;
+        :workIsAbout        bdr:WA11391 .
+}

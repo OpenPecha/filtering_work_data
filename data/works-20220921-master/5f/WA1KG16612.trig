@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16612 {
+    bda:LG9297BD36C7442E6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-27T11:30:34.095Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrcted in China"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB44DEEF7C634D21F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-31T15:25:37.042Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD2CBC1EA76BE29D8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-03T13:02:54.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16612  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16612 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "5f/WA1KG16612.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16612 ;
+        adm:logEntry        bda:LG9297BD36C7442E6A , bda:LGB44DEEF7C634D21F , bda:LGD2CBC1EA76BE29D8 , bda:LGIM4599A38FCE , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC3E5A93AB5DBAEA7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6117 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD24232275E992DC7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16612  skos:altLabel  "经庄严论文本"@zh-hans .
+
+    bdr:WA1KG16612  a       :Work ;
+        skos:altLabel       "theg pa chen po mdo sde'i rgyan dang rgyud bla rtsa 'grel/"@bo-x-ewts , "jing zhuang yan lun wen ben"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gangs can rig brgya'i sgo 'byed lde mig (deb nyer bdun pa/)"@bo-x-ewts , "经庄严论文本"@zh-hans ;
+        :catalogInfo        "Commentaries on the Mahayanasutralankara and Uttaratantrasastra."@en ;
+        :creator            bdr:CRC3E5A93AB5DBAEA7 , bdr:CRD24232275E992DC7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG16612 , bdr:W1KG16612 ;
+        :workIsAbout        bdr:WA1GS1563 , bdr:WA22208 .
+}

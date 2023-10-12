@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10954 {
+    bda:LG29694472CB8F86BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG5EB46574BFDE3A0D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8B1FF8517344844D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-04T16:31:10.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added Print type and sourcePrintery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE84271B5FDE47573
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-09T08:40:04.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL07"@en .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA10954  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10954 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "81/WA10954.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10954 ;
+        adm:logEntry        bda:LG29694472CB8F86BA , bda:LG5EB46574BFDE3A0D , bda:LG8B1FF8517344844D , bda:LGE84271B5FDE47573 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE267FB1AB8103A87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P920 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW10954  skos:altLabel  "collected works (gsun 'bum ) of rgyal-dban rje kun-dga'-dpal-'byor"@en-x-mixed .
+
+    bdr:WA10954  a          :Work ;
+        skos:altLabel       "rgyal dbang rje kun dga' dpal 'byor gyi bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_kun dga' dpal 'byor/"@bo-x-ewts , "collected works (gsun 'bum ) of rgyal-dban rje kun-dga'-dpal-'byor"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Drukchen 02 Kunga Peljor (1428-1476), a hierarch of the Drukpa Kagyu order."@en ;
+        :creator            bdr:CRE267FB1AB8103A87 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW10954 , bdr:W10954 ;
+        :workIsAbout        bdr:T816 .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23883 {
+    bda:LG52F280D113A5C011
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23883  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23883 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "65/WA23883.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23883 ;
+        adm:logEntry        bda:LG52F280D113A5C011 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CREE4B587193C8363A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P382 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23883  a          :Work ;
+        skos:altLabel       "dus 'khor bskyed rim gyi rnam bzhag 'jam dpal zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "dpal dus kyi 'khor lo'i bskyed rim gyi rnam bzhag 'jam dpal zhal lung /"@bo-x-ewts , "Dpal dus kyi ʾkhor loʾi bskyed rim gyi rnam bźag ʾjam dpal źal luṅ /[ʾJam-dbyaṅs-thub-bstan-ñi-ma]."@en-x-mixed ;
+        :creator            bdr:CREE4B587193C8363A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23883 ;
+        :workIsAbout        bdr:T164 , bdr:T74 .
+}

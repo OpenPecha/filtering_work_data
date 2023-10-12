@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22447 {
+    bda:LG227314B90EA8C871
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-10-15T15:30:20.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG710FC0FA07A6F475
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-10-15T15:29:47.694Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG22447  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22447 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "44/WA1KG22447.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22447 ;
+        adm:logEntry        bda:LG227314B90EA8C871 , bda:LG710FC0FA07A6F475 , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG22447  a       :Work ;
+        skos:altLabel       "sgrol ma'i cho ga maN+Dal bzhi pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma'i cho ga khag cig"@bo-x-ewts ;
+        :catalogInfo        "Collection of various ritual texts related to the practice of Tara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG22447 , bdr:MW1KG22450 , bdr:W1KG22447 , bdr:W1KG22450 ;
+        :workIsAbout        bdr:T619 .
+}

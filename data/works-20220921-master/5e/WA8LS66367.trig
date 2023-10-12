@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66367 {
+    bda:LG46342EA93A5B720B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-02T15:06:10.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8C3BDC942FBF347D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-02T15:04:58.075Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66367  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66367 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5e/WA8LS66367.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66367 ;
+        adm:logEntry        bda:LG46342EA93A5B720B , bda:LG8C3BDC942FBF347D , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA27E30B1AF67CC61
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6080 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66367  a       :Work ;
+        skos:altLabel       "yig bskur rnam gzhag dang zhe sa'i rnam gzhag"@bo-x-ewts ;
+        skos:prefLabel      "nyer mkho'i lag deb/"@bo-x-ewts ;
+        :catalogInfo        "An analysis of letter writing and honorific by kiriti Losang Tenzin Jigme Yeshe Gyatsho."@en ;
+        :creator            bdr:CRA27E30B1AF67CC61 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS66367 , bdr:W8LS66367 ;
+        :workIsAbout        bdr:T207 , bdr:T794 .
+}

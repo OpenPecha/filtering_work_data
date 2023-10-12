@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22344 {
+    bda:LG278B6BAE42EAB908
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-09T14:34:14.211Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG62A293EA4525122C
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-06T09:22:52.328Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC75EED5A1D7AA624
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T14:35:04.886Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFB2335876C4D3DDD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-09T14:34:50.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22344  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22344 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "be/WA1KG22344.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22344 ;
+        adm:logEntry        bda:LG278B6BAE42EAB908 , bda:LG62A293EA4525122C , bda:LGC75EED5A1D7AA624 , bda:LGFB2335876C4D3DDD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD8C5407CF954692E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22344  a       :Work ;
+        skos:altLabel       "'dul ba mdo rtsa ba'i rgya cher 'grel spyi'i don mtha' dpyad dang bsdus don sa bcad dang 'bru yi don mthar chags su gnyer ba bcas 'dzam bu'i gling gsal bar byed pa'i rgyan nyi ma'i dkyil 'khor/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba'i rgyas 'grel nyi ma'i dkyil 'khor/"@bo-x-ewts , "'dul ba nyi ma'i dkyil 'khor : a detailed commentary on the vinayasutra and buddhist monastic discipline"@en ;
+        :catalogInfo        "Commentary with analytic treatment, topical outline, and general exposition on the meaning of the Vinaya Sutra."@en ;
+        :creator            bdr:CRD8C5407CF954692E ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T132 , bdr:T1763 , bdr:T89 ;
+        :workHasInstance    bdr:MW1KG22344 , bdr:W1KG22344 ;
+        :workIsAbout        bdr:T11MS21 , bdr:T1215 , bdr:WA4CZ16829 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3015 {
+    bda:LG5DC22689D45B0C40
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG6CAC07B5C13949A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T14:19:44.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3015"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3015  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3015 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/WA1NLM3015.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3015 ;
+        adm:logEntry        bda:LG5DC22689D45B0C40 , bda:LG6CAC07B5C13949A1 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBF3AEC50A02C9263
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3015  a       :Work ;
+        skos:prefLabel      "skyabs 'gro'i khrid yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gnas brtan bstod pa/ 2 slob dpon pad+ma 'byung gnas kyi mnol bsangs/ 3 rgyal pa'i yab gcig 4 bla ma rnal 'byor ma bsgom pa/ 5 dge ldan lugs bzang rgyas pa'i smon lam grub pa'i bden tshig 6 dpal rdo rje 'jigs byed dpa' bo gcig pa'i mngon rtogs 'khyer bde/ 7 dpal ldan lha mo'i 'phrin bcol/ 8 dregs pa sde brgyad la gser skyems gtong pa'i cho ga bdud rtsi'i rlabs 'phreng / 9 maN+Dal bzhi chog phan bde dpal ster cho ga rgyas par bya tshul/ 10 bsam pa myur 'grub ma dang / /dri bshags le'u bcas/ 11 dpal ldan lha mo'i sgo nas sho mo'i gnad gsal bar brtags pa/ 12 rlung rta bsangs/ 13 sde brgyad gser skyems/ 14 dpal ldan rdo rje sder mo bsdus pa/"@en , "Instructional manual of taking refuge by Ngawang Losang Choden; other text also included."@en ;
+        :creator            bdr:CRBF3AEC50A02C9263 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM3015 , bdr:W1NLM3015 ;
+        :workIsAbout        bdr:T1297 .
+}

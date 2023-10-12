@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302364 {
+    bda:LG0C34EA1EF1075065
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-05T11:47:14.606Z"^^xsd:dateTime ;
+        adm:logMessage      "new cata infor"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCB06BD966BA912B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-06T10:47:25.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302364  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302364 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "80/WA4CZ302364.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302364 ;
+        adm:logEntry        bda:LG0C34EA1EF1075065 , bda:LGCB06BD966BA912B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5830D21A1C7B0D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF982EE6AD03AE42C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302364  a      :Work ;
+        skos:altLabel       "gnas skabs dang mthar thug gi bde ba'i 'bras bu stsol ba'i gtor ma'i rnam bshad/"@bo-x-ewts , "gtor ma'i de nyid rgyas pa nam mkha'i nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "gtor ma'i rnam bshad khag gnyis/"@bo-x-ewts ;
+        :catalogInfo        "An exegesis of the offering of bali (gtor ma) by Firs Dalai Lama"@en ;
+        :creator            bdr:CRC5830D21A1C7B0D2 , bdr:CRF982EE6AD03AE42C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW4CZ302364 , bdr:W4CZ302364 ;
+        :workIsAbout        bdr:T170 .
+}

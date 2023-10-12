@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23908 {
+    bda:LG639E00AD971C7B0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-10T10:17:32.755Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6DFDE09FA57344C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23908  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23908 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "65/WA23908.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23908 ;
+        adm:logEntry        bda:LG639E00AD971C7B0B , bda:LG6DFDE09FA57344C2 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23908  skos:altLabel  "lho-brag mkhar-chu bdud-'joms-gling gi 'don cha'i skor"@en-x-mixed .
+
+    bdr:WA23908  a          :Work ;
+        skos:altLabel       "Lho-brag Mkhar-chu Bdud-ʾjoms-gliṅ gi ʾdon chaʾi skor =Lho-brag Mkhar-chhu Bdud-ʾjoms-gling gi ʾdon chhʾi [sic] skor."@en-x-mixed ;
+        skos:prefLabel      "lho brag mkhar chu bdud 'joms gling gi 'don cha'i skor/"@bo-x-ewts , "lho-brag mkhar-chu bdud-'joms-gling gi 'don cha'i skor"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW23908 , bdr:W23908 ;
+        :workIsAbout        bdr:T1082 .
+}

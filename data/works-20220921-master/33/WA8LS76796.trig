@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76796 {
+    bda:LG7BEC1E0B274E0DEA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-17T13:15:25.232Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA758AEEBD8D5744F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-17T13:16:05.478Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76796  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76796 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/WA8LS76796.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76796 ;
+        adm:logEntry        bda:LG7BEC1E0B274E0DEA , bda:LGA758AEEBD8D5744F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6155373DCEE4D572
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76796  a       :Work ;
+        skos:altLabel       "chos tshogs khag gi lam ston bka'' slob/ chos lugs lam ston/ dang po/"@bo-x-ewts ;
+        skos:prefLabel      "chos tshogs khag gi lam ston bka'' slob/"@bo-x-ewts ;
+        :catalogInfo        "A collection of speeches and advices given to the religious congregation by His Holiness The 14th Dalai Lama."@en ;
+        :creator            bdr:CR6155373DCEE4D572 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1KG5001 ;
+        :workHasInstance    bdr:MW8LS76796 , bdr:W8LS76796 ;
+        :workIsAbout        bdr:T1PD53279 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22380 {
+    bda:LG3661A93C48196880
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-23T16:01:17.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC419E1D727656D41
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-23T15:59:50.707Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG22380  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22380 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "92/WA1KG22380.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22380 ;
+        adm:logEntry        bda:LG3661A93C48196880 , bda:LGC419E1D727656D41 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9540E97ADE6E4172
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV07F87BEFE98BD140
+        a                   :CompletedEvent ;
+        :onYear             "1533"^^xsd:gYear .
+
+    bdr:WA1KG22380  a       :Work ;
+        skos:altLabel       "chos mngon pa mdzod kyi dgongs pa legs par bshad pa shes bya rab gsal/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod kyi dgongs pa legs par bshad pa shes bya rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "Obligatory curricular texts (yig cha) prescribed for the study of Abhidharmakosa at Drepung Losal Ling monastery and its affiliated institutions."@en ;
+        :creator            bdr:CR9540E97ADE6E4172 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV07F87BEFE98BD140 ;
+        :workGenre          bdr:T10MS12837 ;
+        :workHasInstance    bdr:MW1KG22380 , bdr:W1KG22380 ;
+        :workIsAbout        bdr:G126 , bdr:T447 , bdr:WA19720 .
+}

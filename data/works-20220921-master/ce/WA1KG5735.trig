@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG5735 {
+    bda:LG56AF5C29B44346B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-03T14:58:27.89Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG85C1E1AB6218ECD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-02T09:34:23.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added cover title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9E499CEF9C459944
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-08-02T09:29:34.24Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA3A90095E718BD76
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-08-03T11:44:45.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG5735  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG5735 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ce/WA1KG5735.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG5735 ;
+        adm:logEntry        bda:LG56AF5C29B44346B6 , bda:LG85C1E1AB6218ECD2 , bda:LG9E499CEF9C459944 , bda:LGA3A90095E718BD76 , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7E9AD22302C4CBDC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5736 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG5735  skos:altLabel  "record of nyingma monasteries in tibet"@en .
+
+    bdr:WA1KG5735  a        :Work ;
+        skos:altLabel       "rnying ma'i dgon deb/"@bo-x-ewts , "Bod na bźugs paʾi Rñiṅ-maʾi dgon deb =Record of Nyingma monasteries in Tibet /[compiled by Lama Paltul Jampal Lodoe]"@en-x-mixed ;
+        skos:prefLabel      "bod na bzhugs pa'i rnying ma'i dgon deb/"@bo-x-ewts , "record of nyingma monasteries in tibet"@en ;
+        :catalogInfo        "Record of Nyingma monasteries in Tibet."@en ;
+        :creator            bdr:CR7E9AD22302C4CBDC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2176 ;
+        :workHasInstance    bdr:MW1KG5735 , bdr:W1KG5735 ;
+        :workIsAbout        bdr:T1082 , bdr:T359 .
+}

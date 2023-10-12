@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18408 {
+    bda:LG9C6C1B34FBC9A713
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-23T10:14:34.878Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA86C060B2D7224F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-03T09:59:14.27Z"^^xsd:dateTime ;
+        adm:logMessage      "temp released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCBDDCF9FB0D29CBC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-23T10:15:31.582Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG18408  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18408 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA1KG18408.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18408 ;
+        adm:logEntry        bda:LG9C6C1B34FBC9A713 , bda:LGA86C060B2D7224F3 , bda:LGCBDDCF9FB0D29CBC , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG18408  a       :Work ;
+        skos:prefLabel      "'char ka'i 'bod pa/ (dus deb/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of poetry and articles on various topics."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW1KG18408 , bdr:MW1TLMTGA002293 , bdr:W1KG18408 .
+}

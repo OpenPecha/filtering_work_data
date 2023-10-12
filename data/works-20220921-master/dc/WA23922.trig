@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23922 {
+    bda:LG3724CBA3203A50C7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG48E2E9C85C83E8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T14:41:52.856Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG62A6D9269169B553
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-12T15:40:28.531Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00009 .
+
+    bda:LG6B3C6BB9953A2B13
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-15T16:01:25.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added chos skor as genre"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG71A793456BA79CB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-20T12:12:52.8Z"^^xsd:dateTime ;
+        adm:logMessage      "removed restriction notice per Gene"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG9B08ED4B6297144F
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-09T16:24:36.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23922  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23922 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "dc/WA23922.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23922 ;
+        adm:logEntry        bda:LG3724CBA3203A50C7 , bda:LG48E2E9C85C83E8AB , bda:LG62A6D9269169B553 , bda:LG6B3C6BB9953A2B13 , bda:LG71A793456BA79CB6 , bda:LG9B08ED4B6297144F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB43AD71A32B6F703
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA23922  a          :Work ;
+        skos:altLabel       "shangs pa'i chos skor rnam lnga rgya gzhung dang bod gzhung /"@bo-x-ewts ;
+        skos:prefLabel      "dpal ldan shangs pa'i chos skor rnam lnga'i rgya gzhung /"@bo-x-ewts ;
+        :catalogInfo        "Compilation of essential teachings from the Shangpa Kagyu order as taught by Kalu Rinpoche."@en ;
+        :creator            bdr:CRB43AD71A32B6F703 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW23922 , bdr:W23922 ;
+        :workIsAbout        bdr:T383 .
+}

@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20390 {
+    bda:LG0FFD37DE3A1E2054
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG1CB0CABBBE50A0A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-10T15:58:55.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalogue info"@en ;
+        adm:logWho          bdu:U00081 .
+
+    bda:LG3C33C673D88D1680
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE69DAC4AAE89D18B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-11T18:27:03.332Z"^^xsd:dateTime ;
+        adm:logMessage      "edited catalogue information"@en ;
+        adm:logWho          bdu:U00081 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20390  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20390 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "7c/WA20390.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20390 ;
+        adm:logEntry        bda:LG0FFD37DE3A1E2054 , bda:LG1CB0CABBBE50A0A8 , bda:LG3C33C673D88D1680 , bda:LGE69DAC4AAE89D18B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR93E065A512ABEE93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1646 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRE0D6F63E9D91475A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20390  skos:altLabel  "ch'ang-ti-pu-sa chuan chi ch'i chu shih"@zh-latn-wadegile .
+
+    bdr:WA20390  a          :Work ;
+        skos:altLabel       "byang chu sems dpa' rtag tu ngu'i rtogs brjod dpe khrid sgrar phab pa che long tsam yi ger bkod pa nyin mo'i snang ba/"@bo-x-ewts , "rtag tu ngu'i rtogs brjod dang de'i 'grel pa/"@bo-x-ewts , "changti pusa zhuan ji qi zhu shih"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byang chub sems dpa' rtag ngu'i rtogs brjod snyan dngags dpag bsam gyi ljon pa/"@bo-x-ewts , "ch'ang-ti-pu-sa chuan chi ch'i chu shih"@zh-latn-wadegile ;
+        :catalogInfo        "A biography of the ever-crying bodhisattva, written by Tsongkhapa, and a transcription of an oral commentary on it given by Tseten Zhabdrung."@en ;
+        :creator            bdr:CR93E065A512ABEE93 , bdr:CRE0D6F63E9D91475A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20390 , bdr:MW486_FF013B , bdr:W20390 ;
+        :workIsAbout        bdr:T204 , bdr:T365 .
+}

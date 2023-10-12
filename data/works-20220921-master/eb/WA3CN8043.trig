@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN8043 {
+    bda:LG3586FF2CF5410810
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-11T12:24:54.48Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5684A5ECAD3B405B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:46:08.726Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8CD45C62D1585739
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T13:22:10.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBAD7C8254F613868
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:36:16.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDBEEC3B399424C20
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN8043  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN8043 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "eb/WA3CN8043.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN8043 ;
+        adm:logEntry        bda:LG3586FF2CF5410810 , bda:LG5684A5ECAD3B405B , bda:LG8CD45C62D1585739 , bda:LGBAD7C8254F613868 , bda:LGDBEEC3B399424C20 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN8043  skos:altLabel  "仓格达瓦卓玛文集"@zh-hans .
+
+    bdr:WA3CN8043  a        :Work ;
+        skos:prefLabel      "khrom dge zla ba sgron ma'i dag snang sogs/"@bo-x-ewts , "仓格达瓦卓玛文集"@zh-hans ;
+        :catalogInfo        "Various texts about visionary experiences from Trom Grub Drolma etc."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN8043 , bdr:W3CN8043 ;
+        :workIsAbout        bdr:T805 .
+}

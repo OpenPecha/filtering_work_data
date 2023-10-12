@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18002 {
+    bda:LG0D60F639E2C8634C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-05T11:50:41.307Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2B0F5852D0252813
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-05T11:52:12.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8658F2A20B83D651
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T13:41:53.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM124731122E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:26:25.168Z"^^xsd:dateTime ;
+        adm:logMessage      "made restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS18002  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18002 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "76/WA8LS18002.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18002 ;
+        adm:logEntry        bda:LG0D60F639E2C8634C , bda:LG2B0F5852D0252813 , bda:LG8658F2A20B83D651 , bda:LGIM124731122E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD6C6F8CAFD76D2EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS18004 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18002  a       :Work ;
+        skos:altLabel       "me lce drag po'i nang gi pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@bo-x-ewts ;
+        skos:prefLabel      "pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@bo-x-ewts ;
+        :catalogInfo        "The personal account of Chede Dechen Gyatsho."@en ;
+        :creator            bdr:CRD6C6F8CAFD76D2EA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS18002 , bdr:W8LS18002 ;
+        :workIsAbout        bdr:P8LS18004 .
+}

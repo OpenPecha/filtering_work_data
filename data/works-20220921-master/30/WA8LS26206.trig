@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS26206 {
+    bda:LG4083FFAD20463742
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-20T16:11:45.763Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG578A518033DB64D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-20T16:10:51.372Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS26206  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS26206 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "30/WA8LS26206.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS26206 ;
+        adm:logEntry        bda:LG4083FFAD20463742 , bda:LG578A518033DB64D6 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR752541293DDFF5FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P996 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8LS26206  skos:altLabel  "Overview of the Middle Way"@en .
+
+    bdr:WA8LS26206  a       :Work ;
+        skos:altLabel       "dbu ma'i spyi don dgongs gsal sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i spyi don/"@bo-x-ewts , "Overview of the Middle Way"@en ;
+        :catalogInfo        "An exegesis of the general meaning of profound emptiness teaching by Khedrup Tenpa Dargye."@en ;
+        :creator            bdr:CR752541293DDFF5FD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1763 ;
+        :workHasInstance    bdr:MW8LS26206 , bdr:W8LS26206 ;
+        :workIsAbout        bdr:T233 .
+}

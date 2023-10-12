@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2633 {
+    bda:LG3C02B8D227855DD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-23T14:54:48.636Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC6A90EE0FB60FDC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2633"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2633  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2633 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/WA1NLM2633.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2633 ;
+        adm:logEntry        bda:LG3C02B8D227855DD9 , bda:LGC6A90EE0FB60FDC4 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB6194F40D070DC14
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2633  a       :Work ;
+        skos:prefLabel      "dga' ldan lha brgya ma'i gzhung bsrungs te mdo sngags cha tshang bar nyams su len tshul dga' ldan zhing du bgrod pa'i nor bu'i them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for the practice of the Gadhan Lhagyama, the reminder notes on Lamrim Chenmo, an astrology and dharanis"@en ;
+        :creator            bdr:CRB6194F40D070DC14 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2633 , bdr:W1NLM2633 .
+}

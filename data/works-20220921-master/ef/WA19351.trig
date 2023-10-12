@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA19351 {
+    bda:LG08CDA389E31390CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T11:09:27.13Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG2C16543534095C92
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-05T07:49:04.375Z"^^xsd:dateTime ;
+        adm:logMessage      "published for creation of scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG487EFAAD3B0ACC03
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-11T22:23:00.468Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAFDBB4FF7046CD13
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-11T22:25:21.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD5588B6B2DD10331
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGEA68672ADA235470
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T11:39:04.024Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGEB7FB031F715D7EC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA19351  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA19351 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ef/WA19351.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA19351 ;
+        adm:logEntry        bda:LG08CDA389E31390CF , bda:LG2C16543534095C92 , bda:LG487EFAAD3B0ACC03 , bda:LGAFDBB4FF7046CD13 , bda:LGD5588B6B2DD10331 , bda:LGEA68672ADA235470 , bda:LGEB7FB031F715D7EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR427DA8DA4A2E9547
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5632 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW19351  skos:altLabel  "a commentary on the rnam dag bde chen zin gi smon lam of karma-chags-med"@en-x-mixed .
+
+    bdr:WA19351  a          :Work ;
+        skos:altLabel       "bde chen zhing gi smon lam gyi 'grel pa/"@bo-x-ewts , "rnam dag bde chen zhing gi smon lam gyi 'byed 'grel bde chen zhing du bgrod pa'i them skas bzang po/"@bo-x-ewts ;
+        skos:prefLabel      "bde chen smon lam gyi 'byed 'grel/"@bo-x-ewts , "a commentary on the rnam dag bde chen zin gi smon lam of karma-chags-med"@en-x-mixed ;
+        :creator            bdr:CR427DA8DA4A2E9547 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW19351 , bdr:W19351 ;
+        :workIsAbout        bdr:T1685 .
+}

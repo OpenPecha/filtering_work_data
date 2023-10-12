@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66874 {
+    bda:LG69AC458E04F54216
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-30T16:29:43.806Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG96E25B4721083C3C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-30T16:33:13.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBCC15484034188AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-30T16:31:46.13Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC87739864DE169A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T11:11:18.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEEE875684387FC3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFAE5F58CA25CB850
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-28T09:49:15.937Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66874  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66874 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "73/WA8LS66874.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66874 ;
+        adm:logEntry        bda:LG69AC458E04F54216 , bda:LG96E25B4721083C3C , bda:LGBCC15484034188AE , bda:LGC87739864DE169A2 , bda:LGEEE875684387FC3C , bda:LGFAE5F58CA25CB850 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR99861E101BEDE799
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9787 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66874  a       :Work ;
+        skos:prefLabel      "snga rabs bod kyi srid khrims gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Early Tibetan law for governance by Sonam Tsering."@en ;
+        :creator            bdr:CR99861E101BEDE799 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66874 , bdr:W8LS66874 ;
+        :workIsAbout        bdr:T2234 , bdr:T384 .
+}

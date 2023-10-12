@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA15286 {
+    bda:LG329A88DE0EDA69E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-06T10:32:59.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and soyrce printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG650A05F85019A6E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDB46049270650C18
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-02-09T11:21:43.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFF1CC92D9C5C8A6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-09T11:20:43.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA15286  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA15286 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "2f/WA15286.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA15286 ;
+        adm:logEntry        bda:LG329A88DE0EDA69E3 , bda:LG650A05F85019A6E5 , bda:LGDB46049270650C18 , bda:LGFF1CC92D9C5C8A6F , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5C6E7DD62A466910
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3163 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA15286  a          :Work ;
+        skos:altLabel       "'dul ba'i sde snod mtha' dag gi dgongs pa phyin ci ma log par 'grel par byed pa'i legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba'i 'grel pa legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis on Buddhist monastic discipline from the obligatory manuals of the Je College of Sera Monastery."@en ;
+        :creator            bdr:CR5C6E7DD62A466910 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW15286 , bdr:MW1NLM238 , bdr:MW1PD88983 , bdr:W15286 , bdr:W1NLM238 , bdr:W1PD88983 ;
+        :workIsAbout        bdr:T447 , bdr:T55 .
+}

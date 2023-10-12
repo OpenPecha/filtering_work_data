@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN27192 {
+    bda:LG1A2BA646AA91DF93
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-04T16:52:55.633Z"^^xsd:dateTime ;
+        adm:logMessage      "added other names"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG206ED60AD39511A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-04T16:49:02.622Z"^^xsd:dateTime ;
+        adm:logMessage      "added bib. note"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7C00F0B9435BAE37
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-04T16:42:42.066Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN27192  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN27192 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/WA3CN27192.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN27192 ;
+        adm:logEntry        bda:LG1A2BA646AA91DF93 , bda:LG206ED60AD39511A9 , bda:LG7C00F0B9435BAE37 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN27192  skos:altLabel  "Chongning Canon"@en .
+
+    bdr:WA3CN27192  a       :Work ;
+        skos:altLabel       "崇宁万寿大藏"@zh-hans , "崇寧藏"@zh-hant ;
+        skos:prefLabel      "Chongning Canon"@en , "崇宁藏"@zh-hans ;
+        :catalogInfo        "Chongning Edition of Chinese Buddhist Canon."@en ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN27192 .
+}

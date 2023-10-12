@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27523 {
+    bda:LG0A1FA813CE0D3E9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG637FABCEFE767CAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-16T09:44:01.401Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title & topics"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG7874C5611C0F9F98
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF3C12A5304EA0E5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:51:51.555Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGF5A22817F3055F4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-03T16:10:19.9Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA27523  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27523 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "36/WA27523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27523 ;
+        adm:logEntry        bda:LG0A1FA813CE0D3E9D , bda:LG637FABCEFE767CAC , bda:LG7874C5611C0F9F98 , bda:LGF3C12A5304EA0E5E , bda:LGF5A22817F3055F4F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR052A923E72259A4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5630 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR17C2D2DCCDBC35AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P657 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW27523  skos:altLabel  "instructions on the sevasadhana of the byang gter phur pa practice"@en-x-mixed .
+
+    bdr:WA27523  a          :Work ;
+        skos:altLabel       "'phags pa thugs rje chen po'i dkyil 'khor gyi cho ga'i rnam nes rin chen 'phren ba"@bo-alalc97 , "byan gter phur pa spu gri bsnen sgrub zun sbrel gyi bsnen yig go gsal"@bo-alalc97 , "'phags pa thugs rje chen po'i dkyil 'khor gyi cho ga rnam nges rin chen 'phreng ba/"@bo-x-ewts , "byang gter phur pa spu gri bsnyen sgrub zung sbrel gyi bsnyen yig go gsal/"@bo-x-ewts , "teachings on the practice of the byang gter thugs rje chen po cycle"@en-x-mixed ;
+        skos:prefLabel      "byang gter sgrub skor/"@bo-x-ewts , "instructions on the sevasadhana of the byang gter phur pa practice"@en-x-mixed ;
+        :creator            bdr:CR052A923E72259A4B , bdr:CR17C2D2DCCDBC35AD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27523 , bdr:W27523 ;
+        :workIsAbout        bdr:T1712 , bdr:T2MS9698 .
+}

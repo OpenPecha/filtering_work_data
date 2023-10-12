@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1992 {
+    bda:LG2832B4E745BF343E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-21T17:27:10.909Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5A2A0CBE9F3BDAF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1992"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1992  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1992 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/WA1NLM1992.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1992 ;
+        adm:logEntry        bda:LG2832B4E745BF343E , bda:LG5A2A0CBE9F3BDAF3 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF3E49B9BD2C0F3E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1992  a       :Work ;
+        skos:prefLabel      "maN+Dal gyi khrid yig dpag bsam snye ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "A detailed explanation of the rite of offering the mandala as a symbol of total veneration and fealty; and instructional manual of lamrim​ practice."@en ;
+        :creator            bdr:CRF3E49B9BD2C0F3E9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1992 , bdr:W1NLM1992 ;
+        :workIsAbout        bdr:T1344 , bdr:T29 , bdr:T541 .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302698 {
+    bda:LG28C5F3FB5EB686E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG3D5C6AAFBCCE82EC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T10:53:10.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDD90C5FB8E84ABF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T15:22:50.326Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEF55C08425CB4FEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T10:52:37.622Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF9DCDEB1A4107E94
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:45:44.995Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302698  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302698 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "49/WA4CZ302698.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302698 ;
+        adm:logEntry        bda:LG28C5F3FB5EB686E7 , bda:LG3D5C6AAFBCCE82EC , bda:LGDD90C5FB8E84ABF9 , bda:LGEF55C08425CB4FEC , bda:LGF9DCDEB1A4107E94 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3DCAC5605A3EBF1B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8228 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRF167FB69BEA0004F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW4CZ302698  skos:altLabel  "saddharmapundarika-namamahayanasutra"@sa-x-ndia .
+
+    bdr:WA4CZ302698  a      :Work ;
+        skos:altLabel       "dam pa'i chos pad+ma dkar po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "dam chos pad+ma dkar po/"@bo-x-ewts , "saddharmapundarika-namamahayanasutra"@sa-x-ndia ;
+        :catalogInfo        "Sutra of the White Lotus of True Dharma. stog number: 141 sde dge number: 113"@en ;
+        :creator            bdr:CR3DCAC5605A3EBF1B , bdr:CRF167FB69BEA0004F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW4CZ302698 , bdr:W4CZ302698 .
+}

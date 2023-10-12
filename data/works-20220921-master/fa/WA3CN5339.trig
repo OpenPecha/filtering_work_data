@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5339 {
+    bda:LG1CC013E755ABD532
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-24T14:02:13.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG34744C14E78158E4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-02T11:30:25.272Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5339  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5339 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fa/WA3CN5339.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5339 ;
+        adm:logEntry        bda:LG1CC013E755ABD532 , bda:LG34744C14E78158E4 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR774C4C298A2C32F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5339  a        :Work ;
+        skos:prefLabel      "rdzogs pa chen po snying thig ya bzhi las bla ma yangatig yid bzhon nor bu'i chos skor/ (glegs bam gnyis pa/)"@bo-x-ewts ;
+        :catalogInfo        "Teaching cycle of Lama Yangtik by Longchen Rabjampa Drimed Odzer."@en ;
+        :creator            bdr:CR774C4C298A2C32F3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN5339 , bdr:W3CN5339 ;
+        :workIsAbout        bdr:T1888 , bdr:T354 .
+}

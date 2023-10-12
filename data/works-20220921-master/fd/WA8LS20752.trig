@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20752 {
+    bda:LG0F24B2A090803FF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T15:07:24.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG60339ED8B4F54C10
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-05T09:42:48.213Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBA4A22A4BE4A8CC4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-05T09:44:17.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS20752  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20752 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/WA8LS20752.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20752 ;
+        adm:logEntry        bda:LG0F24B2A090803FF7 , bda:LG60339ED8B4F54C10 , bda:LGBA4A22A4BE4A8CC4 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR271BF457A654975D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75320 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20752  a       :Work ;
+        skos:prefLabel      "dpyad gtam shel dkar phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "A collection of essays written by Ngawang Phuntsok."@en ;
+        :creator            bdr:CR271BF457A654975D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW8LS20752 , bdr:W8LS20752 .
+}

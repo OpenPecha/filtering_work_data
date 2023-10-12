@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG200026 {
+    bda:LG4CDEB014444EC721
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-28T16:19:14.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD88E96B3061A3885
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-02-28T16:15:24.849Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG200026  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG200026 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3f/WA2KG200026.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG200026 ;
+        adm:logEntry        bda:LG4CDEB014444EC721 , bda:LGD88E96B3061A3885 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR02CA756E36770D4E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG200019 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG200026  a      :Work ;
+        skos:prefLabel      "G. H. Luce Papers. Portfolios I-III & IV"@en ;
+        :catalogInfo        "Portfolio I, plates 1-109. Portfolio II, plates 110-223. Portfolio III, plates 224-345. Portfolio IV, plates 346-402b."@en ;
+        :creator            bdr:CR02CA756E36770D4E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG200026 , bdr:W2KG200026 ;
+        :workIsAbout        bdr:T2KG200020 , bdr:T2KG200021 .
+}
