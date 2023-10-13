@@ -8,6 +8,3 @@ def get_ttl(work_id):
     except Exception as e:
         print(" TTL not Found!!!", e)
         return None
-
-
-print(get_ttl("W0IA_HOD35"))
