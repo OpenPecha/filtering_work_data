@@ -3,8 +3,6 @@ from typing import Dict, List
 
 from umed_modern_filter.rdf_parse import parse_trig_file
 
-"Dict[str, Dict[str, Dict[str, List[str]]]]"
-
 
 def pretty_print_dict(d: Dict, indent: int = 0):
     for key, value in d.items():
@@ -25,13 +23,17 @@ def create_dictionary(
         for file in files:
             trig_file_path = os.path.join(root, file)
             if file.endswith(".trig"):
-                result = parse_trig_file(trig_file_path)
-                data_dict.update(result)
+                try:
+                    result = parse_trig_file(trig_file_path)
+                    data_dict.update(result)
+                except Exception as e:
+                    print(f"Error in file {trig_file_path}: {e}")
 
     return data_dict
 
 
 if __name__ == "__main__":
-    root_directory = "/home/gangagyatso/Desktop/experiment/01"
+    root_directory = "/home/gangagyatso/Downloads/data"
     data_dictionary = create_dictionary(root_directory)
     pretty_print_dict(data_dictionary)
+    print(len(data_dictionary))
