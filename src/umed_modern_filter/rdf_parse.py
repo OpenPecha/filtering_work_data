@@ -26,12 +26,8 @@ def parse_trig_file(trig_file_path: str) -> Dict[str, Dict[str, Dict[str, List[s
         for subject, predicate, obj in triples:
             if str(predicate).endswith("workHasInstance"):
                 instance_key = obj.split("/")[-1]
-                instance_dict[instance_key] = {
-                    "instance_id": [],
-                    "print_method": [],
-                    "script": [],
-                    "url": [],
-                }
+                instance_dict[instance_key] = {}
+
                 named_graphs_data[key] = instance_dict
 
     return named_graphs_data
