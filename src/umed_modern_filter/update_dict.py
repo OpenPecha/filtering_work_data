@@ -9,8 +9,8 @@ def update_dictionary(data):
         if isinstance(value, dict):
             # If the value is a dictionary, process its keys
             for inner_key in value.keys():
-                if inner_key.startswith("W"):
-                    turtle_file_data = get_ttl(str(inner_key))
+                if inner_key.startswith("M"):
+                    turtle_file_data = get_ttl(str(inner_key[1:]))
                     turtle_graph = parse_turtle_file(turtle_file_data)
                     inner_dict_2 = {}
                     for s, p, o in turtle_graph:

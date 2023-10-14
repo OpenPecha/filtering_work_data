@@ -33,7 +33,7 @@ def create_dictionary(
 
 
 if __name__ == "__main__":
-    root_directory = "/home/gangagyatso/Desktop/experiment/00"
+    root_directory = "/home/gangagyatso/Downloads/data/00"
     data_dictionary = create_dictionary(root_directory)
     pretty_print_dict(data_dictionary)
     print(len(data_dictionary))
