@@ -12,7 +12,7 @@ def update_dictionary(data):
                 if inner_key.startswith("M"):
                     turtle_file_data = get_ttl(str(inner_key[1:]))
                     turtle_graph = parse_turtle_file(turtle_file_data)
-                    inner_dict_2 = {}
+                    inner_dict_2 = {"printMethod": "", "script": "", "instanceOf": ""}
                     for s, p, o in turtle_graph:
                         if (
                             str(p).endswith("printMethod")
@@ -22,6 +22,7 @@ def update_dictionary(data):
                             val = o.split("/")[-1]
                             predicate = p.split("/")[-1]
                             inner_dict_2[predicate] = val
+
                     inner_dict_1[inner_key] = inner_dict_2
         data[key] = inner_dict_1
     return data
