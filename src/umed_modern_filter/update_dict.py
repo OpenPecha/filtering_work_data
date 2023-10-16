@@ -1,3 +1,5 @@
+import json
+
 from umed_modern_filter.create_dict import create_dictionary, pretty_print_dict
 from umed_modern_filter.parse_ttl import parse_turtle_file
 from umed_modern_filter.web_request import get_ttl
@@ -28,11 +30,20 @@ def update_dictionary(data):
     return data
 
 
-if __name__ == "__main__":
+def save_dict_to_json(nested_dict, file_path):
+    try:
+        with open(file_path, "w") as json_file:
+            json.dump(nested_dict, json_file)
+        print(f"Nested dictionary saved to {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
 
+
+if __name__ == "__main__":
+    file_path = "data_update.json"
     root_directory = "/home/gangagyatso/Desktop/experiment"
     data_dictionary = create_dictionary(root_directory)
-    pretty_print_dict(data_dictionary)
     update_data = update_dictionary(data_dictionary)
     print("\n --updated dictionary-- \n")
     pretty_print_dict(update_data)
+    save_dict_to_json(update_data, file_path)

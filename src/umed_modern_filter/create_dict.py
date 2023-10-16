@@ -1,3 +1,4 @@
+import json
 import os
 from typing import Dict, List
 
@@ -32,8 +33,19 @@ def create_dictionary(
     return data_dict
 
 
+def save_dict_to_json(nested_dict, file_path):
+    try:
+        with open(file_path, "w") as json_file:
+            json.dump(nested_dict, json_file)
+        print(f"Nested dictionary saved to {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+
 if __name__ == "__main__":
-    root_directory = "/home/gangagyatso/Downloads/data/00"
+    file_path = "work_data.json"
+    root_directory = "/home/gangagyatso/Desktop/project2/filtering_work_data/data"
     data_dictionary = create_dictionary(root_directory)
     pretty_print_dict(data_dictionary)
     print(len(data_dictionary))
+    save_dict_to_json(data_dictionary, file_path)
