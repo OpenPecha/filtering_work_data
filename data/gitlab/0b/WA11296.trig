@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA11296 {
+    bda:LGC903299C42A03C67
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA11296  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA11296 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0b/WA11296.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA11296 ;
+        adm:logEntry        bda:LGC903299C42A03C67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:CR0E4788C758C597D0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV5C6F7933F66E0444
+        a                   :CompletedEvent ;
+        :onYear             "1472"^^xsd:gYear .
+    
+    bdr:WA11296  a          :Work ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi mtshon byed kyi chos rnams kyi yan lag rgyas pa bshad pa sbas don rab gsal/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin mngon rtogs rgyan gyi yan lag rgyas bshad/"@bo-x-ewts ;
+        :creator            bdr:CR0E4788C758C597D0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV5C6F7933F66E0444 ;
+        :workHasInstance    bdr:MW11296 .
+}

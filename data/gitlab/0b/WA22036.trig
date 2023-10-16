@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22036 {
+    bda:LG50C8BACDAB5AB686
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-01T15:33:28.169Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5F60EA671EA1AFCE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-05-01T15:34:18.61Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC08DC2082C1555BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA22036  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22036 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0b/WA22036.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22036 ;
+        adm:logEntry        bda:LG50C8BACDAB5AB686 , bda:LG5F60EA671EA1AFCE , bda:LGC08DC2082C1555BF , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR7BA7D20EA95512AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7456 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW22036  skos:altLabel  "格萨尔王传--地嘎"@zh-hans .
+    
+    bdr:WA22036  a          :Work ;
+        skos:altLabel       "gling ge sar rgyal po'i sgrung ti dkar/"@bo-x-ewts , "ge sa er wang zhuan--di ga"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ti dkar/"@bo-x-ewts , "格萨尔王传--地嘎"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :creator            bdr:CR7BA7D20EA95512AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22036 , bdr:W22036 ;
+        :workIsAbout        bdr:T248 .
+}
