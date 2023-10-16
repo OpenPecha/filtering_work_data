@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21752 {
+    bda:LG1DBA1F39CDDD387F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG885E306FC938C621
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-05-11T12:48:40.795Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA21752  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21752 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0a/WA21752.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21752 ;
+        adm:logEntry        bda:LG1DBA1F39CDDD387F , bda:LG885E306FC938C621 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR56DF7A71B11BB47D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6294 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW21752  skos:altLabel  "biography of ge dun qu pel"@en .
+    
+    bdr:WA21752  a          :Work ;
+        skos:altLabel       "dge 'dun chos 'phel/"@bo-x-ewts ;
+        skos:prefLabel      "'dzam gling rig pa'i dpa' bo rdo brag dge 'dun chos 'phel gyi byung ba brjod pa bden gtam rna ba'i bcud len/"@bo-x-ewts , "biography of ge dun qu pel"@en ;
+        :creator            bdr:CR56DF7A71B11BB47D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW21752 , bdr:W21752 ;
+        :workIsAbout        bdr:P219 .
+}

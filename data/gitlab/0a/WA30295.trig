@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30295 {
+    bda:LG07EE5A2DABFAAD89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-02T09:34:45.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD1D8CB3E07F34C27
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA30295  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30295 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0a/WA30295.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30295 ;
+        adm:logEntry        bda:LG07EE5A2DABFAAD89 , bda:LGD1D8CB3E07F34C27 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR2DC0874C8C850A33
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10336 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW30295  skos:altLabel  "lamagabu jiangbatudaogonggajianzan zhuan"@zh-latn-pinyin-x-ndia .
+    
+    bdr:WA30295  a          :Work ;
+        skos:altLabel       "byams pa mthu stobs kun dga' rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun byams pa mthu stobs kun dga' rgyal mtshan gyi rnam thar/"@bo-x-ewts , "lamagabu jiangbatudaogonggajianzan zhuan"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR2DC0874C8C850A33 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW30295 , bdr:W30295 ;
+        :workIsAbout        bdr:P6785 , bdr:T819 .
+}
