@@ -10,4 +10,4 @@ def get_ttl(work_id):
         return None
 
 
-print(get_ttl("W00KG01589"))
+# print(get_ttl("W00KG01589"))
