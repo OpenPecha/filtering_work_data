@@ -29,7 +29,7 @@ def parse_instance_ttl(ttl_file, ttl_id):
     try:
         g.parse(data=ttl_file, format="ttl")
     except Exception as e:
-        print("cant read ttl", e)
+        print("cant read ttl", ttl_id, e)
         return None
     script_type = g.objects(BDR[ttl_id], BDO["script"])
     for script in script_type:
