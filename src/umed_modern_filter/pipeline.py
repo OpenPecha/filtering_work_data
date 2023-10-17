@@ -1,12 +1,13 @@
+import json
 from pathlib import Path
 
-from umed_modern_filter.rdf_parse import filter_dict, parse_trig
-import json
+from umed_modern_filter.rdf_parse import parse_trig
+
 
 def main():
     final_dict = {}
     curr = {}
-    directories = list(Path("./data/gitlab/").iterdir())
+    directories = list(Path("./data/gitlab").iterdir())
     for dir in directories:
         workfile_paths = list(dir.iterdir())
         for workfile_path in workfile_paths:
@@ -16,7 +17,8 @@ def main():
             final_dict.update(curr)
             curr = {}
     write_json(final_dict)
-    
+
+
 def write_json(data):
     with open("./data/work_info.json", "w") as f:
         json.dump(data, f, indent=4)
