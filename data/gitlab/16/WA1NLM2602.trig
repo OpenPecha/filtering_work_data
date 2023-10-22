@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2602 {
+    bda:LG049457BA6B3EB494
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-17T16:06:09.304Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE1DAA1403865B92A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2602"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2602  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2602 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/WA1NLM2602.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2602 ;
+        adm:logEntry        bda:LG049457BA6B3EB494 , bda:LGE1DAA1403865B92A , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0FD8EAD4B8440294
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2602  a       :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa la thog mar blo sbyong ba chos kyi sgo 'byed ces bya ba'i don rags bsdus tsam zhig zin bris su bkod pa drang srong chen po'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "thog mar blo sbyong ba chos kyi sgo 'byed ces bya ba'i don rags bsdus tsam zhig zin bris su bkod pa drang srong chen po'i zhal lung sogs/"@bo-x-ewts ;
+        :catalogInfo        "A summary of mind training text known as opening door of Dharma, Liturgical text explaining the method of performance of the smyung gnas rites of fasting and silence focusing upon the aparimitayurjnana-sadhana and other miscellaneous rituals"@en ;
+        :creator            bdr:CR0FD8EAD4B8440294 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2602 , bdr:W1NLM2602 ;
+        :workIsAbout        bdr:T1347 .
+}

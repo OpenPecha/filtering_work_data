@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302333 {
+    bda:LG159A26C0DA2734AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-05T11:47:04.703Z"^^xsd:dateTime ;
+        adm:logMessage      "new cata infor"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6A342A82FA74566B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-05T12:25:07.97Z"^^xsd:dateTime ;
+        adm:logMessage      "added more info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF8C62B2C50F82BB7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-05T12:29:59.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302333  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302333 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bd/WA4CZ302333.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302333 ;
+        adm:logEntry        bda:LG159A26C0DA2734AD , bda:LG6A342A82FA74566B , bda:LGF8C62B2C50F82BB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR70E5C021142FB060
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302333  a      :Work ;
+        skos:prefLabel      "rta phag yid bzhin nor bu'i phyi bsgrub ltung bshags cho ga'i zin bris 'don 'grigs bltas chog tu mkod pa/"@bo-x-ewts ;
+        :catalogInfo        "for the practice of the Dzogchen teachings of the Wish-Fulfilling Gem of Hayagriva and Varahi (rta phag yid bzhin nor bu)."@en ;
+        :creator            bdr:CR70E5C021142FB060 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG8321_506D1A , bdr:MW22933_507AD5 , bdr:MW4CZ302333 , bdr:W4CZ302333 ;
+        :workIsAbout        bdr:T1394 , bdr:T2579 .
+}

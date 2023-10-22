@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355767 {
+    bda:LG681225679F88B639
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T12:48:47.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA694619A1394AD61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-07T11:20:35.736Z"^^xsd:dateTime ;
+        adm:logMessage      "New catloged, reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE63607AEFB9C014C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4CZ355767  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355767 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6b/WA4CZ355767.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355767 ;
+        adm:logEntry        bda:LG681225679F88B639 , bda:LGA694619A1394AD61 , bda:LGE63607AEFB9C014C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA30320 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA4CZ355767  a      :Work ;
+        skos:altLabel       "ber nag can gyi bsgrub thabs shog dril las mtha' dang bcas pa'i stong thun rnam grangs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po ber nag can gyi sgrub skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected sadhana,of focusing upon black cloaked Mahakala with copper knife from the Kamtshang Kagyu order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 ;
+        :workIsAbout        bdr:T1181 , bdr:T2338 .
+}

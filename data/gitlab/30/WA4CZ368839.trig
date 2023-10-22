@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368839 {
+    bda:LG19FF6C2279721E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:12:01.312Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG61DA95EF61728B61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:38:55.758Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGAC761FD1D64F6315
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T12:21:43.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368839  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368839 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "30/WA4CZ368839.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368839 ;
+        adm:logEntry        bda:LG19FF6C2279721E12 , bda:LG61DA95EF61728B61 , bda:LGAC761FD1D64F6315 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7ED97DA248578894
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ368837 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ368839  a      :Work ;
+        skos:altLabel       "'khrungs rab deb ther nor bu'i phreng ba/"@bo-x-ewts , "'phas mchog 'jig rten dbang phyug rgyal mchog bcu bzhi pa chen po gang gi zhal snga nas kyi chos srid kyi mdzad pa du ma las brtsams pa'i rnam par thar pa cung zad bjod pa gru 'dzin zhing gi nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "sku phreng bcu bzhi pa'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of The 14th Dalai Lama Tenzin Gyatso"@en ;
+        :creator            bdr:CR7ED97DA248578894 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ368839 , bdr:W4CZ368839 ;
+        :workIsAbout        bdr:P1649 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN551 {
+    bda:LG096305231731C80B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-06T11:30:09.432Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8BA40A0B5761C1AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:17:20.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG97664E5902B422AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T17:04:22.796Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN551  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN551 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "66/WA3CN551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN551 ;
+        adm:logEntry        bda:LG096305231731C80B , bda:LG8BA40A0B5761C1AE , bda:LG97664E5902B422AD , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCD91DB5A96BA5EC6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN8471 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN551  a         :Work ;
+        skos:altLabel       "mkhan po bsod nams dbang rgyal gyi gsung rtsom phyogs sgrig"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ bsod nams dbang rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Karma Kagyu master Khenpo Sonam Wanggyal."@en ;
+        :creator            bdr:CRCD91DB5A96BA5EC6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN551 , bdr:W3CN551 ;
+        :workIsAbout        bdr:T1386 .
+}

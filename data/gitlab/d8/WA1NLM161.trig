@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM161 {
+    bda:LGA3DA8654288D727C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-12T10:11:16.821Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog completed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGABD22FC694F5AEED
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:36:09.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCA95AB39ABC268D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM161"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM161  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM161 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d8/WA1NLM161.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM161 ;
+        adm:logEntry        bda:LGA3DA8654288D727C , bda:LGABD22FC694F5AEED , bda:LGCA95AB39ABC268D4 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10D6FA0275F66640
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM161  a        :Work ;
+        skos:prefLabel      "gzhi'i sku gsum kyi rnam bzhag rab gsal sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the three Buddha body and ritual text."@en ;
+        :creator            bdr:CR10D6FA0275F66640 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM161 , bdr:W1NLM161 ;
+        :workIsAbout        bdr:T535 .
+}

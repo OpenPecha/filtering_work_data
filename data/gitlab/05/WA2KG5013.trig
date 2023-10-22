@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5013 {
+    bda:LG35AF1D7BF4C1C6DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T20:46:45.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1CIHTS00"@en ;
+        adm:logWhoStr       "add-works-to-PR1CIHTS00" .
+
+    bda:LG7117416FDC4C3CDD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-27T16:29:07.892Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC5A05E69967FEEBE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-08-27T16:34:37.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG5013  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5013 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "05/WA2KG5013.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5013 ;
+        adm:logEntry        bda:LG35AF1D7BF4C1C6DB , bda:LG7117416FDC4C3CDD , bda:LGC5A05E69967FEEBE , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0BC002 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA2KG5013  a        :Work ;
+        skos:altLabel       "sde dge bstan 'gyur/"@bo-x-ewts ;
+        skos:prefLabel      "bstan 'gyur/"@bo-x-ewts , "Derge Tanjur"@en ;
+        :catalogInfo        "Dege Tengyur. Produced in 1737-1744 under the patronage of the Dege King Tenpa Tsering. Edited by Shuchen Tsultrim Rinchen. Digitized by Shatarakshita Library, Central Institute of Higher Tibetan Studies, Sarnath from the Derge Tanjur preserved at Central Library, Banaras Hindu University, Varanasi."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workIsAbout        bdr:G2KG5024 , bdr:T3CN2023 .
+}

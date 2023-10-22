@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM959 {
+    bda:LG05C8B0DE88310B3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-25T14:37:31.523Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG35FB24546188688F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T16:58:39.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE6CF18DF4BCABF44
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM959"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM959  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM959 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "65/WA1NLM959.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM959 ;
+        adm:logEntry        bda:LG05C8B0DE88310B3D , bda:LG35FB24546188688F , bda:LGE6CF18DF4BCABF44 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM959  a        :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i bsnyen yig mdor bsdus sogs/"@bo-x-ewts ;
+        :catalogInfo        "Recitation manual of vajrabhairava-ekavira practice; critical commentary of reasoning; peaceful fire puja of Hayagriva Guhyasahana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ28 , bdr:T8 ;
+        :workHasInstance    bdr:MW1NLM959 , bdr:W1NLM959 ;
+        :workIsAbout        bdr:T1215 , bdr:T1235 , bdr:T154 , bdr:T50 .
+}

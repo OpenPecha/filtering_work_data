@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN486 {
+    bda:LG65C0CA9CFB19B153
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-29T19:47:43.912Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8FA7396B90EF374C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T17:42:26.667Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC901D8EE0AD361EF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T15:48:40.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN486  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN486 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7e/WA3CN486.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN486 ;
+        adm:logEntry        bda:LG65C0CA9CFB19B153 , bda:LG8FA7396B90EF374C , bda:LGC901D8EE0AD361EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN486  a         :Work ;
+        skos:prefLabel      "sa skya'i chos 'byung gces bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings by many Sakya masters on the Buddhism history."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW1TLMTGA000517 , bdr:MW3CN486 , bdr:W3CN486 ;
+        :workIsAbout        bdr:T617 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17110 {
+    bda:LG4C96DDCBE6C94C92
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-20T10:06:11.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG556AFA93A336F9A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-01T12:20:12.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added missing folio in the biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6069AC5A3996EA7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB43F0E8AC3DB7CDC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-20T10:04:20.456Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17110  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17110 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "25/WA8LS17110.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17110 ;
+        adm:logEntry        bda:LG4C96DDCBE6C94C92 , bda:LG556AFA93A336F9A5 , bda:LG6069AC5A3996EA7F , bda:LGB43F0E8AC3DB7CDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR64F8F9C5F7D6CB37
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1637 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17110  a       :Work ;
+        skos:altLabel       "bde bar gshegs pa'i mchod rten cha brgyad kyi thig rtsa'i gtam/"@bo-x-ewts ;
+        skos:prefLabel      "mchod rten cha brgyad kyi thig rtsa'i gtam/"@bo-x-ewts ;
+        :catalogInfo        "1 dkyil 'khor spyi'i thig tshon gyi bya ba rab gsal kun dga'/ 2 ma mgon rten mdos kyi zin bris/ 3 thig gi lag len/ 4 thig lag len du ma gsal bar bshad pa bzo rig mdes pa'i kha rgyan/"@bo-x-ewts , "A propotion of eight set of stupas by Rongtha Losang Damcho Gyatso and related texts on drawing and propotions."@en ;
+        :creator            bdr:CR64F8F9C5F7D6CB37 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17110 , bdr:W8LS17110 ;
+        :workIsAbout        bdr:T00AG0337 , bdr:T1311 , bdr:T80 .
+}

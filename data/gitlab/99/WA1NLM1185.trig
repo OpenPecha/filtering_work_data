@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1185 {
+    bda:LG7ACD1ECC6E19F8D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-09T14:50:37.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEB6F287CB5C78B9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1185"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1185  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1185 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "99/WA1NLM1185.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1185 ;
+        adm:logEntry        bda:LG7ACD1ECC6E19F8D7 , bda:LGEB6F287CB5C78B9D , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCAB5B1915A20525A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1591 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1185  a       :Work ;
+        skos:prefLabel      "bslab pa yongs su spyod pa'i gzhi gsum gyi cho ga la sogs pa so sor thar ba'i blang dor gyi gnas rnams mdor bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sna tshogs yum dkar mo'i sgo nas bkru byabs bsrung gsum gyi chos sdig sgrib dang rims nad me dpung gzhil ba'i bdud rtsi'i char chen/ 2 mdzod nas bshad pa'i 'jig rten gyi khams kyi rnam bzhag 3 'phags pa thugs rje chen po la bstod pa byi rlabs shin tu che ba/ 4 lha mi'i rnam 'dren dam pa 7gong sa rgyal ba'i dbang po thams cad mkhyen cing gzigs pa chen po mchog gi sprul pa'i sku rin po che'i brtan bzhugs gsol 'debs smon lam bden tshig gi mtshams sbyor dang bcas pa 'dod 'jo'i dpag bsam dbang po/ 5 bstan pa'i gtad rabs bdun gyi bstod pa/ 6 tshe dpag med kyi sgrub thabs/ 7 phyag chen rgyud pa'i gsol 'debs/ 8 shis brjod brka shis don grub/ 9 'phags pa kham chu nag po zhi bar byed pa zhes bya ba theg pa chen po'i mdo/ 10 gtor ma chags ma lag len/ 11 rje btsun dam pa 'jam dbyangs sprul pa'i sku la gsol 'debs kyi brtan bzhugs/ 12 rje btsun blo bzang ye shes kyi gsol 'debs brtan bzhugs/ 13 blo chen 'jam dpal ma/ 14 'phags pa sgo drug pa/ 15 'phags pa 'da' ka ye shes/ 16 bstan pa'i gtad rabs bdun gyi bstod pa/ 17 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa/ 18 pad+ma dbang chen dpal gsang khros pa lha dgu'i sbyin sreg ye shes snang ba rab 'bar gyi zur rgyan me 'od rab gsal/"@bo-x-ewts , "Ritual text for bestowing vows by Dulzin Dakpa Gyaltshen; other text also included."@en ;
+        :creator            bdr:CRCAB5B1915A20525A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1185 , bdr:W1NLM1185 ;
+        :workIsAbout        bdr:T1298 , bdr:T949 .
+}

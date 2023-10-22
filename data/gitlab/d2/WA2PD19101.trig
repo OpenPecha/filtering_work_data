@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD19101 {
+    bda:LG12E67B58B3A6966C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-17T21:45:25.803Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1A2AD6020909BCEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T13:46:39.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4872D75053751E4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-17T21:45:49.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC867ED3E5638BDFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-21T23:41:33.319Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE4F0BBA41AE37232
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGFA22EE14A004771D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T21:55:58.741Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFF460AD90D6AA68C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-17T21:46:45.385Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2PD19101  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD19101 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "d2/WA2PD19101.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD19101 ;
+        adm:logEntry        bda:LG12E67B58B3A6966C , bda:LG1A2AD6020909BCEA , bda:LGB4872D75053751E4 , bda:LGC867ED3E5638BDFA , bda:LGE4F0BBA41AE37232 , bda:LGFA22EE14A004771D , bda:LGFF460AD90D6AA68C , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA9CE10E09799E9F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10063 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW2PD19101  skos:altLabel  "世界文学名著简介"@zh-hant .
+
+    bdr:WA2PD19101  a       :Work ;
+        skos:altLabel       "shi jie wen xue ming zhu jian xue"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'dzam gling rtsom rig brtsams chos grags chen mtshams sbyor/"@bo-x-ewts , "世界文学名著简介"@zh-hant ;
+        :creator            bdr:CRA9CE10E09799E9F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2PD19101 , bdr:W2PD19101 ;
+        :workIsAbout        bdr:T1979 .
+}

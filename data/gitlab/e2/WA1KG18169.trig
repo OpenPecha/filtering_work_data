@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18169 {
+    bda:LG0C0F93447D8544CC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-22T15:46:07.272Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC49D0FF1D96C5B87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-22T15:46:35.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG18169  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18169 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e2/WA1KG18169.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18169 ;
+        adm:logEntry        bda:LG0C0F93447D8544CC , bda:LGC49D0FF1D96C5B87 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR401F525F2EB76A7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P230 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG18169  a       :Work ;
+        skos:altLabel       "dga' lha rgyas pa dang bsdus pa'i bshad pa blo dman las dang po ba la 'khyer bder spel ba byin rlabs kyi sgo 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "dga' lha rgyas pa dang bsdus pa'i bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "Explanation on Guru yoga of Tsongkhapa."@en ;
+        :creator            bdr:CR401F525F2EB76A7A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1KG18169 , bdr:W1KG18169 ;
+        :workIsAbout        bdr:T430 .
+}

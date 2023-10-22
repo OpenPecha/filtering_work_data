@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM367 {
+    bda:LG28ECF5091710A317
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-30T10:20:17.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG617A208C900613C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF297BFBE56A53200
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T14:20:58.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM367"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM367  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM367 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5f/WA1NLM367.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM367 ;
+        adm:logEntry        bda:LG28ECF5091710A317 , bda:LG617A208C900613C2 , bda:LGF297BFBE56A53200 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1379 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM367  a        :Work ;
+        skos:prefLabel      "dam can chos kyi rgyal po'i gtor chog bskang gso bstod bskul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Bali ritual, regular propitiation and exhortation of Damchen protector and other text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1458 ;
+        :workIsAbout        bdr:T1736 , bdr:T19 , bdr:T198 .
+}

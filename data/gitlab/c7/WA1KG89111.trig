@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG89111 {
+    bda:LG67404D4A300713C6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-25T10:18:03.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA584298C169C2C8E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-25T10:17:03.255Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBF576034CE4D9190
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA1KG89111  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG89111 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c7/WA1KG89111.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG89111 ;
+        adm:logEntry        bda:LG67404D4A300713C6 , bda:LGA584298C169C2C8E , bda:LGBF576034CE4D9190 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG89111  a       :Work ;
+        skos:prefLabel      "dzam dkar 'brug zhon lha lnga'i sgo nas nor sgrub bya tshul/"@bo-x-ewts ;
+        :catalogInfo        "A prosperity rituals focussed on five-deity white jambhala."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG89111 , bdr:MW3MS878_FD916E , bdr:W1KG89111 ;
+        :workIsAbout        bdr:T1378 , bdr:T22 , bdr:T748 .
+}

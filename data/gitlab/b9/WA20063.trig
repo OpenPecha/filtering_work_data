@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20063 {
+    bda:LG1A5075AC2E5D63D1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-02-04T16:36:08.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4D459F6D40F59769
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-05T15:05:04.416Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG8996F1B4983348BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-21T14:30:54.221Z"^^xsd:dateTime ;
+        adm:logMessage      "changed onhold to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB6FAD20B144CFF30
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB9E120F865BD16BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD929C29D22452153
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-21T15:59:22.892Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20063  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20063 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b9/WA20063.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20063 ;
+        adm:logEntry        bda:LG1A5075AC2E5D63D1 , bda:LG4D459F6D40F59769 , bda:LG8996F1B4983348BD , bda:LGB6FAD20B144CFF30 , bda:LGB9E120F865BD16BD , bda:LGD929C29D22452153 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW20063  skos:altLabel  "草原雏鹰"@zh-hans .
+
+    bdr:WA20063  a          :Work ;
+        skos:altLabel       "cao yuan chu ying"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtswa thang gi glag phrug"@bo-x-ewts , "草原雏鹰"@zh-hans ;
+        :catalogInfo        "Selection of stories translated into Tibetan."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T216 , bdr:T257 ;
+        :workHasInstance    bdr:MW20063 , bdr:W20063 .
+}

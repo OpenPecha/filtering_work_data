@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32738 {
+    bda:LG1C3FEDCF5EE5151C
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-01T09:14:17.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG25FBBEC06B1378EB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-01T09:14:44.028Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG47B2F2F74477F983
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T14:11:08.098Z"^^xsd:dateTime ;
+        adm:logMessage      "created title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8D97A4DC10833F3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS32738  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32738 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "53/WA8LS32738.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32738 ;
+        adm:logEntry        bda:LG1C3FEDCF5EE5151C , bda:LG25FBBEC06B1378EB , bda:LG47B2F2F74477F983 , bda:LG8D97A4DC10833F3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR258B1DA6F38080B7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1448 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR3BEBEB4548A9C6D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8392 ;
+        :role               bdr:R0ER0021 .
+
+    bdr:WA8LS32738  a       :Work ;
+        skos:prefLabel      "grub thob chen po u rgyan pa'i drung du mkhas pa chen po slob dpon gzhon nu dpal gyis zhus pa'i zhu lan gsung sgros dang rdo rje gsum gyi bsnyen sgrub skor/"@bo-x-ewts ;
+        :catalogInfo        "Drupchen Ugyenpa Rinchen Pe's reply to the querry of Zhonu Pel. Also included the three fold contemplative practices according to Ugyenpa's tradition."@en ;
+        :creator            bdr:CR258B1DA6F38080B7 , bdr:CR3BEBEB4548A9C6D7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS32738 , bdr:W8LS32738 ;
+        :workIsAbout        bdr:T1542 , bdr:T615 .
+}

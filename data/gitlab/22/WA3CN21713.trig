@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21713 {
+    bda:LG02A528BEC9663DA6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T20:57:45.184Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG08E6E3A894F9E892
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T19:52:38.973Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG23700E4C12CD340C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD9EA1CD59DF8FECD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T17:10:51.117Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21713  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21713 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "22/WA3CN21713.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21713 ;
+        adm:logEntry        bda:LG02A528BEC9663DA6 , bda:LG08E6E3A894F9E892 , bda:LG23700E4C12CD340C , bda:LGD9EA1CD59DF8FECD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBD65B50541492E46
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26274 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21713  skos:altLabel  "碎骨"@zh-hans .
+
+    bdr:WA3CN21713  a       :Work ;
+        skos:altLabel       "gtsang drag char gyi snyan deb/"@bo-x-ewts ;
+        skos:prefLabel      "rus chag"@bo-x-ewts , "碎骨"@zh-hans ;
+        :catalogInfo        "Bonesnap, a personal collection of modern poetics by Tsang Trakchar."@en ;
+        :creator            bdr:CRBD65B50541492E46 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21713 , bdr:W3CN21713 ;
+        :workIsAbout        bdr:T204 .
+}

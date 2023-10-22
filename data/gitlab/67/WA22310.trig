@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22310 {
+    bda:LG0C3971AC779BB579
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-01T10:37:12.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG2D387919094352D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-09T11:45:32.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88A18D3B14C1C0C6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE7462A4913AA331D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-09-09T11:46:21.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22310  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22310 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "67/WA22310.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22310 ;
+        adm:logEntry        bda:LG0C3971AC779BB579 , bda:LG2D387919094352D1 , bda:LG88A18D3B14C1C0C6 , bda:LGE7462A4913AA331D , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR42662D9195F4D05A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5788 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22310  a          :Work ;
+        skos:prefLabel      "sum rtags kyi sa bcad dang rtsa ba phyogs gcig tu spel ba 'od dkar snang ba/"@bo-x-ewts ;
+        :creator            bdr:CR42662D9195F4D05A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T89 ;
+        :workHasInstance    bdr:MW22310 , bdr:W22310 ;
+        :workIsAbout        bdr:T186 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32724 {
+    bda:LG3DFA66208B39042F
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-14T15:45:32.909Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, person, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG64DC4D5DCDC7676B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG681E01B3B2D2DD15
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-14T15:46:01.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG837976941100EA46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T11:20:50.891Z"^^xsd:dateTime ;
+        adm:logMessage      "created title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32724  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32724 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "47/WA8LS32724.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32724 ;
+        adm:logEntry        bda:LG3DFA66208B39042F , bda:LG64DC4D5DCDC7676B , bda:LG681E01B3B2D2DD15 , bda:LG837976941100EA46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32724  a       :Work ;
+        skos:prefLabel      "khyung po rnal 'byor/ rmog cog skyer sgang pa'i rnam thar dang shangs chos/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Khyungpo Neljor, Mokchog, Kergangpa. Sange Nyenton and teachings related to Shangpa Kagyur tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 , bdr:T3 ;
+        :workHasInstance    bdr:MW8LS32724 , bdr:W8LS32724 ;
+        :workIsAbout        bdr:P1783 , bdr:P1984 , bdr:P2248 , bdr:P39 , bdr:T383 .
+}

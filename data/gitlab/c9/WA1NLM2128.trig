@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2128 {
+    bda:LG7365452880412AB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA09B05B64B49B557
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-22T11:41:13.168Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic,content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2128"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2128  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2128 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/WA1NLM2128.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2128 ;
+        adm:logEntry        bda:LG7365452880412AB3 , bda:LGA09B05B64B49B557 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR937ED2774C4E9E53
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2128  a       :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi chos skor las rab gnas byed tshul byin rlabs kyi rol mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mkhan chen chos kyi rgyal po'i gsung 'bum las ma gcig kha 'bar ma'i gtor chog 'jigs med srog mkhar/ 2 dam can rdor legs kyi gshegs gtor/ 3 tshe dpag rta bla brgyud smon lam shis brjod dang bcas pa/ 4 tshe dpag med kyi cho ga 5 dmigs brtse ma'i las tshogs kyi nang nas char 'bebs kyi las tshogs nag 'gros su bkod pa/ 6 rje btsun sgrol ma la brten pa'i 'chi ba bslu ba'i gdams pa tshe srog skyob byed/ 7 dmigs brtse ma'i las tshogs kyi nang nas char 'bebs kyi las tshogs nag 'gros su bya ba/ 8 dpal rdo rje 'jigs byed dpa' bo gcig pa'i mngon rtogs bdud dpung rnam 'joms/ 9 'byung bzhi gtor ma gtong bar 'dod pa/ 10 zab chos zhi khro dgongs pa rang grol gyiH rdzogs rim bar do drug gi khrid yig spyi don lnga pa chos 'di bar do'i khrid mthong ba rang grol/ 11 'phags pa gtsug tor dkar mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal/ 12 gsang ba'i bdag po dpal phyag na rdo rje'i bskang bshags bstod bskul dang bcas pa/"@en , "A consecration process from the cycle of Hayahriva Guhyasadhana by Thukwen Chokyi Nyima; other text also included."@en ;
+        :creator            bdr:CR937ED2774C4E9E53 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW1NLM2128 , bdr:W1NLM2128 ;
+        :workIsAbout        bdr:T50 .
+}

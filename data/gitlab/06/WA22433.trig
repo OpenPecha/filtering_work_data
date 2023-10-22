@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22433 {
+    bda:LG094F6220AEFC12AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:03:17.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG210DD63D73EC77EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC4E93A22FB0C19FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-07T18:09:30.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added chos 'byung as genre"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGF86D4035602CA189
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22433  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22433 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "06/WA22433.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22433 ;
+        adm:logEntry        bda:LG094F6220AEFC12AD , bda:LG210DD63D73EC77EE , bda:LGC4E93A22FB0C19FF , bda:LGF86D4035602CA189 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ1852 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR4D32255DAA26EABD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22433  a          :Work ;
+        skos:altLabel       "'khor lo sdom pa'i chos kyi 'byung tshul legs par bshad pa bde mchog chos kun/"@bo-x-ewts , "bde mchog chos 'byun dan sgrub thabs rnam bsad/"@bo-x-ewts , "dpal sa skya pa'i yab chos kyi nying khu 'khor lo sdom pa'i dam pa'i chos byung /"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "History of the Chakrasamvara teachings of the Sakya order. Written by the scholar prince Jamgon Amyezhab Ngawang Kunga Sonam (1597-1659). Scanned through the support of the Infinity Foundation."@en ;
+        :creator            bdr:CR4D32255DAA26EABD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workIsAbout        bdr:T423 , bdr:T617 .
+}

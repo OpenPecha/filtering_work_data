@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22404 {
+    bda:LG53A41C0714DE0BE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-25T10:22:03.471Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG66058D7BD553A937
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-25T10:20:50.733Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGADC2528C9835B571
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T14:49:38.095Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS22404  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22404 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b2/WA8LS22404.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22404 ;
+        adm:logEntry        bda:LG53A41C0714DE0BE2 , bda:LG66058D7BD553A937 , bda:LGADC2528C9835B571 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA00FBBC9723DB40A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75327 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22404  a       :Work ;
+        skos:prefLabel      "index to the prasannapada madyamaka vrtti"@en ;
+        :catalogInfo        "Index to the Prasannapada Madyamaka vrtti, Part One Sanskrit and Tibetan by Susumu Yamaguchi."@en ;
+        :creator            bdr:CRA00FBBC9723DB40A ;
+        :isRoot             true ;
+        :language           bdr:LangEn ;
+        :workHasInstance    bdr:MW8LS22404 , bdr:W8LS22404 ;
+        :workIsAbout        bdr:T1KG3848 , bdr:T233 .
+}

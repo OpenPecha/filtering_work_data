@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210026 {
+    bda:LG1E23FC94D05FD249
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-11T19:13:15.677Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1F1E51CD5ED74E74
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-04T14:16:22.278Z"^^xsd:dateTime ;
+        adm:logMessage      "Work Number for CN"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG37123507C1C91DD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG6E66DCFA07BEBE71
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-21T11:29:06.598Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG81426F00C0996B45
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-13T15:40:52.194Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarily removed tbrc holdings note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG210026  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210026 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6c/WA2KG210026.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210026 ;
+        adm:logEntry        bda:LG1E23FC94D05FD249 , bda:LG1F1E51CD5ED74E74 , bda:LG37123507C1C91DD6 , bda:LG6E66DCFA07BEBE71 , bda:LG81426F00C0996B45 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR44DD521BA1395F44
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5277 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG210026  a      :Work ;
+        skos:prefLabel      "gsung thor bu/ rin chen chos rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Miscellany writing of Sakya master Chaglo Rinchen Chogyal (1447-?)."@en ;
+        :creator            bdr:CR44DD521BA1395F44 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW2KG210026 , bdr:W2KG210026 ;
+        :workIsAbout        bdr:T617 .
+}

@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3509 {
+    bda:LG522DEC9891427C6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T10:46:54.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3509"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3509  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3509 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7c/WA1NLM3509.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3509 ;
+        adm:logEntry        bda:LG522DEC9891427C6C , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3509  a       :Work ;
+        skos:prefLabel      "brgyud bzhi lhan thabs rnams kyis 'byung ba'i thang dang phye sman sbyor ba tshul gyis sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos skyong lcam sring gi bzlog bsgyur/ 2 shes snying gi 'chi bslu/ 3 chos skyong lcam sring gi tshogs mchod/ 4 dam can rdo rje legs pa'i gsol mchod bskang gso stobs ldan yid 'gul/ 5 dgra lha'i mched dgu bskang bshags/ 6 sgrol ma'i 'chi bslu/ 7 spyi gsol/ 8 mtshun gsol mdo/ 9 dpal rdo rje 'jigs byed kyi zhi rgyas sbyin sreg 10 'phags ma gtsug tor dkar mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal/"@bo-x-ewts , "Medicinal preparation both Thang and Phye on the basis of four medical tantra's supplement by unknown author; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1453 ;
+        :workHasInstance    bdr:MW1NLM3509 , bdr:W1NLM3509 ;
+        :workIsAbout        bdr:T241 , bdr:T2DB35092 , bdr:T85 , bdr:T86 .
+}

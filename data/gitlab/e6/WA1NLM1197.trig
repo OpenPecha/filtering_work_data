@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1197 {
+    bda:LG1FA280AF962D02E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T15:11:59.952Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG77DBD4AFE58BEFAF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1197"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1197  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1197 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/WA1NLM1197.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1197 ;
+        adm:logEntry        bda:LG1FA280AF962D02E0 , bda:LG77DBD4AFE58BEFAF , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XLD4BC5AEF3032 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR907A0654AB628AE9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1197  a       :Work ;
+        skos:prefLabel      "gzhung lugs du ma'i brjod bya sna tshogs ming gi sgo nas gsal bar bstan pa nyer mkho blo ldan dga' byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dbng chog 2 grub mtha'i rnam par bzhag pa 'phrul spong gdong lnga'i sgra dbyangs kun mkhyen lam bzang gsal ba'i rin chen sgron me/ 3 grub chen dril bu pa'i lugs kyi bde mchog lha lnga'i sgrub thabs nag 'gros su bkod pa/ 4 rje btsun 'jam pa'i dbyangs la bstod pa 'jam dbyangs mnyes par byed pa'i bstod sprin rgya mtsho/ 5 'phags pa gdugs dkar mchog grub/ 6 tshe gzungs/ 7 byang chub lam gyi rim pa'i nyams len mdor bsdus/ 8 bstod pa yon tan dkyil 'khor ma/ 9 thub dbang zhabs pad ma/ 10 gsang ba'i rnam thar/ 11 'phags pa sgo drug pa/ 12 gsang ba'i rnam thar/"@en , "Numerical categories of philosophical terminlogy by Cone Drakpa Shedrup; other text also included."@en ;
+        :creator            bdr:CR907A0654AB628AE9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1231 .
+}

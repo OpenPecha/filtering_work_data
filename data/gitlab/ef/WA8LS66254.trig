@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66254 {
+    bda:LG07A6B2EB011559C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-24T11:02:46.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG196B102508C8F3A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-24T11:01:09.374Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD64D01D026EF649F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T16:26:17.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66254  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66254 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ef/WA8LS66254.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66254 ;
+        adm:logEntry        bda:LG07A6B2EB011559C7 , bda:LG196B102508C8F3A6 , bda:LGD64D01D026EF649F , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBC9C747D17AF9B14
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75450 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRBDC6DCEEA87851BC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75451 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66254  a       :Work ;
+        skos:prefLabel      "hang rang dang glu/"@bo-x-ewts ;
+        :catalogInfo        "History of Hangrang valley of Kinnaur also ancient folk and spirtitual songs; compiled by Gopal Negi and Konchok Lodoe Negi."@en ;
+        :creator            bdr:CRBC9C747D17AF9B14 , bdr:CRBDC6DCEEA87851BC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T246 ;
+        :workHasInstance    bdr:MW8LS66254 , bdr:W8LS66254 ;
+        :workIsAbout        bdr:G4168 .
+}

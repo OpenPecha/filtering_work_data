@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE71 {
+    bda:LG43042C64AA7C61F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:52:08.601Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LG5152C38233447C97
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-14T12:25:16.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG810C99D05EA07610
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T15:17:39.799Z"^^xsd:dateTime ;
+        adm:logMessage      "first publish"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1EE71  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE71 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6b/WA1EE71.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE71 ;
+        adm:logEntry        bda:LG43042C64AA7C61F3 , bda:LG5152C38233447C97 , bda:LG810C99D05EA07610 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1A88580E7A5D81D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4797 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1EE71  a          :Work ;
+        skos:altLabel       "rje thams cad mkhyen pa tsong kha chen po'i rnam thar go sla bar brjod pa bde legs kun gyi 'byung gnas zhes bya ba/"@bo-x-ewts ;
+        skos:prefLabel      "rje tsong kha pa chen po'i rnam thar go sla bar brjod pa bde legs kun 'byung / （sog yig）"@bo-x-ewts , "qamug-yi ayiladugci bogda jovangkaba-yin cadig medekui kilbar-"@mn-alalc97 ;
+        :catalogInfo        "Biography of Tsongkhapa by Chahar Geshe Losang Tsultrim in the Mongolian language."@en ;
+        :creator            bdr:CR1A88580E7A5D81D6 ;
+        :isRoot             true ;
+        :language           bdr:LangMn ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1EE71 , bdr:W1EE71 ;
+        :workIsAbout        bdr:P64 , bdr:T819 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM294 {
+    bda:LG039A55BE2A38B948
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-29T15:24:43.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG59C47BDF5DDCC0B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-05T13:44:37.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG925B8AE095D27B98
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM294"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM294  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM294 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cf/WA1NLM294.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM294 ;
+        adm:logEntry        bda:LG039A55BE2A38B948 , bda:LG59C47BDF5DDCC0B8 , bda:LG925B8AE095D27B98 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B1C6C8FA4DD6F01
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM294  a        :Work ;
+        skos:prefLabel      "g.yu thog snying thig gi las byin brlabs bla ma bsgrubs pa'i chos skor sdug bsngal mun sel thugs rje'i nyi 'od ces pa'i thog mar lo rgyus nges shes 'dren byed dge ba'i lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of rituals and medical instructions from the gurusadhana teaching cycle of Yuthok Nyingthik."@en ;
+        :creator            bdr:CR5B1C6C8FA4DD6F01 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 , bdr:T1134 ;
+        :workHasInstance    bdr:MW1NLM294 , bdr:W1NLM294 ;
+        :workIsAbout        bdr:T1795 , bdr:T540 .
+}

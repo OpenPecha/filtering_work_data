@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1277 {
+    bda:LG4CABE0087E3F0E9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-03T09:37:37.663Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE19CD89F187957C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1277"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1277  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1277 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "03/WA1NLM1277.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1277 ;
+        adm:logEntry        bda:LG4CABE0087E3F0E9A , bda:LGE19CD89F187957C2 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR76C55D634BBED8D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3442 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1277  a       :Work ;
+        skos:altLabel       "chos kyi rnam grangs/"@bo-x-ewts , "phar phyin mtha' dpyod legs bshad dga' ston yid bzhin nor bu zhes bya ba'i gcig du bral thad kyi tshig don grub tshul blo gsal bgrod pa'i gru rdzing /"@bo-x-ewts , "sems dang sems byung gi tshul rnam par bshad pa'i sdom tshig"@bo-x-ewts ;
+        skos:prefLabel      "skyes bu gsum gyi lam gyi rim/_/gsal bar byed pa dpe yi chos/_/rin chen spungs pa man ngag mchog_pu to bskor ba'i khyad chos sogs/"@bo-x-ewts ;
+        :catalogInfo        "Writings of Potowa Rinchensal on explanations of the examples, Pechoe and other commentary on textual tradition of reasoning, logic."@en ;
+        :creator            bdr:CR76C55D634BBED8D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM1277 , bdr:W1NLM1277 ;
+        :workIsAbout        bdr:T1167 , bdr:T370 .
+}

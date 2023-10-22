@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2572 {
+    bda:LG0B5299CBFDBFCFAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG934F582C578D4386
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T11:25:20.211Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2572"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2572  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2572 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d1/WA1NLM2572.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2572 ;
+        adm:logEntry        bda:LG0B5299CBFDBFCFAA , bda:LG934F582C578D4386 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2572  a       :Work ;
+        skos:altLabel       "dpal ldan dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad bltas chog pa kha gsal bar bkod pa lcar chos rje gyis mdzad pa kun gsal me long /"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad bltas chog pa kha gsal bar bkod pa lcar chos rje gyis mdzad pa kun gsal me long sogs/"@bo-x-ewts ;
+        :catalogInfo        "A dice prognostication of wrathful Shrideviand explanation of its result by the 6th Cakra Choje Ngawang Trinley, written at his residence of Thupten Chokhor Ling monastery, Funeral rites by second Cangkya Ngawang Losang Choden and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM2572 , bdr:W1NLM2572 ;
+        :workIsAbout        bdr:T405 .
+}

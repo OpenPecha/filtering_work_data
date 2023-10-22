@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1086 {
+    bda:LG801AC33A73FF5A0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGBD5757FDED000392
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-10T14:59:40.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1086"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1086  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1086 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "56/WA1NLM1086.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1086 ;
+        adm:logEntry        bda:LG801AC33A73FF5A0F , bda:LGBD5757FDED000392 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA535200074E81C07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG208395 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1086  a       :Work ;
+        skos:prefLabel      "bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las sems bskyed kyi skor sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las sbyor lam gyi skor/ 2 bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las rigs kyi skor/"@bo-x-ewts , "A detailed commentary of Abhisamayalankara focussing on generating bodhichitta by Mongolian scholar Losang Jigme Tenpe Gyatshen."@en ;
+        :creator            bdr:CRA535200074E81C07 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM1086 , bdr:W1NLM1086 ;
+        :workIsAbout        bdr:T338 , bdr:WA19716 .
+}

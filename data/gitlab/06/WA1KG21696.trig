@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21696 {
+    bda:LG524BCEFD08B2CD37
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-15T14:48:24.359Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG60D635CA0AA87E32
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7410425E24814F74
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-15T14:47:56.427Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB10C0C85325DA909
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-16T11:28:30.148Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21696  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21696 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "06/WA1KG21696.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21696 ;
+        adm:logEntry        bda:LG524BCEFD08B2CD37 , bda:LG60D635CA0AA87E32 , bda:LG7410425E24814F74 , bda:LGB10C0C85325DA909 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR62B566CE82C77C34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10714 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21696  skos:altLabel  "藏医学消化功能治疗法"@zh-hans .
+
+    bdr:WA1KG21696  a       :Work ;
+        skos:altLabel       "zang yi xue xiao hua gong neng zhi liao fa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod ljongs gso rig gi pho ba'i me drod skor gyi rnam bshad/"@bo-x-ewts , "藏医学消化功能治疗法"@zh-hans ;
+        :catalogInfo        "Explanation on digestive fiery heat according to the Tibetan science of healing."@en ;
+        :creator            bdr:CR62B566CE82C77C34 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG21696 , bdr:W1KG21696 ;
+        :workIsAbout        bdr:T2142 , bdr:T85 .
+}

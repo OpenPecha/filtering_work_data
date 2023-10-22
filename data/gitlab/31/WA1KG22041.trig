@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22041 {
+    bda:LG4BC614B7E2F75FD3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-10T11:02:57.873Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4D6CAB3B45973FF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-10T11:02:34.249Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG843ADDEBB6D7ACF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T18:17:28.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE3D632C37B0C7FB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-12T11:55:12.734Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG22041  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22041 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "31/WA1KG22041.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22041 ;
+        adm:logEntry        bda:LG4BC614B7E2F75FD3 , bda:LG4D6CAB3B45973FF5 , bda:LG843ADDEBB6D7ACF6 , bda:LGE3D632C37B0C7FB0 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB4E65DF8A8D0E965
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22041  a       :Work ;
+        skos:altLabel       "bo d+hi sa twa dzA tak s+ya d+ham+ma gaN+Di/"@bo-x-ewts , "bud+d+ha ca ri tra/"@bo-x-ewts , "byang chub sems dpa'i skyes pa rabs kyi chos kyi gaN+Di/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub sems dpa'i skyes rabs kyi chos kyi gaN+Di/"@bo-x-ewts ;
+        :catalogInfo        "The life story of Buddha Shakya Muni written by Indian master Aryasura."@en ;
+        :creator            bdr:CRB4E65DF8A8D0E965 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG22041 , bdr:W1KG22041 ;
+        :workIsAbout        bdr:P7326 .
+}

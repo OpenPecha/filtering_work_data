@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20221 {
+    bda:LG23EEE9FFD763902D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-07T10:11:08.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5AF64A8B3CC2002E
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-06T10:25:36.318Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBFD4ADFC3C4F6BC0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA20221  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20221 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/WA20221.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20221 ;
+        adm:logEntry        bda:LG23EEE9FFD763902D , bda:LG5AF64A8B3CC2002E , bda:LGBFD4ADFC3C4F6BC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B03F751A710A4ED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6665 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA20221  a          :Work ;
+        skos:prefLabel      "rma 'gram gyi tshor snang /"@bo-x-ewts ;
+        :catalogInfo        "Collection of poems written by Besi Lobsang Gyatso."@en ;
+        :creator            bdr:CR5B03F751A710A4ED ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20221 , bdr:W20221 ;
+        :workIsAbout        bdr:T281 .
+}

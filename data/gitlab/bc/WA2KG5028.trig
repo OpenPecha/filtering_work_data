@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5028 {
+    bda:LG1C769A0906C2F1D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-03T10:11:30.43Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2DA0CB73BB5B7395
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-14T14:02:12.215Z"^^xsd:dateTime ;
+        adm:logMessage      "marked open access and restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA0764B4990C9C339
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-03T10:09:17.944Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF617A448468DC6DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T20:46:45.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1CIHTS00"@en ;
+        adm:logWhoStr       "add-works-to-PR1CIHTS00" .
+
+    bda:WA2KG5028  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5028 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bc/WA2KG5028.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5028 ;
+        adm:logEntry        bda:LG1C769A0906C2F1D2 , bda:LG2DA0CB73BB5B7395 , bda:LGA0764B4990C9C339 , bda:LGF617A448468DC6DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3EBBE26726318E8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017036 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG5028  a        :Work ;
+        skos:prefLabel      "zam gdong rin po che'i gsung rtsom dang gsung bshad phyogs bsdus/"@bo-x-ewts , "selected writing and speeches: a collection of selected writings and speeches on buddhism and tibetan culture by prof. samdong rinpoche"@en ;
+        :catalogInfo        "A collection of selected writings and speeches on Buddhism and Tibetan culture by Prof. Samdong Rinpoche Lobsang Tenzin."@en ;
+        :creator            bdr:CRA3EBBE26726318E8 ;
+        :isRoot             true ;
+        :language           bdr:LangEn , bdr:LangHi ;
+        :workGenre          bdr:T1081 , bdr:T258 ;
+        :workHasInstance    bdr:MW2KG5028 , bdr:W2KG5028 ;
+        :workIsAbout        bdr:G2KG5024 .
+}

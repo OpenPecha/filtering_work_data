@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3402 {
+    bda:LGABFF5B4CE2EC1ECE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-04T14:20:12.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD6FF0321CF2AE287
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-04T14:18:57.465Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDCEE1116522C51D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-09-14T11:05:40.83Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG3402  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3402 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "53/WA1KG3402.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3402 ;
+        adm:logEntry        bda:LGABFF5B4CE2EC1ECE , bda:LGD6FF0321CF2AE287 , bda:LGDCEE1116522C51D6 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC0EE3F12CD84BC7E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P305 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3402  a        :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed dpa' bo gcig pa'i rdzogs rim gyi rnam bzhag 'jam dpal dgyes pa'i mchod sprin/"@bo-x-ewts , "yi dam rdo rje 'jigs byed dpa' bo gcig pa'i rim pa dang po'i legs bshad gsang chen zab lam/"@bo-x-ewts ;
+        skos:prefLabel      "yi dam rdo rje 'jigs byed dpa' bo gcig pa'i bskyed rim dang rdzogs rim gnyis/"@bo-x-ewts ;
+        :catalogInfo        "Writings by Geluk master Lobzang Gyaltsen Sengge (1757-1849) on sadhana practice focusing on Vajrabhairava as a solitary hero."@en ;
+        :creator            bdr:CRC0EE3F12CD84BC7E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG3402 , bdr:W1KG3402 ;
+        :workIsAbout        bdr:T154 , bdr:T163 , bdr:T164 .
+}

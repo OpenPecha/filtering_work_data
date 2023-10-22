@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3958 {
+    bda:LGFECB5D49280D3E4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T13:25:00.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3958"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3958  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3958 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "71/WA1NLM3958.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3958 ;
+        adm:logEntry        bda:LGFECB5D49280D3E4D , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3958  a       :Work ;
+        skos:prefLabel      "gser gyis sdom pa legs rtogs shis mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos rje sa skya paN+Di tas mdzad pa'i gza' bcos/ 2 rgyal po chen po mig mi bzang gis mthar byed rta'i rgyal po la zhus pa'i nag po chen po rgyud le'u brgyad pa/ 3 bsangs mchod 'dod dgur 'khyil ba'i dga' ston/ 4 lam bgrod bsangs mchod/ 5 bu mo skyes brtag mdo/ 6 rlung rta gsol mchod yid kyi re bskong tsin+ta ma Ni bi ha ri smar/ 7 rlung rta ka ba'i rab gnas bya tshul sman pa lta bu du so byed/ 8 'jam dpal mtshan brjod 'don thabs/ 9 mtha' yas ma/ 10 go ra 'jon/ 11 'phags pa gtsug tor dkar po gdugs/ 12 bse rag 'gong po dkar po/ 13 ngar glud gtong tshul glo nad kun sel/ 14 lha chen hang ka'i rgyal po gser skyems 'dod dgu'i longs spyod/"@en , "An element devination by unsigned author."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3958 , bdr:W1NLM3958 ;
+        :workIsAbout        bdr:T1443 .
+}

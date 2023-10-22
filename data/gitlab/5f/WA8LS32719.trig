@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32719 {
+    bda:LG1755EC1CAFA471C4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-09T14:24:18.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9ED704ACD27BCAA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T10:31:29.538Z"^^xsd:dateTime ;
+        adm:logMessage      "created title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9F8E9EE30E19B056
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB053A3A9C5D301C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-20T10:40:05.497Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name of title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE936B371F17397ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-09T14:23:40.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32719  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32719 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5f/WA8LS32719.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32719 ;
+        adm:logEntry        bda:LG1755EC1CAFA471C4 , bda:LG9ED704ACD27BCAA6 , bda:LG9F8E9EE30E19B056 , bda:LGB053A3A9C5D301C0 , bda:LGE936B371F17397ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR16A39A9896F2E839
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3250 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CR22521EE32DF96062
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM10 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR5A065AC198B53891
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3816 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRC8A308A3CA1BFCC9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS32719  a       :Work ;
+        skos:prefLabel      "sgra la 'jug pa'i skor/"@bo-x-ewts ;
+        :catalogInfo        "A collection of sanskrit grammar."@en ;
+        :creator            bdr:CR16A39A9896F2E839 , bdr:CR22521EE32DF96062 , bdr:CR5A065AC198B53891 , bdr:CRC8A308A3CA1BFCC9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS32719 , bdr:W8LS32719 ;
+        :workIsAbout        bdr:T282 .
+}

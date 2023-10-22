@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18336 {
+    bda:LG0EAB69E6DEC16117
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG45D58E38CAD5BCCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-04T12:38:49.679Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4A449BFEF867FF9A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T12:53:34.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG614288176FFD1C42
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-02T16:59:20.61Z"^^xsd:dateTime ;
+        adm:logMessage      "chaged author P#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCC74F825B27ED394
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T12:52:10.218Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS18336  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18336 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "64/WA8LS18336.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18336 ;
+        adm:logEntry        bda:LG0EAB69E6DEC16117 , bda:LG45D58E38CAD5BCCD , bda:LG4A449BFEF867FF9A , bda:LG614288176FFD1C42 , bda:LGCC74F825B27ED394 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC43BEB178CA86877
+        a                   :AgentAsCreator ;
+        :agent              bdr:P199 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18336  a       :Work ;
+        skos:altLabel       "kha dron gnas brtan blo bzang bstan 'dzin gyi gsung 'bum/"@bo-x-ewts , "kha dron gnas brtan rje btsun blo bzang bstan 'dzin gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang bstan 'dzin/"@bo-x-ewts ;
+        :catalogInfo        "The collected works of the first Khyage Incarnate Lama Khadron Neten Lobsang Tenzin."@en ;
+        :creator            bdr:CRC43BEB178CA86877 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS18336 , bdr:W8LS18336 ;
+        :workIsAbout        bdr:T819 .
+}

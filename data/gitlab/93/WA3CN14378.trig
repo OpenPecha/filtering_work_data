@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14378 {
+    bda:LG05B97B1A1E91A707
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG8C309CD3DDEBB445
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-03T16:13:10.112Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG96E280B41793F8DA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-03T16:14:27.607Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN14378  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14378 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "93/WA3CN14378.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14378 ;
+        adm:logEntry        bda:LG05B97B1A1E91A707 , bda:LG8C309CD3DDEBB445 , bda:LG96E280B41793F8DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG22000 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRAC9A590D93F6D722
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4288 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN14378  a       :Work ;
+        skos:prefLabel      "mngon brjod kyi bstan bcos mkhas pa'i rna rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Treatise of synonums dealing with animate and inanimate phenomena."@en ;
+        :creator            bdr:CRAC9A590D93F6D722 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T372 .
+}

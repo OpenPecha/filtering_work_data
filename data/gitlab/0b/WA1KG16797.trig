@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16797 {
+    bda:LGA95A3A98D4E50AD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-03-18T11:32:04.328Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5F1428FD662F56B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGFA6D2305F211E330
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-18T11:35:00.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16797  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16797 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0b/WA1KG16797.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16797 ;
+        adm:logEntry        bda:LGA95A3A98D4E50AD5 , bda:LGE5F1428FD662F56B , bda:LGFA6D2305F211E330 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG16797  skos:altLabel  "门岭大战"@zh-hans .
+
+    bdr:WA1KG16797  a       :Work ;
+        skos:altLabel       "men ling da zhan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mon gling g.yul 'gyed/"@bo-x-ewts , "门岭大战"@zh-hans ;
+        :catalogInfo        "An episode of the Gesar epic. On the conquest of the Mon Kingdom."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG16797 , bdr:MW20092 , bdr:MW20102 , bdr:W1KG16797 , bdr:W20092 , bdr:W20102 ;
+        :workIsAbout        bdr:T248 .
+}

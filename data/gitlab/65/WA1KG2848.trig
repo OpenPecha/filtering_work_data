@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG2848 {
+    bda:LG3B7B717AD198123C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-07-28T13:23:16.959Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG945691CB09754BEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-28T12:23:14.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB9624BF2FFE0CAAC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-07-28T13:12:55.934Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG2848  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG2848 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "65/WA1KG2848.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG2848 ;
+        adm:logEntry        bda:LG3B7B717AD198123C , bda:LG945691CB09754BEE , bda:LGB9624BF2FFE0CAAC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B8870C44D8FB7AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5964 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG2848  a        :Work ;
+        skos:prefLabel      "grub thob gling chen ras pa'i rnam thar ngo mtshar che ba (nya)"@bo-x-ewts ;
+        :catalogInfo        "Biography of Drukpa Kagyu master Lingrepa Pema Dorje (1128-1188). Written by Dechen Dorje."@en ;
+        :creator            bdr:CR5B8870C44D8FB7AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG2848 , bdr:W1KG2848 ;
+        :workIsAbout        bdr:P910 , bdr:T816 .
+}

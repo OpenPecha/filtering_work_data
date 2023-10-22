@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN2585 {
+    bda:LG168FC07C58F13F26
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG2C187DAC827F9B84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-07T10:34:48.735Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5147668648202A2F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-07T13:27:04.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN2585  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN2585 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cb/WA3CN2585.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN2585 ;
+        adm:logEntry        bda:LG168FC07C58F13F26 , bda:LG2C187DAC827F9B84 , bda:LG5147668648202A2F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN2585  a        :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud kyi 'grel pa 'tshams su bab pa las dum bu gsum pa man ngag yon tan rgyud kyi rnam bshad bde ba'i 'dod 'jo/"@bo-x-ewts , "si tu chos 'byung gi sman mchog phyag len zin tho sogs kong sprul yon tan rgya mtsho'i sman gyi phyag dpe bris ma khag cig"@bo-x-ewts ;
+        skos:prefLabel      "man ngag yon tan rgyud kyi rnam bshad sogs/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the man ngag rgyud, one of the four fundamental treatises of Tibetan medicine etc. Written by various author and collected by Kongtrul Yonten Gyatso (1813-1899)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN2585 , bdr:W3CN2585 ;
+        :workIsAbout        bdr:T3JT13430 , bdr:T85 .
+}

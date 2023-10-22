@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1738 {
+    bda:LG95371EE86EBD7AD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF91545531DF12408
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T09:25:45.189Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1738"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1738  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1738 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dc/WA1NLM1738.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1738 ;
+        adm:logEntry        bda:LG95371EE86EBD7AD1 , bda:LGF91545531DF12408 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM135 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1738  a       :Work ;
+        skos:prefLabel      "mnol bsangs gsar byas legs bshad snying po sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dgra bgegs dag lha gsum gyi mnol bsang / 2 bcom ldan 'das ma shes rab kyi pha rol tu phyin pa'i snying po/ 3 bde brgyad gser skyems/ 4 rgyal kun tshe dang ye shes snying po'i khams/ 5 rgyal po sku lnga'i gser skyems 'bul ba/ 6 shes rab kyi pha rol tu phyin pa stong phrag brgya pa'i snying po/ 6 rje btsun grol ma phyag 'tshal nyi shu rtsa gcig ma/ 7 tshe sgrub rgyun 'khyer mdor bsdus tshe srog brtan byed rdo rje'i go cha/ 8 ma gcig grub pa'i rgyal mo'i zhal nas/ 9 gtsug tor rnam par rgyal ma la brten pa'i bla ma'i rnal 'byor/ 10 sgrol dkar yid bzhin 'khor lo'i tshe sgrub rgyun 'khyer/ 11 sgrol dkar yid bzhin 'khor lo'i sgrub thas yid bzhin dbang gi 'phreng mdzes 'chi med bdud rtsi'i bum bzang / 12 'od dpag med kyi bla ma'i rnal 'byor/ 13 sa yi lha mo'i bsangs mchod 'bul/ shing lha mo'i bsangs tshe thar/ 14 dge tshul phyir bcos gso sbyong / 15 rje btsun sgrol ma dkar mo'i maN+Dal bzhi ba'i cho ga 'chi med dpal ster/ 16 sA tsa+tsha 'debs pa'i gsal byed legs tshogs lhun grub ma/ 17 byams pa'i sku gzugs dus gsum sangs rgyas gsum/ 18 dkon mchog gsum la skyabs su 'gro tshul ma/ 19 skyid shod sprul sku dbang bstan 'dzin 'phrin las kyi skyes rabs gsol 'debs skal bzang mgul rgyan me tog 'phreng ba/"@en , "Incense buring offering ritual to avert diseases; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1PD92832 .
+}

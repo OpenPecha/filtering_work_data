@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22197 {
+    bda:LG388FC115ECDE8E74
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-21T09:32:33.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA86A10FCC37125A9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-21T09:33:57.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAD3759B70612AD41
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22197  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22197 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e1/WA22197.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22197 ;
+        adm:logEntry        bda:LG388FC115ECDE8E74 , bda:LGA86A10FCC37125A9 , bda:LGAD3759B70612AD41 , bda:LGIM4599A38FCE , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0AC38613B2A59227
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22197  skos:altLabel  "collected works (gsun 'bum) of smin-glin lo-chen dharma-sri"@en-x-mixed .
+
+    bdr:WA22197  a          :Work ;
+        skos:altLabel       "Collected works (gsuṅ ʾbum) of Smin-gliṅ Lo-chen Dharma-śrī."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_d+harma shrI/"@bo-x-ewts , "collected works (gsun 'bum) of smin-glin lo-chen dharma-sri"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Nyingma master Minling Lochen Dharmashri (1654-1718)."@en ;
+        :creator            bdr:CR0AC38613B2A59227 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW22197 , bdr:MW9140 , bdr:W22197 , bdr:W9140 ;
+        :workIsAbout        bdr:T1082 .
+}

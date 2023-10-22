@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM650 {
+    bda:LG5AE1F0B292AB407D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-19T16:00:13.544Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA99519DC7A29FEDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM650"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM650  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM650 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d5/WA1NLM650.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM650 ;
+        adm:logEntry        bda:LG5AE1F0B292AB407D , bda:LGA99519DC7A29FEDF , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0620F932C65D0DED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM650  a        :Work ;
+        skos:altLabel       "rdo rje theg pa'i lam gyi yan lag mi 'bral ba dang bsten par bya ba'i dam tshig gi rdzas med du mi rung ba dag gi mtshan nyid dang / ji ltar bcang ba'i tshul la sogs pa rnam par bshad pa rnal 'byor rol ba'i dga' ston/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje theg pa'i lam gyi yan lag gi rnam par bshad pa rnal 'byor rol ba'i dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary on some of the difficult points in understanding the tantra by Khedrup Gelek Pelzang."@en ;
+        :creator            bdr:CR0620F932C65D0DED ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM650 , bdr:W1NLM650 ;
+        :workIsAbout        bdr:T1444 , bdr:T866 .
+}

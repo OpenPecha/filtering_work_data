@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN412 {
+    bda:LG00C06311F333D5AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG4EF7FC795695BA98
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-07T08:58:07.448Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG562EEC6013595AE0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-07T11:56:08.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN412  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN412 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7c/WA3CN412.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN412 ;
+        adm:logEntry        bda:LG00C06311F333D5AB , bda:LG4EF7FC795695BA98 , bda:LG562EEC6013595AE0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFD13B000B35C7159
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1382 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN412  a         :Work ;
+        skos:altLabel       "byang chub sems dpa' chos kyi dbang phyug gi rtogs pa brjod pa zhing kun tu rang nyid 'ong ba gdul bar bya ba kun gyi 'dod pa 'jo ba'i ba mo/"@bo-x-ewts ;
+        skos:prefLabel      "zhwa dmar drug pa chos kyi dbang phyug gi rtogs pa brjod pa/"@bo-x-ewts ;
+        :catalogInfo        "Avadana of 6th Shamarpa Chokyi Wangchuk (1584-1630), very rare woodblock print from the Kingdom of Jang Satam."@en ;
+        :creator            bdr:CRFD13B000B35C7159 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 ;
+        :workHasInstance    bdr:MW3CN412 , bdr:W3CN412 ;
+        :workIsAbout        bdr:P1432 .
+}

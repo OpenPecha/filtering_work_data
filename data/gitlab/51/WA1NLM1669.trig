@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1669 {
+    bda:LG392A22340A3EF8E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-31T16:48:53.432Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7F34F8434C21F7BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGC0A15B30A2F18C36
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:09:55.85Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1669"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1669  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1669 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "51/WA1NLM1669.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1669 ;
+        adm:logEntry        bda:LG392A22340A3EF8E2 , bda:LG7F34F8434C21F7BC , bda:LGC0A15B30A2F18C36 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1485 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1669  a       :Work ;
+        skos:altLabel       "'phags pa bkra shis brtsegs pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "bla ma'i rnal 'byor dga' ldan lha brgya ma/"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa/"@bo-x-ewts ;
+        :catalogInfo        "The Vajracchedika or Diamond Cutter Sutra; the hundred deities of Tushita Gadhan Lhagyama and the Aryamangalakuta sutra Heap of Goodness."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workIsAbout        bdr:T4 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73634 {
+    bda:LGB499542F7B66F6F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T09:14:20.885Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBA4D9A2042D6BD62
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-28T09:14:55.991Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFFFB09F6377F7B96
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-28T09:15:20.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73634  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73634 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b3/WA8LS73634.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73634 ;
+        adm:logEntry        bda:LGB499542F7B66F6F7 , bda:LGBA4D9A2042D6BD62 , bda:LGFFFB09F6377F7B96 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS73634  a       :Work ;
+        skos:prefLabel      "rnying ma pa'i cho ga sna tshogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of ritual text of Nyingma tradition of Tibetan Buddhism."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW8LS73634 , bdr:W8LS73634 ;
+        :workIsAbout        bdr:T1082 .
+}

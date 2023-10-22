@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31146 {
+    bda:LG571BF562F137C0DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T08:25:03.246Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG95A87C7856F43847
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-17T15:12:47.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD6D8DED8C9DC82B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-17T15:11:33.124Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31146  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31146 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "27/WA8LS31146.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31146 ;
+        adm:logEntry        bda:LG571BF562F137C0DE , bda:LG95A87C7856F43847 , bda:LGD6D8DED8C9DC82B9 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4177C0315CF5DF87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10716 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS31146  a       :Work ;
+        skos:altLabel       "dmyal ba mi yul gyi sa mtshams shi gson gnyis kyi bang chen bka'i 'phrin pa bya bral kun dga' rang grol gyi dmyal khams gnas su byon nas 'khor 'das kyi chos rgyal rin po che'i dkar nag dbye ba'i 'bras bu'i rnam thar mdo tsam/"@bo-x-ewts ;
+        skos:prefLabel      "bya bral kun dga' rang grol gyi dmyal khams gnas su byon nas 'khor 'das kyi chos rgyal rin po che'i dkar nag dbye ba'i 'bras bu'i rnam thar mdo tsam/"@bo-x-ewts ;
+        :catalogInfo        "Return from death experiences of yogic master Kunga Rangdrol."@en ;
+        :creator            bdr:CR4177C0315CF5DF87 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS31146 , bdr:W8LS31146 ;
+        :workIsAbout        bdr:P10716 , bdr:T1082 , bdr:T1203 .
+}

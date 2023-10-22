@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10003 {
+    bda:LG2AAB98C1033E49DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-26T14:12:38.749Z"^^xsd:dateTime ;
+        adm:logMessage      "changed author"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG80F4B136EFF65809
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGADA0642CFDA848E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-06-17T10:23:41.512Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB4DF909742718F09
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-06-17T10:30:58.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB8544A13E1D40853
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T14:33:28.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10003  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10003 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f0/WA1KG10003.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10003 ;
+        adm:logEntry        bda:LG2AAB98C1033E49DB , bda:LG80F4B136EFF65809 , bda:LGADA0642CFDA848E9 , bda:LGB4DF909742718F09 , bda:LGB8544A13E1D40853 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR320D12261FDB37E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1361 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR5F497DA36CD59FA2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P416 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW1KG10003  skos:altLabel  "two bka'-brgyud-pa works on buddhist disciplines"@en-x-mixed .
+
+    bdr:WA1KG10003  a       :Work ;
+        skos:altLabel       "nyams su len bya 'jug pa tshul khrims kyi gzhi gsum gsal bar byed pa gur kum gyi chun po/"@bo-x-ewts , "rje rat+na karma bha dras mdzad pa'i me bsur gyi cho ga mdor bsdus/"@bo-x-ewts , "sdom gsum rnam par bstan pa nyer mkho'i bum bzang zhes bya ba/ rang 'dra'i rgyud la 'tshams par 'brel pa'i bstan bcos/"@bo-x-ewts , "Two Bkaʾ-brgyud-pa works on Buddhist disciplines from the library of the Ven. Rtogs-ldan Rin-po-che of Sgan-snon."@en-x-mixed ;
+        skos:prefLabel      "gzhi gsum gsal byed gur kum chun po dang / sdom gsum nyer mkho'i bum bzang bcas/"@bo-x-ewts , "two bka'-brgyud-pa works on buddhist disciplines"@en-x-mixed ;
+        :catalogInfo        "Exegesis on the three basic disciplinary codes practiced by Buddhist monks and nuns. Includes instruction for burnt offerings."@en ;
+        :creator            bdr:CR320D12261FDB37E0 , bdr:CR5F497DA36CD59FA2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG10003 , bdr:W1KG10003 ;
+        :workIsAbout        bdr:T1743 , bdr:T55 , bdr:T949 .
+}

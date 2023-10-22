@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23468 {
+    bda:LG05D8E5A6D213CE28
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-03-12T14:02:16.306Z"^^xsd:dateTime ;
+        adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG1D382F06EE3B5222
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB4B60F87FF6EAD3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T09:25:37.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE4405D027AF45C42
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23468  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23468 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "18/WA23468.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23468 ;
+        adm:logEntry        bda:LG05D8E5A6D213CE28 , bda:LG1D382F06EE3B5222 , bda:LGB4B60F87FF6EAD3D , bda:LGE4405D027AF45C42 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3CN21303 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRFACC4F8256E5C26F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23468  skos:altLabel  "the expanded redaction of the complete works of 'ju mi-pham series"@en-x-mixed .
+
+    bdr:WA23468  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_mi pham rgya mtsho/"@bo-x-ewts , "the expanded redaction of the complete works of 'ju mi-pham series"@en-x-mixed ;
+        :catalogInfo        "Collected Works by renowned Nyingma polymath Jamgon Ju Mipam Gyatso (1846-1912)."@bo-x-ewts ;
+        :creator            bdr:CRFACC4F8256E5C26F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1082 .
+}

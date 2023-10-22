@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2965 {
+    bda:LG121A966CE8894DE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG2C6502D0D64B65D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T09:27:38.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2965"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2965  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2965 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0a/WA1NLM2965.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2965 ;
+        adm:logEntry        bda:LG121A966CE8894DE6 , bda:LG2C6502D0D64B65D6 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2965  a       :Work ;
+        skos:prefLabel      "bzlog pa'i cho ga mi mthun phyogs las rgyal pa'i ru mtshon sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sangs rgyas bcu'i dam tshig 2 chos skyong bsrung ma'i gtor 'bul/ 3 skar ma nyer bdun/ 4 sgrol dkar dang tshe dpag med gnyis kyi tshe sgrub/ 5 kun gzigs paN chen thams cad mkhyen pa nas gnang ba'i sham+b+ha la'i smon tshig 6 rkun ma'i mgo bskor la/ 7 lcam sring gi sgo nas skyobs byed lha dang bral tshul/ 8 zab gsang mkha' 'gro snying / btags grol rgyud drug pa 'ds rjes gsum pa dang bcas pa/ 9 dkar chag 10 mgon po gshegs gtor/ 11 bla ma'i bka' drin gsol 'debs/ 12 bcom ldan 'das dpal rdo rje 'jigs byed chen po dpa' bo gcig pa'i dbang dang de'i sta gon bcas pa'i brgyud pa/ 13 dpal rta mgrin gyi rta'i gzungs/ 14 sme ba dgu ba'i bcos thabs/ 15 rta mgrin gsang sgrub kyi bgegs gtor ma/ 16 rgyal ba tshe dpag med sogs lhag pa'i lha rnams kyi bla ma'i rnal 'byor gyi skor/ 17 'phags pa sgrol dkar la brten pa'i bla ma'i rnal 'byor dngos grub dga' ston/ 18 gtor ma brgya rtsa shin tu bsdus pa/ 19 dur bcos/ 20 rta phyugs g.yang khugs/ 21 me lha mchod cing g.yang 'bod pa'i tshul/ 22 dpal gcig 'jig byed 23 dbang gi sbyin sreg 24 chos rgyal phyi sgrub la brten pa'i lcags mkhar gyi 'khrid lung nos pa'i brgyud pa/ 25 bsang chog bkra shis char 'bebs dang lam bsang / yang gsang gi bsang sogs dang / hang ka'i gsol kha de'i gser skyems/ g.yang 'gugs bkra shis/ 26 shan pa dmar po'i gsang rten bca' thabs/ 27 rigs drug gnas sbyangs dmigs rim dang ngag 'don bcas pa/ 28 tshe thar ngo mtshar brgyan gyi phreng ba/"@en , "Repelling riutal by author signed as Ratna; included also other text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2965 , bdr:W1NLM2965 ;
+        :workIsAbout        bdr:T1AT269 .
+}

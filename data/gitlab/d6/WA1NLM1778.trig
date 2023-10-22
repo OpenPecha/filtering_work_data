@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1778 {
+    bda:LG7F39315BC9D11BA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGCD1DF82BD4A6AD3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-04T09:19:37.512Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1778"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1778  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1778 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/WA1NLM1778.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1778 ;
+        adm:logEntry        bda:LG7F39315BC9D11BA8 , bda:LGCD1DF82BD4A6AD3C , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1778  a       :Work ;
+        skos:prefLabel      "'phags pa bkra shis brtsegs pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sman bla bde gshegs brgyad kyi sgo nas smyung gnas bya tshul snyigs ma'i tsha gdung sel ba'i zla zer/ 2 rta mgrin gsang sgrub kyi sgrub thabs/ 3 chos skyong yid bzhin nor bu rnams lnga'i mngon rtogs bskang bshags gtor 'bul bstod pa bcas pa/ 4 hang ka'i gsol mchod bya ba/ 5 chos skyong spyi'i gtor chog la nyer mkho man ngag 6 rlung rta'i rab gnas bsgrub par 'dod pa/ 7 dmigs brtse ma'i las tshogs kyi nang nas kha zas 'ong bar byed pa'i man ngag 8 gtor ma brgya rtsa mdor bsdus bya bar 'dod pa/"@bo-x-ewts , "Arya Mangala Kuta Mahayana sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1778 , bdr:W1NLM1778 .
+}

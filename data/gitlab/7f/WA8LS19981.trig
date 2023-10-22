@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19981 {
+    bda:LG22609925140CD363
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:25:18.695Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG60C79BAB42AB7363
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-28T09:08:55.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio title, author, cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19981  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19981 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA8LS19981.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19981 ;
+        adm:logEntry        bda:LG22609925140CD363 , bda:LG60C79BAB42AB7363 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD52C7B1D6FEA1EFF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6163 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19981  a       :Work ;
+        skos:altLabel       "snga 'gyur bsgyur ba'i byung tshul dang 'brel ba'i pad+ma ka ra'i rtogs brjod lha yi rnga sgra/"@bo-x-ewts ;
+        skos:prefLabel      "snga 'gyur bsgyur ba'i byung tshul dang 'brel ba/"@bo-x-ewts ;
+        :catalogInfo        "History of translation during the early transmission of Tibetan buddhism by Gyurme Tenzin."@en ;
+        :creator            bdr:CRD52C7B1D6FEA1EFF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T1157 ;
+        :workHasInstance    bdr:MW8LS19981 , bdr:W8LS19981 ;
+        :workIsAbout        bdr:T00AG02710 .
+}

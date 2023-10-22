@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14788 {
+    bda:LGA2BCE6754EFFBD22
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T12:49:13.997Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed broken scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA430DC9E05DD082D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-02T15:26:53.959Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14788  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14788 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "96/WA1KG14788.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14788 ;
+        adm:logEntry        bda:LGA2BCE6754EFFBD22 , bda:LGA430DC9E05DD082D , bda:LGIM569A8014B1 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR77FE693DEBF9A16E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG14789 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD0B8813EA972B3D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG09756 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14788  skos:altLabel  "the kingdoms of gu.ge pu.hrang: according to mnga' ris rgyal rabs by gu.ge mkhan.chen ngag.dbang grags.pa"@en .
+
+    bdr:WA1KG14788  a       :Work ;
+        skos:altLabel       "The kingdoms of Gu-ge Pu-hrang :according to Mgnaʾ-ris rgyal rabs by Gu-ge Mkhan-chen Ngag-dbang-grags pa /Roberto Vitali."@en-x-mixed ;
+        skos:prefLabel      "gu ge mkhan chen ngag dbang grags pas mdzad pa'i mnga' ris rgyal rabs/"@bo-x-ewts , "the kingdoms of gu.ge pu.hrang: according to mnga' ris rgyal rabs by gu.ge mkhan.chen ngag.dbang grags.pa"@en ;
+        :catalogInfo        "History of Western Tibet (mnga' ris)"@en ;
+        :creator            bdr:CR77FE693DEBF9A16E , bdr:CRD0B8813EA972B3D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
+        :workHasInstance    bdr:MW1KG14788 , bdr:W1KG14788 ;
+        :workIsAbout        bdr:G571 , bdr:G731 .
+}

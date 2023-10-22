@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3506 {
+    bda:LGFB75F7EB652791B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-18T10:37:28.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3506"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3506  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3506 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7c/WA1NLM3506.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3506 ;
+        adm:logEntry        bda:LGFB75F7EB652791B4 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE8703909632E90BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P258 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3506  a       :Work ;
+        skos:prefLabel      "rdo rje sems dpa' la brten pa'i bla ma mchod pa'i cho ga gzhan phan gyi phrin las dang bcas pa bde chen lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje sems dpa' la brten pa'i bla ma mchod pa'i cho ga dang 'brel ba'i khyad par gyi phrin las bde chen snying po/ 2 rdo rje sems dpa' la brten pa'i bla ma'i rnal 'byor gyi brgyud 'debs bde chen char 'bebs/ 3 rtsa gsum chos srung skong bshags dang / gtor bsngos bcas nye bar bsdus ba dngos gurb mchod sbyin/ 4 dus mthar gdab pa'i smon lam/ 5 klong chen snying thig las rig 'dzin thugs sgrub dpal chen 'dus pa/ 6 long chen snying thig lasH yum g mtsho rgyal bde chen rgyal mo'i rtsa ba'i sgrub pa chen dpal phreng / 7 long chen snying thig lasH skong bshags rdo rje'i thol glu/ 8 gnod sbyin tsi'u dmar ba'i gsol kha rgyas pa mnga' ris paN chen rin po che'i gter byon rtsa ba'i don rgya cher brkal ba dbang drag dus kyi pho nya/ 9 long chen snying thig lasH gsang sgrub thugs che chen po sdug bsngal rang grol/ 10 tshe sgrub rdo rje'i bum bzang lasH lo rgyus lung bstan lde mig"@en , "Guruyoga ritual offering of Vajrasattva; other text also included."@en ;
+        :creator            bdr:CRE8703909632E90BA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3506 , bdr:W1NLM3506 ;
+        :workIsAbout        bdr:T138 , bdr:T452 .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3163 {
+    bda:LG4AB0135FD5EEFC4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGA650BBB3109A04AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-08T18:41:41.357Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3163"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3163  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3163 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ff/WA1NLM3163.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3163 ;
+        adm:logEntry        bda:LG4AB0135FD5EEFC4E , bda:LGA650BBB3109A04AF , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR111FC17A85C55B87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR53EEFAA350D0B58E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA1FAF609B6E9E7DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3163  a       :Work ;
+        skos:prefLabel      "mkhas grub thams cad mkhyen pa dge legs dpal bzang po'i rnam thar rje btsun chos kyi rgyal mtshan gyis bsgrigs pa dad pa'i rol mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Khedup Gelek Palzang; Philosophical views of Buddhism; notes of the Tsongkhapa's teachings on the madhyamakalankara of santaraksita; and included other texts."@en ;
+        :creator            bdr:CR111FC17A85C55B87 , bdr:CR53EEFAA350D0B58E , bdr:CRA1FAF609B6E9E7DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 , bdr:T1CZ56 , bdr:T3 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM3163 , bdr:W1NLM3163 ;
+        :workIsAbout        bdr:P55 , bdr:WA21920 .
+}

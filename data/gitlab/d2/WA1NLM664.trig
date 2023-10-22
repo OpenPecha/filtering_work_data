@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM664 {
+    bda:LG9C1EF2CB493FFACC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB5715BA2217CBC78
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-17T12:41:30.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM664"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM664  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM664 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d2/WA1NLM664.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM664 ;
+        adm:logEntry        bda:LG9C1EF2CB493FFACC , bda:LGB5715BA2217CBC78 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR15DFB2C5242D3DFE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM664  a        :Work ;
+        skos:altLabel       "gu ru pad+mas mdzad pa rgya nag nas 'byung ba'i 'phur lto zhe drug pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rgya nag nas 'byung ba'i 'phur lto zhe drug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ransom ritual by Padmasambhava and other texts."@en ;
+        :creator            bdr:CR15DFB2C5242D3DFE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM664 , bdr:W1NLM664 ;
+        :workIsAbout        bdr:T00JR762 , bdr:T2415 .
+}

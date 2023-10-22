@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2983 {
+    bda:LGA02B0D0E7DFC3A10
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-14T11:06:45.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCA106E671BFE56C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2983"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2983  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2983 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "17/WA1NLM2983.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2983 ;
+        adm:logEntry        bda:LGA02B0D0E7DFC3A10 , bda:LGCA106E671BFE56C4 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCAA0F28D5DDB2C5E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA1NLM2983  a       :Work ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa stong phrag brgya pa'i don ma nor bar bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "'bum gyi bsdus don snying po lo rgyus sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sku rim rnam gsum bsdus pa/ 2 dpal ldan lha mo gser skyems 'dod pas/ 3 rta mgrin gsang sgrub pa'i chos skor sgo nas mnol bsang / 4 pha ma'i drin gzo tshul/ 5 byad grol gser gyi lde mig 6 sri can sbubs bshig gi man ngag 7 chos skyong nang mchod 'bul ba/ 8 dpal ldan lha mo'i tshogs mchod/ 9 nub phyogs bde ba can gyi bsam pa lhun 'grub gsol 'debs lhun grub grags pa/ 10 dzam+b+ha la dkar po'i chu sbyin/ 11 gtor ma brgya rtsa mdor bsdus/ 12 gtor zor 'phen pa'i dmigs rnam bzhag 13 mdigs rim 'ga' zhig 14 legs ldan nag po 'khor bcas dgongs gsol/ 15 mgon po'i tshogs mchod/"@en , "A summary of eight thousand stanza Prajnaparamita; other text also included."@en ;
+        :creator            bdr:CRCAA0F28D5DDB2C5E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T2398 ;
+        :workHasInstance    bdr:MW1NLM2983 , bdr:W1NLM2983 ;
+        :workIsAbout        bdr:T2005 .
+}

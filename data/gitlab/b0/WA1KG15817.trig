@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15817 {
+    bda:LG08E168BF9480906D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-30T14:32:31.937Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDD88C8F7B4270D87
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T12:22:25.504Z"^^xsd:dateTime ;
+        adm:logMessage      "normalised series number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEA150359F50023D3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-30T14:33:21.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15817  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15817 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b0/WA1KG15817.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15817 ;
+        adm:logEntry        bda:LG08E168BF9480906D , bda:LGDD88C8F7B4270D87 , bda:LGEA150359F50023D3 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA16515 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRB4EAA5FB67E06B82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4592 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG15817  a       :Work ;
+        skos:altLabel       "ke'u tshang 'jam dbyangs smon las gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_blo bzang 'jam dbyangs smon lam/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by 18th century Geluk master Lobzang Jamyang Monlam."@en ;
+        :creator            bdr:CRB4EAA5FB67E06B82 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG15817 ;
+        :workIsAbout        bdr:T819 .
+}

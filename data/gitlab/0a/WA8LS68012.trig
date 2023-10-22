@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68012 {
+    bda:LG3FAE2D98C4AB7C33
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-11T09:32:00.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG83303DA5D5AE8CC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGDB32A1B25BF33562
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGF449178E8290F6E6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-11T09:30:29.192Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS68012  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68012 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0a/WA8LS68012.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68012 ;
+        adm:logEntry        bda:LG3FAE2D98C4AB7C33 , bda:LG83303DA5D5AE8CC2 , bda:LGDB32A1B25BF33562 , bda:LGF449178E8290F6E6 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD57A911D2DAF456B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVCF0823DD930B5640
+        a                   :CompletedEvent ;
+        :onYear             "1645"^^xsd:gYear .
+
+    bdr:WA8LS68012  a       :Work ;
+        skos:prefLabel      "lha ldan sprul pa'i gtsug lag khang gi dkar chag shel dkar me long /"@bo-x-ewts ;
+        :catalogInfo        "History of Lhasa Jokahng temple and description of blessed objects enshrined there by 5th Dalai Lama Ngawang Losang Gyatso."@en ;
+        :creator            bdr:CRD57A911D2DAF456B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVCF0823DD930B5640 ;
+        :workGenre          bdr:T1134 , bdr:T13 ;
+        :workHasInstance    bdr:MW1KG5961 , bdr:MW8LS68012 , bdr:W1KG5961 , bdr:W8LS68012 ;
+        :workIsAbout        bdr:G4261 .
+}

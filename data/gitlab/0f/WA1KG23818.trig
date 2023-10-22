@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23818 {
+    bda:LG754D8A914A7CC088
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-15T15:43:12.611Z"^^xsd:dateTime ;
+        adm:logMessage      "provisional"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFAB26A0CDCFE1323
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-07T15:37:29.026Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23818  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23818 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0f/WA1KG23818.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23818 ;
+        adm:logEntry        bda:LG754D8A914A7CC088 , bda:LGFAB26A0CDCFE1323 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:CR96324A253ED1B119
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG23835 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23818  a       :Work ;
+        skos:prefLabel      "gangs ljongs kun gsal me long /"@bo-x-ewts ;
+        :catalogInfo        "Articles on history of Tibet and social customs."@en ;
+        :creator            bdr:CR96324A253ED1B119 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG23818 ;
+        :workIsAbout        bdr:G3196 , bdr:T2028 .
+}

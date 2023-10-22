@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21551 {
+    bda:LG2C26C1DB9BFD93D7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T11:57:55.683Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4EC2A624CDBA83E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8875F813370EA44E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-23T15:55:20.722Z"^^xsd:dateTime ;
+        adm:logMessage      "ful cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB83AF7D9FB734A44
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T16:41:48.692Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21551  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21551 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/WA3CN21551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21551 ;
+        adm:logEntry        bda:LG2C26C1DB9BFD93D7 , bda:LG4EC2A624CDBA83E3 , bda:LG8875F813370EA44E , bda:LGB83AF7D9FB734A44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR27FBDD6DE97945B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN22039 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21551  skos:altLabel  "藏文古籍文献抢救、整理与方法"@zh-hans .
+
+    bdr:WA3CN21551  a       :Work ;
+        skos:prefLabel      "dpe rnying gi las la 'jug tshul rnam gzhag"@bo-x-ewts , "藏文古籍文献抢救、整理与方法"@zh-hans ;
+        :catalogInfo        "Saving and organizing methods of Tibetan Ancient texts by Thubten Monlam Tongra."@en ;
+        :creator            bdr:CR27FBDD6DE97945B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN21551 , bdr:W3CN21551 .
+}

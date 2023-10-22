@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1302 {
+    bda:LG025E524D33235FF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-13T11:21:31.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG200DA2266B1BE654
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T14:01:20.034Z"^^xsd:dateTime ;
+        adm:logMessage      "changed spelling in title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG43EE91E68CB230D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T16:17:43.796Z"^^xsd:dateTime ;
+        adm:logMessage      "updated PR1VIENNA00 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-PR1VIENNA00." .
+
+    bda:LG4A373B3C7379712C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-20T15:34:59.442Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6B324B0014366671
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-20T15:36:37.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6E67CBD6257D3C18
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T19:08:30.468Z"^^xsd:dateTime ;
+        adm:logMessage      "updated label for TPMV"@en ;
+        adm:logWhoStr       "works-update-PR1VIENNA00-label" .
+
+    bda:LGD117D0EF94C54294
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NGMPP"@en ;
+        adm:logWhoStr       "add-works-to-PR1NGMPP00" .
+
+    bda:LGDAB1EEF4E57EAB5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-22T16:41:31.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEE3EBEAC2DA3B7ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T14:31:47.779Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Vienna"@en ;
+        adm:logWhoStr       "add-works-to-PR1VIENNA00" .
+
+    bda:WA3CN1302  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1302 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "a6/WA3CN1302.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1302 ;
+        adm:logEntry        bda:LG025E524D33235FF0 , bda:LG200DA2266B1BE654 , bda:LG43EE91E68CB230D2 , bda:LG4A373B3C7379712C , bda:LG6B324B0014366671 , bda:LG6E67CBD6257D3C18 , bda:LGD117D0EF94C54294 , bda:LGDAB1EEF4E57EAB5C , bda:LGEE3EBEAC2DA3B7ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0BC001 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW3CN1302  skos:altLabel  "The Golden Kangyur of Mustang"@en .
+
+    bdr:WA3CN1302  a        :Work ;
+        skos:altLabel       "rgyud po ti bcu/ (smon thang gser bris)"@bo-x-ewts ;
+        skos:prefLabel      "bka' 'gyur/ (gtsan rong /)"@bo-x-ewts , "The Golden Kangyur of Mustang"@en ;
+        :catalogInfo        "Kangyur written in golden ink and discovered in Tsangrong (Mustang). This collection is an incomplete scan of the microfilm kept in Berlin, photographed by the NGMPP. It comprises 10 volumes of Tantra texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T2129 , bdr:T4CZ71 .
+}

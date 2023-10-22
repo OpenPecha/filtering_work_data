@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17703 {
+    bda:LG7E0E98EC929A4267
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-24T14:48:21.966Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG85449FD30E5EAFDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-24T14:49:28.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFC5898D477364AD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17703  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17703 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8b/WA8LS17703.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17703 ;
+        adm:logEntry        bda:LG7E0E98EC929A4267 , bda:LG85449FD30E5EAFDE , bda:LGFC5898D477364AD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17703  a       :Work ;
+        skos:altLabel       "lha chen khyab 'jug chen po ra hu la'i bsgral las gnam lcags 'bar ba'i spu gri/"@bo-x-ewts ;
+        skos:prefLabel      "khyab 'jug chen po ra hu la'i bsgral las gnam lcags 'bar ba'i spu gri/"@bo-x-ewts ;
+        :catalogInfo        "A wrathful ritual practice on the basis of Rahula deity, author signed as Ngaktsun Shasanadhara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17703 , bdr:W8LS17703 ;
+        :workIsAbout        bdr:T00JR775 , bdr:T502 .
+}

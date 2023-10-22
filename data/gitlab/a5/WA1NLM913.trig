@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM913 {
+    bda:LG0D567D7E111CF666
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG1AE03BF61E0D85BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T14:58:10.253Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF6F6DA54B6DA7BAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-19T11:57:55.733Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM913"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM913  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM913 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a5/WA1NLM913.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM913 ;
+        adm:logEntry        bda:LG0D567D7E111CF666 , bda:LG1AE03BF61E0D85BF , bda:LGF6F6DA54B6DA7BAE , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B2B2D540CFB5816
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM913  a        :Work ;
+        skos:altLabel       "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba las snyoms 'jug bstan pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba las snyoms 'jug bstan pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the eighth chapter of the Abhidharmakosa and Ritual text including instructions on a torma throwing ritual associated with Dharmapalas in Gelug tradition and other texts."@en ;
+        :creator            bdr:CR5B2B2D540CFB5816 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM913 , bdr:W1NLM913 ;
+        :workIsAbout        bdr:T1439 , bdr:T905 , bdr:WA19720 .
+}

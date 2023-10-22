@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM365 {
+    bda:LG016A0D4C05E79C8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-30T10:02:34.767Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG36C842104DBB3381
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T14:20:57.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBBF350DDF619C041
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM365"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM365  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM365 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a2/WA1NLM365.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM365 ;
+        adm:logEntry        bda:LG016A0D4C05E79C8C , bda:LG36C842104DBB3381 , bda:LGBBF350DDF619C041 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBE9B7EA8A2FBDFD3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM365  a        :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed la rten pa'i tshogs kyi 'khor lo'i cho ga bde ba chen po'i rgya mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ganacakra puja offering on the basis of Vajrabairava by the first Panchen Losang Chokyi Gyaltshen and other text."@en ;
+        :creator            bdr:CRBE9B7EA8A2FBDFD3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM365 , bdr:W1NLM365 ;
+        :workIsAbout        bdr:T104 , bdr:T937 .
+}

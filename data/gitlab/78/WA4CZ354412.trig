@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354412 {
+    bda:LG38CD7117E0013C14
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-26T14:56:33.252Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA972883F594614FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-06T11:29:16.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB68C9F3CAF73E220
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-27T14:59:01.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB9321BF78EB07B17
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ354412  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354412 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "78/WA4CZ354412.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354412 ;
+        adm:logEntry        bda:LG38CD7117E0013C14 , bda:LGA972883F594614FE , bda:LGB68C9F3CAF73E220 , bda:LGB9321BF78EB07B17 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR72E2D19AB9755D03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P859 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAE433B8977DE5DE5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6873 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRBC874FDE1ED9EBDD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1656 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW4CZ354412  skos:altLabel  "bonpo miscellaneous texts"@en .
+
+    bdr:WA4CZ354412  a      :Work ;
+        skos:prefLabel      "bon gyi bstan bcos 'ga' zhig"@bo-x-ewts , "bonpo miscellaneous texts"@en ;
+        :catalogInfo        "Bonpo Texts on the Laying out of Mandalas, Mantras, Poetics, Scripts, and Puja."@en ;
+        :creator            bdr:CR72E2D19AB9755D03 , bdr:CRAE433B8977DE5DE5 , bdr:CRBC874FDE1ED9EBDD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW4CZ354412 , bdr:W4CZ354412 ;
+        :workIsAbout        bdr:T247 .
+}

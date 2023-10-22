@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1634 {
+    bda:LG7D80DA2FB8D15EEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGBECB8391C5E74835
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T16:04:21.144Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog, reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFE11DC8E26D40182
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T20:40:08.699Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1634"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1634  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1634 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ac/WA1NLM1634.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1634 ;
+        adm:logEntry        bda:LG7D80DA2FB8D15EEC , bda:LGBECB8391C5E74835 , bda:LGFE11DC8E26D40182 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1485 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1634  a       :Work ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje gcod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Diamond Cutter Sutra, On diagnosis and medical treatment of animal and other collection of liturgical texts"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T2005 .
+}

@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15676 {
+    bda:LG839CE74739EC2D4F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-10T16:43:10.122Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAB8AC432D67BAC2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T18:11:33.772Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC7F294ABD4481DDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T16:31:32.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN15676  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15676 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "14/WA3CN15676.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15676 ;
+        adm:logEntry        bda:LG839CE74739EC2D4F , bda:LGAB8AC432D67BAC2F , bda:LGC7F294ABD4481DDE , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2EF083CA745686EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN15676  skos:altLabel  "Biographical writings of Karma-chags-med"@en .
+
+    bdr:WA3CN15676  a       :Work ;
+        skos:prefLabel      "kaM tshang grub thob gser ri'i phreng ba'i rnam thar bsdus don dang snga 'gyur bka' gter shing rta rnams kyi lo rgyus/"@bo-x-ewts , "Biographical writings of Karma-chags-med"@en ;
+        :catalogInfo        "Brief verse biographies of various bka'-brgyud-pa and rnying-ma-pa masters of the tibetan buddhist tradition by Karma-chags-med. Reproduced from a rare manuscript from Gru-gu Monastery in Khams."@en ;
+        :creator            bdr:CR2EF083CA745686EA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN15676 , bdr:W3CN15676 ;
+        :workIsAbout        bdr:T1082 , bdr:T1187 .
+}

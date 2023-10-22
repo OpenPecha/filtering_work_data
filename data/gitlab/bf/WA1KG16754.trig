@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16754 {
+    bda:LGD676E381A6727409
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-21T10:34:16.477Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD855C03C479AE6BD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-21T10:35:12.694Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG16754  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16754 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bf/WA1KG16754.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16754 ;
+        adm:logEntry        bda:LGD676E381A6727409 , bda:LGD855C03C479AE6BD , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR30D9B17F219ACDDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16754  skos:altLabel  "dPag-bsam-ljon-bzaṅ;edited by Lokesh Chandra,with a foreword by G. Tucci and a pref. by L. Petech."@en-x-mixed .
+
+    bdr:WA1KG16754  a       :Work ;
+        skos:altLabel       "dpag bsam ljon bzang /"@bo-x-ewts , "Phags-yul Rgya-nag-chen-po, Bod, daṅ Sog-yul du dam paʾi chos byuṅ tshul dpag bsam ljon bzaṅ =Dpag-bsam-ljon-bzaṅ of Sum-pa-mkhan-po Ye-śes-dpal-hbyor : part III, containing a history of Buddhism in China and Mongolia, preceded by the reḥu-mig or chronological tables /edited by Lokesh Chandra ; with a foreword by G. Tucci and a preface by L. Petech."@en-x-mixed ;
+        skos:prefLabel      "'phags yul rgya nag chen po bod dang sog yul du dam pa'i chos byung tshul dpag bsam ljon bzang /"@bo-x-ewts , "dPag-bsam-ljon-bzaṅ;edited by Lokesh Chandra,with a foreword by G. Tucci and a pref. by L. Petech."@en-x-mixed ;
+        :catalogInfo        "Containing a history of Buddhism in India, China, Tibet and Mongolia."@en ;
+        :creator            bdr:CR30D9B17F219ACDDF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW1KG16754 , bdr:W1KG16754 ;
+        :workIsAbout        bdr:T770 .
+}

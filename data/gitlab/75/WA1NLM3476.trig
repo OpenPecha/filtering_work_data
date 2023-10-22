@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3476 {
+    bda:LGBB7D782546AB1EB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T10:42:46.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3476"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3476  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3476 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "75/WA1NLM3476.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3476 ;
+        adm:logEntry        bda:LGBB7D782546AB1EB1 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9FA80EF4583F452D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3476  a       :Work ;
+        skos:prefLabel      "gshin po'i sbyang chog thar lam gsal sgron sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos skyong gtor chog spyi'i nyer mkho/ 2 zhen pa bzhi bral gyi gdams pa khyad par can/ 3 rten 'brel snying po'i byabs khrus sdig ltung mun sel sgron me/ 4 bstan bsrung spurl pa'i chos skyong rgyal po sku lnga'i bzlog bsgyur gnam lcags thog mda'/ 5 glud gtor bto bcos rigs kyi thog ma mthar sbyor rgyu'i klog 'ga' zhig 6 'jam dbyangs nag po'i byabs khrus/ 7 kha mchu nag po'i bzlog bsgyur/ 8 dpal ldan lha mo'i cho ga dang 'brel bar ma mo'i 'khrugs skongs gtong tshul/ 9 dpal rdo rje 'jigs byed lha bcu gsum ma'i sgrub thabs shin tu bsdus pa nyung ngu rnam gsal zhes bya ba dpal rdo rje 'jigs byed kyi sgrub thabs bsdus pa nyams su len bde ba/ 10 blo bur rkeyn bzlog ser bu'i sgra dbyangs kyi mchod/ 11 khro bo'i rgyla po sme brtsegs pa'i grib sel/ 12 sgrol ma'i bdag bskyed gtor 'bul/ 13 rdo rje rnam par 'joms pa'i byabs khrus bdud rtsi'i chu rgyun/ 14 ye shes mkha' 'gro seng+ge gdong can ma'i sgo nas bzlog bsgyur bas byed pa cho ga 15 rta yi chu glud/ 16 rta mgrin gyi sgrub thabs/"@en , "Funeral purification ritual; other text also included."@en ;
+        :creator            bdr:CR9FA80EF4583F452D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM3476 , bdr:W1NLM3476 ;
+        :workIsAbout        bdr:T175 .
+}

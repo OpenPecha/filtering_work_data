@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25714 {
+    bda:LG384A1C29920DF032
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T23:51:07.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG79312BECEA5D5282
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-29T13:17:28.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG953ACD724709396E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:07:48.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9DB4FDF02FBD05FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T22:41:20.272Z"^^xsd:dateTime ;
+        adm:logMessage      "created W#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD7A5F82545A9C87E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN25714  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25714 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ff/WA3CN25714.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25714 ;
+        adm:logEntry        bda:LG384A1C29920DF032 , bda:LG79312BECEA5D5282 , bda:LG953ACD724709396E , bda:LG9DB4FDF02FBD05FB , bda:LGD7A5F82545A9C87E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCB43F450B8FC66B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26545 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE50FA67FF4086CC0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS66315 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25714  skos:altLabel  "西藏民俗通论"@zh-hans .
+
+    bdr:WA3CN25714  a       :Work ;
+        skos:prefLabel      "bod kyi gna' srol rnam bshad mu tig phreng mdzes/"@bo-x-ewts , "西藏民俗通论"@zh-hans ;
+        :catalogInfo        "Tibetan folk culture by Mikmar Tsering and Mikmar Lhamo."@en ;
+        :creator            bdr:CRCB43F450B8FC66B6 , bdr:CRE50FA67FF4086CC0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN25714 , bdr:W3CN25714 ;
+        :workIsAbout        bdr:T1144 .
+}

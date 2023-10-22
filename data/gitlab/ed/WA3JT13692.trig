@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13692 {
+    bda:LG0C7038292DDDC0AA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-17T16:40:31.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG8C94502DCFD65CE6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-17T16:31:12.371Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged completed"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA3JT13692  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13692 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ed/WA3JT13692.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13692 ;
+        adm:logEntry        bda:LG0C7038292DDDC0AA , bda:LG8C94502DCFD65CE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8EBE5367BD20C8FB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P653 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3JT13692  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po'i rnal 'byor pa pad+ma rig 'dzin gyi rdo rje'i mgur/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs chen pad+ma rig 'dzin gyi rdo rje'i mgur/"@bo-x-ewts ;
+        :creator            bdr:CR8EBE5367BD20C8FB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 , bdr:T6 ;
+        :workHasInstance    bdr:MW3JT13692 , bdr:W3JT13692 ;
+        :workIsAbout        bdr:T354 .
+}

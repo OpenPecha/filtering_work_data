@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA19550 {
+    bda:LG41AB39EAFAE6575C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-17T15:29:28.064Z"^^xsd:dateTime ;
+        adm:logMessage      "some correction"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5497F72F12ACA8BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-17T14:16:35.322Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG559AE7D2F0CC2385
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6B1E906E6047A872
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-05T15:38:59.996Z"^^xsd:dateTime ;
+        adm:logMessage      "added chos skor as genre"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG7795C6221DD68F1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T11:09:59.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG7C3457B00B822F59
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-11-17T15:30:35.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5677AE7C5D0E140
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:WA19550  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA19550 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "74/WA19550.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA19550 ;
+        adm:logEntry        bda:LG41AB39EAFAE6575C , bda:LG5497F72F12ACA8BF , bda:LG559AE7D2F0CC2385 , bda:LG6B1E906E6047A872 , bda:LG7795C6221DD68F1C , bda:LG7C3457B00B822F59 , bda:LGE5677AE7C5D0E140 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR51ADC66C7431B20C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5909 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW19550  skos:altLabel  "a collection of nyingmapa dzogchen teachings rediscovered by dung mtsho ras pa (phyi ma)"@en .
+
+    bdr:WA19550  a          :Work ;
+        skos:altLabel       "rdzogs chen yang tig nag po gser 'bru chos skor/"@bo-x-ewts , "yang tig nag po gser gyi 'bru gcig pa'i chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "yang tig nag po gser gyi 'bru gcig pa/"@bo-x-ewts , "a collection of nyingmapa dzogchen teachings rediscovered by dung mtsho ras pa (phyi ma)"@en ;
+        :creator            bdr:CR51ADC66C7431B20C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW19550 , bdr:W19550 ;
+        :workIsAbout        bdr:T1082 , bdr:T354 .
+}

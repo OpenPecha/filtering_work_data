@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23681 {
+    bda:LG49CA4BD6B6DC1C74
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-08T11:28:54.728Z"^^xsd:dateTime ;
+        adm:logMessage      "edited annotation"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG57EB7D11A06B3C0D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG97211E9B25DAAD66
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-06T17:51:41.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added sgrub skor as genre"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGC6C0C1A50C08C3DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T09:39:22.113Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23681  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23681 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "16/WA23681.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23681 ;
+        adm:logEntry        bda:LG49CA4BD6B6DC1C74 , bda:LG57EB7D11A06B3C0D , bda:LG97211E9B25DAAD66 , bda:LGC6C0C1A50C08C3DB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG17189 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW23681  skos:altLabel  "a collection of sadhanas and related texts of the vajrayana traditions of tibet"@en .
+
+    bdr:WA23681  a          :Work ;
+        skos:prefLabel      "sgrub thabs kun btus/"@bo-x-ewts , "a collection of sadhanas and related texts of the vajrayana traditions of tibet"@en ;
+        :catalogInfo        "Collection of sadhana manuals and related ritual materials of the Sakya order. Compiled through the efforts of Jamyang Loter Wangpo (1847-1914) under the inspiration of his master Jamyang Kyentse Wangpo (1820-1892)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workIsAbout        bdr:T1181 , bdr:T617 .
+}

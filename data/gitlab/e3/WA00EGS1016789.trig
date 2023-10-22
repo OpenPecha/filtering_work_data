@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1016789 {
+    bda:LG53E72CBA0EA0DDE1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-06T08:22:00.343Z"^^xsd:dateTime ;
+        adm:logMessage      "published for creation of scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9DDA7A616C1518CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-19T15:14:12.679Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGB0E9C0C504CC7219
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-02T15:02:57.561Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:WA00EGS1016789
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1016789 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e3/WA00EGS1016789.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1016789 ;
+        adm:logEntry        bda:LG53E72CBA0EA0DDE1 , bda:LG9DDA7A616C1518CD , bda:LGB0E9C0C504CC7219 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW00EGS1016789
+        skos:altLabel       "supplement containing the missing pages needed to complet the dru gu go rdzon smad cha version of the gesar epic"@en-x-mixed .
+
+    bdr:WA00EGS1016789
+        a                   :Work ;
+        skos:prefLabel      "dru gu go rdzong smad cha : supplement/"@bo-x-ewts , "supplement containing the missing pages needed to complet the dru gu go rdzon smad cha version of the gesar epic"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00EGS1016789 , bdr:W00EGS1016789 ;
+        :workIsAbout        bdr:T248 .
+}

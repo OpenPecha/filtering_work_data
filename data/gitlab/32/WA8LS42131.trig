@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42131 {
+    bda:LG93450CBD68891446
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-20T11:25:36.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB9441DCEB139CBD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-20T11:24:33.376Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCF2DA30F3C4F5114
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T15:35:48.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42131  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42131 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "32/WA8LS42131.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42131 ;
+        adm:logEntry        bda:LG93450CBD68891446 , bda:LGB9441DCEB139CBD5 , bda:LGCF2DA30F3C4F5114 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA7775519B4B31F57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75402 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF9D5CFF9107265C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75401 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42131  a       :Work ;
+        skos:prefLabel      "a ma'i lag deb/"@bo-x-ewts ;
+        :catalogInfo        "Children's books and montessori teaching aids."@en ;
+        :creator            bdr:CRA7775519B4B31F57 , bdr:CRF9D5CFF9107265C9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG15794 ;
+        :workHasInstance    bdr:MW8LS42131 , bdr:W8LS42131 ;
+        :workIsAbout        bdr:T1694 , bdr:T234 .
+}

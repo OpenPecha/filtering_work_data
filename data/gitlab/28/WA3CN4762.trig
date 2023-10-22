@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4762 {
+    bda:LG16BF6C6C2ACF57A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-27T23:43:24.962Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG46BF569497A24540
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-01T10:27:48.623Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAE150CD46D69A052
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T10:48:23.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4762  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4762 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "28/WA3CN4762.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4762 ;
+        adm:logEntry        bda:LG16BF6C6C2ACF57A4 , bda:LG46BF569497A24540 , bda:LGAE150CD46D69A052 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD5F5961DBA0BA04D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4762  a        :Work ;
+        skos:altLabel       "shes rab kyi le'u'i tshig don go sla bar rnam par bshad pa nor bu ke ta ka"@bo-x-ewts ;
+        skos:prefLabel      "sher 'grel nor bu ke ta ka"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the tenth chapter of the Bodhicaryavatara byJu Mipam Namgyal Gyatso (1846-1912)."@en ;
+        :creator            bdr:CRD5F5961DBA0BA04D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN4762 , bdr:W3CN4762 ;
+        :workIsAbout        bdr:T1722 , bdr:WA19740 .
+}

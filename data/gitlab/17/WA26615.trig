@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26615 {
+    bda:LGA94E61CA4E99BCAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-02T14:26:17.312Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBD55633710995271
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-04-22T16:28:07.211Z"^^xsd:dateTime ;
+        adm:logMessage      "add catlog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBEC65996915E98BC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD83C7162F6FCE548
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-04-23T10:24:53.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA26615  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26615 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "17/WA26615.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26615 ;
+        adm:logEntry        bda:LGA94E61CA4E99BCAB , bda:LGBD55633710995271 , bda:LGBEC65996915E98BC , bda:LGD83C7162F6FCE548 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA8EC785AC1ACAD71
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8422 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA26615  a          :Work ;
+        skos:altLabel       "chag lo tsA ba chos rje dpal bzang po'i rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "chos rje dpal gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Chak Lotsawa Choje Pel (1197-1263/1264)."@en ;
+        :creator            bdr:CRA8EC785AC1ACAD71 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW26615 , bdr:W26615 ;
+        :workIsAbout        bdr:P1025 .
+}

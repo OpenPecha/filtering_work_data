@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2745 {
+    bda:LG97CDA9EF06EA0D18
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-08T14:15:21.856Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBEC1A97085F46903
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGD35D2CD0DCB84F52
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-09T09:30:33.542Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and realeased"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2745"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2745  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2745 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "72/WA1NLM2745.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2745 ;
+        adm:logEntry        bda:LG97CDA9EF06EA0D18 , bda:LGBEC1A97085F46903 , bda:LGD35D2CD0DCB84F52 , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2745  a       :Work ;
+        skos:prefLabel      "stong chen mo rab tu 'joms pa zhes bya ba'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Mahashasrapramardana sutra and various other Dharanis"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2745 , bdr:W1NLM2745 .
+}

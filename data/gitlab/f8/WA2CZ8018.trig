@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ8018 {
+    bda:LGB640CC3C978D6949
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:08:53.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC46765A88E5B60A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-22T09:50:07.588Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDB8D562FF1DCD537
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T12:30:19.766Z"^^xsd:dateTime ;
+        adm:logMessage      "refreshed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ8018  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ8018 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f8/WA2CZ8018.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ8018 ;
+        adm:logEntry        bda:LGB640CC3C978D6949 , bda:LGC46765A88E5B60A3 , bda:LGDB8D562FF1DCD537 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR023E61244FC5D1CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ8018  a        :Work ;
+        skos:altLabel       "rje btsun thams cad mkhyen pa'i gsung 'bum thor bu las rje nyid kyi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'dun rgya mtsho'i rang rnam/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Dalai Lama 02 Gedun Gyatso (1476-1542)."@en ;
+        :creator            bdr:CR023E61244FC5D1CD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW2CZ8018 , bdr:W2CZ8018 ;
+        :workIsAbout        bdr:P84 .
+}

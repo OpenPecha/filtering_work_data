@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2321 {
+    bda:LG0EB751D68E5CAEFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-14T15:10:59.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBCCF5CAFD10666E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2321"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2321  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2321 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/WA1NLM2321.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2321 ;
+        adm:logEntry        bda:LG0EB751D68E5CAEFB , bda:LGBCCF5CAFD10666E4 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR82285C7D7D72F03D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P675 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2321  a       :Work ;
+        skos:prefLabel      "gshin gson dbul 'phongs kun la nyer mkho phan bde bdud rtsi'i dga' ston sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'go ba'i lha lnga'i gsol mchod bskang bshags dang bcas pa/ 2 rgyal po sku lnga'i gsol mchod/ 3 sa bdag klu bdud kyi gdon grol/ 4 bde gshegs brgyad la brten nas sbyang chog byed tshul sdug kun mun sel 'chi med bdud rtsi/ 5 gsang 'dus smon lam/ 6 sman bla'i mngon rtogs mdor bsdus/ 7 sgrol dkar gyi mngon rtogs/ 8 ming don brda sprod rnam lnga/ 9 tshangs pa lha'i mdos srid 'dzugs slob dpon pad+ma 'byung gnas kyis mdzad pa/ 10 byur bud cho ga zhes bya ba'i gto gtong tshul/ 11 gdugs dkar mngon rtogs dang dgu mig bcos thabs/ 12 tshe lha rnam gsum gyi mngon rtogs/ 13 dngos grub kun 'byung skya rengs dkar po zhes bya me lha mchod/"@bo-x-ewts , "A death and alive astrological calculation; other text also included."@en ;
+        :creator            bdr:CR82285C7D7D72F03D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2321 , bdr:W1NLM2321 ;
+        :workIsAbout        bdr:T1PD106859 .
+}

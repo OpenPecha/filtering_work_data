@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29665 {
+    bda:LG01B28E79A278D477
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-13T11:59:08.509Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG29E12F40ADDA93AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-14T15:16:58.825Z"^^xsd:dateTime ;
+        adm:logMessage      "selected topic dris lan"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC456F3ACD7EA7055
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA29665  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29665 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d9/WA29665.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29665 ;
+        adm:logEntry        bda:LG01B28E79A278D477 , bda:LG29E12F40ADDA93AC , bda:LGC456F3ACD7EA7055 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR981835008BBA962F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9920 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29665  skos:altLabel  "a brief spellings and elementary guide for reading tibetan script"@en .
+
+    bdr:WA29665  a          :Work ;
+        skos:prefLabel      "rtags 'jug dka' gnad gsal ba'i me long gi dri lan dbyangs can dgyes pa'i mchod sprin/"@bo-x-ewts , "a brief spellings and elementary guide for reading tibetan script"@en ;
+        :catalogInfo        "The Tibetan grammar text rtags 'jug dka' gnad gsal ba'i me long on questions and answers form."@en ;
+        :creator            bdr:CR981835008BBA962F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW29665 , bdr:W29665 ;
+        :workIsAbout        bdr:WA5608 .
+}

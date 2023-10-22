@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG216524 {
+    bda:LG60B0B25D434D2D1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-06T11:35:42.954Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7E57ED7D17B3EC58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-06T14:40:26.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9C0699971DA8336E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:44:12.788Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old SR"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA65B1BE4C73AEB7A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T17:44:39.745Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEFD3C21EBCB6C458
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:46:53.725Z"^^xsd:dateTime ;
+        adm:logMessage      "refresh title page title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG216524  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG216524 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "5a/WA2KG216524.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG216524 ;
+        adm:logEntry        bda:LG60B0B25D434D2D1E , bda:LG7E57ED7D17B3EC58 , bda:LG9C0699971DA8336E , bda:LGA65B1BE4C73AEB7A , bda:LGEFD3C21EBCB6C458 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRECA3E2DBFDCB1063
+        a                   :AgentAsCreator ;
+        :agent              bdr:P108 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRFA9A97A614E8FF6A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG216524  a      :Work ;
+        skos:altLabel       "mdo sngags dris lan gyi rim pa phyogs bsgrigs dam pa'i zab bcud gcer du phyung ba/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb sum cu tham pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of questions and responses on Sutra and Mantra scriptures."@en ;
+        :creator            bdr:CRECA3E2DBFDCB1063 , bdr:CRFA9A97A614E8FF6A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1753 , bdr:T28 , bdr:T769 ;
+        :workHasInstance    bdr:MW2KG216524 , bdr:W2KG216524 .
+}

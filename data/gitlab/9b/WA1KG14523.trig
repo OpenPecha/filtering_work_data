@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14523 {
+    bda:LG1B774A51FB41252F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-20T13:57:13.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG87BABE0D692AB864
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGAF0888263ADCF9BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-24T16:44:20.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC1E243757CF03B61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-24T16:11:15.402Z"^^xsd:dateTime ;
+        adm:logMessage      "released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14523  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14523 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9b/WA1KG14523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14523 ;
+        adm:logEntry        bda:LG1B774A51FB41252F , bda:LG87BABE0D692AB864 , bda:LGAF0888263ADCF9BA , bda:LGC1E243757CF03B61 , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5B5EC44309A1263
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16255 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRFB12D19A541A8829
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16254 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14523  skos:altLabel  "the lady of the camellias"@en , "茶花女"@zh-hans .
+
+    bdr:WA1KG14523  a       :Work ;
+        skos:altLabel       "cha hua nv"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ja shing me tog ma/"@bo-x-ewts , "the lady of the camellias"@en , "茶花女"@zh-hans ;
+        :catalogInfo        "Translation of Alexander Dumas's novel \"The lady of the camellias\""@en ;
+        :creator            bdr:CRC5B5EC44309A1263 , bdr:CRFB12D19A541A8829 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW1KG14523 , bdr:W1KG14523 .
+}

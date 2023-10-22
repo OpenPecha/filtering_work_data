@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM583 {
+    bda:LG29F85049A07415DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-08T16:29:21.816Z"^^xsd:dateTime ;
+        adm:logMessage      "complete cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3EF1BBC27F397D8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM583"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM583  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM583 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "68/WA1NLM583.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM583 ;
+        adm:logEntry        bda:LG29F85049A07415DD , bda:LG3EF1BBC27F397D8C , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG3400 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR6CEE9F8920FAD2AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6146 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM583  a        :Work ;
+        skos:altLabel       "chos mngon mdzod kyi tshig le'ur byas pa'i 'grel pa mngon pa'i rgyan ces bya ba las dum bu gnyis pa/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod 'grel mngon pa'i rgyan/ (dum bu gnyis pa)"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Vasubandhu's Abhidharmakosa."@en ;
+        :creator            bdr:CR6CEE9F8920FAD2AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA19720 .
+}

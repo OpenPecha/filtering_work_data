@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369290 {
+    bda:LG8D111FCB84380709
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T13:01:51.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB83F1FB919029ADF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T14:49:17.159Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEE17526067B95AE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-02T14:33:12.358Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to R"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369290  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369290 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "49/WA4CZ369290.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369290 ;
+        adm:logEntry        bda:LG8D111FCB84380709 , bda:LGB83F1FB919029ADF , bda:LGEE17526067B95AE4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBE8794A9185F8149
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC6A5BE432CFA2D95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7816 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF87AB9F0B42F8AC3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2968 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369290  a      :Work ;
+        skos:altLabel       "gsang sngags rdo rje theg pa'i sa lam gyi rnam gzhag phyogs gcig tu bsgrigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje theg pa'i sa lam rnam gzhag phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of the structured approach to Vajrayana Buddhism"@en ;
+        :creator            bdr:CRBE8794A9185F8149 , bdr:CRC6A5BE432CFA2D95 , bdr:CRF87AB9F0B42F8AC3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW4CZ369290 , bdr:W4CZ369290 ;
+        :workIsAbout        bdr:T1091 , bdr:T1336 .
+}

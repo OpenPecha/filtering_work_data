@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3802 {
+    bda:LG9A09B4988B2AAAEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-18T13:08:05.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3802"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3802  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3802 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "aa/WA1NLM3802.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3802 ;
+        adm:logEntry        bda:LG9A09B4988B2AAAEF , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD228C1326607383B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3243 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3802  a       :Work ;
+        skos:prefLabel      "byang chub lam rim chung ngu'i 'khrid gnang skabs kyi zin bris sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lam rim chung ngu'i bden gnyis skabs kyi mchan 'brel blo bzang dgongs rgyan/ 2 byang chub lam gyi rim pa'i khrid tshigs su bcad pa khyer bde ba/ 3 lam gyi lus yongs su rdzogs pa smon lam du bya ba'i tshul byin brlab spungs zhus kyi don gsal bar ston pa'i man ngag dngos grub kun 'byung /"@bo-x-ewts , "Notes of instructions given on the shorter graduated approach by Serkhangpa Losang Tenzin Gyatsho."@en ;
+        :creator            bdr:CRD228C1326607383B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM3802 , bdr:W1NLM3802 ;
+        :workIsAbout        bdr:T11MS11 .
+}

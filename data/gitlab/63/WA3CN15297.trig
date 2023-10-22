@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15297 {
+    bda:LG2827D425E78E7EC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG32656478AB00C90A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:13:34.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8A5A57333A66E848
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-30T16:43:11.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added cataInfo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC7482D0419D37B5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T15:38:54.772Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15297  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15297 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "63/WA3CN15297.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15297 ;
+        adm:logEntry        bda:LG2827D425E78E7EC0 , bda:LG32656478AB00C90A , bda:LG8A5A57333A66E848 , bda:LGC7482D0419D37B5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB74AE47E142B2A17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6164 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15297  a       :Work ;
+        skos:altLabel       "rdzogs chen lta ba klong yangs lasHbcud len nor bu rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "bcud len nor bu rgya mtsho sogs man ngag 'ga'"@bo-x-ewts ;
+        :catalogInfo        "Rasa Yoga practice and some other upadesha of dzogchen tradition from Dorje Lingpa (1346-1405) and other Terton's Terma texts."@en ;
+        :creator            bdr:CRB74AE47E142B2A17 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW3CN15297 , bdr:W3CN15297 ;
+        :workIsAbout        bdr:T941 .
+}

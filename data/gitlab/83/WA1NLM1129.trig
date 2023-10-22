@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1129 {
+    bda:LG419C9AD97831ECDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-18T09:17:05.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6F22C17481570DF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1129"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1129  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1129 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "83/WA1NLM1129.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1129 ;
+        adm:logEntry        bda:LG419C9AD97831ECDE , bda:LG6F22C17481570DF2 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR87456A87BEE02B6D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1129  a       :Work ;
+        skos:prefLabel      "mi 'khrugs pa lha dgu'i cho ga cha lag dang bcas thar pa'i 'jugs ngogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mi 'khrugs sgrub dkyil thar pa'i mjug ngogs gi smad cha/ 2 mi 'khrugs pa'i rdul tshon chab 'dren/ 3 rdo rje mi 'khrugs pa'i bla brgyud gsol 'debs dang / gtang rag gi zas mchod 'bul tshul sgrib sbyong bdud rtsi'i dga' ston/ 4 dpal rdo rje 'jigs byed dpa' bo gcig pa'i dbang gi cho ga dngos grub gter mdzod/ 5 yig bskur rnam bzhag nyung ngu rnam gsal/ 6 bcom ldan 'das dpal rdo rje 'jigs byed lha bcu gsum gyi ras bris kyi dkyil 'khor du dbang bskur ba'i cho ga lag len rab gsal las sta gon gyi rim pa/ 7 rje btsun rdo rje rnal 'byor ma'i sind+hu ra'i dkyil 'khor sgrub mchod mdor bsdus byas tshul gyi 'don bsgrigs mkha' spyod bgrod pa'i them skas/ 8 bcom ldan 'das rnam par snang mdzad kyi cho ga rgyud don gsal ba 'grel ba dang bcas pa nas 'byung ba'i phyag rgya'i rnam par bzhag ba'i zur bkol/ 9 sbyang chog gi dmigs rim bde chen thar lam/ 10 dpal gsang ba'i bdag po 'khor lo chen po'i sgrub thabs mdor bsdus bdud sde zil gnon pa'i bzhad sgra/ 11 gsang 'dus mi bskyod rdo rje'i sgrub thabs dngos grub gter 'byed/ 12 bcom ldan 'das dpal 'khor lo sdom pa'i sgrub thabs bsdus pa nyams su len tshul/ 13 rigs sum cu rtsa drug mchod pa'i cho ga dngos grub 'dod 'jo dpag bsam ljon pa/ 14 rje btsun nA ro mkha' spyod ma'i bla ma'i rnal 'byor byin rlabs myur 'jug 15 bde mchog lU i ba'i bskyed rdzogs snying por dril ba'i tshogs dang lU dril gnyis kyi rdzos rim shin tu zab pa/ 16 gsang chen bla na med pa'i rgyud don bde mchog sbas chu'i rgya mtsho las 'thon pa'i ches gsang rmad du byung ba'i rdo rje'i glu khams gsum 'gro ba'i bla ma tsong kha pa chen pos tshigs bcad du sdebs pa'i dpyid kyi rgyal mo'i glu dbyangs kyi dgongs 'grel mkha' 'gro ma rnams kyi snying gi thig le bskul ba'i tam+bu ra/"@en , "Ritual offering text of nine deity Akshobya by Konchok Tenpe Dronme; also included other text."@en ;
+        :creator            bdr:CR87456A87BEE02B6D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1129 , bdr:W1NLM1129 ;
+        :workIsAbout        bdr:T998 .
+}

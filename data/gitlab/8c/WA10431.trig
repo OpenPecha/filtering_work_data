@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10431 {
+    bda:LG32CC8A2A50E6C8B0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-09-07T15:25:39.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA76160C8D832F448
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-07T15:25:09.01Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF361701ADE95452C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA10431  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10431 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8c/WA10431.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10431 ;
+        adm:logEntry        bda:LG32CC8A2A50E6C8B0 , bda:LGA76160C8D832F448 , bda:LGF361701ADE95452C , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR81C8242C13A51410
+        a                   :AgentAsCreator ;
+        :agent              bdr:P821 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW10431  skos:altLabel  "the oceanlike path of reasoning that sets forth the theory of clear perception"@en .
+
+    bdr:WA10431  a          :Work ;
+        skos:altLabel       "tshad ma'i legs par bshad pa thams cad kyi chu bo yongs su 'du ba rigs pa'i gzhung lugs kyi rgya mtsho/"@bo-x-ewts , "tshad ma legs par bshad pa thams cad kyi chu bo yongs su 'du ba rigs pa'i gzhung lugs kyi rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rigs gzhung rgya mtsho/"@bo-x-ewts , "the oceanlike path of reasoning that sets forth the theory of clear perception"@en ;
+        :catalogInfo        "Treatise on the principles of Buddhist epistemology written by Karmapa 07 Chodrak Gyatso (1454-1506)."@en ;
+        :creator            bdr:CR81C8242C13A51410 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:IE1KG2778 , bdr:IE30013 , bdr:MW10431 , bdr:MW1KG17431 , bdr:MW1KG2778 , bdr:MW1PD162101 , bdr:MW22280 , bdr:MW30013 , bdr:MW8LS35917 , bdr:W10431 , bdr:W1KG17431 , bdr:W1KG2778 , bdr:W22280 , bdr:W30013 , bdr:W8LS35917 ;
+        :workIsAbout        bdr:T370 .
+}

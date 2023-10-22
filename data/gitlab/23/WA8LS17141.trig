@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17141 {
+    bda:LG11DBAD419207CB1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-27T09:57:39.679Z"^^xsd:dateTime ;
+        adm:logMessage      "Changed to restricted by sealed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG728379507A903B7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG852329DC475C89CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-22T11:08:32.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA91D18D5CAF0F051
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-22T11:06:52.433Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17141  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17141 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "23/WA8LS17141.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17141 ;
+        adm:logEntry        bda:LG11DBAD419207CB1B , bda:LG728379507A903B7A , bda:LG852329DC475C89CC , bda:LGA91D18D5CAF0F051 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC06632D6168D2D38
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2282 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17141  a       :Work ;
+        skos:altLabel       "be'u bum blo rmongs sel byed dgos 'dod kun 'byung /"@bo-x-ewts , "be'u bum rmongs pa kun sel/"@bo-x-ewts , "paN chen na bza' bas mdzad pa'i be'u bum rmongs pa kun sel/"@bo-x-ewts ;
+        skos:prefLabel      "na bza' be'u bum/"@bo-x-ewts ;
+        :catalogInfo        "A collection of esoteric medical prescriptions and magical formulae for the alleviation of various ailments; compiled and arranged by the 15th century master Panchen Nazawa."@en ;
+        :creator            bdr:CRC06632D6168D2D38 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1202 ;
+        :workHasInstance    bdr:MW8LS17141 , bdr:W8LS17141 .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23520 {
+    bda:LG1068EB1484FAE127
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-03T11:58:59.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG44F2EF9879B39832
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-03T11:58:14.87Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG23520  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23520 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4e/WA1KG23520.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23520 ;
+        adm:logEntry        bda:LG1068EB1484FAE127 , bda:LG44F2EF9879B39832 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG23520  skos:altLabel  "绘画入门"@zh-hans .
+
+    bdr:WA1KG23520  a       :Work ;
+        skos:altLabel       "gcan tsha rdzong mi rigs slob 'bring gi slob deb/ ri mo'i 'jug sgo"@bo-x-ewts , "hui hua ru men"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri mo'i 'jug sgo"@bo-x-ewts , "绘画入门"@zh-hans ;
+        :catalogInfo        "Tibetan arts textbook for middle school of Jentsa County, Tsongon Province."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW1KG23520 , bdr:W1KG23520 ;
+        :workIsAbout        bdr:T1845 .
+}

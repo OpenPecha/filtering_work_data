@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21774 {
+    bda:LG13D0BD84A033BE17
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-20T14:20:34.092Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6C5A698D9656B305
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-20T14:21:36.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAF19EDAD8A7AF48F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA21774  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21774 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "32/WA21774.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21774 ;
+        adm:logEntry        bda:LG13D0BD84A033BE17 , bda:LG6C5A698D9656B305 , bda:LGAF19EDAD8A7AF48F , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREC847A3CC7E5EA94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7291 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21774  skos:altLabel  "藏语言研究论文选"@zh-hans .
+
+    bdr:WA21774  a          :Work ;
+        skos:altLabel       "zang yu wen yan jiu lun wen xuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod skad yig zhib 'jug skor gyi ched rtsom phyogs bsgrigs/"@bo-x-ewts , "藏语言研究论文选"@zh-hans ;
+        :catalogInfo        "Selection of research articles on Tibetan language."@en ;
+        :creator            bdr:CREC847A3CC7E5EA94 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW21774 , bdr:W21774 ;
+        :workIsAbout        bdr:T265 .
+}

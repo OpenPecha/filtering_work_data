@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17359 {
+    bda:LG6F873D5C41C76642
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-22T10:57:02.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD89E397F91A381D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDE76D49ED386C62B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-22T10:55:22.844Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17359  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17359 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/WA8LS17359.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17359 ;
+        adm:logEntry        bda:LG6F873D5C41C76642 , bda:LGD89E397F91A381D0 , bda:LGDE76D49ED386C62B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0A5DB2DCE2C78231
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17359  a       :Work ;
+        skos:altLabel       "zab chos zhi khro dgongs pa rang grol las rdo rje theg pa'i chos spyod thun bzhi'i rnal 'byor sngon 'gro rang rgyud sbyong byed/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje theg pa'i chos spyod thun bzhi'i rnal 'byor sngon 'gro rang rgyud sbyong byed/"@bo-x-ewts ;
+        :catalogInfo        "A preliminary practice of four session yoga according to Zhitro Gongpa Rangdol practice by Karma Lingpa."@en ;
+        :creator            bdr:CR0A5DB2DCE2C78231 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17359 , bdr:W8LS17359 ;
+        :workIsAbout        bdr:T179 , bdr:T351 , bdr:T4 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM331 {
+    bda:LG2A4F19871C7DD145
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T11:44:05.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8B99E7EF6D98466B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-26T15:23:08.151Z"^^xsd:dateTime ;
+        adm:logMessage      "FULL CATALOGED"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA4CB21C04C2B0E6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM331"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM331  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM331 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "44/WA1NLM331.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM331 ;
+        adm:logEntry        bda:LG2A4F19871C7DD145 , bda:LG8B99E7EF6D98466B , bda:LGA4CB21C04C2B0E6A , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD1869D764BA98332
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM331  a        :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa'i 'khrid yig 'jam pa'i dbyangs kyi zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "lam rim 'khrid yig 'jam pa'i dbyangs kyi zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "A plain commentary on the gradual path Lamrim by Tsong-kha-pa"@en ;
+        :creator            bdr:CRD1869D764BA98332 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM331 , bdr:W1NLM331 ;
+        :workIsAbout        bdr:WA466 .
+}

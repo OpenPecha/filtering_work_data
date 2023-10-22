@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1110 {
+    bda:LG1B40883382F90F42
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG4F8C11E74579D4C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-07-26T12:09:33.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG5CA86852AE26DB04
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-11-14T12:05:22.635Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7382F92BB5929F30
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-07T16:11:25.702Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA9B03136AA3ACFCF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-07-26T12:09:09.267Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB6D8B397FB3432A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T16:58:31.508Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDE4BB30E9B700D1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-15T17:01:33.55Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFA30CE50B7B492E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-20T09:31:34.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA1CZ1110  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1110 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "85/WA1CZ1110.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1110 ;
+        adm:logEntry        bda:LG1B40883382F90F42 , bda:LG4F8C11E74579D4C2 , bda:LG5CA86852AE26DB04 , bda:LG7382F92BB5929F30 , bda:LGA9B03136AA3ACFCF , bda:LGB6D8B397FB3432A2 , bda:LGDE4BB30E9B700D1E , bda:LGFA30CE50B7B492E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR711D07844DB5BE85
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1110  a        :Work ;
+        skos:altLabel       "phyag rgya chen po lhan cig skyes sbyor gyi gzhung chung /"@bo-x-ewts ;
+        skos:prefLabel      "phyag rgya chen po lhan cig skyes sbyor gnad gsum ldan gyi man ngag rtsa yig"@bo-x-ewts ;
+        :creator            bdr:CR711D07844DB5BE85 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW1CZ1110 , bdr:W1CZ1110 ;
+        :workIsAbout        bdr:T199 .
+}

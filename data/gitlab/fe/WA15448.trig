@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA15448 {
+    bda:LG413CB4803C0098DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T10:46:47.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG7D34109F6B98FA79
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAC3DF773FCE371A7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-11-30T11:18:34.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAE906B768DA312BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T10:15:10.585Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB550B2B99E7771BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-30T11:18:10.816Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA15448  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA15448 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "fe/WA15448.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA15448 ;
+        adm:logEntry        bda:LG413CB4803C0098DA , bda:LG7D34109F6B98FA79 , bda:LGAC3DF773FCE371A7 , bda:LGAE906B768DA312BA , bda:LGB550B2B99E7771BA , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0705A47C8C2A58A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3495 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA15448  a          :Work ;
+        skos:altLabel       "byang chub sems sbyong gi gdams pa blo sbyong nyi ma'i 'od zer/"@bo-x-ewts ;
+        skos:prefLabel      "blo sbyong nyi ma'i 'od zer/"@bo-x-ewts ;
+        :catalogInfo        "Teaching on mind training."@en ;
+        :creator            bdr:CR0705A47C8C2A58A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW15448 , bdr:MW1TLMTGA001906 , bdr:W15448 ;
+        :workIsAbout        bdr:T393 .
+}

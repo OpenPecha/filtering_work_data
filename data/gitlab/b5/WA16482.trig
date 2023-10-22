@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA16482 {
+    bda:LG2F4916C80B32D3A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-11-04T11:10:44.889Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG31D4934C36071945
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-01-31T16:11:57.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad at title and note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG57B83555313EDD8D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T09:48:29.779Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7F2ED7951E00F54F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA16482  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA16482 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b5/WA16482.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA16482 ;
+        adm:logEntry        bda:LG2F4916C80B32D3A5 , bda:LG31D4934C36071945 , bda:LG57B83555313EDD8D , bda:LG7F2ED7951E00F54F , bda:LGIM4BF5F96E12 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR082B00D28C9AD938
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW16482  skos:altLabel  "Dbu sems kyi lta ba daṅ tshad mar sgrub paʾi leʾuʾi sñiṅ don, mṅon rtogs rgyan gyi tshig don bcas gsal bar bstan paʾi legs bśad utpalaʾi gru char /mdzad pa po, Pha-ra Dge-sloṅ Rnam-rgyal-dbaṅ-chen."@en-x-mixed .
+
+    bdr:WA16482  a          :Work ;
+        skos:altLabel       "dbu sems kyi lta ba dang tshad mar sgrub pa'i le'u'i snying don/ mngon rtogs rgyan gyi tshig don bcas gsal bar bstan pa'i legs bshad ut+pala'i gru char/"@bo-x-ewts , "legs bshad ut+pa la'i gru char/"@bo-x-ewts ;
+        skos:prefLabel      "dbu sems kyi lta ba dang tshad mar sgrub pa'i le'u'i snying don/"@bo-x-ewts , "Dbu sems kyi lta ba daṅ tshad mar sgrub paʾi leʾuʾi sñiṅ don, mṅon rtogs rgyan gyi tshig don bcas gsal bar bstan paʾi legs bśad utpalaʾi gru char /mdzad pa po, Pha-ra Dge-sloṅ Rnam-rgyal-dbaṅ-chen."@en-x-mixed ;
+        :catalogInfo        "Exposition of the views of the cittamatra and madhyamika with a commentary on the abhisamayalankara and on the essence of the second chapter of the pramana"@en ;
+        :creator            bdr:CR082B00D28C9AD938 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW16482 , bdr:W16482 ;
+        :workIsAbout        bdr:T2055 , bdr:T233 , bdr:T370 .
+}

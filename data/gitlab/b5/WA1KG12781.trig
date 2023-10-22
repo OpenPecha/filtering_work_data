@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12781 {
+    bda:LG380C4B650E22DC13
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-09-11T15:43:52.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9FC860DA7FF01453
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-08-28T14:57:26.461Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBF3C3C89444F3E7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12781  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12781 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b5/WA1KG12781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12781 ;
+        adm:logEntry        bda:LG380C4B650E22DC13 , bda:LG9FC860DA7FF01453 , bda:LGBF3C3C89444F3E7F , bda:LGIM320307B99D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR643D6563F9168710
+        a                   :AgentAsCreator ;
+        :agent              bdr:P691 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG12781  skos:altLabel  "rituals for the propitiation of the four faced mahakala, rma-chen spom-ra, gnan-chen than-lha and dge-bsnen sprag-btsan : arranged according to the practice of the 'dzi-sgar monastery of the 'brug-pa dkar-brgpud-pa tradition"@en .
+
+    bdr:WA1KG12781  a       :Work ;
+        skos:prefLabel      "mgon po zhal bzhi pa dang yul lha sogs kyi gsol mchod/"@bo-x-ewts , "rituals for the propitiation of the four faced mahakala, rma-chen spom-ra, gnan-chen than-lha and dge-bsnen sprag-btsan : arranged according to the practice of the 'dzi-sgar monastery of the 'brug-pa dkar-brgpud-pa tradition"@en ;
+        :creator            bdr:CR643D6563F9168710 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG12781 , bdr:W1KG12781 ;
+        :workIsAbout        bdr:T1927 , bdr:T2190 , bdr:T249 , bdr:T924 .
+}

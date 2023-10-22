@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20851 {
+    bda:LG5814EDB5E86ECC60
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5C396E0375B8B921
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-01-11T11:49:50.774Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG8221C5B5E3B68B5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-11T11:49:30.258Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20851  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20851 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4d/WA20851.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20851 ;
+        adm:logEntry        bda:LG5814EDB5E86ECC60 , bda:LG5C396E0375B8B921 , bda:LG8221C5B5E3B68B5B , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8CAB6759B728D15A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5617 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA3D1BDE7C861FFB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6982 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW20851  skos:altLabel  "an introduction to the history and monastery zanskar"@en .
+
+    bdr:WA20851  a          :Work ;
+        skos:prefLabel      "zangs dkar gyi rgyal rabs dang chos 'byung /"@bo-x-ewts , "an introduction to the history and monastery zanskar"@en ;
+        :creator            bdr:CR8CAB6759B728D15A , bdr:CRA3D1BDE7C861FFB8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 , bdr:T793 ;
+        :workHasInstance    bdr:MW20851 , bdr:W20851 ;
+        :workIsAbout        bdr:G867 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2177 {
+    bda:LG3555E8ABCFD8FEA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-10T09:17:53.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE2C781EBCB25FE7B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2177"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2177  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2177 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "61/WA1NLM2177.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2177 ;
+        adm:logEntry        bda:LG3555E8ABCFD8FEA7 , bda:LGE2C781EBCB25FE7B , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2177  a       :Work ;
+        skos:prefLabel      "dpal dur khrod bdag po'i bskang gso dngos grub 'bar ba'i 'od sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mnol bsang gsar byas legs bshad snying po/ 2 rgyal po chen po rnam thos sras la bsangs mchod 'bul tshul 'dod dgu'i char 'bebs/ 3 srog glud gtong tshul/ 4 me mchod kyi cho ga 'khyer bde bkra shis dpal 'bar/ 5 klu bsangs gtong bar 'dod pa/ 6 klog bsgom zab mo/ 7 las bzhi dang 'brel pa'i mar me ji ltar 'bul pa'i tshul bde legs 'byung gnas/ 8 dpal ldan dur khrod bdag po khrag chang gser skyems/ 9 rta mgrin gsang sgrub kyi chos skor las/ sha brgya zan brgya'i cho ga dga' bde'i dpal ster/ 10 bsangs mchod/ 11 paN chen thams cad mkhyen pa blo bzang chos kyi rgyla mtshan gyis mdzad pa sdig sgrub kun sel/ 12 rje btsun 'phags ma sgrol ma nyer gcig bsangs mchod dge legs char 'bebs/ 13 rgya nag skag bzlog gi bsdu pa bzlog pa/ 14 shar lhor bsang / 15 dngos grub kun stsol bar chad sdig sgrib sel bsangs/ 16 lcam drel 'khor dang bcas par gser skyems mchod pa/ 17 sgrol dkar mo dang lha mo la 'brum pa yang zhing gsol pa'i man sbyar ngag tshul/"@en , "Regular propitiation of master of charnel; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2177 , bdr:W1NLM2177 ;
+        :workIsAbout        bdr:T19 , bdr:T928 .
+}

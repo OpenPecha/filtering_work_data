@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD1990 {
+    bda:LG2AD36FC422270093
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T15:47:18.169Z"^^xsd:dateTime ;
+        adm:logMessage      "add authors and changed titiles"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4096231D4E60AD5F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T10:12:26.597Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG8C9F376A82EF6507
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-22T10:13:56.873Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE9A446D5027D2275
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4PD1990  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD1990 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/WA4PD1990.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD1990 ;
+        adm:logEntry        bda:LG2AD36FC422270093 , bda:LG4096231D4E60AD5F , bda:LG8C9F376A82EF6507 , bda:LGE9A446D5027D2275 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4PD1990  a        :Work ;
+        skos:altLabel       "bka' ma theg rim dgu'i phrin chog mtha' dag phyogs gcig tu bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "snga 'gyur bka' ma/"@bo-x-ewts ;
+        :catalogInfo        "Earlier edition of the Karma, compiled by rdzogs chen rgyal sras gzhan phan mtha' yas (1800-1855)"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW4PD1990 , bdr:W4PD1990 ;
+        :workIsAbout        bdr:T1082 , bdr:T310 .
+}

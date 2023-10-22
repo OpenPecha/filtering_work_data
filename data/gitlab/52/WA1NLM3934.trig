@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3934 {
+    bda:LGD842174C179D1568
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-21T09:45:36.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3934"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3934  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3934 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "52/WA1NLM3934.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3934 ;
+        adm:logEntry        bda:LGD842174C179D1568 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3934  a       :Work ;
+        skos:prefLabel      "'phags pa gnam sa snang brgyad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsrung 'khor rnams drug phyogs gcig tu bsgom tshul/ 2 seng+ge'i gdong mkha' 'gro/ 3 sman chog mdor bsdus/ 4 paN chen rin po ches mdzad pa'i lhag bsam smon lam/ 5 rten gsum lha shing chu mig mgon rta lha g.yag lha lugs lhra ra khang khyim ra ba yod byad sogs dang rang gi lus ngag yid la grib kyis gnol ba'i rtags/ 6 bsangs/ 7 gtor ma brgya rtsa gtong bar 'dod pa/ 8 yul lha'i gsol mchod lha ngo ming 'phrod pa'i dga' ston/ skyes lha'i gsol mchod/ 9 lus ngag yid gzum bcings pa las grol bar byed pa'i gzungs/ 10 rdo rje rnam par 'joms pa/ 11 phung log nag po bzlog med/ dam sri 'gong po dgra 'dre phung shig gi drag sngags/ byad ma 'bum bzlog /lha 'dre kun bzlog 12 sangs rgyas 'od dpag med pa'i gzungs sngags/ 13 dpal rdo rje 'jigs byed kyib sgom bzlas mdor bsdus/ 14 dpa' cig thod pa so so/ 15 'phags pa ma sgrol ma rang gi dam bcas pa/ gzungs/ 16 rta thog rab gnas ma/ 17 bstod pa byin rlabs nyer mjug ma/ 18 chos gos byin brlabs/ 19 theg pa chen po'i gso skyong gi sdom pa len tshul/ 20 sgrib sel gyi gsol d'ebs sngags dang bcas pa/ 21 g.yang 'bod yid bzhin 'gugs pa'i lcags kyu/ 22 dpal dur khrod bdag po la bsangs mchod 'bul ba/"@en , "Mahayana sutra known as Arya bara yara jedtra."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3934 , bdr:W1NLM3934 ;
+        :workIsAbout        bdr:T1KG3717 .
+}

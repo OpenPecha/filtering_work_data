@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1713 {
+    bda:LG51B81BB2E2981F90
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-10T10:27:45.467Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG67071BCC2EFF5AC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:44:33.807Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG993FAB9B4B225C89
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1713"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1713  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1713 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "68/WA1NLM1713.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1713 ;
+        adm:logEntry        bda:LG51B81BB2E2981F90 , bda:LG67071BCC2EFF5AC7 , bda:LG993FAB9B4B225C89 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR64B942E2FE5DF371
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1713  a       :Work ;
+        skos:prefLabel      "gshin po'i rjes su 'dzin tshul thar ba'i sgo 'byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dmigs brtse ma la brten pa'i bkru byabs bsrung gsum bya tshul/ 2 snod nag po'i gser chos gshin bcos/ 3 rang nyid sdug bsngal gyis mnar ba bzhin du sems can thams cad sdug bsngal gyis mnar/ 4 lhag pa'i smon lam/ 5 phyugs bzhi'i gsur mchod/ 6 rnga mong phyugs bzhi la bsur/ 7 dge ldan lugs bzang rgyas pa'i smon lam 'grub pa'i bden tshig 8 gdon chen bco lnga'i bsangs bsur/ 9 zas kyi 'tsho ba rnam par dag pa zhes bya ba theg pa chen po'i mdo/ 10 rje btsun bla ma lha tshogs la/ 11 rgyun du kha 'don byed na nyams len 'ong ba'i man ngag zab mo/ 13 rje btsun blo bzang bstan pa'i rgyal mtshan dpal bzang pos gsungs pa'i gsol 'debs srid zhi'i gdung skyob ma/ 14 skyabs su 'gro pa'i tshul dang / bla ma'i rnal 'byor dga' ldan lha brgyad dang / 'phgs pa spyan ras gzigs kyi snying po/ 15 rje btsun nA ro mkha' spyod kyi sgrub thabs shin tu bsdus pa mkha' spyod bsgrod pa'i them skas/ 16 byang phyogs 'gro ba'i mgon rje btsun dz+nyA na badzra kyis mdzad pa'i bla ma he ru ka dbyer med pa la gsol ba 'debs shing dngos grub zhu ba'i don/ 17 theng ger la/ phyugs por stor na/ byang phyogs dang bub du btsal/ 18 bla ma dang rigs ldan drag po 'khor lo can dbyer med du gsol ba 'debs tshul/"@en , "A funeral rites by Lhatsun Sumati Mani Prajna and other text also included."@en ;
+        :creator            bdr:CR64B942E2FE5DF371 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM1713 , bdr:W1NLM1713 .
+}

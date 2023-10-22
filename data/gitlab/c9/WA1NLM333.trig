@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM333 {
+    bda:LG0171AA5D974ED54D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-28T12:38:16.857Z"^^xsd:dateTime ;
+        adm:logMessage      "recataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG33350199EFB8E430
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T11:44:07.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG34A7086963A03B47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG3F5E6B9CF113A2C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-16T16:18:28.85Z"^^xsd:dateTime ;
+        adm:logMessage      "new outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG82F72FC28ADD0E24
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG984856297C85A44D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-26T15:23:08.773Z"^^xsd:dateTime ;
+        adm:logMessage      "FULL CATALOGED"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC8651C78E24458EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-16T16:24:30.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM333"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM333  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM333 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c9/WA1NLM333.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM333 ;
+        adm:logEntry        bda:LG0171AA5D974ED54D , bda:LG33350199EFB8E430 , bda:LG34A7086963A03B47 , bda:LG3F5E6B9CF113A2C2 , bda:LG82F72FC28ADD0E24 , bda:LG984856297C85A44D , bda:LGC8651C78E24458EB , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM332 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM333  a        :Work ;
+        skos:altLabel       "rje rgyal po chen po ki si nas bi kra mi ji ta'i khri la bzhugs pa'i phyir du shing mi'i dang po mahA kA la nas bzung ste shing mi so gnyis pa'i bar du phan tshun smra ba'i lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal po ki si nas bi kra mi ji ta'i khri la bzhugs pa'i phyir du shing mi'i dang po mahA kA la nas bzung ste shing mi so gnyis pa'i bar du phan tshun smra ba'i lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "Parables explaining important concepts Karma, text translated from Sanskrit to Mongolian and later in to Tibetan."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T276 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15444 {
+    bda:LG0CBE0B7A23AE21DF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-08T11:54:22.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG926DB0AB97A34910
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-08T11:53:48.401Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15444  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15444 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "13/WA1KG15444.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15444 ;
+        adm:logEntry        bda:LG0CBE0B7A23AE21DF , bda:LG926DB0AB97A34910 , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1AF9136004AB5E68
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15445 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG15444  a       :Work ;
+        skos:altLabel       "inventaire des manuscrits tibetains de touen-houang, conserves a la bibliotheque nationale (fonds pelliot-tibetain, nos 1-849)"@en ;
+        skos:prefLabel      "inventaire des manuscrits tibetains de touen-houang, conserves a la bibliotheque nationale"@en ;
+        :creator            bdr:CR1AF9136004AB5E68 ;
+        :isRoot             true ;
+        :language           bdr:LangFr ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW1KG15444 , bdr:W1KG15444 ;
+        :workIsAbout        bdr:T1KG5906 .
+}

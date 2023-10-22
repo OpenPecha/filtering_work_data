@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN2925 {
+    bda:LG3D8166BFDB7111DD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-23T10:56:29.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCD272B31E4314D4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCEE3BC15780A2EF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T10:39:46.172Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN2925  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN2925 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/WA3CN2925.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN2925 ;
+        adm:logEntry        bda:LG3D8166BFDB7111DD , bda:LGCD272B31E4314D4F , bda:LGCEE3BC15780A2EF6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN2925  a        :Work ;
+        skos:altLabel       "rdo rje gcod pa/ 'jam dpal mtshan brjod/"@bo-x-ewts ;
+        skos:prefLabel      "rgya yul nas rnyed pa'i mdo sna tshogs kyi dpe rnying tshan pa dang po/"@bo-x-ewts ;
+        :catalogInfo        "Collection of handwritten manuscript sutras in Tibetan from China. 1st Sect. rje gcod pa & 'jam dpal mtshan brjod."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T769 ;
+        :workHasInstance    bdr:MW3CN2925 , bdr:W3CN2925 .
+}

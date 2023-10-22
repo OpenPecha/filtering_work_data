@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66779 {
+    bda:LG5212A1475105544F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T10:01:06.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG591AFF10DAF3DFFD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-07T11:41:59.233Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8DB8560750025CA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9310C0F486ED6CEE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T11:25:44.598Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE45D6EB6129D5364
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-27T11:24:59.797Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author statement and page number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66779  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66779 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a7/WA8LS66779.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66779 ;
+        adm:logEntry        bda:LG5212A1475105544F , bda:LG591AFF10DAF3DFFD , bda:LG8DB8560750025CA7 , bda:LG9310C0F486ED6CEE , bda:LGE45D6EB6129D5364 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR381156D4C457A5B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75489 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8LS66779  skos:altLabel  "News"@en .
+
+    bdr:WA8LS66779  a       :Work ;
+        skos:prefLabel      "bod skad snyan sgron dang le tshan gtso skyong la 'jug pa'i sgo"@bo-x-ewts , "News"@en ;
+        :catalogInfo        "Tibetan language usage for news broadcaster and moderator by Jamyang Dondrup."@en ;
+        :creator            bdr:CR381156D4C457A5B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66779 , bdr:W8LS66779 ;
+        :workIsAbout        bdr:T00KG03708 , bdr:T265 .
+}

@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20600 {
+    bda:LG2290FCF43B81CE5B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:14:09.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG442FC5887334E349
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG97B1E73EBAFDFF97
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T10:31:58.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD70DDA114687EE2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T15:07:06.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, isbn, authorship and edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE9299F3D48A631BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T14:58:47.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20600  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20600 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d6/WA8LS20600.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20600 ;
+        adm:logEntry        bda:LG2290FCF43B81CE5B , bda:LG442FC5887334E349 , bda:LG97B1E73EBAFDFF97 , bda:LGD70DDA114687EE2F , bda:LGE9299F3D48A631BA , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3CN6727 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR048DDDCD1A334E93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75304 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20600  a       :Work ;
+        skos:prefLabel      "skad yig/ (stod smad/)"@bo-x-ewts ;
+        :catalogInfo        "A children's comic book on basic Tibetan language and grammar."@en ;
+        :creator            bdr:CR048DDDCD1A334E93 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG26395 ;
+        :workHasInstance    bdr:MW8LS20600 ;
+        :workIsAbout        bdr:T265 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16621 {
+    bda:LG440FE50AFA79A6D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-22T10:36:02.611Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7A5AA10A47209A7A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-22T10:37:03.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF035CE51FE202510
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:43.26Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA8LS16621  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16621 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "eb/WA8LS16621.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16621 ;
+        adm:logEntry        bda:LG440FE50AFA79A6D4 , bda:LG7A5AA10A47209A7A , bda:LGF035CE51FE202510 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA869294318A8D2DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5512 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16621  a       :Work ;
+        skos:altLabel       "bka' rdzogs pa chen po yang zab dkon mchog spyi 'dus kyi khrid yig skal ldan sgrol byed rin chen gru rdzing /"@bo-x-ewts , "rdzogs pa chen po'i yang zab dkon mchog spyi 'dus kyi khrid yig skal ldan bde bgrod/"@bo-x-ewts ;
+        skos:prefLabel      "dkon mchog spyi 'dus kyi khrid yig skal ldan sgrol byed rin chen gru rdzing /"@bo-x-ewts ;
+        :catalogInfo        "An instructional manual of Konchok Cithue by Minling Ugyen Namdrol Gyatso, composed on the basis of Lhatsun Kunga Namgyal's instructional manual at the request of Eton Tulku; material collected in fire-snake year at the age of 65 and writting commenced in fire-dragon year at the house of Kunzang Tse and completed at Shelri Pelchen hermitage."@en ;
+        :creator            bdr:CRA869294318A8D2DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 ;
+        :workHasInstance    bdr:MW8LS16621 , bdr:W8LS16621 ;
+        :workIsAbout        bdr:T354 , bdr:WA8LS16660 .
+}

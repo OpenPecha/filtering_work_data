@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238067 {
+    bda:LGA41EA21BBA73A61A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGA46C990CC357E727
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-09-21T17:31:28.277Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE370812FA5BF7835
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-09-21T17:37:03.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG238067  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238067 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "28/WA2KG238067.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238067 ;
+        adm:logEntry        bda:LGA41EA21BBA73A61A , bda:LGA46C990CC357E727 , bda:LGE370812FA5BF7835 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR28AA5016076C9ED3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1361 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238067  a      :Work ;
+        skos:altLabel       "si tu dbon karma nges legs bstan 'dzin gyi bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ karma nges legs bstan 'dzin/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Karma Ngeleg Tenzin, a famous physican and one of the nephews of Situ Panchen Chokyi Jungne."@en ;
+        :creator            bdr:CR28AA5016076C9ED3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG238067 , bdr:W2KG238067 ;
+        :workIsAbout        bdr:T1386 .
+}

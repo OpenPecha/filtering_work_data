@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1983 {
+    bda:LG19741CD38A96AF2E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-09-25T13:50:34.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG47FABFA81C768229
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-29T12:52:17.045Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9F1A6C8C22F33362
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-26T12:37:03.159Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB7A9A758BE605FF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-09-25T09:50:01.647Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog from dummy"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1CZ1983  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1983 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "86/WA1CZ1983.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1983 ;
+        adm:logEntry        bda:LG19741CD38A96AF2E , bda:LG47FABFA81C768229 , bda:LG9F1A6C8C22F33362 , bda:LGB7A9A758BE605FF6 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1CZ1983  a        :Work ;
+        skos:altLabel       "bcom ldan 'das dpal dus kyi 'khor lo'i chos 'byung ngo mtshar rtogs brjod/"@bo-x-ewts ;
+        skos:prefLabel      "dus 'khor chos 'byung ngo mtshar rtogs brjod/"@bo-x-ewts ;
+        :catalogInfo        "History of the Kalachakra Tantra."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW1CZ1983 , bdr:W1CZ1983 ;
+        :workIsAbout        bdr:T74 .
+}

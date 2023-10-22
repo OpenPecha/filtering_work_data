@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23975 {
+    bda:LG454F82A7E4ED571E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9359E34D13B4A67C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-21T16:43:35.625Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA23975  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23975 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "21/WA23975.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23975 ;
+        adm:logEntry        bda:LG454F82A7E4ED571E , bda:LG9359E34D13B4A67C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR1B03562D9E7A396E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6167 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23975  a          :Work ;
+        skos:altLabel       "rnam rgyal bum sgrub kyi dbang chog 'gro phan spel byed/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun tA ra nA thas mdzad pa'i rnam rgyal bum sgrub kyi dbang chog 'gro phan spel byed/"@bo-x-ewts ;
+        :creator            bdr:CR1B03562D9E7A396E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T48 ;
+        :workHasInstance    bdr:MW23975 ;
+        :workIsAbout        bdr:T1781 .
+}

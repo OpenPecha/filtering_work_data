@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2766 {
+    bda:LG247F71EF900E4D79
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-11T10:54:24.472Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG988E8234B932E479
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGCA72AC2638ED3152
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:42:42.331Z"^^xsd:dateTime ;
+        adm:logMessage      "full cadloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2766"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2766  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2766 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "75/WA1NLM2766.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2766 ;
+        adm:logEntry        bda:LG247F71EF900E4D79 , bda:LG988E8234B932E479 , bda:LGCA72AC2638ED3152 , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3E5CD456D8D15DE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2766  a       :Work ;
+        skos:altLabel       "rgyal ba khyab bdag rdo rje 'chang chen po'i lam gyi rim pa gsang ba kun gyi gnad rnam par phye ba/"@bo-x-ewts ;
+        skos:prefLabel      "sngags rim chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Monumental survey of Vajrayana Buddhism. One of Tsongkhapa's great works. Written at the behest of one of the Pakmodru hierarchs, Sonam Zangpo, at the Jampa Ling with Gyakde Sonam Pelzang as scribe."@en ;
+        :creator            bdr:CR3E5CD456D8D15DE8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2766 , bdr:W1NLM2766 ;
+        :workIsAbout        bdr:T307 .
+}

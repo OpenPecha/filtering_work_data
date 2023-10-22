@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77817 {
+    bda:LG8360EB85ED10547F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-17T08:21:40.729Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDAB87DBE86BE70E9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-17T08:22:08.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77817  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77817 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "88/WA8LS77817.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77817 ;
+        adm:logEntry        bda:LG8360EB85ED10547F , bda:LGDAB87DBE86BE70E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS77817  a       :Work ;
+        skos:altLabel       "'dzin grwa drug pa'i slob deb/ nang chos dang rigs lam/"@bo-x-ewts ;
+        skos:prefLabel      "nang chos dang rigs lam/ 'dzin grwa drug pa'i slob deb/"@bo-x-ewts ;
+        :catalogInfo        "Textbook ob Buddhist philosophy and logic for class six standard. Reader VI Part III."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS77817 , bdr:W8LS77817 ;
+        :workIsAbout        bdr:T370 , bdr:T770 .
+}

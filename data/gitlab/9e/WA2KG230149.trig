@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG230149 {
+    bda:LGD2E0AD0171FFB914
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-12-17T13:17:10.056Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD92636445233F17D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-12-17T13:19:05.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG230149  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG230149 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9e/WA2KG230149.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG230149 ;
+        adm:logEntry        bda:LGD2E0AD0171FFB914 , bda:LGD92636445233F17D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR52869307F808B279
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG230190 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG230149  a      :Work ;
+        skos:altLabel       "grib nag khrod du/"@bo-x-ewts ;
+        skos:prefLabel      "brtsams sgrung phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of fiction stories by Lopon Tenzin Chophel."@en ;
+        :creator            bdr:CR52869307F808B279 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T260 ;
+        :workHasInstance    bdr:MW2KG230149 , bdr:W2KG230149 .
+}

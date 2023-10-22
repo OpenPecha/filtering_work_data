@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23949 {
+    bda:LG3546336BF8D5C588
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:09:30.742Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGA6A789873A6300C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGEB15110C5309709D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23949  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23949 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6a/WA23949.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23949 ;
+        adm:logEntry        bda:LG3546336BF8D5C588 , bda:LGA6A789873A6300C7 , bda:LGEB15110C5309709D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0BDAAD15333D5539
+        a                   :AgentAsCreator ;
+        :agent              bdr:P544 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23949  skos:altLabel  "biography of grub-dban nag-dban-bsam-gtan"@en-x-mixed .
+
+    bdr:WA23949  a          :Work ;
+        skos:altLabel       "rje grub pa'i dban phyug nag dban bsam gtan gyi rnam par thar pa skal bzan bun ba dga' byed utpal dkar po'i 'khri sin : the biography of grub-dban nag-dbang-bsam-gtan (1631-1709)"@bo-alalc97 , "grub dbang ngag dbang bsam gtan gyi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "rje grub pa'i dbang phyug ngag dbang bsam gtan gyi rnam par thar pa skal bzang bung ba dga' byed utpal dkar po'i 'khri shing /"@bo-x-ewts , "biography of grub-dban nag-dban-bsam-gtan"@en-x-mixed ;
+        :catalogInfo        "Biography of Bhutanese Buddhist, Lho Drubchen Ngawang Samten."@en ;
+        :creator            bdr:CR0BDAAD15333D5539 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW23949 , bdr:W23949 ;
+        :workIsAbout        bdr:P520 , bdr:T816 .
+}

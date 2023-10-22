@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3342 {
+    bda:LG2F85338C2250EFB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:21:16.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3ADB22778559BF06
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-04T19:13:37.075Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG484EEDEEF228479E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-10T12:19:06.242Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN3342  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3342 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "19/WA3CN3342.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3342 ;
+        adm:logEntry        bda:LG2F85338C2250EFB6 , bda:LG3ADB22778559BF06 , bda:LG484EEDEEF228479E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05D931C8834B8C03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4856 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3342  a        :Work ;
+        skos:altLabel       "mkhyen rab 'od gsal gyis brtsams pa'i sum cu pa'i 'grel pa/"@bo-x-ewts , "sum bcu pa'i rnam bshad gzur gnas dgyes pa'i gtam/"@bo-x-ewts ;
+        skos:prefLabel      "sum cu pa'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Tibetan grammar Sumchupa by Khyenrab Osal (1925-1996)."@en ;
+        :creator            bdr:CR05D931C8834B8C03 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN3342 , bdr:W3CN3342 ;
+        :workIsAbout        bdr:T186 , bdr:WA19377 .
+}

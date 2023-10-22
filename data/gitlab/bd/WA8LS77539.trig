@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77539 {
+    bda:LG469EDBB1B97FFDE9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-28T13:10:17.856Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF00D81E96CE71D02
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-28T13:09:54.571Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77539  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77539 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/WA8LS77539.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77539 ;
+        adm:logEntry        bda:LG469EDBB1B97FFDE9 , bda:LGF00D81E96CE71D02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD424690F80D0A10E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P87 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77539  a       :Work ;
+        skos:altLabel       "lung dang rig pa'i dbang phyug mkhas grub chen po sbyin pa dar rgyas dpal bzang po'i mdzad pa'i phar phyin spyi don/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin spyi don/"@bo-x-ewts ;
+        :catalogInfo        "An exegesis of the general meaning of Paramita by Khedrup Jinpa Dargyey."@en ;
+        :creator            bdr:CRD424690F80D0A10E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1763 ;
+        :workHasInstance    bdr:MW8LS77539 , bdr:W8LS77539 ;
+        :workIsAbout        bdr:T36 .
+}

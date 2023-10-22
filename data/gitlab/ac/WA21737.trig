@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21737 {
+    bda:LG5277A4F233E78098
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG65C1CBFE48EE9B5F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB4D3E13FAEEB93D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T10:46:59.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBCA5B138257265A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T17:26:58.181Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bib title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21737  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21737 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ac/WA21737.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21737 ;
+        adm:logEntry        bda:LG5277A4F233E78098 , bda:LG65C1CBFE48EE9B5F , bda:LGB4D3E13FAEEB93D8 , bda:LGBCA5B138257265A7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10FE77F102DE2FC0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW21737  skos:altLabel  "dag pa'i gzigs pa nams snan mdzod khan skor dang rgya che'i gsun chos skor : visionary teachings and writings on buddhist practice of gter-chen ratna-glin-pa"@en-x-mixed .
+
+    bdr:WA21737  a          :Work ;
+        skos:prefLabel      "dag pa'i gzigs pa nyams snang mdzod khang skor dang rgya che'i gsung chos skor/"@bo-x-ewts , "dag pa'i gzigs pa nams snan mdzod khan skor dang rgya che'i gsun chos skor : visionary teachings and writings on buddhist practice of gter-chen ratna-glin-pa"@en-x-mixed ;
+        :catalogInfo        "Visionary teachings and writings on Buddhist practice of the Nyingma order."@en ;
+        :creator            bdr:CR10FE77F102DE2FC0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW21737 , bdr:W21737 ;
+        :workIsAbout        bdr:T1082 .
+}

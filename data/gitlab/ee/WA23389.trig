@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23389 {
+    bda:LG097C9BA6442030CB
+        a                   adm:InitialDataCreation .
+
+    bda:LGC209A034BC81A8C8
+        a                   adm:UpdateData .
+
+    bda:W23389  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W23389 ;
+        adm:replaceWith     bdr:WA23389 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA23389  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23389 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ee/WA23389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23389 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR43B59D15040917D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7673 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23389  a          :Work ;
+        skos:altLabel       "vinayakarika malakara/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba me tog phreng rgyud/"@bo-x-ewts ;
+        :creator            bdr:CR43B59D15040917D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo .
+}

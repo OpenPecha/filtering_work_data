@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9977 {
+    bda:LG274BA53826CFB2B1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-06-14T14:28:49.547Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3627A8CAC9B67F56
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T19:11:16.526Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T934 to T1028"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG4B2CC32C14322B28
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-06-14T14:30:42.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG775CA91A8825C3CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T15:17:01.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9977  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9977 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "98/WA1KG9977.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9977 ;
+        adm:logEntry        bda:LG274BA53826CFB2B1 , bda:LG3627A8CAC9B67F56 , bda:LG4B2CC32C14322B28 , bda:LG775CA91A8825C3CA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD14B7B431B343BE0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRFD6DC50EB466B81C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2063 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG9977  a        :Work ;
+        skos:altLabel       "dgon gnas stag bral bsam gtan gling du rab tu gnas pa'i cho ga dge legs rgya mtsho'i char 'bebs dang / rab gnas rta thog ma/ arga'i cho ga bcas dpal ldan smad rgyud pa'i phyag bzhes ltar mdzad rgyun nag 'gros su bkod pa/"@bo-x-ewts , "gsang bde 'jigs gsum so so dang 'brel ba'i rab tu gnas pa'i cho ga dge legs rgya mtsho'i char 'bebs kyi zin bris dwangs shel me long /"@bo-x-ewts ;
+        skos:prefLabel      "gsang bde 'jigs gsum so so dang 'brel ba'i rab tu gnas pa'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for performing consecrations."@en ;
+        :creator            bdr:CRD14B7B431B343BE0 , bdr:CRFD6DC50EB466B81C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T1478 ;
+        :workHasInstance    bdr:MW1KG9977 , bdr:W1KG9977 .
+}

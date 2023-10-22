@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15343 {
+    bda:LG6463CDD5A8986D72
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-27T14:09:59.06Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA4868CBF2DF860C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA8FC5A8D1B7603B7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-23T16:27:59.274Z"^^xsd:dateTime ;
+        adm:logMessage      "ctaloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC338A0D15BC4C8BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T15:11:43.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15343  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15343 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "32/WA3CN15343.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15343 ;
+        adm:logEntry        bda:LG6463CDD5A8986D72 , bda:LGA4868CBF2DF860C9 , bda:LGA8FC5A8D1B7603B7 , bda:LGC338A0D15BC4C8BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR78A868F8C9327B9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P155 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15343  a       :Work ;
+        skos:prefLabel      "bu ston rin po che dang 'brel ba'i gsung 'ga' zhig"@bo-x-ewts ;
+        :catalogInfo        "Some manuscript texts that related with Button Rinpoche in Zhalu tradition."@en ;
+        :creator            bdr:CR78A868F8C9327B9C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW3CN15343 , bdr:W3CN15343 ;
+        :workIsAbout        bdr:T1198 .
+}

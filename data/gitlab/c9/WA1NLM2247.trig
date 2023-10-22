@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2247 {
+    bda:LG787E96BBE679354E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-06T09:16:57.578Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, creator, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8CB387C6973CC67C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2247"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2247  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2247 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/WA1NLM2247.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2247 ;
+        adm:logEntry        bda:LG787E96BBE679354E , bda:LG8CB387C6973CC67C , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4E6E163A8F09F6D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2247  a       :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub bka' bstod dang bcas pa'i bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'jam dpal nag po khro bo'i mngon rtogs/ 2 dbu ma'i lta ba la bstod pa'i tshigs su bcad pa/ 3 byang chub kyi sems la bstod pa'i tshigs su bcad pa/ 4 nges byung la bstod pa sna bshas gcod pa'i gser gyi spu gri/ 5 rje btsun rig byed ma'i sgo nas bkra shis dge mtshan spel ba'i cho ga'i ngag 'don/ 6 yang lag bdun pa 'bul ba/ 7 ma dang dar sogs kyis g.yo cing snyan pa'i gdangs bcas/ 8 rje btsun ma ku ru kul+le'i sgrub thabs ut+pal la'i 'phreng ba/ 9 sgra mi snyan gyi tshe sgrub lag du len tshul tshe dpal mchog sbyin/ 10 mkha' 'gro sbyin bsreg 11 slob dpon chen po pad+ma 'byung gnas kyi sgrub thabs/ 12 bsam pa lhun 'grub/ 13 'od dpag med la brten pa'i 'pho ba/ 14 'od dpag med dam bca' ba'i gzungs/ 15 dkar gtor/ 16 ja phud 'bul tshul/ 17 klu'i rgya btab bsrub pa'i man ngag nad gdon mthar byed/ 18 bse rag spun dgu'i ba dan thabs kyi bcos thabs/ 19 bcom ldan 'das dam tshig gsum bkod kyi bla ma'i rnal 'byor la brten nas de bzhin gshegs pa'i yig brgya dang bzang po spyod pa'i smon lam 'brel ba'i 'don thabs/ 20 dpal rdo rje 'jigs byed kyi tshogs kyi 'khor lo'i cho ga bde ba chen po/"@en , "Confession, purification and repelling ritual of Hayagriva Guhyasadhana; included other text also."@en ;
+        :creator            bdr:CR4E6E163A8F09F6D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2247 , bdr:W1NLM2247 ;
+        :workIsAbout        bdr:T1892 , bdr:T1AT269 , bdr:T50 .
+}

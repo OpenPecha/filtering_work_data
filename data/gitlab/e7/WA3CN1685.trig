@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1685 {
+    bda:LG5DB489CD5FA6AF7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-21T16:02:10.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added monastery G#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG63D9803ABFDFB1E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-21T15:36:53.198Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8CBA52155D647A15
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-29T13:06:56.013Z"^^xsd:dateTime ;
+        adm:logMessage      "reveiwed by LS, KG, CN and CZ"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCD4030951D59CEC0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-21T15:37:48.613Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFC2B2D417F4924B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:WA3CN1685  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1685 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e7/WA3CN1685.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1685 ;
+        adm:logEntry        bda:LG5DB489CD5FA6AF7F , bda:LG63D9803ABFDFB1E5 , bda:LG8CBA52155D647A15 , bda:LGCD4030951D59CEC0 , bda:LGFC2B2D417F4924B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN1685  a        :Work ;
+        skos:altLabel       "'khros go kar chag"@bo-x-ewts , "dga' ldan 'khrus lho dgon nyams gso bgyis pa'i dkar chag"@bo-x-ewts ;
+        skos:prefLabel      "khrus sgo dgon pa'i dkar chag"@bo-x-ewts ;
+        :catalogInfo        "Account of reconstructed Trugo monastery that near the turquoise lake, Manasarovar. Author unknown."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW3CN1685 , bdr:W3CN1685 ;
+        :workIsAbout        bdr:G2250 , bdr:T359 .
+}

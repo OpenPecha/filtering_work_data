@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23450 {
+    bda:LG1AA123BE9F55DD08
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-01-12T10:51:53.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88694900D1C648B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-06T16:50:01.614Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGD0B627FA90BE5240
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23450  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23450 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "14/WA23450.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23450 ;
+        adm:logEntry        bda:LG1AA123BE9F55DD08 , bda:LG88694900D1C648B3 , bda:LGD0B627FA90BE5240 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23450  skos:altLabel  "Dpal yul chos spyod :collected liturgical texts recited at the monastery of Dpal-yul in Khams."@en-x-mixed .
+
+    bdr:WA23450  a          :Work ;
+        skos:prefLabel      "dpal yul chos spyod : collected liturgical texts recited at the monastery dpal yul in khams/"@bo-x-ewts , "Dpal yul chos spyod :collected liturgical texts recited at the monastery of Dpal-yul in Khams."@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW23450 , bdr:W23450 ;
+        :workIsAbout        bdr:G18 .
+}

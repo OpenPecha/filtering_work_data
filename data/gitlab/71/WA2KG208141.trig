@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208141 {
+    bda:LG765BCB6656ADC6F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-30T16:05:21.509Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG851CB9C9A9B05640
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-30T16:13:55.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG87DFA249EBCAC8CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA2KG208141  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208141 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "71/WA2KG208141.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208141 ;
+        adm:logEntry        bda:LG765BCB6656ADC6F7 , bda:LG851CB9C9A9B05640 , bda:LG87DFA249EBCAC8CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR942C1D04AC0EB19D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P675 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208141  a      :Work ;
+        skos:prefLabel      "dpal gar gyi dbang phyug gsang ba ye shes kyi mkha' 'gro'i nges 'byung gi rnam bshad thar pa'i srog 'dzin sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of manual and explanation on Dakini Guhyajnana practice by a Geluk master Lelung Jedrung Zhepai Dorje (1697-1740)."@en ;
+        :creator            bdr:CR942C1D04AC0EB19D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 , bdr:T61 ;
+        :workHasInstance    bdr:MW2KG208141 , bdr:W2KG208141 ;
+        :workIsAbout        bdr:T697 .
+}

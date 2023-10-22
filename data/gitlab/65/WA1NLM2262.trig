@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2262 {
+    bda:LGA5AC81AAD297D527
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-12T11:27:16.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFA4C448AD593E06F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2262"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2262  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2262 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "65/WA1NLM2262.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2262 ;
+        adm:logEntry        bda:LGA5AC81AAD297D527 , bda:LGFA4C448AD593E06F , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA06DD1E3D9FB3C22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7497 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2262  a       :Work ;
+        skos:prefLabel      "sman bla bde gshegs bdun gyi mdo chog la brten pa'i 'chi bslu pa'i cho ga zla ba'i 'od zer sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bya rgyud de bzhin gshegs pa'i rigs kyib dag po gsang ba spyi rgyud las gsungs pa'i rigs gsum spyi sgrub kyi dbang brgyud/ 2 bde mchog lhan skyes lha lnga'i sta gon dang bcas pa ras bris kyi dkyil 'khor du dbang legs par thob pa'i brgyud pa/ 3 jo bo rje'i man ngag las byung ba'i 'byung ba chu dang rlung lam du byed tshul/ 4 me phag tshangs pa mdung thugs rjes chen po zhus pa'i lung bstan/ 5 'bras rtsis btus ming / 6 zhabs brtan gsol 'debs/ 7 zhabs brtan mtshan dpe rab rgyas ma/ 8 hal ha dza sag thu han e mag gi bstan pa'i gsal byed dam pa sa ma ti bag zhi/ el kolg san mer gen paN+Di tA hu thog thu'i sprul sku blo bzang bstan'dzin gyi zhabs bstan smon tshig sa sti'i sgra dbyangs/ 9 gdugs dkar mo'i gsol mchod/ 10 legs bshad snying po/ 11 'grel pa bzhi sbrags bshad lung gnang skabs kyi brgyud 'debs/ 12 'grel pa bzhi sbrags/ 13 rim lnga gsal sgron gyi bshad lung gi brgyud 'debs/ 14 rdo lag brgyud ma gsum gyi brgyud rim/ 15 khrid chen brgyad kyi brgyud rim/ 16 rta mgrin gsang sgrub kyi dbang gi brgyud pa/ 17 rta mgrin gsang sgrub dben sa snyan rgyud dbang gi brgyud pa/ 18 pad+ma dbang chen yang gsang khros pa'i dbang gi brgyud pa/ 19 pad+ma dbang yang gsang gi mtor dbang gi brgyud pa/ 20 zhang blon gyi gtor 'bul/ 21 bkra shis brtsegs pa'i gsang 'gugs/ 22 bla ma bka' drin gsol 'debs/ 23 dpal dur khrod bda po'i rjes gnang gi brgyud pa/ 24 rje bla ma ngag dbang dkon mchog dpal bzang po'i 'khrungs rabs gsol 'debs/ 25 rlung rta dar ba'i bsang mchod me tog 'phreng ba/ 26 ngan song kun sgrol spyan ras gzigs gi rjes gnang / 27 rje btsun tA ra nA tha'i gsungs bsngo ba smon lam/"@en , "Life liberating ritual of seven medicine Buddha; other text also included."@en ;
+        :creator            bdr:CRA06DD1E3D9FB3C22 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2262 , bdr:W1NLM2262 ;
+        :workIsAbout        bdr:T568 , bdr:T846 , bdr:T870 .
+}

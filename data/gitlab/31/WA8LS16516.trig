@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16516 {
+    bda:LG873EF3FAE1EC713E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-21T12:16:25.409Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG92E1A2DF182FB0A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-19T11:19:27.903Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE06CD9EC888AC0B4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-19T11:20:25.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16516  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16516 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "31/WA8LS16516.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16516 ;
+        adm:logEntry        bda:LG873EF3FAE1EC713E , bda:LG92E1A2DF182FB0A5 , bda:LGE06CD9EC888AC0B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBF07A9886E3546A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16516  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po'i gdams pa 'ja' lus mngon byed u pa de sha'i 'grel pa kun tu bzang po'i dgongs pa'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs pa chen po'i gdams pa 'ja' lus mngon byed u pa de sha'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the instruction of great perfection by Longchen Drime Odzer."@en ;
+        :creator            bdr:CRBF07A9886E3546A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T613 ;
+        :workHasInstance    bdr:MW8LS16516 , bdr:W8LS16516 ;
+        :workIsAbout        bdr:T354 .
+}

@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21545 {
+    bda:LG5C9392DB70A82899
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T22:03:45.899Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6057743B76A07CF6
+        a                   adm:UpdateData ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC32FEEB2D24146FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-07T15:29:47.812Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC4AC8A51A1FADF26
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-09T11:42:07.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE771A5FD23097F22
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN21545  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21545 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a4/WA3CN21545.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21545 ;
+        adm:logEntry        bda:LG5C9392DB70A82899 , bda:LG6057743B76A07CF6 , bda:LGC32FEEB2D24146FF , bda:LGC4AC8A51A1FADF26 , bda:LGE771A5FD23097F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA21857 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR00338159508C24F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21545  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ o rgyan 'jigs med chos kyi dbang po/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Nyingma master Dza Patrul Orgyen Jigme Chokyi Wangpo (1808-1887)."@en ;
+        :creator            bdr:CR00338159508C24F9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1082 .
+}

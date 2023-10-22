@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66869 {
+    bda:LG15F3CA6C4C621C23
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T10:03:46.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6EAF7C8F00CA4DCA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-24T10:42:48.65Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG961EE06074CF5230
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-11T11:50:40.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added title, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD1929F45DE1F0F59
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-11T11:51:19.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE839B8EF12737093
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS66869  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66869 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2a/WA8LS66869.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66869 ;
+        adm:logEntry        bda:LG15F3CA6C4C621C23 , bda:LG6EAF7C8F00CA4DCA , bda:LG961EE06074CF5230 , bda:LGD1929F45DE1F0F59 , bda:LGE839B8EF12737093 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS66869  a       :Work ;
+        skos:altLabel       "phyi dus kyi 'khor lo'i skar rtsis rig pa'i rnam gzhag rigs ldan mchod pa'i 'od kyi snang ba/"@bo-x-ewts ;
+        skos:prefLabel      "phyi dus kyi 'khor lo'i skar rtsis rig pa'i rnam gzhag stod smad/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the Kalacakra system of astrology."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS66869 , bdr:W8LS66869 ;
+        :workIsAbout        bdr:T1834 , bdr:T74 .
+}

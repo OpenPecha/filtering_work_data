@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ367181 {
+    bda:LG37F7C6AC13B21D73
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:12:49.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG804E702A30224D7A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T12:35:23.455Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ367181  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ367181 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2d/WA4CZ367181.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ367181 ;
+        adm:logEntry        bda:LG37F7C6AC13B21D73 , bda:LG804E702A30224D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCABD4C1DF8CDF361
+        a                   :AgentAsCreator ;
+        :agent              bdr:P796 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRDFAA1E504C3FEAFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P783 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ367181  a      :Work ;
+        skos:altLabel       "chos 'byung rgya mtsho'i gru gzings/"@bo-x-ewts , "ngor pa'i chos 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "ngor chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "The religious history of the Ngor. Work was begun by Ngorchen Konchog Lhundrub and completed by Ngorchen Sanggye Puntsok."@en ;
+        :creator            bdr:CRCABD4C1DF8CDF361 , bdr:CRDFAA1E504C3FEAFD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW4CZ367181 , bdr:W4CZ367181 ;
+        :workIsAbout        bdr:T8LS16958 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1017014 {
+    bda:LG28C4F838DC864E2F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-22T20:44:18.25Z"^^xsd:dateTime ;
+        adm:logMessage      "published to create scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7F9CD159ACBD8868
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-22T20:46:56.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00EGS1017014
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1017014 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "46/WA00EGS1017014.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1017014 ;
+        adm:logEntry        bda:LG28C4F838DC864E2F , bda:LG7F9CD159ACBD8868 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8A1DDF45043BFF58
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2236 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW00EGS1017014
+        skos:altLabel       "a detailed exegesis of the bka'-brgyud-pa highly esoteric guruyoga"@en .
+
+    bdr:WA00EGS1017014
+        a                   :Work ;
+        skos:prefLabel      "lam zab bla ma'i rnal 'byor gyi rnam bshad bka' brgyud rin po che'i dgongs rgyan/"@bo-x-ewts , "a detailed exegesis of the bka'-brgyud-pa highly esoteric guruyoga"@en ;
+        :catalogInfo        "Detailed exegesis of the special profound path of Guru Yoga according to the Drikung Kagyu order. Written by Lhochen 03, Konchok Trinle Namgyel (b. 1624)."@en ;
+        :creator            bdr:CR8A1DDF45043BFF58 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW00EGS1017014 , bdr:W00EGS1017014 ;
+        :workIsAbout        bdr:T1190 .
+}

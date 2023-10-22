@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG11891 {
+    bda:LG3B111849548A9DE6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-30T12:27:54.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3C461CC9B49D5C8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG77809CC398BEA735
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-30T12:25:35.656Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG11891  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG11891 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ec/WA1KG11891.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG11891 ;
+        adm:logEntry        bda:LG3B111849548A9DE6 , bda:LG3C461CC9B49D5C8A , bda:LG77809CC398BEA735 , bda:LGIM569A8014B1 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC3F63DE20E9A82E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16640 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG11891  skos:altLabel  "yang gsang padma drag 'khros : a cycle of rnying-ma-pa practice focussing upon a wrathful form of tutelary deity fused with the mahaguru padmasambhava"@en .
+
+    bdr:WA1KG11891  a       :Work ;
+        skos:altLabel       "gter ston 'gro 'dul rdo rjes mdzad pa'i zhabs brtan gsol 'debs byin rlabs dbang bzhi'i chu rgyun nor bu'i mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "yang gsang pad+ma drag 'khros/"@bo-x-ewts , "yang gsang padma drag 'khros : a cycle of rnying-ma-pa practice focussing upon a wrathful form of tutelary deity fused with the mahaguru padmasambhava"@en ;
+        :catalogInfo        "Esoteric practices concentrating on the wrathful form of a tutelary deity joined with the mahaguru Padmasambhava."@en ;
+        :creator            bdr:CRC3F63DE20E9A82E5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T448 ;
+        :workHasInstance    bdr:MW1KG11891 , bdr:W1KG11891 ;
+        :workIsAbout        bdr:T1152 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5225 {
+    bda:LG58B5B3AE4E3206C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-26T16:33:47.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG949F416480D61D6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-30T08:51:03.583Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBD89D00A6994D2A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-26T16:08:34.881Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD5CE9B293A1592A8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:41:11.278Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5225  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5225 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "8d/WA3CN5225.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5225 ;
+        adm:logEntry        bda:LG58B5B3AE4E3206C9 , bda:LG949F416480D61D6E , bda:LGBD89D00A6994D2A7 , bda:LGD5CE9B293A1592A8 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE4DC24B4F70DAF79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4288 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5225  a        :Work ;
+        skos:prefLabel      "phyag chen sngon 'gro'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual for preliminary practice of Mahamudra in Drukpa Kagyu order."@en ;
+        :creator            bdr:CRE4DC24B4F70DAF79 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW3CN5225 , bdr:W3CN5225 ;
+        :workIsAbout        bdr:T1254 , bdr:T199 .
+}

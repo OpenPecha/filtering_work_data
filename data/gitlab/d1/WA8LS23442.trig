@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS23442 {
+    bda:LG3E58B3F41BDB6703
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-08T15:47:56.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAEA4E5ED6A7A8A53
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T16:53:55.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDE35BDC394EF9F54
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-08T15:46:36.904Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS23442  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS23442 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d1/WA8LS23442.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS23442 ;
+        adm:logEntry        bda:LG3E58B3F41BDB6703 , bda:LGAEA4E5ED6A7A8A53 , bda:LGDE35BDC394EF9F54 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR269359E02614B575
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75333 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS23442  a       :Work ;
+        skos:prefLabel      "an na kha re ne na/"@bo-x-ewts ;
+        :catalogInfo        "The translation of Anna Karenina; translated by Ketho."@en ;
+        :creator            bdr:CR269359E02614B575 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW8LS23442 , bdr:W8LS23442 .
+}

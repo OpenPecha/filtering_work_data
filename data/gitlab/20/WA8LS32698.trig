@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32698 {
+    bda:LG02C6AB8ADF4293D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T15:56:35.815Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8011D32555558772
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG946F58EB50E133B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-08T12:06:03.997Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB432F6F6A355532F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T12:06:30.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32698  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32698 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "20/WA8LS32698.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32698 ;
+        adm:logEntry        bda:LG02C6AB8ADF4293D4 , bda:LG8011D32555558772 , bda:LG946F58EB50E133B1 , bda:LGB432F6F6A355532F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32698  a       :Work ;
+        skos:prefLabel      "gsang sngags bka' skyong mchod thabs bsdus pa rgyun tshogs nar ma/"@bo-x-ewts ;
+        :catalogInfo        "A short offering of pretective deity, purification and confession text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T529 ;
+        :workHasInstance    bdr:MW8LS32698 , bdr:W8LS32698 ;
+        :workIsAbout        bdr:T1KG624 , bdr:T247 , bdr:T406 , bdr:T93 .
+}

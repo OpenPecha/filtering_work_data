@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24599 {
+    bda:LGB3E5A209AF6FBB76
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T12:35:11.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE94D53F182E4B20B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T12:34:00.179Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG24599  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24599 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "84/WA1KG24599.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24599 ;
+        adm:logEntry        bda:LGB3E5A209AF6FBB76 , bda:LGE94D53F182E4B20B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusEditing .
+
+    bdr:CR466C373075E353E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR5C1258B9FD8A5878
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:MW1KG24599  skos:altLabel  "tsema rigpay ter gyi namshay legpar shaypay nyingpo"@en-x-mixed .
+
+    bdr:WA1KG24599  a       :Work ;
+        skos:altLabel       "tshad ma rigs pa'i gter gyi rnam bshad legs par bshad pa'i snying po/ (rtsa 'grel sbyar ma/)"@bo-x-ewts , "treasury of reasonings of valid cognition, essence of excellent explanations"@en ;
+        skos:prefLabel      "tshad ma rigs gter rnam bshad legs par bshad pa'i snying po/"@bo-x-ewts , "tsema rigpay ter gyi namshay legpar shaypay nyingpo"@en-x-mixed ;
+        :catalogInfo        "Commentary on Sakya Pandita Kunga Gyaltsen's Tsema Rigter written by Gyaltsab Darma Rinchen (1364-1432)."@en ;
+        :creator            bdr:CR466C373075E353E7 , bdr:CR5C1258B9FD8A5878 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG24599 , bdr:W1KG24599 ;
+        :workIsAbout        bdr:WA11391 .
+}

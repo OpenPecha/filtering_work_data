@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM553 {
+    bda:LG1B06431714A5EA55
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:15.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4FB581F0A58E8085
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T11:40:53.953Z"^^xsd:dateTime ;
+        adm:logMessage      "added Bibliographic Note donor's name"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB0978770400FF1DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T12:30:55.265Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC617E9B827D53873
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM553"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM553  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM553 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "71/WA1NLM553.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM553 ;
+        adm:logEntry        bda:LG1B06431714A5EA55 , bda:LG4FB581F0A58E8085 , bda:LGB0978770400FF1DC , bda:LGC617E9B827D53873 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC97A01227FA33B7C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P22 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM553  a        :Work ;
+        skos:altLabel       "klong rdol bla ma rin po che'i gsung thor bu/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ ngag dbang blo bzang /"@bo-x-ewts ;
+        :catalogInfo        "Miscellaneous Writings by Tibetan encylopedist Longdol Ngawang Lobzang (1719-1794)."@en ;
+        :creator            bdr:CRC97A01227FA33B7C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW1NLM553 , bdr:W1NLM553 ;
+        :workIsAbout        bdr:T819 .
+}

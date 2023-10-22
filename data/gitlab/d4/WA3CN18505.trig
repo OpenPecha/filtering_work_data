@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18505 {
+    bda:LG36B287ADEAD9D9C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:03:37.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG43A709439C358C45
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-19T18:08:24.403Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P3CN19940 to P671"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6F3F21CAA5DC046E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-11T12:41:29.348Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA7D2906C21E9C5E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T13:53:41.685Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarilyRestricted"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAB51F842F7AC0607
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T19:15:08.923Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC8AE9ABA5CA3CCAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T17:10:09.528Z"^^xsd:dateTime ;
+        adm:logMessage      "checkedout"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD398D4CF6A47A688
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-11T12:56:07.562Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEA1077DB112ECDA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN18505  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18505 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d4/WA3CN18505.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18505 ;
+        adm:logEntry        bda:LG36B287ADEAD9D9C9 , bda:LG43A709439C358C45 , bda:LG6F3F21CAA5DC046E , bda:LGA7D2906C21E9C5E8 , bda:LGAB51F842F7AC0607 , bda:LGC8AE9ABA5CA3CCAB , bda:LGD398D4CF6A47A688 , bda:LGEA1077DB112ECDA7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC17F26C17BEA48C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P671 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18505  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ chos rje gling pa/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Choje Lingpa (18th cent.)."@en ;
+        :creator            bdr:CRC17F26C17BEA48C0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 , bdr:T448 ;
+        :workHasInstance    bdr:MW3CN18505 , bdr:W3CN18505 ;
+        :workIsAbout        bdr:T1082 .
+}

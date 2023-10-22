@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18553 {
+    bda:LG13ED19C9D7A7BA80
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T19:31:43.962Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1FF8A8DB529103E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-28T14:37:17.011Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG216E43693B9CE186
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG4C1131D914D92592
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-28T15:58:40.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG99851E527188C335
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-18T15:37:22.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalog info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18553  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18553 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "91/WA3CN18553.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18553 ;
+        adm:logEntry        bda:LG13ED19C9D7A7BA80 , bda:LG1FF8A8DB529103E6 , bda:LG216E43693B9CE186 , bda:LG4C1131D914D92592 , bda:LG99851E527188C335 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN18553  a       :Work ;
+        skos:altLabel       "bcol ldan 'das rta mchog rol pa gsang sgrub kyi chos skor gyi thob yig"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi chos skor gyi thob yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "Records of teachings received about deities of Hayagriva Guhyasahana and some other ritual texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T192 ;
+        :workHasInstance    bdr:MW3CN18553 , bdr:W3CN18553 ;
+        :workIsAbout        bdr:T1CZ11 .
+}

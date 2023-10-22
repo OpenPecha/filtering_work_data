@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM457 {
+    bda:LG3D59F1CE3BFCD469
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-12T11:11:36.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG972B29779213B2EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF1A7524EF2008F2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T17:49:44.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM457"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM457  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM457 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/WA1NLM457.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM457 ;
+        adm:logEntry        bda:LG3D59F1CE3BFCD469 , bda:LG972B29779213B2EC , bda:LGF1A7524EF2008F2B , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM457  a        :Work ;
+        skos:prefLabel      "byis pa bu rang ma chags la chags pa'i bcos thabs byil chung phur mdos sogs/"@bo-x-ewts ;
+        :catalogInfo        "Methods of child protection; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM457 , bdr:W1NLM457 ;
+        :workIsAbout        bdr:T1027 , bdr:T94 .
+}

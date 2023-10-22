@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22335 {
+    bda:LG229830648E6EF7B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T14:35:04.737Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG31B067D4B41970E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-09T11:14:49.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE58F2A647815752B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-09T11:14:19.413Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22335  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22335 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c5/WA1KG22335.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22335 ;
+        adm:logEntry        bda:LG229830648E6EF7B8 , bda:LG31B067D4B41970E7 , bda:LGE58F2A647815752B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12913 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR08F62D92258F7421
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG22352 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR2AAD55048290B60B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8260 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR865C45806AE86848
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:WA1KG22335  a       :Work ;
+        skos:altLabel       "'phags pa bskal pa bzang po pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde bskal bzang /"@bo-x-ewts ;
+        :catalogInfo        "The Bhadrakalpika Sutra."@en ;
+        :creator            bdr:CR08F62D92258F7421 , bdr:CR2AAD55048290B60B , bdr:CR865C45806AE86848 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 .
+}

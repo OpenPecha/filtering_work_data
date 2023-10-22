@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26952 {
+    bda:LGC4F275E30E9B2011
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA26952  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26952 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d4/WA26952.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26952 ;
+        adm:logEntry        bda:LGC4F275E30E9B2011 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRBDB7F275334379B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV736A8028D13BCB82
+        a                   :CompletedEvent ;
+        :onYear             "1637"^^xsd:gYear .
+
+    bdr:WA26952  a          :Work ;
+        skos:prefLabel      "rje btsun mkhas pa'i dbang po dkon mchog lhun grub kyi rnam par thar pa dwang 'dod dad pa'i chu gter las 'ong ba'i ngo mtshar rba rlabs kyi 'phreng mdzes/"@bo-x-ewts ;
+        :creator            bdr:CRBDB7F275334379B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV736A8028D13BCB82 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW26952 ;
+        :workIsAbout        bdr:P783 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2726 {
+    bda:LG7383F448F68F70E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG7EBD30F8BBAC62DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-07T09:28:43.039Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCFB749F8A680DDBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:05:09.451Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2726"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2726  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2726 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "91/WA1NLM2726.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2726 ;
+        adm:logEntry        bda:LG7383F448F68F70E7 , bda:LG7EBD30F8BBAC62DF , bda:LGCFB749F8A680DDBD , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE5999209912EF0E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P108 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2726  a       :Work ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa'i mchan 'grel mi pham zhal lung las dum bu phyi ma/"@bo-x-ewts ;
+        skos:prefLabel      "shes rab kyi pha rol tu phyin pa brgyad stong pa'i mchan 'grel mi pham zhal lung las dum bu phyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Annotations on the second part of Astasahasrikaprajnaparamita and brief explanation of the differences in the interpretation of the aAstasahasrikaprajnaparamita of haribhadra and dignaga"@en ;
+        :creator            bdr:CRE5999209912EF0E0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1NLM2726 , bdr:W1NLM2726 ;
+        :workIsAbout        bdr:T2005 .
+}

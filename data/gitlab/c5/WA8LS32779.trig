@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32779 {
+    bda:LG41FDA5214488B339
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T11:23:58.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5EBAC4F05FC965EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG966DB04A780F75DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T11:22:56.419Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32779  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32779 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c5/WA8LS32779.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32779 ;
+        adm:logEntry        bda:LG41FDA5214488B339 , bda:LG5EBAC4F05FC965EC , bda:LG966DB04A780F75DF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XLE845380B2DD1 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR8C8619C689EC0132
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32779  a       :Work ;
+        skos:altLabel       "gsang ba bla na med pa'i 'od gsal rdo rje snying po'i gnas gsum gsal bar byed pa'i tshig don rin po che'i mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "tshig don rin po che'i mdzod/"@bo-x-ewts ;
+        :catalogInfo        "An explanation on the teachings of Vajrayana and great perfection."@en ;
+        :creator            bdr:CR8C8619C689EC0132 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workIsAbout        bdr:T1336 , bdr:T354 .
+}

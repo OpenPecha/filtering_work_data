@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29192 {
+    bda:LG1C349A2CED8AE3CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T14:02:24.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3053E1A58651BA6D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-31T12:15:02.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD0DDF71F38AB1F12
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-31T12:13:24.018Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29192  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29192 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "09/WA8LS29192.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29192 ;
+        adm:logEntry        bda:LG1C349A2CED8AE3CE , bda:LG3053E1A58651BA6D , bda:LGD0DDF71F38AB1F12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR56E322B613A1E1C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8968 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29192  a       :Work ;
+        skos:prefLabel      "mtshungs med chos rje blo gros rnam rgyal gyi rnam thar thos grol rab gsal myur du smin byed/"@bo-x-ewts ;
+        :catalogInfo        "1 rje ngag dbang 'phrin las kyi rnam thar nyung ngu rnam gsal/ 2 ngag dbang bstan 'dzin rnam rgyal gyi rnam thar nyung ngu rnam gsal yid ches gsum ldan/ 3 dpal ldan bla ma sprul sku kun bzang 'phrin las rnam rgyal gyi rnam thar dad pa'i ljon pa mdo tsam/ 4 gtsang chen bla ma'i rnam thar zla 'od gzhon nu'i 'khri shing skal bzang rnam mkhyen bsgrod pa'i 'jug ngog 5 rje btsun bla ma dam pa ngag dbang chos 'phel rgya mtsho'i rnam par thar pa yid bzhing dbang gi rgyal po/"@bo-x-ewts , "Biography of Lodro Namgyal by Ngawang Trinley."@en ;
+        :creator            bdr:CR56E322B613A1E1C4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS29192 , bdr:W8LS29192 ;
+        :workIsAbout        bdr:P10313 , bdr:T360 .
+}

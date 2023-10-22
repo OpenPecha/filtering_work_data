@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17168 {
+    bda:LG0C3AACE1F26543C4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-28T11:42:34.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2072CCDB7C523ABB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-11T09:14:45.204Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG57440F2310392617
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-28T11:41:09.499Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG83645BC8F1E04B30
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17168  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17168 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "69/WA8LS17168.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17168 ;
+        adm:logEntry        bda:LG0C3AACE1F26543C4 , bda:LG2072CCDB7C523ABB , bda:LG57440F2310392617 , bda:LG83645BC8F1E04B30 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2C4A291740175D36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR302D75A199D1504B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8213 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW8LS17168  skos:altLabel  "arya astasahastikaprajnaparamita gunaratnasancayagatha"@en .
+
+    bdr:WA8LS17168  a       :Work ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa sdud pa tshigs su bcad pa/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin sdud pa tshigs su bcad pa/"@bo-x-ewts , "arya astasahastikaprajnaparamita gunaratnasancayagatha"@en ;
+        :catalogInfo        "A condensed paramita sutra, translated into Tibetan by Acharya Vidhyakarasimha and Bende Peltsek."@en ;
+        :creator            bdr:CR2C4A291740175D36 , bdr:CR302D75A199D1504B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW8LS17168 , bdr:W8LS17168 .
+}

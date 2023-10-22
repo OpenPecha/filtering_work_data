@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23543 {
+    bda:LG18101BB943720C3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-14T15:46:59.817Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3DC7810F1B9265C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T12:46:39.96Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG683459C5E8E3AF1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-17T13:45:55.595Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG870086490C3251CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-06T11:30:37.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA443F0CE11F6C785
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23543  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23543 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "66/WA23543.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23543 ;
+        adm:logEntry        bda:LG18101BB943720C3C , bda:LG3DC7810F1B9265C7 , bda:LG683459C5E8E3AF1B , bda:LG870086490C3251CA , bda:LGA443F0CE11F6C785 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3976B4EF39EED5D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4798 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23543  skos:altLabel  "Co-ne Bla-ma Rin-po-che Blo-bzaṅ-rgya-mtsho-sprin-gtsug-lag-chos-kyi-ʾdodʾjo-dpal-bzaṅ-poʾi gsuṅ ʾbum bźugs so."@en-x-mixed .
+
+    bdr:WA23543  a          :Work ;
+        skos:altLabel       "co ne bla ma rin po che blo bzang rgya mtsho sprin gtsug lag chos kyi 'dod 'jo dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_blo bzang rgya mtsho/"@bo-x-ewts , "Co-ne Bla-ma Rin-po-che Blo-bzaṅ-rgya-mtsho-sprin-gtsug-lag-chos-kyi-ʾdodʾjo-dpal-bzaṅ-poʾi gsuṅ ʾbum bźugs so."@en-x-mixed ;
+        :creator            bdr:CRA3976B4EF39EED5D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW23543 , bdr:MW8LS18646 , bdr:W23543 , bdr:W8LS18646 ;
+        :workIsAbout        bdr:P4798 , bdr:T819 .
+}

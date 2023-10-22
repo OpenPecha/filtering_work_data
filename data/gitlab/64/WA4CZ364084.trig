@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ364084 {
+    bda:LG11049EA5105AD840
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:00:27.221Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4DBD8C77B4C9B072
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T16:23:51.179Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as restricted in china"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9B6E8217EE0591F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T12:35:14.025Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ364084  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ364084 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "64/WA4CZ364084.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ364084 ;
+        adm:logEntry        bda:LG11049EA5105AD840 , bda:LG4DBD8C77B4C9B072 , bda:LG9B6E8217EE0591F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAEFAB8435DBFF539
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ367169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ364084  a      :Work ;
+        skos:prefLabel      "khrag yig"@bo-x-ewts ;
+        :catalogInfo        "Written in Blood (Khrag Yig), a collection of poems by Theurang."@en ;
+        :creator            bdr:CRAEFAB8435DBFF539 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW4CZ364084 , bdr:W4CZ364084 ;
+        :workIsAbout        bdr:T281 .
+}

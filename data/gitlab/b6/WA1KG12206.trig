@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12206 {
+    bda:LG33C62602195B2512
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-04-18T17:04:02.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG36513CFA93A17CC4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-04-17T15:54:52.486Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG86EC7ECB28DD8C15
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-19T14:17:03.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB8AE20790135AC4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-17T19:46:09.632Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12206  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12206 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b6/WA1KG12206.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12206 ;
+        adm:logEntry        bda:LG33C62602195B2512 , bda:LG36513CFA93A17CC4 , bda:LG86EC7ECB28DD8C15 , bda:LGB8AE20790135AC4E , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC485B291E39CF6C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG12206  a       :Work ;
+        skos:prefLabel      "gung thang blo gros rgya mtshos mdzad pa'i sdom gsum gyi bslab bya dwangs gsal me long sogs/"@bo-x-ewts ;
+        :creator            bdr:CRC485B291E39CF6C8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG12206 , bdr:W1KG12206 ;
+        :workIsAbout        bdr:T201 , bdr:T2GS983 , bdr:T541 , bdr:T58 , bdr:T949 .
+}

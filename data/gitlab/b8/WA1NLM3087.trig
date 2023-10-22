@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3087 {
+    bda:LG908C23AB07E97FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T14:21:27.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC689178D63851330
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3087"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3087  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3087 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b8/WA1NLM3087.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3087 ;
+        adm:logEntry        bda:LG908C23AB07E97FCE , bda:LGC689178D63851330 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD0830407B57DF7B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3087  a       :Work ;
+        skos:prefLabel      "bder gshegs bdun gyi mchod pa'i chog sgrigs yid bzhin dbang rgyal gyi ngag 'don sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gtor ma brgya rtsa cha lag tshang ba thams cad mkhyen pa dben sa pas mdzad pa/ 2 rta mchog rol ba'i rnal 'byor bas/ /mchog dman 'gron la gtor ma dang / /gser skyems bsangs sogs gtong ba'i skabs/ /'dod gsol kha bsgyur byed tshul// 3 seng gdong ma/ 4 gnas brtan phyag mchod kyi mdzad pa chos kyi sgra dbyangs/ 5 'jigs byed dpa' bo gcig pa/"@bo-x-ewts , "Liturgical recitation for offering of medicine Buddha; other text also included."@en ;
+        :creator            bdr:CRD0830407B57DF7B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 , bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM3087 , bdr:W1NLM3087 ;
+        :workIsAbout        bdr:T568 .
+}

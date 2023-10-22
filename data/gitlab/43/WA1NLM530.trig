@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM530 {
+    bda:LG39138C48DC53F40C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T10:06:35.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3930470D19727457
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T12:30:50.968Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG53FC93EB45B13020
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA29BF316EE09FEC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-02T16:19:37.098Z"^^xsd:dateTime ;
+        adm:logMessage      "test,"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM530"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM530  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM530 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "43/WA1NLM530.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM530 ;
+        adm:logEntry        bda:LG39138C48DC53F40C , bda:LG3930470D19727457 , bda:LG53FC93EB45B13020 , bda:LGA29BF316EE09FEC9 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDDCD3112FC190C00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM530  a        :Work ;
+        skos:altLabel       "zab mo rten cing 'brel bar 'byung ba'i mtha' dpyod shes rab sgron gsal zhes bya ba 'jam dbyangs bla ma'i gsung rgyun sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rten 'brel mtha' dpyod shes rab sgron gsal zhes bya ba 'jam dbyangs bla ma'i gsung rgyun sogs/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical theory of the of the Pratityasamutpada ny Gomang Choekyi Drakpa unknown author and a study on the difficult points in the Manovijnana and alayavijnana theory by Gungthang Konchog Tenpe Dronme."@en ;
+        :creator            bdr:CRDDCD3112FC190C00 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM530 , bdr:W1NLM530 ;
+        :workIsAbout        bdr:T1133 , bdr:T1215 , bdr:T1361 .
+}

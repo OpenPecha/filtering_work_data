@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3864 {
+    bda:LG9469DE9EEDE32BE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-01T12:49:56.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3864"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3864  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3864 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "8a/WA1NLM3864.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3864 ;
+        adm:logEntry        bda:LG9469DE9EEDE32BE7 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10BEECFF5390FA41
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR21CCCF388E2E4C05
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR952C381918988E4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5654 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:CREBC5D5EB8A0D7F65
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:CRF71B9A64B023604D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15246 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1NLM3864  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bgegs gtor/ 2 'phags pa rgyal mtshan gyi rtse mo'i dpung rgyan/ 3 thar pa chen po'i mdo las btus pa/ 4 lcags mda' bcu gsum bcos thabs/ 5 'phags pa byams smon/ 6 dbyar gangs par khas blang ba'i sbyor ba'i cho ga 7 rdzas byin gyis rlabs pa/ 8 'phags pa 'od zer can/ 9 ha can nag po dkar po bsangs/ 10 mgon po zhal bzhi pa la gtor 'bul mdor bsdus byed par 'dod pa/ 11 bcom ldan 'das sman gyi bla shin tu bsdus pa/ 12 sa sgo dang gnam sgo rnams/ 13 rje btsun 'phags ma sgrol ma'i sgo nas gter gtad 'phrin bcol/ 14 DA ma ru'i sgrub tshul/ 15 sangs rgyas stong gi rab gnas bsdus pa/"@en , "Madyamakavatara by Candrakirti."@en ;
+        :creator            bdr:CR10BEECFF5390FA41 , bdr:CR21CCCF388E2E4C05 , bdr:CR952C381918988E4B , bdr:CREBC5D5EB8A0D7F65 , bdr:CRF71B9A64B023604D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3864 , bdr:W1NLM3864 ;
+        :workIsAbout        bdr:T233 , bdr:WA19458 .
+}

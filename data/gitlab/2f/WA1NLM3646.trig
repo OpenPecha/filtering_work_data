@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3646 {
+    bda:LGB51202678C59A178
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T16:05:13.925Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3646"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3646  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3646 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2f/WA1NLM3646.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3646 ;
+        adm:logEntry        bda:LGB51202678C59A178 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3BFC806DEB752E00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS67679 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA99ED1964299706A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3646  a       :Work ;
+        skos:altLabel       "gdugs dkar bzlog pa/"@bo-x-ewts , "nam mkha' sgo 'byed kyi dbang byed tshul/"@bo-x-ewts , "nyon mongs dug gsum 'dul ba'i man ngag yid kyi mun sel/"@bo-x-ewts , "yang zab 'khor ba rgyun gcod kyi man ngag"@bo-x-ewts ;
+        skos:prefLabel      "gcod stan thog gcig ma'i tshig don dril ba smon lam mtha' yas rgya mtshos mdzad pa/"@bo-x-ewts ;
+        :catalogInfo        "Word by word commentary of Chod. Instructions to eradicate the three ignorance."@en ;
+        :creator            bdr:CR3BFC806DEB752E00 , bdr:CRA99ED1964299706A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 , bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM3646 , bdr:W1NLM3646 ;
+        :workIsAbout        bdr:T194 .
+}

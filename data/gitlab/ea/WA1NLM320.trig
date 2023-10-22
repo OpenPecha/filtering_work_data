@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM320 {
+    bda:LG0915E9991B470E8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-26T15:23:04.653Z"^^xsd:dateTime ;
+        adm:logMessage      "FULL CATALOGED"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC1B07C42907380DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD0DBB332091DD499
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-05T17:41:48.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM320"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM320  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM320 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ea/WA1NLM320.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM320 ;
+        adm:logEntry        bda:LG0915E9991B470E8E , bda:LGC1B07C42907380DE , bda:LGD0DBB332091DD499 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6408DF5462C280DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM320  a        :Work ;
+        skos:altLabel       "skabs dang po'i mtha' dpyod blo gsal yid gsos 'jam dbyangs bzhad pa'i rdo rjes bgyis pa legs bshad dga' ston yid bzhin nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "skabs dang po'i mtha' dpyod blo gsal yid gsos/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of Prajnaparamita philosophy and practice : exegesis of the first chapter (dharmakayabhisambodha) of the Abhisamayalankara and its vrtti by Haribhadra"@en ;
+        :creator            bdr:CR6408DF5462C280DD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM320 , bdr:W1NLM320 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19716 .
+}

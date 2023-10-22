@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18473 {
+    bda:LG41C9E53AF92483BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-21T14:40:49.838Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG607D7922D0AAAB90
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-10T13:32:17.542Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG778BCED1EBDD4907
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-12-21T14:41:27.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG92FB30E31A9BBEAC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:35:40.653Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE35B2A333365BFCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFC01DFF08C42FBC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T16:17:54.768Z"^^xsd:dateTime ;
+        adm:logMessage      "checkedout"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN18473  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18473 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "08/WA3CN18473.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18473 ;
+        adm:logEntry        bda:LG41C9E53AF92483BA , bda:LG607D7922D0AAAB90 , bda:LG778BCED1EBDD4907 , bda:LG92FB30E31A9BBEAC , bda:LGE35B2A333365BFCE , bda:LGFC01DFF08C42FBC2 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0FF6506D560D802E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P815 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9B157DFD70193053
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6160 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18473  a       :Work ;
+        skos:prefLabel      "do ha skor gsum gyi TI ka sems kyi rnam thar ston pa'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the three cycles of doha composed by the Indian mahasiddha poet Saraha. Written by the Karma Kagyu master Karma Trinley (1456-1539)."@en ;
+        :creator            bdr:CR0FF6506D560D802E , bdr:CR9B157DFD70193053 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN18473 , bdr:W3CN18473 ;
+        :workIsAbout        bdr:T1598 .
+}

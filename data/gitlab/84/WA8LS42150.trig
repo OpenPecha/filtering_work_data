@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42150 {
+    bda:LG3F3BFDAB663CA32F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T10:29:36.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG71373989B9C0440B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-21T09:53:46.67Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG799035F4348F4B3A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-21T09:55:07.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42150  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42150 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "84/WA8LS42150.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42150 ;
+        adm:logEntry        bda:LG3F3BFDAB663CA32F , bda:LG71373989B9C0440B , bda:LG799035F4348F4B3A , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR120AC67E2BA78587
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75405 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8LS42150  skos:altLabel  "The Future of Tibet"@en .
+
+    bdr:WA8LS42150  a       :Work ;
+        skos:prefLabel      "ma 'ongs bod/"@bo-x-ewts , "The Future of Tibet"@en ;
+        :catalogInfo        "A collection of research paper authored by Setshang Kelsang Lodroe."@en ;
+        :creator            bdr:CR120AC67E2BA78587 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW8LS42150 , bdr:W8LS42150 .
+}

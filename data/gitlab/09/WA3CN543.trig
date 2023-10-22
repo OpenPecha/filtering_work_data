@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN543 {
+    bda:LG95D9A5067997EE51
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-03T11:16:47.237Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE750A83E6AB7E9F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T16:38:47.808Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEF89EE596578AAFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T16:32:21.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN543  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN543 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "09/WA3CN543.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN543 ;
+        adm:logEntry        bda:LG95D9A5067997EE51 , bda:LGE750A83E6AB7E9F4 , bda:LGEF89EE596578AAFA , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE92A252F8FD78788
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3139 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN543  a         :Work ;
+        skos:altLabel       "lta ba'i shan 'byed kyi dgag lan la dpyad pa gzur gnas blo ldan dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "lta ba'i shan 'byed kyi dgag lan la dpyad pa/"@bo-x-ewts ;
+        :catalogInfo        "Identifying different views between Gelukpa traditions and Sakya traditions. Written by Sakya master Tsharchen Kunga Gyaltshen."@en ;
+        :creator            bdr:CRE92A252F8FD78788 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN543 , bdr:W3CN543 ;
+        :workIsAbout        bdr:T299 , bdr:T381 .
+}

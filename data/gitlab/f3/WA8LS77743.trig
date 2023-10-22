@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77743 {
+    bda:LGA9772E6F41EAFB8B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-10T12:43:58.586Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGACEC55950381F796
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-10T12:43:33.127Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77743  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77743 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/WA8LS77743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77743 ;
+        adm:logEntry        bda:LGA9772E6F41EAFB8B , bda:LGACEC55950381F796 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFDDEA0E11B62B287
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77743  a       :Work ;
+        skos:prefLabel      "tshad ma rig gter rtsa ba dang 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A root text and commentary on the science of valid cognition by Sakya Pandita Kunga Gyaltshen."@en ;
+        :creator            bdr:CRFDDEA0E11B62B287 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW8LS77743 , bdr:W8LS77743 ;
+        :workIsAbout        bdr:T370 , bdr:WA11391 .
+}

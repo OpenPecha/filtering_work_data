@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22982 {
+    bda:LG2301FCF3F1BDEFE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T15:28:57.894Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG3FCE15C7363FEA09
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-27T14:58:48.276Z"^^xsd:dateTime ;
+        adm:logMessage      "removed white space from title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG55376AE8BF17FC9C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22982  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22982 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c2/WA22982.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22982 ;
+        adm:logEntry        bda:LG2301FCF3F1BDEFE6 , bda:LG3FCE15C7363FEA09 , bda:LG55376AE8BF17FC9C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9154CB40F430D7F6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P686 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRC2E3FE317E42341C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P833 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22982  skos:altLabel  "gzuns 'bul gyi rim pa lag len klags chog tu bkod pa baidurya'i yan zun : a treatise on the consecration of blessing bestowing images"@en-x-mixed .
+
+    bdr:WA22982  a          :Work ;
+        skos:altLabel       "gzungs 'bul gyi rim pa lag len klags chog tu bkod pa bai DUrya'i yang zhun/"@bo-x-ewts , "rig 'dzin chen po karma bdud 'joms zhabs kyi rnam par thar pa gsal bar byed pa'i nyin byed ngo mtshar snang ba'i gter mdzod/"@bo-x-ewts , "the biography of rig-'dzin 'phrin-las-bdud-'joms"@en-x-mixed ;
+        skos:prefLabel      "karma bdud 'joms zhabs kyi rnam par thar pa gsal byed nyin byed ngo mtshar snang ba'i gter mdzod/"@bo-x-ewts , "gzuns 'bul gyi rim pa lag len klags chog tu bkod pa baidurya'i yan zun : a treatise on the consecration of blessing bestowing images"@en-x-mixed ;
+        :catalogInfo        "Biography of Trinle Dudjom. Written by Dochenpa Tsewang Chime Gonpo. Includes treatise on the consecration of images."@en ;
+        :creator            bdr:CR9154CB40F430D7F6 , bdr:CRC2E3FE317E42341C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW22982 , bdr:W22982 ;
+        :workIsAbout        bdr:P686 , bdr:T1348 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16265 {
+    bda:LG26A89FF02340AA49
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-17T14:56:20.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA0A55986E50E824C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-03T12:39:18.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio and note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGADD29BE6D3E5FBF7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-17T14:55:24.047Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16265  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16265 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a0/WA8LS16265.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16265 ;
+        adm:logEntry        bda:LG26A89FF02340AA49 , bda:LGA0A55986E50E824C , bda:LGADD29BE6D3E5FBF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9CB79DC51047FEA4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1687 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16265  a       :Work ;
+        skos:altLabel       "bka' rdzogs pa chen po gsang ba bla na med pa 'od gsal rdo rje snying po'i dgongs don mdor bsdus pa'i zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "theg pa thams cad kyi mchog rab gsang ba bla na med pa 'od gsal rdo rje snying po'i don rnam par bshad pa nyi ma'i snying po/"@bo-x-ewts ;
+        :catalogInfo        "A detailed explanatory note on the great perfection composed on the request of Mangom Tsultrim Zangpo by Tsele Natsok Rangdrol ( b. 1608) at the hermitage cave of Palri."@en ;
+        :creator            bdr:CR9CB79DC51047FEA4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 , bdr:T61 ;
+        :workHasInstance    bdr:MW8LS16265 , bdr:W8LS16265 ;
+        :workIsAbout        bdr:T1373 , bdr:T354 .
+}

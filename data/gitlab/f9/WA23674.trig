@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23674 {
+    bda:LG1A369F141AD69DA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-20T15:01:51.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tbrc holdings"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGAC5110F12AA9DD2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-20T14:16:42.257Z"^^xsd:dateTime ;
+        adm:logMessage      "edited pub .info."@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGAD8CC5595F22AC13
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDACED292B3D7F241
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-09-20T14:52:55.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGEE1FBB2BD9551923
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-20T14:21:49.194Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23674  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23674 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f9/WA23674.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23674 ;
+        adm:logEntry        bda:LG1A369F141AD69DA8 , bda:LGAC5110F12AA9DD2F , bda:LGAD8CC5595F22AC13 , bda:LGDACED292B3D7F241 , bda:LGEE1FBB2BD9551923 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE6766093227A37EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7721 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23674  a          :Work ;
+        skos:altLabel       "rje btsun bla ma dam pa blo bzang bstan pa'i dbang phyug dpal bzang po'i rnam thar dpag bsam ljon shing /"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang bstan pa'i dbang phyug gi rnam thar dpag bsam ljon shing /"@bo-x-ewts ;
+        :creator            bdr:CRE6766093227A37EE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW23674 , bdr:W23674 ;
+        :workIsAbout        bdr:P7061 .
+}

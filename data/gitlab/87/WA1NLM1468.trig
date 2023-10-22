@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1468 {
+    bda:LG97A517A9E391BB89
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-26T16:05:19.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat info, content and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC4282366C5B92D6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1468"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1468  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1468 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "87/WA1NLM1468.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1468 ;
+        adm:logEntry        bda:LG97A517A9E391BB89 , bda:LGC4282366C5B92D6D , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR06AEBCDC001230A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5659 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR2CD797312C3F287A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRF739FB2E91B943C1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1NLM1468  a       :Work ;
+        skos:prefLabel      "dbu ma'i rgyan gyi 'grel pa rgyal ba'i sras po zhi ba 'tshos mdzad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 slob dpon ye shes snying pos mdzad pa'i bden pa gnyis rnam par 'byed pa/ 2 bden pa gnyis rnam par 'byed pa'i 'grel pa slob dpon ye shes snying pos mdzad pa/ 3 dbu ma rgyan gyi tshig le'ur byas pa/ 4 gtor 'bul rang nyid ltar gsal ma dang / sha ra lho ma'o/ 5 byang chub lam gyi rim pa'i zab khrid mdor bsdus phan bde'i lam bzang gi sngon 'gro sbyor ba'i chos drug rgyas par byed tshul gyi 'don sgrigs/ 6 lam rim bla ma brgyud pa'i gsol 'debs lam mchog sgo 'byed byin rlabs spungs zhus dang bcas pa/ 7 'dul ba rgya mtsho'i snying po/ 8 bla ma'i rnal 'byor dang 'brel bar byang chub lam rim gyi snying po don nyams su len tshul legs sung kun gyi skong byed skal ldan re skong / 9 lam gyi gtso bo rnam gsum gyi gdams pa gtso bor gyur ba'i byang chub lam gyi rim pa'i zab 'khrid kyi byin brlabs nye brgyud la gsol 'debs pa'i kha skongs/ 10 bsang chog bkra shis char 'bebs bsang chog khyab bdag ma yang gsang gi bsang / hang ka'i gsol kha g.yang 'bug bkra shis/ 11 oM lhun grub bde ba chen po'i pho brang nas/ 12 brtan bzhugs gsol 'debs 'dod pa'i re skong 'dod rgu yid bzhin bsko ba'i bum bzang / 13 dbu ma'i dogs dpyod blo gsar byes pa'i rol rtsed/ 14 dpal rdo rje 'jigs byed kyi bdag 'jug ngag 'don gyi rim pa/ 15 slob dpon pad+ma 'byung gnas kyis mdzad pa'i dbang bsdud kyi man ngag lag tu blang bde bkod pa yid bzhin 'gugs pa'i lcags kyu/"@en , "A commentary of Madhymakalankara by Shantarakshita, also included other text."@en ;
+        :creator            bdr:CR06AEBCDC001230A7 , bdr:CR2CD797312C3F287A , bdr:CRF739FB2E91B943C1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM1468 , bdr:W1NLM1468 ;
+        :workIsAbout        bdr:WA21920 .
+}

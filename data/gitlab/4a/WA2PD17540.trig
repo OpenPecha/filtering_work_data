@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17540 {
+    bda:LG227A5DB01ABA08E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-15T12:44:39.543Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2B7041A4A838D7F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-07-17T02:07:33.569Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5F835594C6FBA2D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC587083CD0C38745
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-16T14:10:22.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2PD17540  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17540 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4a/WA2PD17540.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17540 ;
+        adm:logEntry        bda:LG227A5DB01ABA08E9 , bda:LG2B7041A4A838D7F4 , bda:LG5F835594C6FBA2D4 , bda:LGC587083CD0C38745 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAF9F88837ABE9D79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P60 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2PD17540  a       :Work ;
+        skos:prefLabel      "dpal gsang ba 'dus pa'i 'grel pa sgron ma gsal ba dang bcas pa'i bshad sbyar yid kyi mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Guhyasamaja Tantra by Rendawa."@en ;
+        :creator            bdr:CRAF9F88837ABE9D79 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2129 ;
+        :workHasInstance    bdr:MW2PD17540 , bdr:W2PD17540 ;
+        :workIsAbout        bdr:WA4CZ15240 .
+}

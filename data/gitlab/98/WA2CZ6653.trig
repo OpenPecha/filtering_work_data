@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ6653 {
+    bda:LG123213882CA2C0F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-03-24T09:37:17.556Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG59884AEA0C75F908
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG6FB133EBFF9BDFF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-22T12:39:53.283Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB0889DBD33AAD791
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-04-01T15:43:09.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBD0EF495235ECE90
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-07T16:09:35.074Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ6653  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ6653 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "98/WA2CZ6653.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ6653 ;
+        adm:logEntry        bda:LG123213882CA2C0F7 , bda:LG59884AEA0C75F908 , bda:LG6FB133EBFF9BDFF6 , bda:LGB0889DBD33AAD791 , bda:LGBD0EF495235ECE90 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR17997D8773B893A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ6653  a        :Work ;
+        skos:altLabel       "rig pa 'dzin pa 'gyur med rdo rje'i shin tu gsang ba nyams snang gi rtogs brjod sgyu 'phrul rdo rje'i rol mo/"@bo-x-ewts ;
+        skos:prefLabel      "gter bdag gling pa'i gsang rnam/"@bo-x-ewts ;
+        :catalogInfo        "Autobiographical record of the esoteric spiritual experiences of Terdak Lingpa Gyume Dorje (1646-1714)."@en ;
+        :creator            bdr:CR17997D8773B893A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 , bdr:T1868 ;
+        :workHasInstance    bdr:MW22096_39FFA9 , bdr:MW2CZ6653 , bdr:MW2CZ6653_DD54A1 , bdr:W2CZ6653 ;
+        :workIsAbout        bdr:T1082 .
+}

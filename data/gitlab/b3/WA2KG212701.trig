@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG212701 {
+    bda:LG55A7BB927C705ECA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-15T15:23:57.316Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAF85193AAA46188D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-18T15:48:30.97Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC3828322AD05D1CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2KG212701  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG212701 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/WA2KG212701.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG212701 ;
+        adm:logEntry        bda:LG55A7BB927C705ECA , bda:LGAF85193AAA46188D , bda:LGC3828322AD05D1CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCC106FDA02B9956D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6147 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG212701  a      :Work ;
+        skos:altLabel       "bod brgyud bka' bstan yum chen mchims 'jam pa'i dbyangs kyi bka' rtsom mchims mdzod lung khungs gsal byed nyi ma/"@bo-x-ewts ;
+        skos:prefLabel      "mchims mdzod lung khungs gsal byed nyi zla/"@bo-x-ewts ;
+        :catalogInfo        "The great commentary of the Abhidharmakosa in Tibet, mchims mdzod, and it's sources of quotation by Chim Jampeyang. Critically edited by Khangkar Tshultrim Kelsang."@en ;
+        :creator            bdr:CRCC106FDA02B9956D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW2KG212701 , bdr:W2KG212701 ;
+        :workIsAbout        bdr:T11MS10 , bdr:T59 .
+}

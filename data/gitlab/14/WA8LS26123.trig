@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS26123 {
+    bda:LG928C08265F57BC2F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-18T14:05:53.87Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD7A497AAAE7D5132
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-18T14:06:56.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS26123  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS26123 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "14/WA8LS26123.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS26123 ;
+        adm:logEntry        bda:LG928C08265F57BC2F , bda:LGD7A497AAAE7D5132 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00CHZ0103341 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR47967352B8C84CCF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1226 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS26123  a       :Work ;
+        skos:prefLabel      "rgyal rabs gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "A history of the Tibetan kings of the rogyal dynastic period and the lha dynasty by Lama Dampa Sonam Gyaltsen."@en ;
+        :creator            bdr:CR47967352B8C84CCF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
+        :workHasInstance    bdr:MW8LS26123 ;
+        :workIsAbout        bdr:G3196 .
+}

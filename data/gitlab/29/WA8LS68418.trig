@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68418 {
+    bda:LG150568E61150B7BA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T15:48:25.614Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3FA4A0DF340B306E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T15:48:47.776Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5C8D7C54D1FB96E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC5BBFAC874627169
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:46:38.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68418  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68418 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "29/WA8LS68418.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68418 ;
+        adm:logEntry        bda:LG150568E61150B7BA , bda:LG3FA4A0DF340B306E , bda:LG5C8D7C54D1FB96E5 , bda:LGC5BBFAC874627169 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3F1141E8CEF55F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS60398 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68418  a       :Work ;
+        skos:altLabel       "deng rabs gso rig dus rabs 21 par phyogs pa'i mu 'brel slob deb (bod 'gyur ma) gso rig rims thar rig pa/"@bo-x-ewts ;
+        skos:prefLabel      "gso rig rims thar rig pa/"@bo-x-ewts ;
+        :catalogInfo        "Medical sceince text book by Tsibha."@en ;
+        :creator            bdr:CRE3F1141E8CEF55F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68418 , bdr:W8LS68418 ;
+        :workIsAbout        bdr:T85 .
+}

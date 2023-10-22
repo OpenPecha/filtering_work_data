@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ1044 {
+    bda:LG11BFC8C27CE593C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-17T11:53:07.05Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG34FFBBD2820490FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-05T16:30:17Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG580174054342F8B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-18T15:56:05.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG857A26B645B08BA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T12:00:06.613Z"^^xsd:dateTime ;
+        adm:logMessage      "refreshed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF944D05AC5F8A6F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T12:49:50.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ1044  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ1044 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "49/WA4CZ1044.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ1044 ;
+        adm:logEntry        bda:LG11BFC8C27CE593C8 , bda:LG34FFBBD2820490FF , bda:LG580174054342F8B3 , bda:LG857A26B645B08BA3 , bda:LGF944D05AC5F8A6F6 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1271 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR93FF32F83ED9E41D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ1044  a        :Work ;
+        skos:altLabel       "mnyam med tsong kha pa chen pos mdzad pa'i byang chub lam rim chung ngu/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim chung ngu/"@bo-x-ewts ;
+        :catalogInfo        "An abridgement of the Lamrim Chenmo, called the Lamrim Chungwa. Written at Gaden."@en ;
+        :creator            bdr:CR93FF32F83ED9E41D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 .
+}

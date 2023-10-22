@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS67587 {
+    bda:LG26E0C659A4EB7DEC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-15T11:26:26.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGED0447654DDFB3AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGFD4AFE697F77E72E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-15T11:24:40.583Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS67587  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS67587 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1d/WA8LS67587.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS67587 ;
+        adm:logEntry        bda:LG26E0C659A4EB7DEC , bda:LGED0447654DDFB3AE , bda:LGFD4AFE697F77E72E , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR72D65115A21E36C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1663 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS67587  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po sku gsum rang shar gyi dbang bzhi dang byang sdom cho ga sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs pa chen po sku gsum rang shar gyi dbang bzhi'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected texts on the four initiations of the Dzokchen Kusum Rangshar precepts of Bonpo practice by Shardza Tashi Gyaltshen. Together with intstructions on the sojong, lujin and jangdom by Shardza and others."@en ;
+        :creator            bdr:CR72D65115A21E36C8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW8LS67587 , bdr:W8LS67587 ;
+        :workIsAbout        bdr:T1400 , bdr:T2210 , bdr:T354 , bdr:T809 .
+}

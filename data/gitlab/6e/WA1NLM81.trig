@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM81 {
+    bda:LG17E3D000B3D85725
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:04.998Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8751CF944BDF69F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA8DE1D9E5A8B3880
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-27T12:57:32.774Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM81"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM81  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM81 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6e/WA1NLM81.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM81 ;
+        adm:logEntry        bda:LG17E3D000B3D85725 , bda:LG8751CF944BDF69F4 , bda:LGA8DE1D9E5A8B3880 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR63F78417BFCE503F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P856 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:WA1NLM81  a         :Work ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa sdud pa tshigs su bcad pa/"@bo-x-ewts ;
+        :catalogInfo        "Prajnaparamita Sanchayagatha; translation revised by Zhalu Lostava Chokyong Zangpo on the basis of earlier sanskrit manuscript revised by Acharya Haribhadra and other manuscript available in Tibet."@en ;
+        :creator            bdr:CR63F78417BFCE503F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW19229_AB429C , bdr:MW1NLM81 , bdr:MW1PD100944_0BC7E8 , bdr:MW2DB4582_DB86F5 , bdr:MW4PD1207_22D877 , bdr:W1NLM81 ;
+        :workIsAbout        bdr:T2005 , bdr:T2064 .
+}

@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27711 {
+    bda:LG211578C8C7AE6606
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-04T10:57:23.757Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG33535D030B3BF957
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-13T14:43:52.764Z"^^xsd:dateTime ;
+        adm:logMessage      "revewd by KG, LS, CN and CZ"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4E7DDA0236672E28
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD5597B7527B7197E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-04T10:48:23.559Z"^^xsd:dateTime ;
+        adm:logMessage      "add info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE823461E829DF9B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-12T14:22:56.3Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA27711  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27711 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "4b/WA27711.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27711 ;
+        adm:logEntry        bda:LG211578C8C7AE6606 , bda:LG33535D030B3BF957 , bda:LG4E7DDA0236672E28 , bda:LGD5597B7527B7197E , bda:LGE823461E829DF9B3 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCE1F2DE4C06DA3F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2232 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVB2664A155F5B3BA0
+        a                   :CompletedEvent ;
+        :onYear             "1851"^^xsd:gYear .
+
+    bdr:WA27711  a          :Work ;
+        skos:altLabel       "rje btsun bla ma thams cad mkhyen pa bstan 'dzin chos kyi rgyal mtshan gyi rnam thar bskal bzang dad pa'i shing rta nyon mongs yid kyi gdung sel (smad cha/)"@bo-x-ewts ;
+        skos:prefLabel      "bstan 'dzin chos kyi rgyal mtshan gyi rnam thar/ (smad cha/)"@bo-x-ewts ;
+        :catalogInfo        "The biography of 4th Drigung Chungtshang Tenzin Chokyi Gyaltsan."@en ;
+        :creator            bdr:CRCE1F2DE4C06DA3F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVB2664A155F5B3BA0 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW27711 , bdr:W27711 ;
+        :workIsAbout        bdr:P2233 .
+}

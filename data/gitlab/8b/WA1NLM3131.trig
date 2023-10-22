@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3131 {
+    bda:LG344D67213AA53A5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-06T11:32:48.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA6B867456B67C872
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3131"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3131  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3131 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8b/WA1NLM3131.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3131 ;
+        adm:logEntry        bda:LG344D67213AA53A5A , bda:LGA6B867456B67C872 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR321946C8C2163F7D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3131  a       :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi chos skor las/_'chi ka ma'i sems can la phan thabs bya tshul nyams thag dbugs 'byin sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ma gcig ur grags bsangs mchod/ 2 bzlog bsgyur gyi dmigs rim/ 3 rgyal po sku lnga'i bsang mchod bde chen char 'bebs/ 4 tshe dpag med kyi bsangs tshe 'gugs med/ 5 ye shes kyi mkha' 'gro ma seng ge'i gdong can/ 6 khro bo kha mchu nag po bzlog pa/ 7 spar kha brgyad kyi rtsis yig 8 me mchod dpal 'byor rgya mtsho/ 9 dam can chos kyi rgyal po 'chi bdag gshin rje rgyal po 'chi bslu/ 10 chos skyong gi 'khu ldog zhi ba'i man ngag 11 sgrol dkar dang tshe dpag med kyi tshe sgrub ngag 'don 'khyer bde/ 12 gsang ba ye shes kyi mkha' 'gro gnas lung gi cho ga le lag sri can spubs bshig man ngag rdo rje tho ba/ 13 theg chen gso sbyong len pa'i cho ga 14 rdo rje rnam 'joms khro bo rme brtsegs pa sgo nas mnol bsangs bya tshul/ 15 dpal ldan dmag zor rgyal mo la bsangs mchod 'bul tshul bsam 'phel yid bzhin nor bu/ 16 phyogs bcu mun sel/ 17 bde ba can gyi 'pho ba sngon du 'gro dang yan lag bdun pa 'od dpag med pa'i bla ma'i rnal 'byor dang / 'pho bsdus pa nyams su len tshul/"@bo-x-ewts , "Instructions at the time of death from the cycle teachings of Hayagriva Guhyasadhana; other text also included."@en ;
+        :creator            bdr:CR321946C8C2163F7D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3131 , bdr:W1NLM3131 ;
+        :workIsAbout        bdr:T50 , bdr:T58 .
+}

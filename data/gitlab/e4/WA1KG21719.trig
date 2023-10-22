@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21719 {
+    bda:LG2364032D06C4810A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T12:26:08.48Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8941163E8C6F8DA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGAB1D8E7BA453C8AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-29T12:53:32.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC8D62B70D47EFB31
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-29T12:52:46.619Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21719  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21719 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e4/WA1KG21719.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21719 ;
+        adm:logEntry        bda:LG2364032D06C4810A , bda:LG8941163E8C6F8DA5 , bda:LGAB1D8E7BA453C8AD , bda:LGC8D62B70D47EFB31 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG21719  skos:altLabel  "诺尔桑传"@zh-hans .
+
+    bdr:WA1KG21719  a       :Work ;
+        skos:altLabel       "nuo er sang zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "nor bzang gi rnam thar/"@bo-x-ewts , "诺尔桑传"@zh-hans ;
+        :catalogInfo        "Version of the Tibetan dramatic story of Chogyal Norzang, a previous life of Lord Buddha."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG21719 , bdr:MW20464 , bdr:W1KG21719 , bdr:W20464 ;
+        :workIsAbout        bdr:P1KG6045 , bdr:T2034 , bdr:T256 .
+}

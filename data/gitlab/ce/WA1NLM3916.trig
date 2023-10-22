@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3916 {
+    bda:LG4578D0FEC5B1FBFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-15T08:56:35.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3916"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3916  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3916 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ce/WA1NLM3916.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3916 ;
+        adm:logEntry        bda:LG4578D0FEC5B1FBFB , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCDBC41B19210DDFF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3916  a       :Work ;
+        skos:prefLabel      "'jam dpal mtshan brjod kyi 'don thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 zhal bzhi'i gtor 'bul/ 2 dpal ldan lha mo'i gser skyems/ 3 dpal ldan lha mo'i sgo nas sho mig gnad gsal bar brtag pa'i tshul/ 4 zhing mchog yid dga' chos rnams kyi smon lam nor bu'i themg skas/ 5 hor zla gsum pa'i yar ngo'i tshes bdun gyi nub mo bka' rtsoms gnang ba/ 6 rta mgrin gsang sgrub kyi bsangs kyi cho ga 7 rta mgrin gsang gyi sgrub thabs/ 8 rta mchog rol pa'i rnal 'byor pas/ /mchog dman 'gron la gtor ma dang / /gser skyems bsangs sogs gtor ba'i skabs/ /'dod gsol kha bsgyur byed tshul/ 9 rdo rje mi 'khrugs pa'i rtsa sngags 'don thabs las sgrib rgyun gcod/ 10 mnol bsangs gsar byas legs bshad skogs/ 11 kha mchu nag po zhi bar byed pa'i mdo/ 12 gsol 'debs bsam pa myur 'grub ma/ 13 bkra shis don 'grub ma'i bsdus ba sogs/ 14 sa bdag chab gtor gtong tshul rkyen ngan kun sel/ 15 sgrol dkar gyi bsangs/ 16 'phags pa phyogs bcu'i mun pa thams cad sel ba zhes bya ba theg pa chen po'i mdo/ 17 lo tsA ba blo ldan shes kyi bstod pa/ 18 'dus pa'i rgyud kyi 'don thabs mdor bsdus ba/ 19 mdo sdud pa 'don thabs mdor bsdus ba/ 20 lan chags gtor ma/ 21 gcod yul gyi bstan bsrung rnams la gtor 'bul/ 22 zhal bzhi gtor 'bul/ 23 gcod kyi chos skyong rnams kyi gtor 'bul/"@en , "Recitation method of Manjushri Namasangiti by 3rd Gungthang Konchok Tenpe Dronme."@en ;
+        :creator            bdr:CRCDBC41B19210DDFF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3916 , bdr:W1NLM3916 ;
+        :workIsAbout        bdr:T637 , bdr:WA22003 .
+}

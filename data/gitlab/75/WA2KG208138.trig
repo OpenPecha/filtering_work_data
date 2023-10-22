@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208138 {
+    bda:LG1299B7A00F3D9BDB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-14T12:40:32.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC624F19EC8BC687F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGFE224EB74DA77D5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-14T12:38:21.155Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG208138  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208138 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "75/WA2KG208138.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208138 ;
+        adm:logEntry        bda:LG1299B7A00F3D9BDB , bda:LGC624F19EC8BC687F , bda:LGFE224EB74DA77D5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9B4F6C517ABD0A82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3814 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208138  a      :Work ;
+        skos:altLabel       "dpal 'khor lo sdom pa'i chos tshan rnams kyi dkar chag dang rgyud kyi rgyal po bde mchog nyung ngu sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bcom ldan 'das dpal 'khor lo sdom pa'i rtsa rgyud dang de'i bklag thabs sogs man ngag phyogs gcig tu bsdoms pa/"@bo-x-ewts ;
+        :catalogInfo        "A collection of Cakrasamvara tantra texts."@en ;
+        :creator            bdr:CR9B4F6C517ABD0A82 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T2129 ;
+        :workHasInstance    bdr:MW2KG208138 , bdr:W2KG208138 ;
+        :workIsAbout        bdr:T423 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368835 {
+    bda:LG7E3710705A224458
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T12:15:38.548Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDC1A92EC6012E843
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:38:54.407Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE54BB1565FE152C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:59.9Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368835  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368835 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "32/WA4CZ368835.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368835 ;
+        adm:logEntry        bda:LG7E3710705A224458 , bda:LGDC1A92EC6012E843 , bda:LGE54BB1565FE152C5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ368835  a      :Work ;
+        skos:altLabel       "bod kyi khrag dang mig chu'i lo rgyus la brgyus pa'i rgya lo don grub kyi mi tshe/"@bo-x-ewts ;
+        skos:prefLabel      "rgya lo don grub kyi mi tshe/"@bo-x-ewts ;
+        :catalogInfo        "The life of Gyalo Thondup: A history threaded with Tibetan blood and tears (Brother of H.H. 14th Dalai Lama)"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ368835 , bdr:W4CZ368835 ;
+        :workIsAbout        bdr:P1TD9 .
+}

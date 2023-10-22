@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66851 {
+    bda:LG08A2479196D7B5E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-22T16:16:39.488Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG69AD073EA489CB6E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T14:41:43.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7DCF86E135816617
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEC61C6C1DE5F07B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-17T09:20:26.89Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66851  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66851 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f2/WA8LS66851.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66851 ;
+        adm:logEntry        bda:LG08A2479196D7B5E2 , bda:LG69AD073EA489CB6E , bda:LG7DCF86E135816617 , bda:LGEC61C6C1DE5F07B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7F27765FB22101C2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66851  a       :Work ;
+        skos:altLabel       "bod kyi brda sprod gzhung lugs la dpyad pa/"@bo-x-ewts ;
+        skos:prefLabel      "brda sprod dpyad gleng le'u brgyad ma/"@bo-x-ewts ;
+        :catalogInfo        "An analysis and discussion on Tibetan grammar."@en ;
+        :creator            bdr:CR7F27765FB22101C2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66851 , bdr:W8LS66851 ;
+        :workIsAbout        bdr:T299 , bdr:T4CZ16893 .
+}

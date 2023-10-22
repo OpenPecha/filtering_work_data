@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1GS136632 {
+    bda:LG805E5EB87C5F5480
+        a                   adm:InitialDataCreation .
+
+    bda:LGC4CFDFCDC4E66670
+        a                   adm:UpdateData .
+
+    bda:W1GS136632  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W1GS136632 ;
+        adm:replaceWith     bdr:WA1GS136632 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA1GS136632  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1GS136632 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "92/WA1GS136632.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1GS136632 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD54280DE254C398E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NTB9B0C4FBB8453927
+        a                   :Note ;
+        :noteText           "one of the more famous of the verse treatises of the madhyamika philosophy"@en .
+
+    bdr:WA1GS136632  a      :Work ;
+        skos:altLabel       "Śūnyatā­saptati­kārikā"@sa-x-iast , "śūnyatāsaptatikārikā-nāma"@sa-x-iast ;
+        skos:prefLabel      "śūnyatāsaptatikārikā"@sa-x-iast ;
+        :creator            bdr:CRD54280DE254C398E ;
+        :isRoot             true ;
+        :language           bdr:LangInc ;
+        :note               bdr:NTB9B0C4FBB8453927 ;
+        :workHasInstance    bdr:IE0GR0333 ;
+        :workHasParallelsIn  bdr:WA0RT3172 .
+}

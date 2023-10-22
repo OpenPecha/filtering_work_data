@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14303 {
+    bda:LG64E7145F84DD8D33
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG87F992F72BC3DEC3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-29T16:52:49.128Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8944B4EA0D28FA31
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-09-16T14:03:07.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDB8042C64D722961
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:52:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14303  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14303 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cd/WA1KG14303.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14303 ;
+        adm:logEntry        bda:LG64E7145F84DD8D33 , bda:LG87F992F72BC3DEC3 , bda:LG8944B4EA0D28FA31 , bda:LGDB8042C64D722961 , bda:LGIM569A8014B1 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12222 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2F93D6DD1701D7A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2636 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14303  skos:altLabel  "玛尔巴文集"@zh-hans .
+
+    bdr:WA1KG14303  a       :Work ;
+        skos:altLabel       "lho brag mar pa lo tsA'i gsung 'bum/"@bo-x-ewts , "ma er ba wen ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsung 'bum/_chos kyi blo gros/"@bo-x-ewts , "玛尔巴文集"@zh-hans ;
+        :catalogInfo        "Collected Works of the translator Marpa Lotsawa Chokyi Lodoe (1002/1012-1097/1100)."@en ;
+        :creator            bdr:CR2F93D6DD1701D7A0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG14303 ;
+        :workIsAbout        bdr:T1187 .
+}

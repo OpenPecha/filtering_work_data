@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1406 {
+    bda:LG24276F701343EE1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG91FCC0479C6B7929
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-30T11:13:25.337Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA5F80E52A0BE7EC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:07:24.231Z"^^xsd:dateTime ;
+        adm:logMessage      "add CW-W4CZ369314"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1406"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1406  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1406 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "27/WA1NLM1406.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1406 ;
+        adm:logEntry        bda:LG24276F701343EE1C , bda:LG91FCC0479C6B7929 , bda:LGA5F80E52A0BE7EC6 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9BA6846B1E7FB868
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1406  a       :Work ;
+        skos:prefLabel      "bla ma mchod pa'i khrid yig gsang ba'i gnad rnam par phye ba snyan rgyud man ngag gi gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "An instructitional manual of guru puja by kachen Yeshe Gyaltsen."@en ;
+        :creator            bdr:CR9BA6846B1E7FB868 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1406 , bdr:W1NLM1406 ;
+        :workIsAbout        bdr:WA4CZ369314 .
+}

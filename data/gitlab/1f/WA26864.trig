@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26864 {
+    bda:LG3384ACC7C80B51AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-28T14:17:29.219Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T2552 to T360"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4087F7B5334A05A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-02T11:46:35.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added T2552"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG977AB80B5E3F6D0A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA26864  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26864 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1f/WA26864.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26864 ;
+        adm:logEntry        bda:LG3384ACC7C80B51AE , bda:LG4087F7B5334A05A3 , bda:LG977AB80B5E3F6D0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CREB4BFB452435239C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV9FAC94915472DC58
+        a                   :CompletedEvent ;
+        :onYear             "1533"^^xsd:gYear .
+
+    bdr:WA26864  a          :Work ;
+        skos:prefLabel      "dpal sdom pa'i yan lag drug gi rgyas 'grel gyi khrid rnal 'byor gyi sa chen po grub pa dbyangs can bzhad pas sbyar ba/"@bo-x-ewts ;
+        :creator            bdr:CREB4BFB452435239C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV9FAC94915472DC58 ;
+        :workHasInstance    bdr:MW26864 ;
+        :workIsAbout        bdr:T360 .
+}

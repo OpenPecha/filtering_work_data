@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA19945 {
+    bda:LG7E00139E67CD4A82
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-11-14T10:33:51.399Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8EBAABFD784AF6AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-08T11:39:26.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGC318BAADFAF90FAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-14T10:33:27.934Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF0220321F61F53A1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA19945  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA19945 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a7/WA19945.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA19945 ;
+        adm:logEntry        bda:LG7E00139E67CD4A82 , bda:LG8EBAABFD784AF6AE , bda:LGC318BAADFAF90FAD , bda:LGF0220321F61F53A1 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC3B5B3BF117BCE5C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1968 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA19945  a          :Work ;
+        skos:altLabel       "rgyal ba'i gsung rab rin po che dang lam mchog sgo 'byed gnyis sbyar te bshad pa rgyal ba'i lam bzang /"@bo-x-ewts ;
+        skos:prefLabel      "bshad pa rgyal ba'i lam bzang /"@bo-x-ewts ;
+        :catalogInfo        "Explanation on the lamrim stages along the path of enlightenment by Tsongkhapa."@en ;
+        :creator            bdr:CRC3B5B3BF117BCE5C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
+        :workHasInstance    bdr:MW19945 , bdr:W19945 ;
+        :workIsAbout        bdr:WA466 .
+}

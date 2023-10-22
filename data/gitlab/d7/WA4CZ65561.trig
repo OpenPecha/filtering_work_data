@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ65561 {
+    bda:LG9DFD704A14EB54C0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T15:58:31.569Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9EB504494B47770C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC250629E545E718D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T15:43:22.371Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ65561  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ65561 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA4CZ65561.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ65561 ;
+        adm:logEntry        bda:LG9DFD704A14EB54C0 , bda:LG9EB504494B47770C , bda:LGC250629E545E718D , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ65561  a       :Work ;
+        skos:prefLabel      "'bras rtsis bai dkar dgongs don dri med kun phan me long /"@bo-x-ewts ;
+        :catalogInfo        "brief commantrary on the Tibetan system of horary astrology. prognostication according tho the baiDUr+ya dkar po."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW21970_2316C9 , bdr:MW3CN12069_4F9795 , bdr:MW4CZ65561 , bdr:W4CZ65561 ;
+        :workIsAbout        bdr:T1911 .
+}

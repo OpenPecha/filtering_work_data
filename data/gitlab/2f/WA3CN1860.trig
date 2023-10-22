@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1860 {
+    bda:LG012FCB8764D511F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-23T12:23:28.591Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG33F2CCA88DDB517C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:42.547Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG58E6DC413A7B7426
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGE80049C53F0D9129
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-23T12:47:11.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1860  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1860 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2f/WA3CN1860.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1860 ;
+        adm:logEntry        bda:LG012FCB8764D511F6 , bda:LG33F2CCA88DDB517C , bda:LG58E6DC413A7B7426 , bda:LGE80049C53F0D9129 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE0B50B77A4CC4E06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P348 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1860  a        :Work ;
+        skos:altLabel       "'dul ba'i las chog tshig don dang bcas pa rnam par bshad pa thub bstan gsal ba'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba'i las chog tshig don dang bcas pa rnam par bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on the vinaya and ceremonies of ordination. Composed by Lobsang Tenbai Nyima."@en ;
+        :creator            bdr:CRE0B50B77A4CC4E06 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN1860 , bdr:W3CN1860 ;
+        :workIsAbout        bdr:T868 .
+}

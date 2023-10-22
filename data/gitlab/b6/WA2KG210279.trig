@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210279 {
+    bda:LG28D77AF57EB64B9E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T10:25:31.951Z"^^xsd:dateTime ;
+        adm:logMessage      "work number for chungdak la"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8CF6A59D987295BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-19T14:22:14.356Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG95661E225A4AB64B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC954D1F973C3D425
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-21T12:04:19.129Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA2KG210279  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210279 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/WA2KG210279.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210279 ;
+        adm:logEntry        bda:LG28D77AF57EB64B9E , bda:LG8CF6A59D987295BA , bda:LG95661E225A4AB64B , bda:LGC954D1F973C3D425 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR539F9AB034387501
+        a                   :AgentAsCreator ;
+        :agent              bdr:P995 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG210279  a      :Work ;
+        skos:altLabel       "rgyud kyi rgyal po dpal gsang ba 'dus pa'i le'u dang po'i rtsa 'grel gyi tshig don gsal bar 'chad pa'i man ngag rim gnyis gter mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus le'u dang po'i rtsa 'grel gyi tshig don gsal byed man ngag rim gnyis gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary of first chapter Guhyasamaja Tantra root texts by Gyuchen Kunga Dondrup (1419-1486), the founder of femous Gyuto Tantric college."@en ;
+        :creator            bdr:CR539F9AB034387501 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW2KG210279 , bdr:W2KG210279 ;
+        :workIsAbout        bdr:T417 , bdr:WA4CZ15240 .
+}

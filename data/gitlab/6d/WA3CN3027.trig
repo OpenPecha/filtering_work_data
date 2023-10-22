@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3027 {
+    bda:LG1E521A365729ACA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:52:02.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA70F9380A037FCD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T14:46:09.571Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to released from accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB37C936C40275188
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-29T15:09:06.752Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB7BE96D2E9176384
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-24T08:48:22.309Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD5E6795806784B97
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-09-29T15:47:48.779Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN3027  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3027 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6d/WA3CN3027.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3027 ;
+        adm:logEntry        bda:LG1E521A365729ACA7 , bda:LGA70F9380A037FCD6 , bda:LGB37C936C40275188 , bda:LGB7BE96D2E9176384 , bda:LGD5E6795806784B97 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0BD65A3C1AE9888F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3027  a        :Work ;
+        skos:altLabel       "rgyas pa'i bstan bcos tshad ma rnam 'grel gyi dgongs 'grel tshad ma'i bstan bcos chen po rigs pa'i rgyan gyi mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma'i bstan bcos chen po rigs pa'i rgyan gyi mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Detailed explanation on pramana shastra"@en ;
+        :creator            bdr:CR0BD65A3C1AE9888F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS12837 ;
+        :workHasInstance    bdr:MW3CN3027 , bdr:W3CN3027 ;
+        :workIsAbout        bdr:WA19721 .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21511 {
+    bda:LG13B2B8E5E6328BF0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T15:18:13.101Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG218DE5C2AFFAC641
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-05T14:59:18.593Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3EE26BC83CFC9954
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-05T14:48:13.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6934200319CB5C59
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA6DD8CD21E836CF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-05T14:47:29.861Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21511  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21511 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "05/WA3CN21511.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21511 ;
+        adm:logEntry        bda:LG13B2B8E5E6328BF0 , bda:LG218DE5C2AFFAC641 , bda:LG3EE26BC83CFC9954 , bda:LG6934200319CB5C59 , bda:LGA6DD8CD21E836CF3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4EB7E4F7FC626F23
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21609 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21511  skos:altLabel  "《格萨尔》史诗与吐蕃历史比较研究"@zh-hans .
+
+    bdr:WA3CN21511  a       :Work ;
+        skos:prefLabel      "《gling sgrung 》dang bod btsan po'i lo rgyus dpyad bsdur zhib 'jug"@bo-x-ewts , "《格萨尔》史诗与吐蕃历史比较研究"@zh-hans ;
+        :catalogInfo        "A comparative study of the epic of Gesar and the history of Tibet empire by Pema Dorje."@en ;
+        :creator            bdr:CR4EB7E4F7FC626F23 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW3CN21511 , bdr:W3CN21511 ;
+        :workIsAbout        bdr:T248 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76325 {
+    bda:LG8CDA78E9D8CEFC59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-28T09:49:05.699Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEEF250A08E332932
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T09:49:48.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76325  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76325 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d6/WA8LS76325.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76325 ;
+        adm:logEntry        bda:LG8CDA78E9D8CEFC59 , bda:LGEEF250A08E332932 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2C8FEE104B234601
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6745 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR67A6A794872A4DEF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P239 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76325  a       :Work ;
+        skos:prefLabel      "chos kyi rgyal po dri med kun ldan gyi rtogs brjod bsngags 'os bsngags pa'i rtsa 'grel/"@bo-x-ewts ;
+        :catalogInfo        "A root text of Menri Losang Namgyal's Avadana of Vessantara and commentary by Nordrang Ogyen."@en ;
+        :creator            bdr:CR2C8FEE104B234601 , bdr:CR67A6A794872A4DEF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1779 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW8LS76325 , bdr:W8LS76325 ;
+        :workIsAbout        bdr:P1KG21783 .
+}

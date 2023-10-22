@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23800 {
+    bda:LG05C4E5D45B4FA41C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T11:50:48.586Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG7FF3EEB03F5D939E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T15:26:05.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGA1F341234A2B9600
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-07T16:49:29.625Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDF2E047C126C52F8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF09D47C9BC365273
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-08T20:29:04.737Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bibliographical title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23800  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23800 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "20/WA23800.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23800 ;
+        adm:logEntry        bda:LG05C4E5D45B4FA41C , bda:LG7FF3EEB03F5D939E , bda:LGA1F341234A2B9600 , bda:LGDF2E047C126C52F8 , bda:LGF09D47C9BC365273 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR61C985564185371E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7786 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRBA406E3363DF8893
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3147 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23800  skos:altLabel  "the lives of two esoteric adepts : being the rnam thar of rwa lo-chen rdo-rje-grags and the rnam-thar of grub-chen thar-pa'i-rgyal-mtshan"@en-x-mixed .
+
+    bdr:WA23800  a          :Work ;
+        skos:prefLabel      "rwa lo dang thar pa'i rgyal mtshan gyi rnam thar/"@bo-x-ewts , "the lives of two esoteric adepts : being the rnam thar of rwa lo-chen rdo-rje-grags and the rnam-thar of grub-chen thar-pa'i-rgyal-mtshan"@en-x-mixed ;
+        :catalogInfo        "Biographies of two extraordinary practitioners: Rwa Lotsawa Dorje Drak and Tarpai Gyaltsen of Sera Meu. Reproduced from tracings of central Tibetan blockprints."@en ;
+        :creator            bdr:CR61C985564185371E , bdr:CRBA406E3363DF8893 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW23800 , bdr:W23800 ;
+        :workIsAbout        bdr:P3143 , bdr:P5068 .
+}

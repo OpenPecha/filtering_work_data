@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32740 {
+    bda:LG2AF9700A852117EE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T14:27:07.833Z"^^xsd:dateTime ;
+        adm:logMessage      "created title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG73CAB640D1033804
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-20T10:07:21.303Z"^^xsd:dateTime ;
+        adm:logMessage      "biblio note added"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7606998324714B46
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8813F51DE81CCC5E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-04T12:47:31.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC289E2A87A79B6EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-04T12:47:05.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32740  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32740 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d9/WA8LS32740.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32740 ;
+        adm:logEntry        bda:LG2AF9700A852117EE , bda:LG73CAB640D1033804 , bda:LG7606998324714B46 , bda:LG8813F51DE81CCC5E , bda:LGC289E2A87A79B6EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR80010ECF1EFBCEF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P825 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32740  a       :Work ;
+        skos:prefLabel      "rten 'brel kho bo lugs kyi khrid chos thams cad kyi snying po len pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A summary of dependent origination's instructions by Drukchen Pedma Karpo."@en ;
+        :creator            bdr:CR80010ECF1EFBCEF6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS32740 , bdr:W8LS32740 ;
+        :workIsAbout        bdr:T2281 .
+}

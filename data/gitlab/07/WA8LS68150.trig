@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68150 {
+    bda:LG0FEC793336673087
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-24T12:38:44.459Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5377EC270B494C56
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T10:34:16.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG57E01D0CB7B5B058
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF8FE3F0D223256A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-24T12:37:30.918Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68150  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68150 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "07/WA8LS68150.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68150 ;
+        adm:logEntry        bda:LG0FEC793336673087 , bda:LG5377EC270B494C56 , bda:LG57E01D0CB7B5B058 , bda:LGF8FE3F0D223256A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA8LS18532 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA8LS68150  a       :Work ;
+        skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ thor nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
+        skos:prefLabel      "thor nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
+        :catalogInfo        "Treatment of minor diseases, Tibetan science of medicine, text book; edited by Nyima."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68150 ;
+        :workIsAbout        bdr:T234 , bdr:T85 .
+}

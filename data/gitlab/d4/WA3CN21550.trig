@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21550 {
+    bda:LG469B0BF0C6C3C084
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T16:40:57.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG553AEFD60871EE9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9ACA28EC5CEF234A
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-23T17:13:56.537Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCC88CFC382E91BBC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T11:54:15.139Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21550  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21550 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d4/WA3CN21550.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21550 ;
+        adm:logEntry        bda:LG469B0BF0C6C3C084 , bda:LG553AEFD60871EE9B , bda:LG9ACA28EC5CEF234A , bda:LGCC88CFC382E91BBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE436976BEC9767D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN22039 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21550  a       :Work ;
+        skos:altLabel       "brda sprod bstan bcos sum rtags gnyis dang byis pa bde 'jug gi 'grel pa gna' gzhung nying khu/"@bo-x-ewts ;
+        skos:prefLabel      "sum rtags gnyis dang byis pa bde 'jug gi 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Tibetan grammar and children's health by Thubten Monlam."@en ;
+        :creator            bdr:CRE436976BEC9767D8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN21550 , bdr:W3CN21550 ;
+        :workIsAbout        bdr:T1027 , bdr:T186 .
+}

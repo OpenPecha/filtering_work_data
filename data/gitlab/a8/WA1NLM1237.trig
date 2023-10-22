@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1237 {
+    bda:LG7DD24EA105C7C4B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-30T12:13:11.773Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8161F19694435EA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1237"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1237  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1237 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a8/WA1NLM1237.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1237 ;
+        adm:logEntry        bda:LG7DD24EA105C7C4B4 , bda:LG8161F19694435EA4 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR84386F1A3FBAC334
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB950BDAFD42CB0EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC9910C179AE593C3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1237  a       :Work ;
+        skos:altLabel       "dbu ma la 'jug pa'i brgal lan zab don yang gsal sgron me/"@bo-x-ewts , "rnam thar sgo gsum gyi rnam par bzhag pa legs bshad rgya mtsho rba rlabs/"@bo-x-ewts , "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan las skabs ddrug pa dang bdun pa/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun thams cad mkhyen pa'i gsung 'bum thor bu ba las dge slong gi bslab bya lag len gsal ba'i sgron me 'dul ba bsdus pa'i snying po/"@bo-x-ewts ;
+        :catalogInfo        "1. Monastic regulation of Bhikshus by Dalai Lama 02 Gendun Gyatso. 2.Drepung Losel Ling monastic textbooks focusing on the study of Madhyamaka by Paṇchen Sonam Drakpa. 3.Commentary on Maitreyanatha's Abhisamayalankara of the Prajnaparamita.: the six and seven chapter. (author ?) 4. Analysis of the three gates of emancipation by Gungthang Konchok Tenpe Dronme."@en ;
+        :creator            bdr:CR84386F1A3FBAC334 , bdr:CRB950BDAFD42CB0EC , bdr:CRC9910C179AE593C3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM1237 , bdr:W1NLM1237 ;
+        :workIsAbout        bdr:T1368 , bdr:WA19716 .
+}

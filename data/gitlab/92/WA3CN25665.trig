@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25665 {
+    bda:LG0246692A738BBE58
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T18:19:50.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG222D041031F8F387
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T14:57:31.845Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9079C9D9EE85BF16
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T22:57:11.435Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAF5F36CD024DF2EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD9A5DCC5DE0A431A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T20:23:07.708Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25665  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25665 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "92/WA3CN25665.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25665 ;
+        adm:logEntry        bda:LG0246692A738BBE58 , bda:LG222D041031F8F387 , bda:LG9079C9D9EE85BF16 , bda:LGAF5F36CD024DF2EA , bda:LGD9A5DCC5DE0A431A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD1289F8E8BE9FE49
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ355082 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25665  skos:altLabel  "红苹果—东·曲谢诗歌集（藏文）"@zh-hans .
+
+    bdr:WA3CN25665  a       :Work ;
+        skos:altLabel       "snyan ngag ldong chu shel/"@bo-x-ewts ;
+        skos:prefLabel      "ku shu dmar po/"@bo-x-ewts , "红苹果—东·曲谢诗歌集（藏文）"@zh-hans ;
+        :catalogInfo        "Personal collection of poetry by Dong Chushel."@en ;
+        :creator            bdr:CRD1289F8E8BE9FE49 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN25665 , bdr:W3CN25665 ;
+        :workIsAbout        bdr:T204 .
+}

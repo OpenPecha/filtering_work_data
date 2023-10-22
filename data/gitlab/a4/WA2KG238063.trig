@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238063 {
+    bda:LG6CF15C267E879432
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-09-21T17:32:04.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB02F9E4308869999
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGDC85628966933EC3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-09-21T17:31:26.324Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG238063  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238063 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a4/WA2KG238063.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238063 ;
+        adm:logEntry        bda:LG6CF15C267E879432 , bda:LGB02F9E4308869999 , bda:LGDC85628966933EC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR72451F0DFF530116
+        a                   :AgentAsCreator ;
+        :agent              bdr:P559 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238063  a      :Work ;
+        skos:altLabel       "si tu pad+ma nyin byed dbang po'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_pad+ma nyin byed dbang po/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Tai Situ 09 Pema Nyinje Wangpo (1774-1853), prominent Karma Kamtsang hierarch of Palpung Monastery in Kham."@en ;
+        :creator            bdr:CR72451F0DFF530116 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG238063 , bdr:W2KG238063 ;
+        :workIsAbout        bdr:T1386 .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30389 {
+    bda:LG13BA6E15CCEC1465
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG6157829C2295EEE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA6A715533ADDE37C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-26T09:40:01.555Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEC8D0AC746E1FB53
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-05T15:09:42.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEDC08537C5F92A9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-12-05T12:18:27.104Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA30389  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30389 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a9/WA30389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30389 ;
+        adm:logEntry        bda:LG13BA6E15CCEC1465 , bda:LG6157829C2295EEE9 , bda:LGA6A715533ADDE37C , bda:LGEC8D0AC746E1FB53 , bda:LGEDC08537C5F92A9D , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA11826 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW30389  skos:altLabel  "西藏谚语汇编"@zh-hans .
+
+    bdr:WA30389  a          :Work ;
+        skos:altLabel       "xi zang yan yu hui bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi gtam dpe phyogs bsgrigs/"@bo-x-ewts , "西藏谚语汇编"@zh-hans ;
+        :catalogInfo        "Collection of Tibetan proverbs."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workIsAbout        bdr:T190 .
+}

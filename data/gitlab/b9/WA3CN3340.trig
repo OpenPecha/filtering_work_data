@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3340 {
+    bda:LG293F563733F926B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T09:16:46.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG59CDEE5BB1320E87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-09T14:47:19.539Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAADD91AB646F6EBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-22T17:01:15.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE18E7554C5097FCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-19T16:00:22.486Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN3340  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3340 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b9/WA3CN3340.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3340 ;
+        adm:logEntry        bda:LG293F563733F926B2 , bda:LG59CDEE5BB1320E87 , bda:LGAADD91AB646F6EBA , bda:LGE18E7554C5097FCA , bda:LGIM6C9E48233B , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN3340  a        :Work ;
+        skos:altLabel       "dpal sa skya'i pod chen drug gi rtsa ba khag"@bo-x-ewts ;
+        skos:prefLabel      "dpal sa skya'i pod chen drug"@bo-x-ewts ;
+        :catalogInfo        "The root verses of the six great textuals in Sakya tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN3340 , bdr:W3CN3340 ;
+        :workIsAbout        bdr:T1229 , bdr:T617 .
+}

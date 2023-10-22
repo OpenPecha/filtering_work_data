@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9369 {
+    bda:LG4B570D3D6E454FB0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA9369  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9369 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "98/WA9369.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9369 ;
+        adm:logEntry        bda:LG4B570D3D6E454FB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR3226F1ACD496DE8F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P676 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV40B49640C51887FB
+        a                   :CompletedEvent ;
+        :onYear             "1735"^^xsd:gYear .
+
+    bdr:WA9369  a           :Work ;
+        skos:altLabel       "grub thob chen po brgyad cu rtsa bzhi'i 'bri yig shin tu dag cig gsal ba legs bshad gser thur/"@bo-x-ewts ;
+        skos:prefLabel      "grub thob brgyad cu rtsa bzhi'i 'bri yig"@bo-x-ewts ;
+        :creator            bdr:CR3226F1ACD496DE8F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV40B49640C51887FB ;
+        :workGenre          bdr:T30 ;
+        :workHasInstance    bdr:MW9369 .
+}

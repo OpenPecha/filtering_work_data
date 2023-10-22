@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29090 {
+    bda:LG0C7D065DEBD5DC86
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-05T12:12:17.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2191A7AC1113A3B4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6FE2C5AA4516B8DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD0B849C35C7A9D81
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-17T10:00:08.345Z"^^xsd:dateTime ;
+        adm:logMessage      "fix"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE3D2DB6AB5F3C5DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-05T12:01:12.915Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA29090  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29090 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "80/WA29090.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29090 ;
+        adm:logEntry        bda:LG0C7D065DEBD5DC86 , bda:LG2191A7AC1113A3B4 , bda:LG6FE2C5AA4516B8DE , bda:LGD0B849C35C7A9D81 , bda:LGE3D2DB6AB5F3C5DC , bda:LGIMA1F3FB78EA , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW29090  skos:altLabel  "Poegae ciggang sumgya lab"@en , "学说藏语 300 句"@zh-hans .
+
+    bdr:WA29090  a          :Work ;
+        skos:altLabel       "Xue shuo zang yu 300 ju"@zh-latn-pinyin ;
+        skos:prefLabel      "bod skad tshig rkang 300 bslab/"@bo-x-ewts , "Poegae ciggang sumgya lab"@en , "学说藏语 300 句"@zh-hans ;
+        :catalogInfo        "Tibetan language manual book"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW29090 , bdr:W29090 ;
+        :workIsAbout        bdr:T265 .
+}

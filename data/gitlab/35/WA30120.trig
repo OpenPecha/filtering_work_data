@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30120 {
+    bda:LG2371AF85E6DEE16A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG511479952D98424F
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-07-26T10:39:12.456Z"^^xsd:dateTime ;
+        adm:logMessage      "changed scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGECDD800ED9444911
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-07-26T10:41:00.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFE5DE8FE7A698200
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30120  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30120 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "35/WA30120.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30120 ;
+        adm:logEntry        bda:LG2371AF85E6DEE16A , bda:LG511479952D98424F , bda:LGECDD800ED9444911 , bda:LGFE5DE8FE7A698200 , bda:LGIM4BF5F96E12 , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW30120  skos:altLabel  "an episode of the famed gesar epic recounting the hero's conquest of the hor country"@en-x-mixed .
+
+    bdr:WA30120  a          :Work ;
+        skos:altLabel       "hor gling g.yul 'gyed rim par gtang ba'i dpa' bo'i snying gi dga' ston ngo mtshar gtam gyi le'u/"@bo-x-ewts , "Hor gliṅ :an episode of the famed Gesar epic recounting the hero's conquest of the Hor country."@en-x-mixed ;
+        skos:prefLabel      "hor gling /"@bo-x-ewts , "an episode of the famed gesar epic recounting the hero's conquest of the hor country"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30120 , bdr:W30120 ;
+        :workIsAbout        bdr:T248 .
+}

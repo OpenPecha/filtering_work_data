@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209131 {
+    bda:LG39CD0E07F76E469F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-03T14:59:49.315Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA86607F6E7C10D08
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T20:47:37.001Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFB07D5EEC727BB89
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-03T14:58:02.473Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG209131  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209131 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "28/WA2KG209131.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209131 ;
+        adm:logEntry        bda:LG39CD0E07F76E469F , bda:LGA86607F6E7C10D08 , bda:LGFB07D5EEC727BB89 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG9560 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR535457888FE523C5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG209131  a      :Work ;
+        skos:altLabel       "kun mkhyen 'jam dbyangs bzhad pa'i rdo rje dkon mchog 'jigs med dbang po'i gsung 'bum/"@bo-x-ewts , "kun mkhyen 'jigs med dbang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dkon mchog 'jigs med dbang po/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk master Jamyang Zhepa 02 Konchok Jigme Wangpo (1728-1791) of Labrang Tashi Khyil Monstery."@en ;
+        :creator            bdr:CR535457888FE523C5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T819 .
+}

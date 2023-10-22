@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1200 {
+    bda:LG7E30AEBDC4D6EA81
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-30T10:28:14.11Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDB395A900C76B6F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1200"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1200  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1200 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9b/WA1NLM1200.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1200 ;
+        adm:logEntry        bda:LG7E30AEBDC4D6EA81 , bda:LGDB395A900C76B6F3 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR95DEBBEC009831A4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1200  a       :Work ;
+        skos:prefLabel      "grub pa'i mtha' rnam par bzhag pa rin po che'i 'phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gtsug tor bzlog chen gyi leag len snying po 'dril ba'i tshig rgyas 'bring bsdus gsum bar chad kun sel/ 2 'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa klag thabs dngos grub kun 'byung / 3 chos skyong dregs pa lcam srig gis sgo nas sri mnan gi cho ga 4 pad+ma'i 'byung gnas mdzad pa mtshun gsol/ 5 dpal rdo rje mkha' lding nag po'i sgo nas byabs khrus cho ga 6 dpal gsang ba 'dus pa'i rdul tshon dang ras bris dkyil 'khor gyi so so'i 'don cha/ 7 bum pa rnams nang mchod dang yi ge drug pas bsang / 8 bsdu ba nas bshad pa'i skyes bu gsum gyi rnam grangs gsal bar byed pa lung gi sgron me/ 9 theg pa chen po'i gso sbyong gi sdom pa gzhan la 'phogs pa dang rang gi len tshul gsal bar bkod pa skal bzang 'jug ngogs/ 10 ha cang rgan po dkar po'i bsangs/ 11 dpal rdo rje 'jigs byed chen po'i rim pa dang po'i lam la 'khrid tshul yongs 'dzin bla ma'i gsungs bzhin 'khrul med du zin bris su bkod pa/ 12 mtshan sum cu rts gnyis/"@en , "Analysis of philosophical thoughts by second Jamyang Zhedpa Konchok Jigme Wangpo; other text also included."@en ;
+        :creator            bdr:CR95DEBBEC009831A4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM1200 , bdr:W1NLM1200 .
+}

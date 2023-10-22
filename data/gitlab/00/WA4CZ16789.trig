@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ16789 {
+    bda:LGAB0EC03D98325E20
+        a                   adm:InitialDataCreation .
+
+    bda:LGB99AA0DA3CA6A6E3
+        a                   adm:UpdateData .
+
+    bda:W4CZ16789  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W4CZ16789 ;
+        adm:replaceWith     bdr:WA4CZ16789 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA4CZ16789  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ16789 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "00/WA4CZ16789.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ16789 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:NT77F3EEFADDAECAEE
+        a                   :Note ;
+        :noteText           "toh, sde dge number 143/918"@en .
+
+    bdr:NT7FCAFA9FDDBB7685
+        a                   :Note ;
+        :noteText           "མཇུག་བྱང་། ཚིགས་སུ་བཅད་པ་གཉིས་པའི་གཟུངས་རྫོགས་སོ།།"@bo .
+
+    bdr:WA4CZ16789  a       :Work ;
+        skos:prefLabel      "gāthādvaya dhāraṇī"@sa-x-iast ;
+        :isRoot             true ;
+        :language           bdr:LangInc ;
+        :note               bdr:NT77F3EEFADDAECAEE , bdr:NT7FCAFA9FDDBB7685 ;
+        :workHasParallelsIn  bdr:WA0RK0143 .
+}

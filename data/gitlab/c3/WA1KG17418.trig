@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17418 {
+    bda:LGB9BCAF83FCF21C74
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-05-08T12:21:49.407Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF2C4D984808ACBF4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-18T10:03:32.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17418  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17418 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c3/WA1KG17418.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17418 ;
+        adm:logEntry        bda:LGB9BCAF83FCF21C74 , bda:LGF2C4D984808ACBF4 , bda:LGIM569A8014B1 , bda:LGIM8A299A84 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG17418  skos:altLabel  "the hor gling g.yul 'gyed version of the tibetan gesar epic"@en .
+
+    bdr:WA1KG17418  a       :Work ;
+        skos:altLabel       "hor gling g.yul 'gyed/ 'dzam gling ge sar rgyal po'i sgrung /"@bo-x-ewts ;
+        skos:prefLabel      "hor gling g.yul 'gyed/"@bo-x-ewts , "the hor gling g.yul 'gyed version of the tibetan gesar epic"@en ;
+        :catalogInfo        "An episode from the epic of Gesar. On the conquest of Hor."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW1KG17418 , bdr:MW1KG1823 , bdr:MW1KG18315 , bdr:MW21893 , bdr:MW22073 , bdr:MW2KG209079 , bdr:W1KG17418 , bdr:W1KG1823 , bdr:W1KG18315 , bdr:W21893 , bdr:W22073 , bdr:W2KG209079 ;
+        :workIsAbout        bdr:T248 .
+}

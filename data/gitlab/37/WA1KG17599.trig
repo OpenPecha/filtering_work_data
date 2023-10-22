@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17599 {
+    bda:LG9F46A075320C80E1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-20T14:31:45.059Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF6CDBD976BF7BF21
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-20T17:09:41.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG17599  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17599 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA1KG17599.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17599 ;
+        adm:logEntry        bda:LG9F46A075320C80E1 , bda:LGF6CDBD976BF7BF21 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR13FCEB4D7D727875
+        a                   :AgentAsCreator ;
+        :agent              bdr:P966 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17599  a       :Work ;
+        skos:prefLabel      "dpal sa skya'i 'khon gdung 'jig med rdo rje rin po che'i zhabs brtan rdo rje'i sgra dbyangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Selection of writings of a Sakya master Chogye Trichen Ngawang Khyenrab Thupten Lekshe Gyatso (1920-2007)"@en ;
+        :creator            bdr:CR13FCEB4D7D727875 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW1KG17599 , bdr:W1KG17599 ;
+        :workIsAbout        bdr:T617 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16519 {
+    bda:LG38392CDF6B303B6A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-19T14:31:01.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7445D696A8939B1F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-19T14:30:14.009Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBF68BAF0D7D1E36E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-21T12:12:44.693Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA8LS16519  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16519 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/WA8LS16519.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16519 ;
+        adm:logEntry        bda:LG38392CDF6B303B6A , bda:LG7445D696A8939B1F , bda:LGBF68BAF0D7D1E36E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC01314036739BBD9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P701 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16519  a       :Work ;
+        skos:altLabel       "nyams len gyi skor thar pa'i lam bzang /"@bo-x-ewts ;
+        skos:prefLabel      "nyams len thar pa'i lam bzang /"@bo-x-ewts ;
+        :catalogInfo        "A text on religious practice by 5th Dzogchen Tulku Thupten Chokyi Dorje composed at Ugyen Samten Choling on female wood dragon year."@en ;
+        :creator            bdr:CRC01314036739BBD9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS16519 , bdr:W8LS16519 ;
+        :workIsAbout        bdr:T541 .
+}

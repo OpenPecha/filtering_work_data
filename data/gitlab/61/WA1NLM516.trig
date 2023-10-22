@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM516 {
+    bda:LG7FE907CC6A056EC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-04T10:37:29.687Z"^^xsd:dateTime ;
+        adm:logMessage      "complete catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD5D52EC317AAB8BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T09:38:09.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEB62E102A5BA5836
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM516"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM516  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM516 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "61/WA1NLM516.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM516 ;
+        adm:logEntry        bda:LG7FE907CC6A056EC8 , bda:LGD5D52EC317AAB8BA , bda:LGEB62E102A5BA5836 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM516  a        :Work ;
+        skos:altLabel       "'phags pa sprin chen po'i mdo sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gzungs bsdus las phyungs ba'i mdo phran 'ga'"@bo-x-ewts ;
+        :catalogInfo        "Collection of short sutras, tantras, and dharanis extracted from the Buddhist Canon."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM516 , bdr:MW1NLM535 , bdr:W1NLM516 , bdr:W1NLM535 .
+}

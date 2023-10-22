@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75907 {
+    bda:LG03126996291C9DAF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-10T11:01:12.633Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG1A3C13F06A9B6E02
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-10T11:01:51.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS75907  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75907 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d1/WA8LS75907.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75907 ;
+        adm:logEntry        bda:LG03126996291C9DAF , bda:LG1A3C13F06A9B6E02 , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR159E3616947E862A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR2DE84567ABDBA44C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR44FDC35A1A33E6EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR4B0D6578BD315D51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3445 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR57C10F4892AB15A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3374 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR867524C77679B8B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS75907  a       :Work ;
+        skos:altLabel       "zhal 'don dang / mtshan gzungs/ blo sbyong / chos kyi rnam grangs/ nang chos ngo sprod/ zas mchod sogs kyi phyogs bsgrigs/ drin lan 'jal ma/"@bo-x-ewts ;
+        skos:prefLabel      "drin lan 'jal ma/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of recitation text concerning daily reciation, name and mantra recitation, mind training, numerical categories, introduction of buddhism and food offering."@en ;
+        :creator            bdr:CR159E3616947E862A , bdr:CR2DE84567ABDBA44C , bdr:CR44FDC35A1A33E6EA , bdr:CR4B0D6578BD315D51 , bdr:CR57C10F4892AB15A8 , bdr:CR867524C77679B8B0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1231 , bdr:T225 , bdr:T529 ;
+        :workHasInstance    bdr:MW8LS75907 , bdr:W8LS75907 ;
+        :workIsAbout        bdr:T1212 , bdr:T393 , bdr:T770 .
+}

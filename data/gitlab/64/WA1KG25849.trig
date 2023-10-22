@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25849 {
+    bda:LG529EFC4041BFA4A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-31T16:04:45.688Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7521A5C8CE156EF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD53A59F0F85E30F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:43:31.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25849  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25849 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "64/WA1KG25849.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25849 ;
+        adm:logEntry        bda:LG529EFC4041BFA4A8 , bda:LG7521A5C8CE156EF8 , bda:LGD53A59F0F85E30F9 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG18574 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW1KG25849  skos:altLabel  "邓小平的故事"@zh-hans .
+
+    bdr:WA1KG25849  a       :Work ;
+        skos:altLabel       "teng zha'o phing gi gtam rgyud/ gegs bar dang slar gso/"@bo-x-ewts , "deng xiao ping de gu shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "teng zha'o phing gi gtam rgyud/"@bo-x-ewts , "邓小平的故事"@zh-hans ;
+        :catalogInfo        "A life story of deng xaoping (1904-1997)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T276 ;
+        :workHasInstance    bdr:MW1KG25849 ;
+        :workIsAbout        bdr:P7434 .
+}

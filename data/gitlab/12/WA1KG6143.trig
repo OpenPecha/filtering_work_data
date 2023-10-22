@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG6143 {
+    bda:LG6DF046DED986BFDF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-11-29T12:28:07.67Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG971531DF04F9810A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-29T12:25:30.261Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBF659471CA1B037D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-01-09T11:55:04.016Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC1757B866CE8FDF8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-11-08T16:20:25.646Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and published"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG6143  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG6143 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "12/WA1KG6143.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG6143 ;
+        adm:logEntry        bda:LG6DF046DED986BFDF , bda:LG971531DF04F9810A , bda:LGBF659471CA1B037D , bda:LGC1757B866CE8FDF8 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB36C2708D6B68EF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6144 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG6143  skos:altLabel  "the crismon consciousness of life blood"@en .
+
+    bdr:WA1KG6143  a        :Work ;
+        skos:prefLabel      "zungs khrag gi rnam shes dmar po/"@bo-x-ewts , "the crismon consciousness of life blood"@en ;
+        :catalogInfo        "Anthology of poems and verse eulogies to past masters."@en ;
+        :creator            bdr:CRB36C2708D6B68EF5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG6143 , bdr:W1KG6143 ;
+        :workIsAbout        bdr:T1979 , bdr:T281 .
+}

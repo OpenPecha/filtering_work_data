@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS25510 {
+    bda:LG3FF0341E9BA7CEE5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-13T09:49:26.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG69A69FD46038D8A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-25T15:50:46.432Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG965AC7505529791E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-13T09:47:11.505Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS25510  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS25510 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a1/WA8LS25510.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS25510 ;
+        adm:logEntry        bda:LG3FF0341E9BA7CEE5 , bda:LG69A69FD46038D8A3 , bda:LG965AC7505529791E , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1AC315 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW8LS25510  skos:altLabel  "Journal of Tibetan Studies"@en .
+
+    bdr:WA8LS25510  a       :Work ;
+        skos:altLabel       "rgyus yod kyi rgyus gtam smra ba/ dbu ma'i lam gyi 'gag rtsa'i tha snyad khag cig gi dogs gcod/"@bo-x-ewts ;
+        skos:prefLabel      "bod rig pa zhib 'jug"@bo-x-ewts , "Journal of Tibetan Studies"@en ;
+        :catalogInfo        "Tibetan studies journal, edited by Trotshik Chodrak."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 .
+}

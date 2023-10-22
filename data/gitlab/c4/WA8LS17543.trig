@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17543 {
+    bda:LG5B06C1EC2437B86D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB5DC8B2926CC5195
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-29T09:17:03.709Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB7C818A9C90BA77E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-29T09:15:41.969Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17543  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17543 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c4/WA8LS17543.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17543 ;
+        adm:logEntry        bda:LG5B06C1EC2437B86D , bda:LGB5DC8B2926CC5195 , bda:LGB7C818A9C90BA77E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA95296D994F7E3E8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P249 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17543  a       :Work ;
+        skos:altLabel       "rje btsun bla ma dam pa blo bzang bkra shis rab rgyas dpal bzang po'i rnam par thar pa mdo tsam brjod pa blo ldan yid kyi dga' ston/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang bkra shis rab rgyas kyi rnam par thar pa/"@bo-x-ewts ;
+        :catalogInfo        "Biography of 3rd Setshang Losang Tashi Rabgye by the 8th Kirti Tulku Losang Trinley Tenpa Gyatsho."@en ;
+        :creator            bdr:CRA95296D994F7E3E8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS17543 , bdr:W8LS17543 ;
+        :workIsAbout        bdr:P4705 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17782 {
+    bda:LG8C1194E8F5B6295A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-03T10:40:37.729Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBF77DC35FE3C0EC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-03T10:41:54.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDDB69FC7BF291B0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17782  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17782 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/WA8LS17782.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17782 ;
+        adm:logEntry        bda:LG8C1194E8F5B6295A , bda:LGBF77DC35FE3C0EC8 , bda:LGDDB69FC7BF291B0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00EGS1017040 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CREC5288260C939D02
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17782  a       :Work ;
+        skos:altLabel       "zab chos zhi khro dgongs pa rang grol las chos spyod bag chags rang grol/"@bo-x-ewts ;
+        skos:prefLabel      "bar do thos grol chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Recitation text of the intermediate state by Karma Lingpa."@en ;
+        :creator            bdr:CREC5288260C939D02 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workIsAbout        bdr:T165 .
+}

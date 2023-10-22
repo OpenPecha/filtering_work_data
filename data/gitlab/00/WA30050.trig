@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30050 {
+    bda:LG6E301EDD64F9183C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-08T15:42:14.348Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG760F0F3094C84F4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-01T16:50:40.742Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG93ABCD0BB6C1D061
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-04T09:39:46.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEAE7D4948F0D789D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA30050  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30050 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "00/WA30050.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30050 ;
+        adm:logEntry        bda:LG6E301EDD64F9183C , bda:LG760F0F3094C84F4D , bda:LG93ABCD0BB6C1D061 , bda:LGEAE7D4948F0D789D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR78CC8D2573359AD5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10064 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW30050  skos:altLabel  "the footprint of light"@en , "光的足迹"@zh-hans .
+
+    bdr:WA30050  a          :Work ;
+        skos:altLabel       "guang de zu ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'od kyi zhabs rjes/"@bo-x-ewts , "the footprint of light"@en , "光的足迹"@zh-hans ;
+        :catalogInfo        "Collection of verse poems."@en ;
+        :creator            bdr:CR78CC8D2573359AD5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30050 , bdr:W30050 ;
+        :workIsAbout        bdr:T281 .
+}

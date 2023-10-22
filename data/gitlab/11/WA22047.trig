@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22047 {
+    bda:LGD90AF7B5582BDBA2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDA71EADA34B9C3E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-04-23T11:10:25.464Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFF5071AAAA82FAC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T11:09:42.431Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and compeleted cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22047  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22047 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "11/WA22047.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22047 ;
+        adm:logEntry        bda:LGD90AF7B5582BDBA2 , bda:LGDA71EADA34B9C3E3 , bda:LGFF5071AAAA82FAC9 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1F41618AAC48F62E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7460 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22047  skos:altLabel  "格萨尔王传 --列赤马宗"@zh-hans .
+
+    bdr:WA22047  a          :Work ;
+        skos:altLabel       "'dzam gling seng chen nor bu dga' 'dul gyi rtogs brjod ma dros mtsho chen las sog li khri'i rta rdzong phab pa'i tshul mdo tsam bshad pa mchog thun dngos grub 'gugs pa'i lcags kyu/"@bo-x-ewts , "gling rje ge sar rgyal po'i sgrung sog li khri rta rdzong /"@bo-x-ewts , "ge sa er wang zhuan-- lie chi ma zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sog li khri rta rdzong /"@bo-x-ewts , "格萨尔王传 --列赤马宗"@zh-hans ;
+        :catalogInfo        "Episode from the Gesar epic on the King Gesar's conquest of sog-li-khri-rta-rdzong, a legendary character"@en ;
+        :creator            bdr:CR1F41618AAC48F62E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22047 , bdr:W22047 ;
+        :workIsAbout        bdr:T248 .
+}

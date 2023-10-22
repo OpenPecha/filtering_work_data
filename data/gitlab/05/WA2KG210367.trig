@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210367 {
+    bda:LG5CFEE82E5A8762CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-27T14:53:26.102Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged testing"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEB15680F1CA62BD8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-27T14:54:25.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG210367  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210367 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "05/WA2KG210367.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210367 ;
+        adm:logEntry        bda:LG5CFEE82E5A8762CD , bda:LGEB15680F1CA62BD8 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG210367  a      :Work ;
+        skos:altLabel       "thugs rje chen po'i rig sngags tshul bzhin bzlas brjod byed pas 'jig rten dang 'jig rten las 'das pa'i phan yon ma lus mngon sum du bya bar mos pa rnams la 'phags pa thugs rje chen po'i bzlas brjod kyi las chog rgyud lung man ngag rnams nas phyogs gcig tu bsgrigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "gso sbyong thugs chen las 'bras/"@bo-x-ewts ;
+        :catalogInfo        "A collection of liturgies from Tantra, statement and instruction to practice and repetition mantras of Avalokiteshvara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW2KG210367 , bdr:W2KG210367 ;
+        :workIsAbout        bdr:T106 .
+}

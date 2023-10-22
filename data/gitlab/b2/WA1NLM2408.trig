@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2408 {
+    bda:LG2E56718B80C49C6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-23T10:14:47.581Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6482E39DFEA95FA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2408"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2408  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2408 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b2/WA1NLM2408.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2408 ;
+        adm:logEntry        bda:LG2E56718B80C49C6F , bda:LG6482E39DFEA95FA7 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2408  a       :Work ;
+        skos:altLabel       "thub dbang gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul thub bstan rgyas byed yid bzhin nor bu sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul thub bstan rgyas byed yid bzhin nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Offering and reverential petition of sixteen sthavira, Instruction on the practice of the guruyoga focusing upon Tsongkha and called the Gadhen Lhagyama and other miscellaneous rituals"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2408 , bdr:W1NLM2408 ;
+        :workIsAbout        bdr:T4 , bdr:T566 , bdr:T859 .
+}

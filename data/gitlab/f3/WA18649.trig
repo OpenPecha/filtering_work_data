@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA18649 {
+    bda:LG3514B08D5A088779
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-09-18T09:49:35.904Z"^^xsd:dateTime ;
+        adm:logMessage      "updated persons and sect"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG8A0DF89F483EF22A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T16:31:24.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGEEF467BE0F0CF6E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA18649  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA18649 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f3/WA18649.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA18649 ;
+        adm:logEntry        bda:LG3514B08D5A088779 , bda:LG8A0DF89F483EF22A , bda:LGEEF467BE0F0CF6E0 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBCCBFFB7423C5D6A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5304 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA18649  a          :Work ;
+        skos:altLabel       "rje btsun thams cad mkhyen pa ku mA ra ma ti'i rnam thar ngo mtshar rmad byung /"@bo-x-ewts ;
+        skos:prefLabel      "gzhon nu blo gros kyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of the scholar Rendawa Zhonnu Lodro (1349-1412)."@en ;
+        :creator            bdr:CRBCCBFFB7423C5D6A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW18649 , bdr:W18649 ;
+        :workIsAbout        bdr:P60 , bdr:T617 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16535 {
+    bda:LG7A28A687F7B98FFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-22T09:22:54.69Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7EE5AE417D6643DE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-22T09:23:42.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD45320DF751D4FC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-29T13:06:59.9Z"^^xsd:dateTime ;
+        adm:logMessage      "reveiwed by LS, KG, CN and CZ"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA8LS16535  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16535 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d3/WA8LS16535.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16535 ;
+        adm:logEntry        bda:LG7A28A687F7B98FFC , bda:LG7EE5AE417D6643DE , bda:LGD45320DF751D4FC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1B1D960A1347CE2C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS16536 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16535  a       :Work ;
+        skos:altLabel       "gcod khrid lam zab rin chen them skas/"@bo-x-ewts ;
+        skos:prefLabel      "gcod khrid rin chen them skas/"@bo-x-ewts ;
+        :catalogInfo        "An instructional manual of Chod by Drukpa Lama Rigdrol Gyatsho."@en ;
+        :creator            bdr:CR1B1D960A1347CE2C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS16535 , bdr:W8LS16535 ;
+        :workIsAbout        bdr:T194 .
+}

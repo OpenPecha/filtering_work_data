@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4244 {
+    bda:LG26EF0C1901140179
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T10:03:02.913Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG4874D64C74052FE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-04-30T11:42:16.319Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG596DEB70CEF8F5C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-04-30T11:41:36.613Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG603821CAFBA367F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T10:44:28.928Z"^^xsd:dateTime ;
+        adm:logMessage      "chenged to copyright"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFC2AA837D45E6AFD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-02-26T12:48:26.765Z"^^xsd:dateTime ;
+        adm:logMessage      "provisional"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4244  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4244 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "4f/WA1KG4244.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4244 ;
+        adm:logEntry        bda:LG26EF0C1901140179 , bda:LG4874D64C74052FE2 , bda:LG596DEB70CEF8F5C6 , bda:LG603821CAFBA367F1 , bda:LGFC2AA837D45E6AFD , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1A39DCD834EC4EDD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6120 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRE7F9E0826063AEC7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6126 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG4244  a        :Work ;
+        skos:prefLabel      "rgya gzhung skor gyi tshad ma phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Select writings by several Indian masters on pramana."@en ;
+        :creator            bdr:CR1A39DCD834EC4EDD , bdr:CRE7F9E0826063AEC7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:IE1KG4244 , bdr:MW1KG4244 , bdr:W1KG4244 ;
+        :workIsAbout        bdr:T370 .
+}

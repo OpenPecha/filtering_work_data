@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13109 {
+    bda:LG2701FECC76CDE787
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-04T12:06:30.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2B9C4CD947B91578
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-16T20:28:45.295Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS14311 to T385"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7DBFDFA6CE4794D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-03T16:44:58.438Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG988EC3C22FF12CA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-10T12:57:40.334Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF1246C82E309B624
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-11-28T14:34:06.296Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG13109  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13109 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a7/WA1KG13109.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13109 ;
+        adm:logEntry        bda:LG2701FECC76CDE787 , bda:LG2B9C4CD947B91578 , bda:LG7DBFDFA6CE4794D1 , bda:LG988EC3C22FF12CA8 , bda:LGF1246C82E309B624 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR17093FB19598CB1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6147 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13109  skos:altLabel  "problems in the philosophy of the yogacara and the madhyamika schools (the new white annals)"@en , "瑜伽行派と中観派の諸問題"@zh-hant .
+
+    bdr:WA1KG13109  a       :Work ;
+        skos:altLabel       "rnal 'byor spyod pa dang dbu ma pa'i lta grub dka' gnad phyogs bsdoms/"@bo-x-ewts ;
+        skos:prefLabel      "deb dkar gsar ma/"@bo-x-ewts , "problems in the philosophy of the yogacara and the madhyamika schools (the new white annals)"@en , "瑜伽行派と中観派の諸問題"@zh-hant ;
+        :creator            bdr:CR17093FB19598CB1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T385 ;
+        :workHasInstance    bdr:IE1KG13109 , bdr:MW1KG13109 , bdr:W1KG13109 ;
+        :workIsAbout        bdr:T233 , bdr:T2339 , bdr:T4CZ16806 .
+}

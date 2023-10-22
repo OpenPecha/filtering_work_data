@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307769 {
+    bda:LG140FCB47D1A79FA0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T16:21:32.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD1C5DF9D38C45C18
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T11:28:51.836Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF57A314C6D40D1F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF5946885E62F944E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-08T12:47:57.658Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA4CZ307769  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307769 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "7a/WA4CZ307769.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307769 ;
+        adm:logEntry        bda:LG140FCB47D1A79FA0 , bda:LGD1C5DF9D38C45C18 , bda:LGF57A314C6D40D1F5 , bda:LGF5946885E62F944E , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDB56E28012D9F838
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6996 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ307769  a      :Work ;
+        skos:altLabel       "che mchog gu ru drag khros kyi chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "gter chos/_ rol pa'i rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collection of treasure revelations by Rolpe Dorje"@en ;
+        :creator            bdr:CRDB56E28012D9F838 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW4CZ307769 , bdr:MW4CZ355755 , bdr:W4CZ307769 , bdr:W4CZ355755 .
+}

@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9243 {
+    bda:LG8AD6B694DB45936D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-04-14T12:18:04.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9BB820A58B00D626
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-22T10:15:47.383Z"^^xsd:dateTime ;
+        adm:logMessage      "mtshan byang bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG9E2CBDF9FDAC0141
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-04-14T12:21:43.827Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to traditional restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBC511E5DF9CBD507
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-01-18T11:14:44.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD46DB87044042D4C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-31T12:10:03.451Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM3F9169BB6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:34:47.366Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedByTbrc"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9243  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9243 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "54/WA1KG9243.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9243 ;
+        adm:logEntry        bda:LG8AD6B694DB45936D , bda:LG9BB820A58B00D626 , bda:LG9E2CBDF9FDAC0141 , bda:LGBC511E5DF9CBD507 , bda:LGD46DB87044042D4C , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7FBB8DAF61E7BE24
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4922 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG9243  skos:altLabel  "university of washington tibetan catalogue"@en .
+
+    bdr:WA1KG9243  a        :Work ;
+        skos:prefLabel      "wa shing thon slob grwa chen mo'i nang bzhugs pa'i bod yig dpe cha'i dkar chag"@bo-x-ewts , "university of washington tibetan catalogue"@en ;
+        :catalogInfo        "Tibetan catalogue from the University of Washington."@en ;
+        :creator            bdr:CR7FBB8DAF61E7BE24 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2196 ;
+        :workHasInstance    bdr:MW1KG9243 , bdr:W1KG9243 ;
+        :workIsAbout        bdr:T1KG10014 .
+}

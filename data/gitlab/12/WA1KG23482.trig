@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23482 {
+    bda:LG054837342E70B674
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-26T10:02:30.278Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC9A99A7FA87E4CB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-07T12:52:32.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEEB3022E7E94F6B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGFD38E0BBDB3E5770
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-26T10:04:10.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG23482  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23482 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "12/WA1KG23482.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23482 ;
+        adm:logEntry        bda:LG054837342E70B674 , bda:LGC9A99A7FA87E4CB5 , bda:LGEEB3022E7E94F6B0 , bda:LGFD38E0BBDB3E5770 , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG23482  skos:altLabel  "shuxue"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA1KG23482  a       :Work ;
+        skos:altLabel       "rtsis rig/ lo lnga'i lam lugs kyi slob chung slob deb/"@bo-x-ewts ;
+        skos:prefLabel      "rtsis rig"@bo-x-ewts , "shuxue"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Mathamitic textbooks for primary and middle schools compiled by council of education, Tibetan autonomous region."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T203 , bdr:T266 ;
+        :workHasInstance    bdr:MW1KG23482 , bdr:MW30023 , bdr:W1KG23482 , bdr:W30023 ;
+        :workIsAbout        bdr:T1174 .
+}

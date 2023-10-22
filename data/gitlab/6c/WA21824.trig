@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21824 {
+    bda:LG4B7C231FFBBB65D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-30T12:30:33.501Z"^^xsd:dateTime ;
+        adm:logMessage      "add more info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG52FF934B15B3A079
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5753CCB0E9476586
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-11-30T15:59:26.961Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE36CE8C89AAF4E8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-30T15:57:46.726Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21824  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21824 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "6c/WA21824.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21824 ;
+        adm:logEntry        bda:LG4B7C231FFBBB65D0 , bda:LG52FF934B15B3A079 , bda:LG5753CCB0E9476586 , bda:LGE36CE8C89AAF4E8B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21824  skos:altLabel  "Bod kyi śes rig dpyad rtsom phyogs bsgrigs blo gsal buṅ ba ʾdren paʾi dpyid kyi pho ña źes bya ba."@en-x-mixed , "藏学论文集"@zh-hans .
+
+    bdr:WA21824  a          :Work ;
+        skos:altLabel       "bod kyi shes rig dpyad rtsom phyogs bsgrigs blo gsal bung ba 'dren pa'i dpyid kyi pho nya/"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi shes rig dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "Bod kyi śes rig dpyad rtsom phyogs bsgrigs blo gsal buṅ ba ʾdren paʾi dpyid kyi pho ña źes bya ba."@en-x-mixed , "藏学论文集"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW21824 , bdr:W21824 ;
+        :workIsAbout        bdr:T212 .
+}

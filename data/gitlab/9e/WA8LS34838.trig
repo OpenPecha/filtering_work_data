@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS34838 {
+    bda:LG35285B94B018FEC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-06-19T08:55:05.765Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG39311C29A87069CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-19T08:56:32.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDB9DBE9A3D59DFDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-19T08:57:17.099Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS34838  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS34838 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9e/WA8LS34838.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS34838 ;
+        adm:logEntry        bda:LG35285B94B018FEC5 , bda:LG39311C29A87069CA , bda:LGDB9DBE9A3D59DFDE , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR21ED83C98074C0B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6854 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS34838  a       :Work ;
+        skos:altLabel       "rigs brgya'i khyab bdag dpal ldan bla ma dam pa ldan ma mchog sprul blo bzang 'od zer chos dbyings rgya mtsho dpal bzang po'i zhal snga nas kyi thun mong snang ngo'i rnam par thar pa dad gsum pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "rnam thar dad gsum pad+mo 'byed pa'i nyin byed/ glegs bam gnyis pa/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Denma Losang Choying or Denma Locho Rinpoche by Kalon Trizur Kelsang Yeshe."@en ;
+        :creator            bdr:CR21ED83C98074C0B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS34838 , bdr:W8LS34838 ;
+        :workIsAbout        bdr:P4605 .
+}

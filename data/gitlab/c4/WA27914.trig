@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27914 {
+    bda:LG35CC08C7662FEF1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T14:39:18.523Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG52D4AD9A5E109449
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG6691BCD66EF08EC0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27914  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27914 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c4/WA27914.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27914 ;
+        adm:logEntry        bda:LG35CC08C7662FEF1C , bda:LG52D4AD9A5E109449 , bda:LG6691BCD66EF08EC0 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6F8B80D7ECE00820
+        a                   :AgentAsCreator ;
+        :agent              bdr:P645 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27914  skos:altLabel  "a reply to various polemicists who have written against rnin-ma-pa"@en-x-mixed .
+
+    bdr:WA27914  a          :Work ;
+        skos:altLabel       "gsan snags sa 'gyur la bod du rtsod pa sna phyir byun ba rnams kyi lan du brjod pa nes don gyi 'brug sgra"@bo-alalc97 , "gsang sngags snga 'gyur la bod du rtsod pa snga phyir byung ba rnams kyi lan du brjod pa nges don gyi 'brug sgra/"@bo-x-ewts , "Gsaṅ sṅags sṅa ʼgyur la Bod du rtsod pa sṅa phyir byuṅ ba rnams kyi lan du brjod pa ṅes don gyi ʼbrug sgra :a reply to various polemicists who have written against Rñiṅ-ma-pa /by Sog-bzlog-pa Blo-gros-rgyal-mtshan."@en-x-mixed ;
+        skos:prefLabel      "dris lan nges don 'brug sgra/"@bo-x-ewts , "a reply to various polemicists who have written against rnin-ma-pa"@en-x-mixed ;
+        :creator            bdr:CR6F8B80D7ECE00820 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW27914 , bdr:MW8859 , bdr:W27914 , bdr:W8859 ;
+        :workIsAbout        bdr:T102 , bdr:T1082 .
+}

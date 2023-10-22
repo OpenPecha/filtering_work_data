@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77287 {
+    bda:LG2CE61E7ACA5725F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-29T09:08:53.454Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9AEA213BB0ACA31F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-29T09:09:14.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77287  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77287 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "56/WA8LS77287.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77287 ;
+        adm:logEntry        bda:LG2CE61E7ACA5725F0 , bda:LG9AEA213BB0ACA31F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7A2D5A20D305A0F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ57616 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77287  a       :Work ;
+        skos:prefLabel      "tshad ma rnam 'grel gyi le'u bzhi pa'i dka' gnas la dwogs par dpyod pa gzhan don le'ui brjed byang / deb phreng dang po dang gnyis pa/"@bo-x-ewts ;
+        :catalogInfo        "Notes of the key points and clarification on the difficult points in the fourth chapter of Paramanavartika by Geshe Sonam Chodrak."@en ;
+        :creator            bdr:CR7A2D5A20D305A0F8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 , bdr:T2023 ;
+        :workHasInstance    bdr:MW8LS77287 , bdr:W8LS77287 ;
+        :workIsAbout        bdr:T2339 , bdr:WA19721 .
+}

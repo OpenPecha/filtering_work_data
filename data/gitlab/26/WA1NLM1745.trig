@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1745 {
+    bda:LGA6AD4BECD0EE5715
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-23T10:05:55.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA7E8D45CC5F297DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1745"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1745  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1745 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "26/WA1NLM1745.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1745 ;
+        adm:logEntry        bda:LGA6AD4BECD0EE5715 , bda:LGA7E8D45CC5F297DD , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1745  a       :Work ;
+        skos:prefLabel      "gnod sbyin chen po rdo rje bdud 'dul gyi las byang yongs 'du'i khri shing sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mchod gtor spyan gzigs ma lus pa/ 2 rnam 'joms rme brtsegs zung 'brel gyi khrus bsangs/ 3 rdo rje rnam 'joms dang khro bo rme brtsegs pa'i bsangs/ 4 dpal gsang ba'i bdag po'i gtor 'bul/ 5 rlung rta sde bhzi'i bsangs mchog stob ldan dpa' bo ngo mtshar/ 6 phrag lha tshe thar/ 7 me lha mchod pa mdo/ 8 'phags pa dzamb+ha la rnga mong thams cad kyi bsrungs sngags/"@en , "Sadhana of Yaksha Dudul Dorjee; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM1745 , bdr:W1NLM1745 ;
+        :workIsAbout        bdr:T4CZ15353 .
+}

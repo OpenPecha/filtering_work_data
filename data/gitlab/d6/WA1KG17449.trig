@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17449 {
+    bda:LG2D44EBBDE1474EE9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-28T09:52:31.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3299ABFD72EC504A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-28T09:47:47.005Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG32F18793612295F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-25T05:13:04.874Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3DB9F7173D478B7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-27T12:40:17.157Z"^^xsd:dateTime ;
+        adm:logMessage      "added archive info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17449  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17449 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d6/WA1KG17449.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17449 ;
+        adm:logEntry        bda:LG2D44EBBDE1474EE9 , bda:LG3299ABFD72EC504A , bda:LG32F18793612295F6 , bda:LG3DB9F7173D478B7C , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA156F9659413690F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17449  a       :Work ;
+        skos:altLabel       "rgyal ba yang dgon pa'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_rgyal mtshan dpal/"@bo-x-ewts , "the collected works (gsung 'bum) of yan-dgon-pa rgyal-mtshan-dpal"@en ;
+        :catalogInfo        "Writings on Buddhism by a master of the Drukpa Kargyudpa tradition."@en ;
+        :creator            bdr:CRA156F9659413690F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG17449 , bdr:MW23654 , bdr:MW23790 , bdr:MW3CN17859 , bdr:W1KG17449 , bdr:W23654 , bdr:W23790 , bdr:W3CN17859 ;
+        :workIsAbout        bdr:T816 .
+}

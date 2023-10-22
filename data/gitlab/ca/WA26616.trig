@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26616 {
+    bda:LG9915EAEFE09C7020
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA8B9C2E52C170619
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-18T14:04:30.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added Place of Production authorship statementand date of writing"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAFA9E44B0CF7E80A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-04-23T10:24:14.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC04DDEE2C8C127E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T14:17:33.711Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:WA26616  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26616 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ca/WA26616.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26616 ;
+        adm:logEntry        bda:LG9915EAEFE09C7020 , bda:LGA8B9C2E52C170619 , bda:LGAFA9E44B0CF7E80A , bda:LGC04DDEE2C8C127E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR77270D77F6496D28
+        a                   :AgentAsCreator ;
+        :agent              bdr:P783 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVB3A81691C4D9CEBE
+        a                   :CompletedEvent ;
+        :eventWhen          "དེ་བཞིན་གཤེགས་པ་དགོངས་པ་ཡོངས་སུ་མྱང་ངན་ལས་འདས་པའི་ཚུལ་བསྟན་ནས་ལོ་གསུམ་སྟོང་དྲུག་བརྒྱ་དང་དྲུག་ཅུ་རྩ་བདུན་འདས་ཤིང་།དུས་ཀྱི་འཁོར་ལོའི་བྱེད་བརྩིས་མེ་ཁ་རྒྱ་མཚོ་དག་པའི་ལོ་གཞི་བཞག་ནས།ལོ་བདུན་བརྒྱ་ཉི་ཤུ་རྩ་དགུ་འདས་པ།མྱོས་བྱེད་ཅེས་པ་ཤིང་མོ་ལུག་གི་ལོ།ཁྲུམས་ཀྱི་ཟླ་བའི་ཉེར་ལྔའི་ཉིན།དཔལ་ཨེ་ཝཾ་ཆོས་ལྡན་ཡོན་ཏན་རིན་པོ་དུ་མའི་འབྱུང་གནས་སུ་ལེགས་པར་སྦྱར་བའོ།།1535"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:WA26616  a          :Work ;
+        skos:altLabel       "dpal sa skya'i lo tsA ba'i rnam par thar pa 'jam dpal dbyangs kyi yon tan rnam par bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "sa lo 'jam dpal rdo rje'i rnam thar/"@bo-x-ewts ;
+        :creator            bdr:CR77270D77F6496D28 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVB3A81691C4D9CEBE ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW26616 , bdr:W26616 ;
+        :workIsAbout        bdr:P461 , bdr:T617 .
+}

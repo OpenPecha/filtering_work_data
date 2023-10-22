@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26933 {
+    bda:LG1ED35E70FDD30016
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T11:56:06.776Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3F23ECBC52DD9B0B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA26933  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26933 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "88/WA26933.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26933 ;
+        adm:logEntry        bda:LG1ED35E70FDD30016 , bda:LG3F23ECBC52DD9B0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR45EE639D9443FEAC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA26933  a          :Work ;
+        skos:prefLabel      "sa skya pa'i man ngag 'od dpag med pa'i 'pho ba sgom tshul bde ba can du bsgrod pa'i nye lam/"@bo-x-ewts ;
+        :creator            bdr:CR45EE639D9443FEAC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW26933 ;
+        :workIsAbout        bdr:T15 , bdr:T720 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG212720 {
+    bda:LG8BAC57284BD487D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-01-05T16:52:24.631Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF0845289CDB5C127
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-05T17:10:00.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG212720  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG212720 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "14/WA2KG212720.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG212720 ;
+        adm:logEntry        bda:LG8BAC57284BD487D4 , bda:LGF0845289CDB5C127 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR40695703E5FB3A5F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2043 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG212720  a      :Work ;
+        skos:prefLabel      "rgyud sde bzhi'i lam gyi gnad bsdus dang dbu ma'i lta khrid 'brug gi sgra dbyangs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts written by some of the Tongkhor lines of reincarnations on a concise explanation on the path of the four sections of tantra; Instructions on the View of the Middle Way; Instruction on how to practice the three levels of ordination by novice monastic and fully ordained in a whole day."@en ;
+        :creator            bdr:CR40695703E5FB3A5F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T395 ;
+        :workHasInstance    bdr:MW2KG212720 , bdr:W2KG212720 ;
+        :workIsAbout        bdr:T1871 , bdr:T233 , bdr:T2339 .
+}

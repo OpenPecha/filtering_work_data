@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS214 {
+    bda:LG1720DFFD15FE975D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-10T00:01:08.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG9079C1D468550E59
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-09T15:31:27.421Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9243AD0E9D7FF1FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-03T15:30:56.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added imagegroup no 27"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC6779F3E3C1BAA3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-19T14:59:35.969Z"^^xsd:dateTime ;
+        adm:logMessage      "changed restricted by quality"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD57E6D081B2F85FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3MS214  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS214 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e3/WA3MS214.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS214 ;
+        adm:logEntry        bda:LG1720DFFD15FE975D , bda:LG9079C1D468550E59 , bda:LG9243AD0E9D7FF1FC , bda:LGC6779F3E3C1BAA3F , bda:LGD57E6D081B2F85FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS214  a         :Work ;
+        skos:prefLabel      "lcags lung dgon du bzhugs pa'i dpe dkon phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts preserved at Chaglung Monastery in Sichuan province."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS214 , bdr:W3MS214 ;
+        :workIsAbout        bdr:G3832 .
+}

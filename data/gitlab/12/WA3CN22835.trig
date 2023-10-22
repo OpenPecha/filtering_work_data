@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22835 {
+    bda:LG210D60124CC45B7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-01T15:51:01.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5277CB3200582E84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-28T17:44:15.994Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG817ECD121B28DE9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC29C5BBA68C84020
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-30T23:58:54.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22835  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22835 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "12/WA3CN22835.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22835 ;
+        adm:logEntry        bda:LG210D60124CC45B7F , bda:LG5277CB3200582E84 , bda:LG817ECD121B28DE9F , bda:LGC29C5BBA68C84020 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR898B4DD1B6B6B368
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22835  a       :Work ;
+        skos:altLabel       "rgyal sras rdo rje 'chang chen po bskal bzang thub bstan 'jigs med bstan pa'i rgyal mtshan dpal bzang po'i rnam par thar pa dad pa'i pad+mo bzhad pa'i nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "bskal bzang thub bstan 'jigs med bstan pa'i rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Bioagraphy of Geluk master Kalsang Thubten Jikmey (1743-1811) by Lobsang Trinley Namgyal (19th Cent.)."@en ;
+        :creator            bdr:CR898B4DD1B6B6B368 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN22835 , bdr:W3CN22835 ;
+        :workIsAbout        bdr:P178 .
+}

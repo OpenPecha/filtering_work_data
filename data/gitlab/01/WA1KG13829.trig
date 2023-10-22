@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13829 {
+    bda:LG38AED2D8A35268AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-03T15:52:15.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD29B95A1AFA9F02E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-03T15:46:39.141Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG13829  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13829 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "01/WA1KG13829.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13829 ;
+        adm:logEntry        bda:LG38AED2D8A35268AE , bda:LGD29B95A1AFA9F02E , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2DBA429B9EAAAC55
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13829  skos:altLabel  "commentary on the zab mo nang don"@en .
+
+    bdr:WA1KG13829  a       :Work ;
+        skos:prefLabel      "zab mo nang don gyi tshig 'grel/"@bo-x-ewts , "commentary on the zab mo nang don"@en ;
+        :catalogInfo        "Word by word commentary on Karmapa Ranjung Dorje's treatment of tantric physiology and dzogrim practice"@en ;
+        :creator            bdr:CR2DBA429B9EAAAC55 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW1KG13829 , bdr:W1KG13829 ;
+        :workIsAbout        bdr:WA1KG13830 .
+}

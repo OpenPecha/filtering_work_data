@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12103 {
+    bda:LG008580D309DC4C8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T10:28:10.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG10FA3311D1AFE4DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-28T16:48:59.361Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8C8D9C7ADFBEFD33
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-03-28T16:49:21.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME4B642616A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-27T20:30:28.724Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS11134 to T448"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA1KG12103  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12103 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "91/WA1KG12103.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12103 ;
+        adm:logEntry        bda:LG008580D309DC4C8E , bda:LG10FA3311D1AFE4DF , bda:LG8C8D9C7ADFBEFD33 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIME4B642616A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA59B3E51CCA5EEFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG9679 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1KG12103  a       :Work ;
+        skos:altLabel       "'khor gdong gter chen gyi gter chos/"@bo-x-ewts , "zab thig snying po bde chen rang shar las: zil gnon thugs kyi lha mo'i: bzlog pa gnam lcags thogs mda':"@bo-x-ewts ;
+        skos:prefLabel      "zab thig snying po bde chen rang shar/"@bo-x-ewts ;
+        :catalogInfo        "Collection of revealed texts by the 18th century terton Kordong Terchen Dropen Lingpa."@en ;
+        :creator            bdr:CRA59B3E51CCA5EEFD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG12103 , bdr:W1KG12103 ;
+        :workIsAbout        bdr:T1082 , bdr:T1AT269 .
+}

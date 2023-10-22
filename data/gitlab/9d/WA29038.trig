@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29038 {
+    bda:LG55F39963D35ACA83
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-11T10:25:38.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9466CE1FAFE66FDB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEFF77A8ACF262B74
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-11T10:25:03.543Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29038  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29038 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9d/WA29038.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29038 ;
+        adm:logEntry        bda:LG55F39963D35ACA83 , bda:LG9466CE1FAFE66FDB , bda:LGEFF77A8ACF262B74 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR46B4011A92421BE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6438 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29038  skos:altLabel  "格萨尔传疑难新论"@zh-hans .
+
+    bdr:WA29038  a          :Work ;
+        skos:altLabel       "ge sa er yi nan xin lun"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gling ge sar sgrung gi dka' gnad gsal ba'i sgron me/"@bo-x-ewts , "格萨尔传疑难新论"@zh-hans ;
+        :catalogInfo        "New exposition on difficult points in King Gesar epic"@en ;
+        :creator            bdr:CR46B4011A92421BE8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29038 , bdr:W29038 ;
+        :workIsAbout        bdr:T248 .
+}

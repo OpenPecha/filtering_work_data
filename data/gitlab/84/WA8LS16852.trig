@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16852 {
+    bda:LG5CD762656B516EDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T09:25:06.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG80B2623956D5DD0E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-24T15:28:32.14Z"^^xsd:dateTime ;
+        adm:logMessage      "created new record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG842AB6EC02B68710
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-14T08:34:34.785Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted by tradition"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8CAD45DABB9ADC6E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-24T15:29:52.435Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGED74B31E8AF01A32
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS16852  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16852 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "84/WA8LS16852.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16852 ;
+        adm:logEntry        bda:LG5CD762656B516EDE , bda:LG80B2623956D5DD0E , bda:LG842AB6EC02B68710 , bda:LG8CAD45DABB9ADC6E , bda:LGED74B31E8AF01A32 , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR44F21DBA9C61798E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3624 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16852  a       :Work ;
+        skos:altLabel       "chas pa ngag dbang dge 'dun rgya mtsho'i gsung 'bum/"@bo-x-ewts , "rgya mkhar ba ngag dbang dge 'dun rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ ngag dbang dge 'dun rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "The collected writings of Gyakhar Ngawang Gedun Gyatsho, scholar from Labrang monastery."@en ;
+        :creator            bdr:CR44F21DBA9C61798E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS16852 , bdr:W8LS16852 ;
+        :workIsAbout        bdr:T819 .
+}

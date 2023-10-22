@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1082 {
+    bda:LG33432A93368B0DA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG4E232B06D552DC48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-15T12:57:02.234Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG54EBCBA6B7D6237E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-01T10:28:10.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6710C0315F90D7F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-01T10:27:44.382Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG72FA67AFD0CC580C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-20T15:09:17.232Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGB846F0E2EBD978E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-20T10:20:53.631Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGF2256E3782342DFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T15:36:19.711Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1CZ1082  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1082 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f4/WA1CZ1082.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1082 ;
+        adm:logEntry        bda:LG33432A93368B0DA2 , bda:LG4E232B06D552DC48 , bda:LG54EBCBA6B7D6237E , bda:LG6710C0315F90D7F8 , bda:LG72FA67AFD0CC580C , bda:LGB846F0E2EBD978E6 , bda:LGF2256E3782342DFC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9FFA82328AB1647F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1082  a        :Work ;
+        skos:altLabel       "phyin ci log gi gtam gyi sbyor ba la zhugs pa'i smra ba ngan pa rnam par 'thag pa'i bstan bcos gnam lcags 'khor lo/"@bo-x-ewts ;
+        skos:prefLabel      "rigs pa'i bstan bcos gnam lcags 'khor lo/"@bo-x-ewts ;
+        :catalogInfo        "Polemic written by Khedrup Je."@en ;
+        :creator            bdr:CR9FFA82328AB1647F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1CZ1082 , bdr:W1CZ1082 ;
+        :workIsAbout        bdr:T102 .
+}

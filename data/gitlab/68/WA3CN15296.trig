@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15296 {
+    bda:LG77E0C9F8A53DEEFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9DBA7CEF6359A9DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-30T14:10:33.254Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA85AB71BCCE1B9EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T15:34:24.197Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD4356081DD491553
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:12:56.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15296  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15296 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "68/WA3CN15296.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15296 ;
+        adm:logEntry        bda:LG77E0C9F8A53DEEFF , bda:LG9DBA7CEF6359A9DC , bda:LGA85AB71BCCE1B9EC , bda:LGD4356081DD491553 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2D698EF1587C4D9B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P659 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN15296  a       :Work ;
+        skos:altLabel       "gnam chos thugs kyi gter kha bsnyen rgyud zab mo'i skor las gtum mo'i khrid bde drod rang 'bar/"@bo-x-ewts ;
+        skos:prefLabel      "gnam chos thugs gter las gtum mo'i skor/"@bo-x-ewts ;
+        :catalogInfo        "Instruction manual of inner heat yoga from Namcho Terma tradition."@en ;
+        :creator            bdr:CR2D698EF1587C4D9B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW3CN15296 , bdr:W3CN15296 ;
+        :workIsAbout        bdr:T1538 .
+}

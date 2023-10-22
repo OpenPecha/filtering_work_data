@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208433 {
+    bda:LG13F6A05577F0AACB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T11:46:10.017Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4AF45B3DFA87C56
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEAE28F1C54926518
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-22T11:51:02.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG208433  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208433 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/WA2KG208433.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208433 ;
+        adm:logEntry        bda:LG13F6A05577F0AACB , bda:LGC4AF45B3DFA87C56 , bda:LGEAE28F1C54926518 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR22077EDE63D0984F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8058 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208433  a      :Work ;
+        skos:prefLabel      "sprin gyi pho nya/ (bod rgya shan sbyar/)"@bo-x-ewts , "云使（藏汉对照）"@zh-hans ;
+        :catalogInfo        "Classical Sanskrit poetry written by Kalidasa, translation in Tibetan and Chinese."@en ;
+        :creator            bdr:CR22077EDE63D0984F ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workHasInstance    bdr:MW2KG208433 , bdr:W2KG208433 ;
+        :workIsAbout        bdr:T1979 , bdr:T204 .
+}

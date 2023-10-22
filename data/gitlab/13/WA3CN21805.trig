@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21805 {
+    bda:LG10DDF18F338C0304
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T12:52:49.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2F3EF06CEA7189FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-12T12:50:33.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8A81306762063647
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA7DCA9769A7237B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T11:00:25.252Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDC95769C87C670EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T18:44:52.421Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8467 to P4CZ10506"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA3CN21805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21805 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "13/WA3CN21805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21805 ;
+        adm:logEntry        bda:LG10DDF18F338C0304 , bda:LG2F3EF06CEA7189FA , bda:LG8A81306762063647 , bda:LGA7DCA9769A7237B4 , bda:LGDC95769C87C670EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6E72A909385272C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10506 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21805  a       :Work ;
+        skos:altLabel       "bod kyi lo rgyus dang rig gnas byung 'phel zhib 'jug gi dpyad rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "bod rig pa'i dpyad rtsom brgya dang brgyad cu ma/ (stod smad gnyis/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of reserch paper on Tibetan study."@en ;
+        :creator            bdr:CR6E72A909385272C8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW3CN21805 , bdr:W3CN21805 ;
+        :workIsAbout        bdr:T212 .
+}

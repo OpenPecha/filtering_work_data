@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD1388 {
+    bda:LG019A3D25D5FECC02
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG312BAACF7585BC17
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-01T12:49:12.441Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG34C7269F33C9F17D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-01T12:50:34.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG84C8376A9CB7C88E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-01T11:08:56.071Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4PD1388  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD1388 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "5f/WA4PD1388.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD1388 ;
+        adm:logEntry        bda:LG019A3D25D5FECC02 , bda:LG312BAACF7585BC17 , bda:LG34C7269F33C9F17D , bda:LG84C8376A9CB7C88E , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1874733F2DBD6529
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7420 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD1388  a        :Work ;
+        skos:altLabel       "dpal khrag 'thung dga' ba'i ye shes bde chen 'bar ba'i rdo rje'i gsung 'bum skor/"@bo-x-ewts , "gter chen 'bar ba'i rdo rje'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_'bar ba'i rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Barwai Dorje (1836-1920) of the Barom Kagyu."@en ;
+        :creator            bdr:CR1874733F2DBD6529 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4PD1388 , bdr:W4PD1388 ;
+        :workIsAbout        bdr:T1384 .
+}

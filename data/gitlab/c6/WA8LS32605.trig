@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32605 {
+    bda:LG53B87C11EDA1FDDD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-24T10:03:36.85Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC675D9CF492E126F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGE15C35C159171106
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-24T10:04:34.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32605  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32605 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c6/WA8LS32605.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32605 ;
+        adm:logEntry        bda:LG53B87C11EDA1FDDD , bda:LGC675D9CF492E126F , bda:LGE15C35C159171106 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XLB83A0B65FDAD ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRBE47284988268A49
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32605  a       :Work ;
+        skos:prefLabel      "gzhan gyi brtsad pa'i lan mdor bsdus pa rigs lam rab gsal de nyid snang byed/"@bo-x-ewts ;
+        :catalogInfo        "A polemic writing of Ju Mipham Jamyang Namgyal."@en ;
+        :creator            bdr:CRBE47284988268A49 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T102 .
+}

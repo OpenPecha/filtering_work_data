@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ332950 {
+    bda:LG461E4BDFFB0654E1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-30T16:34:49.392Z"^^xsd:dateTime ;
+        adm:logMessage      "new and checked"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6E0C693A3F0BEA83
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-30T16:48:18.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ332950  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ332950 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d6/WA4CZ332950.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ332950 ;
+        adm:logEntry        bda:LG461E4BDFFB0654E1 , bda:LG6E0C693A3F0BEA83 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ331368 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR595BD5FEB14B1C5D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ332950  a      :Work ;
+        skos:altLabel       "bcom ldan 'das thub pa'i dbang po'i mdzad pa mdo tsam brjod pa mthong bas don ldan rab tu dga' ba dang bcas pas dad pa'i nyin byed phyogs brgyar 'char ba/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal ba shAkya thub pa'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "The life story of the Prince Siddhartha: Buddha Shakyamuni"@en ;
+        :creator            bdr:CR595BD5FEB14B1C5D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P7326 .
+}

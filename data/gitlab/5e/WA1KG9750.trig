@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9750 {
+    bda:LG900101813E65A119
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T11:57:52.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG90630CA7CB990905
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-27T11:20:29.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGADF5F533AFA2E57F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-27T11:13:50.124Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9750  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9750 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "5e/WA1KG9750.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9750 ;
+        adm:logEntry        bda:LG900101813E65A119 , bda:LG90630CA7CB990905 , bda:LGADF5F533AFA2E57F , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C1A3135467D8A15
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4188 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG9750  skos:altLabel  "bsad mdzod yid bzin nor bu : a compendium of tibetan lamaist scholastic learning"@en-x-mixed .
+
+    bdr:WA1KG9750  a        :Work ;
+        skos:altLabel       "bshad mdzod yid bzhin nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "bshad mdzod chen mo/"@bo-x-ewts , "bsad mdzod yid bzin nor bu : a compendium of tibetan lamaist scholastic learning"@en-x-mixed ;
+        :catalogInfo        "Compendium of Tibetan scholastic learning. Written by the 15th century scholar Dodam Mewai Sengge."@en ;
+        :creator            bdr:CR1C1A3135467D8A15 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1830 ;
+        :workHasInstance    bdr:MW1KG9750 , bdr:W1KG9750 ;
+        :workIsAbout        bdr:T770 .
+}

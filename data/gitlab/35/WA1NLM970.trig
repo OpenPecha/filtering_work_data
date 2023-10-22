@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM970 {
+    bda:LG329AC7C00845F2E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG88012B5B2AF77490
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-13T16:17:32.768Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8B76A1EDD4E81BEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T09:21:05.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM970"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM970  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM970 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "35/WA1NLM970.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM970 ;
+        adm:logEntry        bda:LG329AC7C00845F2E2 , bda:LG88012B5B2AF77490 , bda:LG8B76A1EDD4E81BEC , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM970  a        :Work ;
+        skos:prefLabel      "rgyal ba byams pa'i sgrub thabs dang 'brel ba'i mchod cho ga dga' ldan pad mtshor 'jug pa'i gru gzigs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual text and Sadhana of Marityanath, a cycle of revealed texts concerned with the practice of medicine, exorcism of negative force by practice focus on Troma Nagpo, Manjushri Krishna, and Dralha."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM970 , bdr:W1NLM970 ;
+        :workIsAbout        bdr:T1438 , bdr:T1439 , bdr:T1482 , bdr:T1726 , bdr:T1795 , bdr:T681 , bdr:T716 .
+}

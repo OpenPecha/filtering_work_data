@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22707 {
+    bda:LG204A07EE270AA8C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-28T15:29:48.872Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG46F823084FDEBD49
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA7CE7216410B506B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-28T15:28:23.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCAFB04226DEBBE54
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-07T13:22:31.493Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22707  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22707 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA3CN22707.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22707 ;
+        adm:logEntry        bda:LG204A07EE270AA8C7 , bda:LG46F823084FDEBD49 , bda:LGA7CE7216410B506B , bda:LGCAFB04226DEBBE54 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBFEE0AE7C758C6F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P720 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22707  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ bstan 'dzin blo bzang rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk master Tenzin Lobsang Gyatsho (1593-1638)."@en ;
+        :creator            bdr:CRBFEE0AE7C758C6F4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN22707 , bdr:W3CN22707 ;
+        :workIsAbout        bdr:T819 .
+}

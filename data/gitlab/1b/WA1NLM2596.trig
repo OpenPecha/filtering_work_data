@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2596 {
+    bda:LG00C41FC745561EBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG8E1493967E6218B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:05:59.668Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGAF9789BD52D21367
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T16:24:05.23Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2596"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2596  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2596 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1b/WA1NLM2596.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2596 ;
+        adm:logEntry        bda:LG00C41FC745561EBC , bda:LG8E1493967E6218B2 , bda:LGAF9789BD52D21367 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5DF7B7680CFACD43
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4699 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2596  a       :Work ;
+        skos:prefLabel      "rgyal ba byams pa sgrub thabs dang 'brel ba'i mchod chog dga' ldan pad mtshor 'jug pa'i gru gzings sogs/"@bo-x-ewts ;
+        :catalogInfo        "Aa method for worship (pujavidhi) for the worship of maitreya to be used in connection with the sadhana , on the sadhana of Khadiravani Tara, instruction on the practice of the taking of refuge in the three jewels and other texs incluted"@en ;
+        :creator            bdr:CR5DF7B7680CFACD43 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM2596 , bdr:W1NLM2596 ;
+        :workIsAbout        bdr:T681 .
+}

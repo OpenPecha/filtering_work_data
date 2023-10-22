@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0TT0 {
+    bda:LG4A9847879089604C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-10T09:03:07.215Z"^^xsd:dateTime ;
+        adm:logMessage      "add minimal info"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG6E36B03DB572CE69
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-10T10:45:07.215Z"^^xsd:dateTime ;
+        adm:logMessage      "add status"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LG7397C1B0743D4CD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-15T16:53:42.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added pubinfo"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGFB082C942500E6A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T13:40:13.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA0TT0  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0TT0 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA0TT0.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0TT0 ;
+        adm:logEntry        bda:LG4A9847879089604C , bda:LG6E36B03DB572CE69 , bda:LG7397C1B0743D4CD3 , bda:LGFB082C942500E6A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0BC003 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA0TT0  a           :Work ;
+        skos:altLabel       "Taishō shinshū daizō-kyō"@en ;
+        skos:prefLabel      "Taishō Tripitaka"@en , "大正新脩大藏經"@zh-hant ;
+        :isRoot             true ;
+        :language           bdr:LangZh .
+}

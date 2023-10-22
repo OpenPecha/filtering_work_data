@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20034 {
+    bda:LG0BD0519667FEDD5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG3878E61604D7AE5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-12T20:21:26.111Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5E16F8EF6E9B9F1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-05T14:41:46.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added colophon title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC060380194A95E81
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-06-05T14:42:42.117Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE1ACBC6C864CE5B1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20034  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20034 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "90/WA20034.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20034 ;
+        adm:logEntry        bda:LG0BD0519667FEDD5E , bda:LG3878E61604D7AE5D , bda:LG5E16F8EF6E9B9F1E , bda:LGC060380194A95E81 , bda:LGE1ACBC6C864CE5B1 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW20034  skos:altLabel  "“赤脚医生”藏药配方新编"@zh-hans .
+
+    bdr:WA20034  a          :Work ;
+        skos:altLabel       "chi jiao yi sheng zang yao pei fang xin bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sman pa rkang rjen ma'i bod sman sbyor sde gsar bsgrigs/"@bo-x-ewts , "“赤脚医生”藏药配方新编"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20034 , bdr:W20034 ;
+        :workIsAbout        bdr:T85 , bdr:T86 .
+}

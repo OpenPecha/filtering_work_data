@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN545 {
+    bda:LG1D4DDB637B6D93C5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T17:03:32.602Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3475272595E92730
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T12:07:04.982Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5DD2B6F6297B9403
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:10:55.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD17F868AA7F9BCB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-03T12:07:56.008Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN545  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN545 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ba/WA3CN545.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN545 ;
+        adm:logEntry        bda:LG1D4DDB637B6D93C5 , bda:LG3475272595E92730 , bda:LG5DD2B6F6297B9403 , bda:LGD17F868AA7F9BCB7 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN545  a         :Work ;
+        skos:altLabel       "dpal thub bstan gser mdog can dgon zhes mkhas btsun grub pa rgya mtsho'i bsti gnas 'di nyid kyi gtsug lag khang dge 'dun 'dus pa'i tshogs kyi zhal 'don du chos spyod rab gsal skor go rim ma 'khrugs pa phyogs gcig tu bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "thub bstan gser mdog can dgon gyi chos spyod phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of religious instructions from Serdokjan Monastery."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW3CN545 , bdr:W3CN545 ;
+        :workIsAbout        bdr:G391 .
+}

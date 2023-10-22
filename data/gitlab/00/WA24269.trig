@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24269 {
+    bda:LG3622D95103CB2B09
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC03D936267EE4DA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-08T19:40:26.125Z"^^xsd:dateTime ;
+        adm:logMessage      "published to correct holdings error"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA24269  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24269 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "00/WA24269.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24269 ;
+        adm:logEntry        bda:LG3622D95103CB2B09 , bda:LGC03D936267EE4DA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR31006EFDF7FEE8FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P66 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24269  a          :Work ;
+        skos:prefLabel      "dbus mtha' rnam 'byed kyi 'grel pa/"@bo-x-ewts ;
+        :creator            bdr:CR31006EFDF7FEE8FF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW24269 .
+}

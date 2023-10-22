@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2306 {
+    bda:LGDC9DD650A4BC5E47
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-08T09:06:39.11Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE4572ED75EDF22C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2306"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2306  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2306 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d1/WA1NLM2306.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2306 ;
+        adm:logEntry        bda:LGDC9DD650A4BC5E47 , bda:LGE4572ED75EDF22C3 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5688FA65DE838AA8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2306  a       :Work ;
+        skos:prefLabel      "sdom pa gsum gyi rnam grangs bstan pa don bsdus gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mi Tra'i dbang legs par thob pa'i thob yig brgyud rim/ rdor 'phreng gi dbang legs par thob pa'i thob yig brgyud rim/ 2 lam gyi bsangs/ 3 dpal phyag na rdo rje'i gtor 'bul/ 4 sa bdag bcu gsum bsangs mchod 'bul ba/ 5 bsangs mtshan mo nyin mo dus la rygun ma chad par mchod par bya zhing gu ru u rgyan gyi bsang 'dus pa/ 6 rdo rje sems dpa'i sgrub thabs/ 7 spyang gi dge khaHbcos thabs/ 8 sngon dus dpal ldan bla ma thang zug las/ 9 phyag na rdo rjes gnang ba'i grib bsangs/ 10 chos skyong gi 'khu ldog zhi ba'i man ngag bdud rtsi'i chu rgyun/ 11 srung ba rab gnas dang yang rlung rta rab gnas bcas pa/ 12 me lha rgyal po bsang zhes bya ba'i gzungs/ 13 chos skyong dreg pa lcam sring gi bsnags mchod bsam pa kun grub/ 14 mi skar la mchod gtor 'bul tshul/ 15 drang srong me lha'i bsang mchod g.yang 'gugs/ 16 al tha'i bsangs/ 17 bla ma'i rnal 'byor gyi sgo nas bde gsang 'jigs gsum gyi sngags chag med du bzla tshul/ 18 dam can rdor legs kyi dar lcogs/ 19 phyag na rdo rje gser skyems 'bul/ 20 chos skyong lcam sring gi bsang mchod las kun lhun grub/ 21 seng ge'i gdong pa can la/ 22 nor lha dam can dkar po'i gsol mchod/ 23 rta mgrin gsang sgrub chos skor las/ bka' sdod beg tse lcam dral gyi/ /gtor chog shin tu 'khyer bde ba/ 24 mdo sdong po brgyan p/ 25 rang gzhan gyi bkra shis kyi dge mtshan spel phyir byin 'beb gsol 'debs e waM char 'bebs/ 26 'du shes bcu gcig pa'i mdo/ 27 dpal rdo rje 'jigs byed kyi bsgoms bzlas mdor bsdus/ 28 sgrol ma'i sngags dang sgrol ma rang gis dam bca' ba'i gzungs/ 29 mgon po'i gser skyems/"@en , "A summary of the thee vows; other text also included."@en ;
+        :creator            bdr:CR5688FA65DE838AA8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW1NLM2306 , bdr:W1NLM2306 ;
+        :workIsAbout        bdr:T201 .
+}

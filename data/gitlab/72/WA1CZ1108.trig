@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1108 {
+    bda:LG02E6996EA9EC2BD4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-15T16:57:20.254Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6065D59F3CC0D5CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-07-26T11:21:36.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8127AC264CE0F7F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T16:19:08.323Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed, added cat, pub info and author"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG99AF33B8C0E3408E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-30T12:05:34.25Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA31A4C5F1968C3EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LGCAF29D55CDDB8CFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T16:58:41.399Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE41CEA9AB797D344
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-07-26T11:20:53.811Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA1CZ1108  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1108 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "72/WA1CZ1108.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1108 ;
+        adm:logEntry        bda:LG02E6996EA9EC2BD4 , bda:LG6065D59F3CC0D5CD , bda:LG8127AC264CE0F7F9 , bda:LG99AF33B8C0E3408E , bda:LGA31A4C5F1968C3EC , bda:LGCAF29D55CDDB8CFE , bda:LGE41CEA9AB797D344 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR625CB91A1CD8D53C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1108  a        :Work ;
+        skos:prefLabel      "stobs bzhi'i bshags pa/"@bo-x-ewts ;
+        :catalogInfo        "The confession of misdeeds with four opponent powers"@en ;
+        :creator            bdr:CR625CB91A1CD8D53C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1CZ1108 , bdr:W1CZ1108 ;
+        :workIsAbout        bdr:T2560 .
+}

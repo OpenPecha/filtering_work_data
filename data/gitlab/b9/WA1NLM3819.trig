@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3819 {
+    bda:LGDD3860D79671E49A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-23T14:29:21.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3819"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3819  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3819 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b9/WA1NLM3819.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3819 ;
+        adm:logEntry        bda:LGDD3860D79671E49A , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB7F189F1B08ABE64
+        a                   :AgentAsCreator ;
+        :agent              bdr:P348 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3819  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed kyi smon lam gyi Tik+ka gsang chen myur lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpa' gcig bdud las rnam rgyal gyi bla brgyud gsol 'debs/ 2 dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs bdud las rnam rgyal gyi ngag 'don khrig chags su bsdebs pa bdud las rnam par rgyal ba'i rgyal mtshan/ 3 sras rgyud lugs kyi 'pho ba'i gdams pa'i ngag 'don khrigs chags su bsdebs pa/ 4 dpal ldan dben sa snyan brgyud kyi man ngag bzhin rta mgrin sgrub pa'i thabs thun mong ma yin pa/ 5 klu'i gsol mchod bya tshul mdor bsdus/ 6 rje btsun ma yid bzhin 'khor lo'i maN+Dal bzhi pa'i cho ga tshe dpal rgyas byed/ 7 byang gter thugs rje chen po 'gro ba kun grol gyi las byang phan bde'i 'byung gnas/ 8 rab gnas kyi skabs su yon bdag bsgo ba'i bshad pa bya tshul/ 9 byang sems kyi sdom pa'i rnam gzhag mdor bsdus su bkod pa/ 10 jo bo yab sras kyi gsung bgros pha chos rin po che'i gter mdzod byang chub sems dpa'i nor bu'i phreng ba'i rtsa ba/ 11 rje bla ma chos kyi rgyal po btsong kha pa chen po'i las tshogs 'khor lo la brten pa'i dngos grub 'byung gnas/"@en , "A commentary on the prayer of Vajrabairava by Lamo Trichen Losang Tenpe Nyima."@en ;
+        :creator            bdr:CRB7F189F1B08ABE64 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM3819 , bdr:W1NLM3819 ;
+        :workIsAbout        bdr:T104 .
+}

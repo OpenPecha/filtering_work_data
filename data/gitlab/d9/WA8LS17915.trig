@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17915 {
+    bda:LG6615484DE514CE7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-19T12:05:33.137Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC3121F2D77D32E08
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-19T12:04:16.907Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17915  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17915 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d9/WA8LS17915.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17915 ;
+        adm:logEntry        bda:LG6615484DE514CE7F , bda:LGC3121F2D77D32E08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XL21CF18B27330 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRE5714375E8CB40A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1048 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17915  a       :Work ;
+        skos:altLabel       "bdud rtsi 'byung ba dang kye'i rdo rje'i tshogs 'khor bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "bdud rtsi 'byung ba dang kye rdor tshogs 'khor/"@bo-x-ewts ;
+        :catalogInfo        "A fire offering and ganacakra of Hevajra by Phakpa Lodroe Gyaltsen."@en ;
+        :creator            bdr:CRE5714375E8CB40A5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T8 ;
+        :workIsAbout        bdr:T130 , bdr:T937 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ346627 {
+    bda:LG56F7CFDD1844782D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T09:47:56.606Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9B3C1F3F705B5408
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T10:53:34.855Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC594122568AF1BBE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-01T11:05:14.032Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ346627  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ346627 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "80/WA4CZ346627.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ346627 ;
+        adm:logEntry        bda:LG56F7CFDD1844782D , bda:LG9B3C1F3F705B5408 , bda:LGC594122568AF1BBE , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF265603A5B9BF74D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA4CZ346627  a      :Work ;
+        skos:prefLabel      "paN chen rin po che 'tshol zhib/"@bo-x-ewts ;
+        :catalogInfo        "The Search for Gedhun Chokyi Nyima by Isable Hilton, translated in to Tibetan by Jampa Tenzin"@en ;
+        :creator            bdr:CRF265603A5B9BF74D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ346627 , bdr:W4CZ346627 ;
+        :workIsAbout        bdr:P8LS12000 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368806 {
+    bda:LG23B8AC99D24CD69C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:01:14.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG777A77A2DB0EFB93
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:48.416Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC15EE2081D2C9270
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:10:07.564Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368806  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368806 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/WA4CZ368806.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368806 ;
+        adm:logEntry        bda:LG23B8AC99D24CD69C , bda:LG777A77A2DB0EFB93 , bda:LGC15EE2081D2C9270 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ368806  a      :Work ;
+        skos:prefLabel      "bod kyi dmangs srol nying btus/"@bo-x-ewts ;
+        :catalogInfo        "A collection of Tibetan Cultural Heritage"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1PD128746 ;
+        :workHasInstance    bdr:MW4CZ368806 , bdr:W4CZ368806 ;
+        :workIsAbout        bdr:T1144 .
+}

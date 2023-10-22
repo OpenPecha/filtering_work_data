@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76372 {
+    bda:LG0742E53EAF8AFBE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-26T15:01:49.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE7CF7F97889BC24C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-26T15:01:24.563Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76372  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76372 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fb/WA8LS76372.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76372 ;
+        adm:logEntry        bda:LG0742E53EAF8AFBE1 , bda:LGE7CF7F97889BC24C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR26AFC2028255449C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1685 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR2F4E63DEF8DBBB63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1665 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR53A932232F13D08B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P265 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC85637954944B674
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7820 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRDFB76219D5C19879
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6873 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76372  a       :Work ;
+        skos:prefLabel      "bon gyi gnas yig phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of Bonpo pilgrimage guide book; edited by Tshultrim Tenpa Drukdrak."@en ;
+        :creator            bdr:CR26AFC2028255449C , bdr:CR2F4E63DEF8DBBB63 , bdr:CR53A932232F13D08B , bdr:CRC85637954944B674 , bdr:CRDFB76219D5C19879 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T25 ;
+        :workHasInstance    bdr:MW8LS76372 , bdr:W8LS76372 ;
+        :workIsAbout        bdr:T247 .
+}

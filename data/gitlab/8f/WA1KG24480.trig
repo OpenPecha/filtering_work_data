@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24480 {
+    bda:LG9FAA500AE1FEF546
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T15:41:35.245Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAD818673F086F107
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-03T12:22:08.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG24480  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24480 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8f/WA1KG24480.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24480 ;
+        adm:logEntry        bda:LG9FAA500AE1FEF546 , bda:LGAD818673F086F107 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9E0F228ACDD4239F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24523 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24480  a       :Work ;
+        skos:prefLabel      "dpyod pa'i rlabs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of analytic writings of Jigme Rabten on Buddhism and Tibetan culture."@en ;
+        :creator            bdr:CR9E0F228ACDD4239F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW1KG24480 , bdr:W1KG24480 ;
+        :workIsAbout        bdr:T350 .
+}

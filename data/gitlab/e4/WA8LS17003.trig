@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17003 {
+    bda:LG5F94A7AD9908534D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-17T15:38:11.507Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG88A37AF5B21774D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-17T15:37:00.162Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17003  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17003 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/WA8LS17003.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17003 ;
+        adm:logEntry        bda:LG5F94A7AD9908534D , bda:LG88A37AF5B21774D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFAB347CB10366CAB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17003  a       :Work ;
+        skos:altLabel       "phag mo zab rgya'i 'khrul 'khor gsal byed kyi zin byang bklags pas rtogs pa/"@bo-x-ewts ;
+        skos:prefLabel      "phag mo zab brgya'i 'khrul 'khor/"@bo-x-ewts ;
+        :catalogInfo        "A note on the yogic posture by Minling Lochen Dharmashri. See also in the 15th volume of author's collected works."@en ;
+        :creator            bdr:CRFAB347CB10366CAB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW8LS17003 , bdr:MW9140_BAC7B9 , bdr:W8LS17003 ;
+        :workIsAbout        bdr:T2232 , bdr:T288 .
+}

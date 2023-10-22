@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG116070 {
+    bda:LG1E9928C4AFEE38BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-02-26T17:32:13.251Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG65642FA278868596
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-27T11:42:20.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG116070  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG116070 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "79/WA1KG116070.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG116070 ;
+        adm:logEntry        bda:LG1E9928C4AFEE38BD , bda:LG65642FA278868596 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD5E2360932A946E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS43259 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG116070  skos:altLabel  "the nine eye gzi onyx: a tibetan grammar and its characteristics of the bon tradition"@en .
+
+    bdr:WA1KG116070  a      :Work ;
+        skos:altLabel       "gna' bo'i bon lugs dang 'brel te bod kyi brda sprod pa'i byung ba dang de'i khyad chos brjod pa gzi mi dgu pa/"@bo-x-ewts ;
+        skos:prefLabel      "brda sprod gzi mig dgu pa/"@bo-x-ewts , "the nine eye gzi onyx: a tibetan grammar and its characteristics of the bon tradition"@en ;
+        :catalogInfo        "A Tibetan grammar and its characteristics of the Bon tradition by Geshe Tri Yungdrung."@en ;
+        :creator            bdr:CRD5E2360932A946E4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG116070 , bdr:W1KG116070 ;
+        :workIsAbout        bdr:T247 , bdr:T4CZ16893 .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29905 {
+    bda:LG038E380189281C3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:56:48.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1A8E4DD2A63147A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-12-02T12:40:23.057Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG720C29469AA90457
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-07T16:33:19.286Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG74A7C70F08B09BED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDD98DF415F2CD036
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-06T19:32:25.406Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation revised"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGFC44D5662A2A89BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-22T10:15:58.736Z"^^xsd:dateTime ;
+        adm:logMessage      "mtshan byang bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29905  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29905 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "e6/WA29905.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29905 ;
+        adm:logEntry        bda:LG038E380189281C3E , bda:LG1A8E4DD2A63147A6 , bda:LG720C29469AA90457 , bda:LG74A7C70F08B09BED , bda:LGDD98DF415F2CD036 , bda:LGFC44D5662A2A89BE , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW29905  skos:altLabel  "masterpieces of bhutanese biographical literature"@en .
+
+    bdr:WA29905  a          :Work ;
+        skos:altLabel       "accounts of the lives of the shakyamuni buddha, the arhats, dam chos pad dkar, bstan 'dzin don grub, and chos rgyal shes rab dbang phyug"@en-x-mixed ;
+        skos:prefLabel      "dam chos pad dkar dang bstan 'dzin don 'grub sogs kyi rnam thar/"@bo-x-ewts , "masterpieces of bhutanese biographical literature"@en ;
+        :catalogInfo        "Five biographical works about Shakyamuni Buddha, arhats, and masters from Bhutan."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW29905 , bdr:W29905 ;
+        :workIsAbout        bdr:G3205 , bdr:P9977 , bdr:P9978 .
+}

@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA389 {
+    bda:LG856B54E9F7FCAE47
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB5551F0C51461DBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-04T15:43:31.711Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3C51AFFCFD93617
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-28T15:11:13.305Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5F3F7AAF5D5D0D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-02-28T15:11:41.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF6F85793A0D6E822
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T13:55:43.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA389  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA389 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "9c/WA389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA389 ;
+        adm:logEntry        bda:LG856B54E9F7FCAE47 , bda:LGB5551F0C51461DBC , bda:LGD3C51AFFCFD93617 , bda:LGE5F3F7AAF5D5D0D2 , bda:LGF6F85793A0D6E822 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1EE61 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF43A64F3F3EB6DE0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P58 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA389  a            :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa la blo sbyong ba la thog mar blo sbyong chos kyi sgo 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "thog mar blo sbyong chos kyi sgo 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Instruction text on mind trainning, often studied in preparation for study of the graduated lamrim path by Tsongkhapa."@en ;
+        :creator            bdr:CRF43A64F3F3EB6DE0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T393 .
+}

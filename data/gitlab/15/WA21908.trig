@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21908 {
+    bda:LG14C719DD5E1816BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:51.785Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG48DE43A106A916B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:51:51.121Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T284 to T1884"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6F1C18B9E88B3706
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8D147024B7BDD50B
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-05T15:16:28.107Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8F3113A25EA98C9B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-05T15:16:58.309Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG96A02177CB53DDBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:17:10.07Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGDEC2A63E345BB637
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21908  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21908 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "15/WA21908.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21908 ;
+        adm:logEntry        bda:LG14C719DD5E1816BE , bda:LG48DE43A106A916B6 , bda:LG6F1C18B9E88B3706 , bda:LG8D147024B7BDD50B , bda:LG8F3113A25EA98C9B , bda:LG96A02177CB53DDBA , bda:LGDEC2A63E345BB637 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21908  skos:altLabel  "西藏散文选"@zh-hans .
+
+    bdr:WA21908  a          :Work ;
+        skos:altLabel       "xi zang san wen xuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi lhug rtsom 'dems sgrig"@bo-x-ewts , "西藏散文选"@zh-hans ;
+        :catalogInfo        "Selected Tibetan prose works."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW21908 , bdr:W21908 .
+}

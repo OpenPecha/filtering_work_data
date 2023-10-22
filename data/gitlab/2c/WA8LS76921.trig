@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76921 {
+    bda:LGB77E853FF4754A5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-25T09:36:24.859Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDE3A564E8DFFD84A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-25T09:36:49.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76921  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76921 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2c/WA8LS76921.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76921 ;
+        adm:logEntry        bda:LGB77E853FF4754A5E , bda:LGDE3A564E8DFFD84A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR89E0459BE1A8F923
+        a                   :AgentAsCreator ;
+        :agent              bdr:P29 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76921  a       :Work ;
+        skos:prefLabel      "yon tan gzhir gyur ma'i bsdus 'grel 'jam mgon bla ma dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        :catalogInfo        "A short commentary on graduated path by Dobi Geshes Sherab Gyatsho."@en ;
+        :creator            bdr:CR89E0459BE1A8F923 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T238 ;
+        :workHasInstance    bdr:MW8LS76921 , bdr:W8LS76921 .
+}

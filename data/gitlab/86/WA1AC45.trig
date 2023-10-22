@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC45 {
+    bda:LG07679C76F8AFD52F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-24T02:22:40.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG0D65CAC1EA332D3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-24T02:21:34.772Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG434E2308EC86F523
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:47.466Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8006B30DA788BF13
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-18T03:56:13.941Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBC877EDB95A3506F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-28T13:27:12.876Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC45  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC45 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "86/WA1AC45.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC45 ;
+        adm:logEntry        bda:LG07679C76F8AFD52F , bda:LG0D65CAC1EA332D3E , bda:LG434E2308EC86F523 , bda:LG8006B30DA788BF13 , bda:LGBC877EDB95A3506F , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR965D5D473180C868
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366925 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1AC45  a          :Work ;
+        skos:prefLabel      "'jog po bla ma blo bzang rnam grol gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Jogpo Lama Lobsang Namdrol"@en ;
+        :creator            bdr:CR965D5D473180C868 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1AC45 , bdr:W1AC45 ;
+        :workIsAbout        bdr:P3432 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16784 {
+    bda:LG8E24B7BF772CCE6C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-17T11:16:31.141Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB8E7A0BC037512AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC0BF4C5A29965C46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-17T11:17:56.183Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16784  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16784 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ab/WA8LS16784.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16784 ;
+        adm:logEntry        bda:LG8E24B7BF772CCE6C , bda:LGB8E7A0BC037512AE , bda:LGC0BF4C5A29965C46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR78BDE28992E3F261
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9302 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16784  a       :Work ;
+        skos:altLabel       "bstan bcos mngon rtogs rgyan gyi brjod bya khams chen po brgyad dang mtshon byed zhe lnga'i rnam gzhag"@bo-x-ewts ;
+        skos:prefLabel      "khams chen po brgyad dang mtshon byed zhe lnga'i rnam gzhag"@bo-x-ewts ;
+        :catalogInfo        "An analysis of 8 constituents and 45 difinitions from the Abhisamayalankara of Bonpo tradition by Yongzin Sangye Tenzin."@en ;
+        :creator            bdr:CR78BDE28992E3F261 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS16784 , bdr:W8LS16784 ;
+        :workIsAbout        bdr:WA19716 .
+}

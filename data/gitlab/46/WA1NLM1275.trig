@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1275 {
+    bda:LG87AD25F42BD9ECDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-03T09:37:35.608Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF4BB87CE53217FAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1275"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1275  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1275 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "46/WA1NLM1275.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1275 ;
+        adm:logEntry        bda:LG87AD25F42BD9ECDE , bda:LGF4BB87CE53217FAE , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA2F64DF7D105187E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P304 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA382B3A878293604
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1275  a       :Work ;
+        skos:altLabel       "bla ma mchod pa'i nyams len dogs gcod ji 'byung dang tshig bcad dri lan/"@bo-x-ewts , "bstan bcos legs par bshad pa'i snying po las sems tsam skor gyi mchan 'grel rtsom 'phro rnam rig gzhung brgya'i snang ba/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad snying po las sems tsam skor gyi mchan 'grel rtsom 'phro rnam rig gzhung brgya'i snang ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary on cittamatra section of Tsongkhapa's writing on provisional and ultimate meaning by Khalkha Ngawang Pelden and minor works, chiefly on the practice of the Gurupuja by 02 Radreng."@en ;
+        :creator            bdr:CRA2F64DF7D105187E , bdr:CRA382B3A878293604 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1NLM1275 , bdr:W1NLM1275 ;
+        :workIsAbout        bdr:T138 , bdr:T2055 .
+}

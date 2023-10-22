@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN26476 {
+    bda:LG43EC4440391268D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-04T15:40:12.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7B5D8309E3002710
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-01T11:15:15.316Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG898A8A6A7C0329A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG99C65375BC9EBDCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-13T21:36:37.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF1172320C2365175
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-01T11:15:37.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN26476  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN26476 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9b/WA3CN26476.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN26476 ;
+        adm:logEntry        bda:LG43EC4440391268D4 , bda:LG7B5D8309E3002710 , bda:LG898A8A6A7C0329A6 , bda:LG99C65375BC9EBDCB , bda:LGF1172320C2365175 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF146A8603BAB3AB2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P151 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN26476  a       :Work ;
+        skos:prefLabel      "ka lA pa'i mdo'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Sanskrit grammar, the Kalapa Sutra."@en ;
+        :creator            bdr:CRF146A8603BAB3AB2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN26476 , bdr:W3CN26476 ;
+        :workIsAbout        bdr:T966 .
+}

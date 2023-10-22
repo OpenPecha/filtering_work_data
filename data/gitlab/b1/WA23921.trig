@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23921 {
+    bda:LG0A6162AF21A37FA5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-07-09T12:03:56.2Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB247B55457FE833E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD0AA1FA8067CB2DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-29T14:23:29.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 of dkarchagTitle"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD2532B6F09014E32
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T13:03:16.523Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGD9AD28864CC17A26
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23921  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23921 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b1/WA23921.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23921 ;
+        adm:logEntry        bda:LG0A6162AF21A37FA5 , bda:LGB247B55457FE833E , bda:LGD0AA1FA8067CB2DB , bda:LGD2532B6F09014E32 , bda:LGD9AD28864CC17A26 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3821DF70AC3165B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2778 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23921  skos:altLabel  "thang stong snan brgyud : a treasured collection of gcod practices received by thang-stong rgyal-po in a vision of varahi in the rasmisvara cemetary in kashmir"@en-x-mixed .
+
+    bdr:WA23921  a          :Work ;
+        skos:altLabel       "gsang spyod snyan brgyud zab mo'i chos skor/"@bo-x-ewts , "ma cig gsang spyod snyan brgyud kyi be bum/"@bo-x-ewts , "Thaṅ stoṅ sñan brgyud;a treasured collection of Gcod practices received by Thaṅ-stoṅ Rgyal-po in a vision of Vārāhī in the Raśmīśvara Cemetery in Kashmir.Reproduced from MSS. in the possession of Gongna Tulku of Derge Gonsar Monastery by Trayang."@en-x-mixed ;
+        skos:prefLabel      "thang stong snyan brgyud/"@bo-x-ewts , "thang stong snan brgyud : a treasured collection of gcod practices received by thang-stong rgyal-po in a vision of varahi in the rasmisvara cemetary in kashmir"@en-x-mixed ;
+        :creator            bdr:CR3821DF70AC3165B0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23921 , bdr:W23921 ;
+        :workIsAbout        bdr:T194 .
+}

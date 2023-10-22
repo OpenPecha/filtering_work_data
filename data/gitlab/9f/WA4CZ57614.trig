@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ57614 {
+    bda:LG3B8E113A0289ED03
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T12:36:25.098Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG49F43671E8C9CD10
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-24T15:55:47.638Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6524200135936C3D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-24T15:53:30.84Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ57614  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ57614 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9f/WA4CZ57614.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ57614 ;
+        adm:logEntry        bda:LG3B8E113A0289ED03 , bda:LG49F43671E8C9CD10 , bda:LG6524200135936C3D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA06124104C1B378A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P268 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ57614  a       :Work ;
+        skos:altLabel       "dngul chu dbyangs can grub pa'i rdo rje'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dbyangs can grub pa'i rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Yangchen Drubpai Dorje (1809-1887), a Geluk teacher from the Ngulchu tradition of western Tibet. Nephew of the famed Dharmabhadra."@en ;
+        :creator            bdr:CRA06124104C1B378A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ57614 , bdr:W4CZ57614 ;
+        :workIsAbout        bdr:T819 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17709 {
+    bda:LG58146812B0322B3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGAF32ECFFE95A8905
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-25T12:32:58.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF2F3D5A9FC4FF058
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-25T12:31:50.49Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17709  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17709 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "64/WA8LS17709.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17709 ;
+        adm:logEntry        bda:LG58146812B0322B3A , bda:LGAF32ECFFE95A8905 , bda:LGF2F3D5A9FC4FF058 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17709  a       :Work ;
+        skos:altLabel       "gshin rje gshed dregs pa 'joms byed kyi nyams len rgyun 'khyer snying po bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje gshed kyi rgyun 'khyer snying bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of Yamantaka, author signed as Ngakpa Gyurme Dorjee."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17709 , bdr:W8LS17709 ;
+        :workIsAbout        bdr:T1734 , bdr:T544 .
+}

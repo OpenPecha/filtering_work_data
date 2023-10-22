@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5297 {
+    bda:LG89AD713F5D7C2F8A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA5297  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5297 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "67/WA5297.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5297 ;
+        adm:logEntry        bda:LG89AD713F5D7C2F8A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRDAF20975BCC8472D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P259 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA5297  a           :Work ;
+        skos:altLabel       "myur mdzad ye shes kyi mgon po phyag drug pa'i gser skyems/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po phyag drug pa'i gser skyems/"@bo-x-ewts ;
+        :creator            bdr:CRDAF20975BCC8472D ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW5297 ;
+        :workIsAbout        bdr:T26 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE14 {
+    bda:LG8CCD08C1994428E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:50:36.451Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LG9E28E6A0D1D43D77
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-03-20T13:40:14.89Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created"@en .
+
+    bda:LGBF6FF9EA30127DF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-28T16:29:43.95Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#s"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF8DA9E1393B3F66B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-14T10:24:35.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1EE14  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE14 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cf/WA1EE14.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE14 ;
+        adm:logEntry        bda:LG8CCD08C1994428E9 , bda:LG9E28E6A0D1D43D77 , bda:LGBF6FF9EA30127DF6 , bda:LGF8DA9E1393B3F66B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDBD06E0C502543DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1EE9 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1EE14  a          :Work ;
+        skos:altLabel       "jiruken-u tolta kemeku sudur orusigulbai"@mn-alalc97 , "jiruken-u tolta-yin tayilburi usug-un endegurel-un qarangqun-i arilgagci ogtargui-yin mani neretu"@mn-alalc97 ;
+        skos:prefLabel      "jiruken-u tolta-yin tayilburi"@mn-alalc97 ;
+        :creator            bdr:CRDBD06E0C502543DB ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW1EE14 , bdr:W1EE14 .
+}

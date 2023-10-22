@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21817 {
+    bda:LG1B1EA3C1E79EFB30
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG1B4C526B4526A768
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-07T15:57:47.324Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1E313AC8E79A2969
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T16:02:36.173Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8E86B7A52C61DF74
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-07T15:58:18.683Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21817  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21817 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dd/WA1KG21817.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21817 ;
+        adm:logEntry        bda:LG1B1EA3C1E79EFB30 , bda:LG1B4C526B4526A768 , bda:LG1E313AC8E79A2969 , bda:LG8E86B7A52C61DF74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG21759 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA02693BB90731671
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7701 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21817  skos:altLabel  "怎样看藏历"@zh-hans .
+
+    bdr:WA1KG21817  a       :Work ;
+        skos:altLabel       "zen yang kan zang li"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi lo tho lta stangs skor/"@bo-x-ewts , "怎样看藏历"@zh-hans ;
+        :catalogInfo        "Brief introduction to Tibetan almanac."@en ;
+        :creator            bdr:CRA02693BB90731671 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T222 .
+}

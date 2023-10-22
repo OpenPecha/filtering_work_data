@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302696 {
+    bda:LG34C96C3BBA6F3949
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T10:45:09.492Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG70894EB3313C577C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T10:46:10.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE294F6149E32F22B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGF5796C56916EE1CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:45:44.493Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302696  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302696 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8a/WA4CZ302696.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302696 ;
+        adm:logEntry        bda:LG34C96C3BBA6F3949 , bda:LG70894EB3313C577C , bda:LGE294F6149E32F22B , bda:LGF5796C56916EE1CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRACFD368B154E8870
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRB944B291083FB5C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW4CZ302696  skos:altLabel  "arya-suvarnaprabhasottamasutrendraraja-namamahayanasutra"@sa-x-ndia .
+
+    bdr:WA4CZ302696  a      :Work ;
+        skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "gser 'od dam pa mdo sde'i dbang po'i rgyal po/"@bo-x-ewts , "arya-suvarnaprabhasottamasutrendraraja-namamahayanasutra"@sa-x-ndia ;
+        :catalogInfo        "The Golden Light Sutra, Mahayana Buddhist canonical text that focuses on the confession of faults. stog number: 240 / 515 sde dge number: 556"@en ;
+        :creator            bdr:CRACFD368B154E8870 , bdr:CRB944B291083FB5C8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW4CZ302696 , bdr:MW4CZ58510 , bdr:MW4CZ73 , bdr:MW8LS66503 , bdr:W4CZ302696 , bdr:W4CZ58510 , bdr:W4CZ73 , bdr:W8LS66503 .
+}

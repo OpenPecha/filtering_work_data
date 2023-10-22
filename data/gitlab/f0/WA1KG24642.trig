@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24642 {
+    bda:LG34ED28381E2480D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-30T09:31:42.331Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3BFD3818D841E153
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T14:40:25.987Z"^^xsd:dateTime ;
+        adm:logMessage      "temporary released fro scanning"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5B84469AFA594BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T14:42:22.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG24642  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24642 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f0/WA1KG24642.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24642 ;
+        adm:logEntry        bda:LG34ED28381E2480D6 , bda:LG3BFD3818D841E153 , bda:LGE5B84469AFA594BA , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG24642  a       :Work ;
+        skos:prefLabel      "sum rtags bsdus don go sla'i rnam gzhag"@bo-x-ewts ;
+        :catalogInfo        "Root texts of Tibetan grammar and presentation of core meaning of Tibetan grammar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW1KG24642 , bdr:W1KG24642 ;
+        :workIsAbout        bdr:T186 .
+}

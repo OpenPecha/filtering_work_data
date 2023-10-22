@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24644 {
+    bda:LG8909A54F2650F1B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-25T14:04:24.494Z"^^xsd:dateTime ;
+        adm:logMessage      "put in parent work"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGB441103003150AFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-25T15:31:57.667Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGC547BBC9C1B3CFCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-21T14:56:39.869Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P7958 to P5221"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3C4A11C8918DEFF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDC89603A349E94FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-25T14:06:14.044Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:WA24644  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24644 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fb/WA24644.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24644 ;
+        adm:logEntry        bda:LG8909A54F2650F1B1 , bda:LGB441103003150AFB , bda:LGC547BBC9C1B3CFCA , bda:LGD3C4A11C8918DEFF , bda:LGDC89603A349E94FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRF6B83CADBC5E74A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5221 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24644  a          :Work ;
+        skos:altLabel       "dran pa nyer bzhag las 'phros pa'i tshig don nyung bsdus kyi zin tho/"@bo-x-ewts ;
+        skos:prefLabel      "klong chen snying thig gi khrid yig dran pa nyer bzhag las 'phros pa'i tshig don nyung bsdus kyi zin bris 'phags lam myur bgrod/"@bo-x-ewts ;
+        :creator            bdr:CRF6B83CADBC5E74A1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW24644 ;
+        :workIsAbout        bdr:T328 .
+}

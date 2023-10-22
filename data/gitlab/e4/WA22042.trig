@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22042 {
+    bda:LG13612553E264FC49
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGC55E4B9F249DD449
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-07T16:35:05.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD380012A9B48BC52
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEDA9766A4F8D6A67
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-07T16:33:36.719Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22042  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22042 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e4/WA22042.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22042 ;
+        adm:logEntry        bda:LG13612553E264FC49 , bda:LGC55E4B9F249DD449 , bda:LGD380012A9B48BC52 , bda:LGEDA9766A4F8D6A67 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16571 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW22042  skos:altLabel  "格萨尔王传 --英雄降生"@zh-hans .
+
+    bdr:WA22042  a          :Work ;
+        skos:altLabel       "'dzam gling seng chen skyes bu'i rtogs par brjod pa las 'khrungs gling me tog ra ba dang rma sa bzung dar dkar mdud pa bcas/"@bo-x-ewts , "gling rje ge sar rgyal po'i sgrung 'khrungs gling me tog ra ba/"@bo-x-ewts , "ge sa er wang zhuan-- ying xiong jiang sheng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'khrungs gling me tog ra ba/"@bo-x-ewts , "格萨尔王传 --英雄降生"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T248 .
+}

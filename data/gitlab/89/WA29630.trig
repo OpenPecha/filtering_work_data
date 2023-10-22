@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29630 {
+    bda:LG0366C9BE372693B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-27T14:25:07.073Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG264F49F234F8FF6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T15:50:15.351Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bib titles"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG26C89AACF9A5B615
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG479AE19D961E4B90
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T11:01:50.913Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG53CCAD02D171C46E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-03T12:16:20.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added T2411 & G#, added bib. title"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA29630  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29630 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "89/WA29630.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29630 ;
+        adm:logEntry        bda:LG0366C9BE372693B8 , bda:LG264F49F234F8FF6A , bda:LG26C89AACF9A5B615 , bda:LG479AE19D961E4B90 , bda:LG53CCAD02D171C46E , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW29630  skos:altLabel  "sanskrit texts from kashmir"@en .
+
+    bdr:WA29630  a          :Work ;
+        skos:prefLabel      "kas+mir nas rnyed pa'i legs sbyar chos dpe/"@bo-x-ewts , "sanskrit texts from kashmir"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29630 , bdr:W29630 ;
+        :workIsAbout        bdr:G2DB25458 .
+}

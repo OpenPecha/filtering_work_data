@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302670 {
+    bda:LG1B17C6C8CE961C98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-19T10:54:27.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG226744B4CEAC7A9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T09:40:53.433Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9B04AF77AB10906C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGAA2A367A3DF6A313
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T10:52:58.363Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302670  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302670 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f2/WA4CZ302670.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302670 ;
+        adm:logEntry        bda:LG1B17C6C8CE961C98 , bda:LG226744B4CEAC7A9E , bda:LG9B04AF77AB10906C , bda:LGAA2A367A3DF6A313 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA20510 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA817E82782DC457E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302670  a      :Work ;
+        skos:altLabel       "khams gsum chos kyi rgyal po shar rgyal ba tsong kha pa chen po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_tsong kha pa/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of the of the incomparable lord Tsongkhapa Lobzang Drakpa (1357-1419), founder of the Geluk order. Impressions from from a set of blockprints at the Kubum Jampa Ling."@en ;
+        :creator            bdr:CRA817E82782DC457E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T819 .
+}

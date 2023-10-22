@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2MS23006 {
+    bda:LG923F80681E286188
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-13T12:15:46.037Z"^^xsd:dateTime ;
+        adm:logMessage      "created unicode work"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGF6E22A26178EE931
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-12-05T18:49:56.795Z"^^xsd:dateTime ;
+        adm:logMessage      "removed parent element"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM39CBAA8D  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-withdrawn.xql" ;
+        adm:logDate         "2019-06-19T17:06:17.068Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to onHold"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2MS23006  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2MS23006 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9b/WA2MS23006.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2MS23006 ;
+        adm:logEntry        bda:LG923F80681E286188 , bda:LGF6E22A26178EE931 , bda:LGIM39CBAA8D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR0C10D8F1B52563D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P275 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2MS23006  a       :Work ;
+        skos:prefLabel      "mdo smad chod 'byung /"@bo-x-ewts ;
+        :creator            bdr:CR0C10D8F1B52563D7 ;
+        :isRoot             true ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:IE2MS23006 ;
+        :workIsAbout        bdr:G1202 .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10131 {
+    bda:LG3A9CA68CFE6F20E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-24T15:27:05.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5790068C4F3B2B0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-24T15:25:59.175Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG862A746DFB43EBB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA10131  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10131 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6d/WA10131.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10131 ;
+        adm:logEntry        bda:LG3A9CA68CFE6F20E3 , bda:LG5790068C4F3B2B0D , bda:LG862A746DFB43EBB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR47D32003412CE730
+        a                   :AgentAsCreator ;
+        :agent              bdr:P733 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV59CCCEA3BF27D680
+        a                   :CompletedEvent ;
+        :onYear             "1931"^^xsd:gYear .
+
+    bdr:WA10131  a          :Work ;
+        skos:altLabel       "mkhan chen rdo rje 'chang ngag dbang bsam gtan blo gros kyi rnam par thar pa bkra shis 'dod 'jo/"@bo-x-ewts ;
+        skos:prefLabel      "mkhan chen bsam gtan blo gros kyi rnam thar/"@bo-x-ewts , "the biography of mkhan-chen bsam-gtan-blo-gros of sde-dge"@en ;
+        :catalogInfo        "Biography of a Sakya master Khenchen Samten Lodoe (1868-1931)"@en ;
+        :creator            bdr:CR47D32003412CE730 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workEvent          bdr:EV59CCCEA3BF27D680 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW10131 , bdr:W10131 ;
+        :workIsAbout        bdr:P971 .
+}

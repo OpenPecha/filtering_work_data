@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2173 {
+    bda:LG4C4F165124189692
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA09371514D1299D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-05T11:37:04.153Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2173"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2173  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2173 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c1/WA1NLM2173.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2173 ;
+        adm:logEntry        bda:LG4C4F165124189692 , bda:LGA09371514D1299D0 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5951620AA5E9733
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2173  a       :Work ;
+        skos:prefLabel      "thub dbang gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul khrus gsol dang bcas pa thub bstan rgyas byed yid bzhin nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mgon dkar yid bzhin nor bu'i bum sgrub rgyun 'dzin gyi cho ga'i ngag 'don/ 2 dbang skong phyag rgya pa/ 3 sa phyogs yul khis gzhi bdag klu rnams la bsangs mchod khrus byed pa'i cho ga lun phan nyi 'od/ 4 dmigs brtse ma'i las tshogs kyi nang nas kha zas 'ong bar byed pa'i man ngag 5 theg pa chen po gso sbyong blang ba'i sgo nas thub dbang gnas brtan bcu drug 'khor dang bcas pa la phyag mchod thugs dam bskul ba'i cho ga dngos grub kun 'byung / 6 theg pa chen po'i gso sbyong blang ba'i sgo nas thub dbang gnas brtan bcu drug 'khor dang bcas pa la phyag mchod thugs dam bskul ba'i cho ga dngos grub kun 'byung / 7 gnas brtan mchod pa'i skabs su khrus gsol bya tshul/ 8 rje btsun 'phags ma sgrol ma'i bsangs mchod ma/ 9 sgrol ma nyer gzig gi gtor 'bul 'dod pa'i re skong / 10 zab lam bla ma'i rnal 'byor dang 'brel ba'i bum pa la brten nas tshe'i dngos grub sgrub tshul 'chi med bdud rtsi'i bum bzang / 11 gnas brtan bcu drug gi cho ga'i 'don cha go rim/"@bo-x-ewts , "Purification ritual of sixteen Shavira by Tshechokling Yeshe Gyaltshen; other text also included."@en ;
+        :creator            bdr:CRC5951620AA5E9733 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T895 ;
+        :workHasInstance    bdr:MW1NLM2173 , bdr:W1NLM2173 ;
+        :workIsAbout        bdr:T1154 .
+}

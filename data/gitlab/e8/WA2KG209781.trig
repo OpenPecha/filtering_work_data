@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209781 {
+    bda:LG2E7CA9C26C099354
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-04T11:32:16.165Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG41BB46591593E86F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T16:43:15.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA02B61089A288D65
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE7F307F3F16C4488
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-04T11:33:02.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG209781  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209781 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/WA2KG209781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209781 ;
+        adm:logEntry        bda:LG2E7CA9C26C099354 , bda:LG41BB46591593E86F , bda:LGA02B61089A288D65 , bda:LGE7F307F3F16C4488 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG209781  a      :Work ;
+        skos:prefLabel      "dbang ldan zhu tshang gi gsung 'bum phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings of Bon masters from the line of descendants of Wangden Zhu (dbang ldan zhu tshang /) edited by Geshe Tongkor Youngdrug Tenpa."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2KG209781 , bdr:W2KG209781 ;
+        :workIsAbout        bdr:T247 .
+}

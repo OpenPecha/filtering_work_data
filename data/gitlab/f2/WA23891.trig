@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23891 {
+    bda:LG453749A6D1F4DEFD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGFAA737D1D818BC75
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-03-12T14:02:39.895Z"^^xsd:dateTime ;
+        adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23891  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23891 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f2/WA23891.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23891 ;
+        adm:logEntry        bda:LG453749A6D1F4DEFD , bda:LGFAA737D1D818BC75 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ688 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR7304FF46EC90C437
+        a                   :AgentAsCreator ;
+        :agent              bdr:P127 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23891  skos:altLabel  "the collected works of phag-mo dru-pa"@en .
+
+    bdr:WA23891  a          :Work ;
+        skos:altLabel       "dus gsum sangs rgyas thams cad kyi thugs rje'i rnam rol dpal ldan phag gru rdo rje rgyal po mchog gi gsung 'bum rin po che/"@bo-x-ewts , "Dus gsum saṅs rgyas thams cad kyi thug rjeʾi rnam rol dpal ldan Phag-gru Rdo-rje-rgyal-po mchog gi gsuṅ ʾbum rin po che glegs bam =The collected works of Phag-mo-dru-pa (sic)."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_rdo rje rgyal po/"@bo-x-ewts , "the collected works of phag-mo dru-pa"@en ;
+        :catalogInfo        "Collected Works by renowned Marpa Kagyu master Pakmodru Dorje Gyalpo (1110-1170)."@en ;
+        :creator            bdr:CR7304FF46EC90C437 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T807 .
+}

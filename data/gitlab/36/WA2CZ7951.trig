@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7951 {
+    bda:LG2BEE014383DF1660
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-28T16:20:45.789Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG31011D691BD4DAA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-15T10:28:05.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4A376DEA4D50CEAB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-02-15T10:30:01.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8F14F12E96CF5294
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-03T12:04:15.807Z"^^xsd:dateTime ;
+        adm:logMessage      "new work"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ7951  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7951 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "36/WA2CZ7951.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7951 ;
+        adm:logEntry        bda:LG2BEE014383DF1660 , bda:LG31011D691BD4DAA9 , bda:LG4A376DEA4D50CEAB , bda:LG8F14F12E96CF5294 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR835A4E25DCDE5FEF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2248 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ7951  a        :Work ;
+        skos:altLabel       "bla ma sangs rgyas snyan ston gyi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi shes rab kyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Shangpa Kagyu master Sanggye Nyenton Chokyi Sherab (1175-1255)."@en ;
+        :creator            bdr:CR835A4E25DCDE5FEF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2CZ7951 , bdr:W2CZ7951 ;
+        :workIsAbout        bdr:P2248 , bdr:T383 .
+}

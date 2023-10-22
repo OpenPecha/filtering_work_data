@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28986 {
+    bda:LG4D7957FDCD321519
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-15T14:15:22.262Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5A9FD996651F039E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG89F5077F4D9E49E9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-22T16:17:10.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA28986  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28986 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "52/WA28986.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28986 ;
+        adm:logEntry        bda:LG4D7957FDCD321519 , bda:LG5A9FD996651F039E , bda:LG89F5077F4D9E49E9 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA68F2AAC9DC1447C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P827 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA28986  a          :Work ;
+        skos:altLabel       "nges don phyag rgya chen po'i sgom rim gsal bar byed pa/"@bo-x-ewts , "nges don phyag rgya chen po'i sgom rim gsal bar byed pa'i legs bshad zla ba'i 'od zer/"@bo-x-ewts ;
+        skos:prefLabel      "phyag chen sgom rim zla ba'i 'od zer/"@bo-x-ewts ;
+        :catalogInfo        "Detailed study of the practices of Mahamudra meditation."@en ;
+        :creator            bdr:CRA68F2AAC9DC1447C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 , bdr:T61 ;
+        :workHasInstance    bdr:MW00JW501203_C94175 , bdr:MW28986 , bdr:W28986 ;
+        :workIsAbout        bdr:T1246 , bdr:T199 .
+}

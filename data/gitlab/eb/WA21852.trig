@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21852 {
+    bda:LG23594611650CCB95
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-05T12:10:56.115Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG258C788C415A97FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-05T12:11:55.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG42334B34333AF888
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG49A5E712B0615001
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGE02DA1C076351C03
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T16:43:17.253Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21852  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21852 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "eb/WA21852.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21852 ;
+        adm:logEntry        bda:LG23594611650CCB95 , bda:LG258C788C415A97FA , bda:LG42334B34333AF888 , bda:LG49A5E712B0615001 , bda:LGE02DA1C076351C03 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1FE7FAD91523E53A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6948 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21852  skos:altLabel  "藻饰词汇"@zh-hans .
+
+    bdr:WA21852  a          :Work ;
+        skos:altLabel       "don gcig ming gi mngon par brjod pa'i tshig gi mdzod/"@bo-x-ewts , "zao shi ci hui"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mngon brjod tshig mdzod/"@bo-x-ewts , "藻饰词汇"@zh-hans ;
+        :catalogInfo        "Tibetan dictionary of synonyms."@en ;
+        :creator            bdr:CR1FE7FAD91523E53A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T220 , bdr:T372 ;
+        :workHasInstance    bdr:MW21852 , bdr:W21852 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22830 {
+    bda:LG38CF54A076026371
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-08-05T19:48:18.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4F641E344302A05D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-05T19:47:41.649Z"^^xsd:dateTime ;
+        adm:logMessage      "for 2 v."@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG81CEB8AB0F0EF793
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-28T10:03:38.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB3237E7F81F4FFF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF760A59B828B6DED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-27T08:55:57.952Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22830  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22830 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f9/WA3CN22830.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22830 ;
+        adm:logEntry        bda:LG38CF54A076026371 , bda:LG4F641E344302A05D , bda:LG81CEB8AB0F0EF793 , bda:LGB3237E7F81F4FFF2 , bda:LGF760A59B828B6DED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1BF4E426DE8171DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4069 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22830  a       :Work ;
+        skos:prefLabel      "spyod 'jug 'grel pa rgyal sras yon tan bum bzang /"@bo-x-ewts ;
+        :catalogInfo        "Commentary on bodhicaryavatara by Thubten Chokyi Drakpa."@en ;
+        :creator            bdr:CR1BF4E426DE8171DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN22830 , bdr:W3CN22830 ;
+        :workIsAbout        bdr:WA19740 .
+}

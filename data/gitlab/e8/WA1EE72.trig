@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE72 {
+    bda:LG9DAC739306A20D97
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-14T12:25:51.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC51B4A9222190D7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:52:08.664Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGFC6FE998A4A11C5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T15:17:43.742Z"^^xsd:dateTime ;
+        adm:logMessage      "first publish"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1EE72  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE72 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/WA1EE72.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE72 ;
+        adm:logEntry        bda:LG9DAC739306A20D97 , bda:LGC51B4A9222190D7E , bda:LGFC6FE998A4A11C5E , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1EE55 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1EE72  a          :Work ;
+        skos:prefLabel      "gzungs bsdus/ (sog yig)"@bo-x-ewts , "sungdui orusiba"@mn-alalc97 ;
+        :catalogInfo        "Collection of mantras and liturgical texts"@en ;
+        :isRoot             true ;
+        :language           bdr:LangMn ;
+        :workGenre          bdr:T1081 , bdr:T933 .
+}

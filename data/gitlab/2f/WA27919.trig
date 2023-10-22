@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27919 {
+    bda:LG095FEA10BAF6617B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-10T13:02:39.69Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR4JW5430"@en ;
+        adm:logWhoStr       "add-works-to-PR4JW5430" .
+
+    bda:LG1177CFA7380CB741
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-11T16:24:13.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG6DE38F2BFCF7D846
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-12T18:06:26.23Z"^^xsd:dateTime ;
+        adm:logMessage      "updated cat info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8616D76940632BD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-10T23:24:18.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added annotation"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC19E224D967B656E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27919  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27919 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "2f/WA27919.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27919 ;
+        adm:logEntry        bda:LG095FEA10BAF6617B , bda:LG1177CFA7380CB741 , bda:LG6DE38F2BFCF7D846 , bda:LG8616D76940632BD4 , bda:LGC19E224D967B656E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA394A98CBF375959
+        a                   :AgentAsCreator ;
+        :agent              bdr:P285 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27919  skos:altLabel  "history and brief survey of the contents of the a mdo rwa rgya redaction of the tibetan bka' 'gyur"@en-x-mixed .
+
+    bdr:WA27919  a          :Work ;
+        skos:altLabel       "bde bar gshegs pa'i gsung rab gangs can gyi skad du 'gyur ro cog gi phyi mo par du bskrun pa'i dkar chag mdo rgyud chos kyi sgo brgya cig car 'byed pa'i lde mig"@bo-x-ewts ;
+        skos:prefLabel      "a mdo rwa rgya'i bka' 'gyur gyi dkar chag"@bo-x-ewts , "history and brief survey of the contents of the a mdo rwa rgya redaction of the tibetan bka' 'gyur"@en-x-mixed ;
+        :catalogInfo        "History and notice of contexts of the Amdo Ragya Kangyur."@en ;
+        :creator            bdr:CRA394A98CBF375959 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW27919 , bdr:W27919 ;
+        :workIsAbout        bdr:WA1GS54155 .
+}

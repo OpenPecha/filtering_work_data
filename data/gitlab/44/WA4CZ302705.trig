@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302705 {
+    bda:LG5E4BA8AF4FD58CD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T11:58:32.751Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG66C795E7A48966CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG91513A8F71D1D082
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T11:58:55.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDC9C5993838C6085
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:17.402Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302705  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302705 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "44/WA4CZ302705.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302705 ;
+        adm:logEntry        bda:LG5E4BA8AF4FD58CD5 , bda:LG66C795E7A48966CF , bda:LG91513A8F71D1D082 , bda:LGDC9C5993838C6085 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ302705  a      :Work ;
+        skos:altLabel       "lam rim zin bris brjed nged zil gyis gnon pa'i dung gi sgra snyan/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim zin bris dung gi sgra snyan/"@bo-x-ewts ;
+        :catalogInfo        "Anonymous notes on a lecture on the Lamrim Chenmo by Khenpo Lobzang Sonam Dargye."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1478 ;
+        :workHasInstance    bdr:MW4CZ302705 , bdr:W4CZ302705 ;
+        :workIsAbout        bdr:WA466 .
+}

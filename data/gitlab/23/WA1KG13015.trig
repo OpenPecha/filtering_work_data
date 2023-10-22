@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13015 {
+    bda:LG3F54D236D806BAD5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-10-26T16:23:04.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4E32C5D105EF9B3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T15:52:18.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added lccn 2008348039"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE0D5C5BEB0C320A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-25T10:31:45.651Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME4B642616A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-27T20:30:28.724Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS11134 to T448"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA1KG13015  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13015 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "23/WA1KG13015.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13015 ;
+        adm:logEntry        bda:LG3F54D236D806BAD5 , bda:LG4E32C5D105EF9B3B , bda:LGE0D5C5BEB0C320A9 , bda:LGIMA1F3FB78EA , bda:LGIME4B642616A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2581A318A3B55066
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13015  skos:altLabel  "Bkaʼ brgyad bde bśegs ʼdus pa las luṅ chen lṅa daṅ phyi bśad thabs gsal byed kyi sdom lṅa bźugs /Ñaṅ-ral Ñi-ma-ʼod-zer gyis gter nas bton."@en-x-mixed .
+
+    bdr:WA1KG13015  a       :Work ;
+        skos:altLabel       "bka' brgyad bde gshegs 'dus pa'i lung lnga /"@bo-x-ewts , "bka' brgyad bde gshegs 'dus pa las lung chen lnga dang phyi bshad thabs gsal byed kyi sdom lnga /"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyad bde gshegs 'dus pa las lung thams cad kyi rgyal po chen po lnga /"@bo-x-ewts , "Bkaʼ brgyad bde bśegs ʼdus pa las luṅ chen lṅa daṅ phyi bśad thabs gsal byed kyi sdom lṅa bźugs /Ñaṅ-ral Ñi-ma-ʼod-zer gyis gter nas bton."@en-x-mixed ;
+        :creator            bdr:CR2581A318A3B55066 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG13015 , bdr:W1KG13015 ;
+        :workIsAbout        bdr:T327 .
+}

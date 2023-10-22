@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76608 {
+    bda:LG6D68A34ED5AE4076
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-01T14:07:16.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7C765BC5145B44D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-17T09:04:47.695Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE31B3206622B323B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-01T14:06:52.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76608  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76608 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fc/WA8LS76608.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76608 ;
+        adm:logEntry        bda:LG6D68A34ED5AE4076 , bda:LG7C765BC5145B44D3 , bda:LGE31B3206622B323B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR29EE872D5C754A57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76609 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76608  a       :Work ;
+        skos:prefLabel      "byang chubs semd dpa'i spyod pa la 'jug pa'i 'grel gsar blo bzang bla ma'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Bodhicaryavatara by Gajang Rabjampa Losang Dondrup, former abbot of Namgyal monastery."@en ;
+        :creator            bdr:CR29EE872D5C754A57 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS76608 , bdr:W8LS76608 ;
+        :workIsAbout        bdr:WA19740 .
+}

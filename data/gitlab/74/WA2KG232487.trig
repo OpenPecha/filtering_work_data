@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG232487 {
+    bda:LG1AB91238BABFFC31
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T10:33:23.306Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5E51B0471F9BE52A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:03:31.035Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG95103CC3E238D193
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T12:31:54.065Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG232487  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG232487 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "74/WA2KG232487.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG232487 ;
+        adm:logEntry        bda:LG1AB91238BABFFC31 , bda:LG5E51B0471F9BE52A , bda:LG95103CC3E238D193 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG232487  a      :Work ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i rtsa rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "nyer mkho'i zhal 'don gces btus/ (deb dang po/)"@bo-x-ewts ;
+        :catalogInfo        "Important prayer text contains root tantra of Guhyasamaja and Chakrasamvara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG232487 , bdr:W2KG232487 ;
+        :workIsAbout        bdr:T1PD95 , bdr:T417 , bdr:T423 .
+}

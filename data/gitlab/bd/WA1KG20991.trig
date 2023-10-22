@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20991 {
+    bda:LG63393A41E5A18982
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-13T14:47:03.658Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7C5D68B08F7DA216
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-13T14:47:51.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG20991  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20991 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bd/WA1KG20991.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20991 ;
+        adm:logEntry        bda:LG63393A41E5A18982 , bda:LG7C5D68B08F7DA216 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF33F3E553122A9DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG1357 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG20991  a       :Work ;
+        skos:altLabel       "bod ljongs gtsang rgyal rtse rdzong khongs rgyang ro sa ma mda' khul gyi dgon pa lha khang khag gi lo rgyus dad ldan mgu ba'i rna rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "bod ljongs gtsang rgyal rtse rdzong khongs rgyang ro sa ma mda' khul gyi dgon pa lha khang khag gi lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "History of monasteries in Gyaltse, Tibet."@en ;
+        :creator            bdr:CRF33F3E553122A9DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG20991 , bdr:W1KG20991 ;
+        :workIsAbout        bdr:G1988 , bdr:T359 .
+}

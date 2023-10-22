@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22008 {
+    bda:LGB0CAA4B74CE6FB07
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEA151EB40D65F817
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGEC050FEEA97B36CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-23T14:31:40.93Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA22008  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22008 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5b/WA22008.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22008 ;
+        adm:logEntry        bda:LGB0CAA4B74CE6FB07 , bda:LGEA151EB40D65F817 , bda:LGEC050FEEA97B36CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA81F99A6B799E986
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1642 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22008  skos:altLabel  "藏文文法简编"@zh-hans .
+
+    bdr:WA22008  a          :Work ;
+        skos:altLabel       "zang wen wen fa jian bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sum rtags gnyis kyi tshig don mdor bsdus/"@bo-x-ewts , "藏文文法简编"@zh-hans ;
+        :catalogInfo        "Commentray on root texts of Tibetan grammar."@en ;
+        :creator            bdr:CRA81F99A6B799E986 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW22008 , bdr:W22008 ;
+        :workIsAbout        bdr:T186 .
+}

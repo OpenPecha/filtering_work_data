@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15336 {
+    bda:LG523E347A8508122B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-23T10:28:11.359Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG73FFAB9050D8AD8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8A91290C88674FC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T15:07:46.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAC0BC92555CA69D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-25T16:35:18.482Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15336  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15336 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "2b/WA3CN15336.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15336 ;
+        adm:logEntry        bda:LG523E347A8508122B , bda:LG73FFAB9050D8AD8C , bda:LG8A91290C88674FC8 , bda:LGAC0BC92555CA69D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR004592E46673DDB9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1413 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD1540CDF9EEAEF50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1487 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15336  a       :Work ;
+        skos:altLabel       "karma pas mdzad pa'i ma mgon yab yum zhal sbyor du bsgrub thabs gtor chog dang bcas pa de'i dbang chog mkha' spyod pas mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "ma mgon yab yum zhal sbyor du bsgrub thabs gtor chog dang de'i dbang chog"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts focusing on the Magon Chamdrel according to the Karma Kagyu order."@en ;
+        :creator            bdr:CR004592E46673DDB9 , bdr:CRD1540CDF9EEAEF50 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW3CN15336 , bdr:W3CN15336 ;
+        :workIsAbout        bdr:T01JR254 .
+}

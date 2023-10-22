@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21781 {
+    bda:LG106C740C16F65D01
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG2D058C395B62B2FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-01T15:56:01.185Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Editor, add cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6769F0233780DB5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-04T15:46:37.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD2A5501351665728
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:51:51.121Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T284 to T1884"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF62F06EC14086B61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-05-07T12:56:23.638Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21781  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21781 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fb/WA21781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21781 ;
+        adm:logEntry        bda:LG106C740C16F65D01 , bda:LG2D058C395B62B2FF , bda:LG6769F0233780DB5C , bda:LGD2A5501351665728 , bda:LGF62F06EC14086B61 , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21781  skos:altLabel  "五彩宫"@zh-hans .
+
+    bdr:WA21781  a          :Work ;
+        skos:altLabel       "wu cai gong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'od lnga'i gur khang /"@bo-x-ewts , "五彩宫"@zh-hans ;
+        :catalogInfo        "Selected poems"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW21781 , bdr:W21781 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73762 {
+    bda:LG1F8F92777D7ECE1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-16T12:06:02.788Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF44C25FF162F18BB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-16T12:06:28.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73762  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73762 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3e/WA8LS73762.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73762 ;
+        adm:logEntry        bda:LG1F8F92777D7ECE1E , bda:LGF44C25FF162F18BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR43085D03B1EBB951
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7461 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW8LS73762  skos:altLabel  "La Dame aux Camelias /The Lady of the Camellias"@en .
+
+    bdr:WA8LS73762  a       :Work ;
+        skos:prefLabel      "a ce me tog g.yang 'dzin ma/"@bo-x-ewts , "La Dame aux Camelias /The Lady of the Camellias"@en ;
+        :catalogInfo        "Tibetan translation of La Dame aux Camelias or The Lady of the Camellias written by Alexendre Dumas Fils; translated into Tibetan by Dorje Tseten."@en ;
+        :creator            bdr:CR43085D03B1EBB951 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T260 ;
+        :workHasInstance    bdr:MW8LS73762 , bdr:W8LS73762 ;
+        :workIsAbout        bdr:T2379 .
+}

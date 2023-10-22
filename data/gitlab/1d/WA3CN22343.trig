@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22343 {
+    bda:LG2534EA2A59E51CFE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-31T18:05:29.8Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG881E3000698208E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-31T18:08:27.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB0E6E991F3F450A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD8D03B64B2BB3BBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGEFE0D0CCE68EA61A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-31T23:47:29.062Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22343  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22343 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1d/WA3CN22343.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22343 ;
+        adm:logEntry        bda:LG2534EA2A59E51CFE , bda:LG881E3000698208E0 , bda:LGB0E6E991F3F450A6 , bda:LGD8D03B64B2BB3BBC , bda:LGEFE0D0CCE68EA61A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN22343  a       :Work ;
+        skos:prefLabel      "sa lugs kyi bzhed gzhung pod chen drug gam grags chen bco brgyad las dbu ma'i skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of madhyamaka philosophical doctrines from 18 reknowned scriptures of the Sakya order, total 30 volumes."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN22343 , bdr:W3CN22343 ;
+        :workIsAbout        bdr:T1KG4314 , bdr:T233 , bdr:T617 .
+}

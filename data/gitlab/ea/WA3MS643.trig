@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS643 {
+    bda:LG239C424D33895BD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-13T12:20:08.66Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG51FA3020557A76D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-17T16:37:24.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG5647228DF6E4B5AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-29T11:13:34.404Z"^^xsd:dateTime ;
+        adm:logMessage      "added archive info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG789EB1AF38605829
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS643  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS643 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ea/WA3MS643.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS643 ;
+        adm:logEntry        bda:LG239C424D33895BD2 , bda:LG51FA3020557A76D2 , bda:LG5647228DF6E4B5AF , bda:LG789EB1AF38605829 , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS643  a         :Work ;
+        skos:altLabel       "rgyal khab rim pa'i dngos po tsam min pa'i shul bzhag rig gnas mgo log sder nang sa bris/"@bo-x-ewts ;
+        skos:prefLabel      "sder nang sa bris/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rare Nyingma texts from Denang Gonpa in Golog."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS643 , bdr:W3MS643 ;
+        :workIsAbout        bdr:G4550 .
+}

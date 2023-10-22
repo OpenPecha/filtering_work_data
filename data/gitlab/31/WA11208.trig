@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA11208 {
+    bda:LG207779615F72040B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-21T12:41:10.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added audit entry"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG27BD0F2981115B8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-13T16:48:06.763Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3A702358DBE0213B
+        a                   adm:UpdateData ;
+        adm:logMessage      "Added missing tiffs that got lost sometime in Novemebr\nre-arranged tiffs  296 and 298 in wrong order"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG48E558C1892B476D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8D47C3184E2FC26B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-11T12:25:53.192Z"^^xsd:dateTime ;
+        adm:logMessage      "editted annotation; jann"@en ;
+        adm:logWho          bdu:U00011 .
+
+    bda:LGCB376B2E9D688667
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-15T11:49:06.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added to TBRC Core Text Collection 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGFA72533F3CDDB83A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T13:51:28.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA11208  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA11208 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "31/WA11208.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA11208 ;
+        adm:logEntry        bda:LG207779615F72040B , bda:LG27BD0F2981115B8A , bda:LG3A702358DBE0213B , bda:LG48E558C1892B476D , bda:LG8D47C3184E2FC26B , bda:LGCB376B2E9D688667 , bda:LGFA72533F3CDDB83A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0B8AB4529FBB10AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1014 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW11208  skos:altLabel  "the collected works (gsun 'bum) of rdo-dmar zabs-drun mi 'gyur rdo rje"@en-x-mixed .
+
+    bdr:WA11208  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_mi 'gyur rdo rje/"@bo-x-ewts , "the collected works (gsun 'bum) of rdo-dmar zabs-drun mi 'gyur rdo rje"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Nyingma author Domar Mingyur Dorje (b. 1674) of the Tibetan and Nepali borderlands."@en ;
+        :creator            bdr:CR0B8AB4529FBB10AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW11208 , bdr:W11208 ;
+        :workIsAbout        bdr:T1082 .
+}

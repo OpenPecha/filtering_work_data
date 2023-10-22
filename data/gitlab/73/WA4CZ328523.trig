@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ328523 {
+    bda:LGD81DC59CE68F294C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-25T15:37:42.307Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDE12655F6FA9BCAC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-25T15:58:38.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ328523  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ328523 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "73/WA4CZ328523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ328523 ;
+        adm:logEntry        bda:LGD81DC59CE68F294C , bda:LGDE12655F6FA9BCAC , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR27180E443E34008A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN17775 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ328523  a      :Work ;
+        skos:altLabel       "kun gzigs paN chen rin po che'i mdzad rjes snying gi nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "paN chen rin po che'i mdzad rjes snying gi nor bu/"@bo-x-ewts ;
+        :catalogInfo        "A Brief Achievement Biography of Panchen Lama 10"@en ;
+        :creator            bdr:CR27180E443E34008A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ328523 , bdr:W4CZ328523 ;
+        :workIsAbout        bdr:P1650 .
+}

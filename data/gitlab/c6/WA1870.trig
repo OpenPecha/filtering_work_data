@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1870 {
+    bda:LG9E991CB915337CFE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA1870  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1870 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c6/WA1870.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1870 ;
+        adm:logEntry        bda:LG9E991CB915337CFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRB67B86677D5D8F70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P155 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1870  a           :Work ;
+        skos:altLabel       "bcom ldan 'das mi 'khrugs pa'i dkyil 'khor gyi cho ga las kyi sgrub pa rnam par sbyong ba/"@bo-x-ewts ;
+        skos:prefLabel      "kun rig mi 'khrugs dkyil chog"@bo-x-ewts ;
+        :creator            bdr:CRB67B86677D5D8F70 ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW1870 .
+}

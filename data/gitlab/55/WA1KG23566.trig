@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23566 {
+    bda:LGA2CA29426552C8DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T10:30:32.883Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCC2D870F9CAF0115
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-10T10:31:04.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23566  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23566 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/WA1KG23566.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23566 ;
+        adm:logEntry        bda:LGA2CA29426552C8DD , bda:LGCC2D870F9CAF0115 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF7A3D7D9942D3F05
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3893 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23566  a       :Work ;
+        skos:altLabel       "dpal ldan yongs su gtad pa'i rgyud kyi 'grel pa tshig don rnam par gsal ba/"@bo-x-ewts ;
+        skos:prefLabel      "dpal ldan yongs su gtad pa'i rgyud kyi 'grel chen/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on medical text rgyud yongs su gtad pa by Jangdag Namgyal Dragzang."@en ;
+        :creator            bdr:CRF7A3D7D9942D3F05 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS14651 , bdr:T132 ;
+        :workHasInstance    bdr:MW1KG23566 , bdr:W1KG23566 .
+}

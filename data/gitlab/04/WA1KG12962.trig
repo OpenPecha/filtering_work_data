@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12962 {
+    bda:LGDF8201374EA39F6C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-02T15:57:08.493Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE46BFDBD6039EC51
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-10-25T16:39:46.012Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMDA3CC38EDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T17:27:14.339Z"^^xsd:dateTime ;
+        adm:logMessage      "removed erroneous titles from previous update"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG12962  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12962 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "04/WA1KG12962.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12962 ;
+        adm:logEntry        bda:LGDF8201374EA39F6C , bda:LGE46BFDBD6039EC51 , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA94F7E37D6562862
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG12962  skos:altLabel  "kongtrul's encyclopedia of indo-tibetan culture"@en .
+
+    bdr:WA1KG12962  a       :Work ;
+        skos:altLabel       "theg pa'i sgo kun las btus pa gsung rab rin po che'i mdzod bslab pa gsum legs par ston pa'i bstan bcos shes bya kun khyab/"@bo-x-ewts , "Kongtrul's encyclopaedia of Indo-Tibetan culture /edited by Lokesh Chandra ; with an introduction by E. Gene Smith."@en-x-mixed ;
+        skos:prefLabel      "shes bya kun khyab/"@bo-x-ewts , "kongtrul's encyclopedia of indo-tibetan culture"@en ;
+        :catalogInfo        "Presentation in a verse format with lucid autocommentary of the entire range of Tibetan Buddhist learning; one of the five treasuries of the Rime master Jamgon Kongtrul Lodro Thaye (1813-1890/1899)"@en ;
+        :creator            bdr:CRA94F7E37D6562862 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1830 ;
+        :workHasInstance    bdr:MW1KG12962 , bdr:MW1PD95787 , bdr:MW28978 , bdr:MW3CN22731 , bdr:MW3CN626 , bdr:W1KG12962 , bdr:W1PD95787 , bdr:W28978 , bdr:W3CN22731 , bdr:W3CN626 , bdr:W8LS31027 .
+}

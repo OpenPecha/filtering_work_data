@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20019 {
+    bda:LG93C6D85DACE909AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-17T12:39:33.782Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAA009963F13467AE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGECF71B071BAC4B51
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-08-17T12:46:00.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20019  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20019 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b3/WA20019.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20019 ;
+        adm:logEntry        bda:LG93C6D85DACE909AE , bda:LGAA009963F13467AE , bda:LGECF71B071BAC4B51 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR557778C90FEA9577
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6299 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV6DD1A1761FCED8D6
+        a                   :CompletedEvent ;
+        :onYear             "1998"^^xsd:gYear .
+
+    bdr:WA20019  a          :Work ;
+        skos:prefLabel      "dbu ma'i dpyad pa gzur gnas dgyes pa'i gtam/"@bo-x-ewts ;
+        :catalogInfo        "Literary analysis on Madhyamaka philosophy."@en ;
+        :creator            bdr:CR557778C90FEA9577 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV6DD1A1761FCED8D6 ;
+        :workHasInstance    bdr:MW20019 , bdr:W20019 ;
+        :workIsAbout        bdr:T233 , bdr:T299 .
+}

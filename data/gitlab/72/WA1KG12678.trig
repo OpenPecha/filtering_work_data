@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12678 {
+    bda:LG050DC8A787717307
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-08-01T15:45:11.127Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG147E5F01D0A7D417
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LG457EFF5DA5A4961E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-08-02T12:03:05.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6167B3C2D630994A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-08T11:14:09.688Z"^^xsd:dateTime ;
+        adm:logMessage      "changed accessioned to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB5A6FCABE5C01A7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12678  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12678 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "72/WA1KG12678.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12678 ;
+        adm:logEntry        bda:LG050DC8A787717307 , bda:LG147E5F01D0A7D417 , bda:LG457EFF5DA5A4961E , bda:LG6167B3C2D630994A , bda:LGB5A6FCABE5C01A7F , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1F2080F2417BB122
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3285 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR53820460BBD05F9E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3302 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1KG12678  a       :Work ;
+        skos:altLabel       "dpal kye'i rdo rje zhes bya ba rgyud kyi rgyal po/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud kyi rgyal po dpal brtag pa gnyis pa/"@bo-x-ewts ;
+        :catalogInfo        "Root text of Hevajratantra"@en ;
+        :creator            bdr:CR1F2080F2417BB122 , bdr:CR53820460BBD05F9E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1KG12678 , bdr:W1KG12678 ;
+        :workIsAbout        bdr:T130 .
+}

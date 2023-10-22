@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD105846 {
+    bda:LG0BB716DCCC717965
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T00:09:10.759Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2559B3BAB1563E34
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-06T14:20:24.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, cat info, isbn"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAE2E98334E1BD8C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-19T15:36:13.505Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC83F6799DAA8E99E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-06-30T11:33:16.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC93D11C4C0F0353F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1PD105846  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD105846 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "99/WA1PD105846.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD105846 ;
+        adm:logEntry        bda:LG0BB716DCCC717965 , bda:LG2559B3BAB1563E34 , bda:LGAE2E98334E1BD8C6 , bda:LGC83F6799DAA8E99E , bda:LGC93D11C4C0F0353F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1PD105846  skos:altLabel  "扎拉铠甲宗"@zh-hans .
+
+    bdr:WA1PD105846  a      :Work ;
+        skos:altLabel       "zha la kai jia zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgra lha'i khrab rdzong /"@bo-x-ewts , "扎拉铠甲宗"@zh-hans ;
+        :catalogInfo        "Collection of episodes from the epic of King Gesar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1PD105846 , bdr:W1PD105846 ;
+        :workIsAbout        bdr:T1863 , bdr:T248 .
+}

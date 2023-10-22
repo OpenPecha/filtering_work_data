@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15688 {
+    bda:LG5155FF2F16255E28
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-14T17:04:31.421Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD765B67785085FC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-30T16:57:06.167Z"^^xsd:dateTime ;
+        adm:logMessage      "restricktedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEB106F440D62C1E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T16:54:50.492Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN15688  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15688 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ef/WA3CN15688.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15688 ;
+        adm:logEntry        bda:LG5155FF2F16255E28 , bda:LGD765B67785085FC3 , bda:LGEB106F440D62C1E3 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN15688  a       :Work ;
+        skos:altLabel       "thub bstan yongs su rdzogs pa'i mnga' bdag kun gzigs ye shes kyi nyi ma chen po 'jam dbyangs bzhad pa'i rdo rje sku 'phreng lnga'i rnam par thar ba mdor bsdus su bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs bzhad pa'i rdo rje sku 'phreng lnga'i rnam thar mdor bsdus/"@bo-x-ewts , "嘉木样禅师纪念集"@zh-hans ;
+        :catalogInfo        "Biographies of five reincarnation master of Jamyang Shepa."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN15688 , bdr:W3CN15688 ;
+        :workIsAbout        bdr:P10522 .
+}

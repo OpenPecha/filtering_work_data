@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS652 {
+    bda:LG3F1C8796AD1159F1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-18T09:35:07.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG402BF63772132706
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-12T11:26:00.127Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted by quality"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG611E64BC84B47176
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-08T10:19:03.423Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG68C07BD6693AAABD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG94E299311D539898
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-17T17:02:32.338Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS652  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS652 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a5/WA3MS652.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS652 ;
+        adm:logEntry        bda:LG3F1C8796AD1159F1 , bda:LG402BF63772132706 , bda:LG611E64BC84B47176 , bda:LG68C07BD6693AAABD , bda:LG94E299311D539898 , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS652  a         :Work ;
+        skos:prefLabel      "gtsos nas bsdu rub byas pa'i dpe rnying skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rare texts from Tsoe area of Amdo, Digital text includes blurry images."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS652 , bdr:W3MS652 ;
+        :workIsAbout        bdr:G1270 .
+}

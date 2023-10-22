@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23553 {
+    bda:LG1A31660A47F22855
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-02-01T10:13:57.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added Made available through Tibetan Buddhist Resource Center with authorization by His Holiness The 33rd Menri Trizin Lungtok Tenpai Nyima and the gracious support of the Bon Foundation"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG33ED77A99F94DBAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG7A135DFD7446A212
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23553  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23553 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f9/WA23553.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23553 ;
+        adm:logEntry        bda:LG1A31660A47F22855 , bda:LG33ED77A99F94DBAC , bda:LG7A135DFD7446A212 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR28B9EAF29C45A4C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1682 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23553  skos:altLabel  "khro bo lha rgod thog pa'i bsnen sgrub las gsum gyi skor : a collection of rituals for the propitiation of the wrathful deity lha-thog-rgod-pa"@en-x-mixed .
+
+    bdr:WA23553  a          :Work ;
+        skos:prefLabel      "khro bo lha rgod thog pa'i bsnyen sgrub las gsum gyi skor/"@bo-x-ewts , "khro bo lha rgod thog pa'i bsnen sgrub las gsum gyi skor : a collection of rituals for the propitiation of the wrathful deity lha-thog-rgod-pa"@en-x-mixed ;
+        :catalogInfo        "Bon rituals focusing on the propitiation of the wrathful deity Lhatok Godpa. Scanned under a training project with the Bon Foundation of America and Menri Monastery. Made available through the Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
+        :creator            bdr:CR28B9EAF29C45A4C4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23553 , bdr:W23553 ;
+        :workIsAbout        bdr:T1728 , bdr:T247 .
+}

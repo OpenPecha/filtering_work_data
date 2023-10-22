@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG235407 {
+    bda:LG17B3C69760A84103
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:52.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG199CF9F917B7850F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:16:12.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE4923D97959CBD6E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-16T17:53:04.063Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG235407  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG235407 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/WA2KG235407.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG235407 ;
+        adm:logEntry        bda:LG17B3C69760A84103 , bda:LG199CF9F917B7850F , bda:LGE4923D97959CBD6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0F7C9404590E2498
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC05635F34622D9F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG235407  a      :Work ;
+        skos:altLabel       "chos 'khor gyi dogs gcod som nyi'i mun sel/"@bo-x-ewts , "mkhyen gsum gyi rnam pa brgya dang don gsum gyi rang bzhin yang dag par brjod pa legs bshad pad+ma dkar po'i 'khri shing /"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma dkar po'i 'khri shing dang chos 'khor kyi dogs gcod som nyi'i mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Treatise on a problem in the interpretation of prajanaparamita literature and clarification of doublts in religious councils."@en ;
+        :creator            bdr:CR0F7C9404590E2498 , bdr:CRC05635F34622D9F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW2KG235407 , bdr:W2KG235407 ;
+        :workIsAbout        bdr:T2005 , bdr:T308 .
+}

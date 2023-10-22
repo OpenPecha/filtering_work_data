@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM445 {
+    bda:LG3A3357EFF3D0BD61
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-11T10:17:58.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4ABB1EF7B543C805
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T14:05:38.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG53175B39C3B01910
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM445"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM445  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM445 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b5/WA1NLM445.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM445 ;
+        adm:logEntry        bda:LG3A3357EFF3D0BD61 , bda:LG4ABB1EF7B543C805 , bda:LG53175B39C3B01910 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1641 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM445  a        :Work ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa sdud pa tshigs su bcad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Aryaprajnaparamita sancayagatha sutra; included other text also."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workIsAbout        bdr:T2005 .
+}

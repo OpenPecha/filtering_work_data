@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2246 {
+    bda:LG4DA962FDF434442E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGE62E051CC3EBE324
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-05T11:35:55.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, creator, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2246"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2246  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2246 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/WA1NLM2246.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2246 ;
+        adm:logEntry        bda:LG4DA962FDF434442E , bda:LGE62E051CC3EBE324 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9B0BA4B1D2B026B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2246  a       :Work ;
+        skos:prefLabel      "rje btsun ma phongs pa sel ba'i sgrol ma'i maN+Dal bzhi pa'i cho ga bde skyid pad+mo bzhad pa'i nyin byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun ma sgrl ma 'phongs sel ma la brten nas g.yang 'bod bya tshul srd zhi'i dpal 'gugs/ 2 byis pa'i srog glud kyi bcos thabs/ 3 ston pa thub pa'i dbang po'i sgo nas byad kha rbod gtorng bzlog pa'i gtor ma'i man ngag bka' rgya ma/ 4 mkhan chen chos rje rgyal po gsung 'bum las gnod sbyin rdo rje bdud 'dul gyi gtor 'bul/ 5 phyag rdor gos sngon can gyi sgrub thabs/ 6 gtsug lag khang dang 'dur 'don 'debs pa'i las/ 7 rta mgrin gsang sgrub kyi sgrub thabs dregs pa kun 'dul/ 8 ltung bshags kyi sgo nas 'chi blu bya tshul/ 9 gtor ma brgya rtsa shin tu bsdus pa/ 10 lha ba nag po'i gnod pa bzlog pa'i man ngag 11 las bzhi sgrub pa'i las bsangs/ 12 byis pa'i tshe ring bsur mchod pa gtong lu lho nad pa sogs ched du glud rdzongs/ 13 na shi dur gsum ma'i bcos thabs/ 14 'byung po mi dang mi ma yin pa gdon bgegs dang log par 'dren pa na ba shis ba dur la mdos glud/ 15 myur mdzad ye shes mgon po'i gser skyems/ 16 dpal rdo rje 'jigs byed kyi bka' bsgos byed/ 17 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga/ 18 rta mgrin gyi bzlog pa rnam rgyal stobs kyi mthson cha/ 19 rta mgrin gsang sgrub kyi smon lam shis brjod/ 20 rta mgrin gsang sgrub kyi shis brkod g.yas 'khyil dung gi rang sgra/ 21 rgyal po sku lnga'i bzlog bsgyur gnam lcags thog mda'/ 22 rje btsun sgrol ma'i brgya bzhi'i cho ga/ 23 dka' bcu ri'i rgyud tsha bo the'i dge ba/ 24 ngag byin brlabs byed tshul tshigs bcad du sdebs pa/ 25 rnam sras la 'phrin bcol/ 26 rlung rta bskyed pa'i cho ga/"@en , "Four Mandala ritual of Tara; included other text also."@en ;
+        :creator            bdr:CR9B0BA4B1D2B026B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2246 , bdr:W1NLM2246 ;
+        :workIsAbout        bdr:T1709 .
+}

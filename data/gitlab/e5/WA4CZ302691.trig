@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302691 {
+    bda:LG2D606790B64B5044
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T10:24:21.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9FF5622DF011995C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGA6ABA290836E7AAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T10:12:11.833Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302691  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302691 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e5/WA4CZ302691.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302691 ;
+        adm:logEntry        bda:LG2D606790B64B5044 , bda:LG9FF5622DF011995C , bda:LGA6ABA290836E7AAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4CDEF3E7CE5F65B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3458 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRC42B6712424D8CE9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302691  a      :Work ;
+        skos:altLabel       "dbu ma shes rab la 'jug pa/"@bo-x-ewts , "madhyamakaprajnavatara/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma shes rab la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Root text of Madhyamakaprajnavatara. Written by 6th century Indian master Chandrakriti and translated by Goe Khugpa Lhetse. gser bris number 3267 toh: 3863"@en ;
+        :creator            bdr:CR4CDEF3E7CE5F65B0 , bdr:CRC42B6712424D8CE9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW4CZ302691 , bdr:W4CZ302691 ;
+        :workIsAbout        bdr:T2343 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29654 {
+    bda:LG06FBE91050A5434A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-22T09:46:07.829Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG1CEDBA56D2DEB6F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-27T15:21:16.939Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as restricted by seal"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC2BBA1AA255BB0BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-23T14:26:39.28Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1572 to T104"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEF2E64D88A5F2E9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-22T09:49:29.488Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted by tbrc"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF15DE45BCA4BB485
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-22T09:47:23.977Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29654  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29654 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "58/WA8LS29654.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29654 ;
+        adm:logEntry        bda:LG06FBE91050A5434A , bda:LG1CEDBA56D2DEB6F8 , bda:LGC2BBA1AA255BB0BF , bda:LGEF2E64D88A5F2E9C , bda:LGF15DE45BCA4BB485 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ58529 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR7E8A80A31010A439
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3143 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29654  a       :Work ;
+        skos:altLabel       "rwa khrid mkha' 'gro snyan brgyud/"@bo-x-ewts ;
+        skos:prefLabel      "rwa pod/"@bo-x-ewts ;
+        :catalogInfo        "A rare collection of Vajrabhairava's teachiing and Sadhanas received by Ralotsava Dorjee Drak. The list of teachings was compiled by Rawon Sherap Gyaltshen and supplemented by Drikhung Pelzin."@en ;
+        :creator            bdr:CR7E8A80A31010A439 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workIsAbout        bdr:T104 .
+}

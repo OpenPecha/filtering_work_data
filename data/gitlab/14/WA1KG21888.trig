@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21888 {
+    bda:LG1A7DF6FD3221C675
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-12T10:04:26.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG36D29047C2A8DA2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGC79AC8B6D3255CFA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-12T10:03:54.672Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE9D2834DAC798929
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T14:52:08.743Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA1KG21888  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21888 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "14/WA1KG21888.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21888 ;
+        adm:logEntry        bda:LG1A7DF6FD3221C675 , bda:LG36D29047C2A8DA2D , bda:LGC79AC8B6D3255CFA , bda:LGE9D2834DAC798929 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR08EA4E3445164DB5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P783 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV6C368EEA15ECE0CF
+        a                   :CompletedEvent ;
+        :onYear             "1552"^^xsd:gYear .
+
+    bdr:WA1KG21888  a       :Work ;
+        skos:altLabel       "lam 'bras bu dang bcas pa'i gdams ngag gi gzhung shing rgyas pa gzhung ji lta ba bzhin bkri ba'i lam gyi khri yig snang rgyud mdzes par byed pa'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "gsung ngag lam 'bras rgyud gsum mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Introduction to the praxis (dngos gzhi) of the Lamdre, esoteric systematization of Vajrayana Buddhism followed by the Sakya tradition."@en ;
+        :creator            bdr:CR08EA4E3445164DB5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV6C368EEA15ECE0CF ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1KG21888 , bdr:MW3CN7024 , bdr:W1KG21888 , bdr:W3CN7024 ;
+        :workIsAbout        bdr:T1543 .
+}

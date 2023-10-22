@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16609 {
+    bda:LG57678984959FDD36
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-30T13:38:56.965Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6CA7C73323E084C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-09T13:12:18.159Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG81B7F24E80A5D788
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-30T13:40:06.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG95E8754247765F2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T09:11:36.733Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB962AFCACC499175
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGDD365FF98C779AD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T15:51:17.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added author rang byung rdo rje"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG16609  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16609 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "60/WA1KG16609.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16609 ;
+        adm:logEntry        bda:LG57678984959FDD36 , bda:LG6CA7C73323E084C4 , bda:LG81B7F24E80A5D788 , bda:LG95E8754247765F2D , bda:LGB962AFCACC499175 , bda:LGDD365FF98C779AD5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ301726 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR82A603E2ACF121E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P66 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCD8897808345862A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16609  skos:altLabel  "百本生传"@zh-hans .
+
+    bdr:WA1KG16609  a       :Work ;
+        skos:altLabel       "sangs rgyas bcom ldan 'das kyi skyes rabs brgya pa/"@bo-x-ewts , "bai ben sheng zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gangs can rig brgya'i sgo 'byed lde mig (deb nyer gnyis pa/)"@bo-x-ewts , "百本生传"@zh-hans ;
+        :catalogInfo        "The previous life stories of the Buddha by Indian master Aryasura and and sixty seven additional Jataka stories supplemented by the third Karmapa Rajung Dorjee."@en ;
+        :creator            bdr:CR82A603E2ACF121E6 , bdr:CRCD8897808345862A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 ;
+        :workHasInstance    bdr:MW1KG16609 ;
+        :workIsAbout        bdr:P7326 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17210 {
+    bda:LG29B1936497D54338
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-13T16:10:23.35Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3252FBFD80FAA4D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-13T16:16:17.536Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG17210  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17210 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "eb/WA1KG17210.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17210 ;
+        adm:logEntry        bda:LG29B1936497D54338 , bda:LG3252FBFD80FAA4D4 , bda:LGIM4599A38FCE , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR22D039BB3AA5CE9E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7279 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17210  a       :Work ;
+        skos:altLabel       "brtag pa gnyis pa'i rnam par bshad pa ma dag pa rnams 'joms par byed pa'i rnam 'grel dag ldan/"@bo-x-ewts ;
+        skos:prefLabel      "dag ldan mchan 'grel rgyud don gsal ba'i spyan shel/"@bo-x-ewts ;
+        :creator            bdr:CR22D039BB3AA5CE9E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG17210 , bdr:W1KG17210 ;
+        :workIsAbout        bdr:WA3JT13399 .
+}

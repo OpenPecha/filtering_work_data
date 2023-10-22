@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5JW2 {
+    bda:LG6719761097306C61
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-19T12:33:55.42Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog completed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG67A26C124403E7FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-19T18:38:04.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added creator and biblio note"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG8CBF4DB4FB227C12
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-21T12:23:42.872Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA59B0963C2D33216
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-21T12:30:43.806Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD97E354A4BE3BB77
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-21T12:23:11.54Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding to english"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE7CE4D637436FD1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-25T19:54:10.627Z"^^xsd:dateTime ;
+        adm:logMessage      "published for scan request generation"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA5JW2  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5JW2 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "67/WA5JW2.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5JW2 ;
+        adm:logEntry        bda:LG6719761097306C61 , bda:LG67A26C124403E7FC , bda:LG8CBF4DB4FB227C12 , bda:LGA59B0963C2D33216 , bda:LGD97E354A4BE3BB77 , bda:LGE7CE4D637436FD1E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF05A3E5CB72B0F06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7522 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA5JW2  a           :Work ;
+        skos:prefLabel      "Miscellaneous notes"@en ;
+        :catalogInfo        "Terminology notes."@en ;
+        :creator            bdr:CRF05A3E5CB72B0F06 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 , bdr:T220 ;
+        :workHasInstance    bdr:MW5JW2 , bdr:W5JW2 .
+}

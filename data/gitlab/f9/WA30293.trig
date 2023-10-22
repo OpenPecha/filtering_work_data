@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30293 {
+    bda:LG19091F71006EA08C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T15:37:28.096Z"^^xsd:dateTime ;
+        adm:logMessage      "CTC5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6510E2317974ED8C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7B3E921DC1D175CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-02T15:38:28.137Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1812 to T1239"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG98D9169423412FC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-05T14:03:04.813Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBBD19CE17882C72C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-18T15:58:28.477Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGC50C2D67D4CB0ADE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGD6B3E3211CBF8500
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-02T14:48:24.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added cover title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30293  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30293 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f9/WA30293.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30293 ;
+        adm:logEntry        bda:LG19091F71006EA08C , bda:LG6510E2317974ED8C , bda:LG7B3E921DC1D175CD , bda:LG98D9169423412FC9 , bda:LGBBD19CE17882C72C , bda:LGC50C2D67D4CB0ADE , bda:LGD6B3E3211CBF8500 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR805A4D8B3D8684ED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW30293  skos:altLabel  "highly esoteric rites focusing upon the invocation of vajrakila for destructive purposes"@en-x-mixed .
+
+    bdr:WA30293  a          :Work ;
+        skos:altLabel       "phur pa smad las kyi skor/"@bo-x-ewts ;
+        skos:prefLabel      "phur pa yang gsang bla med don gyi snying po las rgya chos smad las dug phur nag po'i mtshon cha las kyi 'khor lo/"@bo-x-ewts , "highly esoteric rites focusing upon the invocation of vajrakila for destructive purposes"@en-x-mixed ;
+        :catalogInfo        "Vajrakila teachings revealed by Ratna Lingpa."@en ;
+        :creator            bdr:CR805A4D8B3D8684ED ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30293 , bdr:W30293 ;
+        :workIsAbout        bdr:T1239 , bdr:T1799 , bdr:T470 .
+}

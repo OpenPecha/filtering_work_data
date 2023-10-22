@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS15899 {
+    bda:LG00A01AE4B212C9DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-03T11:52:49.834Z"^^xsd:dateTime ;
+        adm:logMessage      "changed wylie to phonetic in cat info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6A4B197465355B6B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-12T09:22:02.141Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB1B80C9E4E97E2DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-02T09:50:53.886Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB49DC477A268F516
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T10:34:08.948Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDF1038C3263E010C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-12T09:28:50.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS15899  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS15899 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d3/WA8LS15899.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS15899 ;
+        adm:logEntry        bda:LG00A01AE4B212C9DA , bda:LG6A4B197465355B6B , bda:LGB1B80C9E4E97E2DD , bda:LGB49DC477A268F516 , bda:LGDF1038C3263E010C , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS15899  a       :Work ;
+        skos:prefLabel      "bla ma'i rnal 'byor ye shes char 'bebs/"@bo-x-ewts ;
+        :catalogInfo        "Guruyoga, author signed as Khyentrul composed on the request of Drokkar Tulku Karma Dondam and author's disciple Jamyang Gawai Lodro."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS15899 , bdr:W8LS15899 ;
+        :workIsAbout        bdr:T4 .
+}

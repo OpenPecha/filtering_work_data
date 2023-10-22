@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209273 {
+    bda:LG3FDF6DFCFF602D5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-27T09:34:51.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG69B79CE59793D379
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T18:43:30.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD4F272C3C0FDF169
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGE5AA184507169FE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-10T20:51:20.891Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG209273  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209273 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f4/WA2KG209273.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209273 ;
+        adm:logEntry        bda:LG3FDF6DFCFF602D5F , bda:LG69B79CE59793D379 , bda:LGD4F272C3C0FDF169 , bda:LGE5AA184507169FE8 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF2D034ED121CC6A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG209789 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG209273  a      :Work ;
+        skos:altLabel       "mang dge dgon lhag chos brtsegs lhun po'i ri sul gyi dben gnas brag dkar rgod tshang ri khrod pa dge legs yar 'phel gyi rnam thar dad pa'i yan lag"@bo-x-ewts ;
+        skos:prefLabel      "dben gnas brag dkar rgod tshang ri khrod pa dge legs yar 'phel gyi rnam thar dad pa'i yan lag"@bo-x-ewts ;
+        :catalogInfo        "The autobiography of a Gelug master Rikhrodpa Gelek Yarphel and a short biography by an unknown author named Arya."@en ;
+        :creator            bdr:CRF2D034ED121CC6A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW2KG209273 , bdr:W2KG209273 ;
+        :workIsAbout        bdr:P2KG209789 .
+}

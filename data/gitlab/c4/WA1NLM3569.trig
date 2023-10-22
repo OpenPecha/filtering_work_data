@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3569 {
+    bda:LGC7052696621C1926
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T10:11:54.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3569"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3569  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3569 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c4/WA1NLM3569.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3569 ;
+        adm:logEntry        bda:LGC7052696621C1926 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3569  a       :Work ;
+        skos:prefLabel      "'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa nor gyi rgyun zhes bya ba khyim bdag zla ba bzang pos zhus pa/ 2 shamb+ha lar skyes pa'i smon lam/ 3 gtsug tor gdugs dkar mo'i bsgom bzlas bde ba can gyi zhing du bgrod pa'i gdams pa bya rgyal khyung gi rta po/ 4 bar do'i 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 5 thugs rje chen po'i sgrub thabs ngan song kun sgrol lam yid bzhin nor bu/ 6 tshad med bzhi bsgom/ 7 rgya nag skag bzlog 8 zab chos zhi khro dgongs pa rang grol las byang rang grol snying po/ 9 chos rgyal dang lha mo gnyis kyi gser skyems/ 10 'thor bu 'ga' zhig phyogs gcig tu bkod pa/ 11 sngags rim chen mo'i smon lam/ 12 dus gsum sangs rgyas thams cad kyi ngo bo rgyal ba blo bzang grags pa' la gsol ba 'debs pa'i smon tshig bsam pa lhun gyis 'grub/"@en , "Ayurjnana Mahayana sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3569 , bdr:W1NLM3569 .
+}

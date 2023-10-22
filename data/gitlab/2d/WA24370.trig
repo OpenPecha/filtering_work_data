@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24370 {
+    bda:LG0B63C9DF6E3F525A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-22T18:55:45.901Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1505 to T393"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7304EB94FBA449A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA24370  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24370 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2d/WA24370.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24370 ;
+        adm:logEntry        bda:LG0B63C9DF6E3F525A , bda:LG7304EB94FBA449A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR4661E184702CD9F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24370  a          :Work ;
+        skos:prefLabel      "blo sbyong brgyud pa'i gsol 'debs dad pa'i gdung sel/"@bo-x-ewts ;
+        :creator            bdr:CR4661E184702CD9F8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T11 ;
+        :workHasInstance    bdr:MW24370 ;
+        :workIsAbout        bdr:T393 .
+}

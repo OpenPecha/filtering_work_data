@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25667 {
+    bda:LG0104BA345D7E75BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T20:38:59.002Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG10F3BD82E33A3EC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDBF369C14E0BE5D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T18:55:12.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF5524139249CB8A0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T23:06:32.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25667  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25667 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "77/WA3CN25667.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25667 ;
+        adm:logEntry        bda:LG0104BA345D7E75BD , bda:LG10F3BD82E33A3EC3 , bda:LGDBF369C14E0BE5D2 , bda:LGF5524139249CB8A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR20D4749C2DB5E2D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4746 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25667  skos:altLabel  "吉美桑珠文集（藏文）"@zh-hans .
+
+    bdr:WA3CN25667  a       :Work ;
+        skos:prefLabel      "'jigs med bsam grub kyi rtsom yig phyogs sgrig"@bo-x-ewts , "吉美桑珠文集（藏文）"@zh-hans ;
+        :catalogInfo        "Collected Writings by modern scholar Jikmey Samdrup (1957-)."@en ;
+        :creator            bdr:CR20D4749C2DB5E2D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW3CN25667 , bdr:W3CN25667 ;
+        :workIsAbout        bdr:T212 .
+}

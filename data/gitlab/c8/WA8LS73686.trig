@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73686 {
+    bda:LG1C7FA4E3950DAFD8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-03T11:00:19.246Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG61A8568933B2E91F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-03T11:01:38.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9233FAD293443F9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-03T11:01:12.682Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73686  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73686 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/WA8LS73686.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73686 ;
+        adm:logEntry        bda:LG1C7FA4E3950DAFD8 , bda:LG61A8568933B2E91F , bda:LG9233FAD293443F9C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE06FE812388FF5BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS73687 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73686  a       :Work ;
+        skos:prefLabel      "kun gzhi rgya cher 'grel gyi rnam bshad sems tsam dgongs rgyan/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Alaya by Kargon Serje Lharampa Geshe Yama Sonam."@en ;
+        :creator            bdr:CRE06FE812388FF5BA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS73686 , bdr:W8LS73686 ;
+        :workIsAbout        bdr:T1133 .
+}

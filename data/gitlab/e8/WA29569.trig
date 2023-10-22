@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29569 {
+    bda:LG7A24B51AF8F82780
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T16:37:11.643Z"^^xsd:dateTime ;
+        adm:logMessage      "CTC5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG81ECF98CF069A187
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG87651FC0C7ED6B52
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-15T04:53:41.359Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation revised"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAD916E0641AD4736
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGCDA05398F0EB1357
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-17T13:55:59.864Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29569  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29569 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e8/WA29569.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29569 ;
+        adm:logEntry        bda:LG7A24B51AF8F82780 , bda:LG81ECF98CF069A187 , bda:LG87651FC0C7ED6B52 , bda:LGAD916E0641AD4736 , bda:LGCDA05398F0EB1357 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD5B6CC53CCF86358
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29569  skos:altLabel  "a verse treatise on the principles of tibetan astrology"@en .
+
+    bdr:WA29569  a          :Work ;
+        skos:altLabel       "'byun rtsis man nag zla ba'i 'od zer"@bo-alalc97 ;
+        skos:prefLabel      "'byung rtsis man ngag zla ba'i 'od zer/"@bo-x-ewts , "a verse treatise on the principles of tibetan astrology"@en ;
+        :catalogInfo        "Verse treatise on the principles of Tibetan calendrical calculations by Minling Lochen Dharmashri (1654-1718). Reproduced from a Bhutanese manuscript copy from the original woodblocks carved at Kongpo during the author's lifetime."@en ;
+        :creator            bdr:CRD5B6CC53CCF86358 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW28845_233394 , bdr:MW29569 , bdr:W29569 ;
+        :workIsAbout        bdr:T1443 .
+}

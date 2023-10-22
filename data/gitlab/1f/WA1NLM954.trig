@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM954 {
+    bda:LG11CA8E1B032BA461
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T16:53:02.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6E3A822B7320A0D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-23T13:37:46.14Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDF5E225E71580449
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM954"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM954  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM954 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1f/WA1NLM954.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM954 ;
+        adm:logEntry        bda:LG11CA8E1B032BA461 , bda:LG6E3A822B7320A0D9 , bda:LGDF5E225E71580449 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC9F320681C3E2A0F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM954  a        :Work ;
+        skos:altLabel       "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba las phra rgyas bstan pa zhes bya ba gnas lnga pa'i rnam par bshad pa/"@bo-x-ewts ;
+        skos:prefLabel      "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba/ (ca dang ja)"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the eight chapters of the Abhidharmakosa by a Gelug master Lobzang Trinley Namgyal of Sera Mey. (only available texts of chapters 5 & 7)"@en ;
+        :creator            bdr:CRC9F320681C3E2A0F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM954 , bdr:W1NLM954 ;
+        :workIsAbout        bdr:T59 , bdr:WA19720 .
+}

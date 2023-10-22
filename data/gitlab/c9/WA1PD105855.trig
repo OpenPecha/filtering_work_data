@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD105855 {
+    bda:LG043540395B6B1346
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T02:54:39.36Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG29A12EF95311FD1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-19T15:36:14.136Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG60C67E551FF65AE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-06-30T11:41:36.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGAA42A1D75BDE5E66
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGDA5737CCF0A1BEC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T02:57:23.824Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1PD105855  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD105855 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c9/WA1PD105855.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD105855 ;
+        adm:logEntry        bda:LG043540395B6B1346 , bda:LG29A12EF95311FD1F , bda:LG60C67E551FF65AE1 , bda:LGAA42A1D75BDE5E66 , bda:LGDA5737CCF0A1BEC8 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB069E2B9E703B71E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7575 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD105855  skos:altLabel  "雪山下的祝福"@zh-hans .
+
+    bdr:WA1PD105855  a      :Work ;
+        skos:altLabel       "xue shan xia de zhu fu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gangs 'dab kyi re smon/"@bo-x-ewts , "雪山下的祝福"@zh-hans ;
+        :creator            bdr:CRB069E2B9E703B71E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1PD105855 , bdr:W1PD105855 ;
+        :workIsAbout        bdr:T281 .
+}

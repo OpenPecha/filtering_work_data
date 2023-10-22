@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG03671 {
+    bda:LG217BEC4D1B9F77C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-05T16:22:56.65Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6 annotate"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG3689F94E0AACA54B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-10-26T12:08:52.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG75E399143AC8A39A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:54:53.388Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1937 to T1159"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7CCE70FCEFA22634
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-30T15:00:30.48Z"^^xsd:dateTime ;
+        adm:logMessage      "QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDC87480122D1ECB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-10-24T15:35:47.452Z"^^xsd:dateTime ;
+        adm:logMessage      "published first time"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00KG03671  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG03671 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "9e/WA00KG03671.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG03671 ;
+        adm:logEntry        bda:LG217BEC4D1B9F77C7 , bda:LG3689F94E0AACA54B , bda:LG75E399143AC8A39A , bda:LG7CCE70FCEFA22634 , bda:LGDC87480122D1ECB9 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB68B06DE1DFB0BF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6672 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00KG03671  a      :Work ;
+        skos:prefLabel      "sgrung lde'u bon gsum gyi gtam e ma ho/"@bo-x-ewts ;
+        :catalogInfo        "On pre-Buddhist culture in Tibet."@bo-x-ewts ;
+        :creator            bdr:CRB68B06DE1DFB0BF8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T216 ;
+        :workHasInstance    bdr:MW00KG03671 , bdr:W00KG03671 ;
+        :workIsAbout        bdr:T100 , bdr:T1159 , bdr:T247 .
+}

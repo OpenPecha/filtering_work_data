@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA15096 {
+    bda:LG181BAA6473597C5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-10T09:27:09.567Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG3209FA13C290AFC7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD23D0123EB84A89C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T16:31:03.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA15096  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA15096 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "af/WA15096.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA15096 ;
+        adm:logEntry        bda:LG181BAA6473597C5F , bda:LG3209FA13C290AFC7 , bda:LGD23D0123EB84A89C , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1E177289A9D65079
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2922 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW15096  skos:altLabel  "a detailed commentary on the candravyakarana presentation of sanskrit grammar"@en-x-mixed .
+
+    bdr:WA15096  a          :Work ;
+        skos:altLabel       "Tsandra paʾi ʾgrel chen :a detailed comentary on the Candravyākaraṇa presentation of Sanskrit grammer [sic] /by Lo-tsa-ba Thungs-rje-dpal."@en-x-mixed ;
+        skos:prefLabel      "tsan+d+ra pa'i 'grel chen/"@bo-x-ewts , "a detailed commentary on the candravyakarana presentation of sanskrit grammar"@en-x-mixed ;
+        :creator            bdr:CR1E177289A9D65079 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW15096 , bdr:W15096 ;
+        :workIsAbout        bdr:T282 , bdr:WA21759 .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA6460 {
+    bda:LG01B7AC4FCCC55F58
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG2D4B474167DF1FB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T17:17:25.04Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG4A975555103EEA44
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T12:24:04.589Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA0B3B7D7352FF410
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T12:21:28.227Z"^^xsd:dateTime ;
+        adm:logMessage      "add publi in fo"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGAE8BA3D44EFAA96B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T11:58:09.022Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGD48D011B67168650
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF690DC3F52D8DDBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-19T12:46:29.419Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA6460  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA6460 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "11/WA6460.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA6460 ;
+        adm:logEntry        bda:LG01B7AC4FCCC55F58 , bda:LG2D4B474167DF1FB4 , bda:LG4A975555103EEA44 , bda:LGA0B3B7D7352FF410 , bda:LGAE8BA3D44EFAA96B , bda:LGD48D011B67168650 , bda:LGF690DC3F52D8DDBF , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD52CED1558431E2A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA6460  a           :Work ;
+        skos:prefLabel      "dag snang sprul pa'i glegs bam/"@bo-x-ewts ;
+        :catalogInfo        "One of the collections of teachings by the famed Zhabkar Tsokruk Rangdrol (1781-1851)."@en ;
+        :creator            bdr:CRD52CED1558431E2A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1PD45150_340B48 , bdr:MW6460 , bdr:MW8LS17754 , bdr:W6460 , bdr:W8LS17754 ;
+        :workIsAbout        bdr:T199 , bdr:T805 , bdr:T808 .
+}

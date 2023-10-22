@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42261 {
+    bda:LG5F6DFB94167E2FB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T09:08:48.649Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG63E53F68FE8766BB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-08T09:49:16.977Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE8865F41115EE22B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-08T09:51:22.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF1D5B3CCDFCF0991
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-08T09:52:22.666Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42261  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42261 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9f/WA8LS42261.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42261 ;
+        adm:logEntry        bda:LG5F6DFB94167E2FB2 , bda:LG63E53F68FE8766BB , bda:LGE8865F41115EE22B , bda:LGF1D5B3CCDFCF0991 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDA62718240F35618
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75419 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42261  a       :Work ;
+        skos:prefLabel      "'das pa'i dus rabs nang rgya nag de bod mi'i mtho rim grwa btsun gyis bskyabs med na da lta rgya nag 'di rgyal khab kyi ngo bo phar bzhag ste grangs nyung mi rigs kyi ngo bo tsam yang gnas yod med the tshom yin/"@bo-x-ewts ;
+        :catalogInfo        "Polemic writing by Serje Rakshu Lodro."@en ;
+        :creator            bdr:CRDA62718240F35618 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS42261 , bdr:W8LS42261 ;
+        :workIsAbout        bdr:T102 .
+}

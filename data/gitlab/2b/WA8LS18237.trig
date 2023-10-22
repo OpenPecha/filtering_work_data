@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18237 {
+    bda:LG671103334E33AFFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-14T10:55:38.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG72D0BD31F08946B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-14T10:54:29.46Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS18237  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18237 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/WA8LS18237.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18237 ;
+        adm:logEntry        bda:LG671103334E33AFFA , bda:LG72D0BD31F08946B0 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA29634 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR485BA607C0ACA79A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P131 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18237  a       :Work ;
+        skos:prefLabel      "skyob pa'i rnam thar phyogs bcu dus gsum ma/"@bo-x-ewts ;
+        :catalogInfo        "BIography of Drikung Kyopa Jikten Gonpo by Drikung Lingpa Sherap Jungney."@en ;
+        :creator            bdr:CR485BA607C0ACA79A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS18237 ;
+        :workIsAbout        bdr:P16 .
+}

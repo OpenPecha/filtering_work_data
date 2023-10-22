@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD388 {
+    bda:LG1E7F2DE8868B3D42
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-05T17:29:59.513Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG46198FA9C1CE3C81
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:10:55.601Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG60F5AEF2101EB069
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T14:23:34.529Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG6B63359DED24AB98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-24T19:36:26.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG73258A1EC89CE830
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T16:14:01.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9A9C0D0AA4F128FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD388  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD388 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d2/WA3PD388.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD388 ;
+        adm:logEntry        bda:LG1E7F2DE8868B3D42 , bda:LG46198FA9C1CE3C81 , bda:LG60F5AEF2101EB069 , bda:LG6B63359DED24AB98 , bda:LG73258A1EC89CE830 , bda:LG9A9C0D0AA4F128FE , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR720184E93631EBD3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2075 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRB5E5FFFD7F96055E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3147 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3PD388  skos:altLabel  "热译师转威德之光 （藏汉对照本）"@zh-hans .
+
+    bdr:WA3PD388  a         :Work ;
+        skos:altLabel       "re yi shi zhuan wei de zhi guang [zang han dui zhao ben]"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rwa lo'i rnam thar 'jigs mdzad 'od snang / （bod rgya skad gnyis shan sbyar/）"@bo-x-ewts , "热译师转威德之光 （藏汉对照本）"@zh-hans ;
+        :catalogInfo        "Biography of the great siddha and translator Ra Lotsawa Dorje Drak translated in to Chinese by Alak Dorzhi"@en ;
+        :creator            bdr:CR720184E93631EBD3 , bdr:CRB5E5FFFD7F96055E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T240 , bdr:T3 ;
+        :workHasInstance    bdr:MW3PD388 , bdr:W3PD388 ;
+        :workIsAbout        bdr:P3143 .
+}

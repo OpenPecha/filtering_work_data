@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30194 {
+    bda:LGE58F3B7402909210
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30194  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30194 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c8/WA30194.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30194 ;
+        adm:logEntry        bda:LGE58F3B7402909210 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR41F8AA13EEEB5127
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10277 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA30194  a          :Work ;
+        skos:altLabel       "Mind training :the great collection /compiled by Shönu Gyalchok and Könchok Gyaltsen ; translated and edited by Thupten Jinpa."@en-x-mixed ;
+        skos:prefLabel      "theg pa chen po blo sbyong brgya rtsa/"@bo-x-ewts , "mind training : the great collection"@en ;
+        :creator            bdr:CR41F8AA13EEEB5127 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30194 ;
+        :workIsAbout        bdr:T393 .
+}

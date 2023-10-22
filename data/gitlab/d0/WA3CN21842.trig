@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21842 {
+    bda:LG034CD915D0B9150B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-10T14:01:59.933Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG83CEA560A4D9EF9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9D0AA16467E32348
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-10T11:21:55.244Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21842  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21842 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d0/WA3CN21842.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21842 ;
+        adm:logEntry        bda:LG034CD915D0B9150B , bda:LG83CEA560A4D9EF9B , bda:LG9D0AA16467E32348 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN21842  skos:altLabel  "藏区经济发展论文集"@zh-hans .
+
+    bdr:WA3CN21842  a       :Work ;
+        skos:prefLabel      "bod kyi dpal 'byor 'phel rgyas skor gyi dpyad rtsom phyogs bsgrigs/ (1)"@bo-x-ewts , "藏区经济发展论文集"@zh-hans ;
+        :catalogInfo        "Collection of research paper on Tibetan economy study."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW3CN21842 , bdr:W3CN21842 ;
+        :workIsAbout        bdr:T1KG858 .
+}

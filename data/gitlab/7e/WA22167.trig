@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22167 {
+    bda:LG5A5C2DFE9D942108
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T15:27:46.363Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG99DF1CD3B4FBF21F
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-22T16:54:17.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added colophon title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA237F95EA244D564
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA922DC50638336A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-23T10:02:00.876Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE45981384F8A8470
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-08-22T16:54:56.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEFFB4B4931FFE02C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22167  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22167 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "7e/WA22167.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22167 ;
+        adm:logEntry        bda:LG5A5C2DFE9D942108 , bda:LG99DF1CD3B4FBF21F , bda:LGA237F95EA244D564 , bda:LGA922DC50638336A4 , bda:LGE45981384F8A8470 , bda:LGEFFB4B4931FFE02C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1PD107155 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRAFA1DC6214944980
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22167  skos:altLabel  "智者启蒙"@zh-hans .
+
+    bdr:WA22167  a          :Work ;
+        skos:altLabel       "mkhas pa'i tshul la 'jug pa'i sgo zhes bya ba'i bstan bcos/"@bo-x-ewts ;
+        skos:prefLabel      "mi pham mkhas 'jug"@bo-x-ewts , "智者启蒙"@zh-hans ;
+        :creator            bdr:CRAFA1DC6214944980 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T1770 , bdr:T770 .
+}

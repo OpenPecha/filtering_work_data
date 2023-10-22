@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1482 {
+    bda:LG3423AE4A4C1C0350
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-12T09:53:03.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA6D7B63AAF0B814F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-12T09:51:26.498Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE5A71325C7896AB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-13T11:53:18.302Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN1482  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1482 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "78/WA3CN1482.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1482 ;
+        adm:logEntry        bda:LG3423AE4A4C1C0350 , bda:LGA6D7B63AAF0B814F , bda:LGE5A71325C7896AB3 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA7A368DF60F4EE5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6430 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1482  a        :Work ;
+        skos:altLabel       "byang chub sems pa'i spyod pa la 'jug pa'i 'grel pa nges legs mdzod/"@bo-x-ewts , "spyod 'jug 'grel chung /"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug gi 'grel pa nges legs mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara. Written by Karma Tshewang Palden (19th cent.)."@en ;
+        :creator            bdr:CRA7A368DF60F4EE5A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN1482 , bdr:W3CN1482 ;
+        :workIsAbout        bdr:WA19740 .
+}

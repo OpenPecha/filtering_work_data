@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22163 {
+    bda:LG1E59D3FD0F2A5E60
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-31T18:17:45.052Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG482B695EAFD989EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-26T16:58:08.673Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8DF7D3E567C58928
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-13T15:40:55.204Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarily removed tbrc holdings note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC61F8BB8683AA0DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC9922CE551BCF10E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-26T16:49:07.795Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE83CAAC8D2F91D57
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-26T16:55:18.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22163  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22163 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9d/WA3CN22163.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22163 ;
+        adm:logEntry        bda:LG1E59D3FD0F2A5E60 , bda:LG482B695EAFD989EF , bda:LG8DF7D3E567C58928 , bda:LGC61F8BB8683AA0DD , bda:LGC9922CE551BCF10E , bda:LGE83CAAC8D2F91D57 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6EC9C74BD6C486C6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P753 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22163  a       :Work ;
+        skos:prefLabel      "gsung thor bu/ rin chen bzang po/"@bo-x-ewts ;
+        :catalogInfo        "Miscellaneous writings by great translater Lochen Rinchen Sangpo (958-1055)."@en ;
+        :creator            bdr:CR6EC9C74BD6C486C6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW3CN22163 , bdr:W3CN22163 ;
+        :workIsAbout        bdr:T791 .
+}

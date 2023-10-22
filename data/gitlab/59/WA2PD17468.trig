@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17468 {
+    bda:LG0E32A4B61ED14756
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-19T02:50:11.033Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG13A34523A2CCDD46
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG4D12D9B92DE85B0F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-19T02:50:45.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG63727F9153644D16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-18T14:06:18.923Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA2PD17468  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17468 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "59/WA2PD17468.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17468 ;
+        adm:logEntry        bda:LG0E32A4B61ED14756 , bda:LG13A34523A2CCDD46 , bda:LG4D12D9B92DE85B0F , bda:LG63727F9153644D16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2PD17468  a       :Work ;
+        skos:altLabel       "'chi med mtsho 'khrungs rgyal ba'i rtogs pa brjod pa ngo mtshar rgya mtsho'i 'jings rnam/"@bo-x-ewts ;
+        skos:prefLabel      "gu ru'i rtogs brjod pa ngo mtshar rgya mtsho'i 'jings rnam/"@bo-x-ewts ;
+        :catalogInfo        "Biographies of Padmakaravarma. Written by Sonam Gyatso."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2PD17468 , bdr:W2PD17468 ;
+        :workIsAbout        bdr:P8194 , bdr:T1082 .
+}

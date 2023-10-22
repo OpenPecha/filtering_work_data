@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2560 {
+    bda:LG55B85741651CA1EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T11:25:14.293Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8F0F65F376DBE2B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGECA1C231D5384BDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T09:19:54.232Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2560"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2560  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2560 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b5/WA1NLM2560.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2560 ;
+        adm:logEntry        bda:LG55B85741651CA1EF , bda:LG8F0F65F376DBE2B8 , bda:LGECA1C231D5384BDD , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR09596E367BD2B797
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR46AE25BE2761E521
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2560  a       :Work ;
+        skos:altLabel       "'dod khams dbang phyug dmag zor rgyal mo'i sgrub thabs gtor chog"@bo-x-ewts ;
+        skos:prefLabel      "so sor thar ba'i sdom pa gtan la dbab pa 'dul ba rgya mtsho'i snying po bsdus pa'i 'grel bshad mdor bsdus thar pa'i lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the Tsongkhapa's religious observance described in the pratimoksha Sutra and Sadhana and bali offering ritual of Shridevi."@en ;
+        :creator            bdr:CR09596E367BD2B797 , bdr:CR46AE25BE2761E521 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2560 , bdr:W1NLM2560 ;
+        :workIsAbout        bdr:T2GS983 .
+}

@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4278 {
+    bda:LG70D31038BFA3A1D1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T17:25:08.784Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD23B575D0C0B855D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T11:34:54.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added other title"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD6E5B5A2ACA4A9CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T09:32:49.446Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF1E2080B23F6E8BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-23T12:07:06.787Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF308FC84127C5409
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T12:13:00.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4278  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4278 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5d/WA3CN4278.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4278 ;
+        adm:logEntry        bda:LG70D31038BFA3A1D1 , bda:LGD23B575D0C0B855D , bda:LGD6E5B5A2ACA4A9CC , bda:LGF1E2080B23F6E8BD , bda:LGF308FC84127C5409 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR43A72BD5CF8BE3B2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5659 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR54CA437DC48C332C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR557895047D8226A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7401 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4278  a        :Work ;
+        skos:altLabel       "dbu ma rgyan dang dbu ma 'jug pa dang dbu ma bzhi brgya pa bcas kyi rtsa ba/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma rgyan 'jug pa bzhi brgya pa'i rtsa ba/"@bo-x-ewts ;
+        :catalogInfo        "Root texts of madhyamakalankara by santaraksita, madhyamakavatara of Candrakirti and catushatakashastra karika of Aryadeva."@en ;
+        :creator            bdr:CR43A72BD5CF8BE3B2 , bdr:CR54CA437DC48C332C , bdr:CR557895047D8226A5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW3CN4278 , bdr:W3CN4278 ;
+        :workIsAbout        bdr:WA19458 , bdr:WA19459 , bdr:WA21920 .
+}

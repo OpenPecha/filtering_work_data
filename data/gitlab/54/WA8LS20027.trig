@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20027 {
+    bda:LG1049F434DEA96348
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-13T08:42:05.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCB68F7CD7502ED7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-29T08:47:45.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20027  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20027 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "54/WA8LS20027.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20027 ;
+        adm:logEntry        bda:LG1049F434DEA96348 , bda:LGCB68F7CD7502ED7E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS20027  a       :Work ;
+        skos:prefLabel      "bka' brgyad bde gshegs 'dus pa'i gtor bzlog las 'grigs dri med rab gsal byad ma brlag byed/"@bo-x-ewts ;
+        :catalogInfo        "Recitation compilation of bali repelling ritual according to Kagye tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS20027 , bdr:W8LS20027 ;
+        :workIsAbout        bdr:T1193 , bdr:T2579 , bdr:T905 .
+}

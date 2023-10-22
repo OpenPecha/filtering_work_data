@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA14602 {
+    bda:LG4644C5F374896307
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA14602  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA14602 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "31/WA14602.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA14602 ;
+        adm:logEntry        bda:LG4644C5F374896307 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR2F285B0A15A92373
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2596 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVC6E91B96B0E86DAC
+        a                   :CompletedEvent ;
+        :onYear             "1945"^^xsd:gYear .
+
+    bdr:WA14602  a          :Work ;
+        skos:altLabel       "'jam mgon rgyal ba'i bstan srung rgyal chen rdo rje shugs ldan 'joms mdzad drag po rtsal gyi 'phrin las drag po'i gtor chen la brten nas dgra begs sgrol ba'i las rim nag 'gros su bkod pa gnam lcags thog zer rab 'bar/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje shugs ldan gyi drag po'i dgra bgegs sgrol chog"@bo-x-ewts ;
+        :creator            bdr:CR2F285B0A15A92373 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVC6E91B96B0E86DAC ;
+        :workHasInstance    bdr:MW14602 .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10739 {
+    bda:LG109CA49F1CB1ABA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-15T11:42:02.989Z"^^xsd:dateTime ;
+        adm:logMessage      "added dag yig"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1D7F128057933D85
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-10-17T16:41:05.242Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3C727F3A8C3AEF9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T12:14:21.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGF12A7A21A6C624C6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-10-17T16:42:36.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10739  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10739 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "88/WA1KG10739.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10739 ;
+        adm:logEntry        bda:LG109CA49F1CB1ABA6 , bda:LG1D7F128057933D85 , bda:LG3C727F3A8C3AEF9B , bda:LGF12A7A21A6C624C6 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR57A624077E5A3683
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8258 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV52A25B9D61A89F0B
+        a                   :CompletedEvent ;
+        :onYear             "1937"^^xsd:gYear .
+
+    bdr:WA1KG10739  a       :Work ;
+        skos:altLabel       "gangs can bod kyi brda sprod dpag bsam ljon pa'i snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "brda sprod dpag bsam ljon pa'i snye ma/"@bo-x-ewts ;
+        :catalogInfo        "Writings by the 19th century Bon master Tenzin Lodro Gyatso on Tibetan grammar."@en ;
+        :creator            bdr:CR57A624077E5A3683 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV52A25B9D61A89F0B ;
+        :workGenre          bdr:T218 ;
+        :workHasInstance    bdr:MW1KG10739 , bdr:W1KG10739 ;
+        :workIsAbout        bdr:T4CZ16893 .
+}

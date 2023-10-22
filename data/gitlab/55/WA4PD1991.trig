@@ -1,0 +1,39 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD1991 {
+    bda:LG7A49B8BD4DA1DDAD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T10:26:51.196Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD1991  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD1991 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "55/WA4PD1991.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD1991 ;
+        adm:logEntry        bda:LG7A49B8BD4DA1DDAD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4PD1991  a        :Work ;
+        skos:prefLabel      "snga 'gyur dpe dkon bris ma phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of the rare Ngagyur Nyingma manuscript texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW4PD1991 ;
+        :workIsAbout        bdr:T1082 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM804 {
+    bda:LG35ED8ECE06C99274
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGAF08C18EA40554BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T15:59:29.313Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC6260B47E1941F74
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-27T12:39:34.253Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM804"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM804  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM804 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ca/WA1NLM804.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM804 ;
+        adm:logEntry        bda:LG35ED8ECE06C99274 , bda:LGAF08C18EA40554BD , bda:LGC6260B47E1941F74 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7DC4A0AB06974831
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM804  a        :Work ;
+        skos:altLabel       "phar phyin spyi don skal bzang klu dbang gi rol mtsho /skabs gsum pa/ skabs drug pa/ skabs bdun pa bcas kyi spyi don/"@bo-x-ewts ;
+        skos:prefLabel      "rtags rigs kyi rnam bzhag nyung gsal legs bshad gser gyi phreng mdzes kyi mchan/"@bo-x-ewts ;
+        :catalogInfo        "1, Annotations on the Jamyang Shepaa's Buddhist epistemology and dialectical studies by Konchog Chophel. 2. Commentary on Haribhadra's Abhisamayalankaranama Prajnaparamitopadesasastravrtti, chapter 3, 6 and 7by Sera Jetsun."@en ;
+        :creator            bdr:CR7DC4A0AB06974831 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1763 ;
+        :workHasInstance    bdr:MW1NLM804 , bdr:W1NLM804 ;
+        :workIsAbout        bdr:T1235 , bdr:T36 .
+}

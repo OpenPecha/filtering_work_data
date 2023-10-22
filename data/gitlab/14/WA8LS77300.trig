@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77300 {
+    bda:LG663E2B68A2891FB5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-29T15:38:57.409Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG82BCC4A7DC4A71E5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-29T15:39:18.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77300  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77300 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "14/WA8LS77300.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77300 ;
+        adm:logEntry        bda:LG663E2B68A2891FB5 , bda:LG82BCC4A7DC4A71E5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS77300  a       :Work ;
+        skos:prefLabel      "rgya bza' bal bza'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan folk opera concerning Gyalza Konjo and Balza Tritsun."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS77300 , bdr:W8LS77300 ;
+        :workIsAbout        bdr:P1KG5401 , bdr:P8116 , bdr:T2034 .
+}

@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29701 {
+    bda:LG0825D2F17D86E545
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T12:31:14.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG11F23A2978F353D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-19T03:15:26.184Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL  and WMDL12"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LG844CD095EF1875A7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD07E3739796E4D51
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-10-08T07:32:29.343Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEA90AB283C6BA35C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-26T09:40:13.291Z"^^xsd:dateTime ;
+        adm:logMessage      "marked image groups as qc complete"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29701  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29701 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "81/WA29701.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29701 ;
+        adm:logEntry        bda:LG0825D2F17D86E545 , bda:LG11F23A2978F353D3 , bda:LG844CD095EF1875A7 , bda:LGD07E3739796E4D51 , bda:LGEA90AB283C6BA35C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9482D170F4C3161C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4779 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29701  a          :Work ;
+        skos:altLabel       "mkhan chen khro ru tshe rnam gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_tshe rnam/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by the physician Troru Tsenam."@en ;
+        :creator            bdr:CR9482D170F4C3161C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW29701 , bdr:W29701 ;
+        :workIsAbout        bdr:T1082 , bdr:T85 .
+}

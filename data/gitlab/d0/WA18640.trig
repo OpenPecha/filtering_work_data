@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA18640 {
+    bda:LG053317C1C5466ED2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG12BDDF13314C98BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T16:31:23.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB1EDAF1F3B4A1CBB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-12-07T12:36:30.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC4B7A6A248A7930B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-07T12:06:28.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LGD46B1866172875C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-21T09:44:36.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added P3816"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA18640  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA18640 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d0/WA18640.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA18640 ;
+        adm:logEntry        bda:LG053317C1C5466ED2 , bda:LG12BDDF13314C98BF , bda:LGB1EDAF1F3B4A1CBB , bda:LGC4B7A6A248A7930B , bda:LGD46B1866172875C9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2DD4B7328230FEE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5295 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB27EE70BC7277498
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2387 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA18640  a          :Work ;
+        skos:altLabel       "rje nyid kyi mdzad rnam yal 'dab bzhi pa/"@bo-x-ewts , "rong zom chos bzang gi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi bzang po'i rnam thar/"@bo-x-ewts ;
+        :creator            bdr:CR2DD4B7328230FEE8 , bdr:CRB27EE70BC7277498 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW18640 , bdr:W18640 ;
+        :workIsAbout        bdr:P3816 , bdr:T1082 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73671 {
+    bda:LG1EF8FDC1C3D51DC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-02T10:19:16.029Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE5BA58B2AA193375
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-02T10:19:42.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73671  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73671 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "39/WA8LS73671.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73671 ;
+        adm:logEntry        bda:LG1EF8FDC1C3D51DC5 , bda:LGE5BA58B2AA193375 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5A71C81607523211
+        a                   :AgentAsCreator ;
+        :agent              bdr:P801 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73671  a       :Work ;
+        skos:altLabel       "dpal gsang ba 'dus pa 'jam pa'i rdo rje'i dkyil 'khor gyi cho ga si tA'i klung chen 'jigs bral seng ge'i kha 'babs/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus 'jam pa'i rdo rje'i dkyil chog"@bo-x-ewts ;
+        :catalogInfo        "Mandala ritual of guhyasamaja according to the Manjuvajra tradtion by Zhuchen Tsultrim Rinchen."@en ;
+        :creator            bdr:CR5A71C81607523211 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW8LS73671 , bdr:W8LS73671 ;
+        :workIsAbout        bdr:T417 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27505 {
+    bda:LG3840C2DB78D80FB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGAB1D34C0B47D0232
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-11T12:05:05.375Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGCFEC9D155B0E6FA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T21:04:59.594Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from G4167 to G1KR1648"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEFC8989D84FCBCEF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA27505  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27505 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/WA27505.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27505 ;
+        adm:logEntry        bda:LG3840C2DB78D80FB2 , bda:LGAB1D34C0B47D0232 , bda:LGCFEC9D155B0E6FA6 , bda:LGEFC8989D84FCBCEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW27505  skos:altLabel  "rituals for the propitiation of the protective deities invoked by the monastery of bde-chen padma-chos-sdings, a monastery of the bo-don tradition in spo-ron, western tibet"@en-x-mixed .
+
+    bdr:WA27505  a          :Work ;
+        skos:altLabel       "bde cen padma chos ldin gi bstan srun rgya mtsho'i bskan 'phrin nag 'gros chu 'bab su bkod pa dgra begs gzom pa tshans pa'i sgra dbyans"@bo-alalc97 , "spo rong chos spyod/"@bo-x-ewts ;
+        skos:prefLabel      "bde chen padmo chos lding gi bstan srung rgya mtsho'i bskang 'phrin nag 'gros chu 'bb su bkod pa dgra bgegs gzhom pa tshangs pa'i sgra dbyangs/"@bo-x-ewts , "rituals for the propitiation of the protective deities invoked by the monastery of bde-chen padma-chos-sdings, a monastery of the bo-don tradition in spo-ron, western tibet"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW27505 , bdr:W27505 ;
+        :workIsAbout        bdr:G1KR1648 , bdr:T2054 .
+}

@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24828 {
+    bda:LG412010A2DBAB282F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24828  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24828 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f7/WA24828.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24828 ;
+        adm:logEntry        bda:LG412010A2DBAB282F , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:WA24828  a          :Work ;
+        skos:prefLabel      "nub byang mi rigs slob grwa chen moi bod yig sde khag tshugs nas lo 'khor lnga bcu lon pa'i rig gzhung dpyad rtsom/"@bo-x-ewts , "Nub-byaṅ Mi-rigs Slob-grwa Chen-moʼi Bod-yig Sde-khag tshugs nas lo ʼkhor lṅa bcu lon paʼi rig gźuṅ dpyad rtsom /gtso sgrig pa, Kha-sgaṅ Bkra-śis-tshe-riṅ ; rtsom sgrig u yon, Rdo-rje-rin-chen ... [et al.]."@en-x-mixed , "xi bei min yuan, 1950.9-2000.9"@zh-latn-pinyin ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24828 .
+}

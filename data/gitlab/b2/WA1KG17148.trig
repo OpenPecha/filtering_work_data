@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17148 {
+    bda:LG104047A1F402B73E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-10T15:01:22.469Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88393569D3259538
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-10T15:01:46.464Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG971C3F10D93F9735
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-02T16:02:37.576Z"^^xsd:dateTime ;
+        adm:logMessage      "changed T#s"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA1KG17148  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17148 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b2/WA1KG17148.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17148 ;
+        adm:logEntry        bda:LG104047A1F402B73E , bda:LG88393569D3259538 , bda:LG971C3F10D93F9735 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC3BC2CA6652A7F63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17148  a       :Work ;
+        skos:prefLabel      "mdo sngags zung du 'jug pa'i spyod yul lam khyer sangs rgyas lam zhugs/"@bo-x-ewts ;
+        :catalogInfo        "introduction to the practice of the union of sutrayana and vajrayana."@en ;
+        :creator            bdr:CRC3BC2CA6652A7F63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1KG10193_8B369B , bdr:MW1KG17148 , bdr:MW27300_355B5E , bdr:MW7477_23900A , bdr:W1KG17148 ;
+        :workIsAbout        bdr:T2002 , bdr:T541 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21829 {
+    bda:LG2821265B8A1429CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-13T11:05:34.107Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG319698C2E3C38941
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG442DD85529650BD3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-12T16:39:40.881Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8875B960EA7BD015
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T12:30:56.956Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA1KG21829  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21829 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4d/WA1KG21829.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21829 ;
+        adm:logEntry        bda:LG2821265B8A1429CA , bda:LG319698C2E3C38941 , bda:LG442DD85529650BD3 , bda:LG8875B960EA7BD015 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR15852D616AA289F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG14553 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG21829  skos:altLabel  "健康66条"@zh-hans .
+
+    bdr:WA1KG21829  a       :Work ;
+        skos:altLabel       "lus khams bde thang skor gyi shes bya/ krung go'i spyi dmangs bde thang byang tshad skor gyi klog deb/"@bo-x-ewts , "jian kang 66 tiao"@zh-latn-pinyin ;
+        skos:prefLabel      "lus khams bde thang skor gyi shes bya 66"@bo-x-ewts , "健康66条"@zh-hans ;
+        :catalogInfo        "66 educational topics on health and hygiene."@en ;
+        :creator            bdr:CR15852D616AA289F9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG21829 , bdr:W1KG21829 ;
+        :workIsAbout        bdr:T1142 , bdr:T347 .
+}

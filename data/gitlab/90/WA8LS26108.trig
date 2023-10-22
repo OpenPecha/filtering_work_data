@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS26108 {
+    bda:LGA4BC86157C4D41DE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-18T10:54:24.544Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC74C55F6FD13CD83
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-18T10:55:27.075Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS26108  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS26108 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "90/WA8LS26108.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS26108 ;
+        adm:logEntry        bda:LGA4BC86157C4D41DE , bda:LGC74C55F6FD13CD83 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG21756 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRFFF6A74F634CF3B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P663 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS26108  a       :Work ;
+        skos:altLabel       "bod kyi jo mo ye shes mtsho rgyal gyi mdzad tshul rnam par thar pa gab pa mngon byung rgyud mang dri za'i glu phreng / jo mo'i rnam thar skabs don brgyad pa/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro ye shes mtsho rgyal gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "1 slob dpon pad+ma 'byung gnas kyi skyes rabs chos 'byung nor bu'i phreng ba/ 2 o rgyan gu ru pad+ma 'byung gnas kyi rnam thar bsdus pa thos pa don ldan dang 'brel ba'i snying po rdo rje'i sgrag dbyangs kyi phreng ba/"@bo-x-ewts , "Hagiography of Dakini Yeshes Tshogyal rediscovered by Taksham Nuden Dorjee with two hagiographies of Padmasambhava."@en ;
+        :creator            bdr:CRFFF6A74F634CF3B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 , bdr:T448 ;
+        :workIsAbout        bdr:P7695 .
+}

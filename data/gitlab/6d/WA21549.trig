@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21549 {
+    bda:LG6AA4B69C465C5536
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBFD0257C2846AB02
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-10T09:32:27.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21549  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21549 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6d/WA21549.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21549 ;
+        adm:logEntry        bda:LG6AA4B69C465C5536 , bda:LGBFD0257C2846AB02 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFCF9CC9B374C7995
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21549  skos:altLabel  "ri chos yon tan kun 'byun dan lhan thabs : a collection profound instructions for use during the extended retreat"@en .
+
+    bdr:WA21549  a          :Work ;
+        skos:prefLabel      "ri chos yon tan kun 'byung dang lhan thabs/"@bo-x-ewts , "ri chos yon tan kun 'byun dan lhan thabs : a collection profound instructions for use during the extended retreat"@en ;
+        :catalogInfo        "Retreat manual and its supplement. Written by Yangonpa Rinchen Pel (1213-1258), an extraordinary meditation master of the Drukpa Kargyu order. Work stands alongside the similar work of Karma Chakme as the vademecum for meditators throughout history."@en ;
+        :creator            bdr:CRFCF9CC9B374C7995 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21549 , bdr:W21549 ;
+        :workIsAbout        bdr:T1109 , bdr:T816 .
+}

@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23706 {
+    bda:LG566592E1D36C7603
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5E4C799D09BB94A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T10:09:08.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG6F17AEFC4D73E56F
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T12:39:18.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGB5573D15F28986D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-08T14:54:01.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added annotation"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGF153692004101EB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-14T10:39:04.228Z"^^xsd:dateTime ;
+        adm:logMessage      "removed work and added t370"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23706  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23706 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "84/WA23706.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23706 ;
+        adm:logEntry        bda:LG566592E1D36C7603 , bda:LG5E4C799D09BB94A4 , bda:LG6F17AEFC4D73E56F , bda:LGB5573D15F28986D2 , bda:LGF153692004101EB1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF87ACBE09EFB1079
+        a                   :AgentAsCreator ;
+        :agent              bdr:P782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23706  skos:altLabel  "exegesis of the thub pa'i dgons pa rab gsal and tshad ma rig gter, two works by sa-skya pandi-ta kun-dga'-rgyal-mtshan on the fundamentals of buddhist practice and logic"@en-x-mixed .
+
+    bdr:WA23706  a          :Work ;
+        skos:prefLabel      "thub pa'i dgongs pa rab gsal dang tshad ma rig gter skor/"@bo-x-ewts , "exegesis of the thub pa'i dgons pa rab gsal and tshad ma rig gter, two works by sa-skya pandi-ta kun-dga'-rgyal-mtshan on the fundamentals of buddhist practice and logic"@en-x-mixed ;
+        :catalogInfo        "Commentaries on two of Sakya Pandita Kunga Gyaltsen's (1182-1251) famous works on practice and pramana by Lowo Kenchen Sonam Lhundrub (1456-1532). Reproduced from the Dege woodblock prints."@en ;
+        :creator            bdr:CRF87ACBE09EFB1079 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23706 , bdr:W23706 ;
+        :workIsAbout        bdr:T370 .
+}

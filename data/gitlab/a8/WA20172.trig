@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20172 {
+    bda:LG00A3A720819264B1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG2D37217BBD6B8636
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-12T09:53:16.535Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG381851C0CBCCE620
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-12T14:31:15.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7BE3FF05C429C144
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA20172  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20172 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a8/WA20172.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20172 ;
+        adm:logEntry        bda:LG00A3A720819264B1 , bda:LG2D37217BBD6B8636 , bda:LG381851C0CBCCE620 , bda:LG7BE3FF05C429C144 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR517AF9AD728A88CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6578 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20172  skos:altLabel  "高原之舟"@zh-hans .
+
+    bdr:WA20172  a          :Work ;
+        skos:altLabel       "gao yuan zhi zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtho sgang gi nor nag"@bo-x-ewts , "高原之舟"@zh-hans ;
+        :catalogInfo        "Collection of poetry written by Khandro Gyal."@en ;
+        :creator            bdr:CR517AF9AD728A88CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T216 ;
+        :workHasInstance    bdr:MW20172 , bdr:W20172 ;
+        :workIsAbout        bdr:T281 .
+}

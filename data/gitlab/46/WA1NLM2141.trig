@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2141 {
+    bda:LG8681107D81C1B658
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA8BF3E96D88029FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-28T09:54:50.878Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2141"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2141  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2141 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "46/WA1NLM2141.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2141 ;
+        adm:logEntry        bda:LG8681107D81C1B658 , bda:LGA8BF3E96D88029FC , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9FC13B5716360BFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2141  a       :Work ;
+        skos:prefLabel      "bslab pa yongs su sbyong ba'i cho ga sdom brtson dgyes byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sgrol ma'i maN+Dal bzhi pa'i cho ga dpag bsam snye ma/ 2 thog ma dang bar dang tha mar dge ba'i smon lam/ 3 rje po to ba rin po che'i mdzad pa smon lam mtha' yas/ 4 'phags pa rta gzungs/ 5 bka' 'gyur gyi snying po bsdus pa'i gzungs/ 6 'dul ba rgya mtsho'i snying po bsdus pa/ 7 paN chen blo bzang chos kyi rgyal mtshan gyis mdzad pa'i tshwa bsur 'dod pa'i re skongs/ 8 mdo sdud pa'i mjug tu 'don rgyu'i tshigs bcad/ 9 sman bla'i smon lam 'bras myur thob byed/"@en , "A ritual for conducting Posadha by Mati Maniprajna; other text also included."@en ;
+        :creator            bdr:CR9FC13B5716360BFD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2141 , bdr:W1NLM2141 ;
+        :workIsAbout        bdr:T809 .
+}

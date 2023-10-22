@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21618 {
+    bda:LG215B3CC951415B6F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-02T16:11:34.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG51E49EC78AEE684C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG960F9C40454ACF3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB6C20839F1A361C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-02T16:10:54.437Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21618  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21618 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "66/WA21618.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21618 ;
+        adm:logEntry        bda:LG215B3CC951415B6F , bda:LG51E49EC78AEE684C , bda:LG960F9C40454ACF3C , bda:LGB6C20839F1A361C4 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG5400 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW21618  skos:altLabel  "甲萨帕萨"@zh-hans .
+
+    bdr:WA21618  a          :Work ;
+        skos:altLabel       "jia sa pa sa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya bza' bal bza'i rnam thar/"@bo-x-ewts , "甲萨帕萨"@zh-hans ;
+        :catalogInfo        "Biographies of Gyaza Kongjo and Belsa Tritsun wives of King Songtsen Gampo."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:P1KG5401 , bdr:P8116 , bdr:T2034 .
+}

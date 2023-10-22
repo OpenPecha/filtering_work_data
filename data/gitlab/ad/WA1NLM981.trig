@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM981 {
+    bda:LG308CEB9BE4D10454
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-21T08:38:07.918Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG39C879F3084874D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGFD0ACCA88C06EA07
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T09:42:18.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM981"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM981  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM981 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ad/WA1NLM981.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM981 ;
+        adm:logEntry        bda:LG308CEB9BE4D10454 , bda:LG39C879F3084874D9 , bda:LGFD0ACCA88C06EA07 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE2A8D77DBA0C6037
+        a                   :AgentAsCreator ;
+        :agent              bdr:P123 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM981  a        :Work ;
+        skos:prefLabel      "'dus pa 'phags lugs lha so gnyis pa'i lam rim pa dang po'i khrid dmigs kyi brjed byang mi bskyod mgon po'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "A note on the practice of the developing stage and completion stage (Utpattikrama, Sampannakrama) of the Guhyasamaja visualization of the 32 deities by Akhu Sherap Gyatso."@en ;
+        :creator            bdr:CRE2A8D77DBA0C6037 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 ;
+        :workHasInstance    bdr:MW1NLM981 , bdr:W1NLM981 ;
+        :workIsAbout        bdr:T475 , bdr:T983 .
+}

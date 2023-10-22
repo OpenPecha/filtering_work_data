@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22547 {
+    bda:LGCA5B1B4F5FB1C97B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-19T16:58:25.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFC21CCA621E25D4D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-19T16:57:51.988Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG22547  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22547 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b7/WA1KG22547.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22547 ;
+        adm:logEntry        bda:LGCA5B1B4F5FB1C97B , bda:LGFC21CCA621E25D4D , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR303A85B533851F8F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P801 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC4471F299DB3066B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P964 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22547  a       :Work ;
+        skos:altLabel       "'jam dbyangs bla ma'i rnal 'byor la bsten pa'i tshogs mchod bsod nams rab rgyas/"@bo-x-ewts , "'phags pa 'jig rten dbang phyug zhal bcu gcig pa dge slong ma dpa' mo'i lugs kyi sgrub thabs dang smyung gnas kyi cho ga nyams su len pa/"@bo-x-ewts , "gtsug tor rnam par rgyal ma'i sgrub thabs stong mchod rjes gnang gi cho ga dang bcas pa bdud rtsi'i chu rgyun/"@bo-x-ewts ;
+        skos:prefLabel      "smyung gans kyi cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection texts on the instructions for the practice of the fasting according to eleven faced Avalokitesvara; feast offerings of Guruyoga practice and Sadhana for conferring the permission to invoke the deity Usnisavijaya."@en ;
+        :creator            bdr:CR303A85B533851F8F , bdr:CRC4471F299DB3066B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T977 ;
+        :workHasInstance    bdr:MW1KG22547 , bdr:W1KG22547 ;
+        :workIsAbout        bdr:T147 , bdr:T330 , bdr:T4 , bdr:T525 , bdr:T8LS14949 .
+}

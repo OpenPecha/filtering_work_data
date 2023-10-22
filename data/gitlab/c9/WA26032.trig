@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26032 {
+    bda:LG44387FFA8731789B
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-07T10:11:22.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad and annotation"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4A5CFBE839A026C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG79363378DCD58195
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-11-11T15:43:18.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA75DC5FA3BA9C7CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-16T11:15:25.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added chos skor as genre"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA26032  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26032 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c9/WA26032.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26032 ;
+        adm:logEntry        bda:LG44387FFA8731789B , bda:LG4A5CFBE839A026C3 , bda:LG79363378DCD58195 , bda:LGA75DC5FA3BA9C7CC , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE4022E89739C7350
+        a                   :AgentAsCreator ;
+        :agent              bdr:P698 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW26032  skos:altLabel  "the collected visionary teachings on the practice the gcod precepts"@en .
+
+    bdr:WA26032  a          :Work ;
+        skos:altLabel       "gcod skor 'dzin pa rang grol/"@bo-x-ewts , "ʾDzin pa raṅ grol gyi chos skor :the collected visionary teachings on the practice of the Gcod precepts /from the revelations of Mdo Mkhyen-brtse Ye-śes-rdo-rje."@en-x-mixed ;
+        skos:prefLabel      "'dzin pa rang grol gyi chos skor/"@bo-x-ewts , "the collected visionary teachings on the practice the gcod precepts"@en ;
+        :catalogInfo        "Collected visionary teachings on the practice of the chod precepts from the revelations of Do Khyentse Yeshe Dorje (1800-1866)."@en ;
+        :creator            bdr:CRE4022E89739C7350 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 , bdr:T448 ;
+        :workHasInstance    bdr:MW26032 , bdr:W26032 ;
+        :workIsAbout        bdr:T1082 , bdr:T194 .
+}

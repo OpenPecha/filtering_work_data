@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20011 {
+    bda:LG0BBAE166B4A61A70
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T16:19:58.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3F55E9A152F6A495
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-04T11:25:53.975Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected CW"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA10288E661B3DC10
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-28T12:07:11.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio title, cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20011  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20011 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c4/WA8LS20011.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20011 ;
+        adm:logEntry        bda:LG0BBAE166B4A61A70 , bda:LG3F55E9A152F6A495 , bda:LGA10288E661B3DC10 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS20011  a       :Work ;
+        skos:altLabel       "'dul ba mdo rtsa ba'i 'grel pa rin po che'i phreng ba'i do shal/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Vinayasutra, author unknown."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS20011 , bdr:W8LS20011 ;
+        :workIsAbout        bdr:WA4CZ16829 .
+}

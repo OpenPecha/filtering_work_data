@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1989 {
+    bda:LG886B89595A145FED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-16T19:33:09.75Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCDD525E31DDC17FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1989"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1989  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1989 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "47/WA1NLM1989.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1989 ;
+        adm:logEntry        bda:LG886B89595A145FED , bda:LGCDD525E31DDC17FB , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1989  a       :Work ;
+        skos:prefLabel      "rgyal po gser gyi lag pa'i smon lam dang 'brel ba'i mar me ji ltar 'bul ba'i tshul bde legs 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts concerned with sending off the ransom; confession of misdeeds; praise to Vajrapani, Maitreyanatha, Avalokiteśvara; and prayer."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 , bdr:T529 , bdr:T67 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1989 , bdr:W1NLM1989 ;
+        :workIsAbout        bdr:T106 , bdr:T1CZ9 , bdr:T337 , bdr:T390 , bdr:T681 .
+}

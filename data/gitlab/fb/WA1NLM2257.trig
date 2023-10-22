@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2257 {
+    bda:LG544D731F1B3013E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-11T09:08:26.117Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFEA58F5DF464E04B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2257"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2257  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2257 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA1NLM2257.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2257 ;
+        adm:logEntry        bda:LG544D731F1B3013E7 , bda:LGFEA58F5DF464E04B , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE896F6EEADB7C05E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2257  a       :Work ;
+        skos:prefLabel      "kha bar ma dkar nag khra gsum gyi gtor ma'i cho ga bklag pas don grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thuh+chA len thung pa'i lag len/ 2 btis pa'i rna rtsa brtag pa dwangs shel me long / 3 gnas bzhi gza' lnga / 4 lug gi yams nad la lug thug la tshe thar btsugs par 'dod pa/ 5 bai dkar bag rtsis las lo 'gros sdebs pa l sogs re'u mig tu bsgrigs pa/ 7 klu'i rgya yig bsrub nad gdon mthar byed nor bu'i dbang mdzod/ 8 gshin krje byis pa'i yum bzhi/ 9 dpal phyag na rdo rje gos sngon can gyi sgrub thabs dngos grub gter mdzod/ 10 man ngag dar lcog 11 na rkun ma'i mgo bskor myur du dus la 'ong gyur/ 12 rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs mdor bsdus chos srung gtor 'bul dang bcas pa dngos grub kun 'byung / 13 lcam sring dgun gyi rgyal mo'i bskang bshags bstod bskul/ 14 lcam sring dgun gyi rgyal a di rgyal mo'i sgo nas rnga mong than bzlog 15 'go ba'i lha lnga'i bskang bshags ji ltar byas tshul bstod bskul dang bcas pa/ 16 sgo lha mchod tshul/"@en , "Bali offering ritual of Khabarma deity; other text also included."@en ;
+        :creator            bdr:CRE896F6EEADB7C05E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM2257 , bdr:W1NLM2257 ;
+        :workIsAbout        bdr:T2269 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18185 {
+    bda:LGBF49EAF6441420DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-23T14:38:47.01Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD81B452177767515
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-23T14:48:44.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG18185  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18185 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/WA1KG18185.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18185 ;
+        adm:logEntry        bda:LGBF49EAF6441420DC , bda:LGD81B452177767515 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR47B455BB60E56DD4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG18185  a       :Work ;
+        skos:altLabel       "chos mngon pa'i mdzod kyi tshig le'ur byas pa slob dpon shAkya'i dge slong dbyig gnyen gyis mdzad pa'i rnam bshad tshig don dang 'grel ba'i dwogs gcod chos mngon dpag bsam 'dod 'jo/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod 'grel dwogs gcod chos mngon dpag bsam 'dod 'jo/"@bo-x-ewts ;
+        :catalogInfo        "Analytical notes on the commentary of Abhidharmakosa of Vasubhandu."@en ;
+        :creator            bdr:CR47B455BB60E56DD4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2023 ;
+        :workHasInstance    bdr:MW1KG18185 , bdr:W1KG18185 ;
+        :workIsAbout        bdr:WA19720 .
+}

@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17622 {
+    bda:LG01755783646FF113
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T17:37:44.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG35F1C82BCF2F68B1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-05T04:39:07.661Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG816FE11FDAEB29A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-25T11:06:22.947Z"^^xsd:dateTime ;
+        adm:logMessage      "changed T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB50263BF623ABC7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T12:44:02.247Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGB000004 to P64"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBCD2D8CE565B8C26
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T22:26:49.035Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGEC588F16C68A8860
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2PD17622  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17622 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "22/WA2PD17622.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17622 ;
+        adm:logEntry        bda:LG01755783646FF113 , bda:LG35F1C82BCF2F68B1 , bda:LG816FE11FDAEB29A9 , bda:LGB50263BF623ABC7A , bda:LGBCD2D8CE565B8C26 , bda:LGEC588F16C68A8860 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9055EDD3CE459433
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2PD17622  skos:altLabel  "byang chub lam rim chen mo/"@bo-x-ewts .
+
+    bdr:WA2PD17622  a       :Work ;
+        skos:altLabel       "xin yi bai hua <pu ti dao ci di guang lun>"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byang chub lam rim chen mo/"@bo-x-ewts , "新译白话《菩提道次第广论》"@zh-hans ;
+        :creator            bdr:CR9055EDD3CE459433 ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workGenre          bdr:T132 , bdr:T238 ;
+        :workHasInstance    bdr:MW2PD17622 , bdr:W2PD17622 ;
+        :workIsAbout        bdr:T770 .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27599 {
+    bda:LG1838E7EF14FECF93
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-09T09:22:04.356Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG18CF6A789E42BB9A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6486FD3615DA161D
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:42:02.783Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:WA27599  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27599 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "04/WA27599.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27599 ;
+        adm:logEntry        bda:LG1838E7EF14FECF93 , bda:LG18CF6A789E42BB9A , bda:LG6486FD3615DA161D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD7F1E737D8EE4E93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8837 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27599  skos:altLabel  "a collection of short versions from the gesar epic and the esoteric biography of guru padmasambhava"@en-x-mixed .
+
+    bdr:WA27599  a          :Work ;
+        skos:prefLabel      "gling rje ge sar gyi rtsa ba'i mdzad pa mdor bsdus dang slob dpon chen mo nas zur phyung snying bsdus 'ga' zhig"@bo-x-ewts , "a collection of short versions from the gesar epic and the esoteric biography of guru padmasambhava"@en-x-mixed ;
+        :creator            bdr:CRD7F1E737D8EE4E93 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27599 , bdr:W27599 ;
+        :workIsAbout        bdr:P4956 , bdr:T248 .
+}

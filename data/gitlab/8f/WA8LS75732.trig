@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75732 {
+    bda:LG509F84F32E7C8E6C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-24T11:26:04.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA00C0108AD8340B6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-24T11:24:05.615Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFD6ED25515715D8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T20:00:12.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA8LS75732  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75732 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8f/WA8LS75732.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75732 ;
+        adm:logEntry        bda:LG509F84F32E7C8E6C , bda:LGA00C0108AD8340B6 , bda:LGFD6ED25515715D8A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS75732  a       :Work ;
+        skos:prefLabel      "sngon byon mkhas pa'i ngag rig rin chen gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Collection of important literary writings and historical documents; edited by Rinchen Tashi, Sodlo and Rinchen Dorjee."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS75732 , bdr:W8LS75732 ;
+        :workIsAbout        bdr:T1979 , bdr:T2203 .
+}

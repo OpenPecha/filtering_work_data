@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76615 {
+    bda:LG3F032F8C6135EB22
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-18T10:07:07.559Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4418CE553F17AE55
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-02T10:27:45.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA99FE014056FDEDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-02T10:28:11.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76615  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76615 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "01/WA8LS76615.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76615 ;
+        adm:logEntry        bda:LG3F032F8C6135EB22 , bda:LG4418CE553F17AE55 , bda:LGA99FE014056FDEDE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0959705CFDE9058B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76615  a       :Work ;
+        skos:altLabel       "bshes pa'i springs yig gi rnam bshad 'phags pa'i dgongs pa kun gsal/"@bo-x-ewts ;
+        skos:prefLabel      "bshes springs rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Suhrlekha by Kyilzur Geshes Losang Jinpa."@en ;
+        :creator            bdr:CR0959705CFDE9058B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS76615 , bdr:W8LS76615 ;
+        :workIsAbout        bdr:WA22950 .
+}

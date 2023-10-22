@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1463 {
+    bda:LG9C532FD8F4106BDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-26T11:38:43.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA9A5FE0C24EB550C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1463"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1463  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1463 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/WA1NLM1463.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1463 ;
+        adm:logEntry        bda:LG9C532FD8F4106BDE , bda:LGA9A5FE0C24EB550C , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR97235583C5B1CF9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1463  a       :Work ;
+        skos:prefLabel      "'phags pa thugs rje chen po zhal bcu gcig pa dpal mo'i lugs kyi sgrub thabs smyung bar gnas pa'i cho ga dang bcas pa phan bde'i snang ba gsar dngom sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed chen po'i dkyil 'khor bsgrub chog bla 'byung gsol 'debs khum chog bdag 'jug dang bcas pa/ 2 kyil 'khor rin chen 'phreng ba nas bshad pa bzhin za ma tog gi lhan thabs/ 3 dpal myur mdzad ye shes gyi mgon po'i gtor bzlog nag phyogs g.yul las rgyal ba'i mtshon cha/ 4 thugs rje chen po bcu gcig zhal dpal mo lugs kyi dbang gi bla ma brgyud pa'i gsol 'debs/ 5 rje btsun phongs sel sgrol ma gtso byas sgrol ma nyer cig i maN+Dal bzhi pa g.yang 'gug dang bcas pa'i cho ga rin chen gter mdzod/"@en , "Sadhana and fasting ritual of eleven faced Avalokiteshva by seventh Dalai Lama Kelsang Gyatsho and other text."@en ;
+        :creator            bdr:CR97235583C5B1CF9C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1463 , bdr:MW1NLM3 , bdr:W1NLM1463 , bdr:W1NLM3 ;
+        :workIsAbout        bdr:T147 , bdr:T173 , bdr:T525 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS15 {
+    bda:LG1A996B0D5518DE3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG6072B9CA0179343B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-15T15:24:32.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG73A2D14D0C5E09E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-17T16:05:56.562Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9162D8AA985862DF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-27T13:55:53.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS15  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS15 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f3/WA3MS15.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS15 ;
+        adm:logEntry        bda:LG1A996B0D5518DE3B , bda:LG6072B9CA0179343B , bda:LG73A2D14D0C5E09E7 , bda:LG9162D8AA985862DF , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS15  a          :Work ;
+        skos:prefLabel      "reb gong chu ma sde ba dang chu ma'i sngags mang nas rnyed pa'i skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts from Rebgong."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T225 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS15 , bdr:W3MS15 ;
+        :workIsAbout        bdr:G4798 .
+}

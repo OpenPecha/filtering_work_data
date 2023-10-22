@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21536 {
+    bda:LG4EC64B1513B213FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-26T10:16:01.911Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8BB2E110ABA6B305
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-06T15:08:11.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9B613D0A4B29F2BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA1EEA8F624BF4D25
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T15:08:49.832Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF13C1A5FC6BB59BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T12:52:14.411Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21536  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21536 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6a/WA3CN21536.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21536 ;
+        adm:logEntry        bda:LG4EC64B1513B213FE , bda:LG8BB2E110ABA6B305 , bda:LG9B613D0A4B29F2BF , bda:LGA1EEA8F624BF4D25 , bda:LGF13C1A5FC6BB59BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFD5FC34AD6058B56
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21714 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21536  a       :Work ;
+        skos:prefLabel      "longs khang phun tshogs rdo rje'i ched rtsom phyogs sgrig"@bo-x-ewts ;
+        :catalogInfo        "Personal collection of articles by Phuntsok Dorje Longkang."@en ;
+        :creator            bdr:CRFD5FC34AD6058B56 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW3CN21536 , bdr:W3CN21536 ;
+        :workIsAbout        bdr:T370 .
+}

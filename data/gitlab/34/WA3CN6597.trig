@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN6597 {
+    bda:LG2C184D979FF76F38
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-12T11:12:51.945Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4325BCBCB5381F47
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T21:13:27.878Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5C1B1FF82BC2A77A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T16:39:46.952Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG84E6A2AC9952FCE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB83E6B92A80116AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T21:41:51.84Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo \"ge gsar\" to \"ge sar\""@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN6597  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN6597 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "34/WA3CN6597.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN6597 ;
+        adm:logEntry        bda:LG2C184D979FF76F38 , bda:LG4325BCBCB5381F47 , bda:LG5C1B1FF82BC2A77A , bda:LG84E6A2AC9952FCE6 , bda:LGB83E6B92A80116AB , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN6597  skos:altLabel  "格萨尔唐卡"@zh-hans .
+
+    bdr:WA3CN6597  a        :Work ;
+        skos:prefLabel      "ge sar sgrung thang /"@bo-x-ewts , "格萨尔唐卡"@zh-hans ;
+        :catalogInfo        "Gesar Thangka with Episodes from the Gesar epics"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN6597 , bdr:W3CN6597 ;
+        :workIsAbout        bdr:T1125 , bdr:T248 .
+}

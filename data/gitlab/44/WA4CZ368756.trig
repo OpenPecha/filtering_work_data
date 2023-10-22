@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368756 {
+    bda:LG1466536E3C416EF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T09:18:31.993Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG885E4E1EFC31FFF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:56:48.198Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC947D384A13B1206
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T11:16:38.172Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368756  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368756 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "44/WA4CZ368756.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368756 ;
+        adm:logEntry        bda:LG1466536E3C416EF6 , bda:LG885E4E1EFC31FFF1 , bda:LGC947D384A13B1206 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6752AC8D564D83B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7348 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ368756  a      :Work ;
+        skos:altLabel       "bka' pod lnga las brtsams pa'i byis pa'i 'char sgo byis pa mtshar ba'i sgyu ma las dbu ma sum 'grel/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma sum 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Chandrakirti's Madhyamakavatara"@en ;
+        :creator            bdr:CR6752AC8D564D83B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ368756 , bdr:W4CZ368756 ;
+        :workIsAbout        bdr:WA19458 .
+}

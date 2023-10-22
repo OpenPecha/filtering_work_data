@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68172 {
+    bda:LG6132A312B1E3DCFC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-27T11:44:42.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6B45BF258C65893A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T14:06:43.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEA2B705506033A83
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFCB74509C3B8EF76
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T11:43:23.93Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68172  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68172 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/WA8LS68172.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68172 ;
+        adm:logEntry        bda:LG6132A312B1E3DCFC , bda:LG6B45BF258C65893A , bda:LGEA2B705506033A83 , bda:LGFCB74509C3B8EF76 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS68172  a       :Work ;
+        skos:altLabel       "mi na bar gnas par bya ba'i bstan bcos nad med tshe bsring rig pa man ngag kun gyi snying po/"@bo-x-ewts ;
+        skos:prefLabel      "nad med tshe bsring rig pa/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of work on prolonging the life by Konchok Gyaltshen."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS68172 , bdr:W8LS68172 ;
+        :workIsAbout        bdr:T1GS145345 , bdr:T85 .
+}

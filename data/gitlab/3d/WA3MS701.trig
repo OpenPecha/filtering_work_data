@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS701 {
+    bda:LG0A64C85CD23E6219
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-13T10:32:48.315Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG191EAAB3F66C7F81
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-16T16:30:10.932Z"^^xsd:dateTime ;
+        adm:logMessage      "changed it to restricted by quality."@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8B868060E14A4331
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-18T11:17:39.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGB6D1D6F0F581562B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE6AEB38C7056CAFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T12:00:28.021Z"^^xsd:dateTime ;
+        adm:logMessage      "improved biblio title"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS701  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS701 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3d/WA3MS701.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS701 ;
+        adm:logEntry        bda:LG0A64C85CD23E6219 , bda:LG191EAAB3F66C7F81 , bda:LG8B868060E14A4331 , bda:LGB6D1D6F0F581562B , bda:LGE6AEB38C7056CAFD , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS701  a         :Work ;
+        skos:altLabel       "nang sog lcang lung dgon nas rnyed pa'i bod kyi dpe rnying skor/"@bo-x-ewts ;
+        skos:prefLabel      "lcang lung dgon nas rnyed pa'i bod kyi dpe rnying skor/"@bo-x-ewts ;
+        :catalogInfo        "The collection of rare texts from Chang lung Monasterry In Inner Mongolia"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS701 , bdr:W3MS701 ;
+        :workIsAbout        bdr:G262 .
+}

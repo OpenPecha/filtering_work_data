@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20555 {
+    bda:LG0B3AEFD03B1C74D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGC54EDAEAB5350352
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-15T15:32:05.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDD0500BAF1769946
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T10:19:14.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF5CCA95922B94BB4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:54:02.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20555  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20555 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d6/WA8LS20555.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20555 ;
+        adm:logEntry        bda:LG0B3AEFD03B1C74D3 , bda:LGC54EDAEAB5350352 , bda:LGDD0500BAF1769946 , bda:LGF5CCA95922B94BB4 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2B59F64E94439733
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75299 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS20555  a       :Work ;
+        skos:prefLabel      "sras mo rdo rje'i gtam rgyud/"@bo-x-ewts ;
+        :catalogInfo        "The princess Vajra story from Damomurkha sutra translated by Mao Jetsun."@en ;
+        :creator            bdr:CR2B59F64E94439733 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T1KG26395 , bdr:T276 ;
+        :workHasInstance    bdr:MW8LS20555 , bdr:W8LS20555 .
+}

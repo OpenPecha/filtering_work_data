@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17974 {
+    bda:LGC7B18C7DCF75C05B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-01T10:19:20.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDC7D11B2B203B293
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-01T10:18:04.301Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEEB8CE6C5AD0F29E
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-08-03T12:10:23.331Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS17974  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17974 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c6/WA8LS17974.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17974 ;
+        adm:logEntry        bda:LGC7B18C7DCF75C05B , bda:LGDC7D11B2B203B293 , bda:LGEEB8CE6C5AD0F29E , bda:LGIM4D99209C62 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD7C7C9C24F82001F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17974  a       :Work ;
+        skos:altLabel       "mkhas shing grub pa'i skyes mchog bka' drin zla med mtshan brjod par dka' ba dge ba'i bshes gnyen chen po 'bras blo gling pha ra mkhan chen rje btsun pad ma rgyal mtshan mchog gi mdzad rnam dad gsum pad mo'i dga' tshal rnam par bzhad pa'i nyin byed dbang po/"@bo-x-ewts ;
+        skos:prefLabel      "'bras blo gling pha ra mkhan zur pad ma rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "BIography of Phara Khenzur Pedma Gyaltsen, former abbot of Drepung Loseling monastery ; written by his student Phara Geshe Namgyal Wangchen."@en ;
+        :creator            bdr:CRD7C7C9C24F82001F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS17974 , bdr:W8LS17974 ;
+        :workIsAbout        bdr:P4554 .
+}

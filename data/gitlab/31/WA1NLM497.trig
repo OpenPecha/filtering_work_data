@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM497 {
+    bda:LG328B67D9C0ACEEDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGBDE98C5640344C2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-12T16:26:16.676Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC3C4D833C008BC2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-11T09:35:19.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM497"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM497  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM497 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "31/WA1NLM497.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM497 ;
+        adm:logEntry        bda:LG328B67D9C0ACEEDE , bda:LGBDE98C5640344C2A , bda:LGC3C4D833C008BC2C , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR56C6FFCC3E8F0EA3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM497  a        :Work ;
+        skos:prefLabel      "rta mgrin gyi bzlog pa rnam rgyal stobs kyi mtshon cha sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sadhana focus on the practice of wrathful Hayagriva for preventing harmful spirits."@en ;
+        :creator            bdr:CR56C6FFCC3E8F0EA3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM497 , bdr:W1NLM497 ;
+        :workIsAbout        bdr:T1111 .
+}

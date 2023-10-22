@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM447 {
+    bda:LG3162ADB305D2F7E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-11T10:49:18.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4DF1DA30D1682447
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG8C47D9A90ADAC027
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T14:05:39.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM447"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM447  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM447 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f5/WA1NLM447.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM447 ;
+        adm:logEntry        bda:LG3162ADB305D2F7E8 , bda:LG4DF1DA30D1682447 , bda:LG8C47D9A90ADAC027 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM447  a        :Work ;
+        skos:prefLabel      "ye shes mkha' 'gro ma seng+ge'i gdong pa can gyi bzlog pa bsgyur sogs/"@bo-x-ewts ;
+        :catalogInfo        "An exorcism ritual of Simhamukhi; included other text also."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM447 , bdr:W1NLM447 ;
+        :workIsAbout        bdr:T1726 , bdr:T400 .
+}

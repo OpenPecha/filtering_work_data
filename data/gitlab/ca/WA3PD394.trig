@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD394 {
+    bda:LG770DDB38412CD55B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-13T12:57:15.727Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected isbn"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7A21DD7D11410AF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:11:01.039Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGACDDF6D8FC9E5CAA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-08T23:34:51.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC5F1B7C7E26D3511
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-09T09:48:02.638Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE061DFA3B9B5A490
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD394  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD394 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ca/WA3PD394.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD394 ;
+        adm:logEntry        bda:LG770DDB38412CD55B , bda:LG7A21DD7D11410AF0 , bda:LGACDDF6D8FC9E5CAA , bda:LGC5F1B7C7E26D3511 , bda:LGE061DFA3B9B5A490 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16786 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW3PD394  skos:altLabel  "果岭"@zh-hans .
+
+    bdr:WA3PD394  a         :Work ;
+        skos:altLabel       "guo ling"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'gog gling /"@bo-x-ewts , "果岭"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3PD394 ;
+        :workIsAbout        bdr:T248 .
+}

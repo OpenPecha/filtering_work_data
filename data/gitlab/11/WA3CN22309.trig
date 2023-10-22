@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22309 {
+    bda:LG799EFD39A283FACC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-24T21:24:22.56Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9B2100B7C14C2996
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-24T21:23:55.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB9FB6A156521361E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE2069E918394500D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-17T15:18:42.134Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22309  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22309 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "11/WA3CN22309.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22309 ;
+        adm:logEntry        bda:LG799EFD39A283FACC , bda:LG9B2100B7C14C2996 , bda:LGB9FB6A156521361E , bda:LGE2069E918394500D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9FF5578396779E5F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22309  a       :Work ;
+        skos:altLabel       "deb ther dpyid kyi rgyal mo'i glu dbyangs/"@bo-x-ewts , "gangs can yul gyi sa la spyod pa'i mtho ris kyi rgyal blon gtso bor brjod pa'i deb ther rdzogs ldan gzhon nu'i dga' ston dpyid kyi rgyal mo'i glu dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "gangs can yul gyi rgyal blon gtso bor brjod pa'i deb ther/"@bo-x-ewts ;
+        :catalogInfo        "Chronicle of the ruling families in Tibet from the 7th to the 17th century by 5th Dalai Lama."@en ;
+        :creator            bdr:CR9FF5578396779E5F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
+        :workHasInstance    bdr:MW3CN22309 , bdr:W3CN22309 ;
+        :workIsAbout        bdr:T1113 .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD192038 {
+    bda:LG0631DB1D3860D6CB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-27T11:22:42.87Z"^^xsd:dateTime ;
+        adm:logMessage      "new records"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3459C8EFDA869353
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-08-06T22:04:49.996Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3C667A8D25EA7C47
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T11:23:32.736Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6189E71C75480727
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-18T11:13:45.33Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG848BC025B26D630A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-16T10:38:47.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAEC80CB0F93164E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-16T10:38:10.523Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD8AB6049D6955859
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1PD192038  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD192038 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "3a/WA1PD192038.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD192038 ;
+        adm:logEntry        bda:LG0631DB1D3860D6CB , bda:LG3459C8EFDA869353 , bda:LG3C667A8D25EA7C47 , bda:LG6189E71C75480727 , bda:LG848BC025B26D630A , bda:LGAEC80CB0F93164E2 , bda:LGD8AB6049D6955859 , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRABABD21A5640B428
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1457 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD192038  skos:altLabel  "噶玛鑫达"@zh-hans .
+
+    bdr:WA1PD192038  a      :Work ;
+        skos:altLabel       "dus gsum gyi rgyal ba sras dang bcas pa'i bstan pa mtha' dag dang khyad par rdo rje 'chang karma pa'i dgongs pa gsal bar byed pa'i bstan bcos thar pa'i lam chen bgrod pa'i shing rta/"@bo-x-ewts , "ga ma xin da"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "karma shing rta/"@bo-x-ewts , "噶玛鑫达"@zh-hans ;
+        :catalogInfo        "Detailed explanation on notion of mahayana and vajrayana according to Kagyue tradition written by Karmapa 08 Mikyo Dorje (1507-1554)."@en ;
+        :creator            bdr:CRABABD21A5640B428 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW1PD192038 , bdr:MW1TLMTGA001315 , bdr:W1PD192038 ;
+        :workIsAbout        bdr:T1187 .
+}

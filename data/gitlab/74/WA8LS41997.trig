@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS41997 {
+    bda:LG304B23FFD98AC643
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-08T09:02:56.652Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG63F34346E54D3A3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T14:33:34.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC01EA92147826767
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-08T09:11:22.132Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS41997  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS41997 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "74/WA8LS41997.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS41997 ;
+        adm:logEntry        bda:LG304B23FFD98AC643 , bda:LG63F34346E54D3A3F , bda:LGC01EA92147826767 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR148A04F94C18F3F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10689 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR1ABD980B92525E35
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75226 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR710840981BF21E2B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5843 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS41997  a       :Work ;
+        skos:prefLabel      "ma'i ko ro sopha worD 2007 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Introduction of Microsoft Word 2007."@en ;
+        :creator            bdr:CR148A04F94C18F3F2 , bdr:CR1ABD980B92525E35 , bdr:CR710840981BF21E2B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS41997 , bdr:W8LS41997 ;
+        :workIsAbout        bdr:T2412 .
+}

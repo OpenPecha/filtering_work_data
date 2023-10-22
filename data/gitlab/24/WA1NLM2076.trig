@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2076 {
+    bda:LG208A092501A3F196
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG5DDDE303E2230469
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-06T12:20:11.227Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2076"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2076  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2076 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "24/WA1NLM2076.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2076 ;
+        adm:logEntry        bda:LG208A092501A3F196 , bda:LG5DDDE303E2230469 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2076  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' po'i gcig pa'i mngon rtogs mdor bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gshin rje'i sgo gcod pa'i thabs/ 2 'phags pa seng+ge sgra la brten pa'i yul khrus bya tshul/ 3 al tha'i rgyal po la mchod gtor 'bul tshul bcas/ 4 al tha'i rgyal po 'khor bcas kyi gshegs gtor phan bde'i 'byung gnas/ al tha'i rgyal po 'khor bcas kyi tshor mchod bdud rtsi'i char 'bebs/ 5 bka' bsrung dregs pa sde brgyad kyi bskang gsol 'phrin las myur 'gyogs/ sde brgyad drag po'i gtor bzlog rno myur rdo rje'i pha lam/ 6 bzlog bsgyur/ 7 bka' bsrung dregs pa sde brgyad kyi zor cho ga gnam lcags rdo rje'i thog mda'/ 8 spyan 'dren zhing bzhugs su gsol te tshogs byin gyis rlabs ba sogs 'dod don gsol ba/ 9 'chi nges kyi srog glud bya tshul srog gi chad 'thud/ 10 u rgyan pad+ma 'byung gnas kyi mnga' mdzad pa'i sgo nas mnol bsang gi grib sel bcos thabs/ 11 grwa lnga'i mar me nag po 'bar ba'i glud 'don/ 12 rdo rje 'jigs byed kyi bsten pa'i phur bu 'grub pa'i cho ga 'phrin las 'grub pa'i rdo rje gnam lcags/ 13 g.yang rgyu ba'i 'gong po bkar pa'i mdos/ 14 'gong po bkar ba'i dmu 'dre bse rag spun dgu'i bcos thabs/"@en , "Visualization of solitary Vajrabairava; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM2076 , bdr:W1NLM2076 ;
+        :workIsAbout        bdr:T104 .
+}

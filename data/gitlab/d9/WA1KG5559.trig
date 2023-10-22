@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG5559 {
+    bda:LG6656799F5A0FEB58
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-12T11:11:05.81Z"^^xsd:dateTime ;
+        adm:logMessage      "marked copyright"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB6CE57E5DD011701
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-22T10:18:02.902Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF0D542882096515F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-07-02T09:35:50.195Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG5559  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG5559 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "d9/WA1KG5559.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG5559 ;
+        adm:logEntry        bda:LG6656799F5A0FEB58 , bda:LGB6CE57E5DD011701 , bda:LGF0D542882096515F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR039EEB4DD4829F2A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG5559  a        :Work ;
+        skos:altLabel       "Chos bsdus paʼi tshig mdzod =Dharmasaṅgrahakośaḥ /[compiled by] J. S. Negi."@en-x-mixed ;
+        skos:prefLabel      "chos bsdus pa'i tshig mdzod/"@bo-x-ewts , "tibetan-sanskrit dharma terms with categories"@en , "dharmasangraha-kosah"@sa-alalc97 ;
+        :catalogInfo        "Tibetan and Sanskrit dictionary of Buddhist terminology."@en ;
+        :creator            bdr:CR039EEB4DD4829F2A ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangSa ;
+        :workGenre          bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW1KG5559 , bdr:W1KG5559 .
+}

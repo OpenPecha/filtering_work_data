@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ45265 {
+    bda:LG888079D78EE438A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-05T15:53:32.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE3F5E5428EA7D1B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-05T15:49:59.527Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ45265  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ45265 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "72/WA4CZ45265.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ45265 ;
+        adm:logEntry        bda:LG888079D78EE438A3 , bda:LGE3F5E5428EA7D1B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR512399018C4B3564
+        a                   :AgentAsCreator ;
+        :agent              bdr:P461 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:CRBF9423FA4C6A7B6B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1518 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRFF3970B906B9F3D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4007 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW4CZ45265  skos:altLabel  "tathagatanamasamgitikalpikabhadralamkaramala"@sa-x-ndia .
+
+    bdr:WA4CZ45265  a       :Work ;
+        skos:altLabel       "de bzhin gshegs pa'i mtshan brjod bskal bzang rgyan gyi phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "bskal bzang rgyan gyi phreng ba/"@bo-x-ewts , "tathagatanamasamgitikalpikabhadralamkaramala"@sa-x-ndia ;
+        :catalogInfo        "Names or Epithets of the Buddha from gzungs bsdus and also in bstan 'gyur."@en ;
+        :creator            bdr:CR512399018C4B3564 , bdr:CRBF9423FA4C6A7B6B , bdr:CRFF3970B906B9F3D8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ45265 , bdr:W4CZ45265 ;
+        :workIsAbout        bdr:T1212 , bdr:T386 .
+}

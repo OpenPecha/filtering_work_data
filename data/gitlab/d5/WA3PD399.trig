@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD399 {
+    bda:LG0CF788BDBA7A5668
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T04:45:57.486Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2AB73878940B7899
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-19T10:32:06.828Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG746C0EB880073ACE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB4B7F99E613B106B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T14:23:44.295Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC63CB772C31C17B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:11:19.539Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD399  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD399 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d5/WA3PD399.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD399 ;
+        adm:logEntry        bda:LG0CF788BDBA7A5668 , bda:LG2AB73878940B7899 , bda:LG746C0EB880073ACE , bda:LGB4B7F99E613B106B , bda:LGC63CB772C31C17B2 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR431C9A5B0AF0254D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG745 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3PD399  skos:altLabel  "小五明概论"@zh-hans .
+
+    bdr:WA3PD399  a         :Work ;
+        skos:altLabel       "xiao wu ming gai lun"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rig pa'i gnas chung lnga'i rnam gzhag gsal 'grel/"@bo-x-ewts , "小五明概论"@zh-hans ;
+        :creator            bdr:CR431C9A5B0AF0254D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW3PD399 , bdr:W3PD399 ;
+        :workIsAbout        bdr:T229 .
+}

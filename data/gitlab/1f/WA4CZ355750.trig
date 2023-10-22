@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355750 {
+    bda:LG2922221FDDD2EB12
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-30T11:43:32.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC61FED5A6AB9E27F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF558F051BE33232D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:31:22.383Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ355750  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355750 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1f/WA4CZ355750.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355750 ;
+        adm:logEntry        bda:LG2922221FDDD2EB12 , bda:LGC61FED5A6AB9E27F , bda:LGF558F051BE33232D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6E69E9C4EAF17CAA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG22980 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ355750  a      :Work ;
+        skos:altLabel       "2017 lo'i seng rdor gyi rtsom gsar sna tshogs/"@bo-x-ewts ;
+        skos:prefLabel      "sdig pa ra tsa/"@bo-x-ewts ;
+        :catalogInfo        "A collection of poems and spontaneous songs"@en ;
+        :creator            bdr:CR6E69E9C4EAF17CAA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ355750 , bdr:W4CZ355750 ;
+        :workIsAbout        bdr:T1KG6100 , bdr:T281 .
+}

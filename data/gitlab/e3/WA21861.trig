@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21861 {
+    bda:LG285CC0C2CC88B7E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA477610058EF87A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-01T10:10:34.76Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAE5BC8A363D40BCB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-01T10:11:59.933Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE181A7926C9568B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21861  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21861 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e3/WA21861.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21861 ;
+        adm:logEntry        bda:LG285CC0C2CC88B7E5 , bda:LGA477610058EF87A1 , bda:LGAE5BC8A363D40BCB , bda:LGE181A7926C9568B2 , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05910D34EE4D8B4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7374 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB2378FD0E2F7CF54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1046 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW21861  skos:altLabel  "nagananda"@sa-alalc97 , "龙喜记"@zh-hans .
+
+    bdr:WA21861  a          :Work ;
+        skos:altLabel       "long xi ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "klu kun tu dga' ba'i zlos gar/"@bo-x-ewts , "nagananda"@sa-alalc97 , "龙喜记"@zh-hans ;
+        :catalogInfo        "A play written by Harsadeva and translated into Tibetan by Shongton Dorje Gyaltsen."@en ;
+        :creator            bdr:CR05910D34EE4D8B4B , bdr:CRB2378FD0E2F7CF54 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21861 , bdr:W21861 ;
+        :workIsAbout        bdr:T256 .
+}

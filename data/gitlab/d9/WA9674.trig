@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9674 {
+    bda:LG9864DBC074804954
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T16:42:27.121Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGB429BAAFF60713ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T12:26:22.572Z"^^xsd:dateTime ;
+        adm:logMessage      "addded print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGCF34EDBDC353865E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA9674  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9674 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d9/WA9674.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9674 ;
+        adm:logEntry        bda:LG9864DBC074804954 , bda:LGB429BAAFF60713ED , bda:LGCF34EDBDC353865E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR900456EE61ECBE66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P708 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW9674  skos:altLabel  "advice on the proper practice of the solitary retreat"@en .
+
+    bdr:WA9674  a           :Work ;
+        skos:prefLabel      "bca' yig ri chos zhal gdams/"@bo-x-ewts , "advice on the proper practice of the solitary retreat"@en ;
+        :creator            bdr:CR900456EE61ECBE66 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW9674 , bdr:W9674 ;
+        :workIsAbout        bdr:T1109 .
+}

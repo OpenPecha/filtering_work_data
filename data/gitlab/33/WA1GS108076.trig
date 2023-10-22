@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1GS108076 {
+    bda:LG06E0FF804EBF6172
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-19T12:54:41.996Z"^^xsd:dateTime ;
+        adm:logMessage      "complited the work record"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1711F22E79C2EEE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-03T12:37:40.855Z"^^xsd:dateTime ;
+        adm:logMessage      "update language encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG235D92F89E361B2B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-17T16:14:36.679Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG28C32760E6447A98
+        a                   adm:WithdrawData ;
+        adm:logDate         "2016-01-20T11:19:31.653Z"^^xsd:dateTime ;
+        adm:logMessage      "Withdrawn - W630"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7B40B1577165414C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-01T10:04:06.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC93261DD396117BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-01T10:14:49.888Z"^^xsd:dateTime ;
+        adm:logMessage      "selected restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE42DA51135F6EB14
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-19T12:56:12.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF119E4B78BA1EF83
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-01T09:53:14.198Z"^^xsd:dateTime ;
+        adm:logMessage      "removed failed scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1GS108076  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1GS108076 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "33/WA1GS108076.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1GS108076 ;
+        adm:logEntry        bda:LG06E0FF804EBF6172 , bda:LG1711F22E79C2EEE7 , bda:LG235D92F89E361B2B , bda:LG28C32760E6447A98 , bda:LG7B40B1577165414C , bda:LGC93261DD396117BE , bda:LGE42DA51135F6EB14 , bda:LGF119E4B78BA1EF83 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR82CE640CDE6142CE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5860 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRAF51D6B121CD4DC1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4930 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA1GS108076  a      :Work ;
+        skos:altLabel       "rje tsong kha pa chen pos mdzad pa'i rten 'brel bstod pa legs bshad snying po/"@bo-x-ewts ;
+        skos:prefLabel      "rten 'brel bstod pa/"@bo-x-ewts , "pratityasamutpadastutisubhsitahrddayam"@sa-x-ndia ;
+        :catalogInfo        "Famous verse work in praise of the pratityasamutpada by tsong kha pa translated in to Hindi by Gyaltsen Namdrol and Ngawang Samtan at Varanasi."@en ;
+        :creator            bdr:CR82CE640CDE6142CE , bdr:CRAF51D6B121CD4DC1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangHi ;
+        :workGenre          bdr:T240 ;
+        :workHasInstance    bdr:MW1GS108076 , bdr:W1GS108076 ;
+        :workIsAbout        bdr:WA630 .
+}
