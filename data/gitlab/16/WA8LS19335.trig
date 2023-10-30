@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19335 {
+    bda:LG2A2468CB510615F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-19T09:04:08.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topics, content and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6AB4E3B16B1326BD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-05T14:47:16.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8C4F51A906AFDF01
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-05T12:23:19.782Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19335  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19335 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "16/WA8LS19335.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19335 ;
+        adm:logEntry        bda:LG2A2468CB510615F4 , bda:LG6AB4E3B16B1326BD , bda:LG8C4F51A906AFDF01 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA19884 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRE5D2FF6A52CC6395
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6243 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19335  a       :Work ;
+        skos:altLabel       "rig 'dzin gar gyi dbang phyug gi gsung 'bum/ tha nas 'a bar/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ rig 'dzin gar gyi dbang phyug"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Rigzin Gargyi Wangchuk."@en ;
+        :creator            bdr:CRE5D2FF6A52CC6395 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:P6243 , bdr:T1082 .
+}

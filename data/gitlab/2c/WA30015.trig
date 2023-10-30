@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30015 {
+    bda:LG1F041F45803B6DFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-11-27T10:16:17.053Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG840183F68F059F6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-20T17:39:14.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added zin tig as genre"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG8CC4152362C201A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG90D9DFEC922D41C4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30015  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30015 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "2c/WA30015.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30015 ;
+        adm:logEntry        bda:LG1F041F45803B6DFC , bda:LG840183F68F059F6B , bda:LG8CC4152362C201A6 , bda:LG90D9DFEC922D41C4 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR07CC1A18B6981CF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRBE58594AB67F1AA4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6528 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA30015  a          :Work ;
+        skos:altLabel       "'tsho byed las dang po la nyer bar mkho ba'i zin tig gces par btus pa bdud rtsi'i thigs pa/"@bo-x-ewts , "gso ba rig pa'i bstan bcos chen po dpal ldan rgyud bzhi'i dka' 'grel mkhas pa'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "gso rig"@bo-x-ewts ;
+        :catalogInfo        "On the science of medicine in Tibet."@en ;
+        :creator            bdr:CR07CC1A18B6981CF8 , bdr:CRBE58594AB67F1AA4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:IE30015 , bdr:MW30015 , bdr:W30015 ;
+        :workIsAbout        bdr:T012AG03520 , bdr:T85 .
+}

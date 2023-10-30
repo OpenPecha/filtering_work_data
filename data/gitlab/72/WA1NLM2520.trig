@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2520 {
+    bda:LG83609794C4400060
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T11:53:59.328Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlod and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF82A892B4BC9B5F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2520"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2520  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2520 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "72/WA1NLM2520.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2520 ;
+        adm:logEntry        bda:LG83609794C4400060 , bda:LGF82A892B4BC9B5F6 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3EC3FCC107E099E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR91E45E8C210985AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2520  a       :Work ;
+        skos:prefLabel      "bar do'i 'phrang sgrol gyi gsol 'debs 'jigs skyobs kyi dpa' bo rnam par lta bu gsum du grod pa'i gzhung lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "The prayer of Antarabhava, detailed commentary on a stotra in praise of the goddess Kurukulla and collection of rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CR3EC3FCC107E099E4 , bdr:CR91E45E8C210985AD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2520 , bdr:W1NLM2520 ;
+        :workIsAbout        bdr:T165 .
+}

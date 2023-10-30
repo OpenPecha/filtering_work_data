@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22961 {
+    bda:LG28AA1E558105B2FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG45D0754A1F0F6316
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-30T14:58:56.071Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG674C48CCA44C94DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-13T15:45:12.767Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBF543AF02D96B911
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-30T22:03:24.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22961  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22961 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "50/WA3CN22961.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22961 ;
+        adm:logEntry        bda:LG28AA1E558105B2FF , bda:LG45D0754A1F0F6316 , bda:LG674C48CCA44C94DB , bda:LGBF543AF02D96B911 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9BEE8805CA27E049
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22961  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ pad+ma 'gyur med rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Nyingma master Minling Pema Gyurmey Gyatso (1686-1718)."@en ;
+        :creator            bdr:CR9BEE8805CA27E049 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN22961 , bdr:W3CN22961 ;
+        :workIsAbout        bdr:T1082 .
+}

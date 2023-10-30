@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16250 {
+    bda:LG2BB06C6500A1229F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-13T09:52:10.811Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG83C6C655527E66CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-13T09:53:54.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD4B407D38020CDFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-03T09:36:58.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio and note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF8858CDE4719C6C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-28T13:34:40.673Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1769 to T194"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16250  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16250 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f1/WA8LS16250.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16250 ;
+        adm:logEntry        bda:LG2BB06C6500A1229F , bda:LG83C6C655527E66CD , bda:LGD4B407D38020CDFA , bda:LGF8858CDE4719C6C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS16250  a       :Work ;
+        skos:altLabel       "zhi byed bka' babs rnam pa gsum gyi bla brgyud gsol 'debs gser phreng mar grags pa/"@bo-x-ewts ;
+        skos:prefLabel      "zhi byed bka' babs rnam pa gsum gyi bla brgyud gsol 'debs/"@bo-x-ewts ;
+        :catalogInfo        "Prayer to teachers of the transmission lineage of Zhije or pacification, tradition founded by Phadampa Sanggye, author unknown. Handwritten manuscript in Umed script."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T11 ;
+        :workHasInstance    bdr:MW8LS16250 , bdr:W8LS16250 ;
+        :workIsAbout        bdr:T194 .
+}

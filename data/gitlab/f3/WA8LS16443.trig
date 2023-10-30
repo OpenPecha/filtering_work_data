@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16443 {
+    bda:LG77EA68BCEDE78F12
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-06T14:11:15.502Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9E1D7A44554A5B0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T16:28:52.478Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4781A03AE1CBBA3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-06T14:11:59.832Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16443  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16443 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f3/WA8LS16443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16443 ;
+        adm:logEntry        bda:LG77EA68BCEDE78F12 , bda:LG9E1D7A44554A5B0C , bda:LGB4781A03AE1CBBA3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR718DAAA98501DCD6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVB4A7B188762D95E6
+        a                   :CompletedEvent ;
+        :onYear             "1760"^^xsd:gYear .
+
+    bdr:WA8LS16443  a       :Work ;
+        skos:altLabel       "rig 'dzin mkha' 'gro dgyes pa'i gsang gtam/ yid dpyod grub mtha' 'jig pa'i tho lum/ snying phyung lag mthil bkram pa'i man ngag /gsang bdag dga' rab dpa' bo'i thol glu/ kun mkhyen zhal lung bdud rtsi'i thig pa/"@bo-x-ewts ;
+        skos:prefLabel      "kun mkhyen zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "An instruction for the pratice of great perfection by Jigme Lingpa composed at the age of thirty two."@en ;
+        :creator            bdr:CR718DAAA98501DCD6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVB4A7B188762D95E6 ;
+        :workGenre          bdr:T613 ;
+        :workHasInstance    bdr:MW8LS16443 , bdr:W8LS16443 ;
+        :workIsAbout        bdr:T354 .
+}

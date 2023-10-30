@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15672 {
+    bda:LG0034C23078C68E82
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-30T16:57:04.069Z"^^xsd:dateTime ;
+        adm:logMessage      "restricktedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2D4C749D51C75D87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T16:12:31.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF19548D82676371B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-09T16:16:00.08Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN15672  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15672 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6b/WA3CN15672.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15672 ;
+        adm:logEntry        bda:LG0034C23078C68E82 , bda:LG2D4C749D51C75D87 , bda:LGF19548D82676371B , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN15672  a       :Work ;
+        skos:prefLabel      "snyan ngag gi mtshan nyid bsdus pa rtsom dpe dang bcas pa sna tshogs ut+pal la'i chun po/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan poetic example."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN15672 , bdr:MW3PD988_DF7BB6 , bdr:W3CN15672 ;
+        :workIsAbout        bdr:T204 , bdr:T205 .
+}

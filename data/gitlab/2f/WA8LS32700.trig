@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32700 {
+    bda:LG6E23061AAAE2D23B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-08T14:35:24.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7AE752F55D9994CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T14:36:02.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG801D584FE7D30336
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC1B553A9C3A3EDD3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T16:10:49.009Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32700  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32700 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2f/WA8LS32700.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32700 ;
+        adm:logEntry        bda:LG6E23061AAAE2D23B , bda:LG7AE752F55D9994CC , bda:LG801D584FE7D30336 , bda:LGC1B553A9C3A3EDD3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32700  a       :Work ;
+        skos:prefLabel      "lab rtse dpa' mkhar sogs srid pa'i gsas mkhar gnyan po bzhengs par nyer mkho phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "A necessary items to build fort and cairns."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS32700 , bdr:W8LS32700 ;
+        :workIsAbout        bdr:T2328 , bdr:T247 , bdr:T2DB25444 .
+}

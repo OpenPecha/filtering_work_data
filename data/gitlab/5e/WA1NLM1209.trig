@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1209 {
+    bda:LG12CCDF25816A5656
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-01T14:30:17.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG954705B27917E9D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1209"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1209  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1209 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5e/WA1NLM1209.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1209 ;
+        adm:logEntry        bda:LG12CCDF25816A5656 , bda:LG954705B27917E9D7 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9A1F6BE2A34196A4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1209  a       :Work ;
+        skos:prefLabel      "zhal shes gnad kyi thim yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thun mong rten 'brel sgrig byed pa'iH lha rnams mnyes byed bsangs yig 2 grub pa'i mtha'i rnam par bzhag pa rin po che'i 'phreng ba/ 3 dge 'dun nyi shu'i sngon tshig brjed nges tsha gdung sel ba'i ga pur thigs phreng / 4 dngos po brgyad don bdun cu'i rnam bzhag blo ldan re skong / 5 rgyal ba'i bstan srung spyi la las bzhi'i 'phrin bcol don yod dngos grub myur du 'gugs pa'i lcags kyu/ 6 rgyal po chen po rnam thos sras la gtor ma 'bul tshul 'phrin bcol dang bcas pa don yod dngos kun lhun grub/ 7 kA la tsa kra bla ma dbyer med la bstod pa gsol 'debs gnad don gsal ba'i ngo mtshar 'khor lo bskor ba'i 'od stong / 8 kA la tsa kra bla ma dbyer med la bstod pa gsol 'debs yid bzhin rmad byung ngo mtshar 'khor lo/ 9 rje btsun 'phags ma sgrol ma dkar mo la bstod pa 'phags ma mnyes par byed pa'i dpyid kyi klu dbyangs/ 10 byang chub lam gyis rim pa'i nyams len mdor bsdus/ 11 rje btsun ma 'phongs bsal ba'i sgrol ma'i maN+Dal bzhi ba'i chos bde skyid pod bzhan ba'i nyin byed/ 12 lha mo nor rgyun ma la brten pa'i g.yang 'gug bya tshul mgon dkar dang dzam+b+ha la dkar ser sogs nor lha gzhan la'ang sbyar chog pa/ 13 mtshan mo rgyu tshe srog 'phrog par byed pa'i 'byung po la gtor ma ster tshul/ 14 skal bzang blo bcos bskul ba'i gdams ngag snying chongs/ 15 dga' ldan du skye ba 'dren pa'i gsol 'debs smon tshig nyin byed 'dren pa'i skya rengs/ 16 spyi'i zhabs brtan smon lam thabs shes gzhog tsal/"@en , "Oral instruction's notes and sadhana methods of various anuttarayoga tantras by Tsongkhapa Losang Dakpa; other text also included."@en ;
+        :creator            bdr:CR9A1F6BE2A34196A4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM1209 , bdr:MW20510_413315 , bdr:MW22109_83A24D , bdr:MW22272_A5A81A , bdr:MW22273_AD18D2 , bdr:MW22274_A08D35 , bdr:MW29193_090924 , bdr:MW635_C91565 , bdr:W1NLM1209 ;
+        :workIsAbout        bdr:T00KG02742 , bdr:T1336 , bdr:T4CZ2366 .
+}

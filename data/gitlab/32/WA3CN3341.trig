@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3341 {
+    bda:LG585A046BD8E7C773
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-19T12:29:47.732Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDF7F22DE810ACC95
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-10T11:44:53.984Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE955D11258743469
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-04T19:13:34.347Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEC24C562E6FBA7C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-01T10:38:34.546Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed license"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEEB837E0677C8B21
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:18:18.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN3341  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3341 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "32/WA3CN3341.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3341 ;
+        adm:logEntry        bda:LG585A046BD8E7C773 , bda:LGDF7F22DE810ACC95 , bda:LGE955D11258743469 , bda:LGEC24C562E6FBA7C7 , bda:LGEEB837E0677C8B21 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55E4C871F5FD7DF0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3341  a        :Work ;
+        skos:altLabel       "bod kyi brda sprod pa sum cu pa zhes bya ba'i rnam bshad kun tu bzang po'i dgongs rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "brda sprod pa sum cu pa'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Interpretation of Tibetan grammar."@en ;
+        :creator            bdr:CR55E4C871F5FD7DF0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN3341 , bdr:W3CN3341 ;
+        :workIsAbout        bdr:T4CZ16893 .
+}

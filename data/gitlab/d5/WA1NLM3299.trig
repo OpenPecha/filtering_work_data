@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3299 {
+    bda:LG7B7ED47D909AFE56
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:42:44.519Z"^^xsd:dateTime ;
+        adm:logMessage      "full cadloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDE71F3BF41E3FA72
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3299"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3299  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3299 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d5/WA1NLM3299.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3299 ;
+        adm:logEntry        bda:LG7B7ED47D909AFE56 , bda:LGDE71F3BF41E3FA72 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR63D304D5095477C6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2077 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3299  a       :Work ;
+        skos:prefLabel      "bgegs sel gyi khrid sdug bsngal kun sel rje rin po ches mdzad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Brief instruction on the removal of obstacles (gegs sel) in higherbuddhist practice and other miscellaneous writings"@en ;
+        :creator            bdr:CR63D304D5095477C6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2038 , bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM3299 , bdr:W1NLM3299 .
+}

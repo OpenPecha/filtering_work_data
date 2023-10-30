@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27938 {
+    bda:LG685667F43A8ED89A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7C034160096155FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-02T12:05:10.577Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG819B4B9A628F4044
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T10:27:00.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG8E718AAC69DCBA21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-28T15:50:11.347Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T2199 to T2247"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA27938  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27938 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ee/WA27938.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27938 ;
+        adm:logEntry        bda:LG685667F43A8ED89A , bda:LG7C034160096155FE , bda:LG819B4B9A628F4044 , bda:LG8E718AAC69DCBA21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3D0DA47F3281F7F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA27938  a          :Work ;
+        skos:prefLabel      "las sgrib rgyun gcod kyi sngags brgya pa/"@bo-x-ewts ;
+        :creator            bdr:CR3D0DA47F3281F7F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27938 , bdr:W27938 ;
+        :workIsAbout        bdr:T2247 .
+}

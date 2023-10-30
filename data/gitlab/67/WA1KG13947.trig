@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13947 {
+    bda:LG10902C3EFAA94179
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-21T16:00:51.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG631383FB1E8070BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-16T10:02:50.074Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC1A4BEB7FC320158
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-29T13:06:55.791Z"^^xsd:dateTime ;
+        adm:logMessage      "reveiwed by LS, KG, CN and CZ"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG13947  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13947 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/WA1KG13947.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13947 ;
+        adm:logEntry        bda:LG10902C3EFAA94179 , bda:LG631383FB1E8070BD , bda:LGC1A4BEB7FC320158 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAEFDF9DED23A2D94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5291 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG13947  a       :Work ;
+        skos:altLabel       "rmi lam rdzun bshad sgyu ma'i sgra dbyangs chen mo/"@bo-x-ewts ;
+        skos:prefLabel      "man lung gu ru'i lam yig"@bo-x-ewts ;
+        :catalogInfo        "Travel account of Menlung Soman Pal on the description of Tibet, China and India"@en ;
+        :creator            bdr:CRAEFDF9DED23A2D94 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG13947 , bdr:W1KG13947 ;
+        :workIsAbout        bdr:G3188 , bdr:G3196 , bdr:G3198 , bdr:T2037 .
+}

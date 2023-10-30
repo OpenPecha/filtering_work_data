@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD211 {
+    bda:LGF210017D011F2100
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T12:34:52.438Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as editing"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFA88A24371CDA9AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T15:15:42.437Z"^^xsd:dateTime ;
+        adm:logMessage      "new created record"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFC1FF575AB34E270
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-23T10:38:17.581Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA3PD211  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD211 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/WA3PD211.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD211 ;
+        adm:logEntry        bda:LGF210017D011F2100 , bda:LGFA88A24371CDA9AC , bda:LGFC1FF575AB34E270 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusEditing .
+
+    bdr:WA3PD211  a         :Work ;
+        skos:altLabel       "zhong guo zang xue nian jian 2012"@zh-latn-pinyin ;
+        skos:prefLabel      "中国藏学年鉴2012"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workHasInstance    bdr:MW3PD211 ;
+        :workIsAbout        bdr:T212 .
+}

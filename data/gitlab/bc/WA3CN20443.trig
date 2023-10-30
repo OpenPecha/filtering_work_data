@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN20443 {
+    bda:LG4DAE6AAE6E296889
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-28T12:37:46.579Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7B0AC7F31F3DF7D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T17:27:45.573Z"^^xsd:dateTime ;
+        adm:logMessage      "checked out"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7D253C6268C77C2A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-28T12:33:02.501Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9E9CD334A77EF5F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T13:58:09.445Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarilyrestricted"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE3074375A9D68AC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN20443  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN20443 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bc/WA3CN20443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN20443 ;
+        adm:logEntry        bda:LG4DAE6AAE6E296889 , bda:LG7B0AC7F31F3DF7D0 , bda:LG7D253C6268C77C2A , bda:LG9E9CD334A77EF5F9 , bda:LGE3074375A9D68AC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE734ACCD533F7122
+        a                   :AgentAsCreator ;
+        :agent              bdr:P870 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN20443  a       :Work ;
+        skos:prefLabel      "bde mchog snyan brgyud kyi khrid yig"@bo-x-ewts ;
+        :catalogInfo        "Instruction manual of oral transmissions on the cakrasamvara cycle of the Drukpa Kagyu tradition by 3rd Drukchen Jamyang Chokyi Drakpa (1478-1523)."@en ;
+        :creator            bdr:CRE734ACCD533F7122 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW3CN20443 , bdr:W3CN20443 ;
+        :workIsAbout        bdr:T10MS11132 .
+}

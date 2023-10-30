@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16369 {
+    bda:LG0030630FD7F3DF02
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-06T14:24:34.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4376B18DB41BEA68
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-16T11:58:17.492Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by LS, KG and CZ"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA30B7238EFE2A9EF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-06T14:11:14.546Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16369  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16369 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/WA8LS16369.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16369 ;
+        adm:logEntry        bda:LG0030630FD7F3DF02 , bda:LG4376B18DB41BEA68 , bda:LGA30B7238EFE2A9EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA55FF3D4B3781C39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1360 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16369  a       :Work ;
+        skos:altLabel       "'khor lo sdom pa lha lnga'i sgrub thabs/"@bo-x-ewts ;
+        skos:prefLabel      "'khor lo sdom pa'i lha lnga'i sgrub thabs kyi rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary on the sadhana of five deity Cakrasamvara by Situ Karma Ngedon Tenzin Trinley Rabgye. This was written at the behest of 13th Karmapa."@en ;
+        :creator            bdr:CRA55FF3D4B3781C39 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T61 ;
+        :workHasInstance    bdr:MW8LS16369 , bdr:W8LS16369 ;
+        :workIsAbout        bdr:T2093 .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ315281 {
+    bda:LG45425DB5A7767633
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-31T11:34:37.367Z"^^xsd:dateTime ;
+        adm:logMessage      "new realeased"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG58E364EA40F9F2ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:22.686Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCC5064F6DE6CEBBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-02T11:03:29.533Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFD945A2D369E5932
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-31T11:46:53.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ315281  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ315281 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "77/WA4CZ315281.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ315281 ;
+        adm:logEntry        bda:LG45425DB5A7767633 , bda:LG58E364EA40F9F2ED , bda:LGCC5064F6DE6CEBBC , bda:LGFD945A2D369E5932 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR08F6AE5AFBCB0375
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366523 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ315281  a      :Work ;
+        skos:altLabel       "ston pa thugs rje can gyi bka' lung ltar spyi nor gong sa skyabs mgon chen po'i mdzad 'phrin las 'phros pa'i 'brel yod lo rgyus mdo tsam gleng ba/"@bo-x-ewts ;
+        skos:prefLabel      "gong sa skyabs mgon chen po'i mdzad 'phrin las 'phros pa'i 'brel yod lo rgyus mdo tsam gleng ba/"@bo-x-ewts ;
+        :catalogInfo        "Memoirs and short biographies of H.H.Holines 14th Dalai Lama. By court physician Lobsang Wngyal"@en ;
+        :creator            bdr:CR08F6AE5AFBCB0375 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ315281 , bdr:W4CZ315281 ;
+        :workIsAbout        bdr:P1649 , bdr:T2382 .
+}

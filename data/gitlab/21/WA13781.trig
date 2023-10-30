@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA13781 {
+    bda:LG79B57CEA399136DA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8B7F43828B2CDA46
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T13:51:45.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA13781  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA13781 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "21/WA13781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA13781 ;
+        adm:logEntry        bda:LG79B57CEA399136DA , bda:LG8B7F43828B2CDA46 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4409CD581DC2068A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P563 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRD87138FDFF453CFC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1691 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW13781  skos:altLabel  "an instruction on the practice of buddhism"@en .
+
+    bdr:WA13781  a          :Work ;
+        skos:altLabel       "lta sgom spyod gsum 'bras bu dan bcas pa'i no sprod lag bcans gser gyi yan zun snin gi thig le dban rtags ral pa'i glegs bam"@bo-alalc97 , "dag snang 'chi med tsanda li'i sgrub thabs kyi zin bris bltas pa'i grub pa tshe dbang bcud len/"@bo-x-ewts , "an instruction on 'jam dbyangs mkhyen-brtse'i-dbang-po's visionary sadhana focussing upon 'chi-med tsanda-li"@en-x-mixed , "Lta sgom spyod gsum ʼbras bu daṅ bcas paʼi ṅo sprod lag bcaṅs gser gyi yaṅ źun sñin gi thig le dbaṅ rtags ral paʼi glegs bam :an instruction on the practice of Buddhism /by Lha-btsun Man-mkhaʼ-ʼjigs-med. Dag snaṅ ʼchi med tspṇḍa [sic] liʼi sgrub thabs kyi zin bris bltas paʼi ʼgrub pa tshe dbaṅ bcud len : an instruction on ʼJam-dbaṅs Mkhyen-brtseʼi-dbaṅ-poʼs visionary sādhana focussing upon ʼChi-med Tsaṇḍa-li / by Karma-pa Mkhaʼ-khyab-rdo-rje."@en-x-mixed ;
+        skos:prefLabel      "lta sgom spyod gsum 'bras bu dang bcas pa'i ngo sprod/"@bo-x-ewts , "an instruction on the practice of buddhism"@en ;
+        :creator            bdr:CR4409CD581DC2068A , bdr:CRD87138FDFF453CFC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW13781 , bdr:W13781 ;
+        :workIsAbout        bdr:T1335 .
+}

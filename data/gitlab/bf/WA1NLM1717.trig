@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1717 {
+    bda:LG6270B303842B1AC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T09:25:07.333Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7FB01283C5A9426F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:44:35.051Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG88B6D6B12377958C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1717"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1717  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1717 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bf/WA1NLM1717.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1717 ;
+        adm:logEntry        bda:LG6270B303842B1AC8 , bda:LG7FB01283C5A9426F , bda:LG88B6D6B12377958C , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1717  a       :Work ;
+        skos:prefLabel      "mgon po'i zhi ba dang rgyas pa'i gtor sgrub byed tshul 'don bsgrigs pa la sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 phyag bzhi ma'i bstod pa/ 2 mgon dkar dang sbrags na mngon rtogs/ 3 dma can skyes bu chen po'i gsol mchod gser skyems rnams/ 4 ye shes kyi mgon po'i bsangs mchod dgos 'dod kun 'byung / 5 chos spyod rab gsal gyi bkra shis/ 6 dpal rta mgrin gsang sgrub kyi bsangs mchod/ 7 rta mgrin bsang sgrub kyi sgo nas sgrub thabs snying po rgyun 'khyer/ 8 rta mgrin gsang sgrub kyi zhi rgyas dbang drag gi gtor 'bul/ 9 bcom ldan 'das rta mchog rol pa'i 'phrin bcol gser skyems/"@en , "A compilation of recitation during the sadhana practice of peaceful and extensive Mahakala; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1717 , bdr:W1NLM1717 ;
+        :workIsAbout        bdr:T1397 , bdr:T2579 , bdr:T950 .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5045 {
+    bda:LG46F60479B0CCCA3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-30T11:08:28.989Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE3790F98C3D9764F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:33:24.709Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5045  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5045 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "71/WA3CN5045.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5045 ;
+        adm:logEntry        bda:LG46F60479B0CCCA3F , bda:LGE3790F98C3D9764F , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR32BC4597E8E7419F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5045  a        :Work ;
+        skos:altLabel       "rgyal ba thams cad kyi thugs kyi dgongs pa zab mo dbu ma'i de kho na nyid spyi'i ngag gis ston pa nges don rab gsal dang lta ba'i shan 'byed theg mchog gnad kyi zla zer/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i de kho na nyid spyi'i ngag gis ston pa nges don rab gsal dang lta ba'i shan 'byed theg mchog gnad kyi zla zer/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of Madhyamika philosophy by Gorampa Sonam Senge."@en ;
+        :creator            bdr:CR32BC4597E8E7419F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW3CN5045 , bdr:W3CN5045 ;
+        :workIsAbout        bdr:T1764 .
+}

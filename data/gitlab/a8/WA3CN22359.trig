@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22359 {
+    bda:LG1D12B3FDF5AA4075
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T17:45:14.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2908821B10972220
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-23T18:06:44.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5846D461AFD6D4CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGED3B2EA5A9CBD5F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-03T14:39:39.039Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22359  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22359 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a8/WA3CN22359.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22359 ;
+        adm:logEntry        bda:LG1D12B3FDF5AA4075 , bda:LG2908821B10972220 , bda:LG5846D461AFD6D4CE , bda:LGED3B2EA5A9CBD5F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR24229659052FBC90
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4358 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22359  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ byams pa bkra shis/"@bo-x-ewts ;
+        :catalogInfo        "Collected writings of Geluk master Khyungdruk Jampa Tashi (15th Cent.)."@en ;
+        :creator            bdr:CR24229659052FBC90 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN22359 , bdr:W3CN22359 ;
+        :workIsAbout        bdr:T819 .
+}

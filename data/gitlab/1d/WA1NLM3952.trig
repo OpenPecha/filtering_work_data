@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3952 {
+    bda:LGA0225A6C5952F61F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T13:01:42.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3952"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3952  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3952 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1d/WA1NLM3952.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3952 ;
+        adm:logEntry        bda:LGA0225A6C5952F61F , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3952  a       :Work ;
+        skos:prefLabel      "sa bdag 'khrug bcos dbus phyogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 o rgyan pad+mas mdzad pa'i bka' thang bsdus pa/ 2 gsol 'debs bar chad lam sel/ 3 bsam pa myur 'grub ma dang / dri bshags le'u bcas/ 4 gsol 'debs bsam pa myur 'grub ma/ 5 rgyal po chen po rnam thos sras kyi bzlog bsgyur tiSh+tha bardzara/ 6 tshe thar gtong lugs ngo mtshar rin chen do shal 'phreng ba/ 7 khan khyim sogs kyi rab gnas/ 8 'phags pa kha mchu nag po zhi bar byed pa zhes bya ba theg pa chen po'i mdo/ 9 khyim gcod lugs/ 10 ma cig khros ma nag mo'i sgo nas bges gtor gtong tshul/ 11 rlung rta gso ba'i blto chog bsod nams dpal byed/ 12 rta mgrin gsang sgrub chos skor las/ bka' srung rgyal po sku lnga yi/ /srog gtad bya tshul ches gsal ba/ /'phrin las sgo 'byed/ 13 ku ru kule+le'i sgrub thabs/ 14 gnod sbyin rdo rje bdud 'dul gyi bsangs mchod/ 15 rta mgrin gsang sgrub kyi sgo nas grib sel bya tshul nor bu ke ta ka/"@en , "Treatment of earth owner by unsigned author,"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3952 , bdr:W1NLM3952 ;
+        :workIsAbout        bdr:T1448 , bdr:T94 .
+}

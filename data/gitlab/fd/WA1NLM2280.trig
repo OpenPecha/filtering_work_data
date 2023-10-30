@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2280 {
+    bda:LG1AD8FBADB2F03263
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-18T10:32:08.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCCB083AE45C6CB16
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2280"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2280  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2280 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fd/WA1NLM2280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2280 ;
+        adm:logEntry        bda:LG1AD8FBADB2F03263 , bda:LGCCB083AE45C6CB16 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55BF4667FC54D807
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2280  a       :Work ;
+        skos:prefLabel      "chos mngon pa mdzod kyi bsdus don chos mngon rgya mtshor 'jug pa'i gru gzings sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thugs rje chen po bcu gcig zhal dpal mo'i lugs kyi dbang gi bla ma brgyud pa'i gsol 'debs/ 2 sku 'bum byams pa gling gi rten gyi gtso bo tsan dan ljon shing gi lo rgyus/ 3 seng gdong ma/ 4 'phags pa thugs rje chen po zhal bcu gcig pa dpal mo'i lugs kyi sgrub thabs smyung bar gnas pa'i cho ga dang bcas pa phan bde'i snang ba gsar dod ma/"@bo-x-ewts , "Summary of Abhidharmakoshakaria; other text also included."@en ;
+        :creator            bdr:CR55BF4667FC54D807 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW1NLM2280 , bdr:W1NLM2280 ;
+        :workIsAbout        bdr:WA19720 .
+}

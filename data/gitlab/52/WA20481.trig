@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20481 {
+    bda:LG4B3C6CC65E33561D
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-05T14:39:13.997Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG8650CFC4E2D071D4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8C10A0368DC7FF46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-06T13:39:33.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF40FE49EA598507B
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-11T14:08:24.227Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20481  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20481 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "52/WA20481.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20481 ;
+        adm:logEntry        bda:LG4B3C6CC65E33561D , bda:LG8650CFC4E2D071D4 , bda:LG8C10A0368DC7FF46 , bda:LGF40FE49EA598507B , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9CB2B779B5F6F410
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6866 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20481  skos:altLabel  "shi liang lun jie shuo . xue yu zhuang yuan"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA20481  a          :Work ;
+        skos:altLabel       "tshad ma rnam 'grel gyi rnam par bshad pa gnas gsum gsal ba gangs can gyi rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "rnam 'grel gyi rnam bshad gangs can gyi rgyan/"@bo-x-ewts , "shi liang lun jie shuo . xue yu zhuang yuan"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR9CB2B779B5F6F410 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20481 , bdr:W20481 ;
+        :workIsAbout        bdr:T370 , bdr:WA19721 .
+}

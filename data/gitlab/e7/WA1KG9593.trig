@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9593 {
+    bda:LG4DF6E68A700B51C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG5DC57B8082D19051
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-06T09:42:29.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9AA08F621B5A182E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T12:14:28.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAAD1FE9B8861A961
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T10:59:13.066Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAF1112BC34C31D24
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-06T09:41:45.239Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9593  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9593 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e7/WA1KG9593.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9593 ;
+        adm:logEntry        bda:LG4DF6E68A700B51C5 , bda:LG5DC57B8082D19051 , bda:LG9AA08F621B5A182E , bda:LGAAD1FE9B8861A961 , bda:LGAF1112BC34C31D24 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG9593  skos:altLabel  "a collection of rituals for the invocation and propitiation of hayagriva according to the tradition of the dge-lugs-pa"@en-x-mixed .
+
+    bdr:WA1KG9593  a        :Work ;
+        skos:prefLabel      "rta mgrin pad+ma yang gsang khros pa'i chos skor/"@bo-x-ewts , "a collection of rituals for the invocation and propitiation of hayagriva according to the tradition of the dge-lugs-pa"@en-x-mixed ;
+        :catalogInfo        "Collection of ritual texts for the invocation and propitiation of Hayagriva according to the Geluk order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T7 ;
+        :workHasInstance    bdr:MW1KG9593 , bdr:W1KG9593 ;
+        :workIsAbout        bdr:T19 , bdr:T2044 .
+}

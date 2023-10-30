@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14627 {
+    bda:LG58B042D7519D916B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-08T15:27:24.055Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright titles"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG675CD273932ECAF7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-24T14:42:19.222Z"^^xsd:dateTime ;
+        adm:logMessage      "released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG91BA3D7AEEAE9878
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-24T14:42:44.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB64D7B5E8365A653
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14627  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14627 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "97/WA1KG14627.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14627 ;
+        adm:logEntry        bda:LG58B042D7519D916B , bda:LG675CD273932ECAF7 , bda:LG91BA3D7AEEAE9878 , bda:LGB64D7B5E8365A653 , bda:LGIM206EC9B06D , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR964E284C9C925600
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14627  skos:altLabel  "公却盘德传，贡智 元旦嘉措传"@zh-hans .
+
+    bdr:WA1KG14627  a       :Work ;
+        skos:altLabel       "gong que pan de zhuan, gong zhi yuan dan jia cuo zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dkon mchog 'phan dar dang kong sprul yon tan rgya mtsho'i rnam thar/"@bo-x-ewts , "公却盘德传，贡智 元旦嘉措传"@zh-hans ;
+        :catalogInfo        "Biographies of Gongmen Konchog phandar (1511-1577) and Kongtrul Yontan Gyatso (1813-1890/1899)."@en ;
+        :creator            bdr:CR964E284C9C925600 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG14627 , bdr:W1KG14627 ;
+        :workIsAbout        bdr:P264 , bdr:P437 .
+}

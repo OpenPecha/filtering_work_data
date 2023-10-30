@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM382 {
+    bda:LG02024B642FFF75FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-03T10:47:24.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG05C652645A50CF8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG73F4E269D1838318
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T15:13:07.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM382"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM382  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM382 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "70/WA1NLM382.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM382 ;
+        adm:logEntry        bda:LG02024B642FFF75FC , bda:LG05C652645A50CF8B , bda:LG73F4E269D1838318 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM382  a        :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi sgo nas 'chi bslu bya tshul 'chi bdag g.yul ngo bzlog pa'i dpa' bo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual for ransoming from impending death on the basis of hayagriva guhyasadhana and other ritual text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM382 , bdr:W1NLM382 ;
+        :workIsAbout        bdr:T2044 , bdr:T846 .
+}

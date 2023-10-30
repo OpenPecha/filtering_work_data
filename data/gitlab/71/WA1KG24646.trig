@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24646 {
+    bda:LG273723D55134EDA2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T09:48:37.458Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8A81DC12AB52AF5D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T09:52:54.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDE4EFE7276F5CA25
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-30T12:28:18.876Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG24646  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24646 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "71/WA1KG24646.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24646 ;
+        adm:logEntry        bda:LG273723D55134EDA2 , bda:LG8A81DC12AB52AF5D , bda:LGDE4EFE7276F5CA25 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR377489DDFFC40CC1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24646  a       :Work ;
+        skos:altLabel       "sdom pa gsum gyi rnam par bzhag pa mdor bsdus te gtan la dbab pa'i rab tu byed pa thub bstan rin po che'i byi dor/"@bo-x-ewts ;
+        skos:prefLabel      "sdom pa gsum gyi rnam gzhag thub bstan byi dor/"@bo-x-ewts ;
+        :catalogInfo        "Brief presentation of the threefold vows, Pratimoksha (so thar) Bodhisattva vows (byang sems kyi sdom pa) and the Mantra vows (gsang sngags kyi dam tshig)."@en ;
+        :creator            bdr:CR377489DDFFC40CC1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1KG24646 , bdr:W1KG24646 ;
+        :workIsAbout        bdr:T201 .
+}

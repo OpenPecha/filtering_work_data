@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC31 {
+    bda:LG04E038CAE45CB88D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T23:55:52.995Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1846207E241EAA3F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T21:49:52.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG4EE5CBFF707A94E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T17:47:37.531Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGD0660F4A83D748C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-04T11:43:57.904Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected CW"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFF514FF240B31649
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-24T13:41:35.464Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1AC31  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC31 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d5/WA1AC31.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC31 ;
+        adm:logEntry        bda:LG04E038CAE45CB88D , bda:LG1846207E241EAA3F , bda:LG4EE5CBFF707A94E4 , bda:LGD0660F4A83D748C8 , bda:LGFF514FF240B31649 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR31BB9D9DCC343266
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1500 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1AC31  a          :Work ;
+        skos:altLabel       "'dul ba mdo rtsa ba'i mchan 'grel mthong ba don 'grub/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba'i mchan 'grel/(gzhi stod)(gzhi smad)"@bo-x-ewts ;
+        :creator            bdr:CR31BB9D9DCC343266 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1AC31 , bdr:W1AC31 ;
+        :workIsAbout        bdr:WA4CZ16829 .
+}

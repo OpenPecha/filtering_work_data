@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3430 {
+    bda:LG81A457358417FE2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-20T10:44:32.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3430"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3430  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3430 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0c/WA1NLM3430.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3430 ;
+        adm:logEntry        bda:LG81A457358417FE2C , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD19180CDE9B95B5B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4147 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3430  a       :Work ;
+        skos:prefLabel      "'phags ma gdugs dkar mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 brgya bzhi'i cho ga klags pas don 'grub/ 2 rta mgrin gsang sgrub gyi chos skor las/ sha brgya zan brgya'i cho ga dga' bde'i dpal ster/ 3 rta mgrin gsang sgrub kyi sgo nas phyugs glud gtong thabs 'byung po tshim byed/ 4 rta yi chu glud/ 5 rlung rta gso ba'i lto chog bklag bde bar bkod pa/ shel dkar me long / 6 rlung rta'i bcos thabs/ 7 cha gsum gtor ma/ 8 tshe thar/ 9 lcam sring dgun gyi rgyal mo'i bskang bshags bstod pa bskul bcas pa/ 10 lcam sring gun gyi a ti rgyal mo'i sgo nas rnga mong than bzlog 11 rgya gar bzlog sha brgya zan brgya bsngo tshul/ 12 rgya nag za 'dre shi gshed 'dul thabs/"@bo-x-ewts , "Repelling ritual of Sitatapatra; other text also included."@en ;
+        :creator            bdr:CRD19180CDE9B95B5B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3430 , bdr:W1NLM3430 ;
+        :workIsAbout        bdr:T1725 , bdr:T1726 .
+}

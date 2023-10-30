@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG5451 {
+    bda:LG8756C22700636385
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-06-22T16:26:27.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDD0EDEB7879C8210
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-22T16:25:45.539Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG5451  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG5451 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bc/WA1KG5451.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG5451 ;
+        adm:logEntry        bda:LG8756C22700636385 , bda:LGDD0EDEB7879C8210 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1AC220 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRDEAD4D54B78A4012
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1844 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG5451  skos:altLabel  "the jewel ornament of liberation by gam-po-pa"@en .
+
+    bdr:WA1KG5451  a        :Work ;
+        skos:altLabel       "dam chos yid bzhin nor bu thar pa rin po che'i rgyan ces bya ba chos rje sgam po pas mdzad pa/"@bo-x-ewts , "dwags po thar rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "dam chos yid bzhin nor bu thar pa rin po che'i rgyan/"@bo-x-ewts , "the jewel ornament of liberation by gam-po-pa"@en ;
+        :catalogInfo        "Writings of a prominent Kagyu master, Gampopa Sonam Rinchen (1079-1153) of the Dakpo order, The Jewel Ornament of Liberation."@en ;
+        :creator            bdr:CRDEAD4D54B78A4012 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1KG5451 ;
+        :workIsAbout        bdr:T1187 .
+}

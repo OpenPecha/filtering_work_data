@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2099 {
+    bda:LG73C7030791787E20
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG96DF90A98E3726C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T15:33:47.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2099"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2099  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2099 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/WA1NLM2099.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2099 ;
+        adm:logEntry        bda:LG73C7030791787E20 , bda:LG96DF90A98E3726C2 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2099  a       :Work ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 grib bdag nag mo'i mdos bya tshul mi mthun kun sel/ 2 dbang chen yang gsang khros pa'i las byang snying po bcud bsdu/ 3 ma gcig khros ma nag mo'i mngon sgrub thab dkyil shin tu gsal ba go sla ba'i tshul du bkod pa/ 4 grib bsangs gtong tshul mi gtsar rnyog sel nor bu ke ta ka/ 5 rdo rje rnam 'joms kyi byabs bsrung bsdus pa'i bum sgrub bcas/ 6 khrag 'thung pad+ma drag po'i rtsar byugs bskul bzlog gi rim pa/ 7 rdo rje phag mo'i tsan+Da li smon lam rtsa gsum byin rlabs bskul ba'i ra ro/ 8 bcom ldan 'das pad+ma dbang chen yang gsang khros pa'i brgyud 'debs/ 9 las sgrib sbyong ba'i thabs mchog rdo rje sems dpa'i bum sgrub/ 10 'phags pa 'da' ka ye shes/ 11 klong gsal snying po lasH bskal ba bshags sbyar dri med zhes bya ba bskang bshags dri med bde chen klong yangs/ 12 yang zab kyi huM sgrub las gsungs pa'i gsol 'debs the tshom med bar yi dam du byas nas gsol btab na slob dpon gyis rjes su 'dzin pas dbu snyung bzhes pa/ 13 gu ru zhi ba'i skyabs 'gro sems bskyed tshad med bzhi bla ma'i rnal 'byor/"@en , "Vajrachedika, prajnaparamita sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2099 , bdr:W1NLM2099 ;
+        :workIsAbout        bdr:T2005 .
+}

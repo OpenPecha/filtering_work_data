@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21599 {
+    bda:LG75C8381E7FBD3E1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7D623D2A24BBCF48
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-05T10:34:45.315Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB6B9E1C6A0519360
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGC7D94D03FFB6C72F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-05T10:35:38.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21599  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21599 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "41/WA21599.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21599 ;
+        adm:logEntry        bda:LG75C8381E7FBD3E1C , bda:LG7D623D2A24BBCF48 , bda:LGB6B9E1C6A0519360 , bda:LGC7D94D03FFB6C72F , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB35BF7E4927A07F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7277 ;
+        :role               bdr:R0ER0012 .
+
+    bdr:MW21599  skos:altLabel  "年曲木绒粮食宗"@zh-hans .
+
+    bdr:WA21599  a          :Work ;
+        skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / gnyan chu mo rong 'bru rdzong /"@bo-x-ewts , "nian qu mu rong liang shi zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gnyan chu mo rong 'bru rdzong /"@bo-x-ewts , "年曲木绒粮食宗"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :creator            bdr:CRB35BF7E4927A07F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21599 , bdr:W21599 ;
+        :workIsAbout        bdr:T248 .
+}

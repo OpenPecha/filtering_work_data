@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2251 {
+    bda:LGC2A2F6ED90995A2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-09T15:31:23.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCA9398E1B15C4655
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2251"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2251  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2251 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d2/WA1NLM2251.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2251 ;
+        adm:logEntry        bda:LGC2A2F6ED90995A2B , bda:LGCA9398E1B15C4655 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR707274734559CBCF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P122 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2251  a       :Work ;
+        skos:prefLabel      "rlung rta'i mchod chog phan bde'i pad+ma dkar po'i mdzes rgyan bung ba gzhon nu'i glu dbyangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dmigs brtse ma'i sgrub thabs kyi las tshogs nags 'gros/ 2 shes rab snying po'i sgrub thabs bdud log 3 dmag zor rgyal mo'i ring skegs klad bskor gshin rje 'khor lo/ 4 klu sgrub rdo rje gtsang ma klu 'bum dkar po'i byabs khrus/ 5 bkra shis dge mtshan spel phyir byin 'bebs gsol 'debs e waM char 'bebs/ 6 seng gdong ma'i sgo nas mi phyugs kyi nad dang kha mchu gcod pa'i bgegs gtor/ 7 dpal phyag na rdo rje gos sngon can gyi sgrub thabs dngos grub gter mdzod/ 8 bcom ldan 'das rdo rje rnam par 'joms pa'i sgo nas dkar phyogs skyong ba'i bsrung ma'i lha klu gzhi bdag rnams la yul khrus bya tshul/ 9 dpal rnam par 'joms pa'i byabs khrus/ 10 dpal ldan lha mo'i gsol mchod/ 11 'dul ba rgya mtsho'i snying po bsdus pa/ 12 zhabs brtan gsol 'debs drang srong bde ba chen po yid kyi re skong / 13 jo bo ldan a ti sha'i bka' srol snar thang brgya rtsa'i sbyor sgang ba nas brgyud pa'i bzang spyod 'chi blu/ 14 rdo rje gshin rje gshed kyi gsol 'debs/ 15 bla ma rgyud rim sangs rgyas byang sems rnams kyi bstod rnams/ 16 rgya nag sha bzlog bcos thabs zab mo/ 17 lug nad/ 18 dregs pa sde brgyad gser skyems gtong pa'i cho ga bdud rtsi'i rlabs 'phreng /"@en , "Offering ritual of wind horse by the 51st Ladang Tashi Khyil Tripa Ngawang Thupten Gyatsho; other text also included."@en ;
+        :creator            bdr:CR707274734559CBCF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2251 , bdr:W1NLM2251 ;
+        :workIsAbout        bdr:T1221 .
+}

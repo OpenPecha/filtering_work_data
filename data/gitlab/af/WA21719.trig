@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21719 {
+    bda:LGED3CBB0AC8F0C0BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA21719  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21719 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "af/WA21719.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21719 ;
+        adm:logEntry        bda:LGED3CBB0AC8F0C0BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR5BA17E20129A4198
+        a                   :AgentAsCreator ;
+        :agent              bdr:P442 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR5EDBE80A0BACB5E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7320 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR70B7BE8C7E90BB16
+        a                   :AgentAsCreator ;
+        :agent              bdr:P336 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA21719  a          :Work ;
+        skos:prefLabel      "mar pa'i rnam thar/"@bo-x-ewts , "la vie de marpa le \"traducteur\""@en ;
+        :creator            bdr:CR5BA17E20129A4198 , bdr:CR5EDBE80A0BACB5E5 , bdr:CR70B7BE8C7E90BB16 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW21719 ;
+        :workIsAbout        bdr:P2636 .
+}

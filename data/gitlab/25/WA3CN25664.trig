@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25664 {
+    bda:LG096492CEDAA8953C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T16:12:28.334Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2447066E999BEF94
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T20:23:03.183Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4122DD28CD6F047E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T16:10:48.189Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG52C8D233CA0AF877
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T17:55:37.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6A3E292869B1BAC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE229D53A344B88E1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T22:55:19.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25664  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25664 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "25/WA3CN25664.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25664 ;
+        adm:logEntry        bda:LG096492CEDAA8953C , bda:LG2447066E999BEF94 , bda:LG4122DD28CD6F047E , bda:LG52C8D233CA0AF877 , bda:LG6A3E292869B1BAC5 , bda:LGE229D53A344B88E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1D41E3BF305F9DBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12064 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN25664  a       :Work ;
+        skos:prefLabel      "rgya bod bka' bstan dkar chag bsdur zhib/"@bo-x-ewts , "汉藏大藏经目录异同研究"@zh-hans ;
+        :catalogInfo        "Comparative research on catalog of Buddhist canonical works of Chinese and Tibetan languege by Huang Mingxin."@en ;
+        :creator            bdr:CR1D41E3BF305F9DBC ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN25664 , bdr:W3CN25664 ;
+        :workIsAbout        bdr:T1129 , bdr:T299 .
+}

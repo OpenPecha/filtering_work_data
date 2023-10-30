@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG212704 {
+    bda:LG687AEC52211F9898
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-18T15:51:08.478Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG805162B7E3FF8B28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFCB9E51E6A5185CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-15T15:23:58.555Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG212704  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG212704 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "70/WA2KG212704.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG212704 ;
+        adm:logEntry        bda:LG687AEC52211F9898 , bda:LG805162B7E3FF8B28 , bda:LGFCB9E51E6A5185CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6C7616C511F7EAE3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P316 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG212704  a      :Work ;
+        skos:altLabel       "a rig dge bshes chen mo rgyal mtshan 'od zer gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ a rig dge bshes rgyal mtshan 'od zer/"@bo-x-ewts ;
+        :catalogInfo        "A collected works of a Gelug master Arik Geshe Jampa Gelek Gyaltsen (1728-1803)."@en ;
+        :creator            bdr:CR6C7616C511F7EAE3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG212704 , bdr:W2KG212704 ;
+        :workIsAbout        bdr:T819 .
+}

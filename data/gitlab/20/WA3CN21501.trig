@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21501 {
+    bda:LG30CD94A6CF548352
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T10:54:23.589Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3AA09D88CE20A139
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-10-28T17:14:09.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG407124EA4FBF4EE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T16:07:38.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG689700E38BF91B88
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB58F8DB157C12C84
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-28T17:13:39.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF751C4F25FC2B32B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-08T12:41:22.748Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21501  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21501 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "20/WA3CN21501.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21501 ;
+        adm:logEntry        bda:LG30CD94A6CF548352 , bda:LG3AA09D88CE20A139 , bda:LG407124EA4FBF4EE7 , bda:LG689700E38BF91B88 , bda:LGB58F8DB157C12C84 , bda:LGF751C4F25FC2B32B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD9AED42AEB3470BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26253 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21501  skos:altLabel  "墨竹工卡县文化史"@zh-hans .
+
+    bdr:WA3CN21501  a       :Work ;
+        skos:altLabel       "gna' bo'i dus kyi mal gro dang 'brel ba'i rig gnas lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "mal gro gung dkar rdzong gi rig gnas lo rgyus/"@bo-x-ewts , "墨竹工卡县文化史"@zh-hans ;
+        :catalogInfo        "History and culture of the Maltro Gungkar Dzong of Tibett."@en ;
+        :creator            bdr:CRD9AED42AEB3470BA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21501 , bdr:W3CN21501 ;
+        :workIsAbout        bdr:G2014 , bdr:T1449 .
+}

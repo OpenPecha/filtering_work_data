@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23647 {
+    bda:LG06E7020907210AA8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-23T15:09:05.368Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1DCE873B6715F59C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7CD1E96AFC0A5931
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-23T15:15:48.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG23647  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23647 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "28/WA1KG23647.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23647 ;
+        adm:logEntry        bda:LG06E7020907210AA8 , bda:LG1DCE873B6715F59C , bda:LG7CD1E96AFC0A5931 , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7E3C258B4396359A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P268 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA1A0B9DB9B52C52A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1018102 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:WA1KG23647  a       :Work ;
+        skos:prefLabel      "yig rmongs sel ba'i slob deb/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan language textbooks for Junior schools compiled by council of education, Tibetan autonomous region."@en ;
+        :creator            bdr:CR7E3C258B4396359A , bdr:CRA1A0B9DB9B52C52A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T266 ;
+        :workHasInstance    bdr:MW1KG23647 , bdr:W1KG23647 ;
+        :workIsAbout        bdr:WA5606 .
+}

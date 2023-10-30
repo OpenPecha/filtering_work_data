@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24478 {
+    bda:LG2700B43CF88C7726
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-22T16:49:52.956Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4A7F5B9399F5B10
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-22T10:38:02.525Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG24478  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24478 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a7/WA1KG24478.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24478 ;
+        adm:logEntry        bda:LG2700B43CF88C7726 , bda:LGC4A7F5B9399F5B10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD8B867C6AD62FC36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P626 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24478  a       :Work ;
+        skos:altLabel       "skyabs rje bde bar gshegs pa 'khrul zhig rdo rje 'chang gi bla sgrub gsol 'debs phyogs bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "'khrul zhig rdo rje 'chang gi bla sgrub gsol 'debs phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "A collection of guru yoga texts and prayers written by a Nyingma master Trulshik Ngawang Chokyi Lodoe."@en ;
+        :creator            bdr:CRD8B867C6AD62FC36 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T140 ;
+        :workHasInstance    bdr:MW1KG24478 , bdr:W1KG24478 ;
+        :workIsAbout        bdr:T1082 , bdr:T540 .
+}

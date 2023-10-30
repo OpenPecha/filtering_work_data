@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN7910 {
+    bda:LG6226DEBC379B6134
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-10T19:27:35.711Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB9D1C3EF1092EF7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T16:37:02.244Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC77F2A26A621534D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:16:33.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN7910  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN7910 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7d/WA3CN7910.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN7910 ;
+        adm:logEntry        bda:LG6226DEBC379B6134 , bda:LGB9D1C3EF1092EF7F , bda:LGC77F2A26A621534D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2D59A5271810F042
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7501 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN7910  a        :Work ;
+        skos:altLabel       "mthun lung bshad grwa'i slob deb legs bshad rgya mtshor 'jug pa'i gru gzings/"@bo-x-ewts , "tshad ma rig pa'i them skas/"@bo-x-ewts ;
+        skos:prefLabel      "mthun lung bshad grwa'i slob deb/"@bo-x-ewts ;
+        :catalogInfo        "Buddhist epistemology textbook by Thunlung monastery."@en ;
+        :creator            bdr:CR2D59A5271810F042 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW3CN7910 , bdr:W3CN7910 ;
+        :workIsAbout        bdr:G1KR34 , bdr:T370 .
+}

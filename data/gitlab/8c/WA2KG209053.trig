@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209053 {
+    bda:LG11D18A439DBC41BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG81A9B0A1D2EA5C2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-06T11:19:43.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9B6D9DE9F3562DD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-05T07:29:56.823Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB77D9AD0EB34FA24
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-25T16:38:19.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC63967506950A89D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:58:57.303Z"^^xsd:dateTime ;
+        adm:logMessage      "simple cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG209053  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209053 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8c/WA2KG209053.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209053 ;
+        adm:logEntry        bda:LG11D18A439DBC41BD , bda:LG81A9B0A1D2EA5C2D , bda:LG9B6D9DE9F3562DD8 , bda:LGB77D9AD0EB34FA24 , bda:LGC63967506950A89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2FBDEEA9B6283F21
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229013 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2KG209053  skos:altLabel  "不尽的岁月"@zh-hans .
+
+    bdr:WA2KG209053  a      :Work ;
+        skos:prefLabel      "mi nub pa'i lo zla/"@bo-x-ewts , "不尽的岁月"@zh-hans ;
+        :catalogInfo        "Collection of writing of Jar Kalsang Topgyal."@en ;
+        :creator            bdr:CR2FBDEEA9B6283F21 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW2KG209053 , bdr:W2KG209053 .
+}

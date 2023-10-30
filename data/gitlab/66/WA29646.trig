@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29646 {
+    bda:LG25DEDCA54E64F1DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:51:51.121Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T284 to T1884"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3BB9C7454AA77473
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-01T11:30:04.444Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG986A418103B625BA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDBD23DE3CCD84D49
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T17:29:25.071Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE39398FF870EF07C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-01T11:42:02.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA29646  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29646 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "66/WA29646.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29646 ;
+        adm:logEntry        bda:LG25DEDCA54E64F1DE , bda:LG3BB9C7454AA77473 , bda:LG986A418103B625BA , bda:LGDBD23DE3CCD84D49 , bda:LGE39398FF870EF07C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7F2F72B85377A61E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9885 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29646  a          :Work ;
+        skos:altLabel       "grol he ru ka'i btus rtsom snyan ngag"@bo-x-ewts ;
+        skos:prefLabel      "ngur 'jug gi 'das mchod/"@bo-x-ewts ;
+        :catalogInfo        "Collection of poems written by Drol Heruka."@en ;
+        :creator            bdr:CR7F2F72B85377A61E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW29646 , bdr:W29646 .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21656 {
+    bda:LG78D3FE2EF4E74FE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-05T14:57:41.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA56F86E578FD729A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGEF0425FB4034072A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF0285F8E5F141FCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-05T14:57:10.976Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA21656  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21656 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b4/WA21656.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21656 ;
+        adm:logEntry        bda:LG78D3FE2EF4E74FE2 , bda:LGA56F86E578FD729A , bda:LGEF0425FB4034072A , bda:LGF0285F8E5F141FCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA21656  a          :Work ;
+        skos:prefLabel      "khab btsa'i lag deb mdor bsdus/"@bo-x-ewts ;
+        :catalogInfo        "A brief manual of introduction and application of acupuncture."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG15794 ;
+        :workHasInstance    bdr:MW21656 , bdr:W21656 ;
+        :workIsAbout        bdr:T1139 .
+}

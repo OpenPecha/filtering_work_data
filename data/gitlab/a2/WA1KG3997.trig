@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3997 {
+    bda:LG26765F02FD605179
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-07T14:36:11.559Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8706909BF5284092
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-14T07:07:34.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA7AD8594B0F9A5E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T09:46:19.774Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB8B68B0B75A6864B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-12-07T16:13:53.339Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG3997  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3997 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a2/WA1KG3997.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3997 ;
+        adm:logEntry        bda:LG26765F02FD605179 , bda:LG8706909BF5284092 , bda:LGA7AD8594B0F9A5E8 , bda:LGB8B68B0B75A6864B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBF8B9DF5FC875CF4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3997  a        :Work ;
+        skos:altLabel       "byang chub dpal ba'i tshad bsdus legs bshad rig pa'i 'od zer/"@bo-x-ewts , "tshad ma rig pa'i 'od zer/"@bo-x-ewts ;
+        skos:prefLabel      "grub mtha'i rnam bzhag mdor bsdus nor bu'i 'phreng ba/"@bo-x-ewts ;
+        :creator            bdr:CRBF8B9DF5FC875CF4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T2398 , bdr:T385 ;
+        :workHasInstance    bdr:MW1KG3997 , bdr:W1KG3997 ;
+        :workIsAbout        bdr:T370 .
+}

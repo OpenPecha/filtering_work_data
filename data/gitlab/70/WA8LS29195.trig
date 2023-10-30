@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29195 {
+    bda:LG243120E6C1C380DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-31T13:55:02.998Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBD11AECAD53A2049
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-31T13:56:09.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEEE4C7F32787BD5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T13:35:39.344Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA8LS29195  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29195 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "70/WA8LS29195.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29195 ;
+        adm:logEntry        bda:LG243120E6C1C380DB , bda:LGBD11AECAD53A2049 , bda:LGEEE4C7F32787BD5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE11DFCF895D97D26
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9976 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29195  a       :Work ;
+        skos:altLabel       "rigs bdag ngag dbang chos 'phel rgya mtsho zhes mtshan snyan pa'i 'od stong dbang po gling bzhi 'dzin gyi khams su 'bar ba gang gi rnam par thar ba/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun bla ma dam pa ngag dbang chos 'phel rgya mtsho'i rnam par thar pa yid bzhin dang gi rgyal po/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje 'chang cen po kun dga' lung rtogs rgya mtsho'i gsang ba'i rnam thar sngon med legs bshad nor bu'i rgyan phreng /"@bo-x-ewts , "Biography of Zamthang Ngawang Chophel Gyatsho by Ngawang Chophak Gyatsho."@en ;
+        :creator            bdr:CRE11DFCF895D97D26 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS29195 , bdr:W8LS29195 ;
+        :workIsAbout        bdr:P8930 .
+}

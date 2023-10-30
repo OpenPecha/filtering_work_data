@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32402 {
+    bda:LG584EAF9E2B4317C2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-16T09:03:31.924Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG67ED3A391728A921
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-16T09:04:57.008Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEAE75288BA45E26D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA8LS32402  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32402 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0b/WA8LS32402.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32402 ;
+        adm:logEntry        bda:LG584EAF9E2B4317C2 , bda:LG67ED3A391728A921 , bda:LGEAE75288BA45E26D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR83C32C4B9CF18694
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32402  a       :Work ;
+        skos:prefLabel      "myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso cha lag dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "Bali offering and regular propitiation of six armed Mahakala by Khedrup Gelek Pelzang and related text."@en ;
+        :creator            bdr:CR83C32C4B9CF18694 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW3MS878_500393 , bdr:MW8LS32402 , bdr:W8LS32402 ;
+        :workIsAbout        bdr:T19 , bdr:T411 .
+}

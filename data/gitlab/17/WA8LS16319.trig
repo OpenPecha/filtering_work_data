@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16319 {
+    bda:LG1BAB8D16B5076118
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-13T14:30:25.408Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5C96E58579466D90
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-03T16:12:12.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC81EA5A17D6D5E49
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-09T10:20:09.619Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF516AB9F96DF178A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-09T10:21:27.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16319  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16319 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "17/WA8LS16319.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16319 ;
+        adm:logEntry        bda:LG1BAB8D16B5076118 , bda:LG5C96E58579466D90 , bda:LGC81EA5A17D6D5E49 , bda:LGF516AB9F96DF178A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7E5E2D172632CF45
+        a                   :AgentAsCreator ;
+        :agent              bdr:P326 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16319  a       :Work ;
+        skos:altLabel       "chos dbang rin po che'i zab gter thugs rje chen po 'khor ba dongs sprugs kyi skor/"@bo-x-ewts , "thugs rje chen po 'khor ba dong sprugs kyi skor/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po 'khor ba dongs sprugs kyi skor/"@bo-x-ewts ;
+        :catalogInfo        "Rediscovered teachings of Avalokitesvara by Guru Chowang."@en ;
+        :creator            bdr:CR7E5E2D172632CF45 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW8LS16319 , bdr:W8LS16319 ;
+        :workIsAbout        bdr:T106 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG228992 {
+    bda:LG49625B2830DE1606
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T09:49:08.061Z"^^xsd:dateTime ;
+        adm:logMessage      "marked temp restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG581F2055B6BA7254
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-06T08:50:25.065Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB98153D885FF9CEB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-07-06T09:46:24.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG228992  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG228992 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b6/WA2KG228992.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG228992 ;
+        adm:logEntry        bda:LG49625B2830DE1606 , bda:LG581F2055B6BA7254 , bda:LGB98153D885FF9CEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC6D7B14BEA1C2A91
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG228992  a      :Work ;
+        skos:altLabel       "rje btsun dam pa khal kha ngag dbang dpal ldan mchog gi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ khal kha ngag dbang dpal ldan/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by prominent Buddhist master of 19th century Mongolia, Ngawang Pelden."@en ;
+        :creator            bdr:CRC6D7B14BEA1C2A91 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG228992 , bdr:W2KG228992 ;
+        :workIsAbout        bdr:T819 .
+}

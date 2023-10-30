@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15517 {
+    bda:LG51AE8762394FFF57
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-23T16:29:04.59Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG63FDC5333B09E089
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-09T13:12:21.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG81AD330BD7904512
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T11:09:14.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGABE42EE9B3022F12
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-21T09:56:55.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBDB53D8086F60544
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-21T09:55:59.326Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4D86397ED0E4408
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA1KG15517  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15517 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "15/WA1KG15517.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15517 ;
+        adm:logEntry        bda:LG51AE8762394FFF57 , bda:LG63FDC5333B09E089 , bda:LG81AD330BD7904512 , bda:LGABE42EE9B3022F12 , bda:LGBDB53D8086F60544 , bda:LGC4D86397ED0E4408 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR514B3B589468D563
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3442 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR5823683700A178AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3765 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG15517  skos:altLabel  "藏文文选--蓝色手册本注"@zh-hans .
+
+    bdr:WA1KG15517  a       :Work ;
+        skos:altLabel       "bka' gdams kyi man ngag be'u bum sngon po'i rtsa 'grel/"@bo-x-ewts , "zang wen wen fa --lan se shou ce ben zhu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gangs can rig brgya'i sgo 'byed lde mig / (deb bcu drug pa/)"@bo-x-ewts , "藏文文选--蓝色手册本注"@zh-hans ;
+        :catalogInfo        "The root text and commentary on Geshe Sherab Gyatso's be'u bum sngon po"@en ;
+        :creator            bdr:CR514B3B589468D563 , bdr:CR5823683700A178AD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW1KG15517 , bdr:W1KG15517 ;
+        :workIsAbout        bdr:WA22926 .
+}

@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22125 {
+    bda:LG02C8BCC99E9B94DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:41.683Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG30CA7F1787E0A5C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-25T09:51:17.741Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCA5FFE930B99F217
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-20T20:43:42.523Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T2362 to T1137"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE7F023C016AF56BF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-25T09:51:51.99Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG22125  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22125 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e6/WA1KG22125.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22125 ;
+        adm:logEntry        bda:LG02C8BCC99E9B94DF , bda:LG30CA7F1787E0A5C7 , bda:LGCA5FFE930B99F217 , bda:LGE7F023C016AF56BF , bda:LGIM206EC9B06D , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF4F4050A2C3565E1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ8027 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG22125  skos:altLabel  "preservation of traditional ladakhi cultural"@en .
+
+    bdr:WA1KG22125  a       :Work ;
+        skos:altLabel       "rten 'brel zlos gar/"@bo-x-ewts ;
+        skos:prefLabel      "zlos gar rang 'byung khams/"@bo-x-ewts , "preservation of traditional ladakhi cultural"@en ;
+        :catalogInfo        "A play on ecology system in Ladakh, preservation of traditional Ladakhi cultural."@en ;
+        :creator            bdr:CRF4F4050A2C3565E1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG22125 , bdr:W1KG22125 ;
+        :workIsAbout        bdr:T1137 , bdr:T256 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13654 {
+    bda:LG0F9AFC8C979F2466
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-12-05T15:30:10.28Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged completed"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG0FB14D80D587BBE8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-05T15:32:26.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG9A1914522A4364EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-24T16:25:17.9Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA3JT13654  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13654 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/WA3JT13654.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13654 ;
+        adm:logEntry        bda:LG0F9AFC8C979F2466 , bda:LG0FB14D80D587BBE8 , bda:LG9A1914522A4364EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6205D4FE2C798658
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8513 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3JT13654  a       :Work ;
+        skos:altLabel       "chos rje rgod tshang pa'i rnam thar btsag bris ma/"@bo-x-ewts , "chos rje rgod tshang pa'i rnam thar tsag bris ma/"@bo-x-ewts ;
+        skos:prefLabel      "chos rje rgod tshang pa'i rnam thar rtsar bris ma/"@bo-x-ewts ;
+        :creator            bdr:CR6205D4FE2C798658 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3JT13654 , bdr:W3JT13654 ;
+        :workIsAbout        bdr:P2090 .
+}

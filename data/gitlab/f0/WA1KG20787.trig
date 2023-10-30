@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20787 {
+    bda:LG37CCAD06B2F8E3CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-11T16:48:55.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG72ADC43A0CFA088F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-11T16:47:04.234Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG20787  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20787 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/WA1KG20787.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20787 ;
+        adm:logEntry        bda:LG37CCAD06B2F8E3CD , bda:LG72ADC43A0CFA088F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3219D5AA5F5972A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG12918 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG20787  skos:altLabel  "青藏高原生态保护漫谈"@zh-hans .
+
+    bdr:WA1KG20787  a       :Work ;
+        skos:altLabel       "qing zang gao yuan sheng tai bao hu man tan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mdo dbus mtho sgang gi skye khams khor yug la srung skyob byed pa'i skor brjod pa lhag bsam pad+ma dkar po'i chun po/"@bo-x-ewts , "青藏高原生态保护漫谈"@zh-hans ;
+        :catalogInfo        "On environmental protection and preservation of natural resources in Tibet."@en ;
+        :creator            bdr:CR3219D5AA5F5972A9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG20787 , bdr:W1KG20787 ;
+        :workIsAbout        bdr:G3196 , bdr:T2036 .
+}

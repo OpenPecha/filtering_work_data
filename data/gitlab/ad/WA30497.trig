@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30497 {
+    bda:LG0E8FD6B05E7DF150
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG1711BB6EA194AEFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-15T16:06:00.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCF8A2A3AEBE0446B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-09-15T16:08:13.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30497  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30497 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ad/WA30497.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30497 ;
+        adm:logEntry        bda:LG0E8FD6B05E7DF150 , bda:LG1711BB6EA194AEFB , bda:LGCF8A2A3AEBE0446B , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6BE767B391FB5155
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR743AF30F2A6470A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4306 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA30497  a          :Work ;
+        skos:altLabel       "bsdus gzhung nyi ma'i 'od zer/"@bo-x-ewts , "bse bsdus rtsom 'phro/"@bo-x-ewts ;
+        skos:prefLabel      "rwa bsdus dang bse bsdus rtsom 'phro/"@bo-x-ewts ;
+        :catalogInfo        "Two texts on treatment of the fundamentals of logical disputation."@en ;
+        :creator            bdr:CR6BE767B391FB5155 , bdr:CR743AF30F2A6470A1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30497 , bdr:W30497 ;
+        :workIsAbout        bdr:T96 .
+}

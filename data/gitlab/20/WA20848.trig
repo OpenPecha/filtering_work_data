@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20848 {
+    bda:LG3C79739B8CD31A0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG7B468C0404434E8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-06T15:50:40.093Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC5FC04AF7BF2F3A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-08-06T15:51:30.716Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFAF3203C8DB6BE32
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20848  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20848 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "20/WA20848.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20848 ;
+        adm:logEntry        bda:LG3C79739B8CD31A0E , bda:LG7B468C0404434E8B , bda:LGC5FC04AF7BF2F3A6 , bda:LGFAF3203C8DB6BE32 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ1997 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR40C2A9D1EA72963E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6979 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20848  skos:altLabel  "han zang shi ji"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA20848  a          :Work ;
+        skos:altLabel       "rgya bod kyi yig tshang mkhas pa dga' byed chen mo 'dzam gling gsal ba'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "rgya bod yig tshang chen mo/"@bo-x-ewts , "han zang shi ji"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "History of Tibet and China."@en ;
+        :creator            bdr:CR40C2A9D1EA72963E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workIsAbout        bdr:T1113 .
+}

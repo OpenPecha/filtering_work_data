@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23944 {
+    bda:LG0F68C269E9F45A88
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGA412F453768801FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:03:53.804Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGDFA122B85975A254
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23944  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23944 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ef/WA23944.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23944 ;
+        adm:logEntry        bda:LG0F68C269E9F45A88 , bda:LGA412F453768801FC , bda:LGDFA122B85975A254 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0NGMCP47226 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR9E9F5C4BE7C92E0C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23944  skos:altLabel  "legs par bses pa'i sprin yig gi rnam bsad thar lam bde ba'i them skas : a commentary on the suhrllekha of nagarjuna"@en-x-mixed .
+
+    bdr:WA23944  a          :Work ;
+        skos:altLabel       "bshes sprin rnam bshad/"@bo-x-ewts , "Legs par bśes paʼi spriṅ yig gi rnam bśad thar lam bde baʼi them skas :a commentary on the Suhrllekha of Nāgārjuna /by Roṅ-ston Śes-bya-kun-rig."@en-x-mixed ;
+        skos:prefLabel      "legs par bshes pa'i sprin yig gi rnam bshad thar lam bde ba'i them skas/"@bo-x-ewts , "legs par bses pa'i sprin yig gi rnam bsad thar lam bde ba'i them skas : a commentary on the suhrllekha of nagarjuna"@en-x-mixed ;
+        :catalogInfo        "Commentary on Nagarjuna's Letter to a Friend."@en ;
+        :creator            bdr:CR9E9F5C4BE7C92E0C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workIsAbout        bdr:T617 , bdr:WA22950 .
+}

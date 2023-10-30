@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369484 {
+    bda:LG7D650F4F42E60206
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-17T16:33:16.759Z"^^xsd:dateTime ;
+        adm:logMessage      "check and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8247A9142E024537
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-18T10:07:22.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369484  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369484 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fb/WA4CZ369484.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369484 ;
+        adm:logEntry        bda:LG7D650F4F42E60206 , bda:LG8247A9142E024537 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF9D7A2F73BDB4E13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369484  a      :Work ;
+        skos:altLabel       "sprul sku karma gling pa'i gter byon badz+ra gu ru'i phan yon dang 'bru 'grel/"@bo-x-ewts ;
+        skos:prefLabel      "badz+ra gu ru'i phan yon dang 'bru 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Word-for-word commentary by Padmasambhava on the benefits of reciting the badzra guru mantra."@en ;
+        :creator            bdr:CRF9D7A2F73BDB4E13 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ369484 , bdr:W4CZ369484 ;
+        :workIsAbout        bdr:T161 , bdr:T2147 .
+}

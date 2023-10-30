@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN414 {
+    bda:LG70EDD4E15ECD3ABC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-07T09:01:58.773Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8B9FF02949E1062F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-07T12:44:41.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBEC9A8F744EED603
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN414  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN414 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "db/WA3CN414.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN414 ;
+        adm:logEntry        bda:LG70EDD4E15ECD3ABC , bda:LG8B9FF02949E1062F , bda:LGBEC9A8F744EED603 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN414  a         :Work ;
+        skos:altLabel       "bka' gter zung 'jug gshin rje tshe bdag gi dbang rdo rje'i go khrab/"@bo-x-ewts ;
+        skos:prefLabel      "bka' gter zung 'jug gi dbang chog dang sgrub thabs sogs 'ga' zhig"@bo-x-ewts ;
+        :catalogInfo        "Various ritual texts arranged by union Kama and Terma tradition of Nyingma. Handwritten manuscript."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW3CN414 , bdr:W3CN414 ;
+        :workIsAbout        bdr:T1082 .
+}

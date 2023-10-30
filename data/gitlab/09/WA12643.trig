@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA12643 {
+    bda:LGA976CF68CD1820C4
+        a                   adm:UpdateData .
+
+    bda:LGC570D4F70272BD1E
+        a                   adm:InitialDataCreation .
+
+    bda:W12643  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W12643 ;
+        adm:replaceWith     bdr:WA12643 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA12643  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA12643 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "09/WA12643.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA12643 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR363A7F5DAF1E66C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT4275E01247400737
+        a                   :Note ;
+        :noteText           "50 ff. in vol. 5 of the 10 vol. gsung 'bum in the Potala collection.\n01226-1."@en .
+
+    bdr:NTFB959F2B83D86465
+        a                   :Note ;
+        :noteText           "Created conceptual work"@en .
+
+    bdr:WA12643  a          :Work ;
+        skos:altLabel       "rdzogs pa chen po sems nyid ngal gso/"@bo-x-ewts ;
+        skos:prefLabel      "sems nyid ngal gso/"@bo-x-ewts ;
+        :creator            bdr:CR363A7F5DAF1E66C0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT4275E01247400737 , bdr:NTFB959F2B83D86465 .
+}

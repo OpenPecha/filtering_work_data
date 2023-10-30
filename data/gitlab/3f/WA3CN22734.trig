@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22734 {
+    bda:LG39F9A205E10C3B4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-01T13:22:39.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG56F1C3DC1750A22C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG623F249188272990
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-30T23:52:52.248Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG71495EA20A27E861
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-23T11:07:16.366Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22734  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22734 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3f/WA3CN22734.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22734 ;
+        adm:logEntry        bda:LG39F9A205E10C3B4B , bda:LG56F1C3DC1750A22C , bda:LG623F249188272990 , bda:LG71495EA20A27E861 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA20856 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRCFF1D0DD76022936
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CREC38C990EC9A5EE3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8067 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA3CN22734  a       :Work ;
+        skos:prefLabel      "bka' chems ka khol ma/"@bo-x-ewts ;
+        :catalogInfo        "Last advice of dharma King Songtsen Gampo."@en ;
+        :creator            bdr:CRCFF1D0DD76022936 , bdr:CREC38C990EC9A5EE3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN22734 ;
+        :workIsAbout        bdr:T1KG1401 , bdr:T58 .
+}

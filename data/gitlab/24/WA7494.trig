@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA7494 {
+    bda:LG3A0871D008AEA59F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T12:08:27.608Z"^^xsd:dateTime ;
+        adm:logMessage      "addded print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAAB23C62EE619935
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBBF227F51E225E6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA7494  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA7494 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "24/WA7494.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA7494 ;
+        adm:logEntry        bda:LG3A0871D008AEA59F , bda:LGAAB23C62EE619935 , bda:LGBBF227F51E225E6A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG25336 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR0F70728EF2A47F3E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P318 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW7494  skos:altLabel  "the blue annals completed in a.d. 1478"@en .
+
+    bdr:WA7494  a           :Work ;
+        skos:altLabel       "The blue annals /completed in A.D. 1478 by Ḥg̣os-Lotsawa Gzhon-nu dpal."@en-x-mixed ;
+        skos:prefLabel      "deb ther sngon po/"@bo-x-ewts , "the blue annals completed in a.d. 1478"@en ;
+        :catalogInfo        "Historical chronicle of major figures in Tibet."@en ;
+        :creator            bdr:CR0F70728EF2A47F3E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW7494 ;
+        :workIsAbout        bdr:G3196 .
+}

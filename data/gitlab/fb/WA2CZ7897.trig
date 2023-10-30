@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7897 {
+    bda:LG5737176275D0E312
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-03T11:53:46.97Z"^^xsd:dateTime ;
+        adm:logMessage      "new wrok"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG82178DBB3443654C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-07-31T14:59:42.992Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF0B603EC5D18673A
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-18T14:20:33.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added volume map and archive info"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2CZ7897  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7897 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA2CZ7897.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7897 ;
+        adm:logEntry        bda:LG5737176275D0E312 , bda:LG82178DBB3443654C , bda:LGF0B603EC5D18673A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2880879E8A45F1FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2921 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ7897  a        :Work ;
+        skos:altLabel       "'das pa'i dus gsal ba zhes bya ba byed pa'i 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "bstan rtsis legs bshad 'od kyi phreng ba/"@bo-x-ewts ;
+        :creator            bdr:CR2880879E8A45F1FF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T245 , bdr:T255 ;
+        :workHasInstance    bdr:MW2CZ7897 , bdr:W2CZ7897 .
+}

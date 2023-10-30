@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66781 {
+    bda:LG350D4DB277D70E47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-07T12:43:41.252Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8225A0CE8E337AED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T12:03:21.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8A8D2550ED52D2FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T10:22:21.469Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBF358D25BED88C78
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC64CDD61069076B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-27T12:03:00.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author statement and page number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66781  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66781 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "08/WA8LS66781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66781 ;
+        adm:logEntry        bda:LG350D4DB277D70E47 , bda:LG8225A0CE8E337AED , bda:LG8A8D2550ED52D2FC , bda:LGBF358D25BED88C78 , bda:LGC64CDD61069076B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD99F92B9B772443D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75490 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66781  a       :Work ;
+        skos:prefLabel      "bod kyi zhing 'brog khul du spyod bde'i bod phyi lugs sman bcos thad kyi lag deb/"@bo-x-ewts ;
+        :catalogInfo        "Medical treatment handbook for farmers and nomads by Jampa Gelek."@en ;
+        :creator            bdr:CRD99F92B9B772443D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG15794 ;
+        :workHasInstance    bdr:MW8LS66781 , bdr:W8LS66781 ;
+        :workIsAbout        bdr:T94 .
+}

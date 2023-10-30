@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS41992 {
+    bda:LG0FAED8B6B7D86465
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-07T09:12:26.497Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG25B2EA0DBAF62284
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-07T09:16:31.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS41992  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS41992 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "13/WA8LS41992.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS41992 ;
+        adm:logEntry        bda:LG0FAED8B6B7D86465 , bda:LG25B2EA0DBAF62284 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF63986C22A5433B3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10506 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS41992  a       :Work ;
+        skos:altLabel       "gangs ti se'i gzi 'od/gangs phrug zhig gis rang gi pha yul la bcangs pa'i brtse sems/"@bo-x-ewts ;
+        skos:prefLabel      "gangs ti se'i gzi 'od/g"@bo-x-ewts ;
+        :catalogInfo        "Rase Konchok Gyatsho's poetry collection."@en ;
+        :creator            bdr:CRF63986C22A5433B3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS41992 , bdr:W8LS41992 ;
+        :workIsAbout        bdr:T281 .
+}

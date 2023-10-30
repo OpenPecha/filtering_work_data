@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17591 {
+    bda:LG58AB51A0FC685237
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-20T12:52:12.96Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG993F9BE6F820A884
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-20T14:42:50.596Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17591  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17591 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a0/WA1KG17591.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17591 ;
+        adm:logEntry        bda:LG58AB51A0FC685237 , bda:LG993F9BE6F820A884 , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG17591  skos:altLabel  "rituals for the practice of the sarvadurgatiparisodhana, avaloketesvara sadhana, tara sadhana and usnisavijaya teachings"@en .
+
+    bdr:WA1KG17591  a       :Work ;
+        skos:prefLabel      "dpal kun rig gi cho ga thams cad mkhyen pa gzhan phan lhun grub kyi nag 'gros rab tu gsal ba/"@bo-x-ewts , "rituals for the practice of the sarvadurgatiparisodhana, avaloketesvara sadhana, tara sadhana and usnisavijaya teachings"@en ;
+        :catalogInfo        "rituals for the practice of the sar vadurgatiparisodhana, avaloketesvara sadhana, tara sadhana and usnisavijaya teachings by various masters of the Phanpo Nalendra tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG17591 , bdr:W1KG17591 ;
+        :workIsAbout        bdr:T976 .
+}

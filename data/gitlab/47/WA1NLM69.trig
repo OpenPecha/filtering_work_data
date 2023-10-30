@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM69 {
+    bda:LG04D2FB1F09F80133
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG63DB30229903AA56
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:47.612Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6C65F27A4D798E4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:52:59.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM69"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM69  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM69 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "47/WA1NLM69.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM69 ;
+        adm:logEntry        bda:LG04D2FB1F09F80133 , bda:LG63DB30229903AA56 , bda:LG6C65F27A4D798E4B , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM69  a         :Work ;
+        skos:altLabel       "dpal rta mgrin yang gsang khros pa'i sgo nas bzlog gtor 'phen tshul 'khyer bde rig 'dzin dpa' bo'i mtshon cha sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin yang gsang khros pa'i sgo nas bzlog gtor 'phen tshul 'khyer bde rig 'dzin dpa' bo'i mtshon cha sogs/"@bo-x-ewts ;
+        :catalogInfo        "A bali offering ritual text to eliminate obstacles on the basis of hayagriva and dakini Simhamukh sadhana"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM69 , bdr:W1NLM69 ;
+        :workIsAbout        bdr:T1111 , bdr:T905 , bdr:T93 .
+}

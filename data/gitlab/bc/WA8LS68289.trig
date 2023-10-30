@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68289 {
+    bda:LG033A8D666B4A5091
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T15:25:09.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG161CF921451AD251
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-03T11:33:05.839Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA188FCFAC2D918D8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-03T11:33:34.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF274498C7CB9153E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS68289  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68289 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bc/WA8LS68289.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68289 ;
+        adm:logEntry        bda:LG033A8D666B4A5091 , bda:LG161CF921451AD251 , bda:LGA188FCFAC2D918D8 , bda:LGF274498C7CB9153E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR803E94B5463F86D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75543 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS68289  a       :Work ;
+        skos:prefLabel      "dbyi su'o yi gtam rgyud bzhi brgya pa/"@bo-x-ewts ;
+        :catalogInfo        "Ancient tales translated by Changshar Lhamo Kyab."@en ;
+        :creator            bdr:CR803E94B5463F86D7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T276 ;
+        :workHasInstance    bdr:MW8LS68289 , bdr:W8LS68289 .
+}

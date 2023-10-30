@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27597 {
+    bda:LG1B72881F14CDB84C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T12:30:15.15Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG5F3A7067E5C4E2C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:35:54.643Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGAFDDA18384BD701F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T10:26:54.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGDF2CCE64FA155AB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA27597  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27597 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "09/WA27597.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27597 ;
+        adm:logEntry        bda:LG1B72881F14CDB84C , bda:LG5F3A7067E5C4E2C1 , bda:LGAFDDA18384BD701F , bda:LGDF2CCE64FA155AB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1484BD58129CC9C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6002 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRFEB44641F4B1C447
+        a                   :AgentAsCreator ;
+        :agent              bdr:P732 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27597  skos:altLabel  "a brief biography of guru padmasambhava and the benefits to be derived from the recitation of the vajraguru formula"@en-x-mixed .
+
+    bdr:WA27597  a          :Work ;
+        skos:altLabel       "ba dz+ra gu ru'i phan yon mdor bsdus/"@bo-x-ewts , "dgongs gter bka' thang dang de'i 'grel pa/"@bo-x-ewts , "tshogs bshad nyer mkho dgong gter bka' thang gi don 'grel o rgyan rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "o rgyan gu ru pad+ma 'byung gnas kyi rnam thar bsdus pa don ldan dang 'brel ba'i snying po rdo rje'i sgra dbyangs kyi phreng ba/"@bo-x-ewts , "a brief biography of guru padmasambhava and the benefits to be derived from the recitation of the vajraguru formula"@en-x-mixed ;
+        :creator            bdr:CR1484BD58129CC9C8 , bdr:CRFEB44641F4B1C447 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW27597 , bdr:W27597 ;
+        :workIsAbout        bdr:P4956 , bdr:T161 , bdr:T2147 .
+}

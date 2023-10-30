@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3077 {
+    bda:LG834A8EC2CAD8DC52
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-17T14:40:33.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAB987EC06FDFCF01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3077"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3077  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3077 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/WA1NLM3077.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3077 ;
+        adm:logEntry        bda:LG834A8EC2CAD8DC52 , bda:LGAB987EC06FDFCF01 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR00374B57FA8E2904
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3077  a       :Work ;
+        skos:prefLabel      "thub dbang gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul thub bstan rgyas byed yid bzhin gyi nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo la mchod gtor 'bul tshul gyi lag len khrigs chags su bkod pa 'gag med rdo rje'i sgra dbyangs/ 2 bla ma mchod pa'i cho ga dngos grub 'dod 'jo'i snying po bsdus pa yid bzhin gyi nor bu/ 3 'phags pa kha mchu nag po zhib dpyod pa zhes bya ba theg pa chen po'i mdo/ 4 chos sde che chung rnams su gsung ba'i chos spyod kyi rim pa blo gsal mgul brgyan/ 5 ston pa shAkya thub pa la rten cing 'brel bar 'byung ba gsung ba'i sgo nas bstod pa legs bshad snying po/ 6 rnam par rgyal ma la brten nas rang gzhan gyi tshe sgrub bya bar 'dod pa/ 7 mkhan chen chos kyi rgyal po blo bzang bstan 'dzin rgyal mtshan dpal bzang po'i bka' drin gsol 'debs/ 8 rje btsun dam pa blo bzang bstan pa'i sgron mer gsol 'debs brtan bzhugs dang 'khrungs rabs gsol 'debs/ 9 bla ma'i bka' drin dran nas gsol ba 'debs shing thugs rje bskul ba grub pa'i sprin sgra dang / thub dbang zhal pad+ma/ 10 srid zhi yongs kyi gtsug rgyan skyams mgon 7rgyal dbang thams cad mkhyen gzigs chen po'i zhabs bstan gsol 'debs 'dod don lhun grub dge legs bye ba'i gter mdzod/"@en , "Offering and reverential petition of Shakyamuni and sixteen Sthaviras; other text also included."@en ;
+        :creator            bdr:CR00374B57FA8E2904 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM3077 , bdr:W1NLM3077 ;
+        :workIsAbout        bdr:T1154 , bdr:T1AT489 .
+}

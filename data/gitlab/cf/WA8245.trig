@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8245 {
+    bda:LG34552E564F5C79BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-21T16:03:22.732Z"^^xsd:dateTime ;
+        adm:logMessage      "added note on content"@en ;
+        adm:logWho          bdu:U00008 .
+
+    bda:LG688DA0293270236E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7025239651F80CC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-15T12:51:52.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added t1746,t246,t256"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG9DB94222ED77460A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB6769F0CA04F0003
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-21T17:12:23.054Z"^^xsd:dateTime ;
+        adm:logMessage      "add catalog info"@en ;
+        adm:logWho          bdu:U00008 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8245  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8245 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "cf/WA8245.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8245 ;
+        adm:logEntry        bda:LG34552E564F5C79BE , bda:LG688DA0293270236E , bda:LG7025239651F80CC9 , bda:LG9DB94222ED77460A , bda:LGB6769F0CA04F0003 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA644AE09767E9338
+        a                   :AgentAsCreator ;
+        :agent              bdr:P421 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8245  skos:altLabel  "xizang gu dian yin yue"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA8245  a           :Work ;
+        skos:altLabel       "gna' bo'i lugs bzang ya rabs srol gtod pa'i deb ther mig yid rna ba'i dga' ston 'gugs pa'i lcags kyo/"@bo-x-ewts ;
+        skos:prefLabel      "mig yid rna ba'i dga' ston/"@bo-x-ewts , "xizang gu dian yin yue"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "the preface contains a brief description on the history of gar glu"@en ;
+        :creator            bdr:CRA644AE09767E9338 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1746 , bdr:T246 ;
+        :workHasInstance    bdr:MW8245 , bdr:W8245 ;
+        :workIsAbout        bdr:T256 .
+}

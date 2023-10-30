@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3380 {
+    bda:LG311E5714BD202BB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:06:06.337Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3380"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3380  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3380 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/WA1NLM3380.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3380 ;
+        adm:logEntry        bda:LG311E5714BD202BB2 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2D4930B962A4682A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5349 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR56017FC4AE6C522F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P303 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3380  a       :Work ;
+        skos:altLabel       "gcig tu bral gyi rnam bzhag legs bshad rgya mtsho las btus pa'i 'khrul spong bdud rtsi'i gzegs ma/"@bo-x-ewts , "gdung shugs drag pos smre sngags gsol 'debs/"@bo-x-ewts , "paN chen thams cad mkhyen pa chen po'i dwogs gcod gsung lan/"@bo-x-ewts ;
+        skos:prefLabel      "yi dam dang chos skyong so so'i sgrub thabs dang rjes gnang byed tshul gyi cho ga dngos grub 'byung gnas/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana and Anuja ritual text for the various tutelary and protective deities, Exposition on the devoid of being one or many Chig Du dral"@en ;
+        :creator            bdr:CR2D4930B962A4682A , bdr:CR56017FC4AE6C522F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T7 ;
+        :workHasInstance    bdr:MW1NLM3380 , bdr:W1NLM3380 ;
+        :workIsAbout        bdr:T1338 .
+}

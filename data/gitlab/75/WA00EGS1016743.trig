@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1016743 {
+    bda:LG0C188293876385E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-11T09:46:21.926Z"^^xsd:dateTime ;
+        adm:logMessage      "edited authors names"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG1F427CCB4FCCC6E1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-19T18:05:58.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGB1A870299FA542A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-04T12:59:00.046Z"^^xsd:dateTime ;
+        adm:logMessage      "published for use in scanning request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00EGS1016743
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1016743 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "75/WA00EGS1016743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1016743 ;
+        adm:logEntry        bda:LG0C188293876385E2 , bda:LG1F427CCB4FCCC6E1 , bda:LGB1A870299FA542A9 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR797988FBDFF9C115
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016742 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRAC7CF03EA860D660
+        a                   :AgentAsCreator ;
+        :agent              bdr:P740 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00EGS1016743
+        a                   :Work ;
+        skos:altLabel       "sems dpa' chen po khu nu bla ma bstan 'dzin rgyal mtshan rin po che'i rab tu byed pa dad gsum mngon par rgyas pa'i snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "rab tu byed pa dad gsum mngon par rgyas pa'i snye ma/"@bo-x-ewts ;
+        :catalogInfo        "Poetical works on Buddhism written by the Kagyu teacher Khuru Rinpoche Tenzin Gyaltsen (1894-1977) and his student, Atsok Tenzin Jamyang (b. 20th cent.)."@en ;
+        :creator            bdr:CR797988FBDFF9C115 , bdr:CRAC7CF03EA860D660 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00EGS1016743 , bdr:W00EGS1016743 ;
+        :workIsAbout        bdr:T770 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS471 {
+    bda:LG2EE49D76D7EA7185
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-04T09:09:14.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added title page, all topics, cat info and pub infos"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG393DA7CD7D5E3412
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCAE4AB8D5A5FFF3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-08T09:55:03.857Z"^^xsd:dateTime ;
+        adm:logMessage      "edited cat info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF6EBC156D2C41B1C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-15T11:01:50.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:WA3MS471  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS471 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "93/WA3MS471.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS471 ;
+        adm:logEntry        bda:LG2EE49D76D7EA7185 , bda:LG393DA7CD7D5E3412 , bda:LGCAE4AB8D5A5FFF3F , bda:LGF6EBC156D2C41B1C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7B4C18B62BAA095B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P122 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3MS471  a         :Work ;
+        skos:altLabel       "kun mkhyen bla ma 'jam dbyangs bzhad pa'i rdo rje rje btsun blo bzang thub bstan 'jigs med rgya mtsho dpal bzang po'i zhal snga nas kyi rnam par thar pa bshad sgrub bstan ba'i mdzes rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs bzhad pa'i rdo rje blo bzang thub bstan 'jigs med rgya mtsho'i rnam par thar/"@bo-x-ewts ;
+        :catalogInfo        "The biography of the third Jamyang Zhadpa Thupten Jigme Gyatso by Ngawang Thupten Gyatso, the 51st throne holder of Labrang monastery; written at the age of 23."@en ;
+        :creator            bdr:CR7B4C18B62BAA095B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3MS471 , bdr:W3MS471 ;
+        :workIsAbout        bdr:P124 .
+}

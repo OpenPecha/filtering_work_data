@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM78 {
+    bda:LG0CA5EE00ACE489A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-23T23:53:03.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD437892C834F1B28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGED683A1342BA3053
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-27T11:28:21.806Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM78"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM78  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM78 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7a/WA1NLM78.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM78 ;
+        adm:logEntry        bda:LG0CA5EE00ACE489A5 , bda:LGD437892C834F1B28 , bda:LGED683A1342BA3053 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM78  a         :Work ;
+        skos:prefLabel      "sman bla'i chog bsgrigs 'dod dgu'i 'byung gnas/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of medicine buddha's ritual and recitation."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T398 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM78 , bdr:MW22318 , bdr:W1NLM78 , bdr:W22318 ;
+        :workIsAbout        bdr:T2579 , bdr:T568 .
+}

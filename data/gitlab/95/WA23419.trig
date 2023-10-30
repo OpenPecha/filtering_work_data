@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23419 {
+    bda:LG29C851A56CCBAD39
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG34F65B5D76FF77FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-02-10T12:18:36.962Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to none restricted and added authorization by His Holiness The 33rd Menri Trizin"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG92D5C3EB03494C50
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23419  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23419 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "95/WA23419.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23419 ;
+        adm:logEntry        bda:LG29C851A56CCBAD39 , bda:LG34F65B5D76FF77FF , bda:LG92D5C3EB03494C50 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFB575D5D09704C02
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7674 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23419  skos:altLabel  "texts of the new bon (bon gsar) tradition from the revelations of the sixth kun-grol-grags-pa huM-chen 'gro-'dul-gling-pa (1901-1956)"@en .
+
+    bdr:WA23419  a          :Work ;
+        skos:altLabel       "khro rgyal dregs pa kun 'dul dang huM chen snying gi thig le'i skor/"@bo-x-ewts ;
+        skos:prefLabel      "hUM chen snying gi thig le'i skor/"@bo-x-ewts , "texts of the new bon (bon gsar) tradition from the revelations of the sixth kun-grol-grags-pa huM-chen 'gro-'dul-gling-pa (1901-1956)"@en ;
+        :catalogInfo        "Cycle of New Bon Dzogchen practices by the Kundrol Drakpa Humchen 06 Drondul Lingpa (1901-1956). Scanned under a training project with the Bon Foundation of America and Menri Monastery. Made available through Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
+        :creator            bdr:CRFB575D5D09704C02 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23419 , bdr:W23419 ;
+        :workIsAbout        bdr:T1710 , bdr:T354 .
+}

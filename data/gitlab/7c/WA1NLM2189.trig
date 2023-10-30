@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2189 {
+    bda:LG164CE2FCDE2AFC68
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG476FFBE1C2925CA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-17T10:19:01.62Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2189"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2189  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2189 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7c/WA1NLM2189.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2189 ;
+        adm:logEntry        bda:LG164CE2FCDE2AFC68 , bda:LG476FFBE1C2925CA1 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2189  a       :Work ;
+        skos:prefLabel      "grib sel dag byed bdud rtsi snying po sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed dpa' bo gcig pa'i mngon rtogs bdud dpung rnam 'joms/ 2 srog glud bya tshul srog gi chad 'thud/ 3 slob dpon chen pos mdzad pa'i sde brgyad 'khrugs bskongs dang bzhad pa'i rdo rjes mdzad pa' sde brgyad gnod bzlog gnyis chab gcig tu ngag 'don gyi rim par bsgrigs pa phan bde kun dga' ma/ 4 chos skyong dregs pa lcam sring gi sgo nas gnod byed 'gong po bsreg chog 'jigs rung rdo rje me dpung / 5 'phags pa bzang po spyod pa'i smon lam gyi rgyal po gser skyems/ 6 dpe har chos kyi rgyal po'i gsol mchod kyi rjes su tshogs mchod bya tshul bden smon rol ba'i dga' ston/ 7 lug glang rta rnga mong pA dz+nya rak+Sha 8 thun mong rten 'brel bsangs/ 9 yi dam rdo rje 'jigs byed rgyal pa'i bstan bsrung rnams la spyi stabs tshul/ 10 ye shes kyi mkha' 'gro'i sgo nas sho mo 'debs tshul/ 11 klu bsangs blo sel chen mo/ 12 las bzhi sgrub pa'i lam bsangs/ 13 bdud tshar gcod pa'i sngags/ 14 me lha tshe thar/"@en , "Purification of defilement; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2189 , bdr:W1NLM2189 ;
+        :workIsAbout        bdr:T725 .
+}

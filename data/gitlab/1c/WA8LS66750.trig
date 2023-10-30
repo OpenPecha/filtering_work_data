@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66750 {
+    bda:LG06E2C8490629E7DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG667E1AF8970397CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-09T15:17:34.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7B0FEB11F753D067
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-04T09:17:20.032Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7D362941B7D63672
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-09T15:18:02.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA2A599025CD7CD7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T09:36:35.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66750  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66750 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1c/WA8LS66750.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66750 ;
+        adm:logEntry        bda:LG06E2C8490629E7DA , bda:LG667E1AF8970397CB , bda:LG7B0FEB11F753D067 , bda:LG7D362941B7D63672 , bda:LGA2A599025CD7CD7E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF45367499D65AF48
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75473 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS66750  a       :Work ;
+        skos:prefLabel      "phyogs yongs bzhi slob sbyong skor dri ba dri lan/"@bo-x-ewts ;
+        :catalogInfo        "Questions and responses concerning education; translated by Dondrup."@en ;
+        :creator            bdr:CRF45367499D65AF48 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW8LS66750 , bdr:W8LS66750 ;
+        :workIsAbout        bdr:T234 .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23451 {
+    bda:LG15DC043D4F2C6EB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-06-19T17:05:05.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG21A7012E09759B1B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG405CD9C63EB87DF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-19T15:10:28.609Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG57B29357F05A65D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-12T11:50:15.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad and full title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23451  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23451 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "41/WA23451.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23451 ;
+        adm:logEntry        bda:LG15DC043D4F2C6EB3 , bda:LG21A7012E09759B1B , bda:LG405CD9C63EB87DF3 , bda:LG57B29357F05A65D2 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23451  skos:altLabel  "dpal yul gyi bsans skor : collected rituals for the offering of bsans of the dpal-yul tradition"@en .
+
+    bdr:WA23451  a          :Work ;
+        skos:altLabel       "bskyed rdzogs 'brel ma lam 'bras bu dang bcas pa'i chos brtsams pa rdo rje'i snying po las bsang mchod rim pa 'dod dgu'i sprin phung /"@bo-x-ewts , "Dpal yul gyi bsaṅs skor :collected rituals for the offering of bsaṅs of the Dpal-yul tradition."@en-x-mixed ;
+        skos:prefLabel      "dpal yul gyi bsangs skor/"@bo-x-ewts , "dpal yul gyi bsans skor : collected rituals for the offering of bsans of the dpal-yul tradition"@en ;
+        :catalogInfo        "Collection of sang rituals used at Pelyul Namgyal Jangchub Ling Monastery."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23451 , bdr:W23451 ;
+        :workIsAbout        bdr:G18 , bdr:T173 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354435 {
+    bda:LG025FEE48CAA9CC85
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T11:50:39.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7E69E6502EA502FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD6BBF143EA4B643A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:37:08.428Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog usad"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354435  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354435 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ec/WA4CZ354435.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354435 ;
+        adm:logEntry        bda:LG025FEE48CAA9CC85 , bda:LG7E69E6502EA502FF , bda:LGD6BBF143EA4B643A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ354435  a      :Work ;
+        skos:altLabel       "khyung mgo sde ba yul lha bsangs mchod/"@bo-x-ewts ;
+        skos:prefLabel      "khyung mgo sde pa'i yul lha bsangs mchod/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Incense and torma offerings to the local deities of Khyungo Depa in Ado."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ354435 , bdr:W4CZ354435 ;
+        :workIsAbout        bdr:T173 , bdr:T408 .
+}

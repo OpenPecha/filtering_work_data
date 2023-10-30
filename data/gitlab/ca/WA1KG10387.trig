@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10387 {
+    bda:LG5360165057EE5675
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-08-31T10:58:34.189Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG694AA1E3D96D8BC6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-08-31T11:01:02.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAA658AEB7BAFCACF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T17:07:29.641Z"^^xsd:dateTime ;
+        adm:logMessage      "erased sogs in title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC728797751D0F103
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:37:26.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE933381D5C96BE5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-29T14:36:49.712Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10387  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10387 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ca/WA1KG10387.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10387 ;
+        adm:logEntry        bda:LG5360165057EE5675 , bda:LG694AA1E3D96D8BC6 , bda:LGAA658AEB7BAFCACF , bda:LGC728797751D0F103 , bda:LGE933381D5C96BE5D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCDA8290EEF9A893D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ8053 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG10387  a       :Work ;
+        skos:altLabel       "'phags yul tshad thub kyi gzhung mchog grags che ba 'ga' zhig rang rang gi brjod bya'i steng nas ngo tsam gleng ba'i kha byang /"@bo-x-ewts ;
+        skos:prefLabel      "rgya gzhung grags che ba 'ga' zhig gi kha byang /"@bo-x-ewts ;
+        :catalogInfo        "List of philosphical texts written by Indian masters with brief introduction on each title."@en ;
+        :creator            bdr:CRCDA8290EEF9A893D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 , bdr:T298 ;
+        :workHasInstance    bdr:MW1KG10387 , bdr:W1KG10387 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75802 {
+    bda:LG09F1A2EFD068BCAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-07T10:03:55.674Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5B757B267C9CA146
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T10:06:45.933Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in China"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAC4888904461E996
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T10:20:25.424Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF3174E23A4AB51FB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-07T10:05:09.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS75802  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75802 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a2/WA8LS75802.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75802 ;
+        adm:logEntry        bda:LG09F1A2EFD068BCAB , bda:LG5B757B267C9CA146 , bda:LGAC4888904461E996 , bda:LGF3174E23A4AB51FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS75802  a       :Work ;
+        skos:prefLabel      "in bod shan sbyar gtan 'bebs brda chad/"@bo-x-ewts ;
+        :catalogInfo        "A bilingual glossary of standadised Tibetan terminology."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW8LS75802 , bdr:W8LS75802 .
+}

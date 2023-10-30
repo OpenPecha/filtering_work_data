@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68018 {
+    bda:LG1B2029068A7CBA1D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-11T12:12:15.535Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2A92831D5D24B4C0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-11T12:10:49.185Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS68018  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68018 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "53/WA8LS68018.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68018 ;
+        adm:logEntry        bda:LG1B2029068A7CBA1D , bda:LG2A92831D5D24B4C0 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR246EE46DEB1126A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8067 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9ADE452BC20ABD93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3457 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE5655219998D8AFB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P753 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68018  a       :Work ;
+        skos:prefLabel      "zhal gdams dang mgur glu gces btus/"@bo-x-ewts ;
+        :catalogInfo        "Selected instructions and spiritual songs of Tibetan Buddhism."@en ;
+        :creator            bdr:CR246EE46DEB1126A9 , bdr:CR9ADE452BC20ABD93 , bdr:CRE5655219998D8AFB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW8LS68018 , bdr:W8LS68018 ;
+        :workIsAbout        bdr:T58 .
+}

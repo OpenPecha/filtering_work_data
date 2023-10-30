@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17544 {
+    bda:LG7A5E17919BCFF2EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-15T12:45:01.423Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG7C12D5274FFA92F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-16T14:16:45.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG88CE268E81C74F98
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9A4B3DDEA5D38C01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T13:21:34.539Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2PD17544  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17544 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA2PD17544.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17544 ;
+        adm:logEntry        bda:LG7A5E17919BCFF2EB , bda:LG7C12D5274FFA92F9 , bda:LG88CE268E81C74F98 , bda:LG9A4B3DDEA5D38C01 , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2PD17544  a       :Work ;
+        skos:altLabel       "bka' brgyud gser phreng /"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyud pa'i bla ma rnams kyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biographies of Kagyu masters"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2PD17544 , bdr:W2PD17544 ;
+        :workIsAbout        bdr:T1187 .
+}

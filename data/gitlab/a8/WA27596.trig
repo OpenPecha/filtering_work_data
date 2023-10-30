@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27596 {
+    bda:LG27B853E0F1C11D1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-27T16:31:43.609Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00009 .
+
+    bda:LG2E9257E9F8E7415E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:35:53.268Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG4D5C938F38DDAECE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T14:19:59.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added authorship statement and date of writing"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG984D28C2B4A2C778
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBEC6FE079B3B9119
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:WA27596  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27596 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a8/WA27596.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27596 ;
+        adm:logEntry        bda:LG27B853E0F1C11D1D , bda:LG2E9257E9F8E7415E , bda:LG4D5C938F38DDAECE , bda:LG984D28C2B4A2C778 , bda:LGBEC6FE079B3B9119 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1A02B9F2508A7A0B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6239 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV0A9002C72D35AAD4
+        a                   :CompletedEvent ;
+        :eventWhen          "རྨུགས་སངས་བེནྡེ་འཇམ་དཔལ་བཟང་པོས་རང་ལོ་གྱ་གཉིས་སུ་སོན་པ།རབ་རྒྱལ་ཆུ་ཁྱི་ལོར་མཚོར་འཁྲུངས་རྒྱལ་བ་ཞིང་འདིར་མཚན་དཔེའི་དཀྱིལ་འཁོར་ཐོག་མར་སྣང་བའི་ཆུ་སྟོད་ཟླ་བའི་ཚེས་༡༠ལ།ཀཿཐོག་པ་ཨ་རྡོ་དཀོན་མཆོག་རྒྱལ་མཚན་དང་།ཧོར་པོ་མཁས་མཆོག་ཤཱཀྱ་རྒྱལ་མཚན་སོགས་དམ་པ་མང་པོ་གྲུབ་པ་བརྙེས་པའི་དབེན་གནས་ཀརྨ་ལྟ་སྟེང་གི་ནགས་ཁྲོད་ལྷ་ཤིང་ཤུག་པས་ཡོངས་སུ་བསྐོར་བའི་གནས་སུ་གྲུབ་པར་བགྱིས་པའོ།།"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:MW27596  skos:altLabel  "history of the dpal-yul monasteries"@en .
+
+    bdr:WA27596  a          :Work ;
+        skos:altLabel       "rgyal dban dpal yul ba'i gdan rabs no mtshar 'chi med yons 'du'i ljon pa'i phren ba"@bo-alalc97 , "a history of the dpal-yul complex of monasteries and their spiritual traditions"@en ;
+        skos:prefLabel      "rgyal dbang dpal yul ba'i gdan rabs ngo mtshar 'chi med yongs 'du'i ljon pa'i phreng ba/"@bo-x-ewts , "history of the dpal-yul monasteries"@en ;
+        :creator            bdr:CR1A02B9F2508A7A0B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV0A9002C72D35AAD4 ;
+        :workHasInstance    bdr:MW27596 , bdr:W27596 ;
+        :workIsAbout        bdr:G18 , bdr:T16 .
+}

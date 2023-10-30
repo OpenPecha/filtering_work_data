@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17647 {
+    bda:LG38749102DF6C64FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T09:04:29.52Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC84974446CF0C989
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-10T09:05:38.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17647  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17647 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e0/WA8LS17647.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17647 ;
+        adm:logEntry        bda:LG38749102DF6C64FB , bda:LGC84974446CF0C989 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR37795A355A0EF273
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17647  a       :Work ;
+        skos:altLabel       "bi rU pa'i bstod pa sa skya pa chen pos mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "bi rU pa'i bstod pa/"@bo-x-ewts ;
+        :catalogInfo        "1 skyu ra bas skyabs la zhug yig 2 rgyud sde spyi'i rnam bzhag 3 rgyud sde'i dum bu brgyad bcu rtsa gsum pa/ 4 rgyud kyi sa bcad/ 5 brtag gnyis kyi TI ka sa chen gyis mdzad pa/ 6 rdo rje snying po'i 'grel a snga 'gyur gyi yig sna/ 7 phyir bzlog pa dang bsrung ba'i mngon par rtogs pa dng b+ha ya na'i bsrung 'khor rje sa chen gyis mdzad pa/ 8 de nyid bcu'i gsal byed/ 9 mtsho skyes kyi lo rgyus/ 10 sa chen gyis mdzad pa'i kye'i rdo rje'i mngon rtogs tshigs bcad ma/ tsho skyes lugs/ 11 glu bshad rtsa'i mngon rtogs/"@en , "Verses of praise of Mahasidha Virupa by Sachen Kunga Nyingpo."@en ;
+        :creator            bdr:CR37795A355A0EF273 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW22271_0200B0 , bdr:MW8LS17647 , bdr:W8LS17647 ;
+        :workIsAbout        bdr:P3293 .
+}

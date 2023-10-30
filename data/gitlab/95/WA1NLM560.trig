@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM560 {
+    bda:LG4B88D4091F82C38C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG60C6DE4831719BF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-20T12:11:12.422Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7ACF5C89EDA10B71
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T12:30:56.601Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB2B9BDBC7D4B92E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-10T12:30:48.197Z"^^xsd:dateTime ;
+        adm:logMessage      "complete cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDC7F9BDA987D83D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-02T16:19:37.985Z"^^xsd:dateTime ;
+        adm:logMessage      "test,"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM560"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM560  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM560 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "95/WA1NLM560.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM560 ;
+        adm:logEntry        bda:LG4B88D4091F82C38C , bda:LG60C6DE4831719BF2 , bda:LG7ACF5C89EDA10B71 , bda:LGB2B9BDBC7D4B92E6 , bda:LGDC7F9BDA987D83D8 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3F86E0025C05E644
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM560  a        :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed lha bcu gsum pa'i ngag 'don mdor bsdus zung 'jug nye lam/"@bo-x-ewts ;
+        skos:prefLabel      "gtor chog las bzhi lhun grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "A bali offering and other related rituals , From vol nga, Collected works of Sumpa Khenpo Yeshe Paljor"@en ;
+        :creator            bdr:CR3F86E0025C05E644 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM560 , bdr:W1NLM560 ;
+        :workIsAbout        bdr:T819 .
+}

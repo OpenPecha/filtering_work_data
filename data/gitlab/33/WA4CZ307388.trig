@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307388 {
+    bda:LG4281B05A12A1A895
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG4372AF8DA11FC456
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-23T12:41:00.744Z"^^xsd:dateTime ;
+        adm:logMessage      "newly catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF214E236285EDDDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T15:12:50.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ307388  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307388 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/WA4CZ307388.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307388 ;
+        adm:logEntry        bda:LG4281B05A12A1A895 , bda:LG4372AF8DA11FC456 , bda:LGF214E236285EDDDE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ307388  a      :Work ;
+        skos:altLabel       "rdo rje rnal 'bor ma'i bskyed rdzogs kyi rnam bshad mkha' spyod sgo 'byed sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rnal 'byor ma'i sgrub skor/ (sa skya pa'i lugs)"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical text, instruction and mandala sadhana focussed upon Vajrayogini"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ307388 , bdr:W4CZ307388 ;
+        :workIsAbout        bdr:T1181 , bdr:T428 .
+}

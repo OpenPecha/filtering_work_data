@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17541 {
+    bda:LG30EA34ACC5B2716D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-16T14:12:27.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBE7B8E00004D7ACA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-15T12:44:43.744Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC0F02C1C2FA52FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-30T12:42:22.75Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEA36AC5DDB2E326B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2PD17541  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17541 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b2/WA2PD17541.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17541 ;
+        adm:logEntry        bda:LG30EA34ACC5B2716D , bda:LGBE7B8E00004D7ACA , bda:LGC0F02C1C2FA52FCE , bda:LGEA36AC5DDB2E326B , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA22393 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR6E8AAC4CDA9F236E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1844 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2PD17541  a       :Work ;
+        skos:altLabel       "chos kyi rje dags po rin po zla 'od gzhon nu'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ zla 'od gzhon nu/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of Gampopa Sonam Rinchen alias Dakpo Lhaje (1079-1153), founding master of the Dakpo Kagyu tradition."@en ;
+        :creator            bdr:CR6E8AAC4CDA9F236E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T2MS13223 .
+}

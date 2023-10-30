@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA138 {
+    bda:LG06C0753E06B54E8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG2556A6F5BDA12811
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T14:44:22.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG4422137289BDAD47
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-02-28T14:59:01.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8B945C7B226A555E
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-12-21T14:30:36.088Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDE56AD2536B0C70D
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-28T14:54:30.713Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA138  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA138 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "ee/WA138.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA138 ;
+        adm:logEntry        bda:LG06C0753E06B54E8F , bda:LG2556A6F5BDA12811 , bda:LG4422137289BDAD47 , bda:LG8B945C7B226A555E , bda:LGDE56AD2536B0C70D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA77EF7F190D5032C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF5B6956AC10C43F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:EV94ABB48DE7CA7B3E
+        a                   :CompletedEvent ;
+        :onYear             "1914"^^xsd:gYear .
+
+    bdr:WA138  a            :Work ;
+        skos:altLabel       "phar phyin skabs bzhi pa'i bsdus don gyi 'grel pa blo gsal mgrin rgyan/"@bo-x-ewts , "skabs bzhi pa'i bsdus don rgyal mkhan po grags pa rgyal mtshan la gnang ba/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin skabs bzhi pa'i bsdus don dang 'grel ba/"@bo-x-ewts ;
+        :catalogInfo        "Summaries of the fourth chapter of Abhisamayalankara by Gungtang Konchok Tenpai Dronme (1762-1823). Commentary by Gungtang Lodro Gyatso (1851-1928/30)."@en ;
+        :creator            bdr:CRA77EF7F190D5032C , bdr:CRF5B6956AC10C43F1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV94ABB48DE7CA7B3E ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW138 , bdr:W138 ;
+        :workIsAbout        bdr:T36 .
+}

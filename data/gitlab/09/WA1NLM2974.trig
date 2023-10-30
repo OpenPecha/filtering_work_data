@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2974 {
+    bda:LG223B063365BD3AFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-12T10:18:30.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE172A11606D79196
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2974"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2974  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2974 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "09/WA1NLM2974.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2974 ;
+        adm:logEntry        bda:LG223B063365BD3AFA , bda:LGE172A11606D79196 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2974  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das tshe yi lha gsum la brten nas rang gzhan gyi don du tshe'i dngos grub sgrub pa'i tshul 'chi med bdud rtsi'i mchog sbyin sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed ser po la brten pa'i shin tu zab pa'i man ngag 2 'phags pa thugs rje chen po la brten pa'i bla ma'i gsol 'debs byin rlabs myur 'jug 3 pad+ma yang gsang khros pa'i bla brgyud gsol 'debs/ 4 dzam bla dkar po'i chu sbyin byed par 'dod pa/ 5 dzam+b+ha la dkar po gser po nag po gsum ka chu sbyin/ 6 dzam+b+ha la dkar po'i chu sbyin/ 7 rgyal po gser gyi lag pa'i smon lam dang 'brel ba'i mar me ji ltar 'bul ba'i tshul bde legs 'byung gnas/ 8 bla ma lha bsrung la tshogs mchod 'bul tshul/ 9 mnyam med bcom ldan 'das dpal rdo rje 'jigs byed chen po'i bsnyen bsgrub tshul bzhin du byed pa'i rnal 'byor ba chen po la mnyes bar mkho ba'i nyams len lus sems ngal gso/ 10 o rgyan rin po che la gsol 'debs bsam pa myur 'grub/ 11 gu ru o rgyan rin po che pad+ma 'byung gnas kyi gsol 'debs bsam pa myur 'grub ma/ 12 rta mgrin yang gsang gi sman dang rak+ta gnyis kyi rdzas kyi rim pa/ 13 bar chad lam sel/ 14 slob dpon chen po pad+ma 'byung gnas kyi gu ru mtshan brgyad la dus la 'babs pa'i gsol 'debs man ngag bka' rgya ma/ 15 sman bla'i mdo chog gi snying po'i chog sgrigs rin po che'i them skas/ 16 bcom ldan 'das sman bla bde gshegs brgyad kyi mtshan dang gzungs sngags rnam 'don thabs/ 17 brkyang phyag mjud tu 'don rgyu smon lam them skas/ 18 lam rim brgyud rim ma'i go rim ma/"@en , "Longevity ritual of three long life deity by author signed as Kachen Losang Yungdrung; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T27 ;
+        :workHasInstance    bdr:MW1NLM2974 , bdr:W1NLM2974 ;
+        :workIsAbout        bdr:T955 .
+}

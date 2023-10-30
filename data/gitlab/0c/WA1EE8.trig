@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE8 {
+    bda:LG349A68906365A4D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-03-26T13:41:40.651Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created"@en .
+
+    bda:LG6706142B010BF5EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T12:32:57.603Z"^^xsd:dateTime ;
+        adm:logMessage      "T142 changed W22003"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC1D421665A1206BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-17T15:33:04.751Z"^^xsd:dateTime ;
+        adm:logMessage      "publisher location s.l."@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDACF261AF33CC676
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-14T10:16:17.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1EE8  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE8 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/WA1EE8.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE8 ;
+        adm:logEntry        bda:LG349A68906365A4D9 , bda:LG6706142B010BF5EC , bda:LGC1D421665A1206BA , bda:LGDACF261AF33CC676 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1EE8  a           :Work ;
+        skos:altLabel       "'phags pa 'jam dpal gyi mtshan yang dag par bjod pa/ （legs sbyar gyi skad du lany+tsa dang sog yul swayambhu yig gis bris bod skad du bod yig gis bris）"@bo-x-ewts , "mtshan brjod/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal gyi mtshan yang dag par brjod pa/"@bo-x-ewts , "manjusrinamasamgiti"@sa-alalc97 ;
+        :catalogInfo        "Manjusrinamasamgiti in Sanskrit by Lantsa and Soyombo Scripts, and in Tibetan"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangSa ;
+        :workGenre          bdr:T2129 , bdr:T240 ;
+        :workHasInstance    bdr:MW1EE8 , bdr:W1EE8 ;
+        :workIsAbout        bdr:T311 , bdr:T69 , bdr:WA22003 .
+}

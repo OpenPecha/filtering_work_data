@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20131 {
+    bda:LGA43D330172026BD3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA95FD3E317C296DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGFCC65435A20C78B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-23T12:30:06.187Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA20131  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20131 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "62/WA20131.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20131 ;
+        adm:logEntry        bda:LGA43D330172026BD3 , bda:LGA95FD3E317C296DF , bda:LGFCC65435A20C78B6 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW20131  skos:altLabel  "江那边"@zh-hans .
+
+    bdr:WA20131  a          :Work ;
+        skos:altLabel       "jiang na bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gtsang po'i pha rol/"@bo-x-ewts , "江那边"@zh-hans ;
+        :catalogInfo        "Collection of fictions by contemporary Tibetan writers."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T257 ;
+        :workHasInstance    bdr:MW20131 , bdr:W20131 .
+}

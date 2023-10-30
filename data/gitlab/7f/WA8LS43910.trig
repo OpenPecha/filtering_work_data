@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS43910 {
+    bda:LG397FD39D0267DFA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG7429F6CBD68C5730
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-21T12:20:58.575Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF7AD63F77B912F87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-21T12:22:45.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS43910  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS43910 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA8LS43910.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS43910 ;
+        adm:logEntry        bda:LG397FD39D0267DFA1 , bda:LG7429F6CBD68C5730 , bda:LGF7AD63F77B912F87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREF34FFB9D7043F2D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS43910  a       :Work ;
+        skos:prefLabel      "ngag dbang blo bzang rgya mtsho'i 'khrungs rabs gsol 'debs la sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsangs mchod/ 2 bstan pa'i gsal byed rgyal khang rtse'i sprul pa'i sku 'khrungs rabs mos ldan dad gsos/ 3 mtshan nyied grwa tshang gi 'don cha gzungs sngags kyi skor/ 4 dpal ldan bla ma dam pa la bstod pa'i tshig su bcad pa tshangs pa'i dbyangs/ 5 lha dang bcas pa'i 'jig rten kun gyi skyabs gcig pu rgyal ba byams pa mgon po la smre sngags kyi sgo nas bstod pa tshangs pa'i cod pan/ 6 gtor ma brgya rtsa'i cho ga mdor bsdus/ 7 lhag pa'i smon lam/ 8 'phags pa spyan ras gzigs dbang phyug la phyag 'tshal lo/ 9 gtso rgyal ma/ 10 rnam dag gangs ri'i phreng bas yongs bskor ba'i/ 11 dpal ldan rdo rje rab brtan ma la mchod gtor 'bul tshul/ 12 bsangs mchod le'u brgyad ma rnam dag chos skur ma grags/ 13 shes rab kyi pha rol du phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan/"@en , "Prayer of previous lives of the fifth Dalai Lama, also prayer and ritual text."@en ;
+        :creator            bdr:CREF34FFB9D7043F2D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T977 ;
+        :workHasInstance    bdr:MW8LS43910 , bdr:W8LS43910 ;
+        :workIsAbout        bdr:P37 , bdr:T1887 .
+}

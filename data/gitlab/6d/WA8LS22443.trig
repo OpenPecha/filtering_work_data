@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22443 {
+    bda:LG4ED8129D5EC1D315
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-26T11:58:28.658Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5026301CBA772E56
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-26T11:59:31.159Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS22443  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22443 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6d/WA8LS22443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22443 ;
+        adm:logEntry        bda:LG4ED8129D5EC1D315 , bda:LG5026301CBA772E56 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCC4079228D0C635A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P60 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22443  a       :Work ;
+        skos:altLabel       "rnal 'byor spyod pa bzhi brgya pa'i 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "bzhi brgya pa'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Aryadeva's four hundred verses by Rendawa Zhonu Lodro."@en ;
+        :creator            bdr:CRCC4079228D0C635A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS22443 , bdr:W8LS22443 ;
+        :workIsAbout        bdr:WA19459 .
+}

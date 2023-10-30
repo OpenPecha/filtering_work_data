@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66805 {
+    bda:LG0889705CCE077E60
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T09:36:59.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8B159D5E7F1C9F92
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T09:37:29.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA163660845587904
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBDCA75A7A0B1D99B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T15:55:03.338Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66805 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3d/WA8LS66805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66805 ;
+        adm:logEntry        bda:LG0889705CCE077E60 , bda:LG8B159D5E7F1C9F92 , bda:LGA163660845587904 , bda:LGBDCA75A7A0B1D99B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3B85AF0680406EC9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG07632 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66805  a       :Work ;
+        skos:prefLabel      "zla 'od 'og gi dran 'char/"@bo-x-ewts ;
+        :catalogInfo        "Collection of essays written by Tsering Yangkyi."@en ;
+        :creator            bdr:CR3B85AF0680406EC9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW8LS66805 , bdr:W8LS66805 .
+}

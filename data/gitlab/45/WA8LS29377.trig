@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29377 {
+    bda:LG89CA8DE848630B9B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-22T16:17:58.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8B4DBBFA95C90D2F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-22T16:18:59.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE17D9510BB4240A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NGMPP"@en ;
+        adm:logWhoStr       "add-works-to-PR1NGMPP00" .
+
+    bda:WA8LS29377  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29377 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "45/WA8LS29377.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29377 ;
+        adm:logEntry        bda:LG89CA8DE848630B9B , bda:LG8B4DBBFA95C90D2F , bda:LGE17D9510BB4240A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA8LS29374 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF780EA4DAE28C65D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5340 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29377  a       :Work ;
+        skos:altLabel       "u rgyan gu ru pad+ma 'byung gnas kyi rnam thar rgyas pa gser gyi 'phreng ba thar lam gsal byed/"@bo-x-ewts ;
+        skos:prefLabel      "rnam thar gser gyi phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Padmasambhava's biography rediscovered by Terton Sangye Lingpa."@en ;
+        :creator            bdr:CRF780EA4DAE28C65D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P4956 .
+}

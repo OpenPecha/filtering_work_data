@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM102 {
+    bda:LG28C72224F4D47A4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-28T17:18:55.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2947AD7F200735B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T08:29:58.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBCB147B49458B1AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM102"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM102  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM102 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "14/WA1NLM102.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM102 ;
+        adm:logEntry        bda:LG28C72224F4D47A4C , bda:LG2947AD7F200735B9 , bda:LGBCB147B49458B1AD , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM102  a        :Work ;
+        skos:prefLabel      "'phags pa nor gyi rgyun zhes bya ba khyim bdag zla ba bzang pos zhus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dharani of Vasudara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM102 , bdr:W1NLM102 ;
+        :workIsAbout        bdr:T756 .
+}

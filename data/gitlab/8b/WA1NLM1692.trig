@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1692 {
+    bda:LG43CDE6F2D10834AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-02T15:09:46.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBE07A3337FC8B2FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:26:22.291Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF7C78C84A6CEDA22
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1692"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1692  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1692 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8b/WA1NLM1692.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1692 ;
+        adm:logEntry        bda:LG43CDE6F2D10834AF , bda:LGBE07A3337FC8B2FD , bda:LGF7C78C84A6CEDA22 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1335 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR83A334ED75087892
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1692  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rang lha'i rnal 'byor dang ldan pa'i sgo nas gser skyems dang rten rdzas nyin rlabs/ 2 mgon po'i bsangs spyan ras gzigs gi gsangs/ 3 lhag pa'i smon lam/ 4 yul lha'i gsol mchod bsangs gtor gser skyems 'bul tshul/ 5 gser 'od dam pa'i mdo tshogs mchod/ 6 'go ba'i lha lnga'i tshogs mchod bde legs rgya mtsho/ 7 rgyud kyi bsti nas byung ba'i rten 'brel snying po'i cho ga 8 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa/ 9 mgon po mi kha dgra mi mchu/"@bo-x-ewts , "Root text of Madhyamakavatara by Acharya Candrakirti; other text also included."@en ;
+        :creator            bdr:CR83A334ED75087892 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T233 , bdr:WA19458 .
+}

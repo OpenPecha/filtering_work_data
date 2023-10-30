@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN495 {
+    bda:LG5E2D96F96A3272CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T15:59:01.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9CDF53B87C51E128
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-29T19:35:54.494Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCD11698F3E7DCD72
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T18:16:30.661Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN495  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN495 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f1/WA3CN495.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN495 ;
+        adm:logEntry        bda:LG5E2D96F96A3272CA , bda:LG9CDF53B87C51E128 , bda:LGCD11698F3E7DCD72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4644094EC3797675
+        a                   :AgentAsCreator ;
+        :agent              bdr:P986 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN495  a         :Work ;
+        skos:altLabel       "gzhung brgya dngos grub dpal 'bar gyi zab mdo dang mdzod 'grel/"@bo-x-ewts ;
+        skos:prefLabel      "zab mdo dang mdzod 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Writings by Zhunggya Ngodrub Palbar on the subject of profound Sutra and Coommentary of Abhidharmakosha."@en ;
+        :creator            bdr:CR4644094EC3797675 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN495 , bdr:W3CN495 ;
+        :workIsAbout        bdr:T59 .
+}

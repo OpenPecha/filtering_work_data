@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG03605 {
+    bda:LG07C3117E291498A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-28T16:27:27.893Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5ABF696654E37A05
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-03-06T14:56:18.768Z"^^xsd:dateTime ;
+        adm:logMessage      "QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5C1D00D4058EB97B
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-30T14:37:20.158Z"^^xsd:dateTime ;
+        adm:logMessage      "QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6998B5C19CDABD26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-10-23T15:26:58.32Z"^^xsd:dateTime ;
+        adm:logMessage      "publish first time"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8421F90D1570B140
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-10T11:12:58.012Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG941B26DD49FEE3C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T14:48:48.515Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1958 to T2481"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC0700F57282D3794
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-10-23T15:57:20.43Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00KG03605  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG03605 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "6d/WA00KG03605.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG03605 ;
+        adm:logEntry        bda:LG07C3117E291498A3 , bda:LG5ABF696654E37A05 , bda:LG5C1D00D4058EB97B , bda:LG6998B5C19CDABD26 , bda:LG8421F90D1570B140 , bda:LG941B26DD49FEE3C8 , bda:LGC0700F57282D3794 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR74E9A8F5E2D75EDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6672 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW00KG03605  skos:altLabel  "a journey into the culture of tibetan nomads"@en .
+
+    bdr:WA00KG03605  a      :Work ;
+        skos:altLabel       "byang 'brog gi lam yig (shang-shung script)"@bo-x-ewts ;
+        skos:prefLabel      "byang 'brog gi lam yig"@bo-x-ewts , "a journey into the culture of tibetan nomads"@en ;
+        :catalogInfo        "Detailed explanation on nomadic culture in Dzachuka and Serta. Written by the Tibetan scholar Namkhai Norbu."@en ;
+        :creator            bdr:CR74E9A8F5E2D75EDF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00KG03605 , bdr:W00KG03605 ;
+        :workIsAbout        bdr:G3957 , bdr:T1245 , bdr:T2037 , bdr:T2481 .
+}

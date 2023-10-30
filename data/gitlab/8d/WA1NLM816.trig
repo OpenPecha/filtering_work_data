@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM816 {
+    bda:LG3F6FAEC08BEC8CF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-11T09:16:26.132Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4AC422451B20EBB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE8BA817C58FC6273
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-27T12:39:37.008Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM816"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM816  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM816 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/WA1NLM816.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM816 ;
+        adm:logEntry        bda:LG3F6FAEC08BEC8CF4 , bda:LG4AC422451B20EBB2 , bda:LGE8BA817C58FC6273 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM510 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR92878C01A12652A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM816  a        :Work ;
+        skos:altLabel       "mngon pa mdzod kyi don la 'dogs pa bcad pa blo gsar rol rtsed/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod kyi don la dogs pa bcad pa blo gsar rol rtsed/"@bo-x-ewts ;
+        :catalogInfo        "Clarification of difficult point in the eighth chapter of the Abhidharmakosa"@en ;
+        :creator            bdr:CR92878C01A12652A6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2023 ;
+        :workIsAbout        bdr:WA19720 .
+}

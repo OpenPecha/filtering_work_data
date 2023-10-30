@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21974 {
+    bda:LG5CD468C27EDEE53B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG5E893416B3571E59
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB6036CF0D69D2DC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-03T16:51:07.743Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGCE813401DB6394AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T16:08:37.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21974  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21974 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "3a/WA21974.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21974 ;
+        adm:logEntry        bda:LG5CD468C27EDEE53B , bda:LG5E893416B3571E59 , bda:LGB6036CF0D69D2DC8 , bda:LGCE813401DB6394AE , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD8398210F8490F33
+        a                   :AgentAsCreator ;
+        :agent              bdr:P663 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21974  skos:altLabel  "rtsa gsum yi dam dgons 'dus :a collection of nyingmapa teachings"@en-x-mixed .
+
+    bdr:WA21974  a          :Work ;
+        skos:altLabel       "Rtsa gsum yi dam dgoṅs ʼdus :a collection of Nyingmapa teachings /rediscovered by Stag-śam Nus-ldan-rdo-rje."@en-x-mixed ;
+        skos:prefLabel      "rtsa gsum yi dam dgongs 'dus/"@bo-x-ewts , "rtsa gsum yi dam dgons 'dus :a collection of nyingmapa teachings"@en-x-mixed ;
+        :catalogInfo        "Revealed teachings of a Nyingma master from Kham and Southeastern Tibet."@en ;
+        :creator            bdr:CRD8398210F8490F33 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T192 , bdr:T448 ;
+        :workHasInstance    bdr:MW21974 , bdr:MW4CZ1101 , bdr:MW9086 , bdr:W21974 , bdr:W4CZ1101 ;
+        :workIsAbout        bdr:P5795 , bdr:T1082 .
+}

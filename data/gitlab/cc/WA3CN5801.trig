@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5801 {
+    bda:LG6130FA5CDC2F7FC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-09T16:02:52.719Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7133407E47BE90B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T16:25:17.236Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7639F82ED898A82E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-29T07:38:06.462Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5801  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5801 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cc/WA3CN5801.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5801 ;
+        adm:logEntry        bda:LG6130FA5CDC2F7FC9 , bda:LG7133407E47BE90B2 , bda:LG7639F82ED898A82E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN5801  a        :Work ;
+        skos:prefLabel      "rig nor gces btus las pod chen drug gi rtsa 'grel phyogs sgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of root texts with commentary of six major philosophical texts in Sakya tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T132 ;
+        :workHasInstance    bdr:MW3CN5801 , bdr:W3CN5801 ;
+        :workIsAbout        bdr:T3JT12491 .
+}

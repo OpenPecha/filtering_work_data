@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23233 {
+    bda:LG345A239F2978F283
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-14T09:28:39.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added t1488, t34"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAD2C7A017349CFFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T15:21:41.196Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE5965F2E1054DEF7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23233  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23233 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "68/WA23233.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23233 ;
+        adm:logEntry        bda:LG345A239F2978F283 , bda:LGAD2C7A017349CFFF , bda:LGE5965F2E1054DEF7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDD54A0F719210545
+        a                   :AgentAsCreator ;
+        :agent              bdr:P741 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23233  a          :Work ;
+        skos:altLabel       "'phags pa bzang po spyod pa'i smon lam gyi 'bru 'grel mkhas grub dam pa'i zhal rgyun theg chen lam bzang /"@bo-x-ewts ;
+        skos:prefLabel      "bzang po spyod pa'i smon lam gyi 'bru 'grel mkhas grub dam pa'i zhal rgyun theg chen lam bzang /"@bo-x-ewts ;
+        :catalogInfo        "Word-for-word commentary on the Bhadracaryapranidhana prayer. Written by Adzom Gyalse Gyurme Dorje."@en ;
+        :creator            bdr:CRDD54A0F719210545 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1488 , bdr:T34 ;
+        :workHasInstance    bdr:MW23233 , bdr:W23233 .
+}

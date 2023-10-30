@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14982 {
+    bda:LG4D36BF8DF9798DFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T13:59:08.015Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG71D56213FA7BC03C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-29T11:40:30.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7E8CB90EA4110857
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-08-29T11:39:27.103Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14982  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14982 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e7/WA1KG14982.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14982 ;
+        adm:logEntry        bda:LG4D36BF8DF9798DFA , bda:LG71D56213FA7BC03C , bda:LG7E8CB90EA4110857 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG14982  skos:altLabel  "catalogue of the library of tibetan works and archives"@en .
+
+    bdr:WA1KG14982  a       :Work ;
+        skos:altLabel       "Catalogue of the Library of Tibetan Works and Archives, Manuscript Section /compiled by Jampa Samten Shastri."@en-x-mixed ;
+        skos:prefLabel      "bod kyi dpe mdzod khang gi phyag dpe'i dkar chag"@bo-x-ewts , "catalogue of the library of tibetan works and archives"@en ;
+        :catalogInfo        "Catalog of the Library of Tibetan Works and Archives (LTWA)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2196 ;
+        :workHasInstance    bdr:MW1KG14982 , bdr:W1KG14982 ;
+        :workIsAbout        bdr:G1KG14985 .
+}

@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN27015 {
+    bda:LG1037E85F2D688770
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-04T09:27:37.779Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6B0E819D1A77B281
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-02T11:05:23.073Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN27015  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN27015 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f8/WA3CN27015.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN27015 ;
+        adm:logEntry        bda:LG1037E85F2D688770 , bda:LG6B0E819D1A77B281 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN27015  a       :Work ;
+        skos:altLabel       "房山云居寺石刻佛教大藏经"@zh-hans , "房山石經"@zh-hant ;
+        skos:prefLabel      "房山石经"@zh-hans ;
+        :catalogInfo        "Fangshan Stone Sutras of Chinese Buddhist Canon"@en ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN27015 .
+}

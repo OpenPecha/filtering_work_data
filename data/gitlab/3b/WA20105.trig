@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20105 {
+    bda:LG0D10DC724D0B42B0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-26T10:38:53.687Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG435F42FB22F82BB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T09:18:15.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4C9F0F8574180A30
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDFDFD36BA0641515
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGE60B1A9D2039B752
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T10:37:56.777Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20105  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20105 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3b/WA20105.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20105 ;
+        adm:logEntry        bda:LG0D10DC724D0B42B0 , bda:LG435F42FB22F82BB7 , bda:LG4C9F0F8574180A30 , bda:LGDFDFD36BA0641515 , bda:LGE60B1A9D2039B752 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA20105  a          :Work ;
+        skos:altLabel       "skyes mchog ge sar rgyal po'i phyi nang gsang gsum gyi rnam thar yang snying gser gyi zhun ma yon tan nor bu'i mdzod/"@bo-x-ewts , "ge sa er wang mi zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gling ge sar rgyal po'i rnam thar/"@bo-x-ewts , "格萨尔王密传"@zh-hans ;
+        :catalogInfo        "Brief description of the legendary king Gesar's secret life in verse; author unknown."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW20105 , bdr:W20105 ;
+        :workIsAbout        bdr:T1863 .
+}

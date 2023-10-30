@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3801 {
+    bda:LG3B987A918948843F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-18T10:43:02.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3801"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3801  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3801 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ce/WA1NLM3801.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3801 ;
+        adm:logEntry        bda:LG3B987A918948843F , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD489FE3D692835D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3801  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das rdo rje 'jigs byed lha bcu gsum ma'i sgrub thabs rin po che'i za ma tog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi bla brgyud gsol 'debs stod pa sgron ma shis brjod yan lag bdun pa rnams/ 2 zab lam gcod kyi man ngag snying gi mun sel rin chen sgron ma/ 3 shes rab snying po'i sgrub thabs las sbyor bcas pa mun sel sgron ma/ 4 bla ma'i rnal 'byor dngos grub bang mdzod/ 5 gcod kyi sdom tshig mchan 'grel dang bcas pa kun mkhyen lam bzang / 6 gnas brtan mchod pa'i skabs su khrus gsol bya tshul/ 7 theg pa chen po'i gso sbyong blang ba'i sgo nas thub dbang gnas brtan bcud drug 'khor dang bcas ap la phyag mchod thugs dam bskul ba'i cho ga dngos grub kun 'byung / 8 rje btsun ma 'phags ma sgrol ma'i mtshan brgya rtsa brgyad/ 9 gnas brtan mchod pa'i skabs su khrus gsol bya tshul/ 10 gsang bdag gi bstod pa/ 11 dpal gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim yang snying / 12 bstan srung chen po rdo rje legs pa'i gsol mchod 'phrin las rnam bzhi lhun grub/"@en , "Sadhana of thirteen deity Vajrabairava by Tsongkhapa Losang Dakpa; composed on the request of Tshakho Ngawang Dakpa from Shar Gyalmorong."@en ;
+        :creator            bdr:CRD489FE3D692835D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3801 , bdr:W1NLM3801 ;
+        :workIsAbout        bdr:T00JR3170 .
+}

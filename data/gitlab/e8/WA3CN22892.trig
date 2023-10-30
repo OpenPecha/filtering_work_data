@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22892 {
+    bda:LG680B38ACD935051B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-02T15:00:30.825Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA5DFCE49B6FFFC44
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-22T20:59:59.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA723B8D8E5C517AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-06-02T21:00:33.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC0EFB6B9DC1A3EF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22892  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22892 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e8/WA3CN22892.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22892 ;
+        adm:logEntry        bda:LG680B38ACD935051B , bda:LGA5DFCE49B6FFFC44 , bda:LGA723B8D8E5C517AF , bda:LGC0EFB6B9DC1A3EF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN22892  a       :Work ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i rtsa rgyud rgyud phyi ma dang bcas pa dang / gsang bde 'jigs gsum gyi smon lam/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus rtsa rgyud rgyud phyi ma dang gsang bde 'jigs gsum gyi smon lam/"@bo-x-ewts ;
+        :catalogInfo        "Root texts of guhyasamaja tantra and prayer of the three main tantras of the Geluk tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW3CN22892 , bdr:W3CN22892 ;
+        :workIsAbout        bdr:T417 .
+}

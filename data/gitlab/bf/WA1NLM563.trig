@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM563 {
+    bda:LG78DC18ABD2F18406
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF55BCC764947E19F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T12:30:57.387Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM563"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM563  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM563 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bf/WA1NLM563.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM563 ;
+        adm:logEntry        bda:LG78DC18ABD2F18406 , bda:LGF55BCC764947E19F , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM563  a        :Work ;
+        skos:altLabel       "dbu ma rigs tshogs drug dang de'i 'grel pa khag"@bo-x-ewts ;
+        skos:prefLabel      "rang rgyud 'gog tshul mdor bsdus sogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of comentaries on the six Madhyamika root text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM563 , bdr:W1NLM563 ;
+        :workIsAbout        bdr:WA4CZ57160 .
+}

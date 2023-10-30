@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN10207 {
+    bda:LG8D70EF0E6EE6B1FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-11T15:11:44.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFDDBD04217B5267E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-11T15:07:03.771Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN10207  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN10207 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d4/WA3CN10207.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN10207 ;
+        adm:logEntry        bda:LG8D70EF0E6EE6B1FA , bda:LGFDDBD04217B5267E , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN10207  a       :Work ;
+        skos:altLabel       "sku zhabs tshe ring blo gsal lags kyi dngos don byung ba dang 'brel ba'i lo rgyus/ deb phreng gnyis pa/"@bo-x-ewts ;
+        skos:prefLabel      "khrag dron gyi 'khyug bris/"@bo-x-ewts ;
+        :catalogInfo        "Documentary note about Mr. Tsering Losal."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN10207 , bdr:W3CN10207 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

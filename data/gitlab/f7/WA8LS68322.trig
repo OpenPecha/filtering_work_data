@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68322 {
+    bda:LG90403DB7C0255042
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-05T12:09:22.743Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4382FCDC5C277B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDCA83AB1F1C9A44B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-05T12:09:44.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68322  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68322 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f7/WA8LS68322.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68322 ;
+        adm:logEntry        bda:LG90403DB7C0255042 , bda:LGB4382FCDC5C277B1 , bda:LGDCA83AB1F1C9A44B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B9B3594AE6A56CB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6590 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68322  a       :Work ;
+        skos:prefLabel      "gtsug lag pod bzhi ma dang bstan chos lnga las tshig rkang nyis brgya ba/"@bo-x-ewts ;
+        :catalogInfo        "PRC cummunist cadre's text book; traslated by Golok Namgyal."@en ;
+        :creator            bdr:CR5B9B3594AE6A56CB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T1777 , bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68322 , bdr:W8LS68322 ;
+        :workIsAbout        bdr:T1176 .
+}

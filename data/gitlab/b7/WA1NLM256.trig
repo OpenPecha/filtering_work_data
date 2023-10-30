@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM256 {
+    bda:LG12B9C63BEDD6A5AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-20T15:12:09.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info, content"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8E8C2A82E5098705
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:40.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9AEFBE52487C76BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGC10F5A5869FADA55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGEB27E75B590266A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:38.932Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM256"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM256  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM256 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b7/WA1NLM256.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM256 ;
+        adm:logEntry        bda:LG12B9C63BEDD6A5AD , bda:LG8E8C2A82E5098705 , bda:LG9AEFBE52487C76BF , bda:LGC10F5A5869FADA55 , bda:LGEB27E75B590266A0 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR70F910D23349B1A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4989 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM256  a        :Work ;
+        skos:altLabel       "bcom ldan 'das pad+ma dbang chen yang gsang khros pa'i dbang gi bla ma brgyud pa'i rnam thar dad pa'i chu gter g.yo ba'i rba rlabs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma dbang chen yang gsang khros pa'i dbang gi bla ma brgyud pa'i rnam thar dad pa'i chu gter g.yo ba'i rba rlabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gter chen bla ma'i/ rnam thar mdor bsdus/ pad dkar chun po/ 2 chos pa'i tshogs rnams dgyes byed dang / /chos med tshgos rnams khros byed dang / /bar ma'i tshogs rnams g.yengs byed pa'i/ /ngo mtshar drang gtam sbyor ba/ 3 sdeb sbyor rin chen 'byung gnas kyi 'grel pa blo gros rgya mtsho 'phel ba'i zla ba/ 4 sdeb sbyor gyi bstan bcos rin chen 'byung gnas/ 5 mdo sngags yongs rdzogs kyi bshes gnyen chen po rje btsun ngag dbang chos 'phel ba'i rnam par thar pa dad pa'i ljon shing / 6 gsang bde 'jigs gsum gyi blos bslang bzhengs tshul gyi rnam bzhag rin chen ke ta ka/ 7 thig rtsa'i rnam bzhag me tog phreng mdzes ltar bkod pa/ 8 yab rje chos kyi rgyal po mgon po 'od mi 'gyur ba'i 'pho khrid gnang ba'i sung rgyun zin bris su bkod pa/ 9 bde gshegs so lnga la 'dod don gsol 'debs bya tshul gyi dgongs 'grel thar 'dod 'jug ngogs/"@en , "Biography of teacher in the transmission lineage of wrathful Hayagriva by Zodben Tenpa Gyaltshen."@en ;
+        :creator            bdr:CR70F910D23349B1A0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM256 , bdr:W1NLM256 ;
+        :workIsAbout        bdr:T1111 , bdr:T1702 .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15974 {
+    bda:LG0551817AF2C669CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-19T13:15:11.811Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBFF19073E00C3688
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-11-19T14:16:07.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD8490D846B444C76
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T09:52:07.512Z"^^xsd:dateTime ;
+        adm:logMessage      "normalised series number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15974  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15974 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f7/WA1KG15974.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15974 ;
+        adm:logEntry        bda:LG0551817AF2C669CE , bda:LGBFF19073E00C3688 , bda:LGD8490D846B444C76 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB6A5B7B56FE973F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG15974  a       :Work ;
+        skos:altLabel       "'jam mgon yab sras gsum gyi dgongs pa rjes 'jug mkhas pa so sos ji ltar bkral tshul dbu ma'i dogs gcod rten 'byung snying po/"@bo-x-ewts , "rje yab sras gsum gyi dgongs pa ji ltar bkral tshul dbu ma'i dogs gcod/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i dogs gcod rten 'byung snying po/"@bo-x-ewts ;
+        :catalogInfo        "Analytic note on Tsongkhapa and his two chief spritual disciples' thoughts on Madhyamaka philosophy."@en ;
+        :creator            bdr:CRB6A5B7B56FE973F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2023 ;
+        :workHasInstance    bdr:MW1KG15974 , bdr:MW1KG4428 , bdr:W1KG15974 , bdr:W1KG4428 ;
+        :workIsAbout        bdr:T233 .
+}

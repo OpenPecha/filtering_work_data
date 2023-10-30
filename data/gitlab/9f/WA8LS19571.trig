@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19571 {
+    bda:LG7B9AE5D6B8EF9E3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-02T09:41:47.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAC92C0EC649EECF5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-07T14:27:01.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19571  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19571 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9f/WA8LS19571.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19571 ;
+        adm:logEntry        bda:LG7B9AE5D6B8EF9E3B , bda:LGAC92C0EC649EECF5 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS19571  a       :Work ;
+        skos:prefLabel      "zhi khro'i gnas 'dren spyi don bzhin rab gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Funeral rites according to Zhitro."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW8LS19571 , bdr:W8LS19571 ;
+        :workIsAbout        bdr:T351 .
+}

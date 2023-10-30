@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3848 {
+    bda:LG222F0041887B215F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-30T10:35:48.008Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3848"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3848  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3848 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f3/WA1NLM3848.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3848 ;
+        adm:logEntry        bda:LG222F0041887B215F , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5A3601379230588C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3848  a       :Work ;
+        skos:prefLabel      "bsangs mchog bkra shis char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 yi dam gtor 'bul/ 2 rta mgrin gyi gser skyems/ 3 dpal rta mgrin gsang sgrub kyi bskangs bshags klag pas don grub/ 4 bla ma zhabs brtan gsol 'debs/ 5 bar do 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 6 rlung rta bsang mchod/ 7 pany+tsa rak+Sha bsdus pa/ 8 'phags ma stong chen po'i snying po/ 9 byang sham+b+ha lar skye ba'i smon tshig 10 sgrol ma dkar mo la brten nas tshe sgrub pa'i cho ga 'chi med bdud rtsi bum bzang / 11 rnga mong gi nad zhi bar byed pa'i mdo/ lugs nad zhi bar byed pa'i mdo/ 12 tshe sgrub pa'i gdams pa zab mo/ 13 dpal ldan lha moi bskang bshags bsdus pa/ 14 rta mchog rol ba dng bka' sdod gnod sbyin lcam dral rnams kyi 'phrin bcol/ 15 dus kyi bya rog sgra brtag/ 16 dpal ldan dur khrod bdag po'i sgo nas drag po keng rus bya bzlog bsgyur chom rkun gnod 'jigs bzlog gtor/ 17 skyabs 'gro sems bskyed tshad med bzhi bsgom pa/ 18 mi kha dkar po gcod ling+ga bzhi/ 19 gsol 'debs byin rlabs gnad 'bebs ma/ 20 'brum bdag lha mo she ta la'i mngon rtogs dang lha beg gnyis kyi gtor 'bul 'phrin bcol mdor bsdus dang 'brum bdag lha mo she ta'i sgo nas 'brum nad myur du chad pa dang 'brum nag dkar por 'gyur ba'i man ngag dang bcas/ 21 dpal ldan dmag zor rgyal mo dang chos skyong chen po dregs pa lcam sring 'phrin las byed par 'dod pa/ 22 'brum bcos zab mo/"@en , "Ritual of incense offering by the 3rd Thukwan Chokyi Nyima."@en ;
+        :creator            bdr:CR5A3601379230588C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3848 , bdr:W1NLM3848 ;
+        :workIsAbout        bdr:T173 .
+}

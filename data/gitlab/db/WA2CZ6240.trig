@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ6240 {
+    bda:LG0258B190F3AD4F61
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG52FA1DAFE1D2600B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-11-26T14:37:09.65Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG5D6523B55E511997
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T14:07:07.193Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG7AC6526552D85853
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-22T14:42:43.107Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG860DD238F4A8CC5C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-12-05T14:45:46.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ6240  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ6240 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "db/WA2CZ6240.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ6240 ;
+        adm:logEntry        bda:LG0258B190F3AD4F61 , bda:LG52FA1DAFE1D2600B , bda:LG5D6523B55E511997 , bda:LG7AC6526552D85853 , bda:LG860DD238F4A8CC5C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFA1C0CE62AB2F8DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ6240  a        :Work ;
+        skos:altLabel       "rje'i gsung mgur ngo mtshar bdud rtsi'i rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "lho brag dkor gzan rgya bo'i gsung mgur/"@bo-x-ewts ;
+        :catalogInfo        "Collected Songs of Realization by Drukpa Kagyu master Lodrak Korzen Gyawo."@en ;
+        :creator            bdr:CRFA1C0CE62AB2F8DB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW2CZ6240 , bdr:W2CZ6240 ;
+        :workIsAbout        bdr:P4252 , bdr:T1187 .
+}

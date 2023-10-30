@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77349 {
+    bda:LG0106B79D57BE58BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-12T10:12:20.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD9A3B6E9377C6FBA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-12T10:11:58.836Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77349  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77349 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/WA8LS77349.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77349 ;
+        adm:logEntry        bda:LG0106B79D57BE58BC , bda:LGD9A3B6E9377C6FBA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF1C1942E6A9D3564
+        a                   :AgentAsCreator ;
+        :agent              bdr:P626 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77349  a       :Work ;
+        skos:prefLabel      "srid zhi'i rnam 'dren 7gong sa 7skyabs mgon 7rgyal dbang thams cad mkhyen cing gzigs pa chen po mchog gi 'khrungs rabs gsol 'debs byin rlabs bdud rtsi'i sprin phung la sogs/"@bo-x-ewts ;
+        :catalogInfo        "A supplication prayers of successive line of The 14th Dalai Lama by Trulzhik Ngawang Chokyi Lodro; also included othe text."@en ;
+        :creator            bdr:CRF1C1942E6A9D3564 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW8LS77349 , bdr:W8LS77349 ;
+        :workIsAbout        bdr:P1649 , bdr:T1887 .
+}

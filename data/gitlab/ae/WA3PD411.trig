@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD411 {
+    bda:LG2E72DA057103CAF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T15:03:10.606Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5035FF8634664723
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG710BABC48BFD3C4C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T21:46:43.838Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE57FD1A31F05495F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-19T17:19:15.447Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGEF5A1D4989774C35
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:11:51.57Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD411  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD411 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ae/WA3PD411.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD411 ;
+        adm:logEntry        bda:LG2E72DA057103CAF2 , bda:LG5035FF8634664723 , bda:LG710BABC48BFD3C4C , bda:LGE57FD1A31F05495F , bda:LGEF5A1D4989774C35 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3D9752499AC71F1F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1124 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW3PD411  skos:altLabel  "学说藏语2000句"@zh-hans .
+
+    bdr:WA3PD411  a         :Work ;
+        skos:altLabel       "xue shuo zang yu 2000 ju"@zh-latn-pinyin ;
+        skos:prefLabel      "bod skad tshig rkang nyis stong bslab/"@bo-x-ewts , "学说藏语2000句"@zh-hans ;
+        :creator            bdr:CR3D9752499AC71F1F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
+        :workHasInstance    bdr:MW3PD411 , bdr:W3PD411 .
+}

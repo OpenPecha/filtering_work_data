@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22202 {
+    bda:LG72486856FD761F7E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG86A5E4A4976C6A05
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T11:46:47.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22202  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22202 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1c/WA22202.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22202 ;
+        adm:logEntry        bda:LG72486856FD761F7E , bda:LG86A5E4A4976C6A05 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55D771382A1A1992
+        a                   :AgentAsCreator ;
+        :agent              bdr:P875 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7218A092F60A2468
+        a                   :AgentAsCreator ;
+        :agent              bdr:P878 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW22202  skos:altLabel  "dpal ldan bla ma dam pa karma bstan 'phel gyi rnam par thar pa grub pa'i rol rtsed : the autobiography of the first khams-sprul karma-bstan-'phel"@en-x-mixed .
+
+    bdr:WA22202  a          :Work ;
+        skos:altLabel       "the autobiography of the first khams-sprul karma-bstan-'phel"@en ;
+        skos:prefLabel      "mdo khams pa karma bstan 'phel rnam thar/"@bo-x-ewts , "dpal ldan bla ma dam pa karma bstan 'phel gyi rnam par thar pa grub pa'i rol rtsed : the autobiography of the first khams-sprul karma-bstan-'phel"@en-x-mixed ;
+        :catalogInfo        "Biography of Khamtrul 01, master of the Drukpa Kagyu order."@en ;
+        :creator            bdr:CR55D771382A1A1992 , bdr:CR7218A092F60A2468 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW22202 , bdr:W22202 ;
+        :workIsAbout        bdr:P875 .
+}

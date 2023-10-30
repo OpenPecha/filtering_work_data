@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66807 {
+    bda:LG284A2CFCE188579B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T10:42:48.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG81F2AA9C67A3FA04
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGACF94DF8648D41E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T14:56:51.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC97E4AA5EC938E95
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T10:43:13.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE8B50A0C3762A8CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T09:19:03.874Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66807  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66807 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f4/WA8LS66807.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66807 ;
+        adm:logEntry        bda:LG284A2CFCE188579B , bda:LG81F2AA9C67A3FA04 , bda:LGACF94DF8648D41E5 , bda:LGC97E4AA5EC938E95 , bda:LGE8B50A0C3762A8CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR442FBDD98A866930
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75498 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66807  a       :Work ;
+        skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/ bod kyi chos lugs/"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi chos lugs/"@bo-x-ewts ;
+        :catalogInfo        "Questions and responses concerning religious tradition of Tibet."@en ;
+        :creator            bdr:CR442FBDD98A866930 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW8LS66807 , bdr:W8LS66807 ;
+        :workIsAbout        bdr:G3196 , bdr:T1PD53279 .
+}

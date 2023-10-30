@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30143 {
+    bda:LG47D237493F7C182C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG61D2BC25F0F9DBDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-05T10:44:07.996Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG87CAA4C4C0214CBB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGA2B4DD3D9B1B166D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T14:52:12.087Z"^^xsd:dateTime ;
+        adm:logMessage      "CTC5"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGFE320A1226290453
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-17T15:23:38.076Z"^^xsd:dateTime ;
+        adm:logMessage      "annotated"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30143  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30143 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "f4/WA30143.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30143 ;
+        adm:logEntry        bda:LG47D237493F7C182C , bda:LG61D2BC25F0F9DBDD , bda:LG87CAA4C4C0214CBB , bda:LGA2B4DD3D9B1B166D , bda:LGFE320A1226290453 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0B1F5C3CAFF155C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR1430413EA1984894
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10197 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR43C80E5F2113F201
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10199 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR8DE9048AAAAF5404
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10198 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRF6CCFD0CF03339CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10196 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW30143  skos:altLabel  "instructions for recognizing various medicinal plants according to the methods taught by si-tu pan-chen chos-kyi-'byun-gnas (1700-17740"@en-x-mixed .
+
+    bdr:WA30143  a          :Work ;
+        skos:prefLabel      "nus pa rkyang sel gyi sman ngo gsal byed/"@bo-x-ewts , "instructions for recognizing various medicinal plants according to the methods taught by si-tu pan-chen chos-kyi-'byun-gnas (1700-17740"@en-x-mixed ;
+        :catalogInfo        "Work on the medical efficacy of plants in Tibetan medicine."@en ;
+        :creator            bdr:CR0B1F5C3CAFF155C0 , bdr:CR1430413EA1984894 , bdr:CR43C80E5F2113F201 , bdr:CR8DE9048AAAAF5404 , bdr:CRF6CCFD0CF03339CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30143 , bdr:W30143 ;
+        :workIsAbout        bdr:T85 .
+}

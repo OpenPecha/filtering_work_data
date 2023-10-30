@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31739 {
+    bda:LG573955E6CB73D5FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-19T09:37:03.594Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7F4FB22E9A8B7DAB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-19T09:38:37.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31739  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31739 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "40/WA8LS31739.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31739 ;
+        adm:logEntry        bda:LG573955E6CB73D5FF , bda:LG7F4FB22E9A8B7DAB , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB41E7DE7265A3329
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5011 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRE7ABAF6226883778
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4849 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS31739  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po lta ba'i yang snying nam mkha' klongs yangs kyi rgyud/"@bo-x-ewts , "rdzogs pa chen po lta ba'i yang snying sangs rgyas thams cad kyi dgongs pa nam mkha' klongs yangs kyi rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "nam mkha' klongs yangs kyi rgyud/"@bo-x-ewts ;
+        :catalogInfo        "Santimahatrithigarbhebud+dhasarvasamati agusutratantra also included other tantra text."@en ;
+        :creator            bdr:CRB41E7DE7265A3329 , bdr:CRE7ABAF6226883778 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW8LS31739 , bdr:W8LS31739 ;
+        :workIsAbout        bdr:T354 .
+}

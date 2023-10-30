@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS35907 {
+    bda:LGBC8079CE28FBE6BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-11T09:46:19.053Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDDDE4465BC78609E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-11T09:47:42.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS35907  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS35907 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA8LS35907.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS35907 ;
+        adm:logEntry        bda:LGBC8079CE28FBE6BD , bda:LGDDDE4465BC78609E , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8E96ED014CA60A6C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG14983 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS35907  a       :Work ;
+        skos:altLabel       "bcom ldan 'das bde bar gshegs pa shAkya thub pa'i bka' dang / de'i dgongs 'grel gyi bstan bcos bod kyi skad du 'gyur ro 'tshal gyi chos phung bsdu sgrig dang glegs bam du bris bzhengs rgyun spel ji ltar mdzad pa'i bka' bstan lo rgyus 'od snang gsar pa/"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi bka' bstan lo rgyus 'od snang gsar pa/"@bo-x-ewts ;
+        :catalogInfo        "History of Tibetan translation of buddhist Tripitaka by Dr. Jampa Samten."@en ;
+        :creator            bdr:CR8E96ED014CA60A6C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS35907 , bdr:W8LS35907 ;
+        :workIsAbout        bdr:T1129 .
+}

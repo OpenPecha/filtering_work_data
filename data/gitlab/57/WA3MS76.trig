@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS76 {
+    bda:LG1C10FA855F56A138
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T14:26:51.295Z"^^xsd:dateTime ;
+        adm:logMessage      "released from accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1D7569795D0E95BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T09:37:08.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG297BE42A6B01C070
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T16:49:26.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added topics & catalog info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2EB0C8CB1A8FEB8B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-03T17:11:31.227Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGAB4B5A1FDF4EDC6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS76  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS76 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "57/WA3MS76.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS76 ;
+        adm:logEntry        bda:LG1C10FA855F56A138 , bda:LG1D7569795D0E95BC , bda:LG297BE42A6B01C070 , bda:LG2EB0C8CB1A8FEB8B , bda:LGAB4B5A1FDF4EDC6F , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14F5B126E5526DE3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS44053 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3MS76  a          :Work ;
+        skos:prefLabel      "dpal lha sgang dgon pa'i lo rgyus mdor bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Brief history of Minyak Pal Lhagang monastery."@en ;
+        :creator            bdr:CR14F5B126E5526DE3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3MS76 , bdr:W3MS76 ;
+        :workIsAbout        bdr:G3791 .
+}

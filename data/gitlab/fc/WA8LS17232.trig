@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17232 {
+    bda:LG28C3EDA3FBCBBC71
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-03T10:36:22.589Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9599FFCF1D75DAB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-03T10:38:02.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBC50AC0E34F6A3FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17232  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17232 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fc/WA8LS17232.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17232 ;
+        adm:logEntry        bda:LG28C3EDA3FBCBBC71 , bda:LG9599FFCF1D75DAB3 , bda:LGBC50AC0E34F6A3FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR279DEDB5145C8E64
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR62B1488A7D42104C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRD5D0E6EFC2A3D76E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRFC8D583065D54D6E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW8LS17232  skos:altLabel  "arya-saptatathagatapurvapranidhanavisesavistara-namamahayana-sutra"@en .
+
+    bdr:WA8LS17232  a       :Work ;
+        skos:altLabel       "'phags pa de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "'phags pa de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa zhes bya ba theg pa chen po'i mdo brgyad brgya ba/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde brgyad brgya pa/"@bo-x-ewts , "arya-saptatathagatapurvapranidhanavisesavistara-namamahayana-sutra"@en ;
+        :catalogInfo        "A sutra associated with the prayer of seven medicine buddha. This text was edited by Chinese translator Iking and probably printed under the patronage of Mongolian king and queen."@en ;
+        :creator            bdr:CR279DEDB5145C8E64 , bdr:CR62B1488A7D42104C , bdr:CRD5D0E6EFC2A3D76E , bdr:CRFC8D583065D54D6E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW8LS17232 , bdr:W8LS17232 ;
+        :workIsAbout        bdr:T568 .
+}

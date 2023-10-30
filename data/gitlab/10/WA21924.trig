@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21924 {
+    bda:LGD9AC29E60AC1D30F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMDA3CC38EDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T17:27:14.339Z"^^xsd:dateTime ;
+        adm:logMessage      "removed erroneous titles from previous update"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21924  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21924 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "10/WA21924.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21924 ;
+        adm:logEntry        bda:LGD9AC29E60AC1D30F , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR2FA5997590C28E38
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4985 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA21924  a          :Work ;
+        skos:prefLabel      "rgya nag chos 'byung /"@bo-x-ewts , "Rgya nag chos ʼbyuṅ /Mgon-po-skyabs-kyis brtsams."@en-x-mixed , "han ch'u fo chiao yuan chi"@zh-latn-wadegile ;
+        :creator            bdr:CR2FA5997590C28E38 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21924 ;
+        :workIsAbout        bdr:G3198 , bdr:T770 .
+}

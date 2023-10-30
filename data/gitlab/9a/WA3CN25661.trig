@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25661 {
+    bda:LG70A2367934D858D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T22:45:29.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG902415BB42257380
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T14:00:36.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG97FA1379E4361E96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T13:46:43.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD3FBE090A8752937
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFB97327A80C365EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T20:22:33.54Z"^^xsd:dateTime ;
+        adm:logMessage      "calaloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25661  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25661 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9a/WA3CN25661.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25661 ;
+        adm:logEntry        bda:LG70A2367934D858D2 , bda:LG902415BB42257380 , bda:LG97FA1379E4361E96 , bda:LGD3FBE090A8752937 , bda:LGFB97327A80C365EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR25E441D8C653B24D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017902 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25661  skos:altLabel  "多堆江荣寺简介及泰熙活佛略传（藏文）"@zh-hans .
+
+    bdr:WA3CN25661  a       :Work ;
+        skos:prefLabel      "mdo stod sgyogs gdong dgon pa'i dkar chag dang the'u shul sprul sku'i 'khrungs rabs lo rgyus/"@bo-x-ewts , "多堆江荣寺简介及泰熙活佛略传（藏文）"@zh-hans ;
+        :catalogInfo        "Record of Gyokdong monastery and Thewshow Tulku's incarnation line."@en ;
+        :creator            bdr:CR25E441D8C653B24D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN25661 , bdr:W3CN25661 ;
+        :workIsAbout        bdr:G2575 .
+}

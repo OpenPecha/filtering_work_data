@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2174 {
+    bda:LG37E7C8DF0A2294B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG3AF0E9E8F59CBEB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-05T11:51:40.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2174"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2174  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2174 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4e/WA1NLM2174.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2174 ;
+        adm:logEntry        bda:LG37E7C8DF0A2294B5 , bda:LG3AF0E9E8F59CBEB3 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6C8854ECD1BBCE94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2174  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das sman bla'i mdo chog snying po bsdus pa yid bzhin gyi nor bu kha skong dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ye shes kyi mkha' 'gro ma seng ge gdong ba can gyi sgo nas bzlog ba bya ba'i tshul/ 2 'phags pa 'da' ka ye shes/ 3 khal kha rje btsun dam pa'i 'khrungs rabs rnam thar gsol 'debs/ 4 rgyal po srong btsan sgam po'i mi chos gtsang ma bcu drug gi khrims bcas pa/ 5 bdud rtsi chu tshan rtsi glu dan gzhi bdag rnams la bsangs mchod 'bul tshul ci 'dod re skong / 6 brtan bzhugs smon tshig 'dod pa'i re skong / 7 'phags pa shes rab kyi pha rol tu phyin pa stong phrag brgya pa'i don ma nor bar bsdus pa'i 'bum chung zhes bya ba theg pa chen po'i mdo/ 8 rgyud chen kun dka' don grub kyi gsol 'debs/ 7 rdo rje rnam 'joms pa zhes bya ba rje btsun gsang ba'i bdag po'i bstod pa/ 8 rten 'brel bstod pa'i legs bshad snying po/ 9 bka' drin gsol 'bebs byin rlabs char 'beb/ 10 lo gyon rigs gsum gyi sgrub thabs/ 11 rje rin po che'i thugs rje bskul ba'i gsol 'debs/"@bo-x-ewts , "A supplementary to medicine Buddha recitation by Panchen Losang Chokyi Gyaltsen; other text also included."@en ;
+        :creator            bdr:CR6C8854ECD1BBCE94 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 ;
+        :workHasInstance    bdr:MW1NLM2174 , bdr:W1NLM2174 ;
+        :workIsAbout        bdr:T870 .
+}

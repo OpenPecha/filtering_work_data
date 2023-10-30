@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18759 {
+    bda:LG8897701306DF6F1D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-17T10:18:49.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB518E075FF0AC33A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-17T10:15:00.556Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8EDE243720
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T17:05:34.944Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1PD53280 to T770"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA1KG18759  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18759 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "68/WA1KG18759.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18759 ;
+        adm:logEntry        bda:LG8897701306DF6F1D , bda:LGB518E075FF0AC33A , bda:LGIM4599A38FCE , bda:LGIM84B17F7EDC , bda:LGIM8EDE243720 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF9FC2EAC36C419E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG20648 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG18759  a       :Work ;
+        skos:prefLabel      "nang chos ngo sprod dang / yan lag bdun pa'i 'grel pa kun bzang dgongs rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Introduction of Buddhism and commentary on he seven branch practice."@en ;
+        :creator            bdr:CRF9FC2EAC36C419E6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS14464 ;
+        :workHasInstance    bdr:MW1KG18759 , bdr:W1KG18759 ;
+        :workIsAbout        bdr:T770 , bdr:T932 .
+}

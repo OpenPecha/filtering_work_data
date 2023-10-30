@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15900 {
+    bda:LG528EEE44D6DFEB20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-29T12:39:50.874Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG74966D3DA715D528
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-29T15:00:31.076Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDA4955EFD9D3AFBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG15900  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15900 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6b/WA1KG15900.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15900 ;
+        adm:logEntry        bda:LG528EEE44D6DFEB20 , bda:LG74966D3DA715D528 , bda:LGDA4955EFD9D3AFBA , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA11128 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR41A79B91FC03DE95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P997 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG15900  a       :Work ;
+        skos:altLabel       "rje blo bzang don yod grub pa'i bka' 'bum dngos grub kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang don grub/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of a Gelug master Panchen Lama 03 Lobzang Dondup (1505-1566) of Tashi Lhunpo."@en ;
+        :creator            bdr:CR41A79B91FC03DE95 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T819 .
+}

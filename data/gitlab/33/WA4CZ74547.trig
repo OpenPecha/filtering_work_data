@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ74547 {
+    bda:LG8102B37D8087F82E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:41:49.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBE0D1DE95481E799
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T15:14:56.428Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA4CZ74547  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ74547 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "33/WA4CZ74547.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ74547 ;
+        adm:logEntry        bda:LG8102B37D8087F82E , bda:LGBE0D1DE95481E799 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR196E746BF00061FA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ74547  a       :Work ;
+        skos:altLabel       "bla ma lnga bcu pa'i rnam bshad slob ma'i re ba kun skong /"@bo-x-ewts , "byang chub sems dpa'i tshul khrims kyi rnam bshad byang chub gzhung /"@bo-x-ewts ;
+        skos:prefLabel      "byang chub gzhung lam dang bla ma lnga bcu pa'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "1. Study on the discipline to be observed by the follower of the Vajrayana, referring to many tantric texts and their sastras; 2. Synopsis: commentary on the Gurupancasika, indic treatise explaining the relationship between the Guru and the devotee."@en ;
+        :creator            bdr:CR196E746BF00061FA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW4CZ74547 , bdr:W4CZ74547 ;
+        :workIsAbout        bdr:T1858 , bdr:WA22925 .
+}

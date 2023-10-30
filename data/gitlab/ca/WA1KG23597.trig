@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23597 {
+    bda:LG077F1EAE2088CFC9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-12T10:22:59.042Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG215EFAC873426787
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-12T10:23:37.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23597  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23597 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ca/WA1KG23597.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23597 ;
+        adm:logEntry        bda:LG077F1EAE2088CFC9 , bda:LG215EFAC873426787 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23597  a       :Work ;
+        skos:prefLabel      "legs par sbyar ba lha'i skad dang gangs can pa'i brda' shan sbyar ba dri bral nor bu'i me long /"@bo-x-ewts , "prajan : lexicon-dictionary portions of the sanskrit-tibetan thesaurus-cum-grammar"@en ;
+        :catalogInfo        "Prajan : Sanskrit and Tibetan lexicon part 1-3. Includes Sanskrit and Tibetan indexes after each part."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
+        :workGenre          bdr:T220 , bdr:T240 , bdr:T372 ;
+        :workHasInstance    bdr:MW1KG23597 , bdr:W1KG23597 .
+}

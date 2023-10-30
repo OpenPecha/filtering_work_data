@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14647 {
+    bda:LG6215F8FAAF13455F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-25T12:25:16.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDE1979E4ABEFB39C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-25T12:24:36.579Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14647  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14647 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b3/WA1KG14647.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14647 ;
+        adm:logEntry        bda:LG6215F8FAAF13455F , bda:LGDE1979E4ABEFB39C , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG10019 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR93CDEAA9D663A5D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P16 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14647  skos:altLabel  "Khams gsum chos kyi rgyal po mñam med ʼBri-guṅ Skyob-pa ʼJig-rten-gsum-mgon gyi bkaʼ-ʼbum nor buʼi baṅ mdzod bźugs so /gtso sgrig pa, ʼBri-guṅ Skyabs-mgon Tshe-tshaṅ ʼPhrin-las-lhun-grub."@en-x-mixed .
+
+    bdr:WA1KG14647  a       :Work ;
+        skos:altLabel       "khams gsum chos kyi rgyal po mnyam med 'bri gung skyob pa 'jig rten gsum mgon gyi bka' 'bum nor bu'i bang mdzod/"@bo-x-ewts , "skyob pa'i bka' 'bum/"@bo-x-ewts , "skyob pa 'jig rten mgon po'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_skyob pa 'jig rten mgon po/"@bo-x-ewts , "Khams gsum chos kyi rgyal po mñam med ʼBri-guṅ Skyob-pa ʼJig-rten-gsum-mgon gyi bkaʼ-ʼbum nor buʼi baṅ mdzod bźugs so /gtso sgrig pa, ʼBri-guṅ Skyabs-mgon Tshe-tshaṅ ʼPhrin-las-lhun-grub."@en-x-mixed ;
+        :catalogInfo        "Collected Works by Drikung Choje Jigten Gonpo (1143-1217) on Drikung doctrines, rituals, etc."@en ;
+        :creator            bdr:CR93CDEAA9D663A5D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1190 .
+}

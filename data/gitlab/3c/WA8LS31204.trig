@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31204 {
+    bda:LGE6518009C55EC82F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T12:04:09.559Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFFB0EBAEC67E3893
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-30T11:26:16.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31204  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31204 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3c/WA8LS31204.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31204 ;
+        adm:logEntry        bda:LGE6518009C55EC82F , bda:LGFFB0EBAEC67E3893 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS31204  a       :Work ;
+        skos:altLabel       "rje btsun rnal 'byor ma'i lta khrid kyi nyams len 'don bsgom dang sbyar du rung ba nyung 'dus su bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "rnal 'byor ma'i lta khrid kyi nyams len 'don bsgom dang sbyar du rung ba nyung 'dus su bkod pa/"@bo-x-ewts ;
+        :catalogInfo        "A method of meditation and instructional practice of Vajrayogini."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T395 ;
+        :workHasInstance    bdr:MW8LS31204 , bdr:W8LS31204 ;
+        :workIsAbout        bdr:T428 , bdr:T541 .
+}

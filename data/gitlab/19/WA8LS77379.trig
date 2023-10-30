@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77379 {
+    bda:LGB13581BB91037EF9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-14T08:26:47.142Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEA5AF3815F49EB5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-14T08:27:15.502Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77379  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77379 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/WA8LS77379.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77379 ;
+        adm:logEntry        bda:LGB13581BB91037EF9 , bda:LGEA5AF3815F49EB5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0800149D86C52CA0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG12082 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCB6915D45FF382F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS12031 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77379  a       :Work ;
+        skos:prefLabel      "spyir bstan gyi rnam bshad thub bstan rin po che gsal ba'i sgron me dang / 'dul ba'i dus tshigs gsal byed nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary on the general teachings of Buddha and monastic calender according to the Vinaya by Khenchen Kelsang Ngodup and Rikpe Wangchuk Nyima thangpa Sherap Jinpa."@en ;
+        :creator            bdr:CR0800149D86C52CA0 , bdr:CRCB6915D45FF382F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS77379 , bdr:W8LS77379 ;
+        :workIsAbout        bdr:T2341 , bdr:T55 , bdr:T770 .
+}

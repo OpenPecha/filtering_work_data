@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG234835 {
+    bda:LG053489D423DB2795
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:45.535Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0BCD0AF969394208
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-16T17:52:25.035Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG34D35FFD55F09789
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T17:06:58.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG234835  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG234835 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b7/WA2KG234835.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG234835 ;
+        adm:logEntry        bda:LG053489D423DB2795 , bda:LG0BCD0AF969394208 , bda:LG34D35FFD55F09789 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBA0ACBCC93EBDEA2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG234835  a      :Work ;
+        skos:altLabel       "tshad ma'i bstan bcos chen po rigs pa'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rigs rgyan."@bo-x-ewts ;
+        :catalogInfo        "A detail commentary of Buddhist epistemology (pramana) by the first Dalai Lama Gedun Drupa."@en ;
+        :creator            bdr:CRBA0ACBCC93EBDEA2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2KG234835 , bdr:W2KG234835 ;
+        :workIsAbout        bdr:T370 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22981 {
+    bda:LG436B3920B0CCA15C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T17:37:06.597Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC0C86A5029ACD2A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-08-28T20:30:24.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD1E15EA2D6731929
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF848F5BF87987948
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-11T10:35:26.344Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22981  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22981 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "82/WA3CN22981.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22981 ;
+        adm:logEntry        bda:LG436B3920B0CCA15C , bda:LGC0C86A5029ACD2A3 , bda:LGD1E15EA2D6731929 , bda:LGF848F5BF87987948 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA10437 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2633DB36EC164947
+        a                   :AgentAsCreator ;
+        :agent              bdr:P825 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22981  a       :Work ;
+        skos:altLabel       "'brug pa'i chos 'byung / (bris ma/)"@bo-x-ewts ;
+        skos:prefLabel      "chos 'byung bstan pa'i pad+ma rgyas pa'i nyin byed/"@bo-x-ewts ;
+        :catalogInfo        "History of Buddhism in the manuscript. Written by Kunkhyen Pema Karpo (1527-1592)."@en ;
+        :creator            bdr:CR2633DB36EC164947 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workIsAbout        bdr:T770 , bdr:T816 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68421 {
+    bda:LG081D0A4B0A6C8194
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG49F4D0CE48A32114
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-13T09:55:02.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG99CAAB2C0ED9FCFA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-13T09:54:34.117Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68421  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68421 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/WA8LS68421.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68421 ;
+        adm:logEntry        bda:LG081D0A4B0A6C8194 , bda:LG49F4D0CE48A32114 , bda:LG99CAAB2C0ED9FCFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBAF215B1D9B99586
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6328 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68421  a       :Work ;
+        skos:prefLabel      "sman gyi 'khrungs dpe dri med shel gyi me long las/ sman rigs kyi par ris skor/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan materia medica text along with drawing by Gawe Dorjee."@en ;
+        :creator            bdr:CRBAF215B1D9B99586 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS68421 , bdr:W8LS68421 ;
+        :workIsAbout        bdr:T1845 , bdr:T237 , bdr:T85 .
+}

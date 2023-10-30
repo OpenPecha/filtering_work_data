@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM980 {
+    bda:LG43AF0627CE956261
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-13T16:17:37.435Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG45BE3DAC9F8AB82C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T09:33:02.825Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4C8C20508D2F8DDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM980"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM980  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM980 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "5e/WA1NLM980.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM980 ;
+        adm:logEntry        bda:LG43AF0627CE956261 , bda:LG45BE3DAC9F8AB82C , bda:LG4C8C20508D2F8DDF , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA37270334B930602
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB343DA279434D27B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB39A85FD2E6D5E06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM980  a        :Work ;
+        skos:prefLabel      "bstan bcos mngon rtogs rgyan rtsa 'grel rnams gsal bar byed pa blo bzang dgongs rgyan gdong lnga'i dbang po'i sgra dbyangs las/_skabs gnyis pa'i tshig don mtha' dpyod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analytical commentary on abhisamayalankara and praise to Buddha Shakyamuni, Maitreya, Manjushri, Avalokiteshvara, and Vajrapani."@en ;
+        :creator            bdr:CRA37270334B930602 , bdr:CRB343DA279434D27B , bdr:CRB39A85FD2E6D5E06 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM980 , bdr:W1NLM980 ;
+        :workIsAbout        bdr:P7326 , bdr:T1215 , bdr:T681 , bdr:T824 , bdr:WA19716 .
+}

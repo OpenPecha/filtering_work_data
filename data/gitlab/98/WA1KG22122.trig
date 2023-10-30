@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22122 {
+    bda:LG673B163061FD0867
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-19T16:53:31.48Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC479694704776282
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-19T16:53:56.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEF34902990A5EB74
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:41.403Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG22122  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22122 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/WA1KG22122.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22122 ;
+        adm:logEntry        bda:LG673B163061FD0867 , bda:LGC479694704776282 , bda:LGEF34902990A5EB74 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG22122  a       :Work ;
+        skos:altLabel       "saMb+hota'i zlos gar/"@bo-x-ewts ;
+        skos:prefLabel      "saMb+hoTa'i zlos gar/"@bo-x-ewts ;
+        :catalogInfo        "A play on Thonmi Sambhota's life story."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangSa ;
+        :workHasInstance    bdr:MW1KG22122 , bdr:W1KG22122 ;
+        :workIsAbout        bdr:P5788 , bdr:T256 .
+}

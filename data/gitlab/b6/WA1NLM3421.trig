@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3421 {
+    bda:LGC69122BBC15A6FDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-31T09:15:09.874Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3421"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3421  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3421 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/WA1NLM3421.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3421 ;
+        adm:logEntry        bda:LGC69122BBC15A6FDB , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR074F43AFA3847C9F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE665DE1D90B79749
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRFB18973081667332
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3421  a       :Work ;
+        skos:altLabel       "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam/"@bo-x-ewts , "chos kyi rgyal mtshan gyis mdzad pa'i grub mtha'i rnam gzhag"@bo-x-ewts , "mgon po 'od dpag med kyi bstod pa/"@bo-x-ewts ;
+        skos:prefLabel      "dam pa'i chos mngon pa mdzod kyi don legs par bshad pa rin po che'i gru gzings zhes bya ba'i gnas gsum pa/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of the abhidharmakosa of vasubandhu Prayer to be reborn in the pure land Sukhavati, Analysis of philosophical schools"@en ;
+        :creator            bdr:CR074F43AFA3847C9F , bdr:CRE665DE1D90B79749 , bdr:CRFB18973081667332 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM3421 , bdr:W1NLM3421 ;
+        :workIsAbout        bdr:T00JR690 , bdr:WA19720 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75885 {
+    bda:LG61D6DD815805F23A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-09T09:16:29.42Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7E9832CAFFB29FE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-09T09:16:02.364Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS75885  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75885 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a2/WA8LS75885.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75885 ;
+        adm:logEntry        bda:LG61D6DD815805F23A , bda:LG7E9832CAFFB29FE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR99025800D648CCA7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016724 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS75885  a       :Work ;
+        skos:prefLabel      "bal yul mchod rten rnam gsum gyi khungs bstan pa/"@bo-x-ewts ;
+        :catalogInfo        "Historical background and its sources of the three Buddhist stupa in Nepal by Chabdo Losang Sherap."@en ;
+        :creator            bdr:CR99025800D648CCA7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS75885 , bdr:W8LS75885 ;
+        :workIsAbout        bdr:G4450 , bdr:T818 .
+}

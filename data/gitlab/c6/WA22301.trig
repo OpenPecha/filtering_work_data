@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22301 {
+    bda:LG6D56E577FC59E5AC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA22301  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22301 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c6/WA22301.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22301 ;
+        adm:logEntry        bda:LG6D56E577FC59E5AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR130E495A7C17AEA1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7525 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR66B473D16698E285
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5343 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRADC8F50ED3408A27
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2968 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA22301  a          :Work ;
+        skos:prefLabel      "sngags kyi sa lam gyi skor/"@bo-x-ewts , "snags kyi sa lam gyi skor : three texts explaining the teachings of the tantric system on the ten stages (dasabhumi) and five paths (pancamarga) in buddhist practice"@en-x-mixed ;
+        :creator            bdr:CR130E495A7C17AEA1 , bdr:CR66B473D16698E285 , bdr:CRADC8F50ED3408A27 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22301 ;
+        :workIsAbout        bdr:T1091 .
+}

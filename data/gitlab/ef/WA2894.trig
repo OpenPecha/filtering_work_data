@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2894 {
+    bda:LG802A26E3758CB8AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-09T14:11:09.609Z"^^xsd:dateTime ;
+        adm:logMessage      "removed from ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG8C7AA06A16D2281E
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-15T11:50:32.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added to TBRC Core Text Collection 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGC79BF2554BCA0CBD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA2894  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2894 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ef/WA2894.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2894 ;
+        adm:logEntry        bda:LG802A26E3758CB8AC , bda:LG8C7AA06A16D2281E , bda:LGC79BF2554BCA0CBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR437AF8CB817F9C7F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P193 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2894  a           :Work ;
+        skos:altLabel       "lha mo dbyangs can ma la bstod pa shes rab mig sbyin/"@bo-x-ewts ;
+        skos:prefLabel      "dbyangs can ma la bstod pa/"@bo-x-ewts ;
+        :creator            bdr:CR437AF8CB817F9C7F ;
+        :isRoot             true ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW2894 ;
+        :workIsAbout        bdr:T389 .
+}

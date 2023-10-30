@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16610 {
+    bda:LG095644B91A46B267
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-19T11:48:34.574Z"^^xsd:dateTime ;
+        adm:logMessage      "revewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG127DE61E60BE5773
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-15T15:24:20.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4F53B7678C3122D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-15T15:23:22.642Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16610  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16610 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/WA8LS16610.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16610 ;
+        adm:logEntry        bda:LG095644B91A46B267 , bda:LG127DE61E60BE5773 , bda:LG4F53B7678C3122D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1FAB95F7331B7E2C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRC15E10EBDE8DC393
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16610  a       :Work ;
+        skos:altLabel       "'jam dpal gyi 'grel pa rin po che'i nyi zla 'bar ba'i sgron ma/"@bo-x-ewts , "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa rgya cher 'grel pa rin po che nyi zla 'bar ba'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal mtshan brjod kyi 'grel pa rin po che nyi zla 'bar ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Namasangiti by Padmasambava."@en ;
+        :creator            bdr:CR1FAB95F7331B7E2C , bdr:CRC15E10EBDE8DC393 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS16610 , bdr:W8LS16610 ;
+        :workIsAbout        bdr:WA22003 .
+}

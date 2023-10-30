@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3149 {
+    bda:LG05593E66B066D7A0
+        a                   adm:UpdateData .
+
+    bda:LG2A59BE9662EBDF17
+        a                   adm:InitialDataCreation .
+
+    bda:W3149  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W3149 ;
+        adm:replaceWith     bdr:WA3149 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA3149  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3149 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "47/WA3149.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3149 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8646ACB9B12EFA5C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NTE8259B24F9CA8C80
+        a                   :Note ;
+        :noteText           "a shakyamuni stotra"@en .
+
+    bdr:WA3149  a           :Work ;
+        skos:altLabel       "de bzhin gshegs pa dgra bcom pa yang dag pa rdzogs pa'i sangs rgyas rig pa dang zhabs su ldan pa bde bar gshegs pa 'jig rten mkhyen pa skyes bu 'dul ba'i kha lo sgyur ba bla na med pa lha dang mi rnams kyi ston pa shAkya thub pa la bstod pa byin rlabs nyer 'jug"@bo-x-ewts ;
+        skos:prefLabel      "skabs gsum ma/"@bo-x-ewts ;
+        :creator            bdr:CR8646ACB9B12EFA5C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NTE8259B24F9CA8C80 .
+}

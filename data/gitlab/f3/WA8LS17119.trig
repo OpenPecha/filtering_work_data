@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17119 {
+    bda:LG276C985B22D29E3A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-21T09:21:54.056Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work reccord"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6A4EE61519E1A214
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-21T09:23:51.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9ECEBC0DE57190A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T13:49:43.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE52616FCB2486F90
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17119  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17119 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f3/WA8LS17119.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17119 ;
+        adm:logEntry        bda:LG276C985B22D29E3A , bda:LG6A4EE61519E1A214 , bda:LG9ECEBC0DE57190A2 , bda:LGE52616FCB2486F90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA8LS16235 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2DE62CB3F098AE69
+        a                   :AgentAsCreator ;
+        :agent              bdr:P698 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE4B25924A7D81CFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17119  a       :Work ;
+        skos:altLabel       "klong chen snying gi thig le las gcod yul mkha' 'gro'i gad rgyangs/"@bo-x-ewts ;
+        skos:prefLabel      "gcod yul mkha' 'gro'i gad rgyangs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts concern with the instruction of Chod practices; written by Kunkhen Jigme Lingpa and Do Khyentse Yeshe Dorje. Also, author-signed as khrakthung Pawo written at the age of thirty-three."@en ;
+        :creator            bdr:CR2DE62CB3F098AE69 , bdr:CRE4B25924A7D81CFD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T194 , bdr:T328 .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368807 {
+    bda:LG31BFD539265B3DE8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:06:52.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG48F6C6DC87D151EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:48.895Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG857E20FB0E44FFA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:10:08.009Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368807  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368807 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/WA4CZ368807.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368807 ;
+        adm:logEntry        bda:LG31BFD539265B3DE8 , bda:LG48F6C6DC87D151EA , bda:LG857E20FB0E44FFA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW4CZ368807  skos:altLabel  "西藏研究."@zh-latn-pinyin-x-ndia .
+
+    bdr:WA4CZ368807  a      :Work ;
+        skos:altLabel       "(bod ljongs zhib 'jug) bod yig dus deb gsar du bton pa nas nyis stong bcu bzhi bar gyi dkar chag dang nang don gnas bsdus/ (1982-2014)"@bo-x-ewts ;
+        skos:prefLabel      "bod ljongs zhib 'jug"@bo-x-ewts , "西藏研究."@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "The collection of Tibetan studies journalbased on: 1982-2014"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW4CZ368807 , bdr:W4CZ368807 ;
+        :workIsAbout        bdr:T212 .
+}

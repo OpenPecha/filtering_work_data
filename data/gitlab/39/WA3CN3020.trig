@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3020 {
+    bda:LG17E730D98CCFBFF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG21EE39AA571726A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-20T15:47:40.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG38B80C787802ACFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-21T09:55:13.789Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected V#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG82170431BA8E4601
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-20T15:38:22.255Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN3020  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3020 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "39/WA3CN3020.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3020 ;
+        adm:logEntry        bda:LG17E730D98CCFBFF6 , bda:LG21EE39AA571726A3 , bda:LG38B80C787802ACFB , bda:LG82170431BA8E4601 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG9800 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRE3BDF9E3AB7E84FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3020  a        :Work ;
+        skos:altLabel       "paN chen blo bzang dpal ldan ye shes dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dpal ldan ye shes/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Panchen Lama 06 Lobzang Palden Yeshe (1738-1780)."@en ;
+        :creator            bdr:CRE3BDF9E3AB7E84FD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T819 .
+}

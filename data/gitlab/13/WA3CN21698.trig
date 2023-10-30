@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21698 {
+    bda:LG19D7D4430195CC2A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-02T11:51:44.854Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7EF34B6BC5EB1F18
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8B2353DA56ED2EA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T12:13:22.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBB62AEF387A355D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-02T11:53:29.001Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF2294292A82372FD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T16:52:10.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21698  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21698 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "13/WA3CN21698.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21698 ;
+        adm:logEntry        bda:LG19D7D4430195CC2A , bda:LG7EF34B6BC5EB1F18 , bda:LG8B2353DA56ED2EA3 , bda:LGBB62AEF387A355D4 , bda:LGF2294292A82372FD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR11F0527681DA3124
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21698  a       :Work ;
+        skos:altLabel       "gtsang zhogs sprin gyi bsgyur rtsom dang gsar rtsom gces btus/"@bo-x-ewts ;
+        skos:prefLabel      "bde skyid kyi gsang grangs/"@bo-x-ewts ;
+        :catalogInfo        "Personal collection of translated and composed prose by Tsang Shoktrin."@en ;
+        :creator            bdr:CR11F0527681DA3124 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW3CN21698 , bdr:W3CN21698 .
+}

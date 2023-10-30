@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3833 {
+    bda:LG1745FF6DA134051B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-25T10:28:41.501Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3833"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3833  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3833 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8d/WA1NLM3833.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3833 ;
+        adm:logEntry        bda:LG1745FF6DA134051B , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR488B21C6906BDB07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3833  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal rdo rje 'jigs byed chen po'i bskyed rim gyi zab 'khrid thun mong ma yin pa'i tshul bshad pa mchog thun dngos grub gter mthong sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gsol mchod 'phrin bcol/ 2 bslab gtam zla ba'i 'od snang / 3 nyams myong rgad po'i 'bel gtam yid 'byung dmar khrid/ 4 bzlog bskul/ 5 gto nag mgo gsum/ 5 la sgo gcod pa'i thabs la lug gi thod pa la 'di 'dra'i 'khor lo bris 'khor lo lho nub mtshams su mnan nas sa sgo/ 6 bde mchog dkar po'i sgo nas tshe sgrub bya tshul 'chi bdag 'joms pa'i mtshon cha/ 7 dkyil 'khor pa'i lha thams cad la dngos grub phyir gsol ba gdab pa/ 8 nor lhas sbyin bdag byas pa'i man ngag nor lha khol po kun+d+ha la'i sgrub thabs lung tsam gyis sgrub pa/ 9 rgyal mtshan rtse mo'i dpung rgyan gyi bzlog bsgyur dgra las rnam rgyal/"@en , "Instructional manual of generation stage of Vajrabairava by"@en ;
+        :creator            bdr:CR488B21C6906BDB07 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3833 , bdr:W1NLM3833 ;
+        :workIsAbout        bdr:T104 , bdr:T11MS11 , bdr:T164 .
+}

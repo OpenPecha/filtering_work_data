@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN7856 {
+    bda:LGA058EAA0304BBEE5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T15:55:02.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB80EF9C1CD638838
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD424DC55421422D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-08T12:04:20.937Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN7856  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN7856 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "76/WA3CN7856.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN7856 ;
+        adm:logEntry        bda:LGA058EAA0304BBEE5 , bda:LGB80EF9C1CD638838 , bda:LGD424DC55421422D2 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1B16A497EE1A0319
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7775 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN7856  a        :Work ;
+        skos:altLabel       "tsha ba mda' smyug gi brgal lan/ a ma'i thal lcag"@bo-x-ewts ;
+        skos:prefLabel      "a ma'i thal lcag"@bo-x-ewts ;
+        :catalogInfo        "Polemic writing concerning modern tibetan writer Tsawa Danyuk's work log rtog snying stobs by Lhawang Dorje."@en ;
+        :creator            bdr:CR1B16A497EE1A0319 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN7856 , bdr:W3CN7856 ;
+        :workIsAbout        bdr:T102 , bdr:T770 .
+}

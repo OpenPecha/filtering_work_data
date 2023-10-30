@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1466 {
+    bda:LGACA980A741F8E283
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-26T12:18:42.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added creator, topic, cat info, content and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD747E323B106F8A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1466"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1466  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1466 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ac/WA1NLM1466.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1466 ;
+        adm:logEntry        bda:LGACA980A741F8E283 , bda:LGD747E323B106F8A2 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2CB4B340EFCB912F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2093 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1466  a       :Work ;
+        skos:prefLabel      "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i rtsa ba'i rgyud kyi sgron ma rab tu gsal bar byed pa'i rgya cher bshad pas 'chad pa las le'u dang po rgya cher bshad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 phar phyin skabs brgyad pa'i mtha' dpyod bsam 'phel yid bzhin nor bu'i 'phreng mdzes skal bzang mig 'byed/ 2 byang chub lam gyi rim pa la brten pa'i bla ma'i rnal 'byor thun mong min pa nyams su len pa'i cho ga skal ldan mgyul rgyan nor bu'i 'phreng ba/"@bo-x-ewts , "A detailed explanation of the first chapter of root Guhyasamaja tantra by Khedrup Sherap Senge and also included other text."@en ;
+        :creator            bdr:CR2CB4B340EFCB912F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM1466 , bdr:W1NLM1466 ;
+        :workIsAbout        bdr:WA4CZ15240 .
+}

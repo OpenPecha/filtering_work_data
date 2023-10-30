@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3644 {
+    bda:LG9DD6ABC4B43BDA0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T16:05:12.902Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3644"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3644  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3644 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dc/WA1NLM3644.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3644 ;
+        adm:logEntry        bda:LG9DD6ABC4B43BDA0B , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR03C9662EABC268B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR8CC3D367E0E48BFC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CREEE5C19D33603894
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3644  a       :Work ;
+        skos:altLabel       "rdo rje mi 'khrugs pa lha dgu'i dkyil 'khor gyi cho ga ngan song tsha gdung kun sel ga bur gsar pa'i chu rgyun/"@bo-x-ewts , "rgyags brngan lha bsangs gi cho ga mgron rnams mnyes byed bsgrigs pa/"@bo-x-ewts , "rta mgrin gsang sgrub kyi sgo nas gza' klu gtso ba'i sde brgyad kyi dug dbyung bya tshul gdung sel zla 'od/"@bo-x-ewts , "slob dpon chen po pad+ma kA ra'i zhabs kyis mdzad pa'i 'bum bsangs baiDU r+ya sngon po bkra shis 'dod pa'i re skong ma/"@bo-x-ewts ;
+        skos:prefLabel      "dpal ye shes kyi mkha' 'gro ma seng+ge'i gdong pa can gtso 'khor gsum gyi bdag mdun bskang bshags bstod bskul las gtor bzlog dang bcas pa'i rnam bzhag mkha' 'gro'i dgongs rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of self generation, confession and purification, praise, exhortation, bali repelling ritual of Dakini Simhamukha, Disinfection ritual of eight demi gods on the basis of Hayagriva Guhyasadhana, Incense offering text composed and ritual for the performance of the nine-deity Aksobhya mandala practice according to the tradition of Jetari-pada."@en ;
+        :creator            bdr:CR03C9662EABC268B4 , bdr:CR8CC3D367E0E48BFC , bdr:CREEE5C19D33603894 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3644 , bdr:W1NLM3644 .
+}

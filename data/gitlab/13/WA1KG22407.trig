@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22407 {
+    bda:LG050D37355250FDB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T14:35:06.448Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4A0DB33D14F47377
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG529DC34986D3AE1A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-24T14:26:33.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA4BA1EA5A44725E0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-24T12:42:58.183Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22407  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22407 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "13/WA1KG22407.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22407 ;
+        adm:logEntry        bda:LG050D37355250FDB3 , bda:LG4A0DB33D14F47377 , bda:LG529DC34986D3AE1A , bda:LGA4BA1EA5A44725E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1AC218 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR3EA9463D281EA011
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22407  a       :Work ;
+        skos:altLabel       "'dul ba'i dka' gnas rnam par dpyad pa 'khrul spong blo gsal mgul rgyan tsin+da ma Ni'i phreng mdzes bskal bzang re ba kun skong /"@bo-x-ewts ;
+        skos:prefLabel      "kun mkhyen 'jam dbyangs bzhad pa'i 'dul ba'i spyi don/ (rdo par/)"@bo-x-ewts ;
+        :catalogInfo        "Detailed study of the Buddhist monastic discipline from the obligatory manuals of the Depung Gomang monastery and its affiliates."@en ;
+        :creator            bdr:CR3EA9463D281EA011 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1763 ;
+        :workIsAbout        bdr:G109 , bdr:T447 , bdr:T55 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16781 {
+    bda:LG3660144EBEB11F23
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-17T10:37:48.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG43F02B4EA6B3573E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG775FC60A73A87080
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-17T10:35:56.043Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16781  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16781 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8d/WA8LS16781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16781 ;
+        adm:logEntry        bda:LG3660144EBEB11F23 , bda:LG43F02B4EA6B3573E , bda:LG775FC60A73A87080 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR288D39270EC80F07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9302 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16781  a       :Work ;
+        skos:altLabel       "thugs rje sems dpa'i lugs kyi mtshan nyid gsum gyi rnam gzhag ga pur thigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "mtshan nyid gsum gyi rnam gzhag ga pur thigs pa/"@bo-x-ewts ;
+        :catalogInfo        "An analysis of the three definitive characteristic of Bonpo tradition by Yongzin Sangye Tenzin; composed at Menri monastery."@en ;
+        :creator            bdr:CR288D39270EC80F07 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS16781 , bdr:W8LS16781 ;
+        :workIsAbout        bdr:T323 .
+}

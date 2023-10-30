@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18492 {
+    bda:LG3A671B7FC0BB895B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-28T15:29:19.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB23584503942ABD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-28T15:26:42.874Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBC45817860EEB231
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF19ECC78631BE031
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T14:04:17.811Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF9CB673D9EF50893
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:36:58.202Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18492  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18492 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f8/WA3CN18492.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18492 ;
+        adm:logEntry        bda:LG3A671B7FC0BB895B , bda:LGB23584503942ABD1 , bda:LGBC45817860EEB231 , bda:LGF19ECC78631BE031 , bda:LGF9CB673D9EF50893 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3AF5F7988F3E506C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN19895 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18492  a       :Work ;
+        skos:altLabel       "'khor 'das rang sar grol ba'i rnal 'byor pa ngag dbang don yod rgya mtshos rang nyid kyi byung ba brjod pa sgyu 'phrul rdo rje'i gar stabs/"@bo-x-ewts ;
+        skos:prefLabel      "rnal 'byor pa ngag dbang don yod rgya mtsho'i rang rnam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Drukpa Kagyu Yoki Ngakwang Donyo Gyatsho (15th cent.) and a few of his works."@en ;
+        :creator            bdr:CR3AF5F7988F3E506C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN18492 , bdr:W3CN18492 ;
+        :workIsAbout        bdr:P3CN19895 , bdr:T816 .
+}

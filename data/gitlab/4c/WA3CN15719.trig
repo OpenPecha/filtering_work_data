@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15719 {
+    bda:LG755FA72A0C827FBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T20:41:07.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8C5436195FE91FFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-24T16:15:40.56Z"^^xsd:dateTime ;
+        adm:logMessage      "restrictedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB6BC610BCE86CF42
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-24T16:13:22.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB7D02925A343FB01
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-18T10:19:03.07Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN15719  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15719 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4c/WA3CN15719.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15719 ;
+        adm:logEntry        bda:LG755FA72A0C827FBD , bda:LG8C5436195FE91FFB , bda:LGB6BC610BCE86CF42 , bda:LGB7D02925A343FB01 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDA042262DE6C0512
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6082 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15719  a       :Work ;
+        skos:prefLabel      "dmangs kyi ring lugs/"@bo-x-ewts ;
+        :catalogInfo        "Introduction of democratic politics and laws by Tashi Rabgey."@en ;
+        :creator            bdr:CRDA042262DE6C0512 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN15719 , bdr:W3CN15719 ;
+        :workIsAbout        bdr:T384 , bdr:T8LS16960 .
+}

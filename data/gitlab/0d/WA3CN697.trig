@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN697 {
+    bda:LG17212865A79D93C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-26T10:18:22.949Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG17325BC4A4CD2094
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-26T10:19:42.954Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG75BA190D80F82C13
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-24T11:05:41.328Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN697  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN697 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0d/WA3CN697.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN697 ;
+        adm:logEntry        bda:LG17212865A79D93C3 , bda:LG17325BC4A4CD2094 , bda:LG75BA190D80F82C13 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN697  a         :Work ;
+        skos:altLabel       "snyan ngag gi zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "snyan ngag gi zin bris thor bu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW3CN697 , bdr:W3CN697 ;
+        :workIsAbout        bdr:T204 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355846 {
+    bda:LG195812DA466094A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-11T16:03:34.991Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG971CDA8128947A83
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T14:17:43.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGADD0AE8BCDD75CEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4CZ355846  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355846 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/WA4CZ355846.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355846 ;
+        adm:logEntry        bda:LG195812DA466094A1 , bda:LG971CDA8128947A83 , bda:LGADD0AE8BCDD75CEC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ355846  a      :Work ;
+        skos:altLabel       "dpal ldan rgyal ba jo nang pa'i lugs kyi spyi dang bye brag dpal 'dzam thang gtsang ba dgon gyi lugs su grags pa'i gar dbyangs phyag rgya sogs kyi dkar chag blo dman dga' ba bskyed pa'i bum bzang /"@bo-x-ewts ;
+        skos:prefLabel      "jo nang pa'i lugs kyi spyi dang bye brag dpal 'dzam thang gtsang ba dgon gyi lugs su grags pa'i gar dbyangs phyag rgya sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts containing the musical notations used in the liturgical performances of the liturgy followed in Zamthang (Jonang )Monastery."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1746 ;
+        :workHasInstance    bdr:MW4CZ355846 , bdr:W4CZ355846 ;
+        :workIsAbout        bdr:T1089 .
+}

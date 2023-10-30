@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21504 {
+    bda:LG739EF498420691F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-08T12:53:46.729Z"^^xsd:dateTime ;
+        adm:logMessage      "added title"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG78D136890405E701
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T16:13:14.784Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG972587856908E2E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCEA606092443DE3A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T12:52:37.519Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF517B35100F8798A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-12T15:05:18.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF5CF6767D1F29A2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-12T15:03:48.89Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21504  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21504 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "17/WA3CN21504.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21504 ;
+        adm:logEntry        bda:LG739EF498420691F7 , bda:LG78D136890405E701 , bda:LG972587856908E2E7 , bda:LGCEA606092443DE3A , bda:LGF517B35100F8798A , bda:LGF5CF6767D1F29A2B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN21504  skos:altLabel  "山南民间故事"@zh-hans .
+
+    bdr:WA3CN21504  a       :Work ;
+        skos:prefLabel      "lho kha'i dmangs khrod sgrung gtam/"@bo-x-ewts , "山南民间故事"@zh-hans ;
+        :catalogInfo        "Collection of Lhokha Tibetan folktales."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21504 , bdr:W3CN21504 ;
+        :workIsAbout        bdr:G1814 , bdr:T262 .
+}

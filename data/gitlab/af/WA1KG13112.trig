@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13112 {
+    bda:LG1ADEBFA72FFE322C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-04T12:11:10.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG96F20ED625908AD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-11-28T14:36:36.435Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE18B82ED34DBDB20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T08:48:20.112Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG13112  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13112 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "af/WA1KG13112.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13112 ;
+        adm:logEntry        bda:LG1ADEBFA72FFE322C , bda:LG96F20ED625908AD5 , bda:LGE18B82ED34DBDB20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG13112  skos:altLabel  "tibetan translation of saddharmapundarika-sutra"@en , "チベット語訳•妙法蓮華経"@ja .
+
+    bdr:WA1KG13112  a       :Work ;
+        skos:prefLabel      "bod 'gyur dam pa'i chos pad+ma dkar po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "tibetan translation of saddharmapundarika-sutra"@en , "チベット語訳•妙法蓮華経"@ja ;
+        :catalogInfo        "Tibetan trnaslation of saddharmapundarika-sutra."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1KG13112 , bdr:W1KG13112 ;
+        :workIsAbout        bdr:T299 , bdr:WA4CZ16799 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21640 {
+    bda:LG101A9072327B8F96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG18141F8D4890C194
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-07T16:04:04.541Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3C12693482186B26
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T10:15:44.836Z"^^xsd:dateTime ;
+        adm:logMessage      "removed rong zom chos bzang"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC63CCC501ED86EF8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-10T14:53:18.858Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDFE0B51E6E680041
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T21:04:17.759Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEBD5FCA0389665B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-10T14:50:55.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21640  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21640 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "34/WA3CN21640.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21640 ;
+        adm:logEntry        bda:LG101A9072327B8F96 , bda:LG18141F8D4890C194 , bda:LG3C12693482186B26 , bda:LGC63CCC501ED86EF8 , bda:LGDFE0B51E6E680041 , bda:LGEBD5FCA0389665B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN21640  a       :Work ;
+        skos:prefLabel      "rgyud gsang ba snying po'i rtsa 'grel phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on the root text of Guhyagarbha Tantra."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN21640 , bdr:W3CN21640 ;
+        :workIsAbout        bdr:WA12652 .
+}

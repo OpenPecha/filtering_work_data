@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23806 {
+    bda:LG58E6F3CC21C2A92E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF417047354398AE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T12:06:38.551Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA23806  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23806 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f5/WA23806.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23806 ;
+        adm:logEntry        bda:LG58E6F3CC21C2A92E , bda:LGF417047354398AE7 , bda:LGIMEAF73E87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDB074D5D35E21184
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7790 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23806  skos:altLabel  "'dzam glin skyes mchog glin rje ge sar nor bu dgra 'dul gyi rtogs brjod 'chi med lha yi rnga sgra : an episode from the gesar epic recounting gesar's birth, his conquest of rma-khog, and how he won the throne of glin through horse-racing"@en-x-mixed .
+
+    bdr:WA23806  a          :Work ;
+        skos:altLabel       "'chi med lha yi rnga sgra/"@bo-x-ewts , "gling rje ge sar rgyal po'i rtogs brjod 'chi med lha yi rnga sgra/"@bo-x-ewts ;
+        skos:prefLabel      "'dzam gling skyes mchog gling rje ge sar nor bu dgra 'dul gyi rtogs brjod 'chi med lha yi rnga sgra/"@bo-x-ewts , "'dzam glin skyes mchog glin rje ge sar nor bu dgra 'dul gyi rtogs brjod 'chi med lha yi rnga sgra : an episode from the gesar epic recounting gesar's birth, his conquest of rma-khog, and how he won the throne of glin through horse-racing"@en-x-mixed ;
+        :creator            bdr:CRDB074D5D35E21184 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23806 , bdr:W23806 ;
+        :workIsAbout        bdr:T248 .
+}

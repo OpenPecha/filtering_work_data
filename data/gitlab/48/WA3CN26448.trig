@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN26448 {
+    bda:LG490419EAB685F38A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-01T09:40:41.656Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG786FF9AD0A31582A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGC73E2C6E198236E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-13T21:29:14.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD3F738AFAEEE9B97
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-01T09:41:07.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN26448  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN26448 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "48/WA3CN26448.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN26448 ;
+        adm:logEntry        bda:LG490419EAB685F38A , bda:LG786FF9AD0A31582A , bda:LGC73E2C6E198236E4 , bda:LGD3F738AFAEEE9B97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA9CE25DC8B8841F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN22039 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN26448  a       :Work ;
+        skos:prefLabel      "legs bshad 'phrul gyi dra ba dang mngon brjod tshig gter gyi 'grel pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Comentery on legs bshad and mngon brjod by Tubten Monlam."@en ;
+        :creator            bdr:CRA9CE25DC8B8841F4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T245 , bdr:T372 ;
+        :workHasInstance    bdr:MW3CN26448 , bdr:W3CN26448 .
+}

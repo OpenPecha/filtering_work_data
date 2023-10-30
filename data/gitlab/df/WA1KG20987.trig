@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20987 {
+    bda:LG30877152890C1B4F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-12T14:45:43.519Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7C66703548426C0A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-12T15:13:27.938Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20987  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20987 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "df/WA1KG20987.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20987 ;
+        adm:logEntry        bda:LG30877152890C1B4F , bda:LG7C66703548426C0A , bda:LGIM4D99209C62 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2E01BC4044D18CEF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P219 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB286CCE4811D1F47
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8422 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG20987  a       :Work ;
+        skos:altLabel       "chag lo tsA ba chos rje dpal gyi rnam thar/"@bo-x-ewts , "rgya gar gnas chen khag la bgrod pa'i lam yig"@bo-x-ewts ;
+        skos:prefLabel      "chag lo tsA ba'i rnam thar dang / dge 'dun chos 'phel gyi gnas yig"@bo-x-ewts ;
+        :catalogInfo        "Biography of Chak Lotsawa Choje Pel (1197-1263/1264) and Guide to the Buddhist pligrimage sites in India."@en ;
+        :creator            bdr:CR2E01BC4044D18CEF , bdr:CRB286CCE4811D1F47 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T25 , bdr:T3 ;
+        :workHasInstance    bdr:MW1KG20987 , bdr:W1KG20987 ;
+        :workIsAbout        bdr:G3188 , bdr:P1025 .
+}

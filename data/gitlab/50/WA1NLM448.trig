@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM448 {
+    bda:LG415E2A60BA71D3D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG64964ADC03E9E189
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-18T20:16:15.717Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from W22304 to W4CZ15240"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6E47D4277A6699B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-11T12:40:24.566Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD8B9BE33284D5576
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T14:05:40.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM448"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM448  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM448 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "50/WA1NLM448.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM448 ;
+        adm:logEntry        bda:LG415E2A60BA71D3D1 , bda:LG64964ADC03E9E189 , bda:LG6E47D4277A6699B8 , bda:LGD8B9BE33284D5576 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1377 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM448  a        :Work ;
+        skos:prefLabel      "dpal gsang ba 'dus pa'i rtsa rgyud rgyud phyi ma dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Guhyasamaja tantra; included other text also."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:WA4CZ15240 .
+}

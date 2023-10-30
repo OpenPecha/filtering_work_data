@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2193 {
+    bda:LG09CBAE91BDDFE201
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-18T09:09:23.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG21F31B704DF0BACB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2193"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2193  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2193 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "10/WA1NLM2193.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2193 ;
+        adm:logEntry        bda:LG09CBAE91BDDFE201 , bda:LG21F31B704DF0BACB , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR858536ABED9D0EDD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2193  a       :Work ;
+        skos:prefLabel      "chos rgyal yab yum gyi bskang gso bstod bskul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa/ 2 phyug bsur gyi mchod pa/ 3 klu'i bsang / 4 'go ba'i lha lnga'i bsang mchod phul ba/ 5 dpal ldan lha mo'i bsangs/ 6 nor lha'i sgrub thabs mdor bsdus/ 7 mi kha dgra chu/ 8 rje btsun sgrol ma dkar mo'i mchod pa sogs kyi cho ga 'chi med dpal ster/ 9 rlung rta'i lha la bsangs mchod 'bul tshul/ 10 rlung rta yar la bskyed pa'i bsangs mchod/ 11 chos dbyings mtha' las zhing gi rgyal pa yi/ 12 rta mgrin gsang grub kyi sgrub thas/ bgegs kyi gtor ma byed pa/ 13 the'u rang dka' dpon kha cig rims nad chen po'i bcos thabs/ 14 sku lnga khrag chen ser skyems/ 15 gso sbyong gi dus go brjod tshul/"@bo-x-ewts , "Regular propitiation, praise and exhortation of Damcen Chogyal protector by the first Dalai Lama Gedun Drupa; other text also included."@en ;
+        :creator            bdr:CR858536ABED9D0EDD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM2193 , bdr:W1NLM2193 ;
+        :workIsAbout        bdr:T1736 , bdr:T19 , bdr:T198 .
+}

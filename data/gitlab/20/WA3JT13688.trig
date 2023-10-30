@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13688 {
+    bda:LG1E5B317AAD809283
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-17T16:38:37.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGDF8007348E2D50AB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-17T16:30:58.554Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged completed"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA3JT13688  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13688 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "20/WA3JT13688.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13688 ;
+        adm:logEntry        bda:LG1E5B317AAD809283 , bda:LGDF8007348E2D50AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR812E3A0FF266F494
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3JT13688  a       :Work ;
+        skos:altLabel       "spring yig phyogs btus/"@bo-x-ewts ;
+        skos:prefLabel      "springs yig phyogs btus/"@bo-x-ewts ;
+        :creator            bdr:CR812E3A0FF266F494 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T14 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3JT13688 , bdr:W3JT13688 .
+}

@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3950 {
+    bda:LG0867FD02028F4459
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T08:14:43.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3950"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3950  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3950 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4e/WA1NLM3950.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3950 ;
+        adm:logEntry        bda:LG0867FD02028F4459 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3950  a       :Work ;
+        skos:prefLabel      "'phags pa gdugs dkar mchog grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sde brgyad gser skyems gtong tshul/ 2 rje btsun sgrol ma bu btsun lha mo maN+Dal bzhi pa'i g.yang 'gug 3 kun mkhyen bla ma'i 'khrungs rab dang 'brel ba'i bla ma'i rnal 'byor dngos grub myur 'jug blo gros pad+mo rgyan byed/ 4 bsangs mchog bkra shis char 'bebs mchod sprin rgya mtsho/ 5 sngags kyi rtsa ltung dang spom po'i ltung ba ngos bzung ba'i sgo nas bshags byed tshul/ 6 bzang spyod smon lam dar lcog 7 phyugs bzhin sur mchod/ 8 ma Ni sho mo rtags/ 9 dpal ldan dur khrod bdag po la gser skyems 'bul ba/ 10 'phags pa 'jam dpal gyi mtshan yag dag par brjod pa/"@en , "Dharani of Ushnishsitatapatra."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM3950 , bdr:W1NLM3950 ;
+        :workIsAbout        bdr:T703 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23896 {
+    bda:LG408C468FA98C2BAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T14:27:15.418Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG90DB2C303DD891AE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23896  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23896 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f2/WA23896.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23896 ;
+        adm:logEntry        bda:LG408C468FA98C2BAA , bda:LG90DB2C303DD891AE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8C22B8911FED7345
+        a                   :AgentAsCreator ;
+        :agent              bdr:P416 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23896  skos:altLabel  "a-phyi chos-kyi-sgrol-ma'i so mo snan srid gsal ba'i me lon : on the casting of dice for prognostication according to the sadhana focussing on a-phyi chos-kyi-sgrol-ma, the protective deity of the 'bri-gun bka'-brgyud-pa"@en-x-mixed .
+
+    bdr:WA23896  a          :Work ;
+        skos:altLabel       "a phyi'i sho mo snang srid gsal ba'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "a phyi chos kyi sgrol ma'i sho mo snang srid gsal ba'i me long /"@bo-x-ewts , "a-phyi chos-kyi-sgrol-ma'i so mo snan srid gsal ba'i me lon : on the casting of dice for prognostication according to the sadhana focussing on a-phyi chos-kyi-sgrol-ma, the protective deity of the 'bri-gun bka'-brgyud-pa"@en-x-mixed ;
+        :catalogInfo        "Dice prognostication through the practice of the Drikung Kagyu protective deity, Ache Chokyi Drolma."@en ;
+        :creator            bdr:CR8C22B8911FED7345 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23896 , bdr:W23896 ;
+        :workIsAbout        bdr:T174 , bdr:T405 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3263 {
+    bda:LGABF59B51E5D4A9E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T09:19:55.276Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC0247ADDC729D964
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3263"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3263  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3263 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/WA1NLM3263.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3263 ;
+        adm:logEntry        bda:LGABF59B51E5D4A9E5 , bda:LGC0247ADDC729D964 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAEFCBD89E51FCEB3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRBBD4652B4F422252
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3263  a       :Work ;
+        skos:altLabel       "'jam dpal zhi drag gi bsrung ba/"@bo-x-ewts , "dbu ma la 'jug pa'i bsdus don/"@bo-x-ewts , "mngon par rtogs pa nyams su len tshul theg mchog sgo 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "dus kyi 'khor lo'i nang le rnam par dag pa mkhas grub rjes zin bris su btab pa 'phro can sogs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the noteworthy passages in the adhyatmapatala of the kalacakra Tantra, and the Vimalaprabha, explanation of the practice of the eitht Abhisamayakrama as related in the Abhisamayalamkara and summary of the essential meaning of the Madhyamakavatara of Candrakirt"@en ;
+        :creator            bdr:CRAEFCBD89E51FCEB3 , bdr:CRBBD4652B4F422252 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1NLM3263 , bdr:W1NLM3263 ;
+        :workIsAbout        bdr:T74 .
+}

@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13796 {
+    bda:LG07897FE007E133C9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-05T12:37:01.28Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0FAEADBBF64F2637
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-30T12:35:09.807Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG31EDD95EAAF7F63C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-09-30T12:35:41.31Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG13796  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13796 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "58/WA1KG13796.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13796 ;
+        adm:logEntry        bda:LG07897FE007E133C9 , bda:LG0FAEADBBF64F2637 , bda:LG31EDD95EAAF7F63C , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD7B53BF67B306E7D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15378 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13796  skos:altLabel  "Dbu maʼi zin tho zla baʼi dgoṅs rgyan bźugs so /Ser-byes Tre-hor Dge-bśes ʼPhrin-las-rdo-rje."@en-x-mixed .
+
+    bdr:WA1KG13796  a       :Work ;
+        skos:prefLabel      "dbu ma'i zin tho zla ba'i dgongs rgyan/"@bo-x-ewts , "Dbu maʼi zin tho zla baʼi dgoṅs rgyan bźugs so /Ser-byes Tre-hor Dge-bśes ʼPhrin-las-rdo-rje."@en-x-mixed ;
+        :catalogInfo        "Exgetical notes on Madhyamika philosophy"@en ;
+        :creator            bdr:CRD7B53BF67B306E7D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1KG13796 , bdr:W1KG13796 ;
+        :workIsAbout        bdr:T233 .
+}

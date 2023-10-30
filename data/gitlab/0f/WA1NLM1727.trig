@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1727 {
+    bda:LG21F292049F731D51
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-16T14:27:14.658Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7F70DB064DF5E5FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T23:02:47.65Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAA205A2F706C4C2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1727"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1727  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1727 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0f/WA1NLM1727.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1727 ;
+        adm:logEntry        bda:LG21F292049F731D51 , bda:LG7F70DB064DF5E5FC , bda:LGAA205A2F706C4C2C , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1727  a       :Work ;
+        skos:prefLabel      "bstan bsrung chen po rdo rje legs pa'i gsol mchod 'phrin las rnam bzhi lhun grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan gsang pa'i bdag po drag po gsum 'dril gyi sgrub thabs bkru byabs bsrung gsum gyi cho ga dang bcas pa nad gdon kun sel bdud rtsi chu rgyun/ 2 ye shes mkha' 'gro ma seng+ge'i gdong pa can gyi sgo nas bzlog bsgyur bya tshul rdo rje thog mda'/ 3 rdo rje rnam 'joms pa'i gnol bsangs/ 4 chos skyong dregs pa lcam sring gi sgo na gsang ba be'u nang du nas chom rkun gyi mgo 'khor 'thoms ni/ 5 ja phud byin rlabs mdzad bar zhu/ 6 stong dmar bcin rgod kyi bsangs 7 bsangs mchod/ 8 gdugs dkar bsangs/ 9 'go ba'i lha lnga la gshegs gtor 'bul tshul/ 10 gang phyugs kyi 'o ma nu ma nyes pa 'byung ba'i bcos thabs/ 11 rkun ma'i mgo skor la sha khrag chang gtor khrag skyems 'bul ba'i 'phrin bcol/"@en , "Ritual for offering of Vajrasadhu; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1727 , bdr:W1NLM1727 ;
+        :workIsAbout        bdr:T249 , bdr:T504 .
+}

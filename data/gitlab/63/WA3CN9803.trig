@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN9803 {
+    bda:LG6A2323E313E359D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-08-30T16:43:57.597Z"^^xsd:dateTime ;
+        adm:logMessage      "retrected in china"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9B25408F688D65C8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-30T16:38:00.842Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCC5AD1AACDE7D22C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-30T16:42:45.979Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN9803  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN9803 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "63/WA3CN9803.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN9803 ;
+        adm:logEntry        bda:LG6A2323E313E359D8 , bda:LG9B25408F688D65C8 , bda:LGCC5AD1AACDE7D22C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN9803  a        :Work ;
+        skos:altLabel       "chol gsum chig bsgril tshogs pa'i lo rgyus dngos bden byung rim deb ther drang srong dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "chol gsum chig bsgril tshogs pa'i lo rgyus dngos bden byung rim/"@bo-x-ewts ;
+        :catalogInfo        "The history of Tibetan united association."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN9803 , bdr:W3CN9803 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

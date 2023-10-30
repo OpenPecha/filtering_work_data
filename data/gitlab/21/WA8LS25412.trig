@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS25412 {
+    bda:LG924136EA8C3F1EAF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-11T10:56:59.14Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAFED9E9B2F3382FD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-11T10:58:33.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS25412  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS25412 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "21/WA8LS25412.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS25412 ;
+        adm:logEntry        bda:LG924136EA8C3F1EAF , bda:LGAFED9E9B2F3382FD , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4B3EAAD88DEF936C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRFF85ED7D7A4CCF44
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4560 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS25412  a       :Work ;
+        skos:altLabel       "klong chen snying gi thig le lasH yum ka bde chen rgyal mo'i rtsa ba'i sgrub pa bde chen dpal phreng /"@bo-x-ewts ;
+        skos:prefLabel      "klong chen snying gi thig le lasH yum ka bde chen rgyal mo/"@bo-x-ewts ;
+        :catalogInfo        "The glorious blissful garland ,the root sadhana of the dakini by Jigme Lingpa, translated by Tulku Thondup."@en ;
+        :creator            bdr:CR4B3EAAD88DEF936C , bdr:CRFF85ED7D7A4CCF44 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS25412 , bdr:W8LS25412 ;
+        :workIsAbout        bdr:T328 .
+}

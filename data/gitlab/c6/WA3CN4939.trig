@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4939 {
+    bda:LG030CC77477139050
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-31T17:08:49.878Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1E65AFF8812B2ED3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-16T10:47:59.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG716F64B9A024A83B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:08:16.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN4939  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4939 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c6/WA3CN4939.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4939 ;
+        adm:logEntry        bda:LG030CC77477139050 , bda:LG1E65AFF8812B2ED3 , bda:LG716F64B9A024A83B , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE28E54E3AD36E031
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26625 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA3CN4939  a        :Work ;
+        skos:prefLabel      "slob ma'i bslab bya/"@bo-x-ewts ;
+        :catalogInfo        "Student education, translated from Chinese to Tibetan by Sonam Dargye."@en ;
+        :creator            bdr:CRE28E54E3AD36E031 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN4939 , bdr:W3CN4939 ;
+        :workIsAbout        bdr:T2082 , bdr:T234 .
+}

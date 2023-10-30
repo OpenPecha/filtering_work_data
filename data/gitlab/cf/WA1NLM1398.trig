@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1398 {
+    bda:LGB165BBDF29C51649
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-05T15:50:35.163Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE6E807E3AB8A485C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1398"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1398  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1398 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cf/WA1NLM1398.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1398 ;
+        adm:logEntry        bda:LGB165BBDF29C51649 , bda:LGE6E807E3AB8A485C , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB6BC564E892FFF33
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4820 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1398  a       :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed kyi zab lam rim pa gnyis pa rdzogs rim sku gsum them skas/"@bo-x-ewts ;
+        skos:prefLabel      "'jigs byed kyi zab lam rim pa gnyis pa rdzogs rim sku gsum them skas/"@bo-x-ewts ;
+        :catalogInfo        "Instruction manual of the sadhana practice of niṣpannakrama of Vajrabhairava"@en ;
+        :creator            bdr:CRB6BC564E892FFF33 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1398 , bdr:W1NLM1398 ;
+        :workIsAbout        bdr:T104 , bdr:T163 .
+}

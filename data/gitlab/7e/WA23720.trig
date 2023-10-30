@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23720 {
+    bda:LG676B0DFDEA8D8FAA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGF9970C62A85BED27
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T15:49:19.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23720  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23720 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7e/WA23720.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23720 ;
+        adm:logEntry        bda:LG676B0DFDEA8D8FAA , bda:LGF9970C62A85BED27 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD6197415E3B1F4AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7769 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23720  skos:altLabel  "khams pa sgar ï¿½zes yons grags smad 'brug chos sde chen po ma lag dan bcas pa'i rin lugs gsar rnin gar 'chams skor gyi rtsa tshig dan de'i rol mo'i chins kyi reg gzigs glegs bam phyogs bsgril : the collected instructions on the performance of the sacred da"@en-x-mixed .
+
+    bdr:WA23720  a          :Work ;
+        skos:altLabel       "tshes bcu dan mgon po sgrub chen gyi 'chams yig sogs"@bo-alalc97 ;
+        skos:prefLabel      "khams gar gsar rnying gar 'chams rtsa tshig"@bo-x-ewts , "khams pa sgar ï¿½zes yons grags smad 'brug chos sde chen po ma lag dan bcas pa'i rin lugs gsar rnin gar 'chams skor gyi rtsa tshig dan de'i rol mo'i chins kyi reg gzigs glegs bam phyogs bsgril : the collected instructions on the performance of the sacred da"@en-x-mixed ;
+        :catalogInfo        "Manual for the sacred dance of the Kampa Gar order of the Drukpa Kagyu order."@en ;
+        :creator            bdr:CRD6197415E3B1F4AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1166 ;
+        :workHasInstance    bdr:MW23720 , bdr:W23720 ;
+        :workIsAbout        bdr:G50 .
+}

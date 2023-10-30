@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307383 {
+    bda:LGABE32FCB6B20CB09
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFB5164C47DF5AAA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T14:56:42.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFD9DC4160D4EDBCB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-23T12:40:59.251Z"^^xsd:dateTime ;
+        adm:logMessage      "newly catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ307383  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307383 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c2/WA4CZ307383.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307383 ;
+        adm:logEntry        bda:LGABE32FCB6B20CB09 , bda:LGFB5164C47DF5AAA7 , bda:LGFD9DC4160D4EDBCB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ307383  a      :Work ;
+        skos:altLabel       "dpal nag po chen po khro bo bcu gcig gi sgo nas bsad mnan gyi 'khor lo bri thabs rje btsun rdo ring pa'i dgongs pa ltar bdud 'joms mi tra'i phyag bzhes/"@bo-x-ewts ;
+        skos:prefLabel      "sa skya'i bstan srung rnams kyi chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for the propitiation of the Sakya protectors and their retinue deities"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW4CZ307383 , bdr:W4CZ307383 ;
+        :workIsAbout        bdr:T406 , bdr:T617 .
+}

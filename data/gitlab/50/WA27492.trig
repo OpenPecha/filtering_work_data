@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27492 {
+    bda:LG4C4F860628D4B99F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA5BB5DDA9F2B7945
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-14T15:46:56.512Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBBE2E5430F5063D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-08T11:03:11.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBFCF971CE79FAF9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-06T09:14:45.046Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGD2A3548EFAAC2427
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-27T12:20:30.516Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27492  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27492 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "50/WA27492.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27492 ;
+        adm:logEntry        bda:LG4C4F860628D4B99F , bda:LGA5BB5DDA9F2B7945 , bda:LGBBE2E5430F5063D9 , bda:LGBFCF971CE79FAF9A , bda:LGD2A3548EFAAC2427 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB399ADA43D7633DC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P680 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW27492  skos:altLabel  "the collected rediscovered teachings (gter ma) of rtsa-gsum-gter-bdag-glin-pa or gar-dban gnam-lcags-rdo-rje"@en-x-mixed .
+
+    bdr:WA27492  a          :Work ;
+        skos:altLabel       "gnam lcags rtsa gsum glin pa'i zab gter/"@bo-x-ewts , "rediscovered treasures of namchag tsa sum lingpa"@en , "The collected rediscovered teachings (gter ma) of Rtsa-gsum Gter-bdag-gliṅ-pa or Gar-dbaṅ Gnam-lcags-rdo-rje /collected from the surviving manuscripts available in India, Nepal, and Bhutan."@en-x-mixed ;
+        skos:prefLabel      "gnam lcags rtsa gsum gling pa'i zab gter/"@bo-x-ewts , "the collected rediscovered teachings (gter ma) of rtsa-gsum-gter-bdag-glin-pa or gar-dban gnam-lcags-rdo-rje"@en-x-mixed ;
+        :creator            bdr:CRB399ADA43D7633DC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27492 , bdr:W27492 ;
+        :workIsAbout        bdr:T1082 , bdr:T470 .
+}

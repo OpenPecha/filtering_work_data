@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS67572 {
+    bda:LG9069097A35EAB3EC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-14T10:13:57.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGABB30FE42B84F959
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-14T10:12:31.153Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS67572  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS67572 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA8LS67572.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS67572 ;
+        adm:logEntry        bda:LG9069097A35EAB3EC , bda:LGABB30FE42B84F959 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8C362E7085ED43A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS12396 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS67572  a       :Work ;
+        skos:prefLabel      "skyabs mchog dkar dgon mkhan zur rdo rje 'chang rje btsun blo bzang 'jam dbyangs mchog gi zhal gdams dge legs 'dren pa'i pho nya/"@bo-x-ewts ;
+        :catalogInfo        "Colleted writings of Kargon khenzur Losang Jamyang."@en ;
+        :creator            bdr:CR8C362E7085ED43A2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW8LS67572 , bdr:W8LS67572 ;
+        :workIsAbout        bdr:T58 .
+}

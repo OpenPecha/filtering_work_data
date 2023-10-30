@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3197 {
+    bda:LG822504A24CA361A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-10T09:16:35.27Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEA832C521689FCCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3197"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3197  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3197 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a8/WA1NLM3197.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3197 ;
+        adm:logEntry        bda:LG822504A24CA361A0 , bda:LGEA832C521689FCCC , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1547B1DF6DA4466B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7E98E9688D33D4D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3197  a       :Work ;
+        skos:prefLabel      "paN chen bsod nams grags pas mdzad rgyud bla ma'i Tik+ka sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on Maitreyanatha's Uttaratantra (ratnagotravibhaga); and other texts included."@en ;
+        :creator            bdr:CR1547B1DF6DA4466B , bdr:CR7E98E9688D33D4D9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3197 , bdr:W1NLM3197 ;
+        :workIsAbout        bdr:T1900 , bdr:WA19458 , bdr:WA1GS1563 , bdr:WA4CZ16829 .
+}

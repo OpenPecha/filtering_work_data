@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77239 {
+    bda:LGEC20BDD830572780
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-27T09:00:42.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF3E810C9A9D1F6B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-27T09:00:18.382Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77239  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77239 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "93/WA8LS77239.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77239 ;
+        adm:logEntry        bda:LGEC20BDD830572780 , bda:LGF3E810C9A9D1F6B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS77239  a       :Work ;
+        skos:altLabel       "'phags yul gyi nang pa'i gzhung las byung ba'i tshan rig dang lta grub kun btus/ nang pa'i tshan rig gi skor/ smad cha/"@bo-x-ewts ;
+        skos:prefLabel      "'phags yul gyi nang pa'i gzhung las byung ba'i tshan rig dang lta grub kun btus/ pod gnyis pa/"@bo-x-ewts ;
+        :catalogInfo        "Buddhist sciences and philosophy."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T385 ;
+        :workHasInstance    bdr:MW8LS77239 , bdr:W8LS77239 ;
+        :workIsAbout        bdr:T00EGS1016786 .
+}

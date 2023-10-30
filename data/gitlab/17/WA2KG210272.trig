@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210272 {
+    bda:LG52D6D2E8FF006EB4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-21T11:57:20.467Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG55532CBC5D779FB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-14T09:18:07.989Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6E562F2061D19D70
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA2B3C0A3F06BB557
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGD3A003CF9E639561
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-14T12:12:57.865Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF89533A805E65244
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T10:25:02.743Z"^^xsd:dateTime ;
+        adm:logMessage      "work number for chungdak la"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG210272  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210272 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "17/WA2KG210272.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210272 ;
+        adm:logEntry        bda:LG52D6D2E8FF006EB4 , bda:LG55532CBC5D779FB7 , bda:LG6E562F2061D19D70 , bda:LGA2B3C0A3F06BB557 , bda:LGD3A003CF9E639561 , bda:LGF89533A805E65244 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR75BF0F8E7DEC66CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5484 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG210272  a      :Work ;
+        skos:prefLabel      "gsung 'bum/ pad+ma theg mchog bstan pa'i rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Nyingma Jangter master Pema Thegchok Tenpei Gyaltsen (18th cent.)."@en ;
+        :creator            bdr:CR75BF0F8E7DEC66CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG210272 , bdr:W2KG210272 ;
+        :workIsAbout        bdr:T1082 .
+}

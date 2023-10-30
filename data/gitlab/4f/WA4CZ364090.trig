@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ364090 {
+    bda:LG1389622459B63C8B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T12:35:16.482Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE9126FD6FEF013B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:04:19.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ364090  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ364090 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4f/WA4CZ364090.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ364090 ;
+        adm:logEntry        bda:LG1389622459B63C8B , bda:LGE9126FD6FEF013B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ364090  a      :Work ;
+        skos:altLabel       "gtsang stod rgyal po'i rtogs brjod dang khrims yig khag gnyis/"@bo-x-ewts ;
+        skos:prefLabel      "gtsang stod rgyal po'irnam thar dang rgyal rabs/"@bo-x-ewts ;
+        :catalogInfo        "The life of the ruler of Tsang, Desi Karma Tenkyong Wangpo and two legal codes of Tibet."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW4CZ364090 , bdr:W4CZ364090 ;
+        :workIsAbout        bdr:P1366 , bdr:T384 .
+}

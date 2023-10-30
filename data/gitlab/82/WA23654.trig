@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23654 {
+    bda:LG7A8502DF2E46BD1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG7DA5A0B989248207
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-16T12:34:55.755Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8658EE745391DD7D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA2F01246B48E6433
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-09T12:41:59.704Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected annotation"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGADB58A5090D9D5D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-26T19:51:41.775Z"^^xsd:dateTime ;
+        adm:logMessage      "correct license and access"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGDD9AF859BD21578C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-16T15:25:14.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL07"@en .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23654  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23654 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "82/WA23654.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23654 ;
+        adm:logEntry        bda:LG7A8502DF2E46BD1A , bda:LG7DA5A0B989248207 , bda:LG8658EE745391DD7D , bda:LGA2F01246B48E6433 , bda:LGADB58A5090D9D5D1 , bda:LGDD9AF859BD21578C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG17449 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR0333B5C63DB53364
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23654  skos:altLabel  "collected writing[s] (gsun 'bum) of rgyal-ba yan-dgon-pa rgyal-mtshan-dpal"@en-x-mixed .
+
+    bdr:WA23654  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_rgyal mtshan dpal/"@bo-x-ewts , "collected writing[s] (gsun 'bum) of rgyal-ba yan-dgon-pa rgyal-mtshan-dpal"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Yangonpa Gyaltsen Pel (1213-1258), a master of the upper Drukpa Kagyu order. Three volume reproduction of a collection from the Tango monastic community in Bhutan."@en ;
+        :creator            bdr:CR0333B5C63DB53364 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T816 .
+}

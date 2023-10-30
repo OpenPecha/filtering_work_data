@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73572 {
+    bda:LG027BF547EA32F897
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-21T09:16:27.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG07DE82F8BB8836D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-23T14:26:12.125Z"^^xsd:dateTime ;
+        adm:logMessage      "volume aranged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5508C2756D46F49C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-21T09:15:48.967Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9D688ED23B7CD23E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-21T09:19:18.962Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73572  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73572 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "86/WA8LS73572.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73572 ;
+        adm:logEntry        bda:LG027BF547EA32F897 , bda:LG07DE82F8BB8836D2 , bda:LG5508C2756D46F49C , bda:LG9D688ED23B7CD23E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC1436CE7BCCC07B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5788 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73572  a       :Work ;
+        skos:altLabel       "lung ston pa rtsa ba sum cu pa dang rtags kyi 'jug pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sum rtags dag yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1. lung ston pa rtsa ba sum cu pa dang rtags kyi 'jug pa/ 10 ff. 2. lung ston pa rtsa ba sum cu pa dang rtags kyi 'jug pa/ 7 ff. 3. bod kyi brda yig mkhas pa'i ngag gi sgron ma/ 49 ff."@en , "The root texts of Tibetan grammar by Thonmi Sambhota; other related text."@en ;
+        :creator            bdr:CRC1436CE7BCCC07B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG8787 , bdr:T218 ;
+        :workHasInstance    bdr:MW8LS73572 , bdr:W8LS73572 ;
+        :workIsAbout        bdr:T186 .
+}

@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG1608 {
+    bda:LG2D75F82CAA6C7743
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-02-13T12:37:08.347Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged work"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4BE06A6478B98993
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG7DEBB55D3178D789
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-27T15:33:57.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB65884147E7A8582
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-06T14:05:53.389Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGBEA1A77137B0EC4D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-03-12T11:07:02.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC526EEDBC5D2E761
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-20T14:20:38.315Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG1608  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG1608 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "e4/WA1KG1608.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG1608 ;
+        adm:logEntry        bda:LG2D75F82CAA6C7743 , bda:LG4BE06A6478B98993 , bda:LG7DEBB55D3178D789 , bda:LGB65884147E7A8582 , bda:LGBEA1A77137B0EC4D , bda:LGC526EEDBC5D2E761 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3DA07F612AFF7827
+        a                   :AgentAsCreator ;
+        :agent              bdr:P282 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG1608  a        :Work ;
+        skos:altLabel       "yongs rdzogs bstan pa'i mnga' bdag stag phu yongs 'dzin ye shes mtshan can dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_ye shes rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk prelate Chuzang Yeshe Gyatso (1789-1856)."@en ;
+        :creator            bdr:CR3DA07F612AFF7827 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG1608 , bdr:MW6113 , bdr:W1KG1608 , bdr:W6113 ;
+        :workIsAbout        bdr:T819 .
+}

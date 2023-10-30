@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21692 {
+    bda:LG4133B865A50EA6B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T15:00:52.951Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG759A278CCDA3026D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGAE7E388448AD1A62
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T16:48:17.236Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21692  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21692 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "51/WA3CN21692.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21692 ;
+        adm:logEntry        bda:LG4133B865A50EA6B2 , bda:LG759A278CCDA3026D , bda:LGAE7E388448AD1A62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3940B6A9AFD0BF7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21693 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA3CN21692  a       :Work ;
+        skos:prefLabel      "mtshan mo'i srang lam/"@bo-x-ewts ;
+        :catalogInfo        "Rue des boutiques obscures, translated to Tibetan by Namlhun."@en ;
+        :creator            bdr:CRE3940B6A9AFD0BF7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW3CN21692 , bdr:W3CN21692 .
+}

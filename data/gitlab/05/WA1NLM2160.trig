@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2160 {
+    bda:LG09D04174CCC7C414
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-03T16:32:34.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG11A35CC5CCCD7A3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2160"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2160  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2160 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "05/WA1NLM2160.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2160 ;
+        adm:logEntry        bda:LG09D04174CCC7C414 , bda:LG11A35CC5CCCD7A3E , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2160  a       :Work ;
+        skos:prefLabel      "lha mo 'od zer can ma'i mdun bskyed kyi sgo nas mi dang mi ma yin pa'i nyer 'tshe sel thabs nyer 'tshe mun sel nyi zla'i rgyal mtshan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 thub pa chen po bcom ldan 'das kyi nyal chog 2 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa/ 3 lha mo 'od zer can ma'i sgo nas chom rkun spyang khu chings thabs lcags sgrogs brgya brtsegs ma/ 4 sprul pa'i chos skyong chen po sku lnga'i gsol kha mdor bsdus/ 5 bla 'gugs/ 6 klu'i bsang bde chen lhun 'grub ma/ 7 bla ma thams cad mkhyen pa mdzad pa la sdig sgrub kun sel ba'i bsang / 8 thang nu bsangs gser skyems/ 9 the re'u no'u bsang mchod rten 'bul/ 10 thub pa chen po bcom ldan 'das kyi bsrung bzlog bsad gsum gyi zhal chog shin tu bsdus pa/ 11 dpal ldan dmag zor rgyal po ren ma te'i bsangs chog 12 bla ma mchod pa'i tshogs mchod/ 13 'go ba'i lha lnga'i bsangs/ 14 gshin po'i dur 'debs kyis bslad pa sogs ji ltar bya tshul gyi cho ga mdor bsdus gzhan phan snying po/"@en , "Self genrating Marici as deity to dispel harm caused by human and inhuman; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2160 , bdr:W1NLM2160 ;
+        :workIsAbout        bdr:T1214 , bdr:T1CZ14 .
+}

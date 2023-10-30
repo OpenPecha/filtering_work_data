@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1533 {
+    bda:LG26A669C0C51575A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-24T12:01:47.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD033919D3694B6D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1533"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1533  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1533 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1d/WA1NLM1533.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1533 ;
+        adm:logEntry        bda:LG26A669C0C51575A6 , bda:LGD033919D3694B6D7 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD6AD5B374B0B9A66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3082 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1533  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa'i khrid yig chen mo dka' ba'i gnad rnams gsal bar bkod pa'i lam rim rab gsal me long sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 theg pa chen po gso sbyong blang ba'i sgo nas thub dbang gnas brtan bcu drug 'khor dang bcas pa phyag mchod thugs dam bskul ba'i cho ga dngos grub kun 'byung / 2 gnas brtan mchod pa'i skabs su khrus gsol bya tshul/ 3 thub dbang gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul thub bstan rgyas byed yid bzhin gyi nor bu/"@bo-x-ewts , "An instructional manual of graduated approach by Losang Nyendrak; other text also included."@en ;
+        :creator            bdr:CRD6AD5B374B0B9A66 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM1533 , bdr:W1NLM1533 .
+}

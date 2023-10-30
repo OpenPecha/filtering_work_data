@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302672 {
+    bda:LG18A8ECE9A8B554F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-17T15:30:19.219Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1EB98A41A6B680FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T11:28:44.147Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG36495934733D4F22
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGD0FF5D39CF6E2E41
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-19T11:46:16.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302672  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302672 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4c/WA4CZ302672.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302672 ;
+        adm:logEntry        bda:LG18A8ECE9A8B554F8 , bda:LG1EB98A41A6B680FF , bda:LG36495934733D4F22 , bda:LGD0FF5D39CF6E2E41 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA15257 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR17DB368A3188AB20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3016 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302672  a      :Work ;
+        skos:altLabel       "dpal ldan zur mkhar ba'i khyad chos man ngag bye ba ring bsrel pod chung rab 'byams gsal ba'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "man ngag bye ba ring bsrel/"@bo-x-ewts ;
+        :catalogInfo        "Collected instructions on medical practice of Zurkhar Nyamnyi Dorje"@en ;
+        :creator            bdr:CR17DB368A3188AB20 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T85 , bdr:T86 .
+}

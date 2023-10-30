@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1397 {
+    bda:LG0E5D22783D610DE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-05T15:18:07.773Z"^^xsd:dateTime ;
+        adm:logMessage      "rfull catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC6C12BB87DEB3757
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1397"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1397  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1397 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/WA1NLM1397.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1397 ;
+        adm:logEntry        bda:LG0E5D22783D610DE7 , bda:LGC6C12BB87DEB3757 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1397  a       :Work ;
+        skos:prefLabel      "shes khyad byed ngo'i mtshan nyid bzhi'i rnam bzhag yum don ku mu da bzhad pa'i legs bshad zla zer snang ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "An analysis of the four characteristic of་ cognition and other miscellaneous Writings of the Gelug Masters"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM1397 , bdr:W1NLM1397 ;
+        :workIsAbout        bdr:T2005 .
+}

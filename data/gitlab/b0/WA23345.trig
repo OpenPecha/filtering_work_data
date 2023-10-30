@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23345 {
+    bda:LG7CDE075E39637A38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBED4F8CB8541C136
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T09:57:16.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGC24CF5F6DF90D1A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-14T15:47:00.817Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE87873DF7C887917
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-29T12:23:54.24Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23345  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23345 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b0/WA23345.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23345 ;
+        adm:logEntry        bda:LG7CDE075E39637A38 , bda:LGBED4F8CB8541C136 , bda:LGC24CF5F6DF90D1A9 , bda:LGE87873DF7C887917 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23345  skos:altLabel  "blo gsal glin mkhas grub rim byun gyi gsun thor bu phyogs bsgrigs : a collection of rare writings of the scholars of blo-gsal-glin college of 'bras spuns monastery of past and present"@en-x-mixed .
+
+    bdr:WA23345  a          :Work ;
+        skos:altLabel       "Blo gsal gliṅ mkhas grub rim byon gyi gsuṅ thor bu phyogs bsgrigs :a collection of rare writings of the scholars of Blo-gsal-gliṅ College of 'Bras-spuńs Monastery of past and present."@en-x-mixed ;
+        skos:prefLabel      "blo gsal gling mkhas grub rim byon gyi gsung thor phyogs bsgrigs/"@bo-x-ewts , "blo gsal glin mkhas grub rim byun gyi gsun thor bu phyogs bsgrigs : a collection of rare writings of the scholars of blo-gsal-glin college of 'bras spuns monastery of past and present"@en-x-mixed ;
+        :catalogInfo        "Select writings by eminent Geluk masters of the Drepung Losal Ling tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW23345 , bdr:W23345 ;
+        :workIsAbout        bdr:G126 .
+}

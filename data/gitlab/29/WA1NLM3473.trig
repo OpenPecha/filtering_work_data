@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3473 {
+    bda:LGFC5B2C7AC6ECA533
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T09:46:32.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3473"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3473  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3473 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "29/WA1NLM3473.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3473 ;
+        adm:logEntry        bda:LGFC5B2C7AC6ECA533 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR268B75B006EFB599
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3473  a       :Work ;
+        skos:prefLabel      "rgyal po chen po rnam thos sras la mchod gter 'bul ba'i rim pa dngos grub kyi bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul bcas pa/ 2 lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/ 3 lha chen drag po gdong bzhi pa'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 4 bstod pa yon tan dkyil 'khor ma/ 5 grub chen las kyi rdo rje'i bstod pa/ 6 'brom ston pa'i bstod mgur/ 7 rje btsun seng ldeng nags kyi sgrol bstod pa mkhas pa'i gtsug rgyan/ 8 grub pa'i dbang po'i xxx bstod pa/ 9 mgon dkar yid bzhin nor bu'i sgrub thabs/"@en , "Bali offering ritual of Vaishravana; other text also included."@en ;
+        :creator            bdr:CR268B75B006EFB599 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3473 , bdr:W1NLM3473 ;
+        :workIsAbout        bdr:T1367 , bdr:T197 .
+}

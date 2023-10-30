@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN960 {
+    bda:LG448C97CC46EB0C82
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-04T12:41:35.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6E753F7DF88DB93D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-14T12:26:14.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9FAE6FD28095F68C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-14T12:20:59.15Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN960  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN960 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4e/WA3CN960.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN960 ;
+        adm:logEntry        bda:LG448C97CC46EB0C82 , bda:LG6E753F7DF88DB93D , bda:LG9FAE6FD28095F68C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3FE2602B3ACC5636
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN962 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR94C297F6098C7B26
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN961 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN960  a         :Work ;
+        skos:altLabel       "tabo studies III : a catalogue of the manuscript collection of tabo monastery"@en ;
+        skos:prefLabel      "a catalogue of the manuscript collection of tabo monastery"@en ;
+        :catalogInfo        "A catalogue of the manuscript collection of Tabo monastery"@en ;
+        :creator            bdr:CR3FE2602B3ACC5636 , bdr:CR94C297F6098C7B26 ;
+        :isRoot             true ;
+        :language           bdr:LangEn ;
+        :workGenre          bdr:T13 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN960 , bdr:W3CN960 ;
+        :workIsAbout        bdr:T2423 .
+}

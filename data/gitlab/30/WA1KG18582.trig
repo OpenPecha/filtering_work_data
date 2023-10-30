@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18582 {
+    bda:LG45CEC7D292BD93A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-10-28T15:35:11.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5131EF994F4143EF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-28T15:34:28.919Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8EDE243720
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T17:05:34.944Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1PD53280 to T770"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA1KG18582  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18582 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "30/WA1KG18582.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18582 ;
+        adm:logEntry        bda:LG45CEC7D292BD93A1 , bda:LG5131EF994F4143EF , bda:LGIM84B17F7EDC , bda:LGIM8EDE243720 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR42F7F9C2FDE72271
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18621 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG18582  a       :Work ;
+        skos:altLabel       "sems rab tu sad pa'i tshul la 'gal snang dang bka' rtsom gzhan 'ga' zhig"@bo-x-ewts ;
+        skos:prefLabel      "sems rab tu sad pa'i tshul la 'gal snang /"@bo-x-ewts ;
+        :catalogInfo        "Selected translation of Andrew Cohen's writings."@en ;
+        :creator            bdr:CR42F7F9C2FDE72271 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG18582 , bdr:W1KG18582 ;
+        :workIsAbout        bdr:T770 .
+}

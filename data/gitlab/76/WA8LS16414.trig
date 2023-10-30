@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16414 {
+    bda:LG2262A155C8C830EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T12:19:00.37Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG94E01949D3C67B94
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-29T15:07:15.995Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA8DCE083DE95FEA7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-29T15:06:22.471Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16414  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16414 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "76/WA8LS16414.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16414 ;
+        adm:logEntry        bda:LG2262A155C8C830EE , bda:LG94E01949D3C67B94 , bda:LGA8DCE083DE95FEA7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR66AAADED7EE436DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16414  a       :Work ;
+        skos:altLabel       "kar gling zhi khro dgongs pa rang grol/"@bo-x-ewts , "kar gling zhi khro thos pa rang grol/"@bo-x-ewts ;
+        skos:prefLabel      "zhi khro thos pa rang grol/"@bo-x-ewts ;
+        :catalogInfo        "Rediscovered teachings of Karma Lingpa."@en ;
+        :creator            bdr:CR66AAADED7EE436DD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW8LS16414 , bdr:W8LS16414 ;
+        :workIsAbout        bdr:T351 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2115 {
+    bda:LGB065B567DDAF49D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB19E572C0164168F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-21T09:08:12.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2115"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2115  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2115 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "19/WA1NLM2115.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2115 ;
+        adm:logEntry        bda:LGB065B567DDAF49D5 , bda:LGB19E572C0164168F , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2115  a       :Work ;
+        skos:prefLabel      "gsang ba'i chos spyod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dbang chen yang gsang khros pa'i las byang snying po bcud bsdus/ 2 'go pa'i lha lnga'i gsol mchod bya tshul/ 3 dpal ldan lha mo'i sgo nas maN+Dal bzhi pa 'bul tshul dgos 'dod kun 'byung / 4 lcam sring gi ja phud 'bul ba/ 5 rin chen za ma tog 6 dge bsnyen du bsgrub pa/ 7 dpal ldan lha mo'i rdo rje/ 8 dpal ldan lha mo'i gser skyems/ 9 dpal ldan lha mo'i bsangs mchod/ 10 rlung rta'i bcos thabs/ 11 gtum mo'i bskyed rim ngag 'don gsal 'debs/ 12 bla zur zhig gi rgod ma kha yi chu shor ba'i ngang tshul gyis kha las thon pa'i gtam/ 13 gser tog rin po ches mdzad pas thun drug rnal 'byor/ 14 dus gsum sangs rgyas thams cad kyi ngo bo dang bar do drug gi rtsa tshig 15 gsang ba yi dam sgrub thabs/ 16 brgyud pa'i gsol 'debs bde chen rab 'bar/ 17 gros 'debs snying gi thur ma/ 18 ngan song 'jigs las sgrol ba/"@en , "Liturgical recitation text; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM2115 , bdr:W1NLM2115 .
+}

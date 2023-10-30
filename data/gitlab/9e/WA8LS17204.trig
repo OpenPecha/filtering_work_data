@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17204 {
+    bda:LG2DFE3B376262F2F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-01T10:36:59.418Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA05CDCD76D513635
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-01T10:38:30.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE383300D300C059B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17204  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17204 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9e/WA8LS17204.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17204 ;
+        adm:logEntry        bda:LG2DFE3B376262F2F3 , bda:LGA05CDCD76D513635 , bda:LGE383300D300C059B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05A05EC5F3806141
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB191AEC30F8680D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17204  a       :Work ;
+        skos:altLabel       "bslab pa yongs sbyong gzhi gsum rnam gzhag dga' ldan byang chub gling gi bca' yig dang rgyal ba byams pa'i gos sku mthong ba don ldan gyi dkar chag dad pa'i sgo 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "bslab pa yongs sbyong gzhi gsum rnam gzhag dga' ldan byang chub gling gi bca' yig dang rgyal ba byams pa'i gos sku mthong ba don ldan gyi dkar chag"@bo-x-ewts ;
+        :catalogInfo        "An analysis of Trinisiksani, monastic regulation of Gaden Jangchub Ling monastery by Cangkya Rolpai Dorjee and the Karchag of silk brocade thangka of Maitreyanatha by Cangkya Ngawang Choden."@en ;
+        :creator            bdr:CR05A05EC5F3806141 , bdr:CRB191AEC30F8680D2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS17204 , bdr:W8LS17204 ;
+        :workIsAbout        bdr:G1KR226 , bdr:T949 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17845 {
+    bda:LG0FB77D05EEC1BFA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG6A4F3913692C8899
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-17T12:25:35.477Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAA152E2524AFD753
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-17T12:26:46.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCA327FA10AEDC419
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T15:47:20.728Z"^^xsd:dateTime ;
+        adm:logMessage      "add authors and changed titiles"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA8LS17845  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17845 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "37/WA8LS17845.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17845 ;
+        adm:logEntry        bda:LG0FB77D05EEC1BFA5 , bda:LG6A4F3913692C8899 , bda:LGAA152E2524AFD753 , bda:LGCA327FA10AEDC419 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR38AEF42DDB63C32B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P254 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17845  a       :Work ;
+        skos:prefLabel      "bsdus don zur phud mdzes pa'i pad dkar phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Summary of types of reasons."@en ;
+        :creator            bdr:CR38AEF42DDB63C32B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW8LS17845 , bdr:W8LS17845 ;
+        :workIsAbout        bdr:T1235 .
+}

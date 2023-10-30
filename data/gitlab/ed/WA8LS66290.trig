@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66290 {
+    bda:LG46079543B7A3E766
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-26T12:39:54.697Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE2E53528A24F4999
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-26T12:41:08.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66290  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66290 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ed/WA8LS66290.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66290 ;
+        adm:logEntry        bda:LG46079543B7A3E766 , bda:LGE2E53528A24F4999 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR854BD241238F607B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG22258 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66290  a       :Work ;
+        skos:altLabel       "bod kyi brda sprod pa nying bcud kun 'dus sbyangs rgyugs chabs sbrags blo gsar mgul rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "blo gsar mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "A comprehensive Tibetan grammar with exercises by Darzhab Jampel Kalden."@en ;
+        :creator            bdr:CR854BD241238F607B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66290 , bdr:W8LS66290 ;
+        :workIsAbout        bdr:T4CZ16893 .
+}

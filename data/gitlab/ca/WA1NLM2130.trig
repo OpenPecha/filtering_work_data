@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2130 {
+    bda:LG104A9BE2C9DC2855
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG1B23FC46522703D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-27T09:07:10.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2130"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2130  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2130 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ca/WA1NLM2130.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2130 ;
+        adm:logEntry        bda:LG104A9BE2C9DC2855 , bda:LG1B23FC46522703D2 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2130  a       :Work ;
+        skos:prefLabel      "tshe dpag med dgu'i dkyil 'khor gyi cho ga nag 'gros su bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bar chad bzlog pa'i dus su smon lam/ 2 klu chen brgyad la sogs gsol ba/ 3 lha bdud dang tshangs pa'i bstod pa/ 4 phyir bzlog bsrung 'khor bsgom tshul/ 5 bla ma'i rnal 'byor/ 6 bstan 'bar ma/ 7 yul lha'i gsol mchod lha ngo mi ngo phod pa'i dga' ston/ 8 bkra shis char 'bebs bsangs/ 9 'od zer can ma'i gsol 'debs/ 10 bcom ldan gdugs dkar rje btsun sgrol ma ljang / 11 phyugs bzhi'i god kha rims nad sogs zhi bar byed pa'i zag med bsur gyi mchod pa/ 12 rnam thos sras la de nas g.yang 'gug 13 rje bla ma'i bstan par tshe rabs kun du mi 'bral pa'i smon tshig 14 'phags pa gser 'do dam pa bsdus pa/ 15 sham+b+ha la'i smon tshigs/ 16 'go ba'i lha lnga bsangs mchod 17 rnam sras mchod 'bul/ 18 tshe 'gugs/ 19 lce yi byin rlabs/ 20 thub bstod/ 21 gser skyems/ 22 rdo rje 'jigs byed chen po'i bal brgyud bsdus pa/ 23 zhabs brtan smon chog 24 dregs pa sde brgyad la gser skyems gtong ba'i cho ga bdud rtsi'i rlabs 'phreng /"@en , "Mandala ritual of nine deity Amitabha; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW1NLM2130 , bdr:W1NLM2130 ;
+        :workIsAbout        bdr:T1347 , bdr:T838 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354447 {
+    bda:LG3CA2432B14650022
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG76A0A0693F3E19FE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-03T11:06:08.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8BE53ABC20D7F1CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-02T16:08:54.894Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354447  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354447 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/WA4CZ354447.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354447 ;
+        adm:logEntry        bda:LG3CA2432B14650022 , bda:LG76A0A0693F3E19FE , bda:LG8BE53ABC20D7F1CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR097AAC87B808F29B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8055 ;
+        :role               bdr:R0ER0023 .
+
+    bdr:CR2BBF5E9263F2E04C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2388 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRAD4489F173D57A45
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8058 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW4CZ354447  skos:altLabel  "meghaduta"@sa-x-ndia .
+
+    bdr:WA4CZ354447  a      :Work ;
+        skos:prefLabel      "sprin gyi pho nya/"@bo-x-ewts , "meghaduta"@sa-x-ndia ;
+        :catalogInfo        "Classical Sanskrit poem Meghaduta written by Kalidasa with Tibetan translation. gser bris number 3796 toh 4302"@en ;
+        :creator            bdr:CR097AAC87B808F29B , bdr:CR2BBF5E9263F2E04C , bdr:CRAD4489F173D57A45 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW4CZ354447 , bdr:W4CZ354447 ;
+        :workIsAbout        bdr:T204 .
+}

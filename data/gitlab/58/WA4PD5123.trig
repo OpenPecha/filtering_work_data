@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD5123 {
+    bda:LG2B8B25BC1B882481
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-02-06T14:51:57.537Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG6014DCFF787A1D43
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-02-06T15:09:22.463Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG67FA9472325BB789
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-06T19:02:54.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGD4BC3242DCAFFF4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-02-06T14:56:00.081Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGD8BCE3E89A8B4F0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4PD5123  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD5123 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "58/WA4PD5123.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD5123 ;
+        adm:logEntry        bda:LG2B8B25BC1B882481 , bda:LG6014DCFF787A1D43 , bda:LG67FA9472325BB789 , bda:LGD4BC3242DCAFFF4C , bda:LGD8BCE3E89A8B4F0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR84DB4E5178C4C39D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD5123  a        :Work ;
+        skos:prefLabel      "se ra rje btsun chos kyi rgyal mtshan gyi gsung phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Sera Jetsun Chokyi Gyaltsen (1469-1544/1546)"@en ;
+        :creator            bdr:CR84DB4E5178C4C39D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4PD5123 , bdr:W4PD5123 ;
+        :workIsAbout        bdr:T447 , bdr:T819 .
+}

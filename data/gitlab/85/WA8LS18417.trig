@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18417 {
+    bda:LG14BDBA1ED7E1B882
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T09:27:26.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3BFFCE277B190B6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-04T16:46:24.67Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC092480CE758BD4C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T09:26:07.383Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS18417  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18417 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "85/WA8LS18417.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18417 ;
+        adm:logEntry        bda:LG14BDBA1ED7E1B882 , bda:LG3BFFCE277B190B6F , bda:LGC092480CE758BD4C , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS18417  a       :Work ;
+        skos:altLabel       "rnam mkhyen rgyal ba gshen rab kyi skyes rabs rnam bshad nor bu'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "gshen rab kyi skyes rabs rnam bshad nor bu'i phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Tonpa Shenrap, the founder of Bon religion."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS18417 , bdr:W8LS18417 ;
+        :workIsAbout        bdr:P2MS13220 .
+}

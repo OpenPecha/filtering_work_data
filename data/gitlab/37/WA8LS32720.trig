@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32720 {
+    bda:LG57E67EED4B932846
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T10:47:11.228Z"^^xsd:dateTime ;
+        adm:logMessage      "created title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG91C365CFFE8CEE48
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-09T14:36:39.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBE139F77CA01F6E8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-09T14:37:01.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDDABA297DEA73E11
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS32720  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32720 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "37/WA8LS32720.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32720 ;
+        adm:logEntry        bda:LG57E67EED4B932846 , bda:LG91C365CFFE8CEE48 , bda:LGBE139F77CA01F6E8 , bda:LGDDABA297DEA73E11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR106038AA11F56E2E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32720  a       :Work ;
+        skos:prefLabel      "rigs dang dkyil 'khor kun gyi khyab bdag rdo rje 'chang blo gsal rgya mtsho grags pa rgyal mtshan dpal bzang po'i rnam par thar pa slob bshad bstan pa'i nyi 'od/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Tsharchen Losel Gyatsho by 5th Dalai Lama Ngawang Lobsang Gyatsho."@en ;
+        :creator            bdr:CR106038AA11F56E2E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1PD107937_F69239 , bdr:MW8LS32720 , bdr:W8LS32720 ;
+        :workIsAbout        bdr:P786 .
+}

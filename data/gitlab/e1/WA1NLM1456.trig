@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1456 {
+    bda:LGDC9DD1B37F14ED09
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T18:16:43.688Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFC5FB19F1BFF488E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1456"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1456  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1456 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e1/WA1NLM1456.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1456 ;
+        adm:logEntry        bda:LGDC9DD1B37F14ED09 , bda:LGFC5FB19F1BFF488E , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1387 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR16CC854A2134D6F0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ34265 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR4D63B7D3BEE2944C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P58 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7EA7E2522BFFFBB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1456  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa la blo sbyong ba la thog mar blo sbyong ba chos kyi sgo 'byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on mind training treatise by Chenga Lodro Gyaltshen; Exegesis of interdependent origination, the three-stage of valid cognition in logic, and tenet; And annotated commentary to the Prajnaparamita textbook by Jamyang Zhepe Dorje. This commentary is used in Gomang College of Drepung Monastery and its affiliates."@en ;
+        :creator            bdr:CR16CC854A2134D6F0 , bdr:CR4D63B7D3BEE2944C , bdr:CR7EA7E2522BFFFBB4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 , bdr:T304 ;
+        :workIsAbout        bdr:T2281 , bdr:T36 , bdr:T393 .
+}

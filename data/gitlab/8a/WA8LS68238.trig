@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68238 {
+    bda:LG6C1D145979EB4236
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T14:18:54.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA426C5F7B8814CDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD4298781E8D14B2A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-29T16:29:43.09Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF42DDA6F165B832B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-29T16:30:06.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68238  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68238 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8a/WA8LS68238.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68238 ;
+        adm:logEntry        bda:LG6C1D145979EB4236 , bda:LGA426C5F7B8814CDE , bda:LGD4298781E8D14B2A , bda:LGF42DDA6F165B832B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2D8A063A6CA8A7D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75540 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68238  a       :Work ;
+        skos:prefLabel      "sbra nang gi me 'od/"@bo-x-ewts ;
+        :catalogInfo        "A collection of contemporary Tibetan poetry composed by Lutshang Monlam Gyatsho."@en ;
+        :creator            bdr:CR2D8A063A6CA8A7D7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS68238 , bdr:W8LS68238 ;
+        :workIsAbout        bdr:T1KG6100 , bdr:T281 .
+}

@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23704 {
+    bda:LG2B12EE7ABEC08D23
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T15:50:10.731Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected bib titles"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG6499727B7B6A4DDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T12:26:06.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG7A7309A37A402AFA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG98E1C258F70AC6C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-28T13:20:58.351Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1789 to T384"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF1F34C1C46D53A4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-14T10:32:14.72Z"^^xsd:dateTime ;
+        adm:logMessage      "t1789,g3196"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23704  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23704 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "51/WA23704.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23704 ;
+        adm:logEntry        bda:LG2B12EE7ABEC08D23 , bda:LG6499727B7B6A4DDD , bda:LG7A7309A37A402AFA , bda:LG98E1C258F70AC6C1 , bda:LGF1F34C1C46D53A4D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23704  skos:altLabel  "tibetan legal materials : a collection of texts on the legal and administrative structure of tibet"@en .
+
+    bdr:WA23704  a          :Work ;
+        skos:prefLabel      "bod khrims yig skor/"@bo-x-ewts , "tibetan legal materials : a collection of texts on the legal and administrative structure of tibet"@en ;
+        :catalogInfo        "Compilation of Tibetan legal materials."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23704 , bdr:W23704 ;
+        :workIsAbout        bdr:G3196 , bdr:T384 .
+}

@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10436 {
+    bda:LG1077BEB70F616A6A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-09-01T11:21:58.833Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBDE170000A8E673C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-09-01T11:22:56.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG10436  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10436 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f0/WA1KG10436.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10436 ;
+        adm:logEntry        bda:LG1077BEB70F616A6A , bda:LGBDE170000A8E673C , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBC843706B6A1A5C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6161 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD8C0603755BB9ABD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG10437 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:MW1KG10436  skos:altLabel  "bodhicaryavatara : 1. pre-cononical mongolian text; 2. tibetan commentary by blo-bzan-dpal-ldan"@en-x-mixed .
+
+    bdr:WA1KG10436  a       :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i tshig don kun gsal bar byed pa skal bzang rnams kyi 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug rtsa ba dang 'grel pa tshig don kun gsal bar byed pa skal bzang rnams kyi 'jug ngogs/"@bo-x-ewts , "bodhicaryavatara : 1. pre-cononical mongolian text; 2. tibetan commentary by blo-bzan-dpal-ldan"@en-x-mixed ;
+        :catalogInfo        "Root text of the Bodhicaryavatara by Shantideva. In mongolian language and commentary in Tibetan language."@en ;
+        :creator            bdr:CRBC843706B6A1A5C8 , bdr:CRD8C0603755BB9ABD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG10436 , bdr:W1KG10436 ;
+        :workIsAbout        bdr:WA19740 .
+}

@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20040 {
+    bda:LG029E9F471597EC99
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG62180DD5FA07468C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG720DBD2FBF33A291
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-16T11:05:27.843Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA20D98E0D0CA0E2C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-16T10:32:34.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC33F79E72DCA40C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-16T10:30:00.47Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20040  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20040 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e7/WA20040.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20040 ;
+        adm:logEntry        bda:LG029E9F471597EC99 , bda:LG62180DD5FA07468C , bda:LG720DBD2FBF33A291 , bda:LGA20D98E0D0CA0E2C , bda:LGC33F79E72DCA40C9 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCE92F2E611EBF677
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5107 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20040  skos:altLabel  "Rgyun spyod Bod sman sbyor phan rnam graṅs kun gsal me loṅ /Bkra-śis kyis brtsams."@en-x-mixed , "藏医常药配方"@zh-hans .
+
+    bdr:WA20040  a          :Work ;
+        skos:altLabel       "zang yi chang yao pei fang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyun spyod bod sman sbyor phan rnam grangs kun gsal me long /"@bo-x-ewts , "Rgyun spyod Bod sman sbyor phan rnam graṅs kun gsal me loṅ /Bkra-śis kyis brtsams."@en-x-mixed , "藏医常药配方"@zh-hans ;
+        :catalogInfo        "Handbook of traditional Tibetan drugs and medicines for home remedy."@en ;
+        :creator            bdr:CRCE92F2E611EBF677 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20040 , bdr:W20040 ;
+        :workIsAbout        bdr:T86 .
+}

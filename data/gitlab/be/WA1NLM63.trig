@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM63 {
+    bda:LG2DDEECFC940F75F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-23T19:57:14.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7A9D455AC9C5F8FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:45.586Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7DC0B1E50A3A67F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM63"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM63  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM63 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "be/WA1NLM63.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM63 ;
+        adm:logEntry        bda:LG2DDEECFC940F75F9 , bda:LG7A9D455AC9C5F8FB , bda:LG7DC0B1E50A3A67F7 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM63  a         :Work ;
+        skos:altLabel       "mkhan chen chos kyi rgyal po'i gsung 'bum las byang chub lam rim gyi 'khrid blo yi mun sel sogs/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub lam rim gyi 'khrid blo yi mun sel sogs/"@bo-x-ewts ;
+        :catalogInfo        "On the focus and mental attitude during the training along the gradual lamrim path and other liturgical texts for daily prayer."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 , bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM63 , bdr:W1NLM63 ;
+        :workIsAbout        bdr:WA466 .
+}

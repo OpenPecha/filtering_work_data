@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG26101 {
+    bda:LG3CC033CE654FD8F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-05T09:52:06.374Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA40BADD680E2BE5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-03-24T12:33:54.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF70492D998121E26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-13T10:03:54.458Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG26101  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG26101 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a1/WA1KG26101.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG26101 ;
+        adm:logEntry        bda:LG3CC033CE654FD8F9 , bda:LGA40BADD680E2BE5F , bda:LGF70492D998121E26 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB73E1B07FEB55F88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7770 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG26101  a       :Work ;
+        skos:prefLabel      "legs bshad dad pa'i mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Approach of arose the great devotion among the sharp faculties and dull faculties according to the yogacara-svatantrika-madhyamaika."@en ;
+        :creator            bdr:CRB73E1B07FEB55F88 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T245 ;
+        :workHasInstance    bdr:MW1KG26101 , bdr:W1KG26101 ;
+        :workIsAbout        bdr:T233 .
+}

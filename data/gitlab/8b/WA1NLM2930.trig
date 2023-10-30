@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2930 {
+    bda:LG84CE9DE859F880CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T14:33:10.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG912790621EA1896B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2930"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2930  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2930 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8b/WA1NLM2930.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2930 ;
+        adm:logEntry        bda:LG84CE9DE859F880CC , bda:LG912790621EA1896B , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10EF5F4446DC311D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2930  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal 'khor lo bde mchog dkar po yab yum mnyes par byed pa'i mchod chog 'chi med bde chen dpal ster sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dgra lha'i lo rgyus dang mgnon rtogs spyan 'dren bskang bshags bstod bskul bsang mchod tshogs 'khor mnga' gsol bkra shis dang bcas pa/ 2 thun mong rten 'brel sgrigs byed pa'i lha rnams mnyes byed bsangs brngan/ 3 'jam dbyangs nag po'i sgrub thabs byabs khrus/ 4 rdo rje sems dpa'i khrus byed pa'i thabs/ 5 sgrol dkar gyi mngon rtogs/ 6 'phags ma gdugs dkar mo'i sgrub thabs mchog stsol nor bu/ 7 dpal 'khor lo bde mchog dkar po'i smon lam shis brjod mdor bsdus/ 8 grub chen nyi ma sbas pa'i lugs kyi rje btsun seng ldeng nags kyi sgrol ma gtso 'khor gsum gyi sgrub thabs dngos grub myur stsol/"@en , "Ritual offering of the white Cakrasamvara by Damtshik Dorjee; other text also included."@en ;
+        :creator            bdr:CR10EF5F4446DC311D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM2930 , bdr:W1NLM2930 ;
+        :workIsAbout        bdr:T576 .
+}

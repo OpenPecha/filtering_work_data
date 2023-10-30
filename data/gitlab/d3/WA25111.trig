@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25111 {
+    bda:LG221B458CBFF62898
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T10:35:47.633Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed LC classification"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB8489A58C8FB523E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE327048D85AE4E28
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA25111  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25111 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d3/WA25111.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25111 ;
+        adm:logEntry        bda:LG221B458CBFF62898 , bda:LGB8489A58C8FB523E , bda:LGE327048D85AE4E28 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12534 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR996B467776CCC217
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3639 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW25111  skos:altLabel  "Bcom ldan ʾdas dpal chen rdo rje gźon nuʾi ʾphrin las kyi rnam par bśad pa He-ru-ka dpal bźad paʾi źal luṅ /Mag-gsar Kun-bzaṅ-stobs-ldan-dbaṅ-pos mdzad."@en-x-mixed .
+
+    bdr:WA25111  a          :Work ;
+        skos:altLabel       "bcom ldan 'das dpal chen rdo rje gzhon nu'i 'phrin las kyi rnam par bshad pa he ru ka dpal bzhad pa'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "phur pa'i rnam bshad he ru ka dpal bzhad pa'i zhal lung /"@bo-x-ewts , "Bcom ldan ʾdas dpal chen rdo rje gźon nuʾi ʾphrin las kyi rnam par bśad pa He-ru-ka dpal bźad paʾi źal luṅ /Mag-gsar Kun-bzaṅ-stobs-ldan-dbaṅ-pos mdzad."@en-x-mixed ;
+        :catalogInfo        "Interpretation on the cult of Tantric deity Vajrakīla in accordance with Nyingma tradition."@en ;
+        :creator            bdr:CR996B467776CCC217 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW25111 ;
+        :workIsAbout        bdr:T1786 .
+}

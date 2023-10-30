@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22344 {
+    bda:LG1CF5E203C272B567
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG41F7064C885C2237
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-01T12:39:44.279Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG829B8B1C7B800211
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-25T15:53:51.027Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG93A90823EA63D411
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-05-24T16:37:53.952Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9B5E7BE750D61C1C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-05-24T16:48:40.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDE3B68FD757763F3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22344  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22344 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "36/WA22344.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22344 ;
+        adm:logEntry        bda:LG1CF5E203C272B567 , bda:LG41F7064C885C2237 , bda:LG829B8B1C7B800211 , bda:LG93A90823EA63D411 , bda:LG9B5E7BE750D61C1C , bda:LGDE3B68FD757763F3 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5BE4955270D73669
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22344  a          :Work ;
+        skos:altLabel       "rgyal ba blo bzang bskal bzang rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_skal bzang rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Dalai Lama 07 Kalzang Gyatso (1708-1757)."@en ;
+        :creator            bdr:CR5BE4955270D73669 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW22344 , bdr:W22344 ;
+        :workIsAbout        bdr:T819 .
+}

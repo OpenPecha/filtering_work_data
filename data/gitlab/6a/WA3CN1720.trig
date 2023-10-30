@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1720 {
+    bda:LG2E4AFFE66C935C66
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LG591E388E9A91B278
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-01T12:18:41.256Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9B905F53B694CEDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-05T12:02:20.001Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by CN, KL, LS and KG"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBB76399AEC56E2B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-01T12:17:45.681Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC7C5F1C7B192F6D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-01T12:51:58.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalog info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1720  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1720 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6a/WA3CN1720.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1720 ;
+        adm:logEntry        bda:LG2E4AFFE66C935C66 , bda:LG591E388E9A91B278 , bda:LG9B905F53B694CEDA , bda:LGBB76399AEC56E2B4 , bda:LGC7C5F1C7B192F6D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR547CC41BA9197E72
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1720  a        :Work ;
+        skos:altLabel       "lugs kyi bstan chos skye bo gso ba'i thigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "skye bo gso thigs/"@bo-x-ewts ;
+        :catalogInfo        "Nagarjuna's Nitisastra Jana-posana bindu nama. Missing last page."@en ;
+        :creator            bdr:CR547CC41BA9197E72 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T245 ;
+        :workHasInstance    bdr:MW3CN1720 , bdr:MW4CZ74199 , bdr:W3CN1720 , bdr:W4CZ74199 ;
+        :workIsAbout        bdr:T00JR3375 , bdr:T234 .
+}

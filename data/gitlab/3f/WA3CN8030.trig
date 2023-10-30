@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN8030 {
+    bda:LG5788C3376C20ADB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-31T12:30:22.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9BB0F5978A2DB491
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-26T13:40:37.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC5562847D6BCAAFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:35:08.132Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN8030  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN8030 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3f/WA3CN8030.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN8030 ;
+        adm:logEntry        bda:LG5788C3376C20ADB4 , bda:LG9BB0F5978A2DB491 , bda:LGC5562847D6BCAAFB , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4456F7A585A5CB24
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26998 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN8030  a        :Work ;
+        skos:prefLabel      "a ma dran pa'i le'u/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of essays written by Sumsema."@en ;
+        :creator            bdr:CR4456F7A585A5CB24 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW3CN8030 , bdr:W3CN8030 .
+}

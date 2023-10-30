@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3278 {
+    bda:LG8EEAD0D5A4F03EAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T09:20:02.138Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG97F6F3505D3629AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGAA10BBDA875F4720
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T10:55:17.749Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3278"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3278  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3278 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bf/WA1NLM3278.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3278 ;
+        adm:logEntry        bda:LG8EEAD0D5A4F03EAE , bda:LG97F6F3505D3629AA , bda:LGAA10BBDA875F4720 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA38AF50300DB906B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3278  a       :Work ;
+        skos:altLabel       "yid dang kun gzhi'i dka' gnas rgya cher 'grel pa legs par bshad pa'i rgya mtsho zhes bya ba'i rtsa ba dang /_de'i 'bru 'grel snying po'i gnad don gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        skos:prefLabel      "yid dang kun gzhi'i dka' ba'i gnas rgya cher 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Comprehensive commentary on the author's work on difficult points concerning the Manovijnana and the Alayavijnana; written at Sakya"@en ;
+        :creator            bdr:CRA38AF50300DB906B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3278 , bdr:W1NLM3278 ;
+        :workIsAbout        bdr:T1133 .
+}

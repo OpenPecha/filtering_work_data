@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23652 {
+    bda:LG0B03E68E5A216327
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-12T10:14:33.716Z"^^xsd:dateTime ;
+        adm:logMessage      "swifted title page and bibliographical title and added phyogs bsgrigs as genre"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0B6CAAEC73D77325
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-12T10:46:17.653Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2894BAD4029EB1AE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG430D2611105BAC1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23652  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23652 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "7e/WA23652.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23652 ;
+        adm:logEntry        bda:LG0B03E68E5A216327 , bda:LG0B6CAAEC73D77325 , bda:LG2894BAD4029EB1AE , bda:LG430D2611105BAC1A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23652  skos:altLabel  "na ro chos drug texts of the 'brug-pa dkar-brgyud-pa traditions : a collection of rare texts on the six doctrines of naropa"@en .
+
+    bdr:WA23652  a          :Work ;
+        skos:prefLabel      "nA ro chos drug 'brug pa dkar brgyud pa'i lugs/"@bo-x-ewts , "na ro chos drug texts of the 'brug-pa dkar-brgyud-pa traditions : a collection of rare texts on the six doctrines of naropa"@en ;
+        :catalogInfo        "Texts on the Six Doctrines of Naropa as practiced by the Drukpa Kargyu order"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW23652 , bdr:W23652 ;
+        :workIsAbout        bdr:T394 , bdr:T816 .
+}

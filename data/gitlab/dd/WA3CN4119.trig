@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4119 {
+    bda:LG12E6464BEAF1675D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-04T11:31:44.283Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6C936BE7F3859FC1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-04T11:33:41.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC42C4A45B2694A37
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T14:15:04.027Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEB843098DAF7E8D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T17:22:47.309Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4119  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4119 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "dd/WA3CN4119.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4119 ;
+        adm:logEntry        bda:LG12E6464BEAF1675D , bda:LG6C936BE7F3859FC1 , bda:LGC42C4A45B2694A37 , bda:LGEB843098DAF7E8D2 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR33739038677D650D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26551 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4119  a        :Work ;
+        skos:altLabel       "dpal ldan bla ma dam pa rje btsun blo bzang skal bzang yon tan dpal bzang po'i rnam par thar pa drang srong bla ma'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun blo bzang skal bzang yon tan gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Jetsun Lobsang Kalzang Yonten."@en ;
+        :creator            bdr:CR33739038677D650D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN4119 , bdr:W3CN4119 ;
+        :workIsAbout        bdr:P1PD96267 .
+}

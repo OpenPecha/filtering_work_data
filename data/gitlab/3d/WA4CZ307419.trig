@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307419 {
+    bda:LG6F941954DD429BE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-23T12:41:10.9Z"^^xsd:dateTime ;
+        adm:logMessage      "newly catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7FEDA03447C627C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9C6E4E699E874107
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-23T16:37:47.512Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE0DCB2AD9F19D015
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T15:47:11.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ307419  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307419 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3d/WA4CZ307419.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307419 ;
+        adm:logEntry        bda:LG6F941954DD429BE0 , bda:LG7FEDA03447C627C9 , bda:LG9C6E4E699E874107 , bda:LGE0DCB2AD9F19D015 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ307419  a      :Work ;
+        skos:altLabel       "dpal rdo rje nag po chen po zhal bzhi pa'i man ngag zab mo rnams kyi snyan brgyud phyag bzhes rnams ma sbas gsal bar bstan pa'i yang gsang ha la nag po'i be bum gyi dkar chag bla ma dang zhing skyong dgyes pa'i mchod rdzas/"@bo-x-ewts ;
+        skos:prefLabel      "mgon po zhal bzhi pa'i man ngag be'u bum/"@bo-x-ewts ;
+        :catalogInfo        "Collected rites for invoking Mahakala for various purposes according to the Sakya order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1202 ;
+        :workHasInstance    bdr:MW4CZ307419 , bdr:W4CZ307419 ;
+        :workIsAbout        bdr:T924 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238109 {
+    bda:LG4294C3E02B535CE4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-10-06T08:43:43.211Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDC160E8432AC6F75
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-06T08:52:41.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG238109  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238109 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c6/WA2KG238109.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238109 ;
+        adm:logEntry        bda:LG4294C3E02B535CE4 , bda:LGDC160E8432AC6F75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB83385BABCF5D6A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1500 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238109  a      :Work ;
+        skos:altLabel       "'dul ba mdo rtsa'i rnam bshad nyi ma'i 'od zer legs bshad lung gi rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba'i rnam bshad nyi ma'i 'od zer legs bshad lung gi rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Vinayasutra; written by Tsonawa Sherab Zangpo (13th cent.)."@en ;
+        :creator            bdr:CRB83385BABCF5D6A5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW2KG238109 , bdr:W2KG238109 ;
+        :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD913 {
+    bda:LG22143C22646423FF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-25T14:39:34.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG41454B51FAF1F16A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG433ACD5065C92A1F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-25T14:39:34.193Z"^^xsd:dateTime ;
+        adm:logMessage      "new created work record"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFE2E0A851C65217D
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T10:19:51.667Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD913  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD913 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0c/WA4PD913.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD913 ;
+        adm:logEntry        bda:LG22143C22646423FF , bda:LG41454B51FAF1F16A , bda:LG433ACD5065C92A1F , bda:LGFE2E0A851C65217D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3JT13393 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF98C482E1F51AE0A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD913  a         :Work ;
+        skos:altLabel       "rdzogs pa chen po klong chen snying thig gi sngon 'gro'i khrid yig"@bo-x-ewts ;
+        skos:prefLabel      "kun bzang bla ma'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "Exegetic remarks by Khenpo Ngagga (1879-1941 ) to the famed introduction to the Longchen Nyingtik practice by Dza Patrul, Words of My Perfect Teacher."@en ;
+        :creator            bdr:CRF98C482E1F51AE0A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workIsAbout        bdr:T179 .
+}

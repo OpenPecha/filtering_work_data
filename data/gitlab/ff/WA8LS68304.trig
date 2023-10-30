@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68304 {
+    bda:LG29F791FDA4B126D6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-04T09:15:33.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9BDC6BF7AF69B216
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEDC795E15E504F56
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T15:36:53.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF71E89B6CC57B04A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-04T09:15:00.352Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68304  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68304 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ff/WA8LS68304.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68304 ;
+        adm:logEntry        bda:LG29F791FDA4B126D6 , bda:LG9BDC6BF7AF69B216 , bda:LGEDC795E15E504F56 , bda:LGF71E89B6CC57B04A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0D299769EA3E9DC4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75544 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68304  a       :Work ;
+        skos:prefLabel      "bod kyi bstan bcos 'ga'i rnam bshad me tog phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary on few Tibetan treatises by Gyurme Dorjee."@en ;
+        :creator            bdr:CR0D299769EA3E9DC4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 , bdr:T61 ;
+        :workHasInstance    bdr:MW8LS68304 , bdr:W8LS68304 .
+}

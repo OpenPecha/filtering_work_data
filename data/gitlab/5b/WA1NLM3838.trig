@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3838 {
+    bda:LG18D637CD49DF24CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-29T11:03:04.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3838"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3838  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3838 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5b/WA1NLM3838.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3838 ;
+        adm:logEntry        bda:LG18D637CD49DF24CE , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3838  a       :Work ;
+        skos:prefLabel      "'phags pa thar pa chen po phyogs su rgyas pa'i mdo las/_dus gsum gyi sangs rgyas dang mdo sde bcu gnyis dang byang chub sems dpa' chen po'i mtshan rnams zur du bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mi phyugs gang yang glud dang bgegs gtor gtong tshul/ 2 gang yang phyugs kyi glud gtong ba'i tshul/ 3 blo bur rkyen bzlog ser bu sgra dbyangs kyi mchod sbyin/ 4 gdugs dkar la brten nas glud rdzongs bya tshul mun sel sgron me/ 5 rus sbal khra bo gto'i cho ga 6 bag ma gtong len byed pa'i kho ba'i cho ga bkra shis kun sgrub/ kong rtse gsol mchod/ 7 dpal rdo rje 'jigs byed bcu gsum ma'i sgrub thabs mdor bsdus/ 8 rje btsun sgrol ma dkar mo'i maN+Dal bzhi pa'i cho ga 'chi med dpal gter/ 9 bsnyen yig mdor bsdus dngos grub kun 'byung / 10 jo bo dpal ldan a ti sh'i bstod mgur rje mi pham ma/ rje 'brom ston pa'i bstod gur lha gangs ri'i ma/ jo bo chen po lugs kyi rje btsun sgrol ma nyer gcig gi nang tshan 'phags ma sgrol ma 'gugs shing 'phongs pa sel ba la brten ns maN+Dal bzhi ba'i cho ga 'don cha go rim/ 11 dpal phyag na rdo rje'i tshe sgrub kyi mdun bskyed ngag 'don/ 12 rgyal po chen po rnm sras kyi bshags pa'i skabs su/ yig brgya bzlas pa'i man ngag bya tshul/ 13 g.yang 'bod legs tshogs 'gugs pa'i lcags kyu/ 14 rnam sras kyi grib sel mang dag 15 dpal rdo rje 'jigs byed kyi sgo nas tshe sgrub bya tshul 'chi med 'dod 'jo/ 16 mgon po dkar nag gi sbyin sreg snying por dril ba/"@en , "Names of Buddhas, tweleve sutras and Bodhisattvas, redacted from the liberation sutra by unknown author,"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T01JR185 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3838 , bdr:W1NLM3838 .
+}

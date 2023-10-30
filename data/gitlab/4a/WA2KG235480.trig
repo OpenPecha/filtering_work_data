@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG235480 {
+    bda:LG018FDB9D2C787478
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T09:35:19.229Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6405BBE3AD9DBAAD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-08T21:54:33.001Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE4B81AF84F0FF438
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T06:28:27.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG235480  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG235480 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4a/WA2KG235480.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG235480 ;
+        adm:logEntry        bda:LG018FDB9D2C787478 , bda:LG6405BBE3AD9DBAAD , bda:LGE4B81AF84F0FF438 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR66DF4AB3781FC08F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG235480  a      :Work ;
+        skos:prefLabel      "'jam dbyangs bla ma mchog gi phar phyin mtha' dpyod rin chen sgron me dang rje di baM mtshan can gyi mchan 'grel gnyis kyi dgongs don gsal bar byed pa skal bzang 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "A detailed representation of the Gomang system of pedagogical presentation of Prajnaparamita based upon the works of Jamyang Zhepa Ngawang Tsondue and Gungtang Konchok Tenpai Drolme by Gungthang Lodoe Gyatso."@en ;
+        :creator            bdr:CR66DF4AB3781FC08F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS12837 ;
+        :workHasInstance    bdr:MW2KG235480 , bdr:W2KG235480 ;
+        :workIsAbout        bdr:T2005 , bdr:WA19716 .
+}

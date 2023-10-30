@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21140 {
+    bda:LG48F38055EE5A52F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG535E369259FE31D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T08:51:54.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG96FA9760123334E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21140  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21140 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3b/WA21140.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21140 ;
+        adm:logEntry        bda:LG48F38055EE5A52F6 , bda:LG535E369259FE31D6 , bda:LG96FA9760123334E4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA04D0F843FAFA4DF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1702 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21140  skos:altLabel  "bcom ldan 'das dpal 'khor lo sdom pa'i spyi bsad theg mchog bdud rtsi'i dga' ston ye ses chen po'i sman mchog : a detailed explanation of the cakrasamvara and its history according to the snan brgyud transmission"@en-x-mixed .
+
+    bdr:WA21140  a          :Work ;
+        skos:prefLabel      "bde mchog spyi bshad theg mchog bdud rtsi'i dga' ston ye shes chen po'i sman mchog"@bo-x-ewts , "bcom ldan 'das dpal 'khor lo sdom pa'i spyi bsad theg mchog bdud rtsi'i dga' ston ye ses chen po'i sman mchog : a detailed explanation of the cakrasamvara and its history according to the snan brgyud transmission"@en-x-mixed ;
+        :catalogInfo        "History and exegesis of the Chakrasamvara by Godtsangpa Natsok Rangdrol (1494-1570) according to spoken transmission."@en ;
+        :creator            bdr:CRA04D0F843FAFA4DF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21140 , bdr:W21140 ;
+        :workIsAbout        bdr:T626 , bdr:T916 .
+}

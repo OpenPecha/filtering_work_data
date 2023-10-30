@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25671 {
+    bda:LG5DBCE10FCCBD5242
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-18T16:25:27.321Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCAF09231C662011F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-18T16:51:18.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE79D87B4BBFEF189
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-30T11:14:12.12Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25671  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25671 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/WA3CN25671.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25671 ;
+        adm:logEntry        bda:LG5DBCE10FCCBD5242 , bda:LGCAF09231C662011F , bda:LGE79D87B4BBFEF189 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC56216464AEE17F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P296 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN25671  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ blo bzang chos kyi nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Gelukpa master Tathang Lobsang Chokyi Nyima (1763-1821)."@en ;
+        :creator            bdr:CRC56216464AEE17F1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN25671 , bdr:W3CN25671 ;
+        :workIsAbout        bdr:T819 .
+}

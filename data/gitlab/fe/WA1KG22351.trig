@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22351 {
+    bda:LG1DC44AACE97CC11E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-14T16:28:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG41AB3A1F249C9D84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-14T16:25:41.328Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22351  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22351 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fe/WA1KG22351.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22351 ;
+        adm:logEntry        bda:LG1DC44AACE97CC11E , bda:LG41AB3A1F249C9D84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFB04BEE01AFFE2EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P409 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22351  a       :Work ;
+        skos:altLabel       "skyabs mgon bde chen chos kyi rgyal po skal ldan ngag dbang 'phrin las rgya mtsho'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "bka' 'bum/_ngag dbang 'phrin las rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Rongpo Drupchen Ngawang Trinley Gyatso (1678-1739)."@en ;
+        :creator            bdr:CRFB04BEE01AFFE2EA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG22351 , bdr:W1KG22351 ;
+        :workIsAbout        bdr:T819 .
+}

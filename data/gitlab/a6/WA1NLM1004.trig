@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1004 {
+    bda:LG5605F6203BE21428
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T10:16:23.042Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD0B77ED1ADA2A798
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-29T16:51:57.99Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD2C49C831A7ED4A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1004"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1004  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1004 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a6/WA1NLM1004.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1004 ;
+        adm:logEntry        bda:LG5605F6203BE21428 , bda:LGD0B77ED1ADA2A798 , bda:LGD2C49C831A7ED4A6 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1004  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das thams cad rig pa'i bum chog lha lnga ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Anthology of rituals connected with the practice of the Sarvadurgatiparisodhana Tantra used in Tibetan funerary rites."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T536 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1004 , bdr:MW1NLM1168 , bdr:W1NLM1004 , bdr:W1NLM1168 ;
+        :workIsAbout        bdr:T2517 , bdr:T976 .
+}

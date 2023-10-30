@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302233 {
+    bda:LG0D4D01BA0BE4FE29
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NGMPP"@en ;
+        adm:logWhoStr       "add-works-to-PR1NGMPP00" .
+
+    bda:LG2DC6F7EFA902C18B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-22T10:48:55.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3516F19EFDC617FB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-30T12:57:18.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3DF96AFC10FFBA28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-20T09:48:47.128Z"^^xsd:dateTime ;
+        adm:logMessage      "add mor info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG97E3B9A32C981B1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-19T14:14:51.601Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE7077503934F9D71
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-29T16:07:51.252Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA4CZ302233  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302233 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "2e/WA4CZ302233.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302233 ;
+        adm:logEntry        bda:LG0D4D01BA0BE4FE29 , bda:LG2DC6F7EFA902C18B , bda:LG3516F19EFDC617FB , bda:LG3DF96AFC10FFBA28 , bda:LG97E3B9A32C981B1E , bda:LGE7077503934F9D71 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ302234 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR35545A25A618B7B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4441 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRFFB054CC5EAC5F66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P442 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302233  a      :Work ;
+        skos:altLabel       "'gro ba'i mgon po gtsang pa rgya ras kyi mgur 'bum rgyas pa/"@bo-x-ewts , "mi la ras pa'i rnam thar rgyas par phye ba mgur 'bum/"@bo-x-ewts , "sgra bsgyur mar pa lo tstsha'i mgur 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "mar pa bka' brgyur gser phreng sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Hundred Thousand Songs of Marpa Lotsawa, Milarepa, Gampopa, Tsangpa Gyare and Golden Rosary of the Marpa Kagyu by Lhatsun Rinchen Namgyal"@en ;
+        :creator            bdr:CR35545A25A618B7B5 , bdr:CRFFB054CC5EAC5F66 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T184 ;
+        :workIsAbout        bdr:P1853 , bdr:P2636 .
+}

@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23625 {
+    bda:LG55EE87394B7FF422
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5A48F9E39D6D952E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-09-11T14:00:59.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6B02E01CBCF003FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-21T16:09:52.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBB04C77164D7C945
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-11T15:51:44.507Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from accessioned to released"@en ;
+        adm:logWho          bdu:U00046 .
+
+    bda:LGD156BB19247FBEB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-11T12:24:43.18Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23625  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23625 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "0f/WA23625.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23625 ;
+        adm:logEntry        bda:LG55EE87394B7FF422 , bda:LG5A48F9E39D6D952E , bda:LG6B02E01CBCF003FC , bda:LGBB04C77164D7C945 , bda:LGD156BB19247FBEB5 , bda:LGIM320307B99D , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCDF0D768ECEF1887
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5162 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23625  a          :Work ;
+        skos:altLabel       "klong chen snying gi thig le las thun mong gi sngon 'gro sems sbyong rnam pa bdun dang bla ma rgyang 'bod kyi rtsa ba rdo rje'i tshig 'grel ma bu lhan thabs man ngag gi zab khrid snying po'i bcud bsdus thar pa'i myur lam/"@bo-x-ewts , "klong chen snying thig gi man ngag khrid yig"@bo-x-ewts , "Kloṅ chen sñiṅ gi thig le las :Thun moṅ gi sṅon ʼgro sems sbyoṅ rnam pa bdun daṅ Bla ma rgyaṅ ʼbod kyi rtsa ba rdo rjeʼi tshig ʼgrel ma bu lhan thabs man ṅag gi zab khrid sñiṅ poʼi bcud bsdus thar paʼi myur lam : instructions on the practice of the visionary Kloṅ chen sñiṅ thig teachings /by the Eighth Bde-chen-chos-ʼkhor Yoṅs-ʼdzin Ṅag-gi-dbaṅ-po."@en-x-mixed ;
+        skos:prefLabel      "klong chen snying gi thig le las thun mong gi sngon 'gro sems sbyong rnam pa bdun dang bla ma rgyang 'bod kyi rtsa ba rdo rje'i tshig 'grel ma bu lhan thabs/"@bo-x-ewts , "instructions on the practice of the visionary klong chen snin thig teachings"@en-x-mixed ;
+        :catalogInfo        "Instructions on the practice of the visionary klongchen Nyingthig teachings"@en ;
+        :creator            bdr:CRCDF0D768ECEF1887 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23625 , bdr:W23625 ;
+        :workIsAbout        bdr:T145 , bdr:T179 , bdr:T328 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208133 {
+    bda:LG282D005275B28C7D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-09T16:45:35.891Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG52B20A7AE7AA0EA7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-09T16:39:27.382Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG913547F6C1B34EC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA2KG208133  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208133 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/WA2KG208133.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208133 ;
+        adm:logEntry        bda:LG282D005275B28C7D , bda:LG52B20A7AE7AA0EA7 , bda:LG913547F6C1B34EC5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG13761 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA792290FAD91643B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208133  a      :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud bzhi/"@bo-x-ewts ;
+        :catalogInfo        "The four medical Tantras by physician Yothok Yonten Gonpo."@en ;
+        :creator            bdr:CRA792290FAD91643B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T241 , bdr:T2MS13793 .
+}

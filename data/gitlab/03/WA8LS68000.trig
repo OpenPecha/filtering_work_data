@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68000 {
+    bda:LG43967C8575C22687
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG483274D5C84D0700
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-10T14:15:59.448Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBBEECCA5CED5D312
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T09:42:14.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBCD3569CED4BD8E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-10T14:17:51.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE75681B3225A29C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-11T09:34:53.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS68000  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68000 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "03/WA8LS68000.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68000 ;
+        adm:logEntry        bda:LG43967C8575C22687 , bda:LG483274D5C84D0700 , bda:LGBBEECCA5CED5D312 , bda:LGBCD3569CED4BD8E3 , bda:LGE75681B3225A29C8 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS68000  a       :Work ;
+        skos:altLabel       "kha che pha lu'i 'jig rten las 'bras rtsi lugs kyi bslab bya/"@bo-x-ewts ;
+        skos:prefLabel      "kha che pha lu/"@bo-x-ewts ;
+        :catalogInfo        "Collection of advices by Khache Phalu."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS68000 , bdr:W8LS68000 ;
+        :workIsAbout        bdr:T58 .
+}

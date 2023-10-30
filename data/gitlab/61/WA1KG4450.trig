@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4450 {
+    bda:LGA4A82A5EB80E8E79
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-03-31T14:16:16.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE51833C1AE70AE8F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-23T13:49:02.393Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4450  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4450 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "61/WA1KG4450.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4450 ;
+        adm:logEntry        bda:LGA4A82A5EB80E8E79 , bda:LGE51833C1AE70AE8F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG4450  skos:altLabel  "chenrezi : benefiting beings as vast as space; meditation and prayers of the great compassionate one"@en .
+
+    bdr:WA1KG4450  a        :Work ;
+        skos:altLabel       "thugs rje chen po'i sgom bzlas 'gro don mkha' khyab ma/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po'i bsgom bzlas 'gro don mkha' khyab ma/"@bo-x-ewts , "chenrezi : benefiting beings as vast as space; meditation and prayers of the great compassionate one"@en ;
+        :catalogInfo        "Sadhana for meditation and prayer focusing on Avalokitesvara."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 , bdr:T9 ;
+        :workHasInstance    bdr:MW1KG4450 , bdr:W1KG4450 ;
+        :workIsAbout        bdr:T106 .
+}

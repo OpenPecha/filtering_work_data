@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1482 {
+    bda:LG42A41576CA7943E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-08T10:09:57.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7B3C07A4F6C4D13C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T09:30:51.488Z"^^xsd:dateTime ;
+        adm:logMessage      "source of printery changed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAD8CC1FA93A24B5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1482"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1482  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1482 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "94/WA1NLM1482.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1482 ;
+        adm:logEntry        bda:LG42A41576CA7943E3 , bda:LG7B3C07A4F6C4D13C , bda:LGAD8CC1FA93A24B5B , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE8EB79D4B3011EB3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1482  a       :Work ;
+        skos:prefLabel      "tshad ma rigs thigs kyi 'grel pa legs bshad snying po'i gter sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mdo las byung ba'i nyer mkho/ 2 tshul khirms yang dag par bsrung ba'i man ngag 3 las rnam par 'byed pa'i mdo sogs dang tshe mtha'i mdo'i don bsdus nas bkod pa/ 4 blo sbyong nye bar mkho ba'i lung sna tshogs/ 5 sbyor ba'i chos drug gi rim pa dngos grub 'byung gnas/ 6 rje btsun bla ma'i rnal 'byor dang nang gi khong skran 'don pa'i skyug sman/ 7 dbu ma'i lta ba nyams su len pa'i tshul de kho na nyid snang bar byed pa'i sgron ma/ 8 chos mngon pa mdzod kyi bsdus don chos mngon rgya mtshor 'jug pa'i gru gzings/ 9 chos mngon pa mdzod kyi bsdus don chos mngon rgya mtshor 'jug pa'i gru gzings/"@en , "A commentary of Nyayabindu by Gyaltshab Darma Rinchen; other text also included."@en ;
+        :creator            bdr:CRE8EB79D4B3011EB3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM1482 , bdr:W1NLM1482 ;
+        :workIsAbout        bdr:T370 .
+}

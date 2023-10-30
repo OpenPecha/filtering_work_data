@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3683 {
+    bda:LG1A1296332595F605
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-04T11:26:19.247Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3683"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3683  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3683 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "15/WA1NLM3683.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3683 ;
+        adm:logEntry        bda:LG1A1296332595F605 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7A4A5875612FAA0C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCD4CE899C2EAF8FB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3683  a       :Work ;
+        skos:prefLabel      "dzaM dkar lha lnga'i nor sgrub bya tshul gyi zur 'debs gser gyi lde mig dang dzaM dmar sgrub thabs 'dod dgu'i mchog sbyin sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection rituals focussing upon forms of all kinds of Jambhala and Vaishravana sadhana of fortune."@en ;
+        :creator            bdr:CR7A4A5875612FAA0C , bdr:CRCD4CE899C2EAF8FB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T132 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3683 , bdr:W1NLM3683 ;
+        :workIsAbout        bdr:T1432 .
+}

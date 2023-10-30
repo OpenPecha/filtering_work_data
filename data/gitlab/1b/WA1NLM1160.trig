@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1160 {
+    bda:LG6C069385D8A18113
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF6F7E0FB6E0C0975
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-26T09:05:44.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1160"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1160  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1160 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/WA1NLM1160.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1160 ;
+        adm:logEntry        bda:LG6C069385D8A18113 , bda:LGF6F7E0FB6E0C0975 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR52F39E4304BDDB69
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6117 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1160  a       :Work ;
+        skos:altLabel       "theg pa chen po rgyud bla ma'i bstan bcos rnam par bshad pa bdag nyid chen po 'phags pa thogs med kyis mdzad pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "theg pa chen po rgyud bla ma'i bstan bcos rnam par bshad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 nyin zhag phrugs gcig la spyod lam dang sbyor chos bcas lag len rim pa mdor bsdus/ 2 bcom ldan 'das pad+ma dbang chen yang gsang khros pa'i las byang snying po nyar bsags/ 3 shis brjod bkra shis don grub/ 4 lha mo'i gtor 'bul rab 'byams rgyal ba ma/ 5 rje btsun blo bzang ye shes kyi gsol 'debs brtan bzhugs/ 6 rab tu gnas pa'i cho ga lag len du dril ba dge legs rgya mtsho'i char 'bebs/ 7 bcom ldan 'das dpal rdo rje 'jigs byed kyi bskyed rim gyi zab khrid thun mong ma yin pa bklags pas don grub skal bzang 'jug ngogs/ 8 zhi bar byed pa'i sbyin bsreg kun phan bdud rtsi'i gzegs ma/ 9 bla ma bsten tshul gyi gzhung skor las btus pa'i yig chung / 10 slob dpon pad+ma sam+b+ha wa la brten pa'i tshe sgrub bya tshul mi 'gyur srog gi kwa ba/ 11 rig pa'i thigs pa zhes bya ba'i rab tu byed pa/ 12 bsdus sbyor gyi snying po kun bsdus rig pa'i mdzod/ 13 mkhas mchog chos kyi spyan ldan bla ma rin po che la blo rig gi yig cha'i dogs gnas 'ga' zhig zhus pa'i dri ba/ 14 dpal rdo rje 'jigs byed kyi bum bskyed ngag 'don gyi rim par dril ba/"@en , "A detailed commentary of Uttaratantra shastra or Ratnagotravibhaga by Acharya Asanga which is known as Thokme Drelchen; included other text also."@en ;
+        :creator            bdr:CR52F39E4304BDDB69 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM1160 , bdr:W1NLM1160 ;
+        :workIsAbout        bdr:WA1GS1563 .
+}

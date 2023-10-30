@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS67755 {
+    bda:LG391C8E8C5871B10A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T10:41:50.682Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG47027EFC3B76F9EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T11:27:58.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDAB0459C6D9452FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGDDCFCF9663FF5ABB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-22T10:43:33.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS67755  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS67755 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b0/WA8LS67755.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS67755 ;
+        adm:logEntry        bda:LG391C8E8C5871B10A , bda:LG47027EFC3B76F9EE , bda:LGDAB0459C6D9452FA , bda:LGDDCFCF9663FF5ABB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0EF3ABB630BCA228
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1647 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS67755  a       :Work ;
+        skos:prefLabel      "rang gi byung brjod pa rang gsal A dar sha"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Muge Samten Gyatsho. Translated into Chinese by Ngangtshang Bumkyap and Yeshe Tshering."@en ;
+        :creator            bdr:CR0EF3ABB630BCA228 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS67755 , bdr:W8LS67755 ;
+        :workIsAbout        bdr:P1647 .
+}

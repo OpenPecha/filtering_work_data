@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4617 {
+    bda:LG0A8A8FA7DA36159F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-13T16:11:44.418Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCF6A4188C1E27699
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T16:21:15.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added print"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGF34E762466AEA957
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-04-14T09:58:50.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4617  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4617 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "64/WA1KG4617.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4617 ;
+        adm:logEntry        bda:LG0A8A8FA7DA36159F , bda:LGCF6A4188C1E27699 , bda:LGF34E762466AEA957 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA77A22DB44A35513
+        a                   :AgentAsCreator ;
+        :agent              bdr:P657 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG4617  a        :Work ;
+        skos:altLabel       "'joms byed 'char ka lugs gsum gyi bsrung bzlog bsad mnan bzhi dril gyi mdos chen lag len gsal bar byed pa yid bzhin gter mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal gshin rje 'char ka nag po'i mdos chog skor/"@bo-x-ewts ;
+        :catalogInfo        "Ritual texts on Black Yamantaka for tantric practices to defeat, reverse, and suppress."@en ;
+        :creator            bdr:CRA77A22DB44A35513 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1KG4617 , bdr:W1KG4617 ;
+        :workIsAbout        bdr:T1565 , bdr:T2325 .
+}

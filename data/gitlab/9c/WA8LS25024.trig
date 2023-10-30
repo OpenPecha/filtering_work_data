@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS25024 {
+    bda:LG05EC7CFCEE1E2CF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T09:17:37.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG80C6255FD8ED1041
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-05T12:44:42.281Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB768156D87213DEE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-05T12:45:43.724Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS25024  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS25024 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9c/WA8LS25024.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS25024 ;
+        adm:logEntry        bda:LG05EC7CFCEE1E2CF3 , bda:LG80C6255FD8ED1041 , bda:LGB768156D87213DEE , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR23D3E4B6F474C87A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75330 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS25024  a       :Work ;
+        skos:altLabel       "snyan ngag gi bzhed mtshams snyan ngag smra ba'i 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "snyan ngag gi bzhed mtshams/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Kavyadarsha by Dringwa Konchok Jigme."@en ;
+        :creator            bdr:CR23D3E4B6F474C87A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS25024 , bdr:W8LS25024 ;
+        :workIsAbout        bdr:T204 .
+}

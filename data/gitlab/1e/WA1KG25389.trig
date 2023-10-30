@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25389 {
+    bda:LG2DCC0804FC992296
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-11T15:04:43.97Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD86FAB80D8EA5A0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T16:43:16.217Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE16A8D5638529EA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T14:11:48.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25389  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25389 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA1KG25389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25389 ;
+        adm:logEntry        bda:LG2DCC0804FC992296 , bda:LGD86FAB80D8EA5A0C , bda:LGE16A8D5638529EA7 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG25389  a       :Work ;
+        skos:altLabel       "ang grangs ngos 'dzin/"@bo-x-ewts ;
+        skos:prefLabel      "ri mor bltas nas grangs ka ngos 'dzin pa/"@bo-x-ewts ;
+        :catalogInfo        "A textbook to study numbers through watching the pictures."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW1KG25389 , bdr:W1KG25389 ;
+        :workIsAbout        bdr:T1174 .
+}

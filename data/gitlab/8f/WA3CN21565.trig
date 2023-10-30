@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21565 {
+    bda:LG3EE9ECAB06A7B2BB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-15T16:10:18.294Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG60C0E44F8F60234D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGA274B85E52C718E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-23T17:45:44.373Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA2EFA6F07E3876DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFFE8411902C4220E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T16:47:02.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21565  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21565 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8f/WA3CN21565.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21565 ;
+        adm:logEntry        bda:LG3EE9ECAB06A7B2BB , bda:LG60C0E44F8F60234D , bda:LGA274B85E52C718E2 , bda:LGA2EFA6F07E3876DB , bda:LGFFE8411902C4220E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9DB621B0B0B98977
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21565  a       :Work ;
+        skos:altLabel       "gsang 'grel mun sel skor gsum/"@bo-x-ewts ;
+        skos:prefLabel      "mun sel skor gsum/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Guhyagarbha Tantra by Longchen Rabjam."@en ;
+        :creator            bdr:CR9DB621B0B0B98977 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN21565 , bdr:W3CN21565 ;
+        :workIsAbout        bdr:WA21833 .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG9822 {
+    bda:LG0D9D614B00FDF1A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-24T12:37:23.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added lccn 75905230"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG3446CFCD80E0CF4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG71B3949FA5885CEC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-06-07T12:12:00.989Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC64DFB949199B35C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-06-07T12:09:33.194Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCF2D716602A4AFC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T11:57:59.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG9822  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG9822 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "79/WA1KG9822.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG9822 ;
+        adm:logEntry        bda:LG0D9D614B00FDF1A6 , bda:LG3446CFCD80E0CF4A , bda:LG71B3949FA5885CEC , bda:LGC64DFB949199B35C , bda:LGCF2D716602A4AFC8 , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9657DF0BDEA6B46B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10419 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRC6CE25A2C143D76D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P882 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG9822  skos:altLabel  "a detailed exegesis of the practices of the dkon mchog spyi 'dus precepts rediscovered by rig-'dzin 'ja'-tshon-snying po"@en-x-mixed .
+
+    bdr:WA1KG9822  a        :Work ;
+        skos:altLabel       "Dkon mchog spyi ʾdus kyi khrid yig phul byuṅ lam rim :a detailed exegesis of the practices of the Dkon mchog spyi ʾdus precepts rediscovered by Rig-ʾdzin ʾJaʾ-tshon-sñiṅ-po /by Rgya-ston Sprul-sku Nam-mkhaʾ-rgyal-mtshan."@en-x-mixed ;
+        skos:prefLabel      "dkon mchog spyi 'dus kyi khrid yig phul byung lam rim/"@bo-x-ewts , "a detailed exegesis of the practices of the dkon mchog spyi 'dus precepts rediscovered by rig-'dzin 'ja'-tshon-snying po"@en-x-mixed ;
+        :creator            bdr:CR9657DF0BDEA6B46B , bdr:CRC6CE25A2C143D76D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1KG9822 , bdr:W1KG9822 ;
+        :workIsAbout        bdr:T1686 .
+}

@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12369 {
+    bda:LG0121EEA4EF564FAC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-05-09T12:45:09.033Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG21AD31AEFA97D5F5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-05-14T11:10:49.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG26944FA41DF063E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-09T19:59:53.185Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG69469DD2E9ADD6D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T11:15:16.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG12369  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12369 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "63/WA1KG12369.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12369 ;
+        adm:logEntry        bda:LG0121EEA4EF564FAC , bda:LG21AD31AEFA97D5F5 , bda:LG26944FA41DF063E5 , bda:LG69469DD2E9ADD6D3 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9636CC5AF821B3CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P489 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG12369  skos:altLabel  "otani 13972, 'bum-phrag-gsum-pa"@en .
+
+    bdr:WA1KG12369  a       :Work ;
+        skos:altLabel       "dam pa'i chos mngon pa mdzod kyi sbyor Tig legs par bshad pa nyi ma'i 'od zer/"@bo-x-ewts , "dam pa'i chos mngon pa mdzod kyi tshig gi don gsal bar byed pa'i bstan bcos legs par bshad pa nyi ma'i 'od zer/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi tshig gi don gsal bar byed pa'i bstan bcos legs par bshad pa nyi ma'i 'od zer/"@bo-x-ewts , "otani 13972, 'bum-phrag-gsum-pa"@en ;
+        :catalogInfo        "Commentary on Vasubhandu's Abhidharmakosa."@en ;
+        :creator            bdr:CR9636CC5AF821B3CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG12369 , bdr:W1KG12369 ;
+        :workIsAbout        bdr:WA19720 .
+}

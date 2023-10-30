@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16860 {
+    bda:LG60F7813AC9992396
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-17T16:06:54.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6C3C56E1BB4D56A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8D198A92CE70225A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-01T12:03:29.74Z"^^xsd:dateTime ;
+        adm:logMessage      "isaboutSect changed to isaboutUncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG96293ED84E0379AA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-01T09:13:52.296Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB8F5F59F20AF2C32
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-01T09:10:42.3Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS16860  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16860 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "17/WA8LS16860.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16860 ;
+        adm:logEntry        bda:LG60F7813AC9992396 , bda:LG6C3C56E1BB4D56A8 , bda:LG8D198A92CE70225A , bda:LG96293ED84E0379AA , bda:LGB8F5F59F20AF2C32 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR31E4B02EC3EA9EA7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P349 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16860  a       :Work ;
+        skos:altLabel       "rgya nag pa 'jam dbyangs bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ 'jam dbyangs bstan pa'i nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "The collected works of Gyanakpa Jamyang Tenpai Nyima. He is also known as Trichen Gyanakpa."@en ;
+        :creator            bdr:CR31E4B02EC3EA9EA7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS16860 , bdr:W8LS16860 ;
+        :workIsAbout        bdr:T819 .
+}

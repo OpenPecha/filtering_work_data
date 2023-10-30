@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23202 {
+    bda:LG5BBA52CED416D07E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE0BDFC9B6EFA77BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T09:17:00.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGE554A0E60F20AFE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23202  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23202 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "80/WA23202.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23202 ;
+        adm:logEntry        bda:LG5BBA52CED416D07E , bda:LGE0BDFC9B6EFA77BA , bda:LGE554A0E60F20AFE3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA23196 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR0C7341D08FEF8866
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7646 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23202  skos:altLabel  "collected works (gsun 'bum) of padma-chos-'phel"@en-x-mixed .
+
+    bdr:WA23202  a          :Work ;
+        skos:altLabel       "Collected works (gsuṅ ʾbum) of Padma-chos-ʾphel."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_pad+ma chos 'phel (1974)"@bo-x-ewts , "collected works (gsun 'bum) of padma-chos-'phel"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Pema Chopel, meditation master of the Nyingma order living in the southern Tibetan borderlands. Works are chiefly practical instructions for meditators. Some of them are quite earthy."@en ;
+        :creator            bdr:CR0C7341D08FEF8866 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1082 .
+}

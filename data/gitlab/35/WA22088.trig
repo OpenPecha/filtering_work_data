@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22088 {
+    bda:LG38C939753FED834E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGBEAC9D7D326F70BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC3DA3BFCAE387B9B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-05-29T14:27:13.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22088  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22088 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "35/WA22088.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22088 ;
+        adm:logEntry        bda:LG38C939753FED834E , bda:LGBEAC9D7D326F70BF , bda:LGC3DA3BFCAE387B9B , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD37F5BF8F373FFC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2577 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22088  skos:altLabel  "kang po wa chuan"@zh-latn-wadegile .
+
+    bdr:WA22088  a          :Work ;
+        skos:altLabel       "chos rje dpal ldan sgam po ba chen po'i rnam par thar pa yid bzhin gyi nor bu rin po che kun khyab snyan pa'i ba dan thar pa rin po che'i rgyan gyi mchog"@bo-x-ewts ;
+        skos:prefLabel      "mnyam med sgam po pa'i rnam thar/"@bo-x-ewts , "kang po wa chuan"@zh-latn-wadegile ;
+        :creator            bdr:CRD37F5BF8F373FFC2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW22088 , bdr:W22088 ;
+        :workIsAbout        bdr:P1844 .
+}

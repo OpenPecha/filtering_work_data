@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208162 {
+    bda:LG83AD7F85B57C90AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-09-26T10:59:55.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE369FEFC02947BA8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-09-24T10:59:56.69Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA9682A8FFE0BE76
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA2KG208162  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208162 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "42/WA2KG208162.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208162 ;
+        adm:logEntry        bda:LG83AD7F85B57C90AD , bda:LGE369FEFC02947BA8 , bda:LGFA9682A8FFE0BE76 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA17157 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR755BB61477956A85
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4797 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208162  a      :Work ;
+        skos:altLabel       "rje thams cad mkhyen pa tsong kha pa chen po'i rnam thar go sla bar brjod pa bde legs kun gyi 'byung gnas/"@bo-x-ewts ;
+        skos:prefLabel      "tsong kha pa'i rnam thar go sla bar brjod pa/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Tsongkhapa Lobzang Drakpa (1357-1419) written by Chahar Mongol scholar Lobzang Tsultrim (1740-1810)."@en ;
+        :creator            bdr:CR755BB61477956A85 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P64 .
+}

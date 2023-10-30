@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13535 {
+    bda:LG2D606BD7E031CAB3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-13T13:34:36.809Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged completed"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG374339C3D10141DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-17T14:22:54.916Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Publisher Name, Location"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGF34E12F964E86308
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-13T13:37:11.544Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA3JT13535  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13535 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA3JT13535.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13535 ;
+        adm:logEntry        bda:LG2D606BD7E031CAB3 , bda:LG374339C3D10141DC , bda:LGF34E12F964E86308 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3JT13534 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRFEF30E1C7F65068B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3JT13535  a       :Work ;
+        skos:prefLabel      "ngo mtshar sprul pa'i glegs bam/"@bo-x-ewts ;
+        :creator            bdr:CRFEF30E1C7F65068B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 ;
+        :workIsAbout        bdr:T58 .
+}

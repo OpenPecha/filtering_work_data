@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24467 {
+    bda:LGB6EB0E1C63AA6030
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-21T11:03:43.911Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBA419240C7727C5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-21T11:08:44.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG24467  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24467 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/WA1KG24467.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24467 ;
+        adm:logEntry        bda:LGB6EB0E1C63AA6030 , bda:LGBA419240C7727C5F , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR657054C777B2F68B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4767 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24467  a       :Work ;
+        skos:altLabel       "legs par gsungs pa'i 'dul ba'i sde snod kyi dgongs pa phyin ci ma log par 'grel par byed pa 'dul ba rgya mtsho'i snying po gsal byed/"@bo-x-ewts ;
+        skos:prefLabel      "legs par gsungs pa 'dul ba rgya mtsho'i snying po gsal byed/"@bo-x-ewts ;
+        :catalogInfo        "Elucidation of the Tsongkhapa's 'dul ba rgya mtsho'i snying po by a Gelug master Lobsang Shenyen."@en ;
+        :creator            bdr:CR657054C777B2F68B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG24467 , bdr:W1KG24467 ;
+        :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
+}

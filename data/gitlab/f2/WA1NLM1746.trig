@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1746 {
+    bda:LG7D87DD22C1F54B1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG99F62F71DF811DDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-23T10:43:19.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1746"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1746  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1746 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f2/WA1NLM1746.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1746 ;
+        adm:logEntry        bda:LG7D87DD22C1F54B1F , bda:LG99F62F71DF811DDF , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1746  a       :Work ;
+        skos:prefLabel      "'phags pa bzang po spyod pa'i smon lam gyi gser skyems sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bgegs bskrad pa/ 2 mnol bsang gis bzlog bsgyur mnol sdig sgrib bar chad nyes pa kun sel/ 3 rgya na skag bzlog 4 sum+b+ha mkhan pos mdzad pa ny ma mig dmar khung bzlog 5 dpal ldan lha mo gtor zor bzlog bsgyur/ 6 chos skyong dregs pa lcam sring la gser skyems/ 7 sher snying gi bzlog bsgyur/ 8 gser 'od dam pa'i bzlog bsgyur/ 9 bkra shis don 'grub ma/ 10 rje btsun sgrol ma bsangs/ 11 'dul ba rgya mtsho'i snying po'i bsdus pa/ 12 me lha'i mchod pa/ 13 klu bsangs blo sel chen mo/ 14 sgrol dkar la brten pa'i bla ma'i rnal 'byor/ 15 sa chu 'dul pa'i gnon pas mdo/ 16 sa bdag klu gnyan gyi khrus gsol/ 17 me lha mchod/ 18 rkan dkar lha la lug thug 'bul pa'i tshe thar/ 19 yin lugs don la sgye pa med gyur kyang / 20 dam can chos rgyal sgo nas srog gi bya thung srog glud bya tshul/ 21 bcom ldan 'das pad+ma yang gsang khrod pa'i bka' sdod gnod sbyin dregs pa lcam sring gi drag po'i 'phrin las kyi sgo nas nyes pa can tshar gcod/"@en , "Golden water offering through Aryabhdracarya pranidhana; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM1746 , bdr:W1NLM1746 ;
+        :workIsAbout        bdr:T1CZ19 .
+}

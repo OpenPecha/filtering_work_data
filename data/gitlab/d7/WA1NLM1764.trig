@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1764 {
+    bda:LGDC99930087D7F0B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGFED1CBDC1004CA77
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-01T10:10:03.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1764"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1764  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1764 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA1NLM1764.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1764 ;
+        adm:logEntry        bda:LGDC99930087D7F0B2 , bda:LGFED1CBDC1004CA77 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0NGMCP68121 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR060BDE528B057393
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1764  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs bdud las rnam rgyal gyi dag 'don khrig chags su bsdeb pa bdud las rnam par rgyal ba'i rgyal mtshan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rta mgrin gsang sgrub bka' sdod dang bcas pa mchod cing bskang bshag bzlog pa bya ba'i cho ga dngos grub char 'bebs/ 2 rus sbal khra bo bcos thabs/ 3 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga /rta mgrin gyi zlog pa rnam rgyal stobs kyi mtshon cha/ 4 'byung bzhi'i gtor ma gtong tshul mdor bsdus lag len rab bsal/ 5 kha mchu nag po'i bzlog bsgyur/ 6 dpa' gcig bdud las rnam rgyal gyi bla brgyud gsol 'debs/"@bo-x-ewts , "Sadhana and recitation of solitary Vajrabairava by the second Cangkya Ngawang Losang Choden; other text also included."@en ;
+        :creator            bdr:CR060BDE528B057393 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workIsAbout        bdr:T104 , bdr:T2579 .
+}

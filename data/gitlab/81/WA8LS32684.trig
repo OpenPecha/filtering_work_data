@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32684 {
+    bda:LG150FEE80EA5C70A0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T14:48:55.071Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7C74FC69DE5332B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-07T11:21:41.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8753DD6DF3AF541C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-07T11:22:02.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG93AC25067F0BFDE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS32684  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32684 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "81/WA8LS32684.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32684 ;
+        adm:logEntry        bda:LG150FEE80EA5C70A0 , bda:LG7C74FC69DE5332B5 , bda:LG8753DD6DF3AF541C , bda:LG93AC25067F0BFDE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32684  a       :Work ;
+        skos:prefLabel      "byad grol lde mig sogs/"@bo-x-ewts ;
+        :catalogInfo        "A Bonpo ritual concerning release from harm of sorcery, method of Dukar initiation and bali display."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T48 ;
+        :workHasInstance    bdr:MW8LS32684 , bdr:W8LS32684 ;
+        :workIsAbout        bdr:T00KG02749 , bdr:T897 .
+}

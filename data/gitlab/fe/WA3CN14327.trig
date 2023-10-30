@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14327 {
+    bda:LG6B8D5A1A42C523FA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-28T16:33:21.496Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG761ABE540923D6C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGB7B82AB3F924EF5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-28T16:33:40.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN14327  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14327 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fe/WA3CN14327.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14327 ;
+        adm:logEntry        bda:LG6B8D5A1A42C523FA , bda:LG761ABE540923D6C1 , bda:LGB7B82AB3F924EF5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR47BD7063F5051872
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN14327  a       :Work ;
+        skos:altLabel       "man ngag zab mo kun gyi snying khu bsdus pa dar mo sman rams pa'i gdams ngag bka' rgya ma/"@bo-x-ewts ;
+        skos:prefLabel      "dar mo sman rams pa'i gdams ngag bka' rgya ma/"@bo-x-ewts ;
+        :catalogInfo        "Collected medical prescriptions and magical healing practices by the 17th century physician Darmo Menrampa Lobsang Chodrak."@en ;
+        :creator            bdr:CR47BD7063F5051872 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW3CN14327 , bdr:W3CN14327 ;
+        :workIsAbout        bdr:T85 .
+}

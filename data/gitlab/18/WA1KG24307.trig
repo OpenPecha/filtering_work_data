@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24307 {
+    bda:LG7E3FABCA2FB30432
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-18T11:45:16.326Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAC4A163B54527F05
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-10T14:43:35.989Z"^^xsd:dateTime ;
+        adm:logMessage      "chenged to copyright and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB6AB4C0DB2E98703
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-18T11:47:54.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG24307  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24307 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/WA1KG24307.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24307 ;
+        adm:logEntry        bda:LG7E3FABCA2FB30432 , bda:LGAC4A163B54527F05 , bda:LGB6AB4C0DB2E98703 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG24307  a       :Work ;
+        skos:altLabel       "phyi lo 1959 lor gong sa skyabs mgon chen po mchog rgya gar 'phags yul du zhabs 'khod skabs mon rta dbang dgon du dam pa'i chos kyi bdud rtsi thog mar stsal nas mi lo 55 hril po 'khor bar mon yul ser skya lha sde mi sde yongs nas sgo gsum gus pa chen pos bka' drin rjes dran/"@bo-x-ewts ;
+        skos:prefLabel      "gong sa skyabs mgon chen po mchog gis mon rta dbang dgon du dam pa'i chos kyi bdud rtsi thog mar stsal nas mi lo_55_hril po 'khor bar bka' drin rjes dran/"@bo-x-ewts , "a short account of his holiness' visit to mon tawang on his way to india in 1959"@en ;
+        :catalogInfo        "A short account of His Holiness the Dalai Lama's visit to mon tawang on his way to India in 1959."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG24307 , bdr:W1KG24307 ;
+        :workIsAbout        bdr:P1649 , bdr:T349 .
+}

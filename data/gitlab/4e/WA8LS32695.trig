@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32695 {
+    bda:LG127488A03F03F9E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-08T10:54:27.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2A3B7C6B3ACF83C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T10:54:51.495Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC7375197E5CEB88A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD48B29D9421046CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T15:37:29.09Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32695  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32695 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4e/WA8LS32695.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32695 ;
+        adm:logEntry        bda:LG127488A03F03F9E3 , bda:LG2A3B7C6B3ACF83C1 , bda:LGC7375197E5CEB88A , bda:LGD48B29D9421046CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32695  a       :Work ;
+        skos:prefLabel      "rgyal mo thugs kyi gsang bsgrubs/"@bo-x-ewts ;
+        :catalogInfo        "A guhya sadhana and other ritual text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS32695 , bdr:W8LS32695 ;
+        :workIsAbout        bdr:T1465 , bdr:T247 , bdr:T472 .
+}

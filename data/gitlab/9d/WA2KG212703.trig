@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG212703 {
+    bda:LG8F1E36B23607CF55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGA6E4C32494C368F0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-18T15:50:17.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF2ED10F02FDA7B5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-15T15:23:58.156Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG212703  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG212703 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9d/WA2KG212703.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG212703 ;
+        adm:logEntry        bda:LG8F1E36B23607CF55 , bda:LGA6E4C32494C368F0 , bda:LGF2ED10F02FDA7B5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR136F9D893B9B0593
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1281 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG212703  a      :Work ;
+        skos:altLabel       "tsa yus dka' bcu mgon po 'phrin las rab brtan dpal bzang bo'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dka' bcu 'phrin las rab brtan/"@bo-x-ewts ;
+        :catalogInfo        "A collected works of Kachu Gonpo Triley Rabten (1667-1744)."@en ;
+        :creator            bdr:CR136F9D893B9B0593 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG212703 , bdr:W2KG212703 ;
+        :workIsAbout        bdr:T1082 , bdr:T819 .
+}

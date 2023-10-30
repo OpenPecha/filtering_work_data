@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD929 {
+    bda:LG513A132E03F7662F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEF41EE350B8B813F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-25T14:45:59.754Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF1E20F3CA36152ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-25T14:41:25.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD929  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD929 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "78/WA4PD929.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD929 ;
+        adm:logEntry        bda:LG513A132E03F7662F , bda:LGEF41EE350B8B813F , bda:LGF1E20F3CA36152ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ302352 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR2833C691F7132D51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P679 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD929  a         :Work ;
+        skos:prefLabel      "mgur chung mu tig phreng ba don gsal nyams kyi dbyangs chung /"@bo-x-ewts ;
+        :catalogInfo        "Songs of esoteric realization of Wangdrak Gyatsho (17th century)"@en ;
+        :creator            bdr:CR2833C691F7132D51 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workIsAbout        bdr:T1082 .
+}

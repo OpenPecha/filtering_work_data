@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30196 {
+    bda:LGA45B47EC4C109652
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30196  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30196 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "11/WA30196.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30196 ;
+        adm:logEntry        bda:LGA45B47EC4C109652 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR4C62D82CF0923055
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CR518AE7F12180E9AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9B148998BB5AE122
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10278 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA30196  a          :Work ;
+        skos:altLabel       "zhi khro dgongs pa rang grol/"@bo-x-ewts , "The Tibetan book of the dead (English title) :the great liberation by hearing in the intermediate states (Tibetan title) /composed by Padmasambhava ; revealed by Karma Lingpa ; translated by Gyurme Dorje ; edited by Graham Coleman with Thupten Jinpa ; introductory commentary by the Dalai Lama."@en-x-mixed ;
+        skos:prefLabel      "the tibetan book the dead/"@bo-x-ewts , "the great liberation by hearing in the intermediate states"@en ;
+        :creator            bdr:CR4C62D82CF0923055 , bdr:CR518AE7F12180E9AB , bdr:CR9B148998BB5AE122 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW30196 ;
+        :workIsAbout        bdr:T165 .
+}

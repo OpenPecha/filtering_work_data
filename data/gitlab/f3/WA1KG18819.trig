@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18819 {
+    bda:LG1A3E49711DC3EF5A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T14:54:29.316Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9377C9AEC2EA1A18
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-03T14:55:55.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG18819  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18819 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f3/WA1KG18819.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18819 ;
+        adm:logEntry        bda:LG1A3E49711DC3EF5A , bda:LG9377C9AEC2EA1A18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG18819  skos:altLabel  "list of books in the temples and monastery of seven dzongkhags collected through a literary survey by the national library of bhutan"@en .
+
+    bdr:WA1KG18819  a       :Work ;
+        skos:prefLabel      "rdzong khag bdun gyi lha khang dang dgon sde'i nang rgyal yongs dpe mdzod kyis rtag zhib 'bad pa'i gsung rten gyi tho/ (deb dang pa)"@bo-x-ewts , "list of books in the temples and monastery of seven dzongkhags collected through a literary survey by the national library of bhutan"@en ;
+        :catalogInfo        "List of texts in the temples and monastery of seven dzongkhags collected through a literary survey by the National Library of Bhutan."@en ;
+        :isRoot             true ;
+        :language           bdr:LangDz ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1KG18819 , bdr:W1KG18819 ;
+        :workIsAbout        bdr:G3205 , bdr:T1906 , bdr:T359 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14542 {
+    bda:LG00B6E3B09334C5B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T10:34:13.065Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6358115BB2DB0F82
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-24T16:50:24.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE581097B88F62990
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-24T16:11:20.179Z"^^xsd:dateTime ;
+        adm:logMessage      "released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14542  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14542 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "26/WA1KG14542.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14542 ;
+        adm:logEntry        bda:LG00B6E3B09334C5B4 , bda:LG6358115BB2DB0F82 , bda:LGE581097B88F62990 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8CA97C691573553E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16270 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAAE610C0200AD599
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16271 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG14542  skos:altLabel  "通向苍穹之颠"@zh-hans .
+
+    bdr:WA1KG14542  a       :Work ;
+        skos:altLabel       "tong xiang cang qiong zhi dian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rngam brjid ri bo'i tshogs rnams thod kyis bsu/"@bo-x-ewts , "通向苍穹之颠"@zh-hans ;
+        :creator            bdr:CR8CA97C691573553E , bdr:CRAAE610C0200AD599 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW1KG14542 , bdr:W1KG14542 .
+}

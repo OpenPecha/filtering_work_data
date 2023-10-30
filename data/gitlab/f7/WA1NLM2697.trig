@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2697 {
+    bda:LG3E064B174D01C66B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGDE5C8B6EFC69CD19
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T16:08:22.778Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2697"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2697  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2697 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f7/WA1NLM2697.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2697 ;
+        adm:logEntry        bda:LG3E064B174D01C66B , bda:LGDE5C8B6EFC69CD19 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5DAD4CBCAA8A6AB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR990558315F6164F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P162 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2697  a       :Work ;
+        skos:prefLabel      "bla ma'i bka' drin gsol 'debs dngos grub myur du 'gugs pa'i lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual of graduated approach and detailed exegesis of the esoteric meditation-devotional practice (guhya sadhana) focussing upon vajrayogini"@en ;
+        :creator            bdr:CR5DAD4CBCAA8A6AB6 , bdr:CR990558315F6164F1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2697 , bdr:W1NLM2697 ;
+        :workIsAbout        bdr:T428 .
+}

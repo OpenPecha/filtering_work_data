@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1307 {
+    bda:LG094389B9A85935E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-25T10:03:01.178Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1B21E7DE7F3028C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T13:49:28.609Z"^^xsd:dateTime ;
+        adm:logMessage      "Replaced T1583 in favor of T1483"@en ;
+        adm:logWho          bdu:U00043 .
+
+    bda:LG1B4351965C5B7AFC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-17T11:49:16.891Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG67700FAB44199B87
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-29T11:40:09.925Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9F2D0DF8DD000969
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:WA1CZ1307  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1307 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b5/WA1CZ1307.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1307 ;
+        adm:logEntry        bda:LG094389B9A85935E7 , bda:LG1B21E7DE7F3028C8 , bda:LG1B4351965C5B7AFC , bda:LG67700FAB44199B87 , bda:LG9F2D0DF8DD000969 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1CZ1307  a        :Work ;
+        skos:altLabel       "dmigs pa go bzlog/ rmi lam gdams pa/"@bo-x-ewts ;
+        skos:prefLabel      "dmigs pa go bzlog"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1CZ1307 , bdr:W1CZ1307 ;
+        :workIsAbout        bdr:T1483 , bdr:T163 .
+}

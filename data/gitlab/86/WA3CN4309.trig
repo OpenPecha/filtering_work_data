@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4309 {
+    bda:LG02482EA575836F7E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T12:40:44.523Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA672AB92DAF31F22
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T12:44:48.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF45969AB5CBF6B61
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-28T11:19:03.824Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4309  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4309 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "86/WA3CN4309.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4309 ;
+        adm:logEntry        bda:LG02482EA575836F7E , bda:LGA672AB92DAF31F22 , bda:LGF45969AB5CBF6B61 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR338AAD7B359002E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA503EA274DDFE66E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4309  a        :Work ;
+        skos:altLabel       "'jig rten las 'das par bstod pa dang / byang chub lam sgron/ rdzogs pa chen po sems nyid ngal gso/ lam rim bsdus don bcas/"@bo-x-ewts ;
+        skos:prefLabel      "'jig rten las 'das par bstod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Some selected classic works such as bodhipathapradipa by Atisha ect."@en ;
+        :creator            bdr:CR338AAD7B359002E9 , bdr:CRA503EA274DDFE66E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 , bdr:T1PD128746 ;
+        :workHasInstance    bdr:MW3CN4309 , bdr:W3CN4309 .
+}

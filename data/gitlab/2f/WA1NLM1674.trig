@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1674 {
+    bda:LG12506D3CC86F30D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-20T16:03:31.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2BB0B590E3B9C70C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:10:16.034Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG847AF3C1C5F114F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1674"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1674  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1674 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2f/WA1NLM1674.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1674 ;
+        adm:logEntry        bda:LG12506D3CC86F30D3 , bda:LG2BB0B590E3B9C70C , bda:LG847AF3C1C5F114F2 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1474 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1674  a       :Work ;
+        skos:prefLabel      "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 zhing mchog bde pa can gyi chog rnam dag grod ba'i bde lam zhes bya ba 'don sgrigs/ 2 dam tshig rdo rje'i sgom bzlas/ rdo rje mkha' 'gro'i sbyin sreg 3 blo tshe 'bos pa'i 'chi med tshe byin gser gyi rdo rje/ 4 shis par brjod pa'i tshigs su bcad pa/ 5 shis par brjod pa'i tshigs su bcad pa/ 6 btsan gyi gsol mchod 'phrul gyi mchod sbyin/ 7 glegs bam bklog pa'i thabs/"@bo-x-ewts , "Recitation text compiled for the prayer of Sukhavati; also included other text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T00JR690 , bdr:T2579 .
+}

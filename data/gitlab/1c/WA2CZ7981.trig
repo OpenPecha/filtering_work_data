@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7981 {
+    bda:LGC6E096668E8B69B0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-10-20T15:27:42.41Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD697337321FBDF99
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-10-09T10:40:58.598Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ7981  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7981 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1c/WA2CZ7981.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7981 ;
+        adm:logEntry        bda:LGC6E096668E8B69B0 , bda:LGD697337321FBDF99 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA993F9112FC7023D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ7981  a        :Work ;
+        skos:altLabel       "'dir rang don rjes dpag gi rten gtan tshigs gsal bar byed pa'i bstan bcos rigs pa'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "bstan bcos rigs pa'i sgron me/"@bo-x-ewts ;
+        :creator            bdr:CRA993F9112FC7023D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2CZ7981 , bdr:W2CZ7981 ;
+        :workIsAbout        bdr:T370 .
+}

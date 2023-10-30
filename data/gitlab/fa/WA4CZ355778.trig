@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355778 {
+    bda:LG08E41781A9C855D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG508BCC98A04732E6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-07T11:20:38.542Z"^^xsd:dateTime ;
+        adm:logMessage      "New catloged, reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC59DBCBE639E8DC4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T14:11:45.819Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ355778  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355778 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fa/WA4CZ355778.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355778 ;
+        adm:logEntry        bda:LG08E41781A9C855D4 , bda:LG508BCC98A04732E6 , bda:LGC59DBCBE639E8DC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1677 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA4CZ355778  a      :Work ;
+        skos:altLabel       "de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa'i mchod sdong las byung ba'i cho ga slob dpon b+ho d+hi stwas mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde brgyad brgya pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Seven Arya Tathagata's prayer sutra (Saptatathagatapurvapranidhanavishashavistara sutra)"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workIsAbout        bdr:T568 , bdr:T870 .
+}

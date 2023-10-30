@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23905 {
+    bda:LG7C9EDF304CE51AC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:19:04.167Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA64E959E234DC7B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T15:49:09.177Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGC501901DA7C14B66
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T15:22:17.747Z"^^xsd:dateTime ;
+        adm:logMessage      "reworked bib title positions and encodings"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGFAA18F506C6F7952
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23905  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23905 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6d/WA23905.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23905 ;
+        adm:logEntry        bda:LG7C9EDF304CE51AC0 , bda:LGA64E959E234DC7B9 , bda:LGC501901DA7C14B66 , bda:LGFAA18F506C6F7952 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23905  skos:altLabel  "collected vajrayogini sadhana texts of the 'bri-gun bka' brgyud-pa tradition"@en .
+
+    bdr:WA23905  a          :Work ;
+        skos:prefLabel      "rdo rje rnal 'byor ma'i skor 'bri gung lugs/"@bo-x-ewts , "collected vajrayogini sadhana texts of the 'bri-gun bka' brgyud-pa tradition"@en ;
+        :catalogInfo        "Anthology of Vajrayogini sadhanas from the Drikung Kagyu order."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW23905 , bdr:W23905 ;
+        :workIsAbout        bdr:T428 .
+}

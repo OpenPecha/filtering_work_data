@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66782 {
+    bda:LG2EFA18973443EA37
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T12:15:11.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG586B5007F0315EA5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-07T15:03:46.398Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG858C4C4358B0C501
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCE96259BBA81E877
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-27T12:14:51.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic and page number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66782  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66782 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "01/WA8LS66782.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66782 ;
+        adm:logEntry        bda:LG2EFA18973443EA37 , bda:LG586B5007F0315EA5 , bda:LG858C4C4358B0C501 , bda:LGCE96259BBA81E877 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF1305BB5B4114FD5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7123 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66782  a       :Work ;
+        skos:prefLabel      "bod mi'i goms srol mes po'i ngo mtshar shul bzhag rigs chos gsal ba'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Ancient Tibetan traditional festivals, customs and other religious activities by Tenzin Chodrak."@en ;
+        :creator            bdr:CRF1305BB5B4114FD5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66782 , bdr:W8LS66782 ;
+        :workIsAbout        bdr:T1KG5732 , bdr:T2028 , bdr:T2481 .
+}

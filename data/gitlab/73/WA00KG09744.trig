@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG09744 {
+    bda:LG2A03FDDFA4093E4B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-17T12:40:56.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5F260F09DD87E75A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-06-17T12:27:16.343Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC216476FB4DCAF76
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-01-19T09:55:32.295Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF3677FD707A267D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00KG09744  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG09744 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "73/WA00KG09744.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG09744 ;
+        adm:logEntry        bda:LG2A03FDDFA4093E4B , bda:LG5F260F09DD87E75A , bda:LGC216476FB4DCAF76 , bda:LGF3677FD707A267D2 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR82EB5DA7F0173AD7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG09745 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW00KG09744  skos:altLabel  "tang seng qu jing"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA00KG09744  a      :Work ;
+        skos:prefLabel      "thang sin bla ma'i rtogs brjod/"@bo-x-ewts , "tang seng qu jing"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Brief biography of Xuanzang (602-664), a famous Chinese monk and scholar who traveled through South Asia. Translated into Tibetan."@en ;
+        :creator            bdr:CR82EB5DA7F0173AD7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 ;
+        :workHasInstance    bdr:MW00KG09744 , bdr:W00KG09744 ;
+        :workIsAbout        bdr:P2CZ8011 .
+}

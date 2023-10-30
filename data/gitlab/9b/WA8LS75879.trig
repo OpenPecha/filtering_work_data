@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75879 {
+    bda:LG3ECD50439C2E1B60
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-08T14:32:40.168Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5EC2562761527751
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-08T14:33:08.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD33EB3E77AE871D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T14:33:57.463Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS75879  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75879 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9b/WA8LS75879.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75879 ;
+        adm:logEntry        bda:LG3ECD50439C2E1B60 , bda:LG5EC2562761527751 , bda:LGD33EB3E77AE871D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS75879  a       :Work ;
+        skos:prefLabel      "ma rung bya spyod spel bar lan 'debs ngo sprod dgag bzhag gtam gyi thog mda'"@bo-x-ewts ;
+        :catalogInfo        "Polemic writing concerning Chuzhi Gangdruk association in India; compiled by the organization."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS75879 , bdr:W8LS75879 ;
+        :workIsAbout        bdr:T102 , bdr:T2223 .
+}

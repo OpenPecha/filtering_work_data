@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22790 {
+    bda:LG18063EC45199696F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-30T20:11:23.81Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3EFCFDAA52DAA5DC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-01T23:38:36.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDDC5BCF8D4EB1148
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22790  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22790 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "83/WA3CN22790.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22790 ;
+        adm:logEntry        bda:LG18063EC45199696F , bda:LG3EFCFDAA52DAA5DC , bda:LGDDC5BCF8D4EB1148 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE7BBC87EB5CE3694
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22790  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa'i rang 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Commentary of Madhyamakavatara by 6th century Indian master Chandrakirti."@en ;
+        :creator            bdr:CRE7BBC87EB5CE3694 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN22790 , bdr:W3CN22790 ;
+        :workIsAbout        bdr:WA19458 .
+}

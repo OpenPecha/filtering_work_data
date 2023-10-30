@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13799 {
+    bda:LG9623FB6869078DFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T10:11:51.691Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to non restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA4C06749115DEF84
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-11T15:35:20.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAACE0340532FF909
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T15:32:02.278Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB55BC826AA1535F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-05T12:37:04.091Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG13799  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13799 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "2c/WA1KG13799.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13799 ;
+        adm:logEntry        bda:LG9623FB6869078DFD , bda:LGA4C06749115DEF84 , bda:LGAACE0340532FF909 , bda:LGB55BC826AA1535F0 , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF0C4005A2C57E409
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG13799  a       :Work ;
+        skos:prefLabel      "gong sa mchog gi bka' slob zin bris su btabs pa nyon mongs tsha gdung 'joms pa'i bdud rtsi/"@bo-x-ewts ;
+        :catalogInfo        "Spiritual advices of H. H. the XIV Dalai Lama, during the teaching of Lamrim at Dharamsala, 2005"@en ;
+        :creator            bdr:CRF0C4005A2C57E409 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG5001 ;
+        :workHasInstance    bdr:MW1KG13799 , bdr:W1KG13799 ;
+        :workIsAbout        bdr:T770 .
+}

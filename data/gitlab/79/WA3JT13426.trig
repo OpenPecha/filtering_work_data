@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13426 {
+    bda:LG586B085F28554679
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-25T15:40:44.393Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG954FA72441DD54AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-06T15:39:17.309Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGC84CA90762F6E358
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-17T18:20:28.729Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalogue info"@en ;
+        adm:logWho          bdu:U00081 .
+
+    bda:LGIM39CBAA8D  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-withdrawn.xql" ;
+        adm:logDate         "2019-06-19T17:06:17.068Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to onHold"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3JT13426  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13426 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "79/WA3JT13426.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13426 ;
+        adm:logEntry        bda:LG586B085F28554679 , bda:LG954FA72441DD54AD , bda:LGC84CA90762F6E358 , bda:LGIM39CBAA8D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR9D45B22B032F6BC8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3JT13426  a       :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud bzhi/"@bo-x-ewts ;
+        :catalogInfo        "The main textbook for Tibetan medicine, four medicinal tantras that were said to have been compiled by Yuthog Yonten Gonpo (790-833), hidden, and subsequently discovered as a terma by Dragpa Ngonshe (1012-1090)."@en ;
+        :creator            bdr:CR9D45B22B032F6BC8 ;
+        :isRoot             true ;
+        :workGenre          bdr:T10MS14651 ;
+        :workHasInstance    bdr:IE3JT13426 ;
+        :workIsAbout        bdr:T241 .
+}

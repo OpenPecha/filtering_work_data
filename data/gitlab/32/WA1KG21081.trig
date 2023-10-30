@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21081 {
+    bda:LG98A8A11C59F19D57
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-30T11:34:49.334Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC7653D142BB3E5A2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-30T11:35:42.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG21081  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21081 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "32/WA1KG21081.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21081 ;
+        adm:logEntry        bda:LG98A8A11C59F19D57 , bda:LGC7653D142BB3E5A2 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR577E8562DB68FE4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21092 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21081  skos:altLabel  "the rising of new thought"@en .
+
+    bdr:WA1KG21081  a       :Work ;
+        skos:prefLabel      "bsam gzhigs gsar ba'i yo lang /"@bo-x-ewts , "the rising of new thought"@en ;
+        :catalogInfo        "Collection of writings by author."@en ;
+        :creator            bdr:CR577E8562DB68FE4D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW1KG21081 , bdr:W1KG21081 .
+}

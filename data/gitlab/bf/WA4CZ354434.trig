@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354434 {
+    bda:LG262715317DD2B1F0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T11:50:04.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG70ADB9CBEEF999D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD725E220971E835E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T15:37:03.995Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog usad"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ354434  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354434 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bf/WA4CZ354434.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354434 ;
+        adm:logEntry        bda:LG262715317DD2B1F0 , bda:LG70ADB9CBEEF999D1 , bda:LGD725E220971E835E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ2541 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF745071B7BF3F798
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6002 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ354434  a      :Work ;
+        skos:altLabel       "klong chen snying thig gi sngon 'gro'i khrid yig thar lam gsal byed sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "snying thig gi sngon 'gro'i khrid yig thar lam gsal byed sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Introduction to the practices of the Longchen Nyingtik precepts of Dzogchen practice revealed by Jigme Lingpa."@en ;
+        :creator            bdr:CRF745071B7BF3F798 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workIsAbout        bdr:T328 .
+}

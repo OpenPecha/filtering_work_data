@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17339 {
+    bda:LG10445B55316F16CC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-09T15:42:33.68Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG84A8A82CA47B89CF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-09T15:47:02.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD889905054C3B091
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T21:23:12.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN17339  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17339 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4e/WA3CN17339.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17339 ;
+        adm:logEntry        bda:LG10445B55316F16CC , bda:LG84A8A82CA47B89CF , bda:LGD889905054C3B091 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2614CAAF73FA0569
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12068 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA3CN17339  a       :Work ;
+        skos:prefLabel      "tung han rgyal rabs kyi gtam rgyud/"@bo-x-ewts ;
+        :catalogInfo        "Stories from Chinese history, translated from Chinese to Tibetan by Lobsang Tsering."@en ;
+        :creator            bdr:CR2614CAAF73FA0569 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T216 ;
+        :workHasInstance    bdr:MW3CN17339 , bdr:W3CN17339 .
+}

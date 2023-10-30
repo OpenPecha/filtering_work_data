@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21746 {
+    bda:LG169D41F3768A6996
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5B44DAFA3B37BD64
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-01T10:27:47.196Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA462C6DEBD8C9FE8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-01T10:28:26.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA21746  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21746 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fb/WA21746.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21746 ;
+        adm:logEntry        bda:LG169D41F3768A6996 , bda:LG5B44DAFA3B37BD64 , bda:LGA462C6DEBD8C9FE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR074DE6359CA72A75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7334 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR19A379A82E17B6EF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB87F75AF8B77774C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6669 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA21746  a          :Work ;
+        skos:prefLabel      "a khu ston pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Tibetan legendary folk tales on Uncle Tompa."@en ;
+        :creator            bdr:CR074DE6359CA72A75 , bdr:CR19A379A82E17B6EF , bdr:CRB87F75AF8B77774C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21746 , bdr:W21746 ;
+        :workIsAbout        bdr:P7335 , bdr:T262 .
+}

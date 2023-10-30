@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA17033 {
+    bda:LG1D1940DD84CB42AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG707E7495268AB4AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-10T10:33:25.448Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and complete cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG76F86AAA28CD41CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-10T12:40:51.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC46849DEB91B8F0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T10:12:04.8Z"^^xsd:dateTime ;
+        adm:logMessage      "normalised series number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA17033  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA17033 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "2f/WA17033.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA17033 ;
+        adm:logEntry        bda:LG1D1940DD84CB42AA , bda:LG707E7495268AB4AE , bda:LG76F86AAA28CD41CE , bda:LGC46849DEB91B8F0B , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR21138733AE45DF06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4775 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRB0EED29894FAA195
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4752 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA17033  a          :Work ;
+        skos:prefLabel      "rwa stod bsdus grwa dang de'i dogs bcod/"@bo-x-ewts ;
+        :catalogInfo        "Presentation of the principles of Tibetan Buddhist logic according to the teachings of the rwa ba stod pa tradition"@en ;
+        :creator            bdr:CR21138733AE45DF06 , bdr:CRB0EED29894FAA195 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2023 ;
+        :workHasInstance    bdr:MW17033 , bdr:W17033 ;
+        :workIsAbout        bdr:T96 .
+}

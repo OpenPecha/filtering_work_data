@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS242 {
+    bda:LG78C225FC3E2DFA18
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-10T00:07:45.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG8C944CB11B7597EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-19T16:49:22.342Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued completed"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS242  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS242 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ff/WA3MS242.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS242 ;
+        adm:logEntry        bda:LG78C225FC3E2DFA18 , bda:LG8C944CB11B7597EE , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:WA3MS242  a         :Work ;
+        skos:prefLabel      "brag mkhar dgon du bzhugs pa'i dpe dkon skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts preserved at Draggo Monastery in Chabdo."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3MS242 , bdr:W3MS242 ;
+        :workIsAbout        bdr:G4288 .
+}

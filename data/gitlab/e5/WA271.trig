@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA271 {
+    bda:LGE2ED14DEA7847F70
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA271  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA271 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e5/WA271.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA271 ;
+        adm:logEntry        bda:LGE2ED14DEA7847F70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR23CC53B6BFEF8072
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA271  a            :Work ;
+        skos:altLabel       "'jam dpal tshe bdag nag po'i las byang srid gsum rnam rgyal/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal tshe bdag nag po'i las byang /"@bo-x-ewts ;
+        :creator            bdr:CR23CC53B6BFEF8072 ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW271 .
+}

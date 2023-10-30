@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21929 {
+    bda:LG4DF195FDF224EB95
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T11:44:14.911Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8DD613535A73F351
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-14T11:11:12.877Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAF4B1D9834753C9F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-14T11:11:43.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21929  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21929 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/WA1KG21929.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21929 ;
+        adm:logEntry        bda:LG4DF195FDF224EB95 , bda:LG8DD613535A73F351 , bda:LGAF4B1D9834753C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5450DEE61BC9D951
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9518 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG21929  a       :Work ;
+        skos:altLabel       "bla ma dam pa thos bsam dar rgyas kyi gsung tshogs mgur chos/"@bo-x-ewts ;
+        skos:prefLabel      "karma thos bsam dar rgyas kyi gsung tshogs mgur chos/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings and spiritual songs by Karma Thosam Dhargye (1879-1971)."@en ;
+        :creator            bdr:CR5450DEE61BC9D951 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1KG21749 , bdr:T6 ;
+        :workHasInstance    bdr:MW1KG21929 , bdr:W1KG21929 ;
+        :workIsAbout        bdr:T869 .
+}

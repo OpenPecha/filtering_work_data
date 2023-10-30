@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS73625 {
+    bda:LG084CE3C3D447AFF9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-25T09:14:44.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG585E9A55C5631DA4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-25T09:14:19.252Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS73625  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS73625 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9d/WA8LS73625.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS73625 ;
+        adm:logEntry        bda:LG084CE3C3D447AFF9 , bda:LG585E9A55C5631DA4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD0E3E0511106E11E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P966 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS73625  a       :Work ;
+        skos:altLabel       "bla ma dgyes pa rdo rje yi/ /sgrub thabs nyung ngu rnam gsal 'di/ /blo gsal lam gyi sa mkhan te/ /yon tan rgya mtsho'i dpal sbyin/"@bo-x-ewts ;
+        skos:prefLabel      "bla sgrub blo gsal rgya mtsho dang nyin zhag phrugs gcig gi nyams len sogs/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of Hevajra and daily practices by Chogyed Trichen Thupten Lekshey Gyatsho and Nalenda Khenpo Mati."@en ;
+        :creator            bdr:CRD0E3E0511106E11E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS73625 , bdr:W8LS73625 ;
+        :workIsAbout        bdr:T130 , bdr:T540 , bdr:T541 .
+}

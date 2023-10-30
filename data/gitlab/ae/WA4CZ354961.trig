@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354961 {
+    bda:LG5434194FA0866D04
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-02T16:08:55.705Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG609742307E0CACA2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-03T11:09:10.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB02ED62B46870FCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4CZ354961  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354961 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ae/WA4CZ354961.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354961 ;
+        adm:logEntry        bda:LG5434194FA0866D04 , bda:LG609742307E0CACA2 , bda:LGB02ED62B46870FCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDB2F68B7D4F8A6B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ355080 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ354961  a      :Work ;
+        skos:altLabel       "sger hor khang gsar pa'i mi rabs kyi byung ba dang phran hor khang mi thog bcu gsum pa byams pa bstan dar rang nyid kyi mi tshe'i byung ba dang 'brel ba'i gtam zol med yid kyi dran glu/"@bo-x-ewts ;
+        skos:prefLabel      "hor khang gsar pa'i mi rabs kyi byung ba dang phran hor khang mi thog bcu gsum pa byams pa bstan dar rang nyid kyi mi tshe'i byung ba dang 'brel ba'i gtam zol med yid kyi dran glu/"@bo-x-ewts ;
+        :catalogInfo        "A short history of family lineage and autobiography of 13th generation of Horkhang Jampa Tendar."@en ;
+        :creator            bdr:CRDB2F68B7D4F8A6B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW4CZ354961 , bdr:W4CZ354961 ;
+        :workIsAbout        bdr:C44 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17705 {
+    bda:LGADB525748EB5DCCF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-03T12:52:44.348Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDE30FDA4693EBA98
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-03T12:35:44.798Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN17705  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17705 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b0/WA3CN17705.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17705 ;
+        adm:logEntry        bda:LGADB525748EB5DCCF , bda:LGDE30FDA4693EBA98 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR039A597C0147EACE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17705  a       :Work ;
+        skos:prefLabel      "legs par bshad pa rin po che'i gter zhes bya ba'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Didactic work by Sakya Pandita Kunga Gyaltsen (1182-1251) with commentary by the 13th century author Rinchen Pel."@en ;
+        :creator            bdr:CR039A597C0147EACE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN17705 , bdr:W3CN17705 ;
+        :workIsAbout        bdr:WA11399 .
+}

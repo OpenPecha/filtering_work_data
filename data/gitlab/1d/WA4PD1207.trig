@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD1207 {
+    bda:LG165A0B0FB7AB593B
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-28T16:00:36.244Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1BE98309E2B25BC3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-28T15:51:43.487Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2B811438C53DA146
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-28T16:23:34.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG61AA7EFC1653EF3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEC987FBE50633D2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-17T00:03:04.632Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA4PD1207  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD1207 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1d/WA4PD1207.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD1207 ;
+        adm:logEntry        bda:LG165A0B0FB7AB593B , bda:LG1BE98309E2B25BC3 , bda:LG2B811438C53DA146 , bda:LG61AA7EFC1653EF3A , bda:LGEC987FBE50633D2A , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4PD1207  a        :Work ;
+        skos:prefLabel      "tshe ring bla mas nyar tshags mdzad pa'i dpe rnying dpe dkon/"@bo-x-ewts ;
+        :catalogInfo        "Kartsa Tsering's personal collection of rare Nyigma texts from Kham, Tibet"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 , bdr:T4CZ71 , bdr:T977 ;
+        :workHasInstance    bdr:MW4PD1207 , bdr:W4PD1207 ;
+        :workIsAbout        bdr:T1082 .
+}

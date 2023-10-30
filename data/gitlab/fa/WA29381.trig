@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29381 {
+    bda:LG102DB6BF791A2995
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE530972FDE2158CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-08T10:18:13.607Z"^^xsd:dateTime ;
+        adm:logMessage      "yig nor bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA29381  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29381 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fa/WA29381.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29381 ;
+        adm:logEntry        bda:LG102DB6BF791A2995 , bda:LGE530972FDE2158CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR3A9A5DCE0E0CA019
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29381  a          :Work ;
+        skos:altLabel       "lam 'bras rnam 'brel bcu gcig"@bo-x-ewts ;
+        skos:prefLabel      "lam 'bras gzhung rdo rje'i tshig rkang gi rnam 'grel bcu gcig"@bo-x-ewts , "commentaries on sa chen kun dga' snin po (1092 1158) on the root text the lam 'bras system teachings written at the behest various disciples"@en-x-mixed ;
+        :creator            bdr:CR3A9A5DCE0E0CA019 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW29381 ;
+        :workIsAbout        bdr:WA24768 .
+}

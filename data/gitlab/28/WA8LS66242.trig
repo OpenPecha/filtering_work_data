@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66242 {
+    bda:LG0FB2CE7B84CDED94
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-21T10:01:05.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG99DD5017844A0225
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T14:21:09.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB105E76645A6F5A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-21T09:59:55.561Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66242  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66242 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "28/WA8LS66242.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66242 ;
+        adm:logEntry        bda:LG0FB2CE7B84CDED94 , bda:LG99DD5017844A0225 , bda:LGB105E76645A6F5A8 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB199D67A05459EA8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75446 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66242  a       :Work ;
+        skos:altLabel       "gangs ljongs kong po'i gna' srol rig gnas sgyu rtsal gyi goms gshis dang gzhas tshig rags bsdus su bkod pa nyang chu rnam par rtse ba'i mchod bro/"@bo-x-ewts ;
+        skos:prefLabel      "kong yul gyi sgyu rtsal nyang chu'i mchod bro/"@bo-x-ewts ;
+        :catalogInfo        "Traditional art and songs of Kongpo area compiled and edited by Gombar Sonam Tashi."@en ;
+        :creator            bdr:CRB199D67A05459EA8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T246 ;
+        :workHasInstance    bdr:MW8LS66242 , bdr:W8LS66242 ;
+        :workIsAbout        bdr:G640 , bdr:T368 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66815 {
+    bda:LG0924717D9F760CCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T15:13:02.863Z"^^xsd:dateTime ;
+        adm:logMessage      "addee creator, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4489C504D0835ACF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG4F1656B6FB4DB9EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T15:26:02.501Z"^^xsd:dateTime ;
+        adm:logMessage      "title edited"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG586D00823C973C89
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T11:50:59.381Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6318A8B3853D8216
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T15:13:37.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66815  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66815 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "69/WA8LS66815.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66815 ;
+        adm:logEntry        bda:LG0924717D9F760CCB , bda:LG4489C504D0835ACF , bda:LG4F1656B6FB4DB9EA , bda:LG586D00823C973C89 , bda:LG6318A8B3853D8216 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG24021 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR5F93D979E64BD11B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8064 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS66815  a       :Work ;
+        skos:prefLabel      "thang rgyal rabs kyi snyan tshig khag sum brgya/"@bo-x-ewts ;
+        :catalogInfo        "Tang period's three hundred poetry translated into Tibetan by Sharyul Phuntsok Tsering."@en ;
+        :creator            bdr:CR5F93D979E64BD11B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS66815 ;
+        :workIsAbout        bdr:T204 , bdr:T2MS13271 .
+}

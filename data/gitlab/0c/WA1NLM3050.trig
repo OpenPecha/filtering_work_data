@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3050 {
+    bda:LG95BFBA762FEF1653
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T11:12:36.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDF8036A042209486
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3050"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3050  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3050 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/WA1NLM3050.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3050 ;
+        adm:logEntry        bda:LG95BFBA762FEF1653 , bda:LGDF8036A042209486 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR68947CB3C9A836E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2AG1 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3050  a       :Work ;
+        skos:prefLabel      "'byung 'dus kyi gtsug lag gsal bar byed pa gson rtsis zhi bdun ma'i bskor mgo rnams bcas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lto mdo gsang ba'i 'bum Tig sogs las byung pa'i cho ga 2 gser skyems/ 3 pog ta ha kwa a kwo la'i bsangs mchod dang gser skyems gsum yang ching khel thu'i bsangs dang bcas pa/ 4 srung ba rab gnas bya tshul/ 5 grib sel mnol bsangs/ 6 grib sel mnol bsangs/ 7 spyi'i nad yams sam rang nyid nad/ 8 gser skyems 'bul tshul/ 9 rdo rje phag mo'i gsol mchod/ 10 dge slong gi bslab bya'i sdom/ 11 mu stegs kyi gdon bzlog drag po/ 12 rmad byung mtshan dpe/ 13 'phags pa gdugs dkar/ 14 gnod pa bzlog pa'i gsol 'debs/ 15 sde brgyad gser skyems mdor bsdus/ sde brgyad gyi gnod pa bzlog pa'i gser skyems/ 16 ye shes mgon po'i gsol mchod/ 17 rang gzhan gyi bkra shis dge mtshan spel phyir byin 'bebs gsol 'debs e waM char 'bebs/ 18 gsang 'dus dbang gi brgyud pa/ 19 rnga mong gi rims nad gyi rgyal mo bsang mchod gtor 'bul/ 20 bde gshegs bdun gyi mchog pa'i cho ga sgrigs yid bzhin dbang rgyal/ 21 byams pai bka' drin gsol 'debs/ 22 rje btsun ma'i sgo nas tshogs 'khor/ 23 sa bdag chab gtor/ 24 gser gyi rus sbal/"@en , "An explanation of astronomical calculation of elements; other text also included."@en ;
+        :creator            bdr:CR68947CB3C9A836E6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1AT670 ;
+        :workHasInstance    bdr:MW1NLM3050 , bdr:W1NLM3050 ;
+        :workIsAbout        bdr:T1443 .
+}

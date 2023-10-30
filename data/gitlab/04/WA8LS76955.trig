@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76955 {
+    bda:LG0D7F3333B651A67C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T08:50:18.61Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG11212FF6BDF724D1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T08:49:46.432Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76955  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76955 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "04/WA8LS76955.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76955 ;
+        adm:logEntry        bda:LG0D7F3333B651A67C , bda:LG11212FF6BDF724D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR674263568DFF9001
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1432 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR8F43344682DE4B55
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76955  a       :Work ;
+        skos:prefLabel      "thun mong bsdus pa'i sdom tshig blo gsal dga' bskyed/"@bo-x-ewts ;
+        :catalogInfo        "1 bsdus sbyor snying po'i dgongs don gsal bar byed pa kun gsal me long /"@bo-x-ewts , "A summary of logic manual by 6th Zhamar Chokyi dbang phyug; also by Gungthang Lodro Gyatsho."@en ;
+        :creator            bdr:CR674263568DFF9001 , bdr:CR8F43344682DE4B55 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS76955 , bdr:W8LS76955 ;
+        :workIsAbout        bdr:T1900 , bdr:T96 .
+}

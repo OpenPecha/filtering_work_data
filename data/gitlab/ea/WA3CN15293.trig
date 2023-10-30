@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15293 {
+    bda:LG5CABC6018F1F2207
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-27T14:11:20.007Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB97A6D0032D35BEB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T14:58:16.14Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBC740CE919B97914
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD158FF8EA33BAE0E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:08:24.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15293  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15293 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ea/WA3CN15293.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15293 ;
+        adm:logEntry        bda:LG5CABC6018F1F2207 , bda:LGB97A6D0032D35BEB , bda:LGBC740CE919B97914 , bda:LGD158FF8EA33BAE0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR95CE44D0EC9E93DA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15293  a       :Work ;
+        skos:altLabel       "dbang chen gsang ba 'dus pa'i them byang rin po che'i gter mdzodH/"@bo-x-ewts ;
+        skos:prefLabel      "dbang chen gsang ba 'dus pa'i chos skor/"@bo-x-ewts ;
+        :catalogInfo        "A cycle of treasure texts in the lho gter tradition of Ratna Lingpa (1403-1479)."@en ;
+        :creator            bdr:CR95CE44D0EC9E93DA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN15293 , bdr:W3CN15293 ;
+        :workIsAbout        bdr:T1671 .
+}

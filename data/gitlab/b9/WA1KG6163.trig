@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG6163 {
+    bda:LG7F36D1DE1922BEB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-01-10T15:33:51.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF7C2B7B69ED32D94
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-06T16:53:03.671Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released and added copyright title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF7E56201851D5568
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-11-17T14:43:29.007Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG6163  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG6163 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "b9/WA1KG6163.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG6163 ;
+        adm:logEntry        bda:LG7F36D1DE1922BEB3 , bda:LGF7C2B7B69ED32D94 , bda:LGF7E56201851D5568 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC09EA1DF4BAF5FFA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6165 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG6163  skos:altLabel  "西藏传统建筑概述"@zh-hans .
+
+    bdr:WA1KG6163  a        :Work ;
+        skos:altLabel       "xi zang chuan tong jian zhu gai su"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi ar las skor cung zad brjod pa mthong ba brgyud pa'i lag len/"@bo-x-ewts , "西藏传统建筑概述"@zh-hans ;
+        :catalogInfo        "On the construction of building in Tibet."@en ;
+        :creator            bdr:CRC09EA1DF4BAF5FFA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:IE1KG6163 , bdr:MW1KG6163 , bdr:W1KG6163 ;
+        :workIsAbout        bdr:G3196 , bdr:T2516 .
+}

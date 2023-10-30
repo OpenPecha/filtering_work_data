@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17702 {
+    bda:LG4AA52E511787116F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG958B1067FE232BCA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-24T12:56:00.29Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD99A5B595660EE60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-24T12:57:08.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17702  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17702 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3f/WA8LS17702.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17702 ;
+        adm:logEntry        bda:LG4AA52E511787116F , bda:LG958B1067FE232BCA , bda:LGD99A5B595660EE60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17702  a       :Work ;
+        skos:altLabel       "seng gdong gtor zlog dang 'brel ba'i ma mgon lcam dral bskyed pa'i g.yul zlog"@bo-x-ewts ;
+        skos:prefLabel      "ma mgon lcam dral bskyed pa'i g.yul zlog"@bo-x-ewts ;
+        :catalogInfo        "A thread cross and bali offering ritual for defeating inimical forces on the basis of Panjara Mahakala deity by unknown author."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17702 , bdr:W8LS17702 ;
+        :workIsAbout        bdr:T2496 , bdr:T2GS1226 , bdr:T905 .
+}

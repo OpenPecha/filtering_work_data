@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3060 {
+    bda:LG0F0F659CAC7A7D4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG6F56A8C4EE897F16
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-15T10:34:49.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3060"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3060  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3060 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "59/WA1NLM3060.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3060 ;
+        adm:logEntry        bda:LG0F0F659CAC7A7D4E , bda:LG6F56A8C4EE897F16 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3060  a       :Work ;
+        skos:altLabel       "'phags pa bkra shis brtsegs pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "bkra shis brtsegs pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phrin bcol gyi tshigs bcad/ 2 dpal rdo rje 'jigs byed kyi gtor 'bul/ 3 sdig pa'i dag go chos gsungs/ 4 dga' ldan lha brgya ma'i rgyud 'debs/ 5 bla ma mgon po dbyer med la gsol ba 'debs pa/ 6 skyabs mgon paN chen thams cad mkhyen pas mdzd pa/ 7 de bzhin gshegs pa dgra bcom pa yang dag par rdzogs pa'i sangs rgyas rin chen 'or zer/ 8 kai 'jig rten mun pa sel pa nyi zla'i g.yang / 9 khro po'i bgegs gtor 'dod pa'i bsangs/ 10 chos skyong bsrung ma sogs spyir mchod gtor bya ba ni go rim/ 11 dpal ldan lha mo bsang / 12 sme bdun zhes pa'i skar ma'i mchod pa 'bul ba/ 13 rje btsun sgrol mas jo bo a ti sha la phul ba'i phrem mo 'debs pa/ 14 rje btsun 'phags ma sgrol ma'i 'chi ba bslu pa'i cho ga 15 gcod yul rgyun khyer bdag 'dzin tshar gcod/"@en , "Arya Mangala Kuta Mahayan sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3060 , bdr:W1NLM3060 .
+}

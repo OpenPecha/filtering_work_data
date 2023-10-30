@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27940 {
+    bda:LG45046B4C187F5DE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-20T14:43:16.031Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected LCCN number"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG47B157122680AEBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-27T14:58:53.78Z"^^xsd:dateTime ;
+        adm:logMessage      "removed white space from title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG6853F04E756440B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG8A6B1F6CCFE79915
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T10:30:16.259Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGA9F3D93ACF5E733B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T13:03:14.07Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGE19FFD5E87D93149
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-13T07:07:40.093Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEBC1086E58A61062
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27940  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27940 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "e9/WA27940.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27940 ;
+        adm:logEntry        bda:LG45046B4C187F5DE3 , bda:LG47B157122680AEBA , bda:LG6853F04E756440B1 , bda:LG8A6B1F6CCFE79915 , bda:LGA9F3D93ACF5E733B , bda:LGE19FFD5E87D93149 , bda:LGEBC1086E58A61062 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR748FF016C63CD9E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4943 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW27940  skos:altLabel  "the life of the precious mahaguru padmasambhava"@en .
+
+    bdr:WA27940  a          :Work ;
+        skos:altLabel       "o rgyan gu ru padma 'byun gns kyi skyes rabs rnam par thar pa rgyas par bkod pa padma bka'i than yig"@bo-alalc97 , "bka' thang shel brag ma/"@bo-x-ewts , "o rgyan gu ru pad+ma 'byung gnas kyi skyes rabs rnam par thar pa rgyas par kod pa pad+ma bka'i thang yig"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma bka' thang shel brag ma/"@bo-x-ewts , "the life of the precious mahaguru padmasambhava"@en ;
+        :catalogInfo        "Revealed account of Padmasambhava and the teachings of Buddhism during the 8th century. Revealed by the terton Orgyan Lingpa. Reproduced from an illustrated manuscript calligraphed for HM Ashe Phuntsok Chodron of Bhutan by Golok Shugchung Ontrul Rinpoche."@en ;
+        :creator            bdr:CR748FF016C63CD9E9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW27940 , bdr:W27940 ;
+        :workIsAbout        bdr:P4956 .
+}

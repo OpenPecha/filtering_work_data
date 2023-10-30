@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN895 {
+    bda:LG14F74644B4AB7904
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-20T12:27:07.078Z"^^xsd:dateTime ;
+        adm:logMessage      "revised"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG280F44FF45EA7F59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-13T15:18:37.188Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2E76835CE5724CBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T14:31:47.779Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Vienna"@en ;
+        adm:logWhoStr       "add-works-to-PR1VIENNA00" .
+
+    bda:LG7F8676C2932C9311
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T16:17:43.796Z"^^xsd:dateTime ;
+        adm:logMessage      "updated PR1VIENNA00 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-PR1VIENNA00." .
+
+    bda:LG98D88C7C50006DC2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-13T15:22:17.198Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAF6430154EFC8CFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T19:08:30.468Z"^^xsd:dateTime ;
+        adm:logMessage      "updated label for TPMV"@en ;
+        adm:logWhoStr       "works-update-PR1VIENNA00-label" .
+
+    bda:LGBAB4335A5E1CCAAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-02T14:15:15.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added Biblio note for missing folios"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEE43A35F771C082A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-23T09:37:45.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN895  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN895 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "7e/WA3CN895.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN895 ;
+        adm:logEntry        bda:LG14F74644B4AB7904 , bda:LG280F44FF45EA7F59 , bda:LG2E76835CE5724CBA , bda:LG7F8676C2932C9311 , bda:LG98D88C7C50006DC2 , bda:LGAF6430154EFC8CFD , bda:LGBAB4335A5E1CCAAC , bda:LGEE43A35F771C082A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN895  skos:altLabel  "Tabo Collection"@en .
+
+    bdr:WA3CN895  a         :Work ;
+        skos:altLabel       "spi ti ta po dgon pa'i dpe rnying kha thor phyogs bsdus/"@bo-x-ewts , "the manuscript collection of tabo monastery"@en ;
+        skos:prefLabel      "ta po'i dpe rnying phyogs bsdus/"@bo-x-ewts , "Tabo Collection"@en ;
+        :catalogInfo        "This collection is mostly the manuscripts from Tabo Monastery, lots of (Rn#) parts are still missing. This collection is catalogued into 62 volumes, which is mostly based on <Tabo Studies III : A Catalogue of The Manuscript Collection of Tabo Monastery> by Cristina Scherrer-Schaub and Paul Harrison."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN895 , bdr:W3CN895 .
+}

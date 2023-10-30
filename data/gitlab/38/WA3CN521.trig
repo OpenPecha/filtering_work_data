@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN521 {
+    bda:LG0A85118D26E0C244
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-13T11:20:36.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG0DDAE462517469AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-29T11:17:15.738Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFA59799B81ABC7CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-13T11:17:28.987Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN521  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN521 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA3CN521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN521 ;
+        adm:logEntry        bda:LG0A85118D26E0C244 , bda:LG0DDAE462517469AF , bda:LGFA59799B81ABC7CA , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN521  a         :Work ;
+        skos:prefLabel      "'das log dkar chag blang dor 'byed pa'i lde mig"@bo-x-ewts ;
+        :catalogInfo        "Account of a return from death experience"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW3CN521 , bdr:W3CN521 ;
+        :workIsAbout        bdr:T1203 .
+}

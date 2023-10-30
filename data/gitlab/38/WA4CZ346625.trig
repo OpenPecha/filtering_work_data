@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ346625 {
+    bda:LG3CDB08392A3DD7EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-06T14:08:09.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6CF03724AA91D4A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T10:53:34.227Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD7986EB5BB67EF39
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-01T11:04:18.841Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ346625  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ346625 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "38/WA4CZ346625.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ346625 ;
+        adm:logEntry        bda:LG3CDB08392A3DD7EE , bda:LG6CF03724AA91D4A4 , bda:LGD7986EB5BB67EF39 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0CC91C749EE59635
+        a                   :AgentAsCreator ;
+        :agent              bdr:P987 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR20BA38C6B4BD54C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1027 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9F61FCE6DC8CDE24
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9724 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE24B11381892B7C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5936 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF5AD08A9D3918D72
+        a                   :AgentAsCreator ;
+        :agent              bdr:P782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ346625  a      :Work ;
+        skos:altLabel       "kun mkhyen go rams pa bsod nams seng+ge'i rnam thar phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "go rams pa bsod nams seng+ge'i rnam thar phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collections of biography of the Sakya master Gorampa Sonam Sengge (1429-1489)."@en ;
+        :creator            bdr:CR0CC91C749EE59635 , bdr:CR20BA38C6B4BD54C0 , bdr:CR9F61FCE6DC8CDE24 , bdr:CRE24B11381892B7C4 , bdr:CRF5AD08A9D3918D72 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ346625 , bdr:W4CZ346625 ;
+        :workIsAbout        bdr:P1042 .
+}

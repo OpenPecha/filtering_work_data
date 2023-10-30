@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17624 {
+    bda:LG6C5519A9F58982F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-07-09T10:31:19.838Z"^^xsd:dateTime ;
+        adm:logMessage      "marked copyright"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA801841307081F7E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T17:40:20.379Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBD0ED6E3214D3B61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-05T04:39:14.041Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDAAD5F38D86EE7EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-11T05:30:20.199Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM97DE520031
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:17:52.84Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2PD17624  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17624 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "83/WA2PD17624.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17624 ;
+        adm:logEntry        bda:LG6C5519A9F58982F0 , bda:LGA801841307081F7E , bda:LGBD0ED6E3214D3B61 , bda:LGDAAD5F38D86EE7EB , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3983D58E034A30C2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18841 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2PD17624  skos:altLabel  "the handbook of tibetan buddhist symbols"@en .
+
+    bdr:WA2PD17624  a       :Work ;
+        skos:altLabel       "zang chuan fo jiao xiang zheng fu hao yu wu qi lie tu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "the handbook of tibetan buddhist symbols"@en , "藏传佛教象征符号与器物图解"@zh-hans ;
+        :catalogInfo        "The handbook of Tibetan Buddhist symbols by Robert Beer."@en ;
+        :creator            bdr:CR3983D58E034A30C2 ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW2PD17624 , bdr:W2PD17624 ;
+        :workIsAbout        bdr:T1845 , bdr:T1KG26408 , bdr:T212 .
+}

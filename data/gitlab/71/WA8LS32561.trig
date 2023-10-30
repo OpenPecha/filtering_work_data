@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32561 {
+    bda:LG806E5B132F6F8C47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGE097AE1E276FC92B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-18T12:48:04.301Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFD162FFB3CD85F66
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-18T12:49:15.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32561  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32561 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "71/WA8LS32561.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32561 ;
+        adm:logEntry        bda:LG806E5B132F6F8C47 , bda:LGE097AE1E276FC92B , bda:LGFD162FFB3CD85F66 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1A0165FFAB9B489A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P561 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32561  a       :Work ;
+        skos:altLabel       "bcom ldan 'das dpal rdo rje 'jigs byed dpa' bo gcig pa bdud thams cad las rnam par rgyal ba'i dkyil 'khor gyi cho ga dbang gi mtshams sbyor dang bcas pa bdud dpung tshar gcod gnam lcags ral gri'i 'phrul 'khor/"@bo-x-ewts ;
+        skos:prefLabel      "'jigs byed dpa' bo gcig pa'i dkyil 'khor cho ga"@bo-x-ewts ;
+        :catalogInfo        "A mandala vidhi of solitary Vajrabairava by Ngawang Damcho Gyatsho."@en ;
+        :creator            bdr:CR1A0165FFAB9B489A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW8LS32561 , bdr:W8LS32561 ;
+        :workIsAbout        bdr:T104 .
+}

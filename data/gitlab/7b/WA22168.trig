@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22168 {
+    bda:LG50EF26D9CE038C5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22168  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22168 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7b/WA22168.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22168 ;
+        adm:logEntry        bda:LG50EF26D9CE038C5A , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR3B71B93D4695DA8B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR68E3F7747DDACD13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P293 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA22168  a          :Work ;
+        skos:altLabel       "yon tan rin po che'i mdzod dga' ba'i char/"@bo-x-ewts ;
+        skos:prefLabel      "yon tan mdzod rtsa 'grel/"@bo-x-ewts , "Yon tan mdzod rtsa ʼgrel /ʼJigs-med-gliṅ-bas rtsa ba daṅ Rdo-grub-rgan gyis ʼgrel ba mdzad."@en-x-mixed , "kung te tsang pen chu"@zh-latn-wadegile ;
+        :creator            bdr:CR3B71B93D4695DA8B , bdr:CR68E3F7747DDACD13 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22168 ;
+        :workIsAbout        bdr:T354 , bdr:T770 .
+}

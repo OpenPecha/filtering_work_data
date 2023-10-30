@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27365 {
+    bda:LG2DB7CB546DE5F403
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T14:50:05.054Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG36FC77EDDF5C22E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC6099EC2A6B6AA23
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-24T08:54:20.292Z"^^xsd:dateTime ;
+        adm:logMessage      "removed archive info"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27365  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27365 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "80/WA27365.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27365 ;
+        adm:logEntry        bda:LG2DB7CB546DE5F403 , bda:LG36FC77EDDF5C22E5 , bda:LGC6099EC2A6B6AA23 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRB9FF179A4311E104
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA27365  a          :Work ;
+        skos:prefLabel      "mkhas dbang dhya na sa ka ra'i zhu yig zhal bshus/"@bo-x-ewts ;
+        :creator            bdr:CRB9FF179A4311E104 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27365 ;
+        :workIsAbout        bdr:P791 .
+}

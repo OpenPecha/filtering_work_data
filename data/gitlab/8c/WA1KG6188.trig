@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG6188 {
+    bda:LG05270D54FF91FAD6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-11-29T13:06:35.306Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0AF6A4781932B033
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-10-26T14:09:38.677Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG59F94213015BB8E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-06T16:59:58.954Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG711422DC9B3DC755
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-11-29T13:07:57.2Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF7E46D1BB1E3FA5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-08T16:39:43.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added lccn 2010345157"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG6188  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG6188 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "8c/WA1KG6188.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG6188 ;
+        adm:logEntry        bda:LG05270D54FF91FAD6 , bda:LG0AF6A4781932B033 , bda:LG59F94213015BB8E6 , bda:LG711422DC9B3DC755 , bda:LGF7E46D1BB1E3FA5A , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE8E26D63BF0FE638
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG11864 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG6188  skos:altLabel  "Gnas yig phyogs bsgrigs rdzogs ldan gsar paʼi ʼod snaṅ bźugs so /Rgyal-khams-pa Ñag ʼGyur-med-rdo-rje nas phyogs bsgrigs źus."@en-x-mixed .
+
+    bdr:WA1KG6188  a        :Work ;
+        skos:prefLabel      "gnas yig phyogs bsgrigs rdzogs ldan gsar pa'i 'od snang /"@bo-x-ewts , "Gnas yig phyogs bsgrigs rdzogs ldan gsar paʼi ʼod snaṅ bźugs so /Rgyal-khams-pa Ñag ʼGyur-med-rdo-rje nas phyogs bsgrigs źus."@en-x-mixed ;
+        :creator            bdr:CRE8E26D63BF0FE638 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T25 ;
+        :workHasInstance    bdr:MW1KG6188 , bdr:W1KG6188 .
+}

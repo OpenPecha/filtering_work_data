@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD5180 {
+    bda:LG1B38C2E24D3D0A85
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-09-20T16:54:04.918Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1E0CBE8A39AC5D6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T13:00:22.152Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to editing"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFD3B442B2CEAD6F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T11:25:02.47Z"^^xsd:dateTime ;
+        adm:logMessage      "removed product information since there is no images"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA4PD5180  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD5180 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cb/WA4PD5180.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD5180 ;
+        adm:logEntry        bda:LG1B38C2E24D3D0A85 , bda:LG1E0CBE8A39AC5D6C , bda:LGFD3B442B2CEAD6F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusEditing .
+
+    bdr:CR1561FB13263B44B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD5180  a        :Work ;
+        skos:altLabel       "sdom pa gsum rnam par nges pa'i 'grel pa legs bshad ngo mtshar dpag bsam snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "sdom gsum rnam nges kyi 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the three vows by Minling Lochen Dharamshri, composed at the age of 35."@en ;
+        :creator            bdr:CR1561FB13263B44B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4PD5180 , bdr:MW8LS18272 , bdr:W8LS18272 ;
+        :workIsAbout        bdr:T201 , bdr:WA3JT13389 .
+}

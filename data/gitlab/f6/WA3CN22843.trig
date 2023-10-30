@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22843 {
+    bda:LG05B7BBAE8598EF90
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-28T17:44:34.685Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2422FA6730C0BBD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-31T23:38:58.178Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4DE4ADFD333C61E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-01T13:41:12.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG868E13FFA1FB7DDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-31T23:44:32.392Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB6486796E7D1521B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22843  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22843 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f6/WA3CN22843.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22843 ;
+        adm:logEntry        bda:LG05B7BBAE8598EF90 , bda:LG2422FA6730C0BBD4 , bda:LG4DE4ADFD333C61E4 , bda:LG868E13FFA1FB7DDE , bda:LGB6486796E7D1521B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN22843  a       :Work ;
+        skos:prefLabel      "'phags pa'i gnas brtan bcu drug gi rnam thar rtogs brjod phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sixteen sthavira's avadana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 ;
+        :workHasInstance    bdr:MW3CN22843 , bdr:W3CN22843 ;
+        :workIsAbout        bdr:T1154 .
+}

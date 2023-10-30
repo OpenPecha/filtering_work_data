@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS36527 {
+    bda:LG36726D3797730364
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-07-31T14:46:43.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added author statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG490E2E4318198FB6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-31T14:44:17.128Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8427BE8FF194E1BF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-31T14:47:06.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA58A6F429C9AA13E
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-07-31T14:47:58.77Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB1ABA6FF99A47370
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T09:44:27.631Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS36527  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS36527 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "aa/WA8LS36527.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS36527 ;
+        adm:logEntry        bda:LG36726D3797730364 , bda:LG490E2E4318198FB6 , bda:LG8427BE8FF194E1BF , bda:LGA58A6F429C9AA13E , bda:LGB1ABA6FF99A47370 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFBA669140A661E1E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75375 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS36527  a       :Work ;
+        skos:prefLabel      "bya tshig nyams zhib/"@bo-x-ewts ;
+        :catalogInfo        "An orthography of Tibetan verb by Acharya Ngawang Losang."@en ;
+        :creator            bdr:CRFBA669140A661E1E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T218 ;
+        :workHasInstance    bdr:MW8LS36527 , bdr:W8LS36527 ;
+        :workIsAbout        bdr:T2623 .
+}

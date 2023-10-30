@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29643 {
+    bda:LG1A175CE75041CF79
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-07T16:09:34.542Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG1B327F1167352D95
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-20T14:46:26.297Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG871738971CD67AF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-24T12:25:01.255Z"^^xsd:dateTime ;
+        adm:logMessage      "scanned compeleted"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA5AA331FD32065C4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB4461076504893EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-20T13:59:24.039Z"^^xsd:dateTime ;
+        adm:logMessage      "add subject and publi info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA29643  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29643 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bb/WA29643.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29643 ;
+        adm:logEntry        bda:LG1A175CE75041CF79 , bda:LG1B327F1167352D95 , bda:LG871738971CD67AF2 , bda:LGA5AA331FD32065C4 , bda:LGB4461076504893EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3F873307BE17474E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9878 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29643  a          :Work ;
+        skos:altLabel       "ye shes dgon pa'i dkar chag chu shel me long /"@bo-x-ewts ;
+        skos:prefLabel      "nyag rong ye shes dgon pa'i lo rgyus/"@bo-x-ewts ;
+        :creator            bdr:CR3F873307BE17474E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW29643 , bdr:W29643 ;
+        :workIsAbout        bdr:G1613 .
+}

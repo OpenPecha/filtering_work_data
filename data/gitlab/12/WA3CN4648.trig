@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4648 {
+    bda:LG5E22C204470180C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T16:48:35.967Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8EE514898D123751
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:22:20.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4648  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4648 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "12/WA3CN4648.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4648 ;
+        adm:logEntry        bda:LG5E22C204470180C5 , bda:LG8EE514898D123751 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG14786 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR7F38C8D4BC22CAF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1647 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4648  a        :Work ;
+        skos:prefLabel      "bod kyi yi ge'i spyi rnam blo gsal 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Classification of Tibetan script and grammar by Muge Samten."@en ;
+        :creator            bdr:CR7F38C8D4BC22CAF5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workIsAbout        bdr:T2512 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1202 {
+    bda:LG0422E4E2213A6A9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-30T15:02:37.359Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7F38EE3FB4C941FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1202"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1202  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1202 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d8/WA1NLM1202.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1202 ;
+        adm:logEntry        bda:LG0422E4E2213A6A9B , bda:LG7F38EE3FB4C941FB , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREEF910BA0E0BBC6A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1202  a       :Work ;
+        skos:prefLabel      "mngon sum le'u'i brjed gsung bzhin mkhas grub chos rje mdzad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal tshab chos rje'i drung du gsan pa'i mngon sum le'u brjed byang / 2 gsang chen rgyud sde bzhi'i lam gyi rnam gzhag rgyud gzhung gsal byed/ 3 drang nges rnam 'byed kyi dka' gnad las brtsam te dpal ldan thal 'gyur ba'i gzhung gi dgongs don rab gsal sgron me/ 4 tshad ma kun las btus pa/ 5 kun mkhyen 'jam dbyangs bzhad pas mdzd pa'i thal 'gyur che ba'i rnam bzhag mdor bsdus/ 6 blo rigs kyi sdom tshig blang dor gsal ba'i me long /"@en , "Notes on the direct perception chapter of logic by Khedrup Gelek Palzang; other text also included."@en ;
+        :creator            bdr:CREEF910BA0E0BBC6A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 ;
+        :workHasInstance    bdr:MW1NLM1202 , bdr:W1NLM1202 ;
+        :workIsAbout        bdr:T1898 , bdr:T370 .
+}

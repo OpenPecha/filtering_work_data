@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23995 {
+    bda:LG0FC7B52F125F472E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T10:18:16.555Z"^^xsd:dateTime ;
+        adm:logMessage      "change title"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG14C2B5ED8C04CD2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-04T10:55:20.255Z"^^xsd:dateTime ;
+        adm:logMessage      "changed T# for kajur"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG228A41D85F94CE2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T14:32:55.353Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3BDB84575EAAC206
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG7FAB13A08165C7D0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9B311AAED579DD56
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T11:24:52.967Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGADAC9479B818D48E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-19T10:16:46.569Z"^^xsd:dateTime ;
+        adm:logMessage      "add subject"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23995  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23995 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f2/WA23995.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23995 ;
+        adm:logEntry        bda:LG0FC7B52F125F472E , bda:LG14C2B5ED8C04CD2E , bda:LG228A41D85F94CE2A , bda:LG3BDB84575EAAC206 , bda:LG7FAB13A08165C7D0 , bda:LG9B311AAED579DD56 , bda:LGADAC9479B818D48E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA6C64DE2A262A977
+        a                   :AgentAsCreator ;
+        :agent              bdr:P873 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23995  skos:altLabel  "extracts from the bka' 'gyur"@en .
+
+    bdr:WA23995  a          :Work ;
+        skos:altLabel       "rwa lung du lo gsum sku mtshams la bzhugs pa'i dus nyin gyi gung thun la bka' 'gyur gzigs pa'i thun lung khungs khol du zin bris su 'debs pa/"@bo-alalc97 , "collected extracts from the bka' 'gyur relating to important points in the doctrine, experience, and the practice of buddhism made during the author's three year retreat at rwa-lun"@en ;
+        skos:prefLabel      "bka' 'gyur lung khungs zin bris/"@bo-x-ewts , "extracts from the bka' 'gyur"@en ;
+        :catalogInfo        "Extracts made during the early 16th century from a Kangyur."@en ;
+        :creator            bdr:CRA6C64DE2A262A977 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T012AG03703 , bdr:T1478 ;
+        :workHasInstance    bdr:MW23995 , bdr:W23995 ;
+        :workIsAbout        bdr:T2423 .
+}

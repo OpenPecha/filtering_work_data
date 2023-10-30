@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD181151 {
+    bda:LG8F98B58AE27F8824
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-18T05:53:29.983Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG90DF243C99256966
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-18T05:34:39.933Z"^^xsd:dateTime ;
+        adm:logMessage      "new record"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDA1777E8C89DEF55
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-09T15:54:55.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIME4B642616A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-27T20:30:28.724Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T10MS11134 to T448"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA1PD181151  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD181151 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9c/WA1PD181151.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD181151 ;
+        adm:logEntry        bda:LG8F98B58AE27F8824 , bda:LG90DF243C99256966 , bda:LGDA1777E8C89DEF55 , bda:LGIME4B642616A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4AAC634901554703
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5340 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1PD181151  a      :Work ;
+        skos:prefLabel      "snga 'gyur g.yag ze dgon gyi gter ma'i sgrub mchod las/_dgongs 'dus skor/"@bo-x-ewts ;
+        :creator            bdr:CR4AAC634901554703 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1PD181151 , bdr:W1PD181151 ;
+        :workIsAbout        bdr:T1339 .
+}

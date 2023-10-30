@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30494 {
+    bda:LG83DBBEA549225E2A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA30494  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30494 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "df/WA30494.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30494 ;
+        adm:logEntry        bda:LG83DBBEA549225E2A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR72E300B24816A73D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6167 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR777CD025A72E6D70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P139 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR8175B68B276197DA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA30494  a          :Work ;
+        skos:prefLabel      "jo nang rje btsun rnam gsum gyi zhal mgur/"@bo-x-ewts ;
+        :creator            bdr:CR72E300B24816A73D , bdr:CR777CD025A72E6D70 , bdr:CR8175B68B276197DA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW30494 .
+}

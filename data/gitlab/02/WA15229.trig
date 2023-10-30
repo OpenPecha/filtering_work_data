@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA15229 {
+    bda:LG113DEB952C431E3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T16:44:39.508Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG129B20C29F313760
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG8FB3C4748293A0D3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-05T12:07:33.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA26A4F0D1B9E0800
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBAAD2AFF40BA2230
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-05T12:06:32.345Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMDA3CC38EDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T17:27:14.339Z"^^xsd:dateTime ;
+        adm:logMessage      "removed erroneous titles from previous update"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA15229  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA15229 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "02/WA15229.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA15229 ;
+        adm:logEntry        bda:LG113DEB952C431E3B , bda:LG129B20C29F313760 , bda:LG8FB3C4748293A0D3 , bda:LGA26A4F0D1B9E0800 , bda:LGBAAD2AFF40BA2230 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC104CDC494577BDB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3006 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW15229  skos:altLabel  "bsad rgyud 'grel pa 'bum nag gsal sgron /Dzna-na-dha-ris brtsams."@en-x-mixed , "四部医典・释续部"@zh-hans .
+
+    bdr:WA15229  a          :Work ;
+        skos:altLabel       "'bum nag gsal sgron/"@bo-x-ewts , "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las bshad pa'i rgyud kyi 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "bshad rgyud 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "si bu yi dian . shi xu bu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bshad rgyud kyi 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "bsad rgyud 'grel pa 'bum nag gsal sgron /Dzna-na-dha-ris brtsams."@en-x-mixed , "四部医典・释续部"@zh-hans ;
+        :catalogInfo        "Commentary on explanation tantra (bshad rgyud), the second of the four medical tantras (brgyud bzhi) of Tibetan medicine."@en ;
+        :creator            bdr:CRC104CDC494577BDB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW15229 , bdr:W15229 ;
+        :workIsAbout        bdr:WA21667 .
+}

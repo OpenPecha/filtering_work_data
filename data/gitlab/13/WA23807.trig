@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23807 {
+    bda:LG44532975F41C722B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG53AEA72F103197AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T12:06:40.113Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA23807  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23807 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "13/WA23807.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23807 ;
+        adm:logEntry        bda:LG44532975F41C722B , bda:LG53AEA72F103197AF , bda:LGIMEAF73E87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23807  skos:altLabel  "'dzam gling ge sar rgyal po'i rnam thar las sog stod rgyal blon dpung dang bcas pa btul zhing 'gros ldan rta'i rdzong g-yang blangs pa'i le'u dbang bsgyur 'khor lo'i phyag rgya : an episode from the gesar epic recounting the mighty king of ling's conquest"@en .
+
+    bdr:WA23807  a          :Work ;
+        skos:prefLabel      "sog stod rta rdzong /"@bo-x-ewts , "'dzam gling ge sar rgyal po'i rnam thar las sog stod rgyal blon dpung dang bcas pa btul zhing 'gros ldan rta'i rdzong g-yang blangs pa'i le'u dbang bsgyur 'khor lo'i phyag rgya : an episode from the gesar epic recounting the mighty king of ling's conquest"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23807 , bdr:W23807 ;
+        :workIsAbout        bdr:T248 .
+}

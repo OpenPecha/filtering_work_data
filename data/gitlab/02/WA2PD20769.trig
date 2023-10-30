@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD20769 {
+    bda:LG22B804D811F72FDB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-13T21:20:01.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5A915BADB4A3D94A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG851963BE84253A62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-10T23:19:24.082Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA2PD20769  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD20769 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/WA2PD20769.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD20769 ;
+        adm:logEntry        bda:LG22B804D811F72FDB , bda:LG5A915BADB4A3D94A , bda:LG851963BE84253A62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XL42DF3764816B ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR76B716A3C8F03FF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2PD20769  skos:altLabel  "吉祥金刚萨埵￼意成就之近诵修成事业仪轨.解脱妙道"@zh-hans .
+
+    bdr:WA2PD20769  a       :Work ;
+        skos:altLabel       "smin gling rdor sems/"@bo-x-ewts , "ji xiang jin gang sa duo yi cheng jiu zhi jin song xiu cheng shi ye yi gui . jie tuo miao dao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal rdo rje sems dpa' thugs kyi sgrub pa'i bsnyen sgrub phrin las kyi cho ga rnam grol lam bzang /(rgya bod shan sbyar/)"@bo-x-ewts , "吉祥金刚萨埵￼意成就之近诵修成事业仪轨.解脱妙道"@zh-hans ;
+        :creator            bdr:CR76B716A3C8F03FF5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workIsAbout        bdr:T00AG01245 , bdr:T452 .
+}

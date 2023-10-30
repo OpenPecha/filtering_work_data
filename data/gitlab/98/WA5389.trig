@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5389 {
+    bda:LG09CB9A9225476345
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-02T15:08:35.257Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1052 to T2180"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG0F19555D4BFB88C1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA5389  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5389 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "98/WA5389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5389 ;
+        adm:logEntry        bda:LG09CB9A9225476345 , bda:LG0F19555D4BFB88C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR727ECB609B381F27
+        a                   :AgentAsCreator ;
+        :agent              bdr:P263 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA5389  a           :Work ;
+        skos:prefLabel      "bde mchog lus dkyil gyi bum bskyed mdor bsdus/"@bo-x-ewts ;
+        :creator            bdr:CR727ECB609B381F27 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW5389 ;
+        :workIsAbout        bdr:T2180 , bdr:T2517 .
+}

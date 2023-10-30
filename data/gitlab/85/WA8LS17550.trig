@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17550 {
+    bda:LG5D564BC5753A8E28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-13T15:40:57.123Z"^^xsd:dateTime ;
+        adm:logMessage      "changed associated person and author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA788554BBF22F15C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-29T09:54:11.018Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFF985E5FA2E6F518
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-29T09:55:18.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFFFFCF0A2E6725A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17550  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17550 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "85/WA8LS17550.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17550 ;
+        adm:logEntry        bda:LG5D564BC5753A8E28 , bda:LGA788554BBF22F15C , bda:LGFF985E5FA2E6F518 , bda:LGFFFFCF0A2E6725A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5CBFBF4D2FC44312
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1746 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17550  a       :Work ;
+        skos:altLabel       "rje btsun bla ma dam pa dmigs pa med pa'i thugs rje chen po dang ldan pa dge 'dun rgya mtsho'i zhabs kyi rnam par thar pa yongs su brjod pa'i gtam du bya ba mkhas grub rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "dge 'dun rgya mtsho'i rnam thar mkhas grub rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Biography of the third Lhakhang Lungpa Gedun Gyatsho by Konchok Damcho Yerphel."@en ;
+        :creator            bdr:CR5CBFBF4D2FC44312 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS17550 , bdr:W8LS17550 ;
+        :workIsAbout        bdr:P2157 .
+}

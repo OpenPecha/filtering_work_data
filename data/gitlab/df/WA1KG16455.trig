@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16455 {
+    bda:LG31CDDA77722EB728
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-14T15:06:30.75Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG33FA0FAF4A12ADF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T11:05:01.117Z"^^xsd:dateTime ;
+        adm:logMessage      "normalised series number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9A29FC6500CE7C8E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-14T15:07:06.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16455  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16455 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "df/WA1KG16455.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16455 ;
+        adm:logEntry        bda:LG31CDDA77722EB728 , bda:LG33FA0FAF4A12ADF1 , bda:LG9A29FC6500CE7C8E , bda:LGIM4599A38FCE , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1FF5FFD2344A415F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7BBA3FDB70A887E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7297 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG16455  a       :Work ;
+        skos:prefLabel      "'grel pa don gsal dang / rnam bshad snying po rgyan gyi dgongs 'grel tshig don rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara by Haribhadra with further explanations of the intended meaning by Penchen Sonam Drakpa (1478-1554)."@en ;
+        :creator            bdr:CR1FF5FFD2344A415F , bdr:CR7BBA3FDB70A887E4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS12837 ;
+        :workHasInstance    bdr:MW1KG16455 , bdr:W1KG16455 ;
+        :workIsAbout        bdr:WA19716 , bdr:WA648 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29702 {
+    bda:LG0FD57713D021BE7B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T14:20:00.099Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG63A4F44850077EFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-27T14:25:08.87Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG69F03A11DAD32A62
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-16T15:33:19.513Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL07"@en .
+
+    bda:LGB3B56B7F6ED1E0BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-19T12:46:33.809Z"^^xsd:dateTime ;
+        adm:logMessage      "removed restricted by tradition"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGEC66AD1E08E9C739
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29702  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29702 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "40/WA29702.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29702 ;
+        adm:logEntry        bda:LG0FD57713D021BE7B , bda:LG63A4F44850077EFD , bda:LG69F03A11DAD32A62 , bda:LGB3B56B7F6ED1E0BA , bda:LGEC66AD1E08E9C739 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR93929438346D3702
+        a                   :AgentAsCreator ;
+        :agent              bdr:P251 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29702  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims rgya mtsho (gser tog)"@bo-x-ewts ;
+        :creator            bdr:CR93929438346D3702 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW29702 , bdr:W29702 ;
+        :workIsAbout        bdr:T819 .
+}

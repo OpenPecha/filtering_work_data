@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21873 {
+    bda:LG39752709CAE057AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG4EF0CCCC345BA10B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6F1502DAE924E63C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-04T15:50:24.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG77684E827FE78935
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-04-06T10:16:45.236Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected extent"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF9468DFF9FAA61B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-04T15:48:40.109Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA21873  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21873 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ea/WA21873.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21873 ;
+        adm:logEntry        bda:LG39752709CAE057AE , bda:LG4EF0CCCC345BA10B , bda:LG6F1502DAE924E63C , bda:LG77684E827FE78935 , bda:LGF9468DFF9FAA61B0 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14030E77B66BE5D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6644 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21873  skos:altLabel  "藏族哲学的理智"@zh-hans .
+
+    bdr:WA21873  a          :Work ;
+        skos:altLabel       "zang zu zhe xue de li zhi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi sher rtogs rig pa'i rigs shes/"@bo-x-ewts , "藏族哲学的理智"@zh-hans ;
+        :catalogInfo        "On the general philosophical concept of Tibetan Buddhism."@en ;
+        :creator            bdr:CR14030E77B66BE5D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1TLMTGA001085 , bdr:MW21873 , bdr:W21873 ;
+        :workIsAbout        bdr:T350 , bdr:T388 .
+}

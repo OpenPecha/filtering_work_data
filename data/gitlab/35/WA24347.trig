@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24347 {
+    bda:LG9C2112FEDE050970
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGB17A38C15D8A8AC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-31T19:05:48.791Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1821 to T978"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA24347  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24347 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "35/WA24347.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24347 ;
+        adm:logEntry        bda:LG9C2112FEDE050970 , bda:LGB17A38C15D8A8AC5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR7990A5D05EBC6655
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24347  a          :Work ;
+        skos:prefLabel      "jo bo lugs kyi mi 'khrugs pa lha dgu'i dkyil 'khor gyi sgo nas phung po bsreg sbyong gi cho ga 'jam mgon bla ma'i dgongs rgyan/"@bo-x-ewts ;
+        :creator            bdr:CR7990A5D05EBC6655 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24347 ;
+        :workIsAbout        bdr:T978 , bdr:T999 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2696 {
+    bda:LG0AD25ED3CC3655C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T16:08:21.666Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9DC77730C463C23F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM092D623C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-12-04T19:41:01.824Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2696"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2696  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2696 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3a/WA1NLM2696.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2696 ;
+        adm:logEntry        bda:LG0AD25ED3CC3655C4 , bda:LG9DC77730C463C23F , bda:LGIM092D623C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR701D2563D49E06A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2696  a       :Work ;
+        skos:altLabel       "sman gzhung khungs ma rnams las nad kyi rtags bcos sogs thor bur 'byung ba phyogs gcig tu bsgrigs pa gces btus snying nor/"@bo-x-ewts ;
+        skos:prefLabel      "sman gzhung gces btus snying nor/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of diagnosis of diseases and its methods of treatment"@en ;
+        :creator            bdr:CR701D2563D49E06A6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2696 , bdr:W1NLM2696 ;
+        :workIsAbout        bdr:T1650 , bdr:T85 .
+}

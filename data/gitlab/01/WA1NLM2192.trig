@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2192 {
+    bda:LG3AE4F62F98A93A41
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG629190D6D71CB52B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-17T14:28:24.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2192"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2192  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2192 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "01/WA1NLM2192.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2192 ;
+        adm:logEntry        bda:LG3AE4F62F98A93A41 , bda:LG629190D6D71CB52B , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3E424C6C9A66B5B2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1698 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1NLM2192  a       :Work ;
+        skos:prefLabel      "mchod rten chen po bya rung kha shor gyi lo rgyus thos pas grol ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lus ngag yid gsum bcings pa las grol bar byed pa'i gzungs/ 2 chos skyong lcam sring gi gtor chog 'phrin las gnyer gtad shin tu bsdus pa kha 'don du 'khyer bde ba/ 3 nag rtsis las 'byung ba'i gto thabs zab mo keg bsgyur rus sbal bya tshul gzhan phan bdud rtsi'i yol go/ 4 zor 'phen tshul dang zlog bsgyur gyi dmigs rim/ 5 'phags pa bkra shis brtsegs pa bsdus pa/ 6 lug gi brang gis me lha mchod cing g.yang 'bod 'dod pa/ 7 lha mo nor rgyun ma'i gzungs/ 8 'phags pa tshogs kyi bdag po rin po che 'bru'i dkor mdozd dang / 'bru dang longs spyod spel ba zhes bya'i gzungs/ 9 tshe thar gtong tshul/ 10 bgegs gtor/ 11 dga' ldan lha brgya ma/ 12 dpal ldan lha mo'i sgo nas maN+Dal bzhi ba byed tshul dgos 'dod kun 'byung / 13 mkhas grub khyung po rnal 'byor gyis mdzad pa'i dag byin rlabs bya tshul/ 14 'gong po dkar po'i gto/"@en , "History of Boudhanatha temple by Yolmo Terton Shakya Zangpo; other text also included."@en ;
+        :creator            bdr:CR3E424C6C9A66B5B2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1NLM2192 , bdr:W1NLM2192 ;
+        :workIsAbout        bdr:G00KG09762 .
+}

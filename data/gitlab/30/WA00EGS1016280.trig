@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1016280 {
+    bda:LG8F9597FEAB3566C4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-11-13T14:04:53.811Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG97AD0954083A252C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-22T19:32:26.291Z"^^xsd:dateTime ;
+        adm:logMessage      "reveiwed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDEAC5EB1988A119F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-11-13T19:07:54.531Z"^^xsd:dateTime ;
+        adm:logMessage      "first published"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00EGS1016280
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1016280 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "30/WA00EGS1016280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1016280 ;
+        adm:logEntry        bda:LG8F9597FEAB3566C4 , bda:LG97AD0954083A252C , bda:LGDEAC5EB1988A119F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA2FE29E49B52EE30
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAA9923460BE569CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1701 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW00EGS1016280
+        skos:altLabel       "a collection of mdos and related rituals"@en-x-mixed .
+
+    bdr:WA00EGS1016280
+        a                   :Work ;
+        skos:prefLabel      "mdos chog sna tshogs/"@bo-x-ewts , "a collection of mdos and related rituals"@en-x-mixed ;
+        :catalogInfo        "Collected ritual texts by Karma Chakme, founder of the Nedo branch of the Kamtsang Kagyu order, the Nyingma author Lekden Dudjom Dorje (1512- ?) and others. Reproduced from a collection of manuscripts from the library of Gyaton Amchi by Pema Lodro."@en ;
+        :creator            bdr:CRA2FE29E49B52EE30 , bdr:CRAA9923460BE569CF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW00EGS1016280 , bdr:W00EGS1016280 .
+}

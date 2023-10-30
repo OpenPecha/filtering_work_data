@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM186 {
+    bda:LG08763A474D51BDFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG7F3DCF0D84169EC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-07T12:25:45.759Z"^^xsd:dateTime ;
+        adm:logMessage      "New"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBB38FE4A389145D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-29T08:18:30.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCB71382898E9C97D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-20T16:44:14.449Z"^^xsd:dateTime ;
+        adm:logMessage      "Full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM186"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM186  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM186 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "12/WA1NLM186.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM186 ;
+        adm:logEntry        bda:LG08763A474D51BDFE , bda:LG7F3DCF0D84169EC1 , bda:LGBB38FE4A389145D9 , bda:LGCB71382898E9C97D , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM186  a        :Work ;
+        skos:prefLabel      "byang sems dang sngags kyi phyir bcos/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sadhana, rituals and liturgical texts"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM186 , bdr:MW1NLM186_113A5B , bdr:W1NLM186 .
+}

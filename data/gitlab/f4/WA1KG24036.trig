@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24036 {
+    bda:LG3B84F7A296122BE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-07T12:27:22.895Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA7E0BE98B5BE891
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-08T10:56:46.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFAF233C284966788
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA1KG24036  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24036 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f4/WA1KG24036.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24036 ;
+        adm:logEntry        bda:LG3B84F7A296122BE8 , bda:LGFA7E0BE98B5BE891 , bda:LGFAF233C284966788 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5801577C3B46F9A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24046 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC6C97998F4143786
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24047 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG24036  skos:altLabel  "看图猜一猜"@zh-hans .
+
+    bdr:WA1KG24036  a       :Work ;
+        skos:prefLabel      "ri mor bltas nas bsam blo gtong rgyu/"@bo-x-ewts , "看图猜一猜"@zh-hans ;
+        :catalogInfo        "An exercise textbook to develop the intellect by looking and guess the figures."@en ;
+        :creator            bdr:CR5801577C3B46F9A0 , bdr:CRC6C97998F4143786 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW1KG24036 , bdr:W1KG24036 .
+}

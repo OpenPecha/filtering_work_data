@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21694 {
+    bda:LGC8CB5E348A852A34
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-24T16:37:29.813Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE5A4535DAF1D21F8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-24T16:41:42.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE700E6B4C6E93B42
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA21694  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21694 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "29/WA21694.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21694 ;
+        adm:logEntry        bda:LGC8CB5E348A852A34 , bda:LGE5A4535DAF1D21F8 , bda:LGE700E6B4C6E93B42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE4EC27A6F1064913
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7309 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA21694  a          :Work ;
+        skos:altLabel       "rjes dran mchod sdong / khri gung thang bstan pa'i dbang phyug gzugs sku'i bkod pa chos dbyings su thim nas lo ngo gcig 'khor ba'i rjes dran du/"@bo-x-ewts ;
+        skos:prefLabel      "rjes dran mchod sdong /"@bo-x-ewts ;
+        :catalogInfo        "Collection of praise and commemoration writings on 1st death anniversary of Tri Gungthang Tenpai Wangchuk (1926-2000)."@en ;
+        :creator            bdr:CRE4EC27A6F1064913 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21694 , bdr:W21694 ;
+        :workIsAbout        bdr:P5591 , bdr:T349 .
+}

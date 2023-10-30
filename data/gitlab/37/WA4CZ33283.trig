@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ33283 {
+    bda:LGB0412969975BA160
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-04T16:18:26.115Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF0C411091FDD840E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-05T14:26:43.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF27ED61597B49EA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T14:24:46.811Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA4CZ33283  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ33283 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA4CZ33283.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ33283 ;
+        adm:logEntry        bda:LGB0412969975BA160 , bda:LGF0C411091FDD840E , bda:LGF27ED61597B49EA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAB16B6E5997C9FF9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P663 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ33283  a       :Work ;
+        skos:altLabel       "bka' rdzogs pa chen po dgongs 'dus 'gro ba kun grol gsang ba'i snying thig"@bo-x-ewts ;
+        skos:prefLabel      "dgongs 'dus 'gro ba kun grol/"@bo-x-ewts ;
+        :creator            bdr:CRAB16B6E5997C9FF9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW4CZ33283 , bdr:W4CZ33283 ;
+        :workIsAbout        bdr:T1712 .
+}

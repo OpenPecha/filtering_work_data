@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1501 {
+    bda:LG3FAC02521D15BB16
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGC94783854CD138E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-15T10:40:33.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEF2D109A6883DD9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T20:34:06.689Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P10671 to P4611"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1501"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1501  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1501 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "98/WA1NLM1501.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1501 ;
+        adm:logEntry        bda:LG3FAC02521D15BB16 , bda:LGC94783854CD138E8 , bda:LGEF2D109A6883DD9B , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14E3D7EA40FADD93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4611 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1501  a       :Work ;
+        skos:prefLabel      "rma bya chen mo las gsungs pa'i sha za chen mo sogs la gtor ma 'bul tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa spyan ras gzigs kyi tshogs 'khor dge legs char 'bebs/ 2 skyabs 'gro'i 'khrid yig 3 lha'i sku gzugs bzhengs pa'i sbyor dngos mjug gsum gyi dmigs rim bsdus don gyi lhan thabs phab bde lam bzang gsal ba'i sgron me/ 4 bar do'i 'phrang sgrol gyi gsol 'debs 'jigs skyob kyi dpa' bo rnam par dpa' bo'i rnam bshad pa sku gsum du bgrod pa'i gzhung lam/ 5 mkhan chen chos kyi rgyal po'i gsung 'bum las/ 'chi kham dang bar do'i chos bshad bde lam rab gsal/ 6 kha dog dkar dmar gyi rigs lam gtong tshul/ 7 bla ma mchod pa'i bshad lung zin bri rags bsdus 'di yang gtso bor bka' drin gsum ldan rdo rje 'chang gang gi bka' lung spyi bor bkod pa/"@bo-x-ewts , "Bali offering of pisacha accordig to the vinaya text of Maja chenmo by Dakpa Dargye; other text also included."@en ;
+        :creator            bdr:CR14E3D7EA40FADD93 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1501 , bdr:W1NLM1501 ;
+        :workIsAbout        bdr:T1219 , bdr:T2GS1146 .
+}

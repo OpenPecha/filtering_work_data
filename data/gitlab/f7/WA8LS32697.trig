@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32697 {
+    bda:LG1363B1E24DD679CB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T11:41:50.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG1E32C54C717773C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG6AABECD7677C1E73
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-08T11:41:26.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCDA0E33786294773
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T15:54:28.038Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32697  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32697 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f7/WA8LS32697.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32697 ;
+        adm:logEntry        bda:LG1363B1E24DD679CB , bda:LG1E32C54C717773C1 , bda:LG6AABECD7677C1E73 , bda:LGCDA0E33786294773 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32697  a       :Work ;
+        skos:prefLabel      "tshe dbang smon lam nor bu don 'dus rin chen phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Prayer of Tsewang Rigzin and mantra recitation of Welsey."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW8LS32697 , bdr:W8LS32697 ;
+        :workIsAbout        bdr:T1KG624 , bdr:T247 , bdr:T8LS15614 .
+}

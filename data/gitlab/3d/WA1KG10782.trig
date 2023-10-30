@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10782 {
+    bda:LG81E3FE78AC2C25F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-11-11T14:33:02.594Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8F54B065E20F654B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-11-11T14:33:26.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC7B7EE1654F12844
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-26T09:19:17.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG10782  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10782 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "3d/WA1KG10782.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10782 ;
+        adm:logEntry        bda:LG81E3FE78AC2C25F2 , bda:LG8F54B065E20F654B , bda:LGC7B7EE1654F12844 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR705120D1318E4981
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG10782  skos:altLabel  "collected liturgical writings of gter-bdag-gling-pa 'gyur-med-rdo-rje on the bka' ma dong sprugs and gter kha gong 'og, and other revelations of the past"@en .
+
+    bdr:WA1KG10782  a       :Work ;
+        skos:altLabel       "Collected liturgical writings of Gter-bdag-gliṅ-pa ʾGyur-med-rdo-rje on the Bkaʾ ma Na rag doṅ sprugs, the Gter kah Goṅ ʾOg, and other revelations of the past, presented according to the liturgical practices of Smin-grol-gliṅ Monastery."@en-x-mixed ;
+        skos:prefLabel      "bka' ma dong sprugs dang gter kha gong 'og gi cho ga'i skor/"@bo-x-ewts , "collected liturgical writings of gter-bdag-gling-pa 'gyur-med-rdo-rje on the bka' ma dong sprugs and gter kha gong 'og, and other revelations of the past"@en ;
+        :catalogInfo        "Collected liturgical writings by Terdak Lingpa Gyurme Dorje on the Kama Dongtruk and Terkha Gongok, and other revelations. Presented according to the liturgical practices at Mindroling Monastery."@en ;
+        :creator            bdr:CR705120D1318E4981 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 , bdr:T977 ;
+        :workHasInstance    bdr:MW1KG10782 , bdr:W1KG10782 ;
+        :workIsAbout        bdr:T466 .
+}

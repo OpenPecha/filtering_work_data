@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16567 {
+    bda:LG5B0057A2BD93E5E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-01T10:16:58.143Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6FA1807239C4C909
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-05T12:02:20.166Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by CN, KL, LS and KG"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7B345AAF171D2CFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-01T10:18:03.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16567  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16567 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c0/WA8LS16567.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16567 ;
+        adm:logEntry        bda:LG5B0057A2BD93E5E7 , bda:LG6FA1807239C4C909 , bda:LG7B345AAF171D2CFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00KG02677 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRC92922CF104AC317
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16567  a       :Work ;
+        skos:altLabel       "theg pa chen po'i man ngag gi bstan bcos yid bzhin mdzod kyi 'grel pa pad+ma dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "yid bzhin mdzod kyi 'grel pa pad+ma dkar po/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Yid Zhin Dzod, one of the seven philosophical masterpieces by Longchen Rabjampa Drime Ozer. Author signed as Tshultrim Lodro, composed at Pelden Lhundrup Ling near Pema Tsek hill. This work includes root text and also an instructional text by the same author"@en ;
+        :creator            bdr:CRC92922CF104AC317 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA12630 .
+}

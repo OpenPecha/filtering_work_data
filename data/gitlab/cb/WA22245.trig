@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22245 {
+    bda:LG02E82CCECE74972B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T11:46:48.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG3310FF163B6DE13D
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-01T11:35:09.425Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected the pub date"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4B05DF2D5330832E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBA14EA3077C97304
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-19T04:18:55.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL13"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LGFF4C362CEF2CF3E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22245  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22245 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "cb/WA22245.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22245 ;
+        adm:logEntry        bda:LG02E82CCECE74972B , bda:LG3310FF163B6DE13D , bda:LG4B05DF2D5330832E , bda:LGBA14EA3077C97304 , bda:LGFF4C362CEF2CF3E4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF82B12C453CCA3E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P840 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22245  skos:altLabel  "the life and works of 'khrul-zig nag-dban-tshe-rin"@en-x-mixed .
+
+    bdr:WA22245  a          :Work ;
+        skos:altLabel       "The life and works of ʾKhrul-źig Ṅag-dbaṅ-tshe-riṅ."@en-x-mixed ;
+        skos:prefLabel      "'khrul zhig ngag dbang tshe ring gi rnam thar dang gsung skor/"@bo-x-ewts , "the life and works of 'khrul-zig nag-dban-tshe-rin"@en-x-mixed ;
+        :catalogInfo        "Biography of a Buddhist teacher from Zangskar."@en ;
+        :creator            bdr:CRF82B12C453CCA3E5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 , bdr:T3 ;
+        :workHasInstance    bdr:MW22245 , bdr:W22245 ;
+        :workIsAbout        bdr:P840 , bdr:T816 .
+}

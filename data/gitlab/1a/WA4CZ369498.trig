@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369498 {
+    bda:LG1CE36689793FDF26
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-21T10:30:48.826Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG29EA391B2A7E0AC6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T10:06:04.363Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF662F20807E82F48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-21T10:04:49.922Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369498  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369498 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1a/WA4CZ369498.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369498 ;
+        adm:logEntry        bda:LG1CE36689793FDF26 , bda:LG29EA391B2A7E0AC6 , bda:LGF662F20807E82F48 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAFF76060A8947B5E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2596 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369498  a      :Work ;
+        skos:altLabel       "dgon gnas stag brag bsam gtan gling du rab tu gnas pa'i cho ga dge legs rgya mtsho'i char 'bebs dpal ldan smad rgyud pa'i phyag bzhes ltar mdzad rgyu nag 'gros su bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "stag brag bsam gtan gling du rab tu gnas pa'i cho ga dge legs rgya mtsho'i char 'bebs dpal ldan smad rgyud pa'i phyag bzhes ltar mdzad rgyu nag 'gros su bkod pa/"@bo-x-ewts ;
+        :catalogInfo        "The collected ritual consecration text of Tadrak Samten Ling monastery near Lhasa"@en ;
+        :creator            bdr:CRAFF76060A8947B5E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T1081 ;
+        :workHasInstance    bdr:MW4CZ369498 , bdr:W4CZ369498 .
+}

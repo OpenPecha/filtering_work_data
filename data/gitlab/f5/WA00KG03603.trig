@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG03603 {
+    bda:LG78AD7AD9032D9E45
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-10-02T10:52:38.308Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG83A54C5CBCE07509
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-10-25T16:44:31.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD38DD2C143FA8396
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-02T14:36:14.657Z"^^xsd:dateTime ;
+        adm:logMessage      "changed onhold to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00KG03603  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG03603 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f5/WA00KG03603.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG03603 ;
+        adm:logEntry        bda:LG78AD7AD9032D9E45 , bda:LG83A54C5CBCE07509 , bda:LGD38DD2C143FA8396 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDA4BF4422659E9D1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG03602 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00KG03603  a      :Work ;
+        skos:altLabel       "rtsod bral dus babs kyi sprul pa'i gter ston chen po 'jigs bral sbas pa'i rdo rje'i dgongs gter gyi chos tshan phyogs bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "gter ston 'jigs bral sbas pa'i rdo rje'i dgongs gter/"@bo-x-ewts ;
+        :catalogInfo        "Collection of a revelation directly within the mind of Terton Orgyen Sherab (b. 1930)."@en ;
+        :creator            bdr:CRDA4BF4422659E9D1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T2604 ;
+        :workHasInstance    bdr:MW00KG03603 , bdr:W00KG03603 .
+}

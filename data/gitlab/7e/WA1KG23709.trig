@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23709 {
+    bda:LG1176FA9663F45CDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-09T13:12:25.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2EC496EC69C9DC59
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-08T11:13:27.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5D7EB0783144746D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-08T11:01:04.787Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23709  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23709 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7e/WA1KG23709.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23709 ;
+        adm:logEntry        bda:LG1176FA9663F45CDB , bda:LG2EC496EC69C9DC59 , bda:LG5D7EB0783144746D , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG23709  a       :Work ;
+        skos:altLabel       "sdom pa gsum gyi rnam par bzhag pa thub bstan byi dor/ sdom gsum bslab bya'i sdom tshig dang/ sdom gsum dran shes bsten tshul bcas/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb lnga bcu nga gcig"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on the three vows: the presentation of the three vows; concise summary of instruction of three levels of ordination; how to rely on the mindfulness of the three vows."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1KG23709 , bdr:W1KG23709 ;
+        :workIsAbout        bdr:T1900 , bdr:T201 .
+}

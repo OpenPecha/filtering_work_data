@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17706 {
+    bda:LG6A8F2DE7F130832D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-03T12:50:13.427Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB9028390A2BC0B66
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-03T12:51:32.956Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC51CA2560CF27A22
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN17706  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17706 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "75/WA3CN17706.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17706 ;
+        adm:logEntry        bda:LG6A8F2DE7F130832D , bda:LGB9028390A2BC0B66 , bda:LGC51CA2560CF27A22 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE77101550CB5C0D1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17706  a       :Work ;
+        skos:altLabel       "paN+Di ta chen po pra ti dge bshes rin chen don grub kyis mdzad pa'i sum rtags dgongs 'grel sogs/"@bo-x-ewts ;
+        skos:prefLabel      "pra ti'i sum rtags dgongs 'grel sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed exegesis works on the Tibetan grammars, the sum cu pa and rtags kyi 'jug pa of Thonmi Sambhota by Trati Rinchen Dondrup."@en ;
+        :creator            bdr:CRE77101550CB5C0D1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN17706 , bdr:W3CN17706 ;
+        :workIsAbout        bdr:T186 .
+}

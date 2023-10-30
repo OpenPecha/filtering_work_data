@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ333396 {
+    bda:LG7D1A9424A1559F40
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-31T12:17:50.339Z"^^xsd:dateTime ;
+        adm:logMessage      "checked"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD2F0E9B807BD0AC9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-31T12:27:46.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ333396  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ333396 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ae/WA4CZ333396.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ333396 ;
+        adm:logEntry        bda:LG7D1A9424A1559F40 , bda:LGD2F0E9B807BD0AC9 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBE38CA534452DECB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18567 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ333396  a      :Work ;
+        skos:altLabel       "paN chen dgu pa chos kyi nyi ma me glang lor bod dbus su phebs skabs kyi gnas tshul/"@bo-x-ewts ;
+        skos:prefLabel      "paN chen chos kyi nyi ma me glang lor bod dbus su phebs skabs kyi gnas tshul/"@bo-x-ewts ;
+        :catalogInfo        "1937 The Panchen Lama 09 th travelled to the central Tibet."@en ;
+        :creator            bdr:CRBE38CA534452DECB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ333396 , bdr:W4CZ333396 ;
+        :workIsAbout        bdr:P215 .
+}

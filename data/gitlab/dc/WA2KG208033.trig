@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208033 {
+    bda:LG5960BAD03C10D595
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-23T12:33:39.348Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG94BA210D3FBC39BF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-23T12:44:34.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC9BF3C46D1F815D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2KG208033  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208033 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dc/WA2KG208033.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208033 ;
+        adm:logEntry        bda:LG5960BAD03C10D595 , bda:LG94BA210D3FBC39BF , bda:LGC9BF3C46D1F815D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5E9BC4A223CFE810
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9266 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208033  a      :Work ;
+        skos:prefLabel      "zhang zhung shes rig skor gyi dpyad brjod bya ru'i gzi byin/"@bo-x-ewts ;
+        :catalogInfo        "Analysis writings on science and Bon tradition."@en ;
+        :creator            bdr:CR5E9BC4A223CFE810 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW2KG208033 , bdr:W2KG208033 ;
+        :workIsAbout        bdr:T229 , bdr:T247 .
+}

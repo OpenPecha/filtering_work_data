@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77716 {
+    bda:LG3AB5488C035110BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-08T13:42:29.78Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDFBB4DDDD8EFB6C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-08T13:43:19.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77716  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77716 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "68/WA8LS77716.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77716 ;
+        adm:logEntry        bda:LG3AB5488C035110BC , bda:LGDFBB4DDDD8EFB6C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6EDC5DAD7A9C27DA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77716  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po klong chen snying tig gi sngon 'gro'i khrid yig kun bzang bla ma'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "kun bzang bla ma'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual of the preliminary practices of great perfection Longchen Nyinthik by Za Patrul Ogyan Chokyi Wangpo."@en ;
+        :creator            bdr:CR6EDC5DAD7A9C27DA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS77716 , bdr:W8LS77716 ;
+        :workIsAbout        bdr:T179 , bdr:T354 , bdr:WA3JT13393 .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18564 {
+    bda:LG31F4335D7611B53B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-10-24T12:19:44.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6BB87119F875289F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGA1B90A894AD635F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-24T12:19:13.571Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG18564  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18564 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b6/WA1KG18564.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18564 ;
+        adm:logEntry        bda:LG31F4335D7611B53B , bda:LG6BB87119F875289F , bda:LGA1B90A894AD635F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG18564  skos:altLabel  "八大藏戏汇编"@zh-hans .
+
+    bdr:WA1KG18564  a       :Work ;
+        skos:altLabel       "bod kyi lha mo'i zlos gar gyi 'khrab gzhung phyogs bsgrigs kun phan bdud rtsi'i char 'bebs/"@bo-x-ewts , "ba da zang xi hui bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi lha mo'i 'khrab gzhung /"@bo-x-ewts , "八大藏戏汇编"@zh-hans ;
+        :catalogInfo        "Collection of scripts on anthology of plays on Tibetan legendary figures."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1KG18564 , bdr:W1KG18564 ;
+        :workIsAbout        bdr:T256 .
+}

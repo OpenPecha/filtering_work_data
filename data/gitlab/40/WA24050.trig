@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24050 {
+    bda:LGA61FAAD79E8FDFD8
+        a                   adm:InitialDataCreation .
+
+    bda:LGFCF5E082531C97DD
+        a                   adm:UpdateData .
+
+    bda:W24050  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W24050 ;
+        adm:replaceWith     bdr:WA24050 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA24050  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24050 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "40/WA24050.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24050 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3849246E5B167C74
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT28AE42EDEEDE454C
+        a                   :Note ;
+        :noteText           "created conceptual work"@en .
+
+    bdr:WA24050  a          :Work ;
+        skos:altLabel       "rdzogs pa chen po klong chen snying tig gi gdod ma'i mgon po'i lam gi rim pa'i khrid yig ye shes bla ma/"@bo-x-ewts ;
+        skos:prefLabel      "khrid yig ye shes bla ma/"@bo-x-ewts ;
+        :creator            bdr:CR3849246E5B167C74 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT28AE42EDEEDE454C .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3892 {
+    bda:LG53937276EBF7E369
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-08T08:16:25.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3892"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3892  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3892 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8c/WA1NLM3892.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3892 ;
+        adm:logEntry        bda:LG53937276EBF7E369 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3E311272039712B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3892  a       :Work ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gros 'debs snying gi thur ma/ 2 bzang spyod 'chi bslu byed tshul go bde klag chog tu bkod pa/ 3 bla mchod rgyas pa'i 'don cha/ 4 rgyal ba lha chen dbud grogs lha bu/ 5 byams pa'i cho ga'i go rim/ 6 'das mchod go rim/ 7 rnam bstus 'don cha go rim/ 8 dga' ldan phun tshogs gling gi tshogs kyi 'don cha'i dgu'i gtor skabs la dbus mdzad rnams kyis nyer bzhi'i las bzung ste rol mo dbyangs gdangs dang bcas pa'i go rim/ 9 sman bla chen mo'i go rim/ 10 'jig rten mchod bstod zhi rgya ba/ 11 snang srid sde dpon bstan bsrung bse'i khrab can la mchod gtor 'bul tshul dgos 'dod char 'bebs/ 12 dpal dus kyi 'khor lo'i zhi ba'i sbyin sreg gi cho ga rnam rgyal grwa tshang du dus 'khor cho ga gra ba'i 'don bsgrigs bzhin bkod pa/ 13 phar phyin ston mo'i go rim/ 14 rdzas rnams kyi sbyor sde/"@bo-x-ewts , "Ritual text for guru yoga offering by Panchen Losang Chokyi Gyaltshen."@en ;
+        :creator            bdr:CR3E311272039712B6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3892 , bdr:W1NLM3892 ;
+        :workIsAbout        bdr:T138 .
+}

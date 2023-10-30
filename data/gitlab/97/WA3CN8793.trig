@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN8793 {
+    bda:LG06850FA03BB71140
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-18T16:12:21.301Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG84650BC8AB777C7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-18T16:14:44.954Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN8793  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN8793 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/WA3CN8793.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN8793 ;
+        adm:logEntry        bda:LG06850FA03BB71140 , bda:LG84650BC8AB777C7F , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0097AADDC1E70E28
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG10060 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA3CN8793  a        :Work ;
+        skos:prefLabel      "bdag nyid chen po gna d+hi'i rtogs brjod skye rgu'i snying nor dang / gsung las gces bsdus bden nyid 'od snang bcas/"@bo-x-ewts ;
+        :catalogInfo        "Jewel of Humanity, life of Mahatma Gandhi and Light of Truth, his teachings, Rendered Tibetan Prose and Verse. by Lobsang Phuntshok Lhalungpa"@en ;
+        :creator            bdr:CR0097AADDC1E70E28 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 ;
+        :workHasInstance    bdr:MW3CN8793 , bdr:W3CN8793 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

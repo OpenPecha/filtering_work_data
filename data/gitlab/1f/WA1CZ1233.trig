@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1233 {
+    bda:LG1799F9B434D6E22E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG4725A0135A7BDDB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T12:10:58.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG641DE0E59470284C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-07-13T14:08:06.439Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB05A15B5E4F5D1A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-24T15:09:25.431Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEA9E66D560171593
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-15T12:37:05.246Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF178480D17062536
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-13T14:05:51.283Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA1CZ1233  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1233 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1f/WA1CZ1233.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1233 ;
+        adm:logEntry        bda:LG1799F9B434D6E22E , bda:LG4725A0135A7BDDB9 , bda:LG641DE0E59470284C , bda:LGB05A15B5E4F5D1A6 , bda:LGEA9E66D560171593 , bda:LGF178480D17062536 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9E0AC93058E181B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1048 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1233  a        :Work ;
+        skos:altLabel       "parnasabari'i gzungs chog rgyas pa/"@bo-x-ewts ;
+        skos:prefLabel      "ri khrod lo ma can gyi sgrub thabs gzungs chog dang bcas pa/"@bo-x-ewts ;
+        :creator            bdr:CR9E0AC93058E181B0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW00EGS1017151_46AB5F , bdr:MW1CZ1233 , bdr:MW2DB4571_2968DA , bdr:W1CZ1233 ;
+        :workIsAbout        bdr:T1GS148157 , bdr:T704 .
+}

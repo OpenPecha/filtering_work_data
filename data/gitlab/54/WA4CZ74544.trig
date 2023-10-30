@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ74544 {
+    bda:LG4C0AB116A4A4DDA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T15:14:56.108Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8208330DB0824C23
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:40:44.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA4CZ74544  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ74544 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "54/WA4CZ74544.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ74544 ;
+        adm:logEntry        bda:LG4C0AB116A4A4DDA7 , bda:LG8208330DB0824C23 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6953F80DD2048679
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAFDE6EB08A645DF1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ74544  a       :Work ;
+        skos:altLabel       "bde mchog bsdus pa'i rgyud kyi rgya cher bshad pa sbas pa'i don kun gsal ba/"@bo-x-ewts ;
+        skos:prefLabel      "sa lam gyi rnam gzhag mkhas pa'i yid 'phrog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1. Explanation of the ten stages (Dasabhumi) and the five Approaches (Pancamarga) 2. Commentary on the Laghusamvara Tantra. 3.Ten summary notes of Tsongkha pa's teachings and special methods on the sadhana of various anuttarayoga tantras 4. Explanation of the pancakrama, the guhyasamaja completion stage, based on the pancakramasamgrahaprakasa, and the works of Serdingpa and Buton RInchendrub. 5. Summary of Tsongkhapa's detailed statement on the consecration ceremonies (Pratisthavidhi); written by 'dul 'dzin grags pa rgyal mtshan"@en ;
+        :creator            bdr:CR6953F80DD2048679 , bdr:CRAFDE6EB08A645DF1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T1029 , bdr:T61 ;
+        :workHasInstance    bdr:MW4CZ74544 , bdr:W4CZ74544 ;
+        :workIsAbout        bdr:T1091 , bdr:T423 .
+}

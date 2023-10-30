@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19921 {
+    bda:LG1F0FE7DA9E21620A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T12:35:29.63Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6D33F0F3640F3977
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-29T09:57:27.359Z"^^xsd:dateTime ;
+        adm:logMessage      "author changed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCE6F48D6490CAE78
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-24T09:13:44.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFF9ABF961013191B
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-10-09T14:15:18.008Z"^^xsd:dateTime ;
+        adm:logMessage      "changed CW to W4CZ16796"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19921  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19921 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9a/WA8LS19921.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19921 ;
+        adm:logEntry        bda:LG1F0FE7DA9E21620A , bda:LG6D33F0F3640F3977 , bda:LGCE6F48D6490CAE78 , bda:LGFF9ABF961013191B , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCF307CED0693A41F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P961 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19921  a       :Work ;
+        skos:altLabel       "'phags pa bzang po spyod pa'i tshig don gyi 'grel pa legs bshad kun las btus pa/"@bo-x-ewts ;
+        skos:prefLabel      "bzang po spyod pa'i tshig don gyi 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A word to word commentary of Aryabhadrakalpanamasutra by Tashi Rinchen Drakpa Gyaltsen, a student of Jamyang Khyentse Wangpo."@en ;
+        :creator            bdr:CRCF307CED0693A41F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW8LS19921 , bdr:W8LS19921 ;
+        :workIsAbout        bdr:WA4CZ16796 .
+}

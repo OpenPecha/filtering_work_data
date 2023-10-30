@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76353 {
+    bda:LG2F28D2167B2C31AA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-26T09:14:15.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG46AA7ABBDC270B0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-26T09:13:21.86Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76353  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76353 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "91/WA8LS76353.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76353 ;
+        adm:logEntry        bda:LG2F28D2167B2C31AA , bda:LG46AA7ABBDC270B0C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9A8BC265AD0C7E03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1685 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76353  a       :Work ;
+        skos:altLabel       "grub dbang bstan 'dzin rin chen gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ grub dbang bstan 'dzin rin chen/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Drupwang Tenzin Rinchen."@en ;
+        :creator            bdr:CR9A8BC265AD0C7E03 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS76353 , bdr:W8LS76353 ;
+        :workIsAbout        bdr:P1685 , bdr:T247 .
+}

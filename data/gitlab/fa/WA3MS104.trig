@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3MS104 {
+    bda:LG170CA3201F3C7C2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-24T16:34:49.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG18C4226ADB02B35D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG33C15DA7F787AD9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T11:55:25.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added cataloge info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG345AFD04A2500D86
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-12T14:19:29.996Z"^^xsd:dateTime ;
+        adm:logMessage      "realeased"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3MS104  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3MS104 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fa/WA3MS104.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3MS104 ;
+        adm:logEntry        bda:LG170CA3201F3C7C2D , bda:LG18C4226ADB02B35D , bda:LG33C15DA7F787AD9B , bda:LG345AFD04A2500D86 , bda:LGIM095CC38C9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3MS104  a         :Work ;
+        skos:altLabel       "reb gong chu ma'i sngags mang du bzhugs pa'i dpe rnying skor/"@bo-x-ewts ;
+        skos:prefLabel      "chu ma'i sngags mang du bzhugs pa'i dpe rnying skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Ngakmang monastery at Chuma village of Rebkong."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW3MS104 , bdr:W3MS104 .
+}

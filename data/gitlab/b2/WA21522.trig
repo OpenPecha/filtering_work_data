@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21522 {
+    bda:LG14282EEE676F4CAA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21522  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21522 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b2/WA21522.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21522 ;
+        adm:logEntry        bda:LG14282EEE676F4CAA , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:WA21522  a          :Work ;
+        skos:altLabel       "bka' ma dong sprugs bshags rgyud/"@bo-x-ewts , "dam tshig thams cad kyi nyams chag skong ba'i lung bshags pa thams cad kyi rgyud dri ma med pa'i rgyal po/"@bo-x-ewts ;
+        skos:prefLabel      "dri med bshags rgyud/"@bo-x-ewts , "Dam tshig thams cad kyi ñams chag skoṅ baʾi luṅ :bśags pa thams cad kyi rgyud Dri ma med paʾi rgyal po źes bya ba bźugs so."@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21522 ;
+        :workIsAbout        bdr:T337 .
+}

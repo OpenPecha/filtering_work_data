@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS35850 {
+    bda:LG2CF663B7754F9868
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-03T09:03:30.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG647915D6D90CDEDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T14:25:57.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG65011AB6ED00DE90
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-03T09:01:55.524Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6D23E4013B60D733
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS35850  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS35850 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e2/WA8LS35850.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS35850 ;
+        adm:logEntry        bda:LG2CF663B7754F9868 , bda:LG647915D6D90CDEDC , bda:LG65011AB6ED00DE90 , bda:LG6D23E4013B60D733 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC086C670AC9EAF2F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75369 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS35850  a       :Work ;
+        skos:altLabel       "gter chen stag sham sku phreng rim byon gyi rnam thar dang sku phreng brgyad pa 'ja' lus rdo rje mchog yang srid ngos 'dzin ji ltar zhus pa'i tshul/"@bo-x-ewts ;
+        skos:prefLabel      "gter chen stag sham sku phreng rim byon gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "A successive biography of Taksham lineage and recognition of the eighth Taksham Jalu Dorje by Terger Khenpo Kunga Trinley."@en ;
+        :creator            bdr:CRC086C670AC9EAF2F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS35850 , bdr:W8LS35850 ;
+        :workIsAbout        bdr:P663 , bdr:T2331 .
+}

@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15508 {
+    bda:LG6DE99047C06424C0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-16T14:51:58.41Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG15508  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15508 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "35/WA1KG15508.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15508 ;
+        adm:logEntry        bda:LG6DE99047C06424C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG15508  skos:altLabel  "lo tsa gling"@en , "藏译林"@zh-hans .
+
+    bdr:WA1KG15508  a       :Work ;
+        skos:altLabel       "zang yi lin"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lo tsA gling / (dus deb/)"@bo-x-ewts , "lo tsa gling"@en , "藏译林"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW1KG15508 .
+}

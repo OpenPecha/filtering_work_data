@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG230146 {
+    bda:LG46EF8CAC1A9D9BA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-12-14T09:25:50.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC664A5A8CB37E984
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-12-14T09:21:03.973Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG230146  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG230146 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b4/WA2KG230146.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG230146 ;
+        adm:logEntry        bda:LG46EF8CAC1A9D9BA7 , bda:LGC664A5A8CB37E984 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR12C6E7D6CF22A6FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG230146  a      :Work ;
+        skos:altLabel       "man ngag zab mo kun gyi snying khu bsdus pa dar mo sman rams pa'i gdams ngag bka' rgya ma/"@bo-x-ewts ;
+        skos:prefLabel      "dar mo sman rams pa'i gdams ngag bka' rgya ma/"@bo-x-ewts ;
+        :catalogInfo        "Collection of profound instructions on the methods and rituals of Tibetan healing transmitted by the physician of the at the 5th Dalai Lama, Darmo Manrampa Lozang Chodrak."@en ;
+        :creator            bdr:CR12C6E7D6CF22A6FD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW2KG230146 , bdr:W2KG230146 ;
+        :workIsAbout        bdr:T2MS13793 , bdr:T94 .
+}

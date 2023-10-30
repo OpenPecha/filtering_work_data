@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM894 {
+    bda:LG922CA57F4AB28147
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG9F61FDA241DEB8EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-16T12:15:59.678Z"^^xsd:dateTime ;
+        adm:logMessage      "released for  outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD442BCF15CEE68AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T14:32:34.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM894"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM894  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM894 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b6/WA1NLM894.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM894 ;
+        adm:logEntry        bda:LG922CA57F4AB28147 , bda:LG9F61FDA241DEB8EE , bda:LGD442BCF15CEE68AA , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3C7A2433C5801FC3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1550 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE66FF7DAB898E15B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM894  a        :Work ;
+        skos:altLabel       "thal bzlog gi dka' ba'i gnas gtan la 'bebs pa 'jam pa'i dbyangs sgom sde nam mkha' rgyal mtshan gyis mdzad pa'i tshig gsal gyi lde mig sogs/"@bo-x-ewts ;
+        skos:prefLabel      "thal bzlog gi dka' ba'i gnas gtan la 'bebs pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of contradictions and consequences by Gomde Namkha Gyaltsan and Anthology of Tibetan letter writings to different notable officials and individuals by Jamyang Shepa Ngawang Tsondrue and other related texs."@en ;
+        :creator            bdr:CR3C7A2433C5801FC3 , bdr:CRE66FF7DAB898E15B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T221 ;
+        :workHasInstance    bdr:MW1NLM894 , bdr:W1NLM894 ;
+        :workIsAbout        bdr:T2344 .
+}

@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2766 {
+    bda:LG1FF0F8B1E16AAF22
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2766  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2766 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8f/WA2766.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2766 ;
+        adm:logEntry        bda:LG1FF0F8B1E16AAF22 , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR76CAB1A52EABFCB1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2766  a           :Work ;
+        skos:altLabel       "bka' blon mdo mkhar bar gnang ba'i chab shog le tshan gnyis/"@bo-x-ewts ;
+        skos:prefLabel      "mdo mkhar bar gnang ba'i chab shog le tshan gnyis/"@bo-x-ewts ;
+        :creator            bdr:CR76CAB1A52EABFCB1 ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW2766 .
+}

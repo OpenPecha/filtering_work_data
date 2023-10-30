@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368796 {
+    bda:LG2EA235E48A931B93
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T10:10:04.862Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG71845F46CEE60A81
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:03:17.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBBC4719025EB2326
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:45.977Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368796  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368796 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1d/WA4CZ368796.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368796 ;
+        adm:logEntry        bda:LG2EA235E48A931B93 , bda:LG71845F46CEE60A81 , bda:LGBBC4719025EB2326 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ368796  a      :Work ;
+        skos:prefLabel      "bod kyi rtsom pa po'i mthun tshogs kyi zhib 'jug deb phreng / (gnyis pa/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of research articles on Tibetan politics."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
+        :workHasInstance    bdr:MW4CZ368796 , bdr:W4CZ368796 ;
+        :workIsAbout        bdr:T2622 .
+}

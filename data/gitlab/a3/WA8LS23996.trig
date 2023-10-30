@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS23996 {
+    bda:LG423676EBAD26A9D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T12:05:44.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG927A9DCA104E4CE5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-14T11:50:45.11Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG99F4D20D4068E125
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-14T11:49:24.45Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS23996  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS23996 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a3/WA8LS23996.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS23996 ;
+        adm:logEntry        bda:LG423676EBAD26A9D6 , bda:LG927A9DCA104E4CE5 , bda:LG99F4D20D4068E125 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1EDE1002DB154785
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75342 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS23996  a       :Work ;
+        skos:prefLabel      "gzhon pa'i lang tsho/"@bo-x-ewts ;
+        :catalogInfo        "A poetry collection of Tshultrim Norbu."@en ;
+        :creator            bdr:CR1EDE1002DB154785 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW8LS23996 , bdr:W8LS23996 ;
+        :workIsAbout        bdr:T281 .
+}

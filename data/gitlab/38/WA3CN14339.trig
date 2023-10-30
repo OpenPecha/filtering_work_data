@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14339 {
+    bda:LG490F8CC213BA0BA3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-29T15:23:10.289Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5310E29049CC04D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG9900DDB1D98F1CB9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-29T15:25:06.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN14339  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14339 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA3CN14339.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14339 ;
+        adm:logEntry        bda:LG490F8CC213BA0BA3 , bda:LG5310E29049CC04D6 , bda:LG9900DDB1D98F1CB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR11381F0E740099BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P564 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN14339  a       :Work ;
+        skos:altLabel       "o rgyan gu ru pad+ma 'byung gnas la gsol ba 'debs pa gu ru nyid kkyi zhal lung le'u bdun pa bar chad lam sel rje 'bangs nyer lnga gter ston brgya rtsa'i gsol 'debs smon lam/"@bo-x-ewts ;
+        skos:prefLabel      "gsol 'debs le'u bdun pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The famous Seven Chapters and various supplications to Padmasambhava, discovered by Terton Chokgyur Lingpa and edited by Lodro Taye."@en ;
+        :creator            bdr:CR11381F0E740099BB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW3CN14339 , bdr:W3CN14339 ;
+        :workIsAbout        bdr:T449 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21710 {
+    bda:LGC654FDE4A3B0EE96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF6D13CBE557B31CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T20:51:33.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFA5396CAC07AC15A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T19:17:23.982Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21710  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21710 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/WA3CN21710.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21710 ;
+        adm:logEntry        bda:LGC654FDE4A3B0EE96 , bda:LGF6D13CBE557B31CA , bda:LGFA5396CAC07AC15A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3CN21710  skos:altLabel  "破晓"@zh-hans .
+
+    bdr:WA3CN21710  a       :Work ;
+        skos:altLabel       "me 'od kyi snyan ngag gces btus/"@bo-x-ewts ;
+        skos:prefLabel      "sprin pa thed po/"@bo-x-ewts , "破晓"@zh-hans ;
+        :catalogInfo        "A ragged cloud, a personal collection of modern poetics by Meoid."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21710 , bdr:W3CN21710 ;
+        :workIsAbout        bdr:T204 .
+}

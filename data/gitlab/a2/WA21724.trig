@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21724 {
+    bda:LG2FECC84EA375CC56
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG3339E0AD956D90F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-24T12:25:47.179Z"^^xsd:dateTime ;
+        adm:logMessage      "scanned compeleted"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4E8D629300AAC9DE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-05-29T12:57:13.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG85AC62A4034F3C17
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T12:42:10.574Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGB5AF59F9524EF84B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-30T16:47:57.563Z"^^xsd:dateTime ;
+        adm:logMessage      "selected p5011 in favor of p7325"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBF0B0952E1C012B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-21T16:04:16.201Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21724  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21724 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a2/WA21724.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21724 ;
+        adm:logEntry        bda:LG2FECC84EA375CC56 , bda:LG3339E0AD956D90F3 , bda:LG4E8D629300AAC9DE , bda:LG85AC62A4034F3C17 , bda:LGB5AF59F9524EF84B , bda:LGBF0B0952E1C012B1 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1856A8B8795A6A11
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2562 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21724  skos:altLabel  "the biography of maha paN+Di ta vimalamitra"@en .
+
+    bdr:WA21724  a          :Work ;
+        skos:prefLabel      "paN chen dri med bshes gnyen gyi rnam thar/"@bo-x-ewts , "the biography of maha paN+Di ta vimalamitra"@en ;
+        :creator            bdr:CR1856A8B8795A6A11 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW21724 , bdr:W21724 ;
+        :workIsAbout        bdr:P5011 .
+}

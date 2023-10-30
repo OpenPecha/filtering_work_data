@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18235 {
+    bda:LG154FB3CFE39C901B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-14T09:11:21.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG87558A4C8886E398
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T11:16:21.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9861C8C8A80551A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGA6903BAA3DECDC53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-14T09:10:03.535Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC9474CB5058848D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T15:18:24.254Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS18235  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18235 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "de/WA8LS18235.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18235 ;
+        adm:logEntry        bda:LG154FB3CFE39C901B , bda:LG87558A4C8886E398 , bda:LG9861C8C8A80551A1 , bda:LGA6903BAA3DECDC53 , bda:LGC9474CB5058848D6 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREE2AA19D3DBCFA58
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG25930 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18235  a       :Work ;
+        skos:prefLabel      "snyan ngag me long las 'phros pa'i gtam/"@bo-x-ewts ;
+        :catalogInfo        "LIterary criticism of Kavyadarsha by Joleb Chophel."@en ;
+        :creator            bdr:CREE2AA19D3DBCFA58 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS18235 , bdr:W8LS18235 ;
+        :workIsAbout        bdr:T204 , bdr:T299 , bdr:WA22919 .
+}

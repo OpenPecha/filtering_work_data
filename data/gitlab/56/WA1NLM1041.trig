@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1041 {
+    bda:LG055B7FE0E98114EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-21T16:53:16.514Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG64B9E0349E9EA3B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGEA711E9F58ACD75D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T13:54:54.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1041"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1041  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1041 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "56/WA1NLM1041.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1041 ;
+        adm:logEntry        bda:LG055B7FE0E98114EE , bda:LG64B9E0349E9EA3B8 , bda:LGEA711E9F58ACD75D , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1041  a       :Work ;
+        skos:prefLabel      "rigs lam rnam bzhag blo gsal sgo 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the method of reasoning, the typology of mind and reasons. The author's name is not written in the text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM1041 , bdr:W1NLM1041 ;
+        :workIsAbout        bdr:T1235 , bdr:T1420 .
+}

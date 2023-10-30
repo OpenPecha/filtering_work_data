@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD20786 {
+    bda:LG9F80218A23134E97
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-11T05:47:11.344Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB32A82AC313F22FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-25T11:29:17.457Z"^^xsd:dateTime ;
+        adm:logMessage      "changed topic T10MS11134 to T448"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBB7029077F18F178
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-13T21:30:25.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGD93C6631F251E38C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2PD20786  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD20786 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "73/WA2PD20786.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD20786 ;
+        adm:logEntry        bda:LG9F80218A23134E97 , bda:LGB32A82AC313F22FE , bda:LGBB7029077F18F178 , bda:LGD93C6631F251E38C , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3EABFAEEE1FA82E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15108 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2PD20786  a       :Work ;
+        skos:altLabel       "bka' gsang thugs thig mkha' 'gro dgongs pa 'dus pa lasHrta mgrin gsang ba'i 'khor lo'i sgrub thabs/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang ba'i 'khor lo'i sgrub thabs/"@bo-x-ewts ;
+        :creator            bdr:CR3EABFAEEE1FA82E0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T448 ;
+        :workHasInstance    bdr:MW2PD20786 , bdr:W2PD20786 ;
+        :workIsAbout        bdr:T2044 .
+}

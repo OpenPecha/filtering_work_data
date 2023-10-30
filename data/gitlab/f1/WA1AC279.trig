@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC279 {
+    bda:LG14C913B67D8A1318
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:53.336Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2A6200817EAB715E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T22:25:25.789Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG714702943D414050
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T20:33:44.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG7B9080BDCF8F18EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-16T20:13:14.685Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1PD96326 to T260"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE18CE2B951699BDD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-04T14:23:19.558Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGE5A8BFDD27959F09
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC279  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC279 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f1/WA1AC279.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC279 ;
+        adm:logEntry        bda:LG14C913B67D8A1318 , bda:LG2A6200817EAB715E , bda:LG714702943D414050 , bda:LG7B9080BDCF8F18EC , bda:LGE18CE2B951699BDD , bda:LGE5A8BFDD27959F09 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1AC279  a         :Work ;
+        skos:altLabel       "dong wu gu shi juan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byis sgrung blo rig sgo 'byed/"@bo-x-ewts , "动物故事卷"@zh-hans ;
+        :catalogInfo        "A children's story book"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW1AC279 , bdr:W1AC279 .
+}

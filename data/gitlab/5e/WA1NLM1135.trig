@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1135 {
+    bda:LG28F046D316318D01
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-19T09:46:51.763Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF04B914C8278C32E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1135"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1135  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1135 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5e/WA1NLM1135.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1135 ;
+        adm:logEntry        bda:LG28F046D316318D01 , bda:LGF04B914C8278C32E , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR10F10F5C9A73CBF2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4820 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1135  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed zab lam rim pa gnyis pa rdzogs rim sku gsum them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi zhi rgyas kyi sbyin sreg gi ngag 'don/ 2 khro bcu'i srung 'khor rdo rje'i go khrab ngar ma'i rno mtshon dang bcas pa/ 3 legs par bshad pa shing gi bstan bcos lugs gnyis yal 'dab brgyad ldan/ 3 bdud rtsi'i snying po yan lag brgyad dang ldan pa'i gsang ba man ngag gi rtsa brgyud kyi shing bzhengs pa'i gsal ba'i sgron me/ 4 badz+ra pA Ni bzlogs bsgyur dang gshegs gtor/"@en , "A completion stage of Vajrabairava by Goshri Choje Losang Dondrup; other text also included."@en ;
+        :creator            bdr:CR10F10F5C9A73CBF2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1135 , bdr:W1NLM1135 ;
+        :workIsAbout        bdr:T104 , bdr:T163 .
+}

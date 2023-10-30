@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2779 {
+    bda:LG0BDA7B03294C088F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-16T09:50:49.515Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG39E93BBE89E5DE4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2779"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2779  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2779 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "90/WA1NLM2779.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2779 ;
+        adm:logEntry        bda:LG0BDA7B03294C088F , bda:LG39E93BBE89E5DE4E , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF53AA03257239651
+        a                   :AgentAsCreator ;
+        :agent              bdr:P290 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2779  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Madhyamak and collection of rites and ritual texts concern with deities Glorious Army-Repulsing Queen"@en ;
+        :creator            bdr:CRF53AA03257239651 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T8 ;
+        :workHasInstance    bdr:MW1NLM2779 , bdr:W1NLM2779 ;
+        :workIsAbout        bdr:T401 .
+}

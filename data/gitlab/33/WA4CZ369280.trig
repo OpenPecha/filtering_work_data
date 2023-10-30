@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369280 {
+    bda:LGAA7A74DA74382529
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T14:49:14.839Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB24A38539E72AA34
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T12:01:01.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE85EDE37ECE73E41
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-02T14:33:10.592Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to R"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369280  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369280 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/WA4CZ369280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369280 ;
+        adm:logEntry        bda:LGAA7A74DA74382529 , bda:LGB24A38539E72AA34 , bda:LGE85EDE37ECE73E41 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC6F25B61D672DAB7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9236 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369280  a      :Work ;
+        skos:prefLabel      "gsung rtsom phyogs bsgrigs mu tig do shal/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings of a Drepung Tsogschen Tripa Tenpa Tenzin"@en ;
+        :creator            bdr:CRC6F25B61D672DAB7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW4CZ369280 , bdr:W4CZ369280 .
+}

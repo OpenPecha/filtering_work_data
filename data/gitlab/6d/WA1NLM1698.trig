@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1698 {
+    bda:LG1EF154123A4D8063
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T09:34:29.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG932E7298107F2CC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGCE1BD75FA77F3CF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:26:24.342Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1698"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1698  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1698 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6d/WA1NLM1698.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1698 ;
+        adm:logEntry        bda:LG1EF154123A4D8063 , bda:LG932E7298107F2CC5 , bda:LGCE1BD75FA77F3CF8 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1698  a       :Work ;
+        skos:prefLabel      "bsangs chog le'u brgyad pa rnam dag chos sku mar grags pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 zab mo rnal 'byor bsgom par 'dod pa/ 2 bgegs gtor gtong bar 'dod pas rang gi yi dam gang yin gyi nga rgyal kyi gtor ma/ 3 khyung nag spu gri bar ba'i byabs khrus/ bgegs gtor cho ga 4 'phags pa bzang spyod smon lam gyi bzlog bsgyur/ 5 dmig gdan nad gyi gos/ 6 par 'dos gsol 'debs/ 7 rta mgrin gsang sgrub kyi sgo nas dkar nag kha mchu gcod tshul rno ngar spu gri 8 bla ma ye shes mkha' 'gro ma seng+ge gdong can gyi bsangs ba/ 9 ltung bshags kyi sgo nas 'chi blu bya tshul/ 10 rje btsun 'phags ma sgrol ma'i sgo nas byabs byed tshul tsha gdung sel ba'i gu bur chu rgyun/ 11 rje btsun sgron ma'i nag po mar me bskor ba'i tshul/ 12 bkra shis brtsegs pa'i g.yang 'gugs bya ba/ 13 'go ba'i lha lnga'i sgo nas bzlog bsgyur dgra bgegs phyi mar thag pa'i gnam lcags thog mda'/ 14 gshin rje gshed kyi zhags pa tshang / 15 legs ldan mched gsum gyi thugs dam bskangs shing 'phrin las 'tshol tshul/ 16 e waM lha chen yul lha gzhi bdag chen khyed rnams la chos kyi sbyin pa 'bul ba/ 17 kha mchug dkar nag mi 'byung ba'i gdams ngag 18 kha mchu nag po'i bzlog bsgyur bcos thabs/ 19 bcom ldan 'das rdo rje rnam par 'joms pa'i sgo nas dkar phyogs skyong ba'i bsrung ma lha klu gzhi bdag rnams la yul khrus bya tshul/"@en , "Incense buring ritual text; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1698 , bdr:W1NLM1698 ;
+        :workIsAbout        bdr:T173 .
+}

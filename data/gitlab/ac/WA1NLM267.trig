@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM267 {
+    bda:LG4148B527082B966C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG550EABA3B17C0A8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-22T16:17:09.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5D42CB8935789190
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:44.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM267"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM267  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM267 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ac/WA1NLM267.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM267 ;
+        adm:logEntry        bda:LG4148B527082B966C , bda:LG550EABA3B17C0A8E , bda:LG5D42CB8935789190 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM267  a        :Work ;
+        skos:prefLabel      "spang pa'i ltung byed kyis ma gos par byed tshul brjed byang du byas pa/"@bo-x-ewts ;
+        :catalogInfo        "1 dge slong gi bslab bya mdor bsdus go bde ba/"@bo-x-ewts , "Notes on the Vinaya transgression; possibly by Khalkha Ngawang Dorjee."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1446 ;
+        :workHasInstance    bdr:MW1NLM267 , bdr:W1NLM267 ;
+        :workIsAbout        bdr:T2MS11339 .
+}

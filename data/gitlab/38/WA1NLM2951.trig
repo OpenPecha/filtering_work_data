@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2951 {
+    bda:LG899EDC78A23E0F12
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG9EA732E7B7B68B30
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-28T14:11:02.479Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2951"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2951  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2951 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "38/WA1NLM2951.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2951 ;
+        adm:logEntry        bda:LG899EDC78A23E0F12 , bda:LG9EA732E7B7B68B30 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2951  a       :Work ;
+        skos:prefLabel      "dpal ldan lha mo'i chog dang 'brel bar ma mo'i 'khrugs skong gtong tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sgrol ma'i maN+Dal bzhi ba'i cho ga'i 'don bsgrigs/ 2 sgrol ma'i maN+Dal bzhi pa'i sgo nas dge mtshan phyA g.yang spel ba'i cho ga bya tshul dus ngan 'tsho ba'i lag cha/ 3 lhag pa'i smon lam/ 4 char 'bebs 'dod pa/ 5 sdig bshags gser gyi spu gri/ 6 zab lam rim gnyis bsgom pa'i sngon 'gro'i chos khrid chen bzhir grags pa'i 'don cha'i rim pa/ 7 dga' ldan lha brgya ma'i steng nas 'khrid chen bzhi'i nyams len bya tshul/ 8 bla ma mchod pai cho ga 9 bayng sham+b+ha lar skye ba'i smon tshig 10 gtor ma kcha gsum 'bul tshul/ 11 sman bla bsdus pa'i kha skong /"@en , "Propitiation ritual offering of Shridevi; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2951 , bdr:W1NLM2951 ;
+        :workIsAbout        bdr:T339 , bdr:T401 , bdr:T97 .
+}

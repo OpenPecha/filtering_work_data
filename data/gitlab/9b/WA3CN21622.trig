@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21622 {
+    bda:LG1BC8A0E3E425C933
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-27T19:47:38.294Z"^^xsd:dateTime ;
+        adm:logMessage      "reused & catalloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2DBF1369203958A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-27T20:16:41.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG86977E86EAC14A38
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG93B59FCB123772BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD34DDA188D3EA3A2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-18T17:30:14.41Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGED784B01E1C00CA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T20:47:06.61Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21622  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21622 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9b/WA3CN21622.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21622 ;
+        adm:logEntry        bda:LG1BC8A0E3E425C933 , bda:LG2DBF1369203958A5 , bda:LG86977E86EAC14A38 , bda:LG93B59FCB123772BB , bda:LGD34DDA188D3EA3A2 , bda:LGED784B01E1C00CA2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR091CF5A9B8E049EB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P319 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21622  a       :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i bstan bcos kyi rnam par bshad pa zab rgyas mtha' yas pa'i snying po phyung ba/"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug rnam bshad zab rgyas mtha' yas pa'i snying po phyung ba/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on Shantideva's Bodhicaryavatara by Karma Kagyue master Pawo Tsuklak Trengwa."@en ;
+        :creator            bdr:CR091CF5A9B8E049EB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN21622 , bdr:W3CN21622 ;
+        :workIsAbout        bdr:WA19740 .
+}

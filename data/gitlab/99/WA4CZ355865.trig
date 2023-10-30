@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355865 {
+    bda:LG53B7D05FE0341AE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-06-03T10:37:50.119Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG69C49CFE62C78210
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-29T17:23:17.83Z"^^xsd:dateTime ;
+        adm:logMessage      "checked and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE2D50582E7EB7D54
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA4CZ355865  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355865 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "99/WA4CZ355865.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355865 ;
+        adm:logEntry        bda:LG53B7D05FE0341AE2 , bda:LG69C49CFE62C78210 , bda:LGE2D50582E7EB7D54 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1FEA467C929E7AAF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P758 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVCF9BAC3D4A21D0AA
+        a                   :CompletedEvent ;
+        :onYear             "1966"^^xsd:gYear .
+
+    bdr:WA4CZ355865  a      :Work ;
+        skos:altLabel       "'gro ba'i mgon po chos rje kun dga' legs pa'i rnam thar rgya mtsho'i snying po mthong ba don ldan/"@bo-x-ewts ;
+        skos:prefLabel      "'brug pa kun legs kyi rnam thar rgya mtsho'i snying po mthong ba don ldan/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Drukpa Kunle, also known as \"\"The Crazy Yogi of the Drukpa,\"\" with special reference to his adventures in Bhutan."@en ;
+        :creator            bdr:CR1FEA467C929E7AAF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVCF9BAC3D4A21D0AA ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4CZ355865 , bdr:W4CZ355865 ;
+        :workIsAbout        bdr:P816 .
+}

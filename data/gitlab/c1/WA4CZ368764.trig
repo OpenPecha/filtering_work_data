@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368764 {
+    bda:LG3BF6AAB8851B275F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:56:51.029Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG80D2F28975E2F6B6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T12:13:01.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD6CBF3844D289613
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T09:18:34.826Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368764  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368764 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c1/WA4CZ368764.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368764 ;
+        adm:logEntry        bda:LG3BF6AAB8851B275F , bda:LG80D2F28975E2F6B6 , bda:LGD6CBF3844D289613 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCBEF24A098D9C860
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG911 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW4CZ368764  skos:altLabel  "A Glance at the History of Western Education and Culture"@en .
+
+    bdr:WA4CZ368764  a      :Work ;
+        skos:prefLabel      "nub phyogs kyi shes yon dang rig gzhung gi lo rgyus zla ba'i phreng ba/"@bo-x-ewts , "A Glance at the History of Western Education and Culture"@en ;
+        :catalogInfo        "A Glance at the History of Western Education and Culture"@en ;
+        :creator            bdr:CRCBEF24A098D9C860 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ368764 , bdr:W4CZ368764 ;
+        :workIsAbout        bdr:T1449 .
+}

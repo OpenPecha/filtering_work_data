@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS67707 {
+    bda:LG3F58419CBB589BF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG87D301E251359584
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-20T15:22:39.46Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBE1A4B3FCEE06A57
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T13:42:55.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE852F36C021A4AD8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-20T15:23:43.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS67707  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS67707 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "49/WA8LS67707.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS67707 ;
+        adm:logEntry        bda:LG3F58419CBB589BF3 , bda:LG87D301E251359584 , bda:LGBE1A4B3FCEE06A57 , bda:LGE852F36C021A4AD8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR469C5B9C4298865B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75527 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS67707  a       :Work ;
+        skos:prefLabel      "tshig gis stong pa'i sems pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of essays written by Ador."@en ;
+        :creator            bdr:CR469C5B9C4298865B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW8LS67707 , bdr:W8LS67707 .
+}

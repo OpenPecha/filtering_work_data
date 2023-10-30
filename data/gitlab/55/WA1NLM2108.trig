@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2108 {
+    bda:LG9A90882DD3170658
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB88960071EB09214
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T09:27:26.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2108"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2108  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2108 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/WA1NLM2108.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2108 ;
+        adm:logEntry        bda:LG9A90882DD3170658 , bda:LGB88960071EB09214 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2108  a       :Work ;
+        skos:prefLabel      "klu dang sa bdag gi bsang mchod dgos pa kun 'grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sa bdag rgan po dkar po'i rten 'bul/ 2 dregs pa sde brgyad la gser skyems gtong ba'i cho ga bdud rtsi'i rlabs 'phreng / 3 bcom ldan 'das shes rab kyi pha rol tu phyin pa'i snying po/ 4 rje btsun sgrol ma'i gdung 'bod/ 5 'phags pa 'jam dpal nag po'i sgrub thabs/ 6 bar do'i gsol 'debs/ 7 tsha bsur/ 8 byo tho mkhyen pas mdzad pa las sdig sgrib kun sel ba'i bsang bzhad stong / 9 gnas grib thams cad rab tu zhi bar byed pa'i bsang / 10 rta mgrin gsang sgrub lugs gnyis kyi rgyun 'khyer snying po bcud 'dus/ 11 dgra lha'i bsangs/ 12 satsa+tsha 'debs pa'i lag len/ 13 rlung rta'i rab gnas sgrub par 'dod pa/ 14 dam can chos rgyal gyi bsangs/ 15 dpal ldan lha mo'i ma mo'i mdos grlug gtong lugs legs pa rgyal dbang mchog mdzad bzlog bsgyur gnyis pa/ 16 gdugs dkar bsangs/ 17 bcom ldan 'das kun rig rnam par snang mdzad kyi bdag bskyed nyams su len tshul/ 18 po ti lnga'i smon lam/ 19 dam can rdo rje legs pa'i bskang gso 'phrin las myur sgrub/ 20 yi dam chos skyong bsrung ma rnas tshe thar/ 21 gsang ba'i chos spyod kyi lhan thabs/ 22 ltung bshags kyi cho ga 23 rang rig bla ma'i rnal 'byor gyi zur brgyan ngo mtshar mdzes rgyan/ 24 yan lag bdun pa/ 25 ye shes mkha' 'gro bde chen rgyal mo'i gsol 'debs bden pa gnyis kyi myu gu dngos grub 'byung gnas/"@en , "Incense offering ritual text of Nagas and earth's lord by author signed as Tokhyampa Losang Chodrak; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2108 , bdr:W1NLM2108 ;
+        :workIsAbout        bdr:T1236 , bdr:T1448 , bdr:T173 .
+}

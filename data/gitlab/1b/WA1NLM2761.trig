@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2761 {
+    bda:LG270B1B58542005E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG470E3895C65142DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:42:41.783Z"^^xsd:dateTime ;
+        adm:logMessage      "full cadloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF172661299B24914
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-11T17:19:25.296Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2761"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2761  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2761 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1b/WA1NLM2761.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2761 ;
+        adm:logEntry        bda:LG270B1B58542005E3 , bda:LG470E3895C65142DA , bda:LGF172661299B24914 , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7F3AC02D978B4660
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2761  a       :Work ;
+        skos:altLabel       "rgyud kyi rgyal po dpal gsang ba 'dus pa'i man ngag rim pa lnga rab tu gsal ba'i sgron me zhes bya ba/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus rim lnga gsal sgron/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the pancakrama as the practice of the completion stage (sampannakrama) of the Guhyasamaja tantra; written at Gadhan with Kashipa Rinchenpal as scribe"@en ;
+        :creator            bdr:CR7F3AC02D978B4660 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM2761 , bdr:W1NLM2761 ;
+        :workIsAbout        bdr:T1562 .
+}

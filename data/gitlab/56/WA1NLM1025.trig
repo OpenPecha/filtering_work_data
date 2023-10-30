@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1025 {
+    bda:LG1E125CCB2262E20E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG44C1016291E0B15C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-08T17:27:20.954Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEF32CF736650CD9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T13:44:50.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1025"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1025  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1025 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "56/WA1NLM1025.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1025 ;
+        adm:logEntry        bda:LG1E125CCB2262E20E , bda:LG44C1016291E0B15C , bda:LGEF32CF736650CD9E , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XL7915A687B3C3 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR78C0C19C22378270
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1025  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa'i zab 'khrid mdor bsdus phan bde'i lam bzang gi sngon 'gro sbyor ba'i chos drug rgyas par byed tshul gyi 'don sgrigs sogs/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of recitations of preliminary teachings for the practice of the Lamrim."@en ;
+        :creator            bdr:CR78C0C19C22378270 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
+        :workIsAbout        bdr:T1344 , bdr:T2579 .
+}

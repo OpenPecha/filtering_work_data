@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2137 {
+    bda:LG6A35EE69C19862E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD9FBE4CB2844D79C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-27T14:45:29.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2137"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2137  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2137 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/WA1NLM2137.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2137 ;
+        adm:logEntry        bda:LG6A35EE69C19862E2 , bda:LGD9FBE4CB2844D79C , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2137  a       :Work ;
+        skos:prefLabel      "rdo rje 'jigs byed dpa' bo gcig pa'i sgrub thabs mdor bsdus sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lha mo'i mnga'gsol/ 2 snyan rgyud 'pho ba'i khrid yig bla ma'i gsung bzhin yi ger bkod pa/ 3 gser zhun ma/ 4 bcom ldan 'das pad+ma dbang chen yang gsang khros oa yab yum rkyang sgrub kyi sgrub thabs bka' bsrung gi gtor 'bral smon lam gsar sgrigs dang bcas pa dngos grub myur/ 5 dzam+b+ha la dkar po'i bskang gso 'dod dgu'i char 'bebs/ 6 dpal ldan lha mo'i bskang bshags mdor bsdus/ 7 lhag pa'i lha mchog bcom ldan gzigs pa chen po'i tshogs mchod bde chen rol mtsho/ 8 snyan sgrub kyi 'jug tu tshogs mchod/"@en , "A short sadhana of solitary Vajrabairava; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2137 , bdr:W1NLM2137 ;
+        :workIsAbout        bdr:T154 .
+}

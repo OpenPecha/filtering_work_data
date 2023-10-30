@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23570 {
+    bda:LGDB0943710F08DAFA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23570  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23570 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/WA23570.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23570 ;
+        adm:logEntry        bda:LGDB0943710F08DAFA , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRD6E5B7B3BC884AF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23570  a          :Work ;
+        skos:altLabel       "kun bzang bla ma'i zhal lung /"@bo-x-ewts , "myos byed kyi btung btung ba'i nyes dmigs mdo rgyud bstan bcos rnams las btus pa nyes pa'i 'phrang sgrol/"@bo-x-ewts , "Kun bzaṅ bla ma i źal luṅ =Rdzogs pa chen po Kloṅ chen sñiṅ tig gi sṅon ʼgroʼi khrid yig Kun bzaṅ bla maʼi źal luṅ : a detailed introduction to the practice of the Kloṅ chen sñiṅ tig precepts /by Rdza Dpal-sprul ʼJigs-med-chos-kyi-dbaṅ-po."@en-x-mixed ;
+        skos:prefLabel      "rdzogs pa chen po klong chen snying tig gi sngon 'gro'i khrid yig kun bzang bla ma'i zhal lung /"@bo-x-ewts , "kun bzan bla ma'i zal lun : a detailed introduction to the practice of the klon chen snin tig precepts"@en-x-mixed ;
+        :creator            bdr:CRD6E5B7B3BC884AF5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW23570 ;
+        :workIsAbout        bdr:T1730 , bdr:T179 , bdr:T354 , bdr:WA7478 .
+}

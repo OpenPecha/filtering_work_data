@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA19678 {
+    bda:LG29553087E4E31721
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG5A06CDD187AA7DEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-01T16:47:41.287Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected pin yin"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8A5312FF075CC66E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-05T16:42:43.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added volume map"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG998502AD63294D09
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA19678  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA19678 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d4/WA19678.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA19678 ;
+        adm:logEntry        bda:LG29553087E4E31721 , bda:LG5A06CDD187AA7DEA , bda:LG8A5312FF075CC66E , bda:LG998502AD63294D09 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF40D31717C7C93B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6070 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW19678  skos:altLabel  "黄正请与无世家木样"@zh-hans .
+
+    bdr:WA19678  a          :Work ;
+        skos:altLabel       "hwang krin ching blo bzang tshe dbang ba dang kun mkhyen lnga pa chen po sku mched zung gi rnam par thar pa rjes su dran pa zag med ye shes kyi me long /"@bo-x-ewts , "huang zheng qing yu wu shi jia mu yang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a blo spun mched kyi rnam thar/"@bo-x-ewts , "黄正请与无世家木样"@zh-hans ;
+        :catalogInfo        "Biography of the 5th Jamyang Zhepa and his elder brother, the politician, Lolo Zangtse Bang."@en ;
+        :creator            bdr:CRF40D31717C7C93B5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW19678 , bdr:W19678 ;
+        :workIsAbout        bdr:P1495 , bdr:P6070 .
+}

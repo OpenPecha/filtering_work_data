@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25071 {
+    bda:LG7D75AE504FEE990F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-19T10:33:11.134Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB65118D989482FAA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:23:10.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD79DC3C17E2C2279
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-23T14:26:39.28Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1572 to T104"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM065AD95F26
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:11:09.047Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25071  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25071 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "22/WA1KG25071.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25071 ;
+        adm:logEntry        bda:LG7D75AE504FEE990F , bda:LGB65118D989482FAA , bda:LGD79DC3C17E2C2279 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB441035609D007D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4820 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG25071  a       :Work ;
+        skos:altLabel       "dpal rdo rje 'jigs byed chen po'i bskyed rdzogs kyi lam zab mo rim pa gnyis kyi rnam gzhag sku gsum nor bu'i bang mdzod dang / de'i rdzogs rim sku gsum them skas/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed kyi bskyed rdzogs kyi rnam gzhag sku gsum nor bu'i bang mdzod dang rdzogs rim sku gsum them skas/"@bo-x-ewts ;
+        :catalogInfo        "Detailed explanation of the utpattikrama and sampannakrama to the practice of Vajrabhairava. Important text by the 18th century Gelugpa master Lobzang Lhundrup."@en ;
+        :creator            bdr:CRB441035609D007D2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG25071 , bdr:W1KG25071 ;
+        :workIsAbout        bdr:T104 , bdr:T163 , bdr:T164 .
+}

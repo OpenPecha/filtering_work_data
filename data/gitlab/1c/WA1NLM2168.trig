@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2168 {
+    bda:LGD6728EE4DFBDECD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGDDAB00810DEF1FA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-04T12:25:36.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2168"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2168  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2168 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1c/WA1NLM2168.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2168 ;
+        adm:logEntry        bda:LGD6728EE4DFBDECD6 , bda:LGDDAB00810DEF1FA2 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2168  a       :Work ;
+        skos:prefLabel      "gshin po'i lho sgo la dmigs rim bya tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bshad pa'i rgyud kyi nang nas nyin re bzhin spyod lam/ gnas skabs spyod lam/ rgyun du spyod pa'i lam/ lus kyi 'dra dpe bstan pa/ 2 grub chen tshim bu lugs kyi man ngag spyan ras gzigs kyi dmar khrid kyi snying po nyams len bsdus pa man ngag gis brgyan pa/ 3 ser 'od dam pa mdo sde bsangs/ 4 rnying rlung sel ba'i srog glud/ 5 bkra shis brtsegs pa'i sgo nas g.yang 'gugs pa'i cho ga bkra shis kun sdud/ 6 'go ba'i lha lnga'i bros bsnyegs bya tshul g.yung drung g.yas 'khyil/ 7 'go pa'i lha lnga'i gsol mchod bya tshul/ 8 'go pa'i lha lnga'i 'phrin bcol/"@bo-x-ewts , "Visualization from the south gate during the funeral rites; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM2168 , bdr:W1NLM2168 ;
+        :workIsAbout        bdr:T475 .
+}

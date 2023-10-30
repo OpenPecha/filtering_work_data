@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22949 {
+    bda:LG10EBF9AC13FD82A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-29T15:05:41.789Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG26572E17C92ED4B5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-29T15:06:07.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG53E94BB217AE7769
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG22949  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22949 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4c/WA1KG22949.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22949 ;
+        adm:logEntry        bda:LG10EBF9AC13FD82A9 , bda:LG26572E17C92ED4B5 , bda:LG53E94BB217AE7769 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG22949  skos:altLabel  "达赛尔20年精品丛书"@zh-hans .
+
+    bdr:WA1KG22949  a       :Work ;
+        skos:altLabel       "lhug rtsom snyan 'jebs tshig gi bdud rtsi/ (1982-2002)"@bo-x-ewts , "da sai er 20 nian jing pin cong shu"@zh-latn-pinyin ;
+        skos:prefLabel      "lhug rtsom snyan 'jebs tshig gi bdud rtsi/"@bo-x-ewts , "达赛尔20年精品丛书"@zh-hans ;
+        :catalogInfo        "Selected of prose poetric writings."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW1KG22949 , bdr:W1KG22949 .
+}

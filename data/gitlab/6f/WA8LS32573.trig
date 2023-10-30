@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32573 {
+    bda:LG0BAD47410F0D9D8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG63DBBE5F6043E9E4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-19T11:32:04.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG78F9E2F6C977A5D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T11:31:05.432Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32573  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32573 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/WA8LS32573.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32573 ;
+        adm:logEntry        bda:LG0BAD47410F0D9D8F , bda:LG63DBBE5F6043E9E4 , bda:LG78F9E2F6C977A5D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32573  a       :Work ;
+        skos:prefLabel      "chos thams cad rigs pas gtan la 'bebs pa'i gtan tshigs kyi rnam bzhag blo gsal dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "An overview of pramana, author signed as Sonam Gyatsho."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS32573 , bdr:W8LS32573 ;
+        :workIsAbout        bdr:T370 .
+}

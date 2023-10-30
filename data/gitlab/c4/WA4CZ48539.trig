@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ48539 {
+    bda:LG262C8CD4502B68C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-13T11:02:27.278Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBCE3AED74FC6362B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-13T11:03:09.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE2789F5634853CCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFE95BA0E3A2F97C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T12:35:29.243Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ48539  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ48539 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c4/WA4CZ48539.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ48539 ;
+        adm:logEntry        bda:LG262C8CD4502B68C4 , bda:LGBCE3AED74FC6362B , bda:LGE2789F5634853CCE , bda:LGFE95BA0E3A2F97C5 , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5EBE3B3FF76B983
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1672 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ48539  a       :Work ;
+        skos:prefLabel      "snyems thag gcod pa'i khrid kyi cha lag"@bo-x-ewts ;
+        :catalogInfo        "Bon chod teachings. Revealed by Yungdrung Lingpa."@en ;
+        :creator            bdr:CRC5EBE3B3FF76B983 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW4CZ48539 , bdr:W4CZ48539 ;
+        :workIsAbout        bdr:T194 , bdr:T247 .
+}

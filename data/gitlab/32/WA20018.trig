@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20018 {
+    bda:LG58082FD16C996038
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-17T14:39:45.034Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9A962CAE293570FC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-17T14:40:19.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA2E22D3E222B1E5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGA5298B286DFCDA28
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T11:49:38.386Z"^^xsd:dateTime ;
+        adm:logMessage      "rewvied by LS, KG, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDA5D4F297452A2AC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA20018  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20018 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "32/WA20018.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20018 ;
+        adm:logEntry        bda:LG58082FD16C996038 , bda:LG9A962CAE293570FC , bda:LGA2E22D3E222B1E5A , bda:LGA5298B286DFCDA28 , bda:LGDA5D4F297452A2AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3EE8383B9946B34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW20018  skos:altLabel  "藏医临床X线诊断学"@zh-hans .
+
+    bdr:WA20018  a          :Work ;
+        skos:altLabel       "bod lugs gso rig gi nad thog sman pas x zer phreng las mngon pa'i nad gzhi ngos 'dzin bya thabs/"@bo-x-ewts , "zang yi lin chuang X xian zhen duan xue"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "X (glog par) zer phreng las mngon pa'i nad gzhir ngos 'dzin bya thabs/"@bo-x-ewts , "藏医临床X线诊断学"@zh-hans ;
+        :catalogInfo        "Diagnosis of diseases according to Tibetan medicine with the help of x-ray."@en ;
+        :creator            bdr:CRA3EE8383B9946B34 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20018 , bdr:W20018 ;
+        :workIsAbout        bdr:T85 .
+}

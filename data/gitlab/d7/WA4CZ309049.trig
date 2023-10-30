@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ309049 {
+    bda:LGD4670E369E729896
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-30T11:49:16.599Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE2CF9D93647AB78E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-30T12:23:12.413Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ309049  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ309049 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA4CZ309049.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ309049 ;
+        adm:logEntry        bda:LGD4670E369E729896 , bda:LGE2CF9D93647AB78E , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0E5D86FF468836F6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ315239 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ309049  a      :Work ;
+        skos:prefLabel      "brag ri'i sras mo/"@bo-x-ewts ;
+        :catalogInfo        "Collection of short poems."@en ;
+        :creator            bdr:CR0E5D86FF468836F6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ309049 , bdr:W4CZ309049 ;
+        :workIsAbout        bdr:T204 .
+}

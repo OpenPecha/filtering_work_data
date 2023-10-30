@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3429 {
+    bda:LG2F3699B9DD1C73E4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-15T12:02:50.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG77B2CA14CF065A35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-09T17:09:53.815Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCCA19C5D1CAD9F90
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-11T15:19:56.032Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status - accessioned to Released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFB815496E262FD62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-21T19:24:28.402Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN3429  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3429 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8e/WA3CN3429.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3429 ;
+        adm:logEntry        bda:LG2F3699B9DD1C73E4 , bda:LG77B2CA14CF065A35 , bda:LGCCA19C5D1CAD9F90 , bda:LGFB815496E262FD62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC1093AFF9211AF44
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM312 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN3429  a        :Work ;
+        skos:prefLabel      "las 'bras kyi gsang lam/"@bo-x-ewts ;
+        :catalogInfo        "The secret path of karmic cause and effect."@en ;
+        :creator            bdr:CRC1093AFF9211AF44 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN3429 , bdr:W3CN3429 ;
+        :workIsAbout        bdr:T2126 , bdr:T58 .
+}

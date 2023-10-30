@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3418 {
+    bda:LG9F4607E385B6C486
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-31T09:15:08.801Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC74C568AB79E30B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-25T15:19:18.382Z"^^xsd:dateTime ;
+        adm:logMessage      "test for outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3418"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3418  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3418 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bc/WA1NLM3418.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3418 ;
+        adm:logEntry        bda:LG9F4607E385B6C486 , bda:LGC74C568AB79E30B7 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3418  a       :Work ;
+        skos:prefLabel      "nA ro mkha' spyod ma'i bskyed rdzogs nyams su len tshul mkha' spyod 'grub pa'i pho nya sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction of the utpattikrama, sampannakrama of the Vajrayogini according to the teachings of Naropa, Ritual offering of Hayagriva Guhyasadhana and other miscellaneous rituals and liturgical texts"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3418 , bdr:W1NLM3418 ;
+        :workIsAbout        bdr:T1420 , bdr:T1CZ30 , bdr:T541 , bdr:T583 .
+}

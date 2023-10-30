@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30145 {
+    bda:LG02A7B40AEB5A54C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-25T14:54:11.842Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG15828820DCF7BD54
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-03T12:51:04.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added phyogs bsgrigs as genre"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1A9C269E2381A0AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB9FA854BBCAA1918
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-06-02T14:53:15.33Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE82A5D2BF897CCB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30145  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30145 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ed/WA30145.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30145 ;
+        adm:logEntry        bda:LG02A7B40AEB5A54C5 , bda:LG15828820DCF7BD54 , bda:LG1A9C269E2381A0AF , bda:LGB9FA854BBCAA1918 , bda:LGE82A5D2BF897CCB8 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW30145  skos:altLabel  "历代法典选编"@zh-hans .
+
+    bdr:WA30145  a          :Work ;
+        skos:altLabel       "bod kyi dus rabs rims byung gi khrims yig phyogs bsdus dwags byed ke ta ka"@bo-x-ewts , "li dai fa dian xuan bian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhal lce phyogs bsdus/"@bo-x-ewts , "历代法典选编"@zh-hans ;
+        :catalogInfo        "Compilation of Tibetan legal documents and codes."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW30145 , bdr:W30145 ;
+        :workIsAbout        bdr:T1790 , bdr:T1791 , bdr:T384 .
+}

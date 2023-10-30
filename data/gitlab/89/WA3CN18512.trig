@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18512 {
+    bda:LG2CAA581B4D0A5A9C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-20T14:48:50.402Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG616834796AF03755
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T13:53:43.782Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG995C0FB84382D360
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB96CBF2A012EE296
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T17:21:10.632Z"^^xsd:dateTime ;
+        adm:logMessage      "checked out"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC6890E55A503268B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-20T14:48:18.436Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD139166ADE80ECF0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T19:15:36.118Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18512  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18512 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "89/WA3CN18512.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18512 ;
+        adm:logEntry        bda:LG2CAA581B4D0A5A9C , bda:LG616834796AF03755 , bda:LG995C0FB84382D360 , bda:LGB96CBF2A012EE296 , bda:LGC6890E55A503268B , bda:LGD139166ADE80ECF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2EB086C0DCB75845
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3447 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18512  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ ye shes rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by importent Kadam gzhung pa tradition master Chekhawa Yeshe Dorje (1101-1175)."@en ;
+        :creator            bdr:CR2EB086C0DCB75845 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN18512 , bdr:W3CN18512 ;
+        :workIsAbout        bdr:T791 .
+}

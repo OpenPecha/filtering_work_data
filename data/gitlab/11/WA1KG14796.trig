@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14796 {
+    bda:LG2CF540EFAA78BE25
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG798CD3C9E17F6D09
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-09T14:43:25.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDD300F3734696CA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-08-09T14:40:41.539Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14796  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14796 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "11/WA1KG14796.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14796 ;
+        adm:logEntry        bda:LG2CF540EFAA78BE25 , bda:LG798CD3C9E17F6D09 , bda:LGDD300F3734696CA6 , bda:LGIM569A8014B1 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4DFEE2F2252A8D69
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG14864 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7BA782814F51AA2F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1017 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14796  skos:altLabel  "达巴桑杰和马久拉仲传"@zh-hans .
+
+    bdr:WA1KG14796  a       :Work ;
+        skos:altLabel       "da pa sang jie he ma jiu la zhung zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pha dam pa dang ma cig lab sgron gyi rnam thar/"@bo-x-ewts , "达巴桑杰和马久拉仲传"@zh-hans ;
+        :catalogInfo        "Biography of Pa Dampa Sangye, a famous Indian yogi who came to Tibet in the 11th century and Machik Labdron, a great Tibetan yogini (1055-1149)."@en ;
+        :creator            bdr:CR4DFEE2F2252A8D69 , bdr:CR7BA782814F51AA2F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG14796 , bdr:W1KG14796 ;
+        :workIsAbout        bdr:P1243 , bdr:P3312 .
+}

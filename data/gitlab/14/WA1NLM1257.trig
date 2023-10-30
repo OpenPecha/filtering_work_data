@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1257 {
+    bda:LG8453ADC5F998CBB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-31T10:00:26.869Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC0B980FFBF1284E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-17T22:22:23.494Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected CW"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF40DEEA4D7931320
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1257"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1257  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1257 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "14/WA1NLM1257.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1257 ;
+        adm:logEntry        bda:LG8453ADC5F998CBB4 , bda:LGC0B980FFBF1284E1 , bda:LGF40DEEA4D7931320 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55CB39C5B8B26C75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV8E0F95FD7660C234
+        a                   :CompletedEvent ;
+        :onYear             "1784"^^xsd:gYear .
+
+    bdr:WA1NLM1257  a       :Work ;
+        skos:prefLabel      "'dul ba rgya mtsho'i dka' gnad mdor bsdus pa nor bu'i phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "On problems in understanding the rules of Buddhist monastic disciplin; verse treatise begun about 1784 when the author was studying in Lhasa."@en ;
+        :creator            bdr:CR55CB39C5B8B26C75 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV8E0F95FD7660C234 ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG9408_A8F231 , bdr:MW1NLM1257 , bdr:MW1NLM1642 , bdr:MW1NLM451 , bdr:MW1NLM670 , bdr:MW1PD159542_7BFCDD , bdr:MW22112_1F92DE , bdr:MW22185_E4D7E9 , bdr:MW2DB4591_172104 , bdr:W1NLM1257 , bdr:W1NLM1642 , bdr:W1NLM451 , bdr:W1NLM670 ;
+        :workIsAbout        bdr:T2339 , bdr:T55 , bdr:T868 , bdr:WA4CZ16829 .
+}

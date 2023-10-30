@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13625 {
+    bda:LG020D635619BFC88E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-19T16:38:36.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG865408B2FF97A643
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-19T16:33:35.905Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged-completed"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3JT13625  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13625 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ba/WA3JT13625.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13625 ;
+        adm:logEntry        bda:LG020D635619BFC88E , bda:LG865408B2FF97A643 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAA0BE6297C229897
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7308 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV5DBEC23B4BA4267D
+        a                   :CompletedEvent ;
+        :onYear             "1990"^^xsd:gYear .
+
+    bdr:WA3JT13625  a       :Work ;
+        skos:prefLabel      "rdzong gsar mkhyen brtse'i rten khrod las rten gyi nang gzhug phyogs bsdus ril bu khag sogs kyi dkar chag rin chen mchog gi mdzod/"@bo-x-ewts ;
+        :creator            bdr:CRAA0BE6297C229897 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV5DBEC23B4BA4267D ;
+        :workHasInstance    bdr:MW3JT13625 , bdr:W3JT13625 ;
+        :workIsAbout        bdr:P733 , bdr:T00KG02662 , bdr:T1906 .
+}

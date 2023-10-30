@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22719 {
+    bda:LG23A4FCC3B40629A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-28T21:40:47.317Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA000DC305C7C0E4E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-28T21:42:37.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC5116D5023D4B888
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN22719  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22719 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ea/WA3CN22719.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22719 ;
+        adm:logEntry        bda:LG23A4FCC3B40629A9 , bda:LGA000DC305C7C0E4E , bda:LGC5116D5023D4B888 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3CN21534 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR84F8E9A22D3039CE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P353 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22719  a       :Work ;
+        skos:altLabel       "bsdus grwa'i legs bshad grangs med skal bzang gi blo gros pad tshal bzhad pa'i lung rigs kyi nyi ma/"@bo-x-ewts , "mkhan chen bsdus grwa/"@bo-x-ewts ;
+        skos:prefLabel      "bsdus grwa'i legs bshad lung rigs kyi nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Elementary Buddhist logic and dialectical studies by Geluk master Rongpo Khenchen Gedun Gyatso (1679-1765)."@en ;
+        :creator            bdr:CR84F8E9A22D3039CE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T370 , bdr:T96 .
+}

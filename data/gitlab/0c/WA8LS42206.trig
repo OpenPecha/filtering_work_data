@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42206 {
+    bda:LG591C8EB6375B44E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T14:40:22.549Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG82E0579A88F23B24
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-12-19T09:50:23.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA3419991EB103B12
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-12-19T09:48:34.09Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42206  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42206 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0c/WA8LS42206.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42206 ;
+        adm:logEntry        bda:LG591C8EB6375B44E0 , bda:LG82E0579A88F23B24 , bda:LGA3419991EB103B12 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR201551316912810E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6324 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42206  a       :Work ;
+        skos:prefLabel      "dpyad rtsom phyogs bsgrigs dri med shel dkar me long /"@bo-x-ewts ;
+        :catalogInfo        "A collection of writings of Zigar Khenpo Trinley Dorjee."@en ;
+        :creator            bdr:CR201551316912810E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T413 ;
+        :workHasInstance    bdr:MW8LS42206 , bdr:W8LS42206 ;
+        :workIsAbout        bdr:T816 .
+}

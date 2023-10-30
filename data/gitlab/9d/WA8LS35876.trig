@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS35876 {
+    bda:LG47246C1FEFD2867E
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-07-03T16:28:57.34Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6180AB4B26885258
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T11:45:47.249Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG72E6E8BEB5ECDA97
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-03T16:28:09.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG844CE5C5CE4E6500
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-03T16:26:47.689Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS35876  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS35876 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9d/WA8LS35876.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS35876 ;
+        adm:logEntry        bda:LG47246C1FEFD2867E , bda:LG6180AB4B26885258 , bda:LG72E6E8BEB5ECDA97 , bda:LG844CE5C5CE4E6500 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA29EE247DF06B009
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS35877 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS35876  a       :Work ;
+        skos:altLabel       "dga' shar mkhan zur rin po che dge bshes rta mgrin rgya mtsho mchog gi rang rnam/"@bo-x-ewts ;
+        skos:prefLabel      "sa gseb grog ma'i rang rnam/"@bo-x-ewts ;
+        :catalogInfo        "An autobiography of Geshe Tamdin Gyatsho, former abbot of Gaden Shartse monastery."@en ;
+        :creator            bdr:CRA29EE247DF06B009 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS35876 , bdr:W8LS35876 ;
+        :workIsAbout        bdr:P8LS35877 , bdr:T819 .
+}

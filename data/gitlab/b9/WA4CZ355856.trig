@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355856 {
+    bda:LG022F1FADE1C7098D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG76063A16D4BAF12D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T14:23:47.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9B9E71CE0E17A799
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-11T16:03:37.111Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ355856  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355856 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b9/WA4CZ355856.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355856 ;
+        adm:logEntry        bda:LG022F1FADE1C7098D , bda:LG76063A16D4BAF12D , bda:LG9B9E71CE0E17A799 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ355856  a      :Work ;
+        skos:altLabel       "rgyal kun snying rje'i rang gzugs 'phags mchog phyag na pad+mo'i sgyu 'phrul gyi rol gar bstan dgra dgra dpung 'joms pa'i tho ba seng chen dbang drag rdo rje tshe rgyal rgyal blon hrag bsdus kyi rtogs brjod rnam thar sgrung dpe'i tshul du bkod pa mos ldan mdongs mtha' can gyi snying la dga' bskyed sprin gyi sgra dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "seng chen dbang drag rdo rje tshe rgyal rgyal blon hrag bsdus kyi rtogs brjod/"@bo-x-ewts ;
+        :catalogInfo        "Episodes from the Gesar epics"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ355856 , bdr:W4CZ355856 ;
+        :workIsAbout        bdr:T1863 , bdr:T248 .
+}

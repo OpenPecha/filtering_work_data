@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21612 {
+    bda:LG95CFA17BFCB78ABD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGF0147C7A5ED17D7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:13:32.614Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF0C0B1C9A410CE8E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA21612  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21612 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "7a/WA21612.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21612 ;
+        adm:logEntry        bda:LG95CFA17BFCB78ABD , bda:LGF0147C7A5ED17D7D , bda:LGF0C0B1C9A410CE8E , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21612  skos:altLabel  "si gui ji"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA21612  a          :Work ;
+        skos:altLabel       "ssu kui chi"@zh-latn-wadegile ;
+        skos:prefLabel      "bca' yig phyogs bsgrigs/"@bo-x-ewts , "si gui ji"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Collection of texts on the legal and administrative structure of Tibet"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10 , bdr:T1081 ;
+        :workHasInstance    bdr:IE21612 , bdr:MW21612 , bdr:MW3CN5586 , bdr:W21612 , bdr:W3CN5586 ;
+        :workIsAbout        bdr:T1113 , bdr:T4PD930 .
+}

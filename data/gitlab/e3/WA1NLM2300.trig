@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2300 {
+    bda:LG7D14FF09791F1F2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGB663354FFD365FFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-03T11:38:27.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2300"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2300  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2300 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e3/WA1NLM2300.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2300 ;
+        adm:logEntry        bda:LG7D14FF09791F1F2B , bda:LGB663354FFD365FFC , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA040F182F474C5BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRBAD867CB3320D61E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3548 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2300  a       :Work ;
+        skos:prefLabel      "dpal ldan dur khrod bdag po'i bskang bshags bstod bskul dngos grub 'bar ba'i 'od sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 paN chen nA ro ta pa'i thugs bcud mkha' 'gro snyan rgyud 'khor lo sdom po lhan skyes kyi bsnyen yig nges don rgya mtshor 'jug pa'i gru 'dzings/ 2 dkon mchog spyi 'dus kyi brgyud pa'i gsol 'debs yid bzhin gter sbyin/ 3 dkon mchog spyi 'dus dang 'dod 'jo bum bzang gi thob yig brgyud rim/ 4 snar thang brgya rtsa nas bshad pa'i so sor 'brang ma sogs lha rnams kyi rjes gnang gi cho ga byin rlabs myur 'jug 5 mi 'khrugs pa dang spyan ras gzigs bcu gcig zhal gnyis kyi rnal 'byor 'khyer bde ba/ 6 chos skyong dregs pa lcam sring gyi gser skyems 'bul tshul/ 7 snying po klu mdos/ 8 gser 'od dam pa bzlog bsgyur/ 9 rta mgrin gsang sgrub kyi sgo nas phyugs glud gtong thabs 'byung po tshim byed/ 10 rta mgrin gyi sgo nas rta'i g.yang 'gugs lhun grub rta g.yang / 11 de'i sgo nas zhang blon gyi sgrub thabs/ 12 rje btsun ma ku ru kul+le la brtan nas me skongs 'bul tshul/ 13 gshin rje'i gshed dmar po mda' gzhu 'gengs dbang sdud kyi man ngag 14 dri bzang dang rdzas sna tshogs/ 15 sgrub thabs brgya rtsa nas bshad pa'i spyan ras gzigs pad+ma gar dbang gi sgrub thabs dang rjes gnang cho ga rnams/"@en , "Confession and purification, praise and exhortation of charnel ground deity; other text also included."@en ;
+        :creator            bdr:CRA040F182F474C5BD , bdr:CRBAD867CB3320D61E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM2300 , bdr:W1NLM2300 ;
+        :workIsAbout        bdr:T1736 , bdr:T1892 , bdr:T506 .
+}

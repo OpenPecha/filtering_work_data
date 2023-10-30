@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4334 {
+    bda:LG2A0B50EF96B89310
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T16:47:26.25Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG667754DD7C71B8F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-16T11:20:57.451Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG75BE4A3911B0F749
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T17:43:27.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFE13A6F36703FD07
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-28T17:15:20.442Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4334  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4334 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ed/WA3CN4334.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4334 ;
+        adm:logEntry        bda:LG2A0B50EF96B89310 , bda:LG667754DD7C71B8F1 , bda:LG75BE4A3911B0F749 , bda:LGFE13A6F36703FD07 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR19115393A18077FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4334  a        :Work ;
+        skos:altLabel       "dbu ma rgyan gyi rnam bshad 'jam dbyangs bla ma dgyes pa'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma rgyan gyi rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on madhyamakalankara by Ju Mipham."@en ;
+        :creator            bdr:CR19115393A18077FE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN4334 , bdr:W3CN4334 ;
+        :workIsAbout        bdr:WA21920 .
+}

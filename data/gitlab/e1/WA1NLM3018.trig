@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3018 {
+    bda:LG6F9EAE14BCE71924
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T15:08:27.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7FA2EBA2641ADF95
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG91A6190780896CE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T15:09:29.261Z"^^xsd:dateTime ;
+        adm:logMessage      "edited cat info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3018"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3018  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3018 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e1/WA1NLM3018.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3018 ;
+        adm:logEntry        bda:LG6F9EAE14BCE71924 , bda:LG7FA2EBA2641ADF95 , bda:LG91A6190780896CE7 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR797DD14D40284E60
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3018  a       :Work ;
+        skos:prefLabel      "slob dpon chen po grub chen ab+h+ya ka ri'i lung kyi rdo rje 'phreng ba'i dbang gi bla brgyud gsol 'debs thugs rje myur bskul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 slob dpon chen po grub chen abhaya ka ri'i lugs kyi rdo rje 'phreng ba'i dbang gi bla brgyud gsol 'debs thugs rje myur bskul/ 2 rmi lam grub thabs/ 3 bcom ldan 'das mi 'khrugs pa mgon po'i sgrub thabs/ kun rig rnam par snang mdzad kyi bsgom bzlas/ 4 bla ma ye shes kyi mkha' 'gro ma seng+ge'i gdong ma can gyi sgo nas bgegs gtor gtong bar 'dod pa/ 5 bka' 'gyur gyi nang du bzhugs pa'i 'phags pa gsal zhing yangs pa snang brgyad/ 6 byang chub sems dpa'i ltung bshags/ 7 gnas brtan phyag mchod/ 8 lam rim nyams mgur ma/ 9 jo bo rje'i bstod pa phun sum tshogs pa ma/ 10 dpal ldan sa gsum ma/"@en , "Prayer of teachers in the line of Abhayakaragupta's Vajramala oral transmission; other text also included."@en ;
+        :creator            bdr:CR797DD14D40284E60 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T11 ;
+        :workHasInstance    bdr:MW1NLM3018 , bdr:W1NLM3018 ;
+        :workIsAbout        bdr:P4004 , bdr:T11MS10 .
+}

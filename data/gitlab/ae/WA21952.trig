@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21952 {
+    bda:LG0FC1BF06F89B72C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T11:46:07.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB2782B9A84740A03
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21952  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21952 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ae/WA21952.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21952 ;
+        adm:logEntry        bda:LG0FC1BF06F89B72C9 , bda:LGB2782B9A84740A03 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR00B2010D34A5F533
+        a                   :AgentAsCreator ;
+        :agent              bdr:P326 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21952  skos:altLabel  "bka' brgyad gsan ba yongs rdzogs kyi sgrub skor : a collection of texts from the famed revelations of gu-ru chos-kyi-dban-phyug as used in the great sgrub-chen in dpal-yul and affiliates"@en-x-mixed .
+
+    bdr:WA21952  a          :Work ;
+        skos:prefLabel      "bka' brgyad gsang ba yongs rdzogs yi sgrub skor/"@bo-x-ewts , "bka' brgyad gsan ba yongs rdzogs kyi sgrub skor : a collection of texts from the famed revelations of gu-ru chos-kyi-dban-phyug as used in the great sgrub-chen in dpal-yul and affiliates"@en-x-mixed ;
+        :catalogInfo        "Collected liturgical texts of teachings of the Kagye Sangwa Yongzok of Guru Chokyi Wangchuk (1212-1270), as performed at Peyul Monastery."@en ;
+        :creator            bdr:CR00B2010D34A5F533 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21952 , bdr:W21952 ;
+        :workIsAbout        bdr:T1181 , bdr:T1183 .
+}

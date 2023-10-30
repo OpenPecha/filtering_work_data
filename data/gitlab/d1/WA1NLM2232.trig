@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2232 {
+    bda:LG01BAA75ECDFAADD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-24T15:08:39.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8A9271AB77CDE537
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T12:15:40.74Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA09E423434A6A7A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2232"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2232  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2232 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d1/WA1NLM2232.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2232 ;
+        adm:logEntry        bda:LG01BAA75ECDFAADD0 , bda:LG8A9271AB77CDE537 , bda:LGA09E423434A6A7A3 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR44AB20F03708D69B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7274 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2232  a       :Work ;
+        skos:prefLabel      "thob yig brgyud rim sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gnas lha 'dre'i zil gyis gnon pa'i dmigs pa zhal shes/ 2 zab lam gcod kyi rgyun 'khyer mkha' 'gro'i zhal lung / 3 zab lam gcod kyi rgyun 'khyer mkha' 'gro'i zhal lung bsdus pa/ 4 kha che 'jam dbyangs paN chen puN+Da shri'i lugs thun mong ma yin pa khros ma nag mo'i lha lnga'i dbang chen gyi brgyud rims/ 5 mkha' 'gro ma'i gsol 'debs/ 6 chos mngon pa mdzod 'chad thabs/ 7 spang bya kun 'byung gtan la dbab pa/ 8 'phrin las bcol ba/ 9 chos skyong dregs pa lcam sring gi bzlas pa gtor 'bul bstod zlog pa dang bcas pa/ 10 byams pa'i dam bcas pa'i gzungs/ 11 gcod kyi gdams pa gdan thog gcig tu dril nas nyams su len tshul/ 12 chos rgyal gtor ma/ lha mo gtor ma/ bek rtse ma gtor ma/ 13 sa yi lha mo na ro wa sangs bsangs mnol bsangs/ 14 rten 'brel bstod pa ma/ 15 'phags pa shes rab kyi pha rol tu phyin pa'i 'bum lnga'i snying po/ 16 bla ma'i bka' drin dran cing thugs rje bskul ba'i gsol 'debs byin rlabs phreng ba/ 17 'gal ba'i snang brgyad/ 18 cha gsum gtor ma/"@en , "Record of teachings received and transmission lineage of Gyatsho Pelzang; other text also included."@en ;
+        :creator            bdr:CR44AB20F03708D69B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T192 ;
+        :workHasInstance    bdr:MW1NLM2232 , bdr:W1NLM2232 ;
+        :workIsAbout        bdr:P7274 , bdr:T177 .
+}

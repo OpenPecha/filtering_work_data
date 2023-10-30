@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15703 {
+    bda:LG0EFAB1D440C2E453
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-25T14:29:22.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4CA794BC7B56FBE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-25T15:09:43.902Z"^^xsd:dateTime ;
+        adm:logMessage      "restrictedInChina"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD34A2D5D0D013CB8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-16T12:35:52.886Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN15703  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15703 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1e/WA3CN15703.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15703 ;
+        adm:logEntry        bda:LG0EFAB1D440C2E453 , bda:LG4CA794BC7B56FBE0 , bda:LGD34A2D5D0D013CB8 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN15703  a       :Work ;
+        skos:prefLabel      "rgyun mkho'i bod sman gyi phan yon lag deb/"@bo-x-ewts ;
+        :catalogInfo        "Handbook of common using tibetan medicine."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN15703 , bdr:W3CN15703 ;
+        :workIsAbout        bdr:T2MS13793 , bdr:T85 .
+}

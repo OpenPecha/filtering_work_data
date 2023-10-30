@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23489 {
+    bda:LG1DA0100C614B9482
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-28T12:04:45.15Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB10AF1E5E1E90DBA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-28T12:06:19.278Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG23489  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23489 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "61/WA1KG23489.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23489 ;
+        adm:logEntry        bda:LG1DA0100C614B9482 , bda:LGB10AF1E5E1E90DBA , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDC5433B9C356A569
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6082 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23489  a       :Work ;
+        skos:prefLabel      "bod yig dag cha'i skor/"@bo-x-ewts ;
+        :catalogInfo        "Comparison list of correct and wrong spelling for the similar tune of Tibetan words."@en ;
+        :creator            bdr:CRDC5433B9C356A569 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T218 ;
+        :workHasInstance    bdr:MW1KG23489 , bdr:W1KG23489 .
+}

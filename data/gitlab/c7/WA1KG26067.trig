@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG26067 {
+    bda:LG6C020A2BD10C8FE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-10T14:51:04.989Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG84DF621648756FF1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-10T14:51:38.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG26067  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG26067 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c7/WA1KG26067.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG26067 ;
+        adm:logEntry        bda:LG6C020A2BD10C8FE3 , bda:LG84DF621648756FF1 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR80F776A033CEF94D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG26072 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG26067  a       :Work ;
+        skos:altLabel       "khams stong 'khor dgon gsang chen rdo rje gling gi gtsos yul dgon bdun gyi byung rim rags tsam bkod pa lha'i rgyud mang /"@bo-x-ewts ;
+        skos:prefLabel      "stong 'khor chos 'byung lha'i rgyud mang /"@bo-x-ewts ;
+        :catalogInfo        "Religious history of Tongkhor Monastery Sangchen Dorjee Ling in Kham."@en ;
+        :creator            bdr:CR80F776A033CEF94D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW1KG26067 , bdr:W1KG26067 ;
+        :workIsAbout        bdr:G1542 .
+}

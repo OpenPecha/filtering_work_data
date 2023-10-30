@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS43940 {
+    bda:LG4AFA755246DF86F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-22T11:43:46.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG907CBB1D0EF2C67F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF032B9E6AF7D03B6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-22T11:42:30.761Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS43940  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS43940 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/WA8LS43940.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS43940 ;
+        adm:logEntry        bda:LG4AFA755246DF86F7 , bda:LG907CBB1D0EF2C67F , bda:LGF032B9E6AF7D03B6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS43940  a       :Work ;
+        skos:prefLabel      "gza' rnams kyi yum la sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 skar ma'i yum zhes bya ba'i gzungs/ 2 'phags pa phyogs bcu mun sel/ 3 dag pa gser gyi mdo thig 4 nyes pa kun sel/ 5 bka' 'gyur rin po che'i spar ma dang bris ma rnams pu sti bsdoms tshig 6 grib bsang / 7 bsangs mchod 'dod dgur 'khyil ba'i dga' ston/ 8 sgrol ma'i mtshan brgya/ 9 mig 'byed spyan ras gzigs kyi sgrub thabs bum pa sgrub tshul dang bcas pa/ 10 ha cang rgan po'i gsol mchod bsangs gser skyems g.yang khug la sogs/ 11 'go ba'i lha lnga'i bsrung ma'i g.yang 'bod gser gyi lcags kyu/ 12 rin chen ril bu gtong tshul/ 13 rgod ma'i 'o ma gtong tshul/ 14 rdo rje mkha' sding nag po/ 15 mchog gsum spyi dang bye brag yul lha gzhi bdag la bsangs mchod 'gul tshul bkra shis rgyun bzang / 'dod dgu'i char 'bebs/ 16 mchog gsum spyi dang bye brag yul lha gzhi bdag la bsangs mchod 'gul tshul bkra shis rgyun bzang / 'dod dgu'i char 'bebs/ 17 rgya nag po'i skag bzlog 18 sham+bha la'i smon lam/ 19 chos mngon pa'i mdzod kyi tshig le'ur byas pa/"@en , "Collection of dharanis, sadhana, ritual, medical treatment and abhidharmakosha root text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 , bdr:T977 ;
+        :workHasInstance    bdr:MW8LS43940 , bdr:W8LS43940 ;
+        :workIsAbout        bdr:T59 , bdr:T94 .
+}

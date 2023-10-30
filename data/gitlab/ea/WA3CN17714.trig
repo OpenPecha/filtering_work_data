@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN17714 {
+    bda:LG0EA5334C00221F66
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-03T17:13:20.58Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA3F1C51D6523EA98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-03T17:15:17.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN17714  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN17714 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ea/WA3CN17714.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN17714 ;
+        adm:logEntry        bda:LG0EA5334C00221F66 , bda:LGA3F1C51D6523EA98 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDF8547C98E67BC63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN17714  a       :Work ;
+        skos:altLabel       "tshad ma rnam 'grel gyi tshig le'ur byas pa rnam bshad thar lam gsal byed/ smad cha le'u phyi ma gnyis/"@bo-x-ewts ;
+        skos:prefLabel      "rnam 'grel rnam bshad thar lam gsal byed kyi smad cha le'u phyi ma gnyis/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Buddhist epistemology (volume 2) by Gyaltsab Darma Rinchen."@en ;
+        :creator            bdr:CRDF8547C98E67BC63 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN17714 , bdr:W3CN17714 ;
+        :workIsAbout        bdr:T370 , bdr:WA19721 .
+}

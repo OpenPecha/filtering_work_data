@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC235 {
+    bda:LG2A3586D1F6B76C20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:00.76Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3DDABC45D86972F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG8E60E873263FB80F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-31T11:05:11.317Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG912E8B05C89C8197
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T20:50:20.83Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGA1E6574DEB9C983C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T21:55:34.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGD0C91D8D75F2CEF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-18T23:49:30.901Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDE4114AD26B999CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T18:04:59.035Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC235  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC235 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "fd/WA1AC235.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC235 ;
+        adm:logEntry        bda:LG2A3586D1F6B76C20 , bda:LG3DDABC45D86972F5 , bda:LG8E60E873263FB80F , bda:LG912E8B05C89C8197 , bda:LGA1E6574DEB9C983C , bda:LGD0C91D8D75F2CEF3 , bda:LGDE4114AD26B999CA , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR06D88744A059F1AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366781 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1AC235  skos:altLabel  "青藏高原常见中草药"@zh-hans .
+
+    bdr:WA1AC235  a         :Work ;
+        skos:altLabel       "qing zang gao yuan chang jianzhong cao yao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho bod sa mtho'i rgyun mthong sngo sman/"@bo-x-ewts , "青藏高原常见中草药"@zh-hans ;
+        :catalogInfo        "Medicinal herb from Kokonor Tibet"@en ;
+        :creator            bdr:CR06D88744A059F1AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1AC235 , bdr:W1AC235 ;
+        :workIsAbout        bdr:T2MS13793 , bdr:T85 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355738 {
+    bda:LG2403221BC7FF543A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG2B74EEAA9E43DD6F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-29T14:30:26.055Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGAE69EDD67199D95F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-28T16:27:35.676Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF99CF5AA9C99F1DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T17:06:44.27Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ355738  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355738 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "18/WA4CZ355738.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355738 ;
+        adm:logEntry        bda:LG2403221BC7FF543A , bda:LG2B74EEAA9E43DD6F , bda:LGAE69EDD67199D95F , bda:LGF99CF5AA9C99F1DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6EA787EA09D9D289
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366705 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA4CZ355738  a      :Work ;
+        skos:prefLabel      "mtshan nyid rig pa ni shes rab la dga' ba de yin/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan translation of the Chinese philosophy."@en ;
+        :creator            bdr:CR6EA787EA09D9D289 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
+        :workHasInstance    bdr:MW4CZ355738 , bdr:W4CZ355738 ;
+        :workIsAbout        bdr:T388 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2598 {
+    bda:LG3223B146DA907938
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-16T17:07:24.965Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG710FB1D5EB7312D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGA5B6EF7B14127486
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:42:41.303Z"^^xsd:dateTime ;
+        adm:logMessage      "full cadloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2598"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2598  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2598 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2d/WA1NLM2598.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2598 ;
+        adm:logEntry        bda:LG3223B146DA907938 , bda:LG710FB1D5EB7312D9 , bda:LGA5B6EF7B14127486 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDE587CF5346F02DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4914 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2598  a       :Work ;
+        skos:altLabel       "bcom ldan 'das 'khor lo sdom pa'i cho ga'i mjug tu bya ba'i smon lam dang shis brjod/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i bskyed rim gyi rnam bzhag rdo rje 'chang dbang bla ma'i gsung rgyun/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of Utapattikarma practice of the Guhyasamaja Tantra by Dakpo Namkha Drak and Prayer to recite at the end of ritual offering of Cakrasamvara"@en ;
+        :creator            bdr:CRDE587CF5346F02DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2598 , bdr:W1NLM2598 ;
+        :workIsAbout        bdr:T164 , bdr:T2001 , bdr:T417 .
+}

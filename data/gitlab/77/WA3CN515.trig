@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN515 {
+    bda:LG34ECDA23877FC642
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-29T19:06:44.068Z"^^xsd:dateTime ;
+        adm:logMessage      "editing"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG54CB95FE8969FA54
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-31T15:54:23.443Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG6291EACF123A82FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8B941AE7761998AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-31T15:52:42.042Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE58224825B09C7F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-29T11:16:54.393Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN515  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN515 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "77/WA3CN515.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN515 ;
+        adm:logEntry        bda:LG34ECDA23877FC642 , bda:LG54CB95FE8969FA54 , bda:LG6291EACF123A82FB , bda:LG8B941AE7761998AC , bda:LGE58224825B09C7F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9046F4C8521597FA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN515  a         :Work ;
+        skos:altLabel       "rtsa rgyud gsang ba snying po'i 'grel pa nyi ma'i snying po zhes bya ba las gu ru pad ma rgyal po'i gsung rgyun man ngag snyan rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba snying po'i 'grel pa nyi ma'i snying po/"@bo-x-ewts ;
+        :catalogInfo        "Commentary of Guhyagarbha Tantra by Dampa Deshek (1122-1192)."@en ;
+        :creator            bdr:CR9046F4C8521597FA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN515 , bdr:W3CN515 ;
+        :workIsAbout        bdr:T1PD109541 , bdr:WA12652 .
+}

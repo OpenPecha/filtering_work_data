@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17781 {
+    bda:LG26CA87B0198F5B33
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-03T10:19:06.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA287EC3F4D144244
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-03T10:17:57.112Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD50927029BB84E52
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17781  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17781 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9a/WA8LS17781.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17781 ;
+        adm:logEntry        bda:LG26CA87B0198F5B33 , bda:LGA287EC3F4D144244 , bda:LGD50927029BB84E52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17781  a       :Work ;
+        skos:altLabel       "seng gdong bdud 'dul nag mo'i gtor bzlog byed tshul gyi 'don 'grigs ma rig mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong nag mo'i gtor bzlog byed tshul gyi 'don 'grigs/"@bo-x-ewts ;
+        :catalogInfo        "A recitation text during bali offering to dispel hindrances based on the Simhamukha as deity."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17781 , bdr:W8LS17781 ;
+        :workIsAbout        bdr:T2579 , bdr:T400 , bdr:T905 .
+}

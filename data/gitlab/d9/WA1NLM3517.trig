@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3517 {
+    bda:LGEE14A42C392E4190
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-19T16:07:01.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3517"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3517  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3517 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d9/WA1NLM3517.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3517 ;
+        adm:logEntry        bda:LGEE14A42C392E4190 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0808CA898E4DA228
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3517  a       :Work ;
+        skos:prefLabel      "rta mgrin gsang sgrub bka' sdod dang bcas pa mchod cing bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun ma 'phags ma sgrol mar thugs rje bskul ba'i chog a brjod bya'i don ma lus par tshang zhing mdor bsdus tshogs 'don du byas chog pa/ 2 'phags pa bkra shis brtsegs pa/ 3 chos skyong dregs pa lcam sring gi sgo nas me mnga' bya tshul byang mkhan phye mar brlag pa'i gnam lcags rdo rje'i thog mda'/ 4 ye shes mkha' 'gro seng gdong ma/ 5 chos skyong gang gi sgo nas byed chog pa' bzlog bsgyur/ 6 khro bo rgyal po rme ba btsegs pa'i sgo nas grib sel/ 7 dam can chos kyi rgyal po la brten nas ling+ga bsgral chog srid gsum rnam rgyal/ 8 chos skyong dregs pa lcam sring gi sgo nas gsad pa bzlog bsgyur gyi cho ga gnam lcags thog mda'/ 9 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga / rta mgrin gyi bzlog pa rnam rgyal stobs kyi mtshon cha/ 10 skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung / 11 rta mgrin gsang sgrub kyi smon lam theg mchog lam gyi bzhon pa/ 12 rta mgrin gsang sgrub kyi shis brjod g.yas 'khyil dung gi rang sgra/ 13 bstan bsrung sprul pa'i chos rgyal chen po hang kas drag po'i las byang dgra srog gcod p'a spu gri/"@en , "Offering, confession and purification, repelling ritula of Hayagriva Guhyasadhana; included other text also."@en ;
+        :creator            bdr:CR0808CA898E4DA228 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3517 , bdr:W1NLM3517 ;
+        :workIsAbout        bdr:T1892 , bdr:T1AT269 , bdr:T249 , bdr:T50 .
+}

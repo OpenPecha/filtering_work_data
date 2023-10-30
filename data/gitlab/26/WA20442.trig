@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20442 {
+    bda:LG23C5BC4913D708B7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG3C573E1B66465CDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T12:47:55.287Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG770AFAA8FC95D9F2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-02T15:15:26.954Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA75C251EA5242732
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGB27CECFBB9F6EFD7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-07T15:24:45.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA20442  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20442 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "26/WA20442.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20442 ;
+        adm:logEntry        bda:LG23C5BC4913D708B7 , bda:LG3C573E1B66465CDE , bda:LG770AFAA8FC95D9F2 , bda:LGA75C251EA5242732 , bda:LGB27CECFBB9F6EFD7 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW20442  skos:altLabel  "西藏短篇小说选"@zh-hans .
+
+    bdr:WA20442  a          :Work ;
+        skos:altLabel       "xi zang duan pian xiao shuo xuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod kyi brtsams sgrung 'dems sgrig"@bo-x-ewts , "西藏短篇小说选"@zh-hans ;
+        :catalogInfo        "Collection of modern Tibetan short stories written by various authors"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1PD128746 , bdr:T257 ;
+        :workHasInstance    bdr:MW20442 , bdr:W20442 .
+}

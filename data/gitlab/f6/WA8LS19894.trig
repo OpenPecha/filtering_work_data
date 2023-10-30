@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19894 {
+    bda:LG3258033D70868C81
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T11:01:22.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9DF79C8F7911CB89
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-22T16:22:14.577Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, author, contents and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19894  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19894 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f6/WA8LS19894.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19894 ;
+        adm:logEntry        bda:LG3258033D70868C81 , bda:LG9DF79C8F7911CB89 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00KG02677 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA9D4EE71E94C43F0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19894  a       :Work ;
+        skos:altLabel       "theg pa chen po'i man ngag gi bstan bcos yid bzhin rin po che'i mdzod kyi 'grel pa pad+ma dkar po/"@bo-x-ewts ;
+        skos:prefLabel      "yid bzhin rin po che'i mdzod kyi 'grel pa pad+ma dkar po/"@bo-x-ewts ;
+        :catalogInfo        "1 yid bzhin mdzod kyi sa bcad bsdus sdom ku mu da'i phreng ba/ 2 yid bzhin rin po che'i mdzod kyi dka' gnad ci rigs gsal bar byed pa/ 3 yid bzhin mdzod kyi grub mtha' bsdus pa/ 4 yid bzhin mdzod kyi don khrid zab don rdo rje snying po/ 5 le'u bco brgyad pa'i tshig 'grol/"@bo-x-ewts , "Philosophical master pieces commentary by Longchen Rapjampa Drime Odzer."@en ;
+        :creator            bdr:CRA9D4EE71E94C43F0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA12630 .
+}

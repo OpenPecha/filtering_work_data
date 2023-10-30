@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21731 {
+    bda:LG84BD2E36BCA411D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC46AFCEC690C8D60
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T10:46:51.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGDB86CC682D1A4769
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21731  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21731 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0a/WA21731.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21731 ;
+        adm:logEntry        bda:LG84BD2E36BCA411D8 , bda:LGC46AFCEC690C8D60 , bda:LGDB86CC682D1A4769 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAB30D78107AAB849
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21731  skos:altLabel  "rdzogs chen klong gsal snin thig : a cycle of rdzogs-chen practice"@en .
+
+    bdr:WA21731  a          :Work ;
+        skos:prefLabel      "rdzogs chen klong gsal snying thig : a cycle rdzogs chen practice/"@bo-x-ewts , "rdzogs chen klong gsal snin thig : a cycle of rdzogs-chen practice"@en ;
+        :catalogInfo        "Cycle of Nyingma Dzogchen practices."@en ;
+        :creator            bdr:CRAB30D78107AAB849 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW21731 , bdr:W21731 ;
+        :workIsAbout        bdr:T1082 , bdr:T354 .
+}

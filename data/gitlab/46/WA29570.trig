@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29570 {
+    bda:LGB791737E72BF579B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC3C00467910F519F
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-10T14:49:38.798Z"^^xsd:dateTime ;
+        adm:logMessage      "ctct7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGE176E02553E44AAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGE8C8EB2DE099C46A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T14:36:38.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29570  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29570 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "46/WA29570.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29570 ;
+        adm:logEntry        bda:LGB791737E72BF579B , bda:LGC3C00467910F519F , bda:LGE176E02553E44AAA , bda:LGE8C8EB2DE099C46A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA21511 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR23EDC4E74D13B57C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3016 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29570  skos:altLabel  "rye ba ring bsrel : a collection of instructions of zur-mkhar mnam-nid-rdo-rje on medicine, containing a seemingly larger collection of the Kha thor collection than that found in the printed redaction"@en .
+
+    bdr:WA29570  a          :Work ;
+        skos:altLabel       "Bye ba riṅ bsrel :a collection of instructions of Zur-mkhar Mñam-ñid-rdo-rje on medicine, containing a seemingly larger collection of the Kha thor collection than that found in the printed redaction."@en-x-mixed ;
+        skos:prefLabel      "bye ba ring bsrel/ (dbu med/)"@bo-x-ewts , "rye ba ring bsrel : a collection of instructions of zur-mkhar mnam-nid-rdo-rje on medicine, containing a seemingly larger collection of the Kha thor collection than that found in the printed redaction"@en ;
+        :catalogInfo        "Instructions on medical practices of the Zur tradition."@en ;
+        :creator            bdr:CR23EDC4E74D13B57C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29570 ;
+        :workIsAbout        bdr:T2MS13793 , bdr:T86 .
+}

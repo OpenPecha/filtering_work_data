@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3669 {
+    bda:LG4C024A96D199256D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T16:24:06.812Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3669"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3669  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3669 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "93/WA1NLM3669.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3669 ;
+        adm:logEntry        bda:LG4C024A96D199256D , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR55E539F2F7724164
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CREA041DDA69ABEC23
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3669  a       :Work ;
+        skos:altLabel       "bcom ldan 'das dpal pad+ma dbang chen rta mgrin yang gsang khros pa lha dgu'i las gzhung rta mchog bzhad pa'i sgra dbyangs kyi sgom rim bsnyen thabs dang bcas pa'i rnam bshad gnad don rab gsal kun phan sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin yang gsang khros pa lha dgu'i las gzhung rta mchog bzhad pa'i sgra dbyangs kyi sgom rim bsnyen thabs dang bcas pa'i rnam bshad gnad don rab gsal kun phan sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "A ritual texts focusing upon Guhyasadhana of wrathful Hayagriva; Ritual text for taking Bhikshu and other vows and collection of miscellaneous rituals"@en ;
+        :creator            bdr:CR55E539F2F7724164 , bdr:CREA041DDA69ABEC23 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T151 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3669 , bdr:W1NLM3669 ;
+        :workIsAbout        bdr:T1111 .
+}

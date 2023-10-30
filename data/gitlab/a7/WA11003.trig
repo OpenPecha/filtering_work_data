@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA11003 {
+    bda:LG2F22A626259E90A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T14:11:50.544Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T108 to T2088"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB0C9E843A76A4D4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T14:11:50.544Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T108 to T2088"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDEB77BC055537E4C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA11003  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA11003 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a7/WA11003.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA11003 ;
+        adm:logEntry        bda:LG2F22A626259E90A7 , bda:LGB0C9E843A76A4D4E , bda:LGDEB77BC055537E4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR948E2AB3CCF6076D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P926 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA11003  a          :Work ;
+        skos:altLabel       "gang zag dbang po tha ma 'chi ba'i bslab bya don tshan bco brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "'chi ba'i bslab bya don tshan bco brgyad/"@bo-x-ewts ;
+        :creator            bdr:CR948E2AB3CCF6076D ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW11003 ;
+        :workIsAbout        bdr:T2088 , bdr:T58 .
+}

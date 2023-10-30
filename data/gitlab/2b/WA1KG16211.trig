@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16211 {
+    bda:LG2FB8F373A3F7EBE8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-18T09:41:03.31Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFF22B356CE5143CF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-18T09:28:37.343Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16211  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16211 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/WA1KG16211.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16211 ;
+        adm:logEntry        bda:LG2FB8F373A3F7EBE8 , bda:LGFF22B356CE5143CF , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00EGS1017328 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1KG16211  a       :Work ;
+        skos:altLabel       "lam ston sgron me'i phreng ba/ deb lnga pa/"@bo-x-ewts , "lam ston sgron me'i phreng ba/ dris lan gyi deb phreng gsum pa/"@bo-x-ewts ;
+        skos:prefLabel      "lam ston sgron me'i phreng ba/ (5)"@bo-x-ewts ;
+        :catalogInfo        "Replies to queries on tibetan grammar text, history, orthography, tenets"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T218 , bdr:T28 , bdr:T385 , bdr:T793 ;
+        :workHasInstance    bdr:MW1KG16211 ;
+        :workIsAbout        bdr:T186 .
+}

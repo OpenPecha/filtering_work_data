@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23478 {
+    bda:LG7E0DD1232693D75A
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-10T09:59:31.201Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG883CD01EE5400609
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG992F632EEC772F3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-18T16:34:18.406Z"^^xsd:dateTime ;
+        adm:logMessage      "add subject and scan info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23478  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23478 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "39/WA23478.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23478 ;
+        adm:logEntry        bda:LG7E0DD1232693D75A , bda:LG883CD01EE5400609 , bda:LG992F632EEC772F3C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C9C873B8A0B4EE7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7682 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA23478  a          :Work ;
+        skos:altLabel       "mdo dgongs 'dus khams lugs su grags pa/"@bo-x-ewts ;
+        skos:prefLabel      "bka' ma mdo dbang khams lugs su grags pa sbrang rtsi'i chu rgyun/"@bo-x-ewts ;
+        :catalogInfo        "Portion of the Expanded Nyingma Kama, outlining rituals for the practice of the Kham order of the Anuyoga teachings. Written by Dorje Pel."@en ;
+        :creator            bdr:CR1C9C873B8A0B4EE7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23478 , bdr:W23478 ;
+        :workIsAbout        bdr:T1093 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2718 {
+    bda:LG052020A69D9A89A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-07T09:28:39.422Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD62BB745CB9DC094
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2718"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2718  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2718 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "64/WA1NLM2718.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2718 ;
+        adm:logEntry        bda:LG052020A69D9A89A2 , bda:LGD62BB745CB9DC094 , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0C0475DCEB9421F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2718  a       :Work ;
+        skos:altLabel       "rje btsun seng+ge'i sgra dang phyag rdor la brten pa'i gdon 'grol byed tshul gdung sel nor bu'i zla ba/"@bo-x-ewts ;
+        skos:prefLabel      "seng+ge'i sgra dang phyag rdor la brten pa'i gdon 'grol byed tshul gdung sel nor bu'i zla sogs/"@bo-x-ewts ;
+        :catalogInfo        "Repelling spirit through Simhanatha and Vajrapani deity ritual and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR0C0475DCEB9421F2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2718 , bdr:W1NLM2718 ;
+        :workIsAbout        bdr:T2050 , bdr:T605 .
+}
