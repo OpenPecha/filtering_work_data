@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3571 {
+    bda:LG5F2AEA4CE1B4C193
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T11:56:37.741Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3571"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3571  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3571 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/WA1NLM3571.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3571 ;
+        adm:logEntry        bda:LG5F2AEA4CE1B4C193 , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR75ABFDEC523027EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3571  a       :Work ;
+        skos:prefLabel      "lugs zung gi bslab bya mu thi la'i 'phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dregs pa sde brgyad la gser skyems gtong ba'i cho ga bdud rtsi'i rlabs 'phreng / 2 'dod gsol kha bsgyur/ 3 byang chub lam gyi sgron ma/ 4 zab lam bla ma'i rnal 'byor gyi man ngag snying po'i rtsa tshig 5 khang o la yi gsol mchod/ 6 chos dbyings gsum gyi sgrub thabs/ 7 phyogs bcu mun sel/ 8 rgyan drug mchog gnyis kyi bstod pa/ 9 lam rim chen po'i smon lam/ 10 sham+b+ha la'i smon tshig 11 rdo rje mi 'khrugs pa'i rtsa sngags 'don thabs las sgrib rgyun gcod/ 12 'phags pa gtsug tro rnam par rgyal ma'i gzungs rtogs pa dang bcas pa/ 13 phur tshugs gsol 'debs dgra dpung kun 'joms/"@en , "Instruction on politics and religion by the fifth Dalai Lama; other text also included."@en ;
+        :creator            bdr:CR75ABFDEC523027EE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3571 , bdr:W1NLM3571 ;
+        :workIsAbout        bdr:T1907 , bdr:T58 .
+}

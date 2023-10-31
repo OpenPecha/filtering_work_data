@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15411 {
+    bda:LG63C22C9034E98A3D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-21T12:14:38.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG845D698E2288DD75
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-02T14:29:31.267Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15411  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15411 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "38/WA1KG15411.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15411 ;
+        adm:logEntry        bda:LG63C22C9034E98A3D , bda:LG845D698E2288DD75 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG15411  a       :Work ;
+        skos:prefLabel      "chos skyong ba'i rgyal po chen po sku lnga'i be'u bum/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for Mahakala in his five-fold form."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1202 ;
+        :workHasInstance    bdr:MW1KG15411 , bdr:W1KG15411 ;
+        :workIsAbout        bdr:T1738 .
+}

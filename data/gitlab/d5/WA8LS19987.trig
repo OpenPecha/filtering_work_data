@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19987 {
+    bda:LG74B88542DAAD457A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:32:34.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG823DD9354AF0CFC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-28T09:39:43.731Z"^^xsd:dateTime ;
+        adm:logMessage      "biblio title, added author, cat info, topics and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19987  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19987 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d5/WA8LS19987.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19987 ;
+        adm:logEntry        bda:LG74B88542DAAD457A , bda:LG823DD9354AF0CFC3 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG10750 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR87219F638BBFA958
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5786 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19987  a       :Work ;
+        skos:altLabel       "bod kyi brda sprod pa'i gzhung sum cu pa dang rtags kyi 'jug pa nyung ngu'i tshig gis go sla par bkral ba legs bshad snang ba dam pa/"@bo-x-ewts ;
+        skos:prefLabel      "sum rtags 'grel pa legs bshad snang ba dam pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Tibetan grammar by Karma Monlam Lhaksam Tenpai Gyaltsen."@en ;
+        :creator            bdr:CR87219F638BBFA958 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workIsAbout        bdr:T186 .
+}

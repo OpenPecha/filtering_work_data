@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG209786 {
+    bda:LG50A6A1E2DE14F5CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-05T14:19:39.748Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC4E7E6322910ACA7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-05T14:38:56.79Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA62FA69CB4B4682
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2KG209786  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG209786 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "10/WA2KG209786.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG209786 ;
+        adm:logEntry        bda:LG50A6A1E2DE14F5CA , bda:LGC4E7E6322910ACA7 , bda:LGFA62FA69CB4B4682 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE2F5EC271AFF5ED6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG08454 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG209786  a      :Work ;
+        skos:altLabel       "dga' ldan khri rabs nga gsum pa khri chen rgyal mtshan seng+ge dang / ma hA paN+Di ta lha mo'i blo bzang tshul khrims rgya mtsho gnyis kyi rnam thar/"@bo-x-ewts , "dga' ldan khri rabs nga gsum pa khri chen rgyal mtshan seng+ge dpal bzang bo'i 'khrungs rabs dang 'brel ba'i mdzad rnam mdo tsam brjod pa thub dbang bstan pa'i mdzes rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "khri chen rgyal mtshan seng+ge dang / ma hA paN+Di ta lha mo'i blo bzang tshul khrims rgya mtsho gnyis kyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biographies of Gadan Tripa 53 Trichen Gyaltsen Senge and Maha Pandita Lhamoe Lobsang Tsultrim Gyatso."@en ;
+        :creator            bdr:CRE2F5EC271AFF5ED6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2KG209786 , bdr:W2KG209786 ;
+        :workIsAbout        bdr:P2760 , bdr:P5077 .
+}

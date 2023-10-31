@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4280 {
+    bda:LG4312B87DA1FD74B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T17:25:14.061Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7510D1DA28CEBA9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-23T12:07:07.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC40E10DF3736C31B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-15T15:37:58.809Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC77CEDC5912819EA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T12:13:45.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4280  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4280 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "89/WA3CN4280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4280 ;
+        adm:logEntry        bda:LG4312B87DA1FD74B3 , bda:LG7510D1DA28CEBA9C , bda:LGC40E10DF3736C31B , bda:LGC77CEDC5912819EA , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN4280  a        :Work ;
+        skos:altLabel       "dkon mchog rjes dran 'grel pa dang nges sgron rtsa ba/"@bo-x-ewts ;
+        skos:prefLabel      "dkon mchog rjes dran gyi 'grel pa dang nges sgron gyi rtsa ba/"@bo-x-ewts ;
+        :catalogInfo        "Short commentary on Triratna Anusmriti Sutra and root text of nges shes sgron me in Dzogchen tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW3CN4280 , bdr:W3CN4280 ;
+        :workIsAbout        bdr:WA18280 , bdr:WA5014 .
+}

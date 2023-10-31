@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2248 {
+    bda:LG69AAF3DC04D2FBAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-06T09:30:41.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, creator, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG727677C3C4CB4BB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2248"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2248  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2248 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a2/WA1NLM2248.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2248 ;
+        adm:logEntry        bda:LG69AAF3DC04D2FBAE , bda:LG727677C3C4CB4BB6 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7F36231F1771D7F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2248  a       :Work ;
+        skos:prefLabel      "dbyangs can lha mo la mang du yod pa'i pi wang lha mo'i grub phrin grub dbang phur ba'i yi ge dang /_sum lo'i yi ge snga phyi man ngag brgyud pa'i yi ge du ma'i don bsdus te 'dod 'jo'i bum bzang skal bzang re skong sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sgrol ma rnam gnyis dang rig byed ma rnams su ma 'brel ba'i maN+Dal bzhi'i cho ga bkra shis sgo brgya byed pa'i lde mig 2 dkon brtsegs la gsung ba'i sangs rgyas bcu'i mtshan dang phan yon bcas/ 3 dga' ldan lha brgya ma'i steng nas 'khrid chen bzhi'i nyams len bya tshul/ 4 myur byon gsol 'debs re 'bras lhun grub ma/ 5 grub chen lce sgom pa'i 'chi blu'i gtor ma/ 6 dus gsum sangs rgyas thams cad kyi ngo bo rgyal ba blo bzang grags pa la gsol ba 'debs pa'i smon tshig bsam pa lhun gyis 'brug ba/ 7 cha gsum gtor ma gtong ba'i tshul/ 8 sdig bshags gser gyi spu gri/ 9 zab lam rim gnyis bsgom pa'i sngon 'gro'i chos khrid chen bzhir grags pa'i 'don cha'i rim pa/ 10 byams chen ma'i gsol 'debs/"@en , "Summary of Sarasvati's instruction; included other text also."@en ;
+        :creator            bdr:CR7F36231F1771D7F9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW1NLM2248 , bdr:W1NLM2248 ;
+        :workIsAbout        bdr:T1786 , bdr:T389 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68189 {
+    bda:LG502C582B300194E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T15:58:39.764Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA5C562BEF709DEA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC245B6EBB22B6305
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-27T15:59:04.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68189  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68189 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "10/WA8LS68189.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68189 ;
+        adm:logEntry        bda:LG502C582B300194E9 , bda:LGA5C562BEF709DEA9 , bda:LGC245B6EBB22B6305 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5A787EA1DA3B55A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68189  a       :Work ;
+        skos:altLabel       "mtsho sngon slob grwa chen mo'i bod kyi gso rig ched las zhib 'jug slob ma'i mu 'brel slob deb/ thun mong 'phrod bsten rig pa dang nad med tshe bsring rig pa/"@bo-x-ewts ;
+        skos:prefLabel      "thun mong 'phrod bsten rig pa dang nad med tshe bsring rig pa/"@bo-x-ewts ;
+        :catalogInfo        "Text book concerning health and hygience also prolonging life, edited by Konchok Gyaltshen."@en ;
+        :creator            bdr:CR5A787EA1DA3B55A7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68189 , bdr:W8LS68189 ;
+        :workIsAbout        bdr:T1142 , bdr:T1GS145345 , bdr:T85 .
+}

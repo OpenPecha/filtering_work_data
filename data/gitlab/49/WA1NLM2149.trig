@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2149 {
+    bda:LGE737CC1099984962
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGEEF5F22A214D75EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-29T15:10:30.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2149"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2149  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2149 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "49/WA1NLM2149.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2149 ;
+        adm:logEntry        bda:LGE737CC1099984962 , bda:LGEEF5F22A214D75EF , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2149  a       :Work ;
+        skos:prefLabel      "lhag pa'i lha gang yang rung ba'i sgo nas rang gzhan dang dgon grong byabs khrus rgyun 'khyer du bya tshul nyer tshe spyi dang byi brag la bya ba'i dmigs gsal bcas kha gsal bar bkod zla ba'i chu rgyun zhes bya ba rnam 'joms rdor sems klu dbang rgyal po sogs lha khag kha bsgyur bya tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ye shes kyi mkha' 'gro seng ge'i gdong can gyi sgo nas byang grol byabs bsur bya bar 'dod pa/ 2 gtsug tor gdugs dkar gyi bzlog bsgyur mi mthun g.yul las rgyal byed/ 3 chos skyong gang rung gi sgo nas bzlog pa' cho ga mi mthun phyogs las rgyal ba'i ru mtshon/ 4 chos rgyal gshin rje'i sgo nas dur kha 'chi bdag zlog dus min 'chi ba zhags gcod pa'i ral gri bsam don lhun 'grub/ 5 dur kha 'chi bzlog bya tshul 'chi med g.yul rgyal/ 6 rta mgrin gsang sgrub kyi sgo nas byabs khrus byed tshul bdud rtsi bum bzang / 7 za 'dre kha bsgyur zab mo gnam skas can gyi gtor ma/ 8 shi gshed 'dul thabs dgra bgegs dpung 'joms/"@en , "Purification ritual practice of vajravidharana, vajrasattva and nagesvaraja; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2149 , bdr:W1NLM2149 ;
+        :workIsAbout        bdr:T1447 , bdr:T2549 , bdr:T452 , bdr:T544 , bdr:T569 .
+}

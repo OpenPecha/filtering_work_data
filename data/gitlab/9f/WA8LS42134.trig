@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42134 {
+    bda:LG5622E1666E86AC2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T09:02:17.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7A4F3E99F01424E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-20T11:42:22.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCB8809F5DB84CD58
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-20T11:41:16.553Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42134  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42134 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9f/WA8LS42134.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42134 ;
+        adm:logEntry        bda:LG5622E1666E86AC2C , bda:LG7A4F3E99F01424E3 , bda:LGCB8809F5DB84CD58 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREC629E88639AA167
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG911 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS42134  a       :Work ;
+        skos:altLabel       "stobs shugs de de yin/ thA aui'i mang gtso'i ring lugs dar rgud khrod prIdI bnomyong+ga gi cha shas bzhes stangs/"@bo-x-ewts ;
+        skos:prefLabel      "stobs shugs de de yin/"@bo-x-ewts ;
+        :catalogInfo        "History of democracy in Thailand by Sulakshiwarkasha, translated into Tibetan by Tenzin Losel."@en ;
+        :creator            bdr:CREC629E88639AA167 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS42134 , bdr:W8LS42134 ;
+        :workIsAbout        bdr:T1KG20656 .
+}

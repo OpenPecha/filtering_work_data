@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ1103 {
+    bda:LG154FA4F0EA68A190
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-20T11:00:18.02Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG319EC57D070FEE00
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-07-20T12:33:10.021Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8B9D6B7B560525E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T09:24:10.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBB33084E57B78C04
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-03T10:33:12.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added number of volumes"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ1103  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ1103 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4d/WA4CZ1103.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ1103 ;
+        adm:logEntry        bda:LG154FA4F0EA68A190 , bda:LG319EC57D070FEE00 , bda:LG8B9D6B7B560525E6 , bda:LGBB33084E57B78C04 , bda:LGIM74A445C794 , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE27E7EBC6806E8AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P663 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ1103  a        :Work ;
+        skos:altLabel       "stag sham nus ldan rdo rje'i phyi nang gsang gsum gyi rnam thar sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bka' 'bum/_stag sham nus ldan rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected writings and visionary revelations of Taksham Nuden Dorje, including his autobiography"@en ;
+        :creator            bdr:CRE27E7EBC6806E8AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ1103 , bdr:W4CZ1103 ;
+        :workIsAbout        bdr:T1082 .
+}

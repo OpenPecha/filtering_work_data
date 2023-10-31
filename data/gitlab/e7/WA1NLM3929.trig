@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3929 {
+    bda:LGD21796A26F354DEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T08:57:12.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3929"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3929  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3929 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/WA1NLM3929.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3929 ;
+        adm:logEntry        bda:LGD21796A26F354DEB , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA9652B3EA048174C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3929  a       :Work ;
+        skos:prefLabel      "rgyal po gser gyi lag pa'i smon lam dang 'brel ba'i mar me ji ltar 'bul ba'i tshul bde legs 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal ba mi 'khrugs pa'i mtshan sngags smon lam sku bzhengs pa'i phan yon dang bcas pa/ 2 smon tshig bsam don lhun grub/ 3 lugs gnyis dang 'brel ba'i bslab bya'i rim pa mu thi la'i 'phreng ba/ 4 grub chen thang stong rgyal po'i rdo rje'i gsungs skya nang grol mar grags pa'i smon lam byin rlabs can/ 5 'phags mchog rigs gsum mgon po dang dpal mgon bla ma dbyer med la dus ngan snyigs ma'i rgud pa'i phyir gsol b 'debs tshul/ 6 sgrol dkar yid bzhin 'khor lo'i bstod pa/ 7 zab lam bla ma'i rnal 'byor gyi man ngag snying po'i rtsa tshig 8 lhag pa'i smon lam them skas ma/ 9 rtogs brjod mdun legs ma/ 10 rje rin po che'i thugs rje bskul ba gsol 'debs/ 11 'bum gyi bsdus don snying po lo rgyus/ 12 sngags kyi rtsa ltung dang spom po'i ltung ba ngos bzung ba'i sgo nas bshags pa byed tshul/ 13 rdo rje mi 'khrugs pa'i rtsa sngags 'don thabs las sgrib rgyun gcod/ 14 lhag pa'i smon lam them skas ma/"@bo-x-ewts , "Method of butter lamp prayer offering by Cone Drakpa Shedrup."@en ;
+        :creator            bdr:CRA9652B3EA048174C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM3929 , bdr:W1NLM3929 ;
+        :workIsAbout        bdr:T479 .
+}

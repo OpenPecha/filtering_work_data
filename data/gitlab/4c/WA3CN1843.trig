@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1843 {
+    bda:LG2EE3D428C62C3E87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-17T11:12:41.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG32ECD576ED13F1E0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-17T11:09:42.541Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4DE0A39E788E118E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LG861D2D22B50FB782
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-19T11:48:34.375Z"^^xsd:dateTime ;
+        adm:logMessage      "revewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF2CDC7ED490B8187
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-01T14:55:18.349Z"^^xsd:dateTime ;
+        adm:logMessage      "changed CW#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1843  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1843 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4c/WA3CN1843.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1843 ;
+        adm:logEntry        bda:LG2EE3D428C62C3E87 , bda:LG32ECD576ED13F1E0 , bda:LG4DE0A39E788E118E , bda:LG861D2D22B50FB782 , bda:LGF2CDC7ED490B8187 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C0E71EBF46B2101
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN1843  a        :Work ;
+        skos:altLabel       "don bdun cu'i mtha' dpyod nor bu'i phreng mdzes mkhas pa'i mgul brgyan/"@bo-x-ewts ;
+        skos:prefLabel      "don bdun cu'i mtha' dpyod mkhas pa'i mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Critical commentary on the seventy meaning of the abhisamayalamkara, composed by the 1st Jamyang Shepa."@en ;
+        :creator            bdr:CR9C0E71EBF46B2101 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN1843 , bdr:W3CN1843 ;
+        :workIsAbout        bdr:T1215 , bdr:T333 , bdr:WA19716 .
+}

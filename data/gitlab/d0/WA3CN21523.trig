@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21523 {
+    bda:LG2A0A8727DA0E7751
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T16:25:56.035Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3719C1A3FFC0C870
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-28T16:11:34.112Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8B90DF248422D96B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9AA8A9533A437CFE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-10-28T16:26:07.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC1F344821404DCED
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA3CN21523  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21523 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d0/WA3CN21523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21523 ;
+        adm:logEntry        bda:LG2A0A8727DA0E7751 , bda:LG3719C1A3FFC0C870 , bda:LG8B90DF248422D96B , bda:LG9AA8A9533A437CFE , bda:LGC1F344821404DCED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16553 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR362E92FE49C1586D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4994 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR40DF14872BD06CD0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21523  skos:altLabel  "世界总论. 世界广论"@zh-hans .
+
+    bdr:WA3CN21523  a       :Work ;
+        skos:prefLabel      "'dzam gling spyi bshad dang rgyas bshad/"@bo-x-ewts , "世界总论. 世界广论"@zh-hans ;
+        :catalogInfo        "Extensive explanation on geography of the world by Sumpa Khenpo Yeshe Paljor (1704-1788) and Jampel Chokyi Tenzin Trinle 04 (1789-1839)."@en ;
+        :creator            bdr:CR362E92FE49C1586D , bdr:CR40DF14872BD06CD0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN21523 ;
+        :workIsAbout        bdr:T1148 , bdr:T1KG26414 , bdr:T916 .
+}

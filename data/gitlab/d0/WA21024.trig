@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21024 {
+    bda:LG234B95F4205ABEFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-13T14:47:24.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added title and subject"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6388559B45EAC497
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-13T14:49:01.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG63BD9022CD63DB59
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGA6DCE2EE64C9C906
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGAAF5BC24BDE145F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T15:13:48.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA21024  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21024 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d0/WA21024.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21024 ;
+        adm:logEntry        bda:LG234B95F4205ABEFA , bda:LG6388559B45EAC497 , bda:LG63BD9022CD63DB59 , bda:LGA6DCE2EE64C9C906 , bda:LGAAF5BC24BDE145F9 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCB465D6AAF37BCAE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21024  skos:altLabel  "treasured rnin ma pa precepts and rituals received in a vision klon chen pa dri med 'od zer by 'jigs med glin pa ran byun rdo rje mkhyen brtse'i 'od zer"@en-x-mixed .
+
+    bdr:WA21024  a          :Work ;
+        skos:altLabel       "klong chen snying thig gi chos skor/"@bo-x-ewts , "Kloṅ chen sñiṅ thig :treasured Rñiṅ-ma-pa precepts and rituals received in a vision of Kloṅ-chen-pa Dri-med-ʼod-zer /by ʼJigs-med-gliṅ-pa Rang-byuṅ-rdo-rje Mkhyen-brtseʼi-ʼod-zer."@en-x-mixed ;
+        skos:prefLabel      "klong chen snying thig"@bo-x-ewts , "treasured rnin ma pa precepts and rituals received in a vision klon chen pa dri med 'od zer by 'jigs med glin pa ran byun rdo rje mkhyen brtse'i 'od zer"@en-x-mixed ;
+        :catalogInfo        "Introduction to the practices of the Longchen Nyingtik precepts of Dzogchen. Revealed by Jigme Lingpa (1729/30-1798)."@en ;
+        :creator            bdr:CRCB465D6AAF37BCAE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21024 , bdr:W21024 ;
+        :workIsAbout        bdr:T328 , bdr:T354 .
+}

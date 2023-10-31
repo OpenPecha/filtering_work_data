@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32705 {
+    bda:LG6AA414FB254F3A94
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T08:59:39.875Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAE9FD387BE336411
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-09T09:34:19.382Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB2056B5D5F2EB47B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC7634F8F2AA88B71
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-09T09:33:53.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32705  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32705 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "79/WA8LS32705.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32705 ;
+        adm:logEntry        bda:LG6AA414FB254F3A94 , bda:LGAE9FD387BE336411 , bda:LGB2056B5D5F2EB47B , bda:LGC7634F8F2AA88B71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32705  a       :Work ;
+        skos:prefLabel      "a gsal gyi gsol 'debs/ smon lam rgyun khyer/bstod pa/ gzungs/bsang mchod/ bdag bskyed sogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of text pertaining to reverential petition, prayer, verses of praise, dharanis, incense offering ritual, self generation."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T34 , bdr:T457 , bdr:T67 , bdr:T933 ;
+        :workHasInstance    bdr:MW8LS32705 , bdr:W8LS32705 ;
+        :workIsAbout        bdr:T173 , bdr:T1KG624 , bdr:T247 .
+}

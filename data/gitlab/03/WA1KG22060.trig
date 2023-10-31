@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22060 {
+    bda:LG1BEC6385528A20F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-09T10:56:26.567Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2EC3824BE12E838B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG356B4140EB54F8F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-12T12:28:18.187Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBC2F4297A5F1FB28
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-09T11:00:00.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22060  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22060 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "03/WA1KG22060.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22060 ;
+        adm:logEntry        bda:LG1BEC6385528A20F3 , bda:LG2EC3824BE12E838B , bda:LG356B4140EB54F8F8 , bda:LGBC2F4297A5F1FB28 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG22060  skos:altLabel  "the collected rituals for the propitation of the four armed mahakala and the various other protective deities of the 'ba'-rom bka'-brgyud-pa sect"@en .
+
+    bdr:WA1KG22060  a       :Work ;
+        skos:altLabel       "dpal rgyal ba 'ba' rom bka' brgyud pa'i srol mgon po phyag bzhi pa'i skor/"@bo-x-ewts , "skyo brag karma ye shes kyi rang lugs mgon po'i mchod phreng /"@bo-x-ewts ;
+        skos:prefLabel      "'ba' rom bka' brgyud pa'i srol lugs mgon po phyag bzhi pa'i mchod phreng /"@bo-x-ewts , "the collected rituals for the propitation of the four armed mahakala and the various other protective deities of the 'ba'-rom bka'-brgyud-pa sect"@en ;
+        :catalogInfo        "Collected rituals for the propitation of the four armed Mahakala and the various other protective deities of the Bharom Kagyu tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG22060 , bdr:W1KG22060 ;
+        :workIsAbout        bdr:T1384 , bdr:T19 , bdr:T249 , bdr:T406 , bdr:T950 .
+}

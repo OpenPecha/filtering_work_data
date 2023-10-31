@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS75863 {
+    bda:LG65BE35B7929E1D6A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-07T14:39:03.958Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF4C476C4502D4DDB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-07T14:39:30.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS75863  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS75863 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "1a/WA8LS75863.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS75863 ;
+        adm:logEntry        bda:LG65BE35B7929E1D6A , bda:LGF4C476C4502D4DDB , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9361C32057E23C66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRD8A188504E768612
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8237 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA8LS75863  a       :Work ;
+        skos:prefLabel      "'phags pa tshe dang ye shes dpag tu med pa zhes bya theg pa chen po'i mdo/ gser bris/"@bo-x-ewts ;
+        :catalogInfo        "Longitivity sutra; translated by Punyasambhava and Patshap Lotsava Nyima Drak."@en ;
+        :creator            bdr:CR9361C32057E23C66 , bdr:CRD8A188504E768612 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW8LS75863 , bdr:W8LS75863 .
+}

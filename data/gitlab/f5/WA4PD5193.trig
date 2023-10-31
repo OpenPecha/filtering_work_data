@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD5193 {
+    bda:LG07B410D1426A535C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T13:00:23.005Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to editing"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG38825E77AEEAB75F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-09-21T12:37:41.9Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD5193  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD5193 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f5/WA4PD5193.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD5193 ;
+        adm:logEntry        bda:LG07B410D1426A535C , bda:LG38825E77AEEAB75F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusEditing .
+
+    bdr:CR89047930935DEAF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P758 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD5193  a        :Work ;
+        skos:altLabel       "dpal 'brug pa rin po che ngag dbang rnam rgyal gyi rnam thar rgyas pa chos kyi sprin chen po'i dbyings/"@bo-x-ewts ;
+        skos:prefLabel      "'brug ngag dbang rnam rgyal gyi rnam thar rgyas pa chos kyi sprin chen po'i dbyings/"@bo-x-ewts ;
+        :catalogInfo        "the detailed biography of the first zabs-drun rin-po-che of bhutan, nag-dban-rnam-rgyal (nag-dban-bdud-'joms-rdo-rje)"@en ;
+        :creator            bdr:CR89047930935DEAF6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4PD5193 ;
+        :workIsAbout        bdr:P509 , bdr:T816 .
+}

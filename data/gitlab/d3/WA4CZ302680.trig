@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ302680 {
+    bda:LG635466D5BE00207A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LGC36557C55E8243BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T12:42:13.987Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD3A77BAF80C9FE3B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-19T12:43:06.959Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ302680  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ302680 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d3/WA4CZ302680.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ302680 ;
+        adm:logEntry        bda:LG635466D5BE00207A , bda:LGC36557C55E8243BC , bda:LGD3A77BAF80C9FE3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5E0A4EB804E95BDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG10437 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ302680  a      :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i tshig don kun gsal bar byed pa skal bzang 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug 'grel pa tshig don kun gsal bar byed pa skal bzang 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
+        :creator            bdr:CR5E0A4EB804E95BDF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ302680 , bdr:W4CZ302680 ;
+        :workIsAbout        bdr:WA19740 .
+}

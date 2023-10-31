@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM100 {
+    bda:LG15F16F13A5AC997B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG48BBD93446BF3660
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-28T16:33:15.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, contents, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCE6F30A7B59CF113
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T08:29:57.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM100"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM100  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM100 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/WA1NLM100.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM100 ;
+        adm:logEntry        bda:LG15F16F13A5AC997B , bda:LG48BBD93446BF3660 , bda:LGCE6F30A7B59CF113 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM100  a        :Work ;
+        skos:prefLabel      "dam can chos kyi rgyal po'i gtor chog bskang gso bstod bkul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A bali ritual, propitiation and praises of Damcan Chogyal."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1458 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM100 , bdr:W1NLM100 ;
+        :workIsAbout        bdr:T19 , bdr:T198 .
+}

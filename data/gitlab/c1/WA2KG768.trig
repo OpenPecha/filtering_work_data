@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG768 {
+    bda:LG43AEA70AC32BE2DB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-06T12:04:48.273Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC9363B40396A6DE9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-06T11:58:16.776Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG768  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG768 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c1/WA2KG768.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG768 ;
+        adm:logEntry        bda:LG43AEA70AC32BE2DB , bda:LGC9363B40396A6DE9 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB786302F60FA18C1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG769 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG768  a         :Work ;
+        skos:altLabel       "rmu thag gis sbrel ba'i gnam sa/ (dpyad rtsom phyogs bsgrigs)"@bo-x-ewts ;
+        skos:prefLabel      "rmu thag gis sbrel ba'i gnam sa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of analitical writing of Nangyal Sherab Geleg."@en ;
+        :creator            bdr:CRB786302F60FA18C1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T1081 ;
+        :workHasInstance    bdr:MW2KG768 , bdr:W2KG768 .
+}

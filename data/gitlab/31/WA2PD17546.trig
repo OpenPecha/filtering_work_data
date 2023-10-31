@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD17546 {
+    bda:LG41B3BF0943231062
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-07-17T02:16:34.664Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG6EB1CB9AC50928A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-15T12:45:05.727Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG7E69AFE9464EEF2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-16T15:46:59.364Z"^^xsd:dateTime ;
+        adm:logMessage      "add authors and changed titiles"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7E79C3A8E8B8314E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-16T14:19:00.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGBCFBF3298E976DCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA2PD17546  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD17546 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "31/WA2PD17546.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD17546 ;
+        adm:logEntry        bda:LG41B3BF0943231062 , bda:LG6EB1CB9AC50928A1 , bda:LG7E69AFE9464EEF2A , bda:LG7E79C3A8E8B8314E , bda:LGBCFBF3298E976DCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3FF110E2E31456A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P139 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR4840655E8732CD4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P152 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA2PD17546  a       :Work ;
+        skos:altLabel       "jo nang phyogs las rnam rgyal gyis mchan gyis gsal bar mdzad pa'i bsdus pa'i rgyud kyi rgyal po dus kyi 'khor lo'i rgyal 'grel rtsa ba'i rgyud kyi rjes su 'jug pa stong phrag bcu gnyis pa drim med 'od ces bya ba/"@bo-x-ewts ;
+        skos:prefLabel      "dus 'khor bsdus rgyud kyi rgyas 'grel dri med 'od/"@bo-x-ewts ;
+        :catalogInfo        "Collections of annotations on the Kalachakra Tantra and annotations on the commentary of Kalachakra by Dopo shesrab Gyaltsen (1292-1361), Jonang Phyoglas Namgyal (1306-1386)"@en ;
+        :creator            bdr:CR3FF110E2E31456A8 , bdr:CR4840655E8732CD4B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW2PD17546 , bdr:W2PD17546 ;
+        :workIsAbout        bdr:WA22306 .
+}

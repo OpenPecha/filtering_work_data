@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66224 {
+    bda:LG21F37E991C1401A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-20T11:30:42.676Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG397AB0BB4FB71B5C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-20T11:31:53.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA1DD0EFB593076E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-14T10:11:52.607Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66224  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66224 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c6/WA8LS66224.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66224 ;
+        adm:logEntry        bda:LG21F37E991C1401A5 , bda:LG397AB0BB4FB71B5C , bda:LGA1DD0EFB593076E0 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4ECFF795B24FD37F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5612 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66224  a       :Work ;
+        skos:altLabel       "'tsho mdzad slob dpon rnam gsum gyi mdzad 'phrin gnad bsdus skal ldan bu slob dgyes pa'i snying gtam/"@bo-x-ewts ;
+        skos:prefLabel      "'tsho mdzad slob dpon rnam gsum gyi mdzad 'phrin gnad bsdus/"@bo-x-ewts ;
+        :catalogInfo        "A short biography of three eminent Tibetan physician Dr. Khyenrab Norbu, Tenzin Chodrak and Losang Wangyal."@en ;
+        :creator            bdr:CR4ECFF795B24FD37F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS66224 , bdr:W8LS66224 ;
+        :workIsAbout        bdr:P227 , bdr:P4CZ366523 , bdr:P8LS76437 .
+}

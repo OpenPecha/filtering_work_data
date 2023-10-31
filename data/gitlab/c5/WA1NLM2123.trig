@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2123 {
+    bda:LG5C24D83A2DE1BE6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-22T09:13:18.894Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9CB1764178801CF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2123"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2123  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2123 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c5/WA1NLM2123.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2123 ;
+        adm:logEntry        bda:LG5C24D83A2DE1BE6C , bda:LG9CB1764178801CF3 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2123  a       :Work ;
+        skos:prefLabel      "ma dang mkha' 'gro mnyes byed ma mchod kyi cho ga rig 'dzin srog mthun rtsi sman ljon pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa tshe dang ye shes dpag tu med pa'i mdo/ 2 cho skyong chen po rA hu la'i las byang tshangs pa'i sgra dbyangs dang dug mda' nag por bsten pa'i glo bur du las bcol pa'i zor las dgra srog gcod pa'i gnam lcags ral gri ngar mar/ 3 gsang ba ye shes mkha' 'gro'i chos skor las man ngag gsal byed go cha/ 4 chos skyong dregs pa lcam sring gi sgo nas phas rgol dgra bo rdo rje sbog 'da' dgra ngan srog btsong mtshon cha 'khrul 'khor/ 5 chos skyong beg tse lcam dral gyi sgo nas bsrung bzlog gi sngags byang bskor tshul sngags 'chang dpa' bo'i lag cha/ 6 dri bzang bcu gsum sbyor/ 7 ka pA la mchod pa'i tshul/ 8 rje btsun blo bzang chos kyi rgyal mtshan gyi gsung 'bum po ti lnga'i dkar chag dang bklag lung thob pa'i brgyud rim/ 9 sde brgyad mchod tshul rgyas 'bring bsdus gsum/ 10 thang chen nyer lnga sbyor ba/ 11 dur khrod bdag po'i sgrub thabs la nyams su len pa'i tshul/ 12 chos skyong dregs pa lcam sring gi sgo nas phrag dog 'dul pa'i gzhan gyis yid 'gugs pa'i gsur rdzas ni/ 13 u rgyan pad+ma 'byung gnas kyis mdzad pa dar tshul glang gelms/"@en , "Puja offering of Dakinis; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM2123 , bdr:W1NLM2123 ;
+        :workIsAbout        bdr:T2614 .
+}

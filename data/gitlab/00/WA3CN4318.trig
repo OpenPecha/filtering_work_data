@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4318 {
+    bda:LG1D7FE476020C41C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-23T17:07:46.406Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB283E345E38F0891
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T13:52:56.47Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB98CC2F63B5306DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-16T10:57:03.143Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCE4137FA86AC92E2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-04T10:54:38.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4318  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4318 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "00/WA3CN4318.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4318 ;
+        adm:logEntry        bda:LG1D7FE476020C41C0 , bda:LGB283E345E38F0891 , bda:LGB98CC2F63B5306DB , bda:LGCE4137FA86AC92E2 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD28A82B9B687F0AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF29877607CBA1DBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4318  a        :Work ;
+        skos:prefLabel      "dbu ma rtsa ba shes rab rtsa 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Fundamental Treatise on the Middle Way by Nagarjuna and annotations on the Mulamadhyamakakarika by Gorampa Sonam Sengge."@en ;
+        :creator            bdr:CRD28A82B9B687F0AA , bdr:CRF29877607CBA1DBE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN4318 , bdr:W3CN4318 ;
+        :workIsAbout        bdr:T233 .
+}

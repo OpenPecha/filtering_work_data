@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1218 {
+    bda:LG258DEA586B853F75
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG90D0846060A7092A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-08T11:57:52.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1218"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1218  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1218 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c8/WA1NLM1218.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1218 ;
+        adm:logEntry        bda:LG258DEA586B853F75 , bda:LG90D0846060A7092A , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1167 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1218  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das ngan song thams cad yongs su sbyong ba gzi brjid kyi rgyal po'i bdag bskyed shin tu rgyas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bcom ldan 'das kun rig rnam par snang mdzad kyi bla brgyud/ 2 bcom ldan 'das thams cad rig pa'i bum chog lha lnga ma/ 3 bcom ldan 'das ngan song thams cad yongs su sbyong ba gzi brjid kyi rgyal po'i mdun bskyed kyi ngag 'don/ 4 bcom ldan 'das kun rig rnam par snang mdzad kyi sgo nas cha gsum gtor ma/ 5 bcom ldan 'das kun rig rnam par snang mdzad kyi sgo nas gtang rag smon lam bzod gsol bkra shis dang bcas pa/ 6 bcom ldan 'das kun rig rnam par snang mdzad kyi bdag 'jug 7 bcom ldan 'das kun rig rnam par snang mdzad kyi bum chog 8 mgon dkar yid bzhin nor bu'i sgrub thabs/ 9 lha chen drag po gdong bzhi ba'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 10 rgyal po chen po rnam thos sras la mchod gtor 'bul ba'i rim pa dngos grub kyi bang mdzod/ 11 lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/ 12 mnga' gsol/ 13 gsang ba'i bdag po dpal phyag na rdo rje'i bskangs bshags bstod bskul dang bcas pa/ 14 phyag rdor chos 'bul/ 15 lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/ 16 khyung nag me'i spu gri'i bsgom bzlas/ 17 rta mgrin gsang sgrub kyi bsnyen pa dang sgrub pa la sogs pa'i skabs su gdon bgegs kyi bar chad sel ba'i man ngag bdud dpung 'jom pa'i mtshon cha/ 18 me lha mchod tshul dgos 'dod kun 'byung skya rengs dkar po/ 19 gdugs dkar bzlog bsgyur/ 20 mkha' 'gro spyi gtor 'di nyid bla brang bkra shis 'khyil gyi dpal ldan smad rgyud grwa tshang gi dpe dpar ma/ 21 rta mgrin gsang sgrub kyi mngon rtogs bskang bshags bstod bskul dang bcas pa'i 'don bsgrigs/ 22 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga /"@bo-x-ewts , "An extensive self generation of Vairocana; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T457 ;
+        :workIsAbout        bdr:T1903 .
+}

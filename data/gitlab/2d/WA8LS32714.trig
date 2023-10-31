@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32714 {
+    bda:LG52051FAD5317F74E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-18T12:50:18.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG803DFDFC0205B9FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-20T10:00:32.324Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF6D7F7960D694976
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-18T12:48:24.877Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS32714  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32714 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2d/WA8LS32714.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32714 ;
+        adm:logEntry        bda:LG52051FAD5317F74E , bda:LG803DFDFC0205B9FB , bda:LGF6D7F7960D694976 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD7391590EEC3DE07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9861 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32714  a       :Work ;
+        skos:altLabel       "chos rgyal nor bzang gi btsun mo yid 'phrog lha mo'i sgrub phug dgung 'phur dgon gyi sngon byung lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "yid 'phrog lha mo'i sgrub phug dgung 'phur dgon gyi sngon byung lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "History of Gungphur monastery."@en ;
+        :creator            bdr:CRD7391590EEC3DE07 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS32714 , bdr:W8LS32714 ;
+        :workIsAbout        bdr:G2LS516 .
+}

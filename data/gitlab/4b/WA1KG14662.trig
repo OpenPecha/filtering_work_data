@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14662 {
+    bda:LG1C8FC41E4F5DD1A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-25T14:17:57.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE6D1BEFB0DBBEFFD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-25T14:16:56.787Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14662  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14662 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4b/WA1KG14662.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14662 ;
+        adm:logEntry        bda:LG1C8FC41E4F5DD1A3 , bda:LGE6D1BEFB0DBBEFFD , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR72029FEADC9B9334
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15738 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR8F02A4FCB97D6F5B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15739 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA1KG14662  a       :Work ;
+        skos:prefLabel      "khor yug slob gso/"@bo-x-ewts , "ʾKhor yug slob gso /Kor-ne-li-ya-el-sṭe-phan ; bod skad du sgyur ba po, Dge Dkon-mchog-phan-bde."@en-x-mixed ;
+        :catalogInfo        "On importance of environment"@en ;
+        :creator            bdr:CR72029FEADC9B9334 , bdr:CR8F02A4FCB97D6F5B ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workHasInstance    bdr:MW1KG14662 , bdr:W1KG14662 ;
+        :workIsAbout        bdr:T2036 , bdr:T234 .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23459 {
+    bda:LG3DF0178EBF10DED0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG3F90483D09E695BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-02-09T14:22:49.902Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to none restricted and added authorization by His Holiness The 33rd Menri Trizin"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDB2FCB6AC00DA68B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23459  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23459 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "88/WA23459.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23459 ;
+        adm:logEntry        bda:LG3DF0178EBF10DED0 , bda:LG3F90483D09E695BB , bda:LGDB2FCB6AC00DA68B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2BEA5C28205502BF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1661 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW23459  skos:altLabel  "bder gsegs rig 'dzin dgons pa kun 'dus 'chi med gsan ba gsum dril : a cycle of new bon (bon gsar) practice focussing on the sadhana of dran-pa-nam-mkha' and his consort 'od-ldan-'bar-ma, guru padmasambhava, and tshe-dban-rig-'dzin envisioned together"@en .
+
+    bdr:WA23459  a          :Work ;
+        skos:prefLabel      "bder gshegs rig 'dzin dgongs pa kun 'dus 'chi med gsang ba gsum dril/"@bo-x-ewts , "bder gsegs rig 'dzin dgons pa kun 'dus 'chi med gsan ba gsum dril : a cycle of new bon (bon gsar) practice focussing on the sadhana of dran-pa-nam-mkha' and his consort 'od-ldan-'bar-ma, guru padmasambhava, and tshe-dban-rig-'dzin envisioned together"@en ;
+        :catalogInfo        "Cycle of revelations of the New Bon order. Revealed by Yeshe Yungdrung (1910-1959?). Text digitized under a cooperative training project between the Bon Foundation of America and the Tibetan Buddhist Resouce Center. Made available through Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
+        :creator            bdr:CR2BEA5C28205502BF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW23459 , bdr:W23459 ;
+        :workIsAbout        bdr:T1710 .
+}

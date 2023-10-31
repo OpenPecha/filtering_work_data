@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5135 {
+    bda:LG50D343F7A255F6A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-26T11:47:15.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBE1D3F49A023DE64
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:22:56.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5135  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5135 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a6/WA3CN5135.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5135 ;
+        adm:logEntry        bda:LG50D343F7A255F6A5 , bda:LGBE1D3F49A023DE64 , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF2BF4356D7B84FDA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5135  a        :Work ;
+        skos:prefLabel      "sher phyin sgom rim dang smyung gnas phan yon/(kun phan zhi bde'i dpe tshogs/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of Prajnaparamita medition by Ronton Sheja Kunrig and benefits to be derived from fasting."@en ;
+        :creator            bdr:CRF2BF4356D7B84FDA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN5135 , bdr:W3CN5135 ;
+        :workIsAbout        bdr:T1246 , bdr:T147 , bdr:T161 , bdr:T2005 .
+}

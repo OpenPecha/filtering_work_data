@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24030 {
+    bda:LG0387308CC41AED0C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG1DE595C96183CA9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:26:51.692Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG32F96AF6E59CFC72
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:WA24030  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24030 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d9/WA24030.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24030 ;
+        adm:logEntry        bda:LG0387308CC41AED0C , bda:LG1DE595C96183CA9A , bda:LG32F96AF6E59CFC72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR42E14785FEDFA1F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5604 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW24030  skos:altLabel  "legs par bsad pa padma dkar po'i chun po : a treatise describing the qualities and criterion for appraisal and appreciation of omens, precious objects, weapons, and other possessions"@en-x-mixed .
+
+    bdr:WA24030  a          :Work ;
+        skos:altLabel       "pad+ma dkar po'i chun po/"@bo-x-ewts ;
+        skos:prefLabel      "legs par bshad pa pad+ma dkar po'i chun po/"@bo-x-ewts , "legs par bsad pa padma dkar po'i chun po : a treatise describing the qualities and criterion for appraisal and appreciation of omens, precious objects, weapons, and other possessions"@en-x-mixed ;
+        :creator            bdr:CR42E14785FEDFA1F1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24030 , bdr:W24030 ;
+        :workIsAbout        bdr:T1234 .
+}

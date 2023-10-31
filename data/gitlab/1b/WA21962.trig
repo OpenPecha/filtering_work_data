@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21962 {
+    bda:LG826B71B329F4AF17
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEE4947A3C64C5B5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T14:07:46.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21962  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21962 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1b/WA21962.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21962 ;
+        adm:logEntry        bda:LG826B71B329F4AF17 , bda:LGEE4947A3C64C5B5A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW21962  skos:altLabel  "Mchog gi dṅos grub mṅon du byed paʾi myur lam bkaʾ brgyud bla ma rnams kyi do rjeʾi mgur dbyaṅs ye śes char ʾbebs raṅ grol lhun grub bde chen rab ʾbar ṅes don rgya mtshoʾi sñiṅ po źes bya ba bźugs so."@en-x-mixed .
+
+    bdr:WA21962  a          :Work ;
+        skos:altLabel       "mchog gi dngos grub mngon du byed pa'i myur lam bka' brgyud bla ma rnams kyi rdo rje'i mgur dbyangs ye shes char 'bebs rang grol lhun grub bde chen rab 'bar nges don rgya mtsho'i snying po/"@bo-x-ewts ;
+        skos:prefLabel      "bka' brgyud mgur mtsho/"@bo-x-ewts , "Mchog gi dṅos grub mṅon du byed paʾi myur lam bkaʾ brgyud bla ma rnams kyi do rjeʾi mgur dbyaṅs ye śes char ʾbebs raṅ grol lhun grub bde chen rab ʾbar ṅes don rgya mtshoʾi sñiṅ po źes bya ba bźugs so."@en-x-mixed ;
+        :catalogInfo        "Collected songs of spiritual yearning by various masters of the Kagyu order. Scanned with the generous support of Peter Van Deurzen of Namse Bangdzo Bookstore."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW21962 , bdr:MW21963 , bdr:W21962 , bdr:W21963 ;
+        :workIsAbout        bdr:T1190 .
+}

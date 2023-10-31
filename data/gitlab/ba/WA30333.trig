@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30333 {
+    bda:LG0089C41D8452ED0F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG555A667D0C33FDE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T21:18:52.024Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T2340 to T308"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA30333  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30333 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ba/WA30333.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30333 ;
+        adm:logEntry        bda:LG0089C41D8452ED0F , bda:LG555A667D0C33FDE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR5A6303BD48399CFC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4069 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA30333  a          :Work ;
+        skos:prefLabel      "chos 'khor gyi don bsdus pa legs par bshad ba'i yang snying /"@bo-x-ewts ;
+        :creator            bdr:CR5A6303BD48399CFC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW30333 ;
+        :workIsAbout        bdr:T308 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16603 {
+    bda:LGC44312059F4B7A7B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-29T13:40:18.344Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD5D995B2AC2A39C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGF7D044EF2982333F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-29T13:43:36.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG16603  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16603 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b1/WA1KG16603.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16603 ;
+        adm:logEntry        bda:LGC44312059F4B7A7B , bda:LGD5D995B2AC2A39C5 , bda:LGF7D044EF2982333F , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16599 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW1KG16603  skos:altLabel  "藏文文选（五）"@zh-hans .
+
+    bdr:WA1KG16603  a       :Work ;
+        skos:altLabel       "zang wen wen xuan (wu)"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gangs can rig brgya'i sgo 'byed lde mig (deb lnga pa/)"@bo-x-ewts , "藏文文选（五）"@zh-hans ;
+        :catalogInfo        "Selection of texts on poetry study"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1PD128746 ;
+        :workHasInstance    bdr:MW1KG16603 ;
+        :workIsAbout        bdr:T204 .
+}

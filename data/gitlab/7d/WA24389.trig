@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24389 {
+    bda:LGA1D6AF8973504895
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD7E58F5E3952B6CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-03T10:50:28.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalog info, pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF07F68B894E03EEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-18T11:25:36.013Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA24389  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24389 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7d/WA24389.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24389 ;
+        adm:logEntry        bda:LGA1D6AF8973504895 , bda:LGD7E58F5E3952B6CA , bda:LGF07F68B894E03EEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRD89B88D727C141E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA24389  a          :Work ;
+        skos:altLabel       "rje btsun bla ma thams cad mkhyen cing gzigs pa 'jam dbyangs mkhyen brtse'i dbang po kun dga' bstan pa'i rgyal mtshan dpal bzang po'i rnam thar mdor bsdus pa ngo mtshar u dum+ba ra'i dga' tshal/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs mkhyen brtse'i dbang po'i rnam thar bsdus pa u dum+ba ra'i dga' tshal/"@bo-x-ewts ;
+        :creator            bdr:CRD89B88D727C141E2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW24389 ;
+        :workIsAbout        bdr:P258 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN3381 {
+    bda:LG3812EE5DB0BA7FF2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-08T17:06:07.017Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4A856F58B41DF41D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-18T11:48:31.861Z"^^xsd:dateTime ;
+        adm:logMessage      "sending scan requast"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG769FB9513E2E6091
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-04-18T11:49:12.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7AF062C1F550CBE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGF76EB1A151FC66F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN3381  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN3381 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "98/WA3CN3381.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN3381 ;
+        adm:logEntry        bda:LG3812EE5DB0BA7FF2 , bda:LG4A856F58B41DF41D , bda:LG769FB9513E2E6091 , bda:LG7AF062C1F550CBE1 , bda:LGF76EB1A151FC66F8 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN3381  a        :Work ;
+        skos:prefLabel      "sgrub thabs rin po che kun las btus pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sadhana manuals and related ritual materials of the Sakya order. Compiled through the efforts of Jamyang Loter Wangpo (1847-1914) under the inspiration of his master Jamyang Kyentse Wangpo (1820-1892)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN3381 , bdr:W3CN3381 .
+}

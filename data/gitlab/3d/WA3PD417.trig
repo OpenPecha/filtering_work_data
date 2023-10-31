@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD417 {
+    bda:LG182156E272B4C43A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG19314B76C36FF18C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T15:03:35.1Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1D11AE83E17E3216
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-15T16:47:01.106Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG5A0FC9776DCB8733
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-07T15:56:38.009Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG7E679B456C08A9B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:12:11.001Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD417  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD417 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3d/WA3PD417.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD417 ;
+        adm:logEntry        bda:LG182156E272B4C43A , bda:LG19314B76C36FF18C , bda:LG1D11AE83E17E3216 , bda:LG5A0FC9776DCB8733 , bda:LG7E679B456C08A9B7 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3PD417  skos:altLabel  "象雄文集"@zh-hans .
+
+    bdr:WA3PD417  a         :Work ;
+        skos:altLabel       "xiang xiong wen ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhang bod sngags kyi bklag thabs sprin gyi zeg ma zhes bya ba tsha ba'i nad sel sogs/ （rig gnas skor/）"@bo-x-ewts , "象雄文集"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3PD417 , bdr:W3PD417 ;
+        :workIsAbout        bdr:T229 , bdr:T247 .
+}

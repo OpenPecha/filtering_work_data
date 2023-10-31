@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18126 {
+    bda:LG420D02A5EBD833F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T12:25:54.279Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG998C819167345AED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-28T12:27:08.588Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF44AA91F45FCE828
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS18126  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18126 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/WA8LS18126.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18126 ;
+        adm:logEntry        bda:LG420D02A5EBD833F2 , bda:LG998C819167345AED , bda:LGF44AA91F45FCE828 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS18126  a       :Work ;
+        skos:prefLabel      "sa bcos kyi gdon grol rigs lnga nad spor dug dbyung dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "A repelling ritual to pacify the sadak deities and free the malevolent influences."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS18126 , bdr:W8LS18126 ;
+        :workIsAbout        bdr:T1448 , bdr:T883 .
+}

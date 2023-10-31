@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23858 {
+    bda:LG3FF1420C7C5EF238
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5A972CC29703BF8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-09T09:44:09.342Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG6B455B83AC6B2195
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T14:34:31.343Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGBF8314BD145BFB7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-14T14:35:30.805Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA23858  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23858 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "31/WA23858.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23858 ;
+        adm:logEntry        bda:LG3FF1420C7C5EF238 , bda:LG5A972CC29703BF8E , bda:LG6B455B83AC6B2195 , bda:LGBF8314BD145BFB7C , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23858  skos:altLabel  "bzo rig kha sas kyi pa tra lag len ma and other texts on the minor sciences of the tibetan scholastic tradition"@en-x-mixed .
+
+    bdr:WA23858  a          :Work ;
+        skos:prefLabel      "bzo rig kha shas kyi pa tra lag len ma sogs/"@bo-x-ewts , "bzo rig kha sas kyi pa tra lag len ma and other texts on the minor sciences of the tibetan scholastic tradition"@en-x-mixed ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23858 , bdr:W23858 ;
+        :workIsAbout        bdr:T361 .
+}

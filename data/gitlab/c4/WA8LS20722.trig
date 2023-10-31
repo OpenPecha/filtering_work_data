@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20722 {
+    bda:LGAACD0028722DC684
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-22T08:59:36.703Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD040E01808012204
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T15:12:33.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF0D8106C28050151
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-22T09:01:03.988Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS20722  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20722 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c4/WA8LS20722.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20722 ;
+        adm:logEntry        bda:LGAACD0028722DC684 , bda:LGD040E01808012204 , bda:LGF0D8106C28050151 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDCD84E7BE0AED29E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20722  a       :Work ;
+        skos:altLabel       "pho rgod dpa' bo'i zhabs rjes/ li thang blo bzang byams pa'i mi tshe lo rgyus/"@bo-x-ewts ;
+        skos:prefLabel      "li thang blo bzang byams pa'i mi tshe lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "The life account of Lithang Losang Jampa; written by Lithang Losang Tenpa."@en ;
+        :creator            bdr:CRDCD84E7BE0AED29E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS20722 , bdr:W8LS20722 ;
+        :workIsAbout        bdr:P8LS75169 .
+}

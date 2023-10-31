@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4666 {
+    bda:LG0C25DA469269A764
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-28T16:06:02.709Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE4B1CA344AFCACEF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:25:06.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4666  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4666 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "da/WA3CN4666.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4666 ;
+        adm:logEntry        bda:LG0C25DA469269A764 , bda:LGE4B1CA344AFCACEF , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR983E8D7202B7ED5D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4666  a        :Work ;
+        skos:prefLabel      "rten 'brel gyi rnam bzhag lung rigs bang mdzod/"@bo-x-ewts ;
+        :catalogInfo        "The principle of dependent origination by Gungthang Tenpe Dronme."@en ;
+        :creator            bdr:CR983E8D7202B7ED5D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1KG9408_92BEE9 , bdr:MW1PD159542_3DC15E , bdr:MW22112_1AC7F5 , bdr:MW22185_AFECD1 , bdr:MW2DB4591_CB15BF , bdr:MW3CN4666 , bdr:W3CN4666 ;
+        :workIsAbout        bdr:T2281 .
+}

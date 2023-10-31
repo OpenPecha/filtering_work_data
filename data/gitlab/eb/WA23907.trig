@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23907 {
+    bda:LG108DA189A807A208
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-08T15:58:13.749Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG71589BB07F823EFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-09T16:24:31.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG9BEF3FD066311A73
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC0DB0F4A3DEBF25F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-16T15:29:00.91Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL07"@en .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23907  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23907 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "eb/WA23907.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23907 ;
+        adm:logEntry        bda:LG108DA189A807A208 , bda:LG71589BB07F823EFE , bda:LG9BEF3FD066311A73 , bda:LGC0DB0F4A3DEBF25F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA23627 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CREA5F7C09332B8F84
+        a                   :AgentAsCreator ;
+        :agent              bdr:P248 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23907  skos:altLabel  "the collected works (gsun 'bum) of rdo grub-chen 'jigs-med-bstan-pa'i-ni-ma"@en-x-mixed .
+
+    bdr:WA23907  a          :Work ;
+        skos:altLabel       "rdo grub 'jigs med bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_'jigs med bstan pa'i nyi ma/ ('bras ljongs sgang tog)"@bo-x-ewts , "the collected works (gsun 'bum) of rdo grub-chen 'jigs-med-bstan-pa'i-ni-ma"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Nyingma master Dodrubchen 03 Jigme Tenpai Nyima (1865-1926)."@en ;
+        :creator            bdr:CREA5F7C09332B8F84 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1082 .
+}

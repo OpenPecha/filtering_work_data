@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29010 {
+    bda:LG15F2C33B2B29F603
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T15:01:58.613Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5D2B4C09AAE2C555
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T15:38:28.552Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG82CDE3EE7E30FEF4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29010  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29010 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4d/WA29010.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29010 ;
+        adm:logEntry        bda:LG15F2C33B2B29F603 , bda:LG5D2B4C09AAE2C555 , bda:LG82CDE3EE7E30FEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR6F1037DBE3844C6C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5117 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29010  a          :Work ;
+        skos:prefLabel      "zlos sgra'i tshig mdzod/"@bo-x-ewts , "zang yu cheng die ci ci dian"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "dictionary of special terms involvine the reduplication of portions of previous syllables"@en ;
+        :creator            bdr:CR6F1037DBE3844C6C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T220 ;
+        :workHasInstance    bdr:MW29010 ;
+        :workIsAbout        bdr:T2379 .
+}

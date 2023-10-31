@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21716 {
+    bda:LG1EBFF44E00F2E117
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-23T13:34:09.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3D21F95D5DE64C5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-01T13:07:07.058Z"^^xsd:dateTime ;
+        adm:logMessage      "reviwed by CN, KG, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG580246A415670533
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG8267AC6D46BD3AC2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-23T13:33:36.631Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21716  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21716 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "56/WA1KG21716.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21716 ;
+        adm:logEntry        bda:LG1EBFF44E00F2E117 , bda:LG3D21F95D5DE64C5F , bda:LG580246A415670533 , bda:LG8267AC6D46BD3AC2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG21716  skos:altLabel  "三种珍贵藏药秘方"@zh-hans .
+
+    bdr:WA1KG21716  a       :Work ;
+        skos:altLabel       "san zhong zhen gui zang yao mi fang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dngul chu btso bkru chen mo dang / lcags khams thal bzo/ rin chen ril bu'i sbyor ba bcas kyi lag len nag 'gros su bkod pa zla ba'i 'od zer/"@bo-x-ewts , "三种珍贵藏药秘方"@zh-hans ;
+        :catalogInfo        "Method of preparations of Tibetan Ayurvedic medicinal pills."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG21716 , bdr:W1KG21716 ;
+        :workIsAbout        bdr:T2428 , bdr:T86 , bdr:T88 .
+}

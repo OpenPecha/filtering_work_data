@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5014 {
+    bda:LGC9C64970E0A90288
+        a                   adm:UpdateData .
+
+    bda:LGD4998399F129E165
+        a                   adm:InitialDataCreation .
+
+    bda:W5014  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W5014 ;
+        adm:replaceWith     bdr:WA5014 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA5014  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5014 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "78/WA5014.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5014 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR157256AC835E2CCB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT137458D293B0DB2A
+        a                   :Note ;
+        :noteText           "27 ff. in vol. shriiH of the 20 vol. blockprint collection in the Potala Library: oM, a, ra, pa, tsa, na, dhi, dhiH, huM, ka, kha, ga, nga, ca, cha, ja, nya, e, waM, shriiH.\n01304-2.\nMHTL 3330."@en .
+
+    bdr:WA5014  a           :Work ;
+        skos:prefLabel      "nges shes rin po che'i sgron me/"@bo-x-ewts ;
+        :creator            bdr:CR157256AC835E2CCB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT137458D293B0DB2A .
+}

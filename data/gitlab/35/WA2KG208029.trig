@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208029 {
+    bda:LG33E086DD079BD986
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG80A2E025F1E6C1AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-23T12:39:00.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBAF733E5811FEE0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-23T12:38:20.292Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG208029  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208029 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "35/WA2KG208029.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208029 ;
+        adm:logEntry        bda:LG33E086DD079BD986 , bda:LG80A2E025F1E6C1AE , bda:LGBAF733E5811FEE0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC012C7899EF7AE97
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS75056 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG208029  a      :Work ;
+        skos:prefLabel      "slob dpon bai ro tsa na zhib 'jug"@bo-x-ewts ;
+        :catalogInfo        "Dissertation research paper on Lochen Vairocana (8th cent.) by Padma Gyal."@en ;
+        :creator            bdr:CRC012C7899EF7AE97 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG208029 , bdr:W2KG208029 ;
+        :workIsAbout        bdr:P5013 , bdr:T11MS60 .
+}

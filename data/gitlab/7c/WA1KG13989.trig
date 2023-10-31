@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13989 {
+    bda:LG0AD7286C148A2D90
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-19T15:04:07.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6D77E381B15ACB85
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:39:36.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PEMAKOD"@en ;
+        adm:logWhoStr       "add-works-to-PR1PEMAKOD00" .
+
+    bda:LGE96571B63A554A80
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-08T17:51:58.555Z"^^xsd:dateTime ;
+        adm:logMessage      "updated PR1PEMAKOD00 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-PR1PEMAKOD00" .
+
+    bda:LGEE2D6D6D98800AD3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-19T15:02:02.442Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG13989  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13989 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7c/WA1KG13989.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13989 ;
+        adm:logEntry        bda:LG0AD7286C148A2D90 , bda:LG6D77E381B15ACB85 , bda:LGE96571B63A554A80 , bda:LGEE2D6D6D98800AD3 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG13989  a       :Work ;
+        skos:prefLabel      "dung dkar chos rje'i gces nyar dpe tshogs/ (dum bu lnga pa/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of handwritten manuscripts from East Bhutan and Padmako, which are mainly based on the Padma Lingpa's Terma tradition. Dung dkar chos rje is referes to the sngages pa clan of Padma Gling pa. This collection formerly beloings to Jigme Kundrol and his son Lopon Deleg Wangchuk, then inherited down to Lama Dongag, Lama Padma Rabten, and his younger brother Lama Jamyang Kunga to Lopon Ogyan Tenzin."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1KG13989 , bdr:MW3CN12069 , bdr:MW3CN12075 , bdr:MW4CZ301923 , bdr:MW4CZ301924 , bdr:W1KG13989 , bdr:W3CN12069 , bdr:W3CN12075 , bdr:W4CZ301923 , bdr:W4CZ301924 ;
+        :workIsAbout        bdr:T1082 .
+}

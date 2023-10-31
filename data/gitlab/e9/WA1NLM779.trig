@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM779 {
+    bda:LG10AE01B9F0DC0CD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG7BB2DD4E19AAE6C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-15T10:16:59.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM779"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM779  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM779 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e9/WA1NLM779.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM779 ;
+        adm:logEntry        bda:LG10AE01B9F0DC0CD1 , bda:LG7BB2DD4E19AAE6C4 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6C5FC51C3CF00294
+        a                   :AgentAsCreator ;
+        :agent              bdr:P257 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM779  a        :Work ;
+        skos:prefLabel      "gsang sngags kyi sa lam bgrod tshul legs par bshad pa ngag gi snang ba/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of Tantra's stages and paths by Zhangton Tenpa Gyatsho."@en ;
+        :creator            bdr:CR6C5FC51C3CF00294 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM779 , bdr:MW22145_0E30CF , bdr:W1NLM779 ;
+        :workIsAbout        bdr:T1091 , bdr:T307 .
+}

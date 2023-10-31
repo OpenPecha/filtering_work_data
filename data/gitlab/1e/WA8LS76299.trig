@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76299 {
+    bda:LG2119881832056520
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-31T09:09:43.913Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG75FBC72634D2A7B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-31T09:11:11.886Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76299  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76299 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1e/WA8LS76299.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76299 ;
+        adm:logEntry        bda:LG2119881832056520 , bda:LG75FBC72634D2A7B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2E3EB4640AE2D6E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4708 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE4D303EB2A73DF3B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76300 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76299  a       :Work ;
+        skos:altLabel       "dge bshes 'jigs med brtson 'grus kyi gsung thor bu/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ dge bshes 'jigs med brtson 'grus/"@bo-x-ewts ;
+        :catalogInfo        "Miscellany writings of Geshe Jikme Tsondu; also writing of Setshang Losang Palden."@en ;
+        :creator            bdr:CR2E3EB4640AE2D6E7 , bdr:CRE4D303EB2A73DF3B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW8LS76299 , bdr:W8LS76299 ;
+        :workIsAbout        bdr:P8LS76300 .
+}

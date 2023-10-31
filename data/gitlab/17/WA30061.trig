@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30061 {
+    bda:LG036D0D35BD342587
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-02-26T16:21:22.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG845F6252B014B3F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-01T12:41:34.603Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG98BC84157BDF9338
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T09:49:26.005Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA8653F5F89DE9D28
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGBDD59C53904A2DEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-27T15:45:41.849Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC786B290DFB05019
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-26T16:22:24.176Z"^^xsd:dateTime ;
+        adm:logMessage      "scan requst"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA30061  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30061 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "17/WA30061.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30061 ;
+        adm:logEntry        bda:LG036D0D35BD342587 , bda:LG845F6252B014B3F6 , bda:LG98BC84157BDF9338 , bda:LGA8653F5F89DE9D28 , bda:LGBDD59C53904A2DEF , bda:LGC786B290DFB05019 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5B05779487414068
+        a                   :AgentAsCreator ;
+        :agent              bdr:P106 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW30061  skos:altLabel  "Lam rim dmar khrid chen mo /[Blo-bzaṅ-ye-śes kyis mdzad] ; Mkhan-po Rdo-rjes bsgrigs."@en-x-mixed .
+
+    bdr:WA30061  a          :Work ;
+        skos:altLabel       "byang chub lam gyi rim pa'i dmar khrid thams cad mkhyen par bgrod pa'i myur lam/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim dmar khrid chen mo/"@bo-x-ewts , "Lam rim dmar khrid chen mo /[Blo-bzaṅ-ye-śes kyis mdzad] ; Mkhan-po Rdo-rjes bsgrigs."@en-x-mixed ;
+        :creator            bdr:CR5B05779487414068 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 , bdr:T238 ;
+        :workHasInstance    bdr:MW30061 , bdr:W30061 .
+}

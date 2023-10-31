@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3145 {
+    bda:LG4477257DCD0C7765
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGB4354A54A1670B11
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:22:00.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3145"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3145  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3145 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "62/WA1NLM3145.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3145 ;
+        adm:logEntry        bda:LG4477257DCD0C7765 , bda:LGB4354A54A1670B11 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR332653068D6B09DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P285 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3145  a       :Work ;
+        skos:prefLabel      "'go ba'i lha lnga'i gsol mchod bya tshul dang 'brel ba'i g.yang len dgos 'dod kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'go ba'i lha lnga'i 'khor dang bcas pa la brten pa'i sgo nas glu bur las bcol gyi bzlog bsgyur byed tshul phas rgol mtha' dag 'joms pa'i 'khor lo/ 2 dgos 'dod kun 'gyung skya rengs dkar po/ 3 me lha'i bsangs mchod/ 4 rta mgrin gsang sgrub kyi sgo nas byabs khrus byed tshul bdud rtsi'i bum bzang / 5 'go ba'i lha lnga lhan skyes rgyurd ba'i phrag lha dgra lha spun dgu rnams la rta mchog rten du 'bul tshul 'dod pa'i re skong / 6 bcom ldan 'das ma shes rab kyi pha rol tu phyin pai snying po/ 7 tshe khug"@en , "Offering and prosperity ritual of the five patron deities; other text also included."@en ;
+        :creator            bdr:CR332653068D6B09DE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3145 , bdr:W1NLM3145 ;
+        :workIsAbout        bdr:T1CZ91 , bdr:T22 , bdr:T249 .
+}

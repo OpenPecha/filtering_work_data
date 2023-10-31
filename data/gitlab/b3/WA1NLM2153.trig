@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2153 {
+    bda:LG438D377C1F4EB837
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-03T09:44:13.695Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9ABF0DB5900BDEC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2153"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2153  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2153 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/WA1NLM2153.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2153 ;
+        adm:logEntry        bda:LG438D377C1F4EB837 , bda:LG9ABF0DB5900BDEC4 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF52C71EF413C9AFF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2540 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2153  a       :Work ;
+        skos:prefLabel      "bla ma zhi khro'i tshe sgrub dang tshe dbang bskur tshul gyi cho ga 'chi med rdo rje'i rgyas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'go ba'i lha lnga'i sgo nas bzlog bsgyur 'phen pa byed tshul/ 2 gser zhun/ 3 las zhes 'phreng rgyal/ 4 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul dang bcas pa/ 5 sgra mi snyan gyi tshe sgrub dang 'brel ba'i bum chog bdud rtsi'i chu rgyun/ 6 byang sham+b+ha lar skyes ba'i smon tshig 7 dge bsnyen sdom 'bogs chog 8 bag yod dran pa'i tshigs bcad/ 9 chos skyong bsrung ma'i bskang bshags mdor bsdus/ 10 'jam dbyangs chos gling grwa tshang gi nyer lnga'i dus chen 'don cha go rim/ 11 rgyal mdos/ 12 chos rgyal dmar nag gi sgo nas tsamun+ti'i mthu stobs ma rungs tshar gcod ma mo'i dug khrag an+haM rak+ta'i nal thor khraM shing man ngag 13 rta mgrin gsang sgrub kyi tshogs mchod bya tshul/ 14 bya 'bod bzhugs pa/ 15 za byed rdo rje mkha' 'gro ma'i sbyin sreg 16 chos skyong bsrung ma rnams kyi spyi rten gyi cho ga 17 rgan po dkar po lha la ba glang 'bul ba'i tshe thar ma/ 18 gzhi bdag klu rnams la bsangs mchod khrus byed pa'i cho ga kun phan nyi 'od/ 19 lha klu sa chu sa bdag gi khrus gsol/"@en , "Long life sadhana, long life empowerment of peaceful and wrathful deity by Sakyapa Ngawang Kunga Tashi; other text also included."@en ;
+        :creator            bdr:CRF52C71EF413C9AFF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T27 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2153 , bdr:W1NLM2153 ;
+        :workIsAbout        bdr:T1316 , bdr:T473 .
+}

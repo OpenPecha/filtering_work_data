@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1840 {
+    bda:LG87714AE10D89CD33
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD8A95D493F7AD8B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-14T12:23:34.15Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1840"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1840  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1840 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d3/WA1NLM1840.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1840 ;
+        adm:logEntry        bda:LG87714AE10D89CD33 , bda:LGD8A95D493F7AD8B1 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1840  a       :Work ;
+        skos:altLabel       "legs nyes kyi rgyu dang 'bras bu bstanpa'i mdo/"@bo-x-ewts , "sprin ring rgyal po'i gtor bzlog ganm lcags rdo rje las 'don cha/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje gcod pa zhes bya ba theg pa chen po sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Diamond Cutter Sutra and other miscellaneous topics"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1840 , bdr:W1NLM1840 .
+}

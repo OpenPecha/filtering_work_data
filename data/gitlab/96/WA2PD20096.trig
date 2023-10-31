@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2PD20096 {
+    bda:LG2A6C7384AC17FAAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-23T11:44:46.902Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG318ED880BA9166A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-22T16:39:31.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG504FD5C2F62F5483
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-07T18:56:36.276Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P10638 to P1397"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5813A4455D9F67D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-09-22T22:38:47.4Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG987C637133863290
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-02-22T16:36:29.576Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGB94C64D89A2CA8A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFA8A08C5D274D31D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-30T03:49:20.082Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2PD20096  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2PD20096 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "96/WA2PD20096.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2PD20096 ;
+        adm:logEntry        bda:LG2A6C7384AC17FAAA , bda:LG318ED880BA9166A6 , bda:LG504FD5C2F62F5483 , bda:LG5813A4455D9F67D0 , bda:LG987C637133863290 , bda:LGB94C64D89A2CA8A2 , bda:LGFA8A08C5D274D31D , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBB28A31846C6BC8D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1397 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2PD20096  a       :Work ;
+        skos:altLabel       "mi nyag 'jam dbyangs grags pa'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ _'jam dbyangs grags pa/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Minyak Jamyng Dragpa."@en ;
+        :creator            bdr:CRBB28A31846C6BC8D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2PD20096 , bdr:W2PD20096 ;
+        :workIsAbout        bdr:T1386 .
+}

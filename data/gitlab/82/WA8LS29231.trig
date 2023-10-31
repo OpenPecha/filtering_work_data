@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29231 {
+    bda:LG3D8FD765EE77AAC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T10:46:25.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6AD48DE7823BA19D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-02T12:11:40.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG77ED19FD315AC20F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-02T12:10:14.086Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29231  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29231 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "82/WA8LS29231.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29231 ;
+        adm:logEntry        bda:LG3D8FD765EE77AAC1 , bda:LG6AD48DE7823BA19D , bda:LG77ED19FD315AC20F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC0CFE70C4E53CFD5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2417 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29231  a       :Work ;
+        skos:prefLabel      "smar khrid tshem lugs sngon 'gro dang dngos gzhi'i khrig yig che chung /"@bo-x-ewts ;
+        :catalogInfo        "A preliminary and practical instructions according to Tshembu tradition by Lochen Ratnabhadra."@en ;
+        :creator            bdr:CRC0CFE70C4E53CFD5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS29231 , bdr:W8LS29231 ;
+        :workIsAbout        bdr:T179 , bdr:T2352 , bdr:T2366 .
+}

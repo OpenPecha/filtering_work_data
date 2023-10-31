@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2197 {
+    bda:LG8F292371ABB2859F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-18T11:33:31.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEE5350C18ABB6D5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2197"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2197  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2197 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0f/WA1NLM2197.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2197 ;
+        adm:logEntry        bda:LG8F292371ABB2859F , bda:LGEE5350C18ABB6D5C , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBEEAAC5143E73EAB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P162 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2197  a       :Work ;
+        skos:prefLabel      "rje btsun ma dbul 'phongs sel ba'i sgrol ma la brten pa'i maN+Dal bzhi pa'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo la brten pa'i sho mo btab tshul 'don cha/ 2 ma gcig srid gsum bdag mo'i bsnyen yig mkha' 'gro dgyes pa'i sgra dbyangs/ 3 gu gul dang yungs dkar gyi'i sgrub tshul/ 4 bya btang kho ba'i yo byad DA ma ru/ rkang gling gra phar/ 'khol med/ lcog bu'i bkad pa mthong ba'i 'dzum shor/ 5 sbyin pa'i 'bras bu gyur pa'i zad mi shes pa'i gter gyi khang bzang / 6 grub chen nrams kyi gzhung chen mo las drag las man ngag 7 yi ge'i bstan bcos las blans pa'i dam chos bris pa'i tshul/ 8 rang byung snang ba'i bsrung 'khor yid bzhin nor bu'i dgongs don gsal ba'i nyi ma'i 'od zer/ 9 bod kyi yi ge dbyangs gsal sgron me/ 10 mi tshan zhig la shi chad mang du gyur pa'am/ 11 rgyas pa'i gsung rab klog pa dang kha ton bya ba'i sngo 'gro/ 12 'byung ba lngai sA tsha 'debs tshul/ 13 bsangs mchod 'dod dgur 'khyil ba'i dga' ston/ 14 zhi ba dkar po'i sbyin sreg 15 skyabs 'gro sems bskyed tshad med bzhi sgom pa sngon du btang / 16 sdig pa thams cad bshags pa'i phayg 'tshal ba'i yid bzhin nor bu/ 17 mi kha dgra grub/ 18 chos skyong lcam sring bsdus pa/ 19 dpal nor rgyun ma'i gzungs/ 20 rgyan gyi yum don 'grel tshul shin tu mdor bsdus pa/"@en , "Ritual offering of the four mandala on the bais of Tara; other text also included."@en ;
+        :creator            bdr:CRBEEAAC5143E73EAB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2197 , bdr:W1NLM2197 ;
+        :workIsAbout        bdr:T1709 .
+}

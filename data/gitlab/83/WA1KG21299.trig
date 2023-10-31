@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG21299 {
+    bda:LG6020F5B10A810824
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-27T15:47:30.323Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG68FA8372C8A624B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-01T11:39:38.042Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA896B8C43E1E043A
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:17:10.07Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGDC8E6C6FA1FDC536
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGFB2A2AF1536B33E6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-27T15:48:12.129Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG21299  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG21299 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "83/WA1KG21299.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG21299 ;
+        adm:logEntry        bda:LG6020F5B10A810824 , bda:LG68FA8372C8A624B3 , bda:LGA896B8C43E1E043A , bda:LGDC8E6C6FA1FDC536 , bda:LGFB2A2AF1536B33E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9599C9DC7493A5FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21669 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG21299  skos:altLabel  "胃癌的防治"@zh-hans .
+
+    bdr:WA1KG21299  a       :Work ;
+        skos:altLabel       "wei ai de fang zhi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pho ba'i ngan skran 'gog bcos bya thabs/"@bo-x-ewts , "胃癌的防治"@zh-hans ;
+        :catalogInfo        "Translation of book how to prevention and treatments of stomach cancer."@en ;
+        :creator            bdr:CR9599C9DC7493A5FE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG21299 , bdr:W1KG21299 ;
+        :workIsAbout        bdr:T2142 , bdr:T94 .
+}

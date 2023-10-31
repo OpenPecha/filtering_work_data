@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM892 {
+    bda:LG1548F744D0405EE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T14:28:58.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3FA7D245802F66DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG97D51E2310ED06D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-18T10:48:30.921Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM892"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM892  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM892 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "94/WA1NLM892.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM892 ;
+        adm:logEntry        bda:LG1548F744D0405EE7 , bda:LG3FA7D245802F66DD , bda:LG97D51E2310ED06D9 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR05F0BF420C93C692
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM892  a        :Work ;
+        skos:altLabel       "chos mngon pa mdzod kyi dgongs 'grel gyi bstan bcos thub bstan nor bu'i gter mdzod dus gsum rgyal ba'i bzhed don kun gsal zhes bya ba las gnas gnyis pa'i mtha' dpyod/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi dgongs 'grel gyi bstan bcos thub bstan nor bu'i gter mdzod las gnas gnyis pa'i mtha' dpyod/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the second chapter of the Abhidharmakosa"@en ;
+        :creator            bdr:CR05F0BF420C93C692 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM892 , bdr:W1NLM892 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19720 .
+}

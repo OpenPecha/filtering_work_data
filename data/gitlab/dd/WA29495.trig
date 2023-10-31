@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29495 {
+    bda:LG0B189A5F51EF222E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG250D3C1D3E92C593
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGD842BEB8D520C841
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-31T10:13:15.857Z"^^xsd:dateTime ;
+        adm:logMessage      "added subjects and annotation"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEE1005543B45D672
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-08-31T10:14:01.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29495  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29495 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "dd/WA29495.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29495 ;
+        adm:logEntry        bda:LG0B189A5F51EF222E , bda:LG250D3C1D3E92C593 , bda:LGD842BEB8D520C841 , bda:LGEE1005543B45D672 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4E1DAFDA2A30F61C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5119 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW29495  skos:altLabel  "tubo gu zang wen wen xian quan shi"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA29495  a          :Work ;
+        skos:prefLabel      "bod kyi brda rnying yig cha rtsa chen bdams bsgrigs rnams kyi tshig don kun nas khrol bar byas pa rab gsal me long /"@bo-x-ewts , "tubo gu zang wen wen xian quan shi"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Explanation of selected documents of Tibetan archaic spellings and orthographies."@en ;
+        :creator            bdr:CR4E1DAFDA2A30F61C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW29495 , bdr:W29495 ;
+        :workIsAbout        bdr:T443 .
+}

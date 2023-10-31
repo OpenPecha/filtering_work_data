@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14641 {
+    bda:LG06934534D1FDA0A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-01T10:05:04.784Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3EFD72750DADCDB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-06-12T12:07:55.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4A5BC758BAC42F47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG8A7B105C3B4767CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-12T11:52:06.358Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG14641  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14641 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "40/WA1KG14641.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14641 ;
+        adm:logEntry        bda:LG06934534D1FDA0A7 , bda:LG3EFD72750DADCDB3 , bda:LG4A5BC758BAC42F47 , bda:LG8A7B105C3B4767CD , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0261FD495C25E1DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P267 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG14641  a       :Work ;
+        skos:altLabel       "thar shul dge 'dun chos skyong rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_dge 'dun chos skyong rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk master Gendun Chokyong Gyatso (1810-1884)."@en ;
+        :creator            bdr:CR0261FD495C25E1DD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1KG14641 , bdr:W1KG14641 ;
+        :workIsAbout        bdr:T819 .
+}

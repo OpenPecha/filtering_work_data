@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17595 {
+    bda:LG419801D15F3F0401
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-20T12:52:13.249Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF90D530012658B30
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-20T15:21:41.767Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17595  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17595 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e3/WA1KG17595.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17595 ;
+        adm:logEntry        bda:LG419801D15F3F0401 , bda:LGF90D530012658B30 , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR52BB96E41C04C237
+        a                   :AgentAsCreator ;
+        :agent              bdr:P968 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG17595  a       :Work ;
+        skos:altLabel       "dpal kun rig gi cho ga gzhan phan mtha' yas kyi rnam bshad gzhan phan dgongs pa gsal ba'i nyi 'od/"@bo-x-ewts ;
+        skos:prefLabel      "kun rig gi cho ga gzhan phan mtha' yas kyi rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on retuals connected with the practice of the Sarvadurgatiparisodhana Tantra used in funeral rites."@en ;
+        :creator            bdr:CR52BB96E41C04C237 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1KG17595 , bdr:W1KG17595 ;
+        :workIsAbout        bdr:T976 .
+}

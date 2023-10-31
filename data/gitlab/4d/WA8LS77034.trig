@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77034 {
+    bda:LG468AE5874D703C6B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-12T08:58:38.146Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work report"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF021C59F732D3056
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-12T08:59:03.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77034  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77034 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4d/WA8LS77034.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77034 ;
+        adm:logEntry        bda:LG468AE5874D703C6B , bda:LGF021C59F732D3056 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1995AE28250D6C72
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77034  a       :Work ;
+        skos:prefLabel      "bstan bcos legs par bshad pa'i snying po las sems tsam skor gyi mchan 'grel rtsom 'phro rnam rig gzhung brgya'i snang ba/"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary on Cittamatrin chapter of Tsongkhapa's provisional and ultimate meaning by Gungthang Tenpe Dronme."@en ;
+        :creator            bdr:CR1995AE28250D6C72 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW8LS77034 , bdr:W8LS77034 ;
+        :workIsAbout        bdr:T2055 .
+}

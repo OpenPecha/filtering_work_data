@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2426 {
+    bda:LG2E47169B9E2597DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-13T10:00:16.555Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2426"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2426  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2426 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "88/WA1NLM2426.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2426 ;
+        adm:logEntry        bda:LG2E47169B9E2597DA , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2426  a       :Work ;
+        skos:altLabel       "rdo rje mi 'khrugs pa lha dgu'i dkyil 'khor gyi ngag 'don mthong ba don ldan/"@bo-x-ewts ;
+        skos:prefLabel      "mi 'khrugs pa lha dgu'i dkyil 'khor gyi ngag 'don mthong ba don ldan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual for the performance of the nine-deity Aksobhya mandala practice and other miscellaneous rituals"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T536 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2426 , bdr:W1NLM2426 ;
+        :workIsAbout        bdr:T998 .
+}

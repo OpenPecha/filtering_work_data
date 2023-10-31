@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23607 {
+    bda:LGA1FA1A8E5A1AFEA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-30T15:22:17.088Z"^^xsd:dateTime ;
+        adm:logMessage      "reworked bib title positions and encodings"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGE1C919F5AF8359AB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23607  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23607 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "69/WA23607.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23607 ;
+        adm:logEntry        bda:LGA1FA1A8E5A1AFEA0 , bda:LGE1C919F5AF8359AB , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23607  skos:altLabel  "zhe chen lugs srol cho ga'i lag len skor : a set unique manuals for the rituals in use at zhechn tennyi dargyeling monasteries, in accordance to the mindroling tradition the nyingmapa school tibetan buddhism"@en-x-mixed .
+
+    bdr:WA23607  a          :Work ;
+        skos:altLabel       "ze chen lugs srol cho ga'i lag len skor"@bo-alalc97 , "Źe-chen lugs srol cho gaʾi lag len skor =Zhe Chen lugs srol cho gaʾi lag len skor."@en-x-mixed ;
+        skos:prefLabel      "zhe chen lugs srol cho ga'i lag len skor/"@bo-x-ewts , "zhe chen lugs srol cho ga'i lag len skor : a set unique manuals for the rituals in use at zhechn tennyi dargyeling monasteries, in accordance to the mindroling tradition the nyingmapa school tibetan buddhism"@en-x-mixed ;
+        :catalogInfo        "Various rituals from the Shechen order of the Nyingma."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW23607 , bdr:W23607 ;
+        :workIsAbout        bdr:G20 , bdr:T1747 .
+}

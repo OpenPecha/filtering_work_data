@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307974 {
+    bda:LG21B35E520D21AFB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-22T12:25:58.387Z"^^xsd:dateTime ;
+        adm:logMessage      "check and eleased"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG3B8A64EF6A35E161
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-22T15:20:56.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7826CF9484F349EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-23T10:58:43.95Z"^^xsd:dateTime ;
+        adm:logMessage      "changed restrictedinchina"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ307974  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307974 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f8/WA4CZ307974.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307974 ;
+        adm:logEntry        bda:LG21B35E520D21AFB9 , bda:LG3B8A64EF6A35E161 , bda:LG7826CF9484F349EC , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR69C08BC42307A319
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC9AAFBF5CB64EFE6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5860 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA4CZ307974  a      :Work ;
+        skos:altLabel       "'phags pa klu sgrub zhabs kyis mdzad pa'i rten 'brel snying po rtsa 'grel dang / 'phags pa chos kyi snying po'i rnam par 'grel ba/"@bo-x-ewts ;
+        skos:prefLabel      "rten 'brel snying po rtsa 'grel dang / chos kyi snying po'i rnam par 'grel ba/"@bo-x-ewts , "pratityasamutpadahrdayakarika and aryadharmadhatugarbhavivarana"@sa-x-ndia ;
+        :catalogInfo        "Auto-commentary on Pratityasamutpadahrdayakarika and Dharmadhatugarbhavivarana"@en ;
+        :creator            bdr:CR69C08BC42307A319 , bdr:CRC9AAFBF5CB64EFE6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangHi ;
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW4CZ307974 , bdr:W4CZ307974 ;
+        :workIsAbout        bdr:T1506 , bdr:T2194 .
+}

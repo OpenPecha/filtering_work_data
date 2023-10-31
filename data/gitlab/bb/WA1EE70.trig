@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE70 {
+    bda:LG2B9EA3E7208415AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:52:08.564Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGF9C6CDB8118F58DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T15:17:35.496Z"^^xsd:dateTime ;
+        adm:logMessage      "first publish"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LGFB793C185DB594CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-14T12:24:24.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1EE70  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE70 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bb/WA1EE70.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE70 ;
+        adm:logEntry        bda:LG2B9EA3E7208415AA , bda:LGF9C6CDB8118F58DB , bda:LGFB793C185DB594CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1EE70  a          :Work ;
+        skos:prefLabel      "dad pa'i pad+mo kha yongs su 'byed pa'i gru char zhes bya ba bzhugs so/ gsum bsngags zhes bya ba'i sdeb sbyor/ (bod dang sog yig)"@bo-x-ewts , "susugten-u lingqu-a-yin aman-i ogugata negegci singse qur-a kemegdeku orusibai. gurban sayisiyal neretu qolbug-a bui."@mn-alalc97 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangMn , bdr:LangSa ;
+        :workHasInstance    bdr:MW1EE70 , bdr:W1EE70 ;
+        :workIsAbout        bdr:T00JR3437 , bdr:T204 .
+}

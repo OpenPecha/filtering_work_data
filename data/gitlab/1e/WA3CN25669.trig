@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25669 {
+    bda:LG486E639646A13484
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG618294608F2C385E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T23:10:07.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7BFE5715DBFFAB74
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T20:39:09.759Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG83CD475083BEAC84
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T21:53:12.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25669  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25669 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA3CN25669.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25669 ;
+        adm:logEntry        bda:LG486E639646A13484 , bda:LG618294608F2C385E , bda:LG7BFE5715DBFFAB74 , bda:LG83CD475083BEAC84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR253DD12B1721B4B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5360 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25669  skos:altLabel  "历辈德瓦仓活佛传(藏文)"@zh-alalc97 .
+
+    bdr:WA3CN25669  a       :Work ;
+        skos:prefLabel      "skyabs rje sde khri rin po che sku 'phreng rim byon gyi rnam thar/"@bo-x-ewts , "历辈德瓦仓活佛传(藏文)"@zh-alalc97 ;
+        :catalogInfo        "Biography of the incarnation line of Detri Rinpoche from Amdo Labrang monastery by Chari Kalzang Thokmey."@en ;
+        :creator            bdr:CR253DD12B1721B4B0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN25669 , bdr:W3CN25669 ;
+        :workIsAbout        bdr:P1177 , bdr:P382 , bdr:P4098 , bdr:P4487 .
+}

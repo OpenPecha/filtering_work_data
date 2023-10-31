@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS41708 {
+    bda:LG04D982D5BBA57A85
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T14:41:05.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4C9FE2753ADCEE47
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-10-29T09:54:23.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD3A10507DDCB2FEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-29T09:53:11.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS41708  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS41708 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c8/WA8LS41708.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS41708 ;
+        adm:logEntry        bda:LG04D982D5BBA57A85 , bda:LG4C9FE2753ADCEE47 , bda:LGD3A10507DDCB2FEC , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDCACA37A81A2B7E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75380 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS41708  a       :Work ;
+        skos:prefLabel      "brang gzhung gi nga ro/"@bo-x-ewts ;
+        :catalogInfo        "A collection of poems composed by Bapa Kelsang Trinley."@en ;
+        :creator            bdr:CRDCACA37A81A2B7E2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS41708 , bdr:W8LS41708 ;
+        :workIsAbout        bdr:T281 .
+}

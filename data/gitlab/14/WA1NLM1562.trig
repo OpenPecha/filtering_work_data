@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1562 {
+    bda:LGCA5ECBED880CA4E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-19T15:59:55.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEF655E2B23FB302C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1562"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1562  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1562 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "14/WA1NLM1562.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1562 ;
+        adm:logEntry        bda:LGCA5ECBED880CA4E3 , bda:LGEF655E2B23FB302C , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7E2A326D29D86DBA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P178 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1562  a       :Work ;
+        skos:prefLabel      "byang chub kyi sems spyod pa'i gdams pa tshig brgyad mar grags pa'i 'grel ba legs bshad gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 grub dbang pad+ma 'byung gnas kyi /zhabs pad btud nas de nyid kyi/ /sgrub thabs phan bde'i kun da'i tshal/ 2 pad+ma yang gsang khros pa'i las byang gyer sgom 'jigs med rdo rje sgra dbyangs/ 3 tha 'og chos rgyal kyi rgyal po/ 4 za 'drs kha bsgyur gyi gto chog 5 'go ba'i lha lnga'i gsol mchod phan bde'i 'dod 'jo/ 6 tshe dpag med kyi cho ga 'don byed pa'i tshul/ 7 rta mgrin gsang sgrub kyi zhi rgyas dbang gsum gyi sbyin sreg gi cho ga ye shes me 'od/ 8 ye shes mkha 'gro seng ge'i gdong can ma'i zor/ 9 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul dang bcas pa/ 10 phas rgol g.yul las rnam par rgyal mdzad pa'i/ 11 tshe das cig gis rdo rje 'chang chen po gsol bar gyur/"@en , "A commentary on the instruction of Bodhicitta by Won Gyalse Kelsang Thunpten Jigme Gyatsho; other text also included."@en ;
+        :creator            bdr:CR7E2A326D29D86DBA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM1562 , bdr:W1NLM1562 ;
+        :workIsAbout        bdr:T2064 .
+}

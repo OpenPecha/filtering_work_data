@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS15999 {
+    bda:LG2BEDB0C4C52D265C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T16:17:43.796Z"^^xsd:dateTime ;
+        adm:logMessage      "updated PR1VIENNA00 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-PR1VIENNA00." .
+
+    bda:LG2BF05F13740767B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T11:30:58.905Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG793A4E8F089E18DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-12T10:07:34.243Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG93C74F99C33A1A7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-30T16:31:47.366Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA110F38738EFFC10
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T14:31:47.779Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Vienna"@en ;
+        adm:logWhoStr       "add-works-to-PR1VIENNA00" .
+
+    bda:LGA1F6317D34EF0EEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-02T10:05:37.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added note in pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA720F61893FA93D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-14T12:03:41.293Z"^^xsd:dateTime ;
+        adm:logMessage      "changed Author record"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGABE58B9672ECE6E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-09T19:08:30.468Z"^^xsd:dateTime ;
+        adm:logMessage      "updated label for TPMV"@en ;
+        adm:logWhoStr       "works-update-PR1VIENNA00-label" .
+
+    bda:LGE8C1B5D4D6B77BD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-22T16:43:52.756Z"^^xsd:dateTime ;
+        adm:logMessage      "added source and biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF5CBE742A66C56EF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-12T10:09:08.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS15999  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS15999 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "92/WA8LS15999.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS15999 ;
+        adm:logEntry        bda:LG2BEDB0C4C52D265C , bda:LG2BF05F13740767B1 , bda:LG793A4E8F089E18DD , bda:LG93C74F99C33A1A7F , bda:LGA110F38738EFFC10 , bda:LGA1F6317D34EF0EEC , bda:LGA720F61893FA93D0 , bda:LGABE58B9672ECE6E0 , bda:LGE8C1B5D4D6B77BD4 , bda:LGF5CBE742A66C56EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9D5068236535106E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6877 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS15999  a       :Work ;
+        skos:altLabel       "dpal nA ro pa'i rnam par thar pa/"@bo-x-ewts , "rnam thar bde chen 'brug sgra/"@bo-x-ewts ;
+        skos:prefLabel      "nA ro pa'i rnam par thar pa/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Naropa; handwritten manuscript presently preserved in Zongkhul area of Zanskar."@en ;
+        :creator            bdr:CR9D5068236535106E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS15999 , bdr:W8LS15999 ;
+        :workIsAbout        bdr:P3085 .
+}

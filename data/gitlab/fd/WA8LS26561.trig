@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS26561 {
+    bda:LG7BE710384CEAA3FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-25T10:29:51.832Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA0F71038F808189D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-25T10:30:55.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS26561  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS26561 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fd/WA8LS26561.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS26561 ;
+        adm:logEntry        bda:LG7BE710384CEAA3FE , bda:LGA0F71038F808189D , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB89F5EEF3DE61F24
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6083 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS26561  a       :Work ;
+        skos:altLabel       "gna' rabs bod dbus gtsang khul du chang sa rgyag tshul gna' bo'i lugs bzang yang gsal bde skyid rdzogs ldan gsar pa mgron du 'gugs pa'i pho nya/"@bo-x-ewts ;
+        skos:prefLabel      "gna' rabs bod dbus gtsang khul gyi chang sa'i lam srol/"@bo-x-ewts ;
+        :catalogInfo        "The central Tibetan marriage system by Thupten Sangye."@en ;
+        :creator            bdr:CRB89F5EEF3DE61F24 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS26561 , bdr:W8LS26561 ;
+        :workIsAbout        bdr:G3186 , bdr:T1163 .
+}

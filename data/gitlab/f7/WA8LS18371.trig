@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18371 {
+    bda:LG1DEEA7BB80F65B6C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T09:23:04.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG297A0A12A729B22C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T09:20:52.895Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3F5FF894BE33956C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-04T12:19:05.814Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS18371  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18371 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f7/WA8LS18371.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18371 ;
+        adm:logEntry        bda:LG1DEEA7BB80F65B6C , bda:LG297A0A12A729B22C , bda:LG3F5FF894BE33956C , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR621629A9BEF1EC18
+        a                   :AgentAsCreator ;
+        :agent              bdr:P22 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18371  a       :Work ;
+        skos:prefLabel      "klong rdol bla ma rin po ches mdzad pa'i mthal bshags/"@bo-x-ewts ;
+        :catalogInfo        "A confession of trangression by Longdol Lama Rinpoche Ngawang Gyatsho."@en ;
+        :creator            bdr:CR621629A9BEF1EC18 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS18371 , bdr:W8LS18371 ;
+        :workIsAbout        bdr:T2560 .
+}

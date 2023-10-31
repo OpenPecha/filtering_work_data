@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27611 {
+    bda:LGA27869F7354A8B81
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA27611  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27611 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "13/WA27611.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27611 ;
+        adm:logEntry        bda:LGA27869F7354A8B81 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRBB2DF5A5561D936B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5969 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVC9191199A35EDD54
+        a                   :CompletedEvent ;
+        :onYear             "1998"^^xsd:gYear .
+
+    bdr:WA27611  a          :Work ;
+        skos:altLabel       "grub pa'i rig 'dzin ja bzi mchog sprul pad+ma gar dbang gling pa'i rnam thar ngo mtshar sprul pa'i glegs bam gsal byed rdul bral zla ba'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "'gro 'dul pad+ma gar dbang gling pa'i rnam thar rdul bral zla ba'i me long /"@bo-x-ewts ;
+        :creator            bdr:CRBB2DF5A5561D936B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVC9191199A35EDD54 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW27611 ;
+        :workIsAbout        bdr:T1082 .
+}

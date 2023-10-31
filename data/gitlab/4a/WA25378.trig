@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25378 {
+    bda:LG329B818BCDFBF6E0
+        a                   adm:InitialDataCreation .
+
+    bda:LGDA0A16DA1C96D143
+        a                   adm:UpdateData .
+
+    bda:LGEE9E0D6F30FBB36E
+        a                   adm:UpdateData .
+
+    bda:W25378  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W25378 ;
+        adm:replaceWith     bdr:WA25378 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA25378  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25378 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4a/WA25378.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25378 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:NT21855B2B32AF39DF
+        a                   :Note ;
+        :noteText           "toh 469"@en .
+
+    bdr:NTF2E98117E14FBB7C
+        a                   :Note ;
+        :noteText           "Conceptual Work"@en .
+
+    bdr:WA25378  a          :Work ;
+        skos:altLabel       "kṛṣṇayamāricakra"@sa-x-iast , "kṛṣṇayamāricakra-nāma"@sa-x-iast ;
+        skos:prefLabel      "kṛṣṇayamāricakra-nāma"@sa-x-iast ;
+        :isRoot             true ;
+        :language           bdr:LangInc ;
+        :note               bdr:NT21855B2B32AF39DF , bdr:NTF2E98117E14FBB7C ;
+        :workHasParallelsIn  bdr:WA0RT2797 .
+}

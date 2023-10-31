@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18465 {
+    bda:LG6793279B79C7974B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-12T16:04:53.516Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD8CC037384999CFE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-10-12T16:08:24.689Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN18465  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18465 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/WA3CN18465.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18465 ;
+        adm:logEntry        bda:LG6793279B79C7974B , bda:LGD8CC037384999CFE , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR41799663E1FB67C7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1426 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18465  a       :Work ;
+        skos:altLabel       "bka' 'bum gyi dkar chag rje nyid kyis mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "zhwa dmar dkon mchog yan lag gi gsung 'bum dkar chag"@bo-x-ewts ;
+        :catalogInfo        "Notes on the contents of the Collected Works by the 5th Zhamar Konchok Yanlak (1525-1583)."@en ;
+        :creator            bdr:CR41799663E1FB67C7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 , bdr:T2123 ;
+        :workHasInstance    bdr:MW3CN18465 , bdr:W3CN18465 ;
+        :workIsAbout        bdr:P1426 , bdr:T1386 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76805 {
+    bda:LG8633A5C8F1810412
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-18T09:17:18.275Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8946F4551E9F6FF9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-18T09:17:48.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76805  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76805 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fc/WA8LS76805.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76805 ;
+        adm:logEntry        bda:LG8633A5C8F1810412 , bda:LG8946F4551E9F6FF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR58990F5EAA1DEF88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9C38C625CB5CCEF3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ34265 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76805  a       :Work ;
+        skos:altLabel       "kun mkhyen 'jam dbyangs bzhad pa'i phar phyin gyi yig cha'i mchan 'grel gser gyi lde mig"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin gyi yig cha'i mchan 'grel gser gyi lde mig"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary on the Paramita text of Jamyang Zhedpa by Halha Chozed Lama Tenpe Dronme."@en ;
+        :creator            bdr:CR58990F5EAA1DEF88 , bdr:CR9C38C625CB5CCEF3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW8LS76805 , bdr:W8LS76805 ;
+        :workIsAbout        bdr:T36 , bdr:T447 .
+}

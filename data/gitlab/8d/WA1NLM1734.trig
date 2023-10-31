@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1734 {
+    bda:LG0394798AD113520D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T23:02:49.769Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1AE2DE2BC0AE93E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-18T09:36:28.929Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic,content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG34DE30F73DB1D9C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1734"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1734  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1734 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/WA1NLM1734.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1734 ;
+        adm:logEntry        bda:LG0394798AD113520D , bda:LG1AE2DE2BC0AE93E8 , bda:LG34DE30F73DB1D9C8 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR556E78AA948B80AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1734  a       :Work ;
+        skos:prefLabel      "bsangs cho ga bkra shis char 'bebs 'don cha'i go rim sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ye shes kyi mgon po la bsangs mchod 'bul tshul dgos 'dod kun 'byung / 2 chos skyong dregs pa lcam sring gi bsangs mchod 'bul tshul bsam pa kun grub/ 3 klu'i bsangs mchod g.yang 'gugs dang bcas pa/ 4 nag po'i phyogs kyi klu gnyan sa bdag gi bsangs mchod 'bul tshul/ 5 dgra lha'i gsol mchod/ 6 'go ba'i lha lnga'i bzlas pa byed tshul/ 7 bla ma dang dzam b+ha la dbyer med kyi rnal 'byor nyams len tshul dang de'i bsangs/ 8 'phrin las bcol ba/ 9 yul lha gzhi bdag mchod pa/ 10 spyan ras gzigs kyi sho mo shel dkar me long / 11 phyag na rdo rje drag po gsum dril gyi sgrub thabs/ 12 slob dpon chen po pad+ma 'byung gns mdzad pa'i bskang brtsegs pa'i gsol mchod/ 13 'go ba'i lha lnga bsrung gi 'bros pa'i 'gugs byed gzungs 'dzug gser gyi lcags kyu/ 14 'phags pa phyogs bcu'i mun sel rnam par sel pa/ 15 'phags mchog thugs rje chen po la snyigs ma'i rgud pa zhi ba'i phyir gsol ba 'debs tshul/ 16 me lha'i gos dkar mo mchod pa/ 17 bkra shis brtsegs pa'i g.yang 'gugs/ 18 rgyu skar gyi bdag po mes 'dun skar ma'i mchod pa/ 19 kong rtse'i gsol mchod 'dod don sprin phung / 20 'od zer can ma/ 21 yi ge bzhi pa'i bsad bzlog gi man ngag nyams su blang ba'i ngag 'don gyi rim pa/"@en , "Liturgical recitation of incense offering ritual by Konchok Jigme Wangpo; other text also included."@en ;
+        :creator            bdr:CR556E78AA948B80AC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM1734 , bdr:W1NLM1734 ;
+        :workIsAbout        bdr:T173 .
+}

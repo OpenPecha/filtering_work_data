@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG17214 {
+    bda:LG830089E2E6F9A065
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-13T16:46:08.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD8035079D5F1B69B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-13T16:45:39.878Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG17214  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG17214 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f0/WA1KG17214.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG17214 ;
+        adm:logEntry        bda:LG830089E2E6F9A065 , bda:LGD8035079D5F1B69B , bda:LGIM7CC15F8F , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG17214  a       :Work ;
+        skos:altLabel       "nA len+dra'i gdan rabs nyer lnga pa bco brgyad khri chen rin po che ngag dbang mkhyen rab legs bshad rgya mtsho'i rnam thar mdor bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "bco brgyad khri chen rin po che'i mdzad rnam mdor bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Biography of the Sakya master Chogye Trichen Ngawang Khyenrab Thupten Lekshe Gyatso (1920-2007)."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG17214 , bdr:W1KG17214 ;
+        :workIsAbout        bdr:P966 .
+}

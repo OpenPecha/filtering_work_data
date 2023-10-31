@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14372 {
+    bda:LG233699D365C5D385
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-03T15:19:27.776Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2E5F697891A2939D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-03T15:22:01.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3BCD8DA75B2F47A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA3CN14372  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14372 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "80/WA3CN14372.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14372 ;
+        adm:logEntry        bda:LG233699D365C5D385 , bda:LG2E5F697891A2939D , bda:LG3BCD8DA75B2F47A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN14372  a       :Work ;
+        skos:altLabel       "mkhas 'jug gi sdom byang dang / mkhas pa'i tshul la 'jug pa'i sgo"@bo-x-ewts ;
+        skos:prefLabel      "mkhas 'jug gi sdom byang dang bstan bcos dngos/"@bo-x-ewts ;
+        :catalogInfo        "The Gateway to Knowledge. Introduction to Buddhist principles by the Nyingma polymath, Jamgon Ju Mipam Namgyal Gyatso (1846-1912). Includes notice of contents and supplements to studying the textbook."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW3CN14372 , bdr:W3CN14372 ;
+        :workIsAbout        bdr:T1770 .
+}

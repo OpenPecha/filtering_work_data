@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1747 {
+    bda:LGA9ABF3CFBD17F537
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE624AD553FCFA1B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-23T12:01:35.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1747"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1747  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1747 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a6/WA1NLM1747.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1747 ;
+        adm:logEntry        bda:LGA9ABF3CFBD17F537 , bda:LGE624AD553FCFA1B6 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1747  a       :Work ;
+        skos:prefLabel      "rgyal po sku lnga'i gtor 'bul tshul mdor bsdus sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 yul lha'i gsolmchod lha ro me do dka' sngon/ lha cig skyes skyes pa'i lha gsol mchod/ 2 ma mo khrag mdos/ 3 bla ma mchod pa'i tshogs mchod 'bul tshul dngos grub kun 'byung / 4 gnol bsangs gsar byas legs bshad snying po/ 5 rta mgrin gsang sgrub kyi sgrub thabs dregs pa kun 'dul/ 6 byang chub lam gyi rim pa'i dmar khrid myur lam brgyud 'debs/ 7 rta mgrin bsgrub par 'dod pa/ 8 mkhan chen chos kyi rgyal po'i gsung 'bum las brul gtor bsdus pa/ 9 a tsa ra'i nag po'i man ngag chom rkun mgo bskor/ 10 lhag pa'i lha mo 'od zer can ma la bsangs mchod 'bul tshul lhag bsam dpal 'byor rgya mtsho'i gzegs ma kun phan bdud rtsi'i char rgyun/ 11 rje btsun sgrol ma'i maN+Dal bzhi ba'i 'don cha mdor bsdus/ 12 rab gnas bsdus pa rta thog ma/ 13 rlung lha'i gsol mchod bkra shis dpal 'bar/ 14 gtor ma rgyag shin tu bsdus pa/ 15 rnam sras bsangs/ 16 gsol 'debs smon lam/ 17 bstan pa rgyas pa'i smon lam/ 18 dpal dur khrod bdag po'i gtor 'bul 'phrin las myur 'jug 19 chos skyong dregs pa lcam sring la mdor bsdus pa'i tshul gyi mchod gtor/ 20 rigs pa'i lha mo'i khrag gser skyems/ 21 rje btsun nA ro mkha' spyod kyi sgrub thabs/ 22 dzam+b+ha la'i lug gi chen po 'o ma mchod 'bul/ 23 mgon po'i grib sel gyi zhal shes man ngag 24 chab gtor shAkya thub pa ma gtong bar 'dod pa/"@en , "A short bali offering ritual of five king type protective deity; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1747 , bdr:W1NLM1747 ;
+        :workIsAbout        bdr:T1367 , bdr:T1738 .
+}

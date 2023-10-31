@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22250 {
+    bda:LGDD5264C05D0D228A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEDE932662BEFB7E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T10:24:21.825Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA22250  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22250 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8e/WA22250.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22250 ;
+        adm:logEntry        bda:LGDD5264C05D0D228A , bda:LGEDE932662BEFB7E8 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB96719490BD6783B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1499 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22250  a          :Work ;
+        skos:prefLabel      "gsung 'bum/_'jigs med 'phrin las rgya mtsho/"@bo-x-ewts ;
+        :creator            bdr:CRB96719490BD6783B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW22250 , bdr:MW8LS17463 , bdr:W22250 , bdr:W8LS17463 ;
+        :workIsAbout        bdr:T819 .
+}

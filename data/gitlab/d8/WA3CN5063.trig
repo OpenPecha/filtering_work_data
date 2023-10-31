@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5063 {
+    bda:LG0387E1365EE63B28
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-30T10:24:06.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBA0EE5E9FDDF277C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T15:06:04.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5063  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5063 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d8/WA3CN5063.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5063 ;
+        adm:logEntry        bda:LG0387E1365EE63B28 , bda:LGBA0EE5E9FDDF277C , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5BADAB194D7BC4FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7DF451746C4E80FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD71D686D42BF9E65
+        a                   :AgentAsCreator ;
+        :agent              bdr:P559 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5063  a        :Work ;
+        skos:prefLabel      "rje btsun 'phags ma sgrol ma'i rgyud kyi byung ba dang bstod 'grel 'ga' phyogs gcig tu bsgrigs pa/"@bo-x-ewts ;
+        :catalogInfo        "A collection of Tara Tantra origin and commentary of Tara Stotras by Tarantha, Situ Pedma Nyinje and Ngulchu Dharmabhadra."@en ;
+        :creator            bdr:CR5BADAB194D7BC4FD , bdr:CR7DF451746C4E80FF , bdr:CRD71D686D42BF9E65 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T132 , bdr:T2129 , bdr:T67 ;
+        :workHasInstance    bdr:MW3CN5063 , bdr:W3CN5063 ;
+        :workIsAbout        bdr:T619 .
+}

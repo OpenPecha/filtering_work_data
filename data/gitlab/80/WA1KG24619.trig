@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24619 {
+    bda:LG2A3B311B313F01E3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-09T16:37:30.555Z"^^xsd:dateTime ;
+        adm:logMessage      "temporary released for scanning"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCD6DFCDF1768ED75
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T16:39:53.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG24619  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24619 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/WA1KG24619.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24619 ;
+        adm:logEntry        bda:LG2A3B311B313F01E3 , bda:LGCD6DFCDF1768ED75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG24619  a       :Work ;
+        skos:prefLabel      "se ra theg chen gling gi chos spyod phyogs sgrig"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1KG24619 , bdr:W1KG24619 ;
+        :workIsAbout        bdr:G154 .
+}

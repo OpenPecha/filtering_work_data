@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD181144 {
+    bda:LGF496CCA1117684C0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-17T05:35:37.887Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA1PD181144  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD181144 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "09/WA1PD181144.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD181144 ;
+        adm:logEntry        bda:LGF496CCA1117684C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA5565B3ED081E95C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P882 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD181144  skos:altLabel  "仁增嘉村宁博全集"@zh-hans .
+
+    bdr:WA1PD181144  a      :Work ;
+        skos:altLabel       "ren zeng jia cun ning bo quan ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rig 'dzin 'ja' tshon snying po'i gsung 'bum/"@bo-x-ewts , "仁增嘉村宁博全集"@zh-hans ;
+        :catalogInfo        "Incomplete collection of the writings of the visionary Jatson Nyingpo (1585-1656)"@en ;
+        :creator            bdr:CRA5565B3ED081E95C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW1PD181144 ;
+        :workIsAbout        bdr:T1082 .
+}

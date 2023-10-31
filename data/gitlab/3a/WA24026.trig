@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24026 {
+    bda:LG72884851AFE62BED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD70F35600BDEE350
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24026  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24026 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3a/WA24026.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24026 ;
+        adm:logEntry        bda:LG72884851AFE62BED , bda:LGD70F35600BDEE350 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C7FAC4B12AD960D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4987 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW24026  skos:altLabel  "slob ma la phan pa'i zin tig : a collection of instructions on tibetan medicine and treatment"@en-x-mixed .
+
+    bdr:WA24026  a          :Work ;
+        skos:altLabel       "Slob ma la phan paʾi zin tig :a collection of instructions on Tibetan medicine and treatment /by Gtsaṅ-sman Dar-ma-mgon-po."@en-x-mixed ;
+        skos:prefLabel      "slob ma la phan pa'i zin tig"@bo-x-ewts , "slob ma la phan pa'i zin tig : a collection of instructions on tibetan medicine and treatment"@en-x-mixed ;
+        :catalogInfo        "Early collection of Tibetan medical instructions."@en ;
+        :creator            bdr:CR1C7FAC4B12AD960D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW24026 , bdr:W24026 ;
+        :workIsAbout        bdr:T85 .
+}

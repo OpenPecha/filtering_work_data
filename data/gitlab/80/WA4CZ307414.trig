@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307414 {
+    bda:LG26EC7554CFC788E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-23T16:37:47.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9D0E126050009C39
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-23T12:41:08.985Z"^^xsd:dateTime ;
+        adm:logMessage      "newly catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGAC5E0D6227C415F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGC440450B99026C95
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T15:41:08.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ307414  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307414 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "80/WA4CZ307414.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307414 ;
+        adm:logEntry        bda:LG26EC7554CFC788E6 , bda:LG9D0E126050009C39 , bda:LGAC5E0D6227C415F7 , bda:LGC440450B99026C95 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ307414  a      :Work ;
+        skos:altLabel       "dpal sa skya'i gser chos lugs rdo rje khyung khra'i las med gza' mdos sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sa skya'i gser chos lugs rdo rje khyung khra'i las med gza' mdos sogs/"@bo-x-ewts ;
+        :catalogInfo        "A collection of sadhana for invoking the Jnana Garuda"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW4CZ307414 , bdr:W4CZ307414 ;
+        :workIsAbout        bdr:T397 .
+}

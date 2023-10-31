@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22849 {
+    bda:LG5370D50088EBB2E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-01T12:56:00.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added title"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAA631C17EB2E792F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-13T15:56:08.215Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarily removed tbrc holdings note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC13E34CC61DD4014
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD3912B8CFF84C95D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-28T17:44:47.112Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF8F25EB1D993B30A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-31T23:53:56.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22849  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22849 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "25/WA3CN22849.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22849 ;
+        adm:logEntry        bda:LG5370D50088EBB2E6 , bda:LGAA631C17EB2E792F , bda:LGC13E34CC61DD4014 , bda:LGD3912B8CFF84C95D , bda:LGF8F25EB1D993B30A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAE0F77B349FDE000
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22849  a       :Work ;
+        skos:altLabel       "'jam mgon bstan pa'i sgron me rgyal ba'i rgyal tshab dpal ldan de mo no min han blo bzang thub bstan 'jigs med rgya mtsho dpal bzang po'i rnam par thar pa dpag bsam yongs 'du'i snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "de mo no min han blo bzang thub bstan 'jigs med rgya mtsho'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Geluk master Demo Nominhan Lobsang Thubten Jimmy Gyatso (18th Cent.) by Gyalwang Choje Lobsang Trinley (18th Cent.)."@en ;
+        :creator            bdr:CRAE0F77B349FDE000 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN22849 , bdr:W3CN22849 ;
+        :workIsAbout        bdr:P1155 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1505 {
+    bda:LG49C5FEFB060F34D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-15T14:41:26.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA155D7D8E0B6D892
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1505"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1505  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1505 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "aa/WA1NLM1505.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1505 ;
+        adm:logEntry        bda:LG49C5FEFB060F34D2 , bda:LGA155D7D8E0B6D892 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREA24C7046A4A1A58
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4613 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1505  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa'i dmigs rim mdor bsdus 'khyer bde'i 'khrid rab gsal sgron me'am lam chog skal ldan mgul rgyan nor bu 'phreng ba'i lhan thabs gdams ngag rin chen bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gsol 'debs thugs rje myur 'jug 2 dpal rdo rje 'jigs byed kyi mngon par rtogs pa/ 3 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod skul dang bcas pa/ 4 dpal rdo rje 'jigs byed lha bcu gsum ma'i bsgrub pa'i thabs rin po che'i za ma tog 5 dbu ma'i lta khrid dran pa bzhi ldan zur 'debs dang bcas pa/"@bo-x-ewts , "A short instructional manual for Bodhi mind visualization and supplement by Losang Dargye or Pelgon Zhedpa Dorjee; other text also included."@en ;
+        :creator            bdr:CREA24C7046A4A1A58 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1453 ;
+        :workHasInstance    bdr:MW1NLM1505 , bdr:W1NLM1505 ;
+        :workIsAbout        bdr:T11MS11 , bdr:T2064 , bdr:T475 .
+}

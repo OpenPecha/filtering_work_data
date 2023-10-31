@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4319 {
+    bda:LG60C0F72606F40D5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T13:52:59.434Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG70E6A5170BB2E2D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-23T17:07:46.692Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA58D47F570068388
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-17T13:06:12.424Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF3E3355869B92D70
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-13T15:17:33.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4319  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4319 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "98/WA3CN4319.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4319 ;
+        adm:logEntry        bda:LG60C0F72606F40D5E , bda:LG70E6A5170BB2E2D0 , bda:LGA58D47F570068388 , bda:LGF3E3355869B92D70 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3334E465F26EAF7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4319  a        :Work ;
+        skos:altLabel       "tshad ma rigs pa'i gter gyi dka' ba'i gnas rnam par bshad pa sde bdun rab gsal/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rigs gter gyi dka' gnas rnam bshad sde bdun rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the difficult point of Tsema rikter of Sakya Pandita Kunga Gyaltsen by Gorampa Sonam Sengge."@en ;
+        :creator            bdr:CRA3334E465F26EAF7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN4319 , bdr:W3CN4319 ;
+        :workIsAbout        bdr:T2339 , bdr:WA11391 .
+}

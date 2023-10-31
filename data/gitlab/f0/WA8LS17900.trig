@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17900 {
+    bda:LG1F395083AAD942F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-18T10:04:14.17Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG49DD4C60C5C3103F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-18T10:05:41.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5D7CC59620831129
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:34:41.078Z"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1NCLK"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS17900  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17900 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f0/WA8LS17900.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17900 ;
+        adm:logEntry        bda:LG1F395083AAD942F4 , bda:LG49DD4C60C5C3103F , bda:LG5D7CC59620831129 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR58F5AA684AC9855A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17900  a       :Work ;
+        skos:altLabel       "zhib mo rnam par thag pa'i rnam bshad rtog ge'i 'khrul pa rnam par 'joms pa'i rdo rje'i tho ba/"@bo-x-ewts ;
+        skos:prefLabel      "zhib mo rnam par thag pa'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of Vaidalyasutra by Rongton Sheja Kunrik; composed at Sangphu Neuthok monastery and scribed by Yarlungpa Namkha Palden."@en ;
+        :creator            bdr:CR58F5AA684AC9855A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS17900 , bdr:W8LS17900 ;
+        :workIsAbout        bdr:WA4CZ16739 .
+}

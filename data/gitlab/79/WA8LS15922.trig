@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS15922 {
+    bda:LG3EFE78B46C995A69
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-03T12:06:37.559Z"^^xsd:dateTime ;
+        adm:logMessage      "changed wylie to phonetic in cat info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB3974A7821294FAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-02T09:56:56.898Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBA4FC567D645AD23
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T10:51:46.21Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBB329131BA7AD3D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-15T15:20:05.538Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD3F8942443C93CB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-15T15:17:57.717Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS15922  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS15922 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "79/WA8LS15922.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS15922 ;
+        adm:logEntry        bda:LG3EFE78B46C995A69 , bda:LGB3974A7821294FAB , bda:LGBA4FC567D645AD23 , bda:LGBB329131BA7AD3D2 , bda:LGD3F8942443C93CB9 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR637A958B70A09146
+        a                   :AgentAsCreator ;
+        :agent              bdr:P39 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS15922  a       :Work ;
+        skos:altLabel       "phyag drug ye shes mgon po'i chos skor las/ bla ma rdo rje nag po chen po'i rgyan sgrub man ngag"@bo-x-ewts ;
+        skos:prefLabel      "bla ma rdo rje nag po chen po'i rgyan sgrub man ngag"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of six armed Mahakala composed by Khyungpo Neljor (978/990-1127), according to upper tradtion of Drukpa kagyu."@en ;
+        :creator            bdr:CR637A958B70A09146 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T456 ;
+        :workHasInstance    bdr:MW8LS15922 , bdr:W8LS15922 ;
+        :workIsAbout        bdr:T411 .
+}

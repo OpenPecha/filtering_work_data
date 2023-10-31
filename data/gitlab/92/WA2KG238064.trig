@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238064 {
+    bda:LG194F544D2AA9AB46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-09-21T17:34:51.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4078E57A9E88CD4D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-09-21T17:34:13.732Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA5BBFC04D9900A40
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:WA2KG238064  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238064 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "92/WA2KG238064.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238064 ;
+        adm:logEntry        bda:LG194F544D2AA9AB46 , bda:LG4078E57A9E88CD4D , bda:LGA5BBFC04D9900A40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8893464CA63A1C1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P563 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238064  a      :Work ;
+        skos:altLabel       "rgyal dbang mkha' khyab rdo rje'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_mkha' khyab rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Karmapa 15 Kakyab Dorje (1871/2-1921/2), a figure of both the Karma Kagyu and Nyingma orders. Shared a passion for the Rime movement that meant so much for his time. Corpus of initiation rituals have been included in the Rinchen Terdzod."@en ;
+        :creator            bdr:CR8893464CA63A1C1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG238064 , bdr:W2KG238064 ;
+        :workIsAbout        bdr:T1386 .
+}

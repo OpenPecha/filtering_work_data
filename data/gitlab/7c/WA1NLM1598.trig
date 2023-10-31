@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1598 {
+    bda:LG01D250FBE1342397
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-16T15:33:04.934Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB3F1D2819A430DFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1598"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1598  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1598 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7c/WA1NLM1598.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1598 ;
+        adm:logEntry        bda:LG01D250FBE1342397 , bda:LGB3F1D2819A430DFE , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4456284313193982
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1598  a       :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu bzhi pa phyi ma rgyud/"@bo-x-ewts , "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu gnyis pa bshad pa'i rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las rtsa ba'i rgyud sogs/"@bo-x-ewts ;
+        :catalogInfo        "The root text of the four Medical Tantras"@en ;
+        :creator            bdr:CR4456284313193982 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1598 , bdr:W1NLM1598 ;
+        :workIsAbout        bdr:T241 .
+}

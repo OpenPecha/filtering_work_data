@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2097 {
+    bda:LG81A5D90FEFD2868C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T12:29:30.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG964EDBEA319EFC24
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2097"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2097  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2097 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0e/WA1NLM2097.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2097 ;
+        adm:logEntry        bda:LG81A5D90FEFD2868C , bda:LG964EDBEA319EFC24 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB1233BBB8F61C677
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2097  a       :Work ;
+        skos:prefLabel      "dpyad mchog gtar kha'i gdams pa nyes 'khrugs rnyog drung byin byed kar+ke ta sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dur rdzongs dang lag 'brel gcod gto/ 2 gsang ba ye shes mkha' 'gro rdo rje sder mo bskang gso dgra bgegs gshid ma bdud sde brlag pa'i 'dzin cha/ 3 'go ba'i lha lnga'i gsol mchod bya tshul/ 4 rdo rje sder mo'i gzungs mdo dang 'brel zhing yi dam bsrung ma'i 'phrin las kyi sgo nas phyir bzlog byed tshul phas rgol 'joms pa'i rdo rje/ 5 slob dpon bhas mdzad pa'i bla ma lnga brgya ba/ 6 byang chub sems dpa'i spyod pa la 'jug pa'i gzhung 'don thabs byin rlabs chu rgyun/ 7 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga/ 8 rab gnas rta thog ma/"@en , "Examination of acupuncture channels by Deumar Geshe Tenzin Phuntshok; other text also included."@en ;
+        :creator            bdr:CRB1233BBB8F61C677 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2097 , bdr:W1NLM2097 ;
+        :workIsAbout        bdr:T1121 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16220 {
+    bda:LG1BD3D7CFABD9D2E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-02T16:24:50.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note and note in pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG24248675DB32138F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-11T11:14:17.314Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG244B0FDCCB22A52B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-11T11:15:16.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16220  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16220 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/WA8LS16220.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16220 ;
+        adm:logEntry        bda:LG1BD3D7CFABD9D2E7 , bda:LG24248675DB32138F , bda:LG244B0FDCCB22A52B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA12639 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA366A9AC430F1734
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16220  a       :Work ;
+        skos:prefLabel      "chos dbyings rin po che'i mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Dharmadhaturatanakosha, one of the seven masterpiece philosophical text composed by Longchen Rabjampa Drime Ozer (1308-1363) at Gangri Thokar hermitage. Handwritten manuscript in Umed script."@en ;
+        :creator            bdr:CRA366A9AC430F1734 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T354 .
+}

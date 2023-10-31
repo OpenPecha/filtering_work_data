@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1227 {
+    bda:LG393CF86EB34531BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB632F0CAE1E762B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-15T09:43:56.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1227"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1227  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1227 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "cf/WA1NLM1227.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1227 ;
+        adm:logEntry        bda:LG393CF86EB34531BC , bda:LGB632F0CAE1E762B5 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR13C6C638AB47E220
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1227  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal dus kyi 'khor lo'i sku gsung thugs yongs su rdzogs pa'i dkyil 'khor gyi sgrub thabs mkhas grub zhal lung sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal dus kyi 'khor lo'i rgyud 'debs dang smon lam shis brjod bcas/ 2 dpal dus kyi 'khor lo'i thugs kyi sgrub thabs dngos grub kun gyis bum bzang / 3 gsol 'debs/ 4 bcom ldan 'das dpal dus kyi 'khor lo'i dkyil 'khor gyi cho ga dgongs pa rab gsal/ 5 dpal dang po'i sangs rgyas dus kyi 'khor lo'i tshogs kyi mchod pa'i cho ga bde chen 'dod 'jo/ 6 dpal dus kyi 'khor lo'i zhi ba'i sbyin sreg"@bo-x-ewts , "Mandala sadhana of Kalacakra by seventh Dalai Lama Kelsang Gyatsho; included other text also."@en ;
+        :creator            bdr:CR13C6C638AB47E220 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM1227 , bdr:W1NLM1227 ;
+        :workIsAbout        bdr:T74 , bdr:T80 .
+}

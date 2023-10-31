@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42259 {
+    bda:LG18454666CDA93B79
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T14:51:35.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG22D7F47814C81D34
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-07T14:15:32.391Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4E4F75AEF6206F51
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-07T14:17:09.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42259  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42259 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/WA8LS42259.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42259 ;
+        adm:logEntry        bda:LG18454666CDA93B79 , bda:LG22D7F47814C81D34 , bda:LG4E4F75AEF6206F51 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR377A9A421DCA3944
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75418 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS42259  a       :Work ;
+        skos:prefLabel      "reb gong kha sog gi lo rgyus mes po'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "A local history of Rebgong Khasok cummunity by Zongkar Losang Dargyey."@en ;
+        :creator            bdr:CR377A9A421DCA3944 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS42259 , bdr:W8LS42259 ;
+        :workIsAbout        bdr:G2369 .
+}

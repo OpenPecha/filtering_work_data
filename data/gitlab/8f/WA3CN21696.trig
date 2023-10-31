@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21696 {
+    bda:LG1D76A1BB91AAFA5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG3ADDB9119D09759E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-27T10:21:20.182Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4A65141215B081F4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T16:50:12.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD3D5B26BD09BDD30
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T10:47:43.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21696  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21696 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8f/WA3CN21696.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21696 ;
+        adm:logEntry        bda:LG1D76A1BB91AAFA5E , bda:LG3ADDB9119D09759E , bda:LG4A65141215B081F4 , bda:LGD3D5B26BD09BDD30 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR562BA631F2440BA6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21696  skos:altLabel  "客者与谈歌"@zh-hans .
+
+    bdr:WA3CN21696  a       :Work ;
+        skos:prefLabel      "mgron po dang gzhas 'khyags pa/"@bo-x-ewts , "客者与谈歌"@zh-hans ;
+        :catalogInfo        "Guests and cold emotions, a collection of poetry by Nengon, Nambu & Nepa."@en ;
+        :creator            bdr:CR562BA631F2440BA6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21696 , bdr:W3CN21696 ;
+        :workIsAbout        bdr:T281 .
+}

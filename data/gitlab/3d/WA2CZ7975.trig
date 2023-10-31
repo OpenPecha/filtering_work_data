@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7975 {
+    bda:LG9DCAD05B046E8CBF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-10-20T14:52:04.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFC8B5875E2A91989
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-10-07T16:56:20.109Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ7975  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7975 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3d/WA2CZ7975.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7975 ;
+        adm:logEntry        bda:LG9DCAD05B046E8CBF , bda:LGFC8B5875E2A91989 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR343E12B577FCC41F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1413 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ7975  a        :Work ;
+        skos:altLabel       "chos kyi rje dpal ldan sgam po pa chen po'i rnam par thar pa kun khyab snyan pa'i ba dan/"@bo-x-ewts ;
+        skos:prefLabel      "sgam po pa'i rnam thar kun khyab snyan pa'i ba dan/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Gampopa Sonam Rinchen (1079-1153)."@en ;
+        :creator            bdr:CR343E12B577FCC41F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2CZ7975 , bdr:W2CZ7975 ;
+        :workIsAbout        bdr:P1844 , bdr:T1187 .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2967 {
+    bda:LG88E13E3B22F4CA4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGF347FEEAB8402D20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T14:08:24.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2967"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2967  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2967 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "99/WA1NLM2967.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2967 ;
+        adm:logEntry        bda:LG88E13E3B22F4CA4C , bda:LGF347FEEAB8402D20 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR010A21B8229EF874
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15496 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRBABC08F67DF47D92
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2551 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRDCE1EAD4DC026E53
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2967  a       :Work ;
+        skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 slob gnyer byed tshul gyi bslab bya le tshan gnyis/ 2 dus gsum sangs rgyas thms cad kyi ngobo rgyal ba blo bzang grags pa la gsol 'debs pa smon tshig bsam pa lhun gyis grub pa/ 3 zab lam bla ma'i rnal 'byor dbang dga' ldan lha brgya ma/ 4 lus ngag yid gsum bcing sab las grol bar byed pa'i gzungs/ 5 rje btsun ma 'phags ma sgrol ma'i mtshan brgya rtsa brgyad pa/ 6 bsangs mchod bkra shis char 'bebs mchod sprin rgya mtsho/ 7 bde smon zhing mchog sgo 'byed/ 8 tshe rabs kun tu tshul khrims rnam dag bsrung ba'i smon tshig 9 ltung bshags kyi sgo nas 'chi bslu bya tshul/ 10 bcom ldan 'das kun rig rnam par snang mdzad kyib bdag bskyed nyams su len tshul/"@en , "Abhisamayalankara by Maitreyanatha; other text also included."@en ;
+        :creator            bdr:CR010A21B8229EF874 , bdr:CRBABC08F67DF47D92 , bdr:CRDCE1EAD4DC026E53 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2967 , bdr:W1NLM2967 ;
+        :workIsAbout        bdr:T2005 , bdr:WA19716 .
+}

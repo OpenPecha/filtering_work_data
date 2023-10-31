@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29204 {
+    bda:LG2AEB92240B75B8EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-31T16:21:23.285Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG61A2A6F18D49B9B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-31T16:22:29.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC966EC690A5D69FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T14:55:06.56Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29204  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29204 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "19/WA8LS29204.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29204 ;
+        adm:logEntry        bda:LG2AEB92240B75B8EC , bda:LG61A2A6F18D49B9B2 , bda:LGC966EC690A5D69FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS29204  a       :Work ;
+        skos:altLabel       "dpal ldan bla ma rdo rje 'chang kun dga' nges don bstan pa'i rgyal mtshan 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "kun dga' nges don bstan pa'i rgyal mtshan 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Kunga Ngedon Tenpey Gyaltshen Trinley by Lama Lhaden."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS29204 , bdr:W8LS29204 ;
+        :workIsAbout        bdr:P8807 , bdr:T360 .
+}

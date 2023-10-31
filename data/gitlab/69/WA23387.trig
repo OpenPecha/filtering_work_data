@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23387 {
+    bda:LG1C010358D9B18B01
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG3506D3055F9D1D4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG970EEDF745ED1DC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-09T15:01:07.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added Place of Production and authorship statement"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23387  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23387 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "69/WA23387.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23387 ;
+        adm:logEntry        bda:LG1C010358D9B18B01 , bda:LG3506D3055F9D1D4B , bda:LG970EEDF745ED1DC4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1A7CB18EC73E6D39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7672 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23387  skos:altLabel  "the biography of the second gsun-sprul sakya-bstan-'dzin"@en .
+
+    bdr:WA23387  a          :Work ;
+        skos:altLabel       "dpal ldan 'brug pa rin po che ngag dbang 'jam dbyangs shAkya bstan 'dzin gyi rnam par thar pa legs byas rgya mtsho'i sprin gyi sgra dbyangs/"@bo-alalc97 , "dpal ldan 'brug pa rin po che ngag dbang 'jam dbyangs shAkya bstan 'dzin gyi rnam par thar pa legs byas rgya mtsho'i sprin gyi sgra dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "shAkya bstan 'dzin gyi rnam thar/"@bo-x-ewts , "the biography of the second gsun-sprul sakya-bstan-'dzin"@en ;
+        :catalogInfo        "Biography of Zhabdrung Sungtrul 02 of Bhutan, Shakya Tenzin (1736-1780). Written by Karma Palwar."@en ;
+        :creator            bdr:CR1A7CB18EC73E6D39 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW23387 , bdr:W23387 ;
+        :workIsAbout        bdr:P536 .
+}

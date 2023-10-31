@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ321174 {
+    bda:LGB01C61FEC901DDE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-21T12:12:11.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCB86ECDE28963430
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-21T12:10:42.937Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFFF9A0E01E067F61
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T12:09:27.812Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ321174  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ321174 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "eb/WA4CZ321174.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ321174 ;
+        adm:logEntry        bda:LGB01C61FEC901DDE1 , bda:LGCB86ECDE28963430 , bda:LGFFF9A0E01E067F61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C5B6386657A3857
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1043 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ321174  a      :Work ;
+        skos:altLabel       "bod mkhas pa mi pham dge legs rnam rgyal gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_mi pham dge legs rnam rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Collected writings and teachings of Boe Khepa Mipham Geleg Namgyal ."@en ;
+        :creator            bdr:CR1C5B6386657A3857 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ321174 , bdr:W4CZ321174 ;
+        :workIsAbout        bdr:T816 .
+}

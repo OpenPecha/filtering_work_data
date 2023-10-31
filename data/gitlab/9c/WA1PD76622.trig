@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD76622 {
+    bda:LG5E4B5B8383F66E17
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-09-17T16:48:52.364Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG89E62BDE3152FA2A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-17T16:54:05.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC124FFA1FE3043B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-09-17T16:53:07.852Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGDACCCC845B6BDB79
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T16:49:34.147Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, and cat info and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF812DF58A7E1FF40
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-06-08T09:39:20.776Z"^^xsd:dateTime ;
+        adm:logMessage      "pub"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1PD76622  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD76622 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9c/WA1PD76622.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD76622 ;
+        adm:logEntry        bda:LG5E4B5B8383F66E17 , bda:LG89E62BDE3152FA2A , bda:LGC124FFA1FE3043B2 , bda:LGDACCCC845B6BDB79 , bda:LGF812DF58A7E1FF40 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1PD76622  a       :Work ;
+        skos:altLabel       "mdzod dge'i bod brgyud nang bstan dgon sde so so'i lo rgyus mdor bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod dge'i dgon sde'i lo rgyus mdor bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Survey of monasteries in Dzoege County in Tibet"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1PD76622 , bdr:W1PD76622 ;
+        :workIsAbout        bdr:G1132 , bdr:T359 .
+}

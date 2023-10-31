@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30097 {
+    bda:LG35C34D488C63433D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-12T12:00:13.98Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG88C1A92CC860AB60
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG89FE4E180DCB67A7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-09-12T14:33:47.117Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA2C53AD2E3AE64BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-12T14:33:21.68Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB4105214FB165319
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE443254F58D941B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-29T14:28:03.108Z"^^xsd:dateTime ;
+        adm:logMessage      "changed onhold to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA30097  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30097 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e3/WA30097.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30097 ;
+        adm:logEntry        bda:LG35C34D488C63433D , bda:LG88C1A92CC860AB60 , bda:LG89FE4E180DCB67A7 , bda:LGA2C53AD2E3AE64BA , bda:LGB4105214FB165319 , bda:LGE443254F58D941B7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR31E9EA7F3C5F1366
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7420 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW30097  skos:altLabel  "explanation of the prognostication of events to come using the throwing of dice after propitiation of mahakala in the form of an acarya"@en .
+
+    bdr:WA30097  a          :Work ;
+        skos:altLabel       "las mgon a tsa ra yi pra mo rno mtshon mngon shes 'khrul med srid pa'i me long chen mo legs nyes mngon sum rgyal byed mig mthong /"@bo-x-ewts ;
+        skos:prefLabel      "a tsa ra yi man ngag rno mthong gsal ba'i sgron me/"@bo-x-ewts , "explanation of the prognostication of events to come using the throwing of dice after propitiation of mahakala in the form of an acarya"@en ;
+        :creator            bdr:CR31E9EA7F3C5F1366 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1171 ;
+        :workHasInstance    bdr:MW30097 , bdr:W30097 ;
+        :workIsAbout        bdr:T2587 .
+}

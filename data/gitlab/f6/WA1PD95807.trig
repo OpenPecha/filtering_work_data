@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1PD95807 {
+    bda:LG19314DF48A9A0ACF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-16T11:20:16.662Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+
+    bda:LG336C8DEDEC135A95
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-17T13:09:40.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added Annotation"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG43EDE2C626956478
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-16T10:35:24.345Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG8A4B8A5B6D8EB3D5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-11-17T13:11:14.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG95BB029D23A68CA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1PD95807  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1PD95807 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f6/WA1PD95807.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1PD95807 ;
+        adm:logEntry        bda:LG19314DF48A9A0ACF , bda:LG336C8DEDEC135A95 , bda:LG43EDE2C626956478 , bda:LG8A4B8A5B6D8EB3D5 , bda:LG95BB029D23A68CA0 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA73CB24274738745
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2460 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1PD95807  skos:altLabel  "觉囊律藏"@zh-hans .
+
+    bdr:WA1PD95807  a       :Work ;
+        skos:altLabel       "jue nang lv zang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'dul ba bdud rtsi'i nying khu/"@bo-x-ewts , "觉囊律藏"@zh-hans ;
+        :catalogInfo        "Select writings by Jonangpa master Tshal Minpa Sonam Zangpo (1341-1433). Includes texts related to Vinaya, Pramana, Madhyamaka etc."@en ;
+        :creator            bdr:CRA73CB24274738745 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1PD95807 , bdr:W1PD95807 ;
+        :workIsAbout        bdr:T360 , bdr:T55 .
+}

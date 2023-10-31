@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3552 {
+    bda:LG04DA7A3AF19B1589
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-24T16:07:16.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBB69B7D96B78E0F9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-24T16:06:49.627Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG3552  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3552 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e1/WA1KG3552.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3552 ;
+        adm:logEntry        bda:LG04DA7A3AF19B1589 , bda:LGBB69B7D96B78E0F9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1B7D7BFF3217B405
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3816 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE9DAD79B8C0C6D1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA1KG3552  a        :Work ;
+        skos:altLabel       "gsang sngags rdo rje theg pa'i tshul las snang ba lhar bsgrub pa rong zom chos bzang gis mdzad pa/"@bo-x-ewts , "srog sdom gzer bzhi'i dmigs pa'i gnad 'gags khams gsum rol pa'i tshangs pa'i sgra dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "gsang sngags rdo rje theg pa'i tshul las snang ba lhar bsgrub dang/ srog sdom gzer bzhi'i dmigs pa'i gnad/"@bo-x-ewts ;
+        :catalogInfo        "Practice of the Guhyagarbha Tantra. Written by Nyingma master Rongzom Chokyi Zangpo (11th cent.). Includes purification practice focusing on Vajrasattava. Written by Dza Paltrul Orgyen Jigme Chokyi Wangpo (1808-1887)."@en ;
+        :creator            bdr:CR1B7D7BFF3217B405 , bdr:CRE9DAD79B8C0C6D1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG3552 , bdr:W1KG3552 ;
+        :workIsAbout        bdr:T1494 , bdr:T307 .
+}

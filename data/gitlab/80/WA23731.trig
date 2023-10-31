@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23731 {
+    bda:LG0F10DED5B6637643
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T16:31:22.776Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6CF6F35C9E641ADA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA23731  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23731 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/WA23731.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23731 ;
+        adm:logEntry        bda:LG0F10DED5B6637643 , bda:LG6CF6F35C9E641ADA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA23731  a          :Work ;
+        skos:prefLabel      "rgyal mtshan rtse mo'i dpung rgyan sogs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW23731 , bdr:W23731 ;
+        :workIsAbout        bdr:T1082 .
+}

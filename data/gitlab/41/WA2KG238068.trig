@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG238068 {
+    bda:LG3E9CDA6CBA4F2779
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-10-06T08:43:42.123Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8638C8C7DBD4CB12
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-06T08:49:01.31Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG238068  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG238068 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "41/WA2KG238068.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG238068 ;
+        adm:logEntry        bda:LG3E9CDA6CBA4F2779 , bda:LG8638C8C7DBD4CB12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2E634FABC8A5AB97
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG238068  a      :Work ;
+        skos:altLabel       "chos mngon pa mdzod kyi dka' gnas legs par bshad pa rje btsun chos kyi rgyal mtshan dpal bzang pos mdzad pa'i nor bu'i bang mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "chos mngon pa mdzod kyi dka' gnas legs par bshad pa nor bu'i bang mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on difficult points in Abhidharmakosa for the obligatory text to study Abhidharma at Sera Je Monastery and its affiliates."@en ;
+        :creator            bdr:CR2E634FABC8A5AB97 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1491 ;
+        :workHasInstance    bdr:MW2KG238068 , bdr:W2KG238068 ;
+        :workIsAbout        bdr:G155 , bdr:T447 , bdr:WA19720 .
+}

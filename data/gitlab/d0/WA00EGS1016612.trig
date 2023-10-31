@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00EGS1016612 {
+    bda:LGA221862BC0036C13
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T14:10:10.803Z"^^xsd:dateTime ;
+        adm:logMessage      "Added About Person & modify catalog record"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC5286FF60098162B
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-01T21:32:07.281Z"^^xsd:dateTime ;
+        adm:logMessage      "correction to type in title"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD052A326591B521A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-19T16:25:05.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGF063438EBEFE54DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-11-27T05:13:44.109Z"^^xsd:dateTime ;
+        adm:logMessage      "record created"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00EGS1016612
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00EGS1016612 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d0/WA00EGS1016612.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00EGS1016612 ;
+        adm:logEntry        bda:LGA221862BC0036C13 , bda:LGC5286FF60098162B , bda:LGD052A326591B521A , bda:LGF063438EBEFE54DB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7FA1422640020F2B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016610 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00EGS1016612
+        a                   :Work ;
+        skos:prefLabel      "rang nyid ngo sprod/"@bo-x-ewts ;
+        :catalogInfo        "Introduction to self-nature by Tarawa Tenzin Chonyi (20th cent.), the private secretary to Dalai Lama 14 Tenzin Gyatso."@bo-x-ewts ;
+        :creator            bdr:CR7FA1422640020F2B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW00EGS1016612 , bdr:W00EGS1016612 ;
+        :workIsAbout        bdr:P00EGS1016610 , bdr:T1175 .
+}

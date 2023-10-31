@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG01649 {
+    bda:LG000FC3815B923A30
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-05-29T13:36:06.587Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog work"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG26249F4E9510F8BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-03-05T12:39:57.821Z"^^xsd:dateTime ;
+        adm:logMessage      "QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5761303591980F4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-04T10:29:42.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added Print type and sourcePrintery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG80969D4A5E2F0407
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-03-10T10:58:56.989Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC8E851147291F8F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-27T15:09:17.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE9F018260F594384
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-24T13:17:45.199Z"^^xsd:dateTime ;
+        adm:logMessage      "released first time"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00KG01649  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG01649 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "df/WA00KG01649.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG01649 ;
+        adm:logEntry        bda:LG000FC3815B923A30 , bda:LG26249F4E9510F8BD , bda:LG5761303591980F4D , bda:LG80969D4A5E2F0407 , bda:LGC8E851147291F8F9 , bda:LGE9F018260F594384 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C67EAD5E7F591DC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00KG01649  a      :Work ;
+        skos:altLabel       "ring 'tsho'i cho ga sgrub pa'i rnam par bzhag pa 'chi bdag slu ba'i rtog pa'i don 'grel tshe dbang dga' ba 'khyil ba'i thig le/"@bo-x-ewts ;
+        skos:prefLabel      "ring 'tsho'i cho ga"@bo-x-ewts ;
+        :catalogInfo        "Detailed manual with exegesis for practicing the ritual to prolong life. Written by Jamgon Kongtrul Lodro Taye (1813-1899/1890)."@en ;
+        :creator            bdr:CR9C67EAD5E7F591DC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW00KG01649 , bdr:W00KG01649 ;
+        :workIsAbout        bdr:T473 , bdr:T831 .
+}

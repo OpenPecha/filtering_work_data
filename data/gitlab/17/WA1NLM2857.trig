@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2857 {
+    bda:LG05AAD29ACB5CBFE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-02T11:32:13.776Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBF8CCC33C08C753A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2857"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2857  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2857 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "17/WA1NLM2857.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2857 ;
+        adm:logEntry        bda:LG05AAD29ACB5CBFE1 , bda:LGBF8CCC33C08C753A , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5985B99DF52A1F5C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR71E986607B844B01
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG208395 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR90E4773984CBEC29
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2984 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF13390C401F0A844
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2857  a       :Work ;
+        skos:prefLabel      "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos chen po legs par bshad pa'i snying po'i dka' gnad zab mo cha tshang bar 'grel pa'i bstan bcos legs bshad snying po'i dgongs rgyan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation on the difficult points of Tsongkhapa's most important works on the Two Truths, the definitive and interpretive meanings; Practicing the Utpattikrama stage according to Guhyasamaja teaching and other texts included."@en ;
+        :creator            bdr:CR5985B99DF52A1F5C , bdr:CR71E986607B844B01 , bdr:CR90E4773984CBEC29 , bdr:CRF13390C401F0A844 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1491 ;
+        :workHasInstance    bdr:MW1NLM2857 , bdr:W1NLM2857 ;
+        :workIsAbout        bdr:T164 , bdr:T417 , bdr:WA606 .
+}

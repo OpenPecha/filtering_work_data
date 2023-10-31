@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1677 {
+    bda:LG634F3CA7BD4788D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA714FC407CB681A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:10:17.024Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAC5D125A566D5DFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T10:27:41.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1677"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1677  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1677 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bd/WA1NLM1677.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1677 ;
+        adm:logEntry        bda:LG634F3CA7BD4788D6 , bda:LGA714FC407CB681A9 , bda:LGAC5D125A566D5DFC , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2F07AD530490A74F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR86EF092AAA6B4D71
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRAB2B02109B551F0C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRB1BAF98792594C60
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8210 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1NLM1677  a       :Work ;
+        skos:altLabel       "'phags pa de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas zhes bya ba theg pa chen po mdo/"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde brgyad brgya pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bstod pa rnam dag gangs ri ma/ 2 dus kyi 'khor lo'i lam yongs rdzogs kyi smon lam/ 3 gsol 'debs/"@bo-x-ewts , "Seven medicine Buddha's prayer sutra, translated by Jinamitra, Danashila, Shilendrabodhi and lotsava Bende Yeshe De."@en ;
+        :creator            bdr:CR2F07AD530490A74F , bdr:CR86EF092AAA6B4D71 , bdr:CRAB2B02109B551F0C , bdr:CRB1BAF98792594C60 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T34 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1677 , bdr:MW4CZ355778 , bdr:W1NLM1677 , bdr:W4CZ355778 ;
+        :workIsAbout        bdr:T568 , bdr:T870 .
+}

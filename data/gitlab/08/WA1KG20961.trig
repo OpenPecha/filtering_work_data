@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20961 {
+    bda:LGAB4078874E477B71
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-12T14:41:52.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF1CC68C0C51AFE88
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-07T16:39:21.124Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM01FF8512D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM685E38743B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20961  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20961 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "08/WA1KG20961.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20961 ;
+        adm:logEntry        bda:LGAB4078874E477B71 , bda:LGF1CC68C0C51AFE88 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR466DCD2E113319D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9618 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRCAE7E772B42664A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5678 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG20961  skos:altLabel  "biography of the xiii dalai lama"@en .
+
+    bdr:WA1KG20961  a       :Work ;
+        skos:prefLabel      "tA la'i bla ma sku phreng bcu gsum pa mchog"@bo-x-ewts , "biography of the xiii dalai lama"@en ;
+        :catalogInfo        "Translation of biography of the 13th Dalai Lama, Thupten Gyatso (1876-1933) written by Tokan Tada"@en ;
+        :creator            bdr:CR466DCD2E113319D6 , bdr:CRCAE7E772B42664A7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG20961 , bdr:W1KG20961 ;
+        :workIsAbout        bdr:P197 .
+}

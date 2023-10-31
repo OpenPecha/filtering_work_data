@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ2487 {
+    bda:LG17FBC0AFB5C4C124
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-21T16:26:12.981Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG19454D7A5B4F2710
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-02-19T13:57:50.953Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1CZ2487  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ2487 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1d/WA1CZ2487.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ2487 ;
+        adm:logEntry        bda:LG17FBC0AFB5C4C124 , bda:LG19454D7A5B4F2710 , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1CZ2487  a        :Work ;
+        skos:prefLabel      "sa skya bka' 'bum gyi dkar chag"@bo-x-ewts , "Title-index to the complete works of the great masters of the Sa Skya sect."@en-x-mixed ;
+        :catalogInfo        "table of contents to the sa skya pa'i bka' 'bum, the complete works of the great masters of the sa skya sect of the tibetan buddhism: the collected works of ngor chen kun dga' snyig po / compiled by bsod nams rgya mtsho. the toyo bunko, 1968"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T2123 ;
+        :workHasInstance    bdr:MW1CZ2487 ;
+        :workIsAbout        bdr:T1PD108963 , bdr:T617 .
+}

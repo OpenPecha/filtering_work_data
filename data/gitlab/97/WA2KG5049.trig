@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5049 {
+    bda:LG2450CF8ABA479B41
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T18:26:57.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG344FAF9041D33B7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-04T12:37:39.091Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF23282897E571E05
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-21T15:41:20.811Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG5049  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5049 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/WA2KG5049.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5049 ;
+        adm:logEntry        bda:LG2450CF8ABA479B41 , bda:LG344FAF9041D33B7C , bda:LGF23282897E571E05 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR41FE1C6EF8FB734E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P850 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG5049  a        :Work ;
+        skos:prefLabel      "skyabs rje bstan dga' rin po che'i gsung phyogs sgrig pad+ma 'dzum 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings of a Kagyu master Tenga Rinpoche (1932-2012)."@en ;
+        :creator            bdr:CR41FE1C6EF8FB734E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2KG5049 , bdr:W2KG5049 ;
+        :workIsAbout        bdr:T1187 .
+}

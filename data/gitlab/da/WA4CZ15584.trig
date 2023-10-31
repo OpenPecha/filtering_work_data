@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ15584 {
+    bda:LG74ABC2CFBBAA474F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-09-19T11:42:26.615Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9E8F3AC9180B9C2E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-09-19T11:57:48.253Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCE3BC9FC8B57F65D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-19T12:00:08.623Z"^^xsd:dateTime ;
+        adm:logMessage      "traditional restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ15584  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ15584 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "da/WA4CZ15584.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ15584 ;
+        adm:logEntry        bda:LG74ABC2CFBBAA474F , bda:LG9E8F3AC9180B9C2E , bda:LGCE3BC9FC8B57F65D , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE0C5AAE517F18725
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ15584  a       :Work ;
+        skos:altLabel       "sbas 'bum yid bzhin nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "be'u bum yid bzhin nor bu/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for making offerings to protector deities."@en ;
+        :creator            bdr:CRE0C5AAE517F18725 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1202 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW4CZ15584 , bdr:W4CZ15584 .
+}

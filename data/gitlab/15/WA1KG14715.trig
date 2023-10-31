@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14715 {
+    bda:LG0B6B0B12FFC98F62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-08-27T12:40:17.984Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14715  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14715 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "15/WA1KG14715.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14715 ;
+        adm:logEntry        bda:LG0B6B0B12FFC98F62 , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusAccessioned .
+
+    bdr:WA1KG14715  a       :Work ;
+        skos:altLabel       "si bu yi dian (xia ce) dui kan ben"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal ldan rgyud bzhi/"@bo-x-ewts , "Dpal ldan rgyud bźi /Bstan-ʹdzin-don-grub kyis gtso sgrig gnaṅ."@en-x-mixed , "四部医典.(下册) 对勘本"@zh-hans ;
+        :catalogInfo        "Comparison text of Four Medical Tantras"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG14715 ;
+        :workIsAbout        bdr:T241 , bdr:T2MS13793 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM574 {
+    bda:LGB1AFD78D3E95B915
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGC2D9E9E0A0C63711
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-08T16:29:19.117Z"^^xsd:dateTime ;
+        adm:logMessage      "complete cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM574"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM574  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM574 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cb/WA1NLM574.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM574 ;
+        adm:logEntry        bda:LGB1AFD78D3E95B915 , bda:LGC2D9E9E0A0C63711 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM574  a        :Work ;
+        skos:altLabel       "grub chen spyod pa'i rdo rje'i bzhed srol dpal 'khor lo bde mchog lha drug bcu re gnyis kyi sgrub thabs bskyed rim gyi dmigs pa yid la byed tshul 'dod 'jo'i bum bzang gi kha rgyan dpag bsam ljon shing /"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog lha drug bcu re gnyis kyi sgrub thabs bskyed rim gyi dmigs pa yid la byed tshul 'dod 'jo'i bum bzang gi kha rgyan dpag bsam ljon shing /"@bo-x-ewts ;
+        :catalogInfo        "Sadhana and essential points of the creation stage in the practice focussing upon Cakrasamvara according to the system transmitted by the Mahasiddha Krsnacarin. written by Erteni Pandita Mergen Khenpo Lobsang Sherab."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM574 , bdr:W1NLM574 ;
+        :workIsAbout        bdr:T164 , bdr:T628 .
+}

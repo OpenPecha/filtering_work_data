@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22089 {
+    bda:LG3C758A8A90E77CD2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-16T10:53:32.905Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG776028910AF88783
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-17T09:18:57.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAB2683883F68F728
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-19T11:48:33.844Z"^^xsd:dateTime ;
+        adm:logMessage      "revewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBE938DFF1193B9EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:WA1KG22089  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22089 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d7/WA1KG22089.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22089 ;
+        adm:logEntry        bda:LG3C758A8A90E77CD2 , bda:LG776028910AF88783 , bda:LGAB2683883F68F728 , bda:LGBE938DFF1193B9EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR553FD108B29F2DEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P672 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22089  a       :Work ;
+        skos:altLabel       "'od gsal snying po'i mkhregs gcod kyi khrid gsar gyi them skas/"@bo-x-ewts ;
+        skos:prefLabel      "khregs chod kyi khrid gser gyi them skas/"@bo-x-ewts , "an explanation of the khregs-chod aspect of profound rdzogs-chen practice"@en ;
+        :catalogInfo        "Explanation of an aspect of Dzogchen practice of the Nyingmapa tradition."@en ;
+        :creator            bdr:CR553FD108B29F2DEB ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1KG22089 , bdr:W1KG22089 ;
+        :workIsAbout        bdr:T1388 , bdr:T354 .
+}

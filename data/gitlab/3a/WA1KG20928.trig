@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG20928 {
+    bda:LG01EDED133F3E3BDD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-07T10:55:06.816Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1B6A352C9C9E2BCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-28T16:07:56.186Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1762 to T1043"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDBA0B5FFCAC87E5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-19T16:00:14.366Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG20928  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG20928 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3a/WA1KG20928.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG20928 ;
+        adm:logEntry        bda:LG01EDED133F3E3BDD , bda:LG1B6A352C9C9E2BCA , bda:LGDBA0B5FFCAC87E5E , bda:LGIM4D99209C62 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR194D9AECF14A0DD0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS147817 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR734E0150B1A2B47D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7137 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG20928  skos:altLabel  "catura si ti sidda prabrttebrtanta"@en-x-mixed .
+
+    bdr:WA1KG20928  a       :Work ;
+        skos:altLabel       "grub thob brgyad bcu rtsa bzhi'i lo rgyus/"@bo-x-ewts , "life stories of 84 mahasiddhas"@en ;
+        skos:prefLabel      "grub thob brgyad cu rtsa bzhi'i lo rgyus/"@bo-x-ewts , "catura si ti sidda prabrttebrtanta"@en-x-mixed ;
+        :catalogInfo        "Life stories of 84 Mahasiddhas"@en ;
+        :creator            bdr:CR194D9AECF14A0DD0 , bdr:CR734E0150B1A2B47D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG20928 , bdr:W1KG20928 ;
+        :workIsAbout        bdr:T1043 .
+}

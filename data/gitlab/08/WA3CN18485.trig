@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18485 {
+    bda:LG25C2F04D8E118316
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-08T11:23:43.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG97A5177D07FF58A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:36:28.785Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGBF24B9B44323CFBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBFCF5AF83577C9AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T16:31:41.597Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF2E5184A60AF6C93
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-15T14:32:21.481Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18485  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18485 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "08/WA3CN18485.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18485 ;
+        adm:logEntry        bda:LG25C2F04D8E118316 , bda:LG97A5177D07FF58A8 , bda:LGBF24B9B44323CFBD , bda:LGBFCF5AF83577C9AB , bda:LGF2E5184A60AF6C93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA10C40F94FA48D5B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN19926 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18485  a       :Work ;
+        skos:altLabel       "bde mchog mkha' 'gro snyan brgyud las thun mong tshigs su bcad pa/"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog mkha' 'gro snyan brgyud kyi gsol 'debs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Various ritual texts about Dechog Khadro Nyangyu of Rechung transmission by Ogyan Namdrol Wangpo (16th cent.)."@en ;
+        :creator            bdr:CRA10C40F94FA48D5B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW3CN18485 , bdr:W3CN18485 ;
+        :workIsAbout        bdr:T1914 .
+}

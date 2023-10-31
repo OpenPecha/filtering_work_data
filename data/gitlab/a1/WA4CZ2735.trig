@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ2735 {
+    bda:LG21C05D303679A190
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-01-24T13:05:35.574Z"^^xsd:dateTime ;
+        adm:logMessage      "གཅིག་ཞུས།"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCD65ECFD9E36A7FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-26T12:33:46.49Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language code"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA4CZ2735  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ2735 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a1/WA4CZ2735.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ2735 ;
+        adm:logEntry        bda:LG21C05D303679A190 , bda:LGCD65ECFD9E36A7FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR34CE9B16AE7768A3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2010 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CREE49F4C6E6757AEF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P139 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ2735  a        :Work ;
+        skos:altLabel       "bstan pa spyi 'grel gyi rnam bshad dgongs pa rnam gsal yid kyi mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "bstan pa spyi 'grel yid kyi mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Supplication to the Buddha's teaching and it's commentary"@en ;
+        :creator            bdr:CR34CE9B16AE7768A3 , bdr:CREE49F4C6E6757AEF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ2735 ;
+        :workIsAbout        bdr:WA1655 .
+}

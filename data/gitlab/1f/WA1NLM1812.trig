@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1812 {
+    bda:LG379A0CEEA89632EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-18T11:04:16.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD8D8A97C2EEBCE2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1812"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1812  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1812 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/WA1NLM1812.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1812 ;
+        adm:logEntry        bda:LG379A0CEEA89632EB , bda:LGD8D8A97C2EEBCE2C , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1812  a       :Work ;
+        skos:prefLabel      "ma cig khros ma nag mo'i bsgrub thabs mngon dkyil shin tu rgyas pa go sla'i tshul du bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rten 'brel yan lag 'byung gnas/ 2 ras chung snyan brgyud byin rlabs bla ma'i gtum mo/ 3 tshangs pa'i bu mo dbyangs can ma la bstod pa 'grub pa ngag gi 'od zer/ 4 'jam dpal dhyes ba sdong pa/ 5 lha mo 'od zer can dang 'da' ka ye shes/ 6 lcags ra chos rjes mdzad pa'i lha mo'i sho mo man ngag dang bcas pa/ 7 paN chen rin po che'i lung bstan gsung pa/ 8 ma Ni phan yon/ 9 bla ma'i bka' drin gsol 'debs/ 10 rdo rje sems dpa'i khrus byed tshul/ 11 mtsher sa sogs kyi gzhi bdag mchod pa'i tshul/ 12 bgegs gtor gtong ba/ 13 rje btsun 'jam dpal nag po'i sgrub thabs gnad don kun gsal baiDUr zhun ma'i me long / 14 sgrol ma'i mngon rtogs/ 15 chos rnams 'don pa'i dmigs rim/ 16 bla ma dang dge 'dun rnams kyi sbyin bdag la sogs pai dad pa chos skyong bsrung ma rnams la/ 17 'phags pa bzang po spyod pa'i smon lam gyi bzlog bsgyur/ 18 chos skyong spyi'i gtor chog la nyer mkhor man ngag na ma tis+mra/ 19 phan bde 'byung gnas patsi+tshi lag len/ 20 rlung rta yar bskyed kyi bsangs mchod/ 21 bla ma dang dbyer med dpal rdo rje 'jigs byed kyi bla ma yo ga 22 dge tshul gyi phyir bcos spyi bshags gso sbyong / 23 dang po'i yongs 'dzin bla ma bka' drin can/ 24 btul tshul ku le/"@en , "Sadhana, visualization and mandala of Vajravarahi Kalikruddha by author signed as Ngawang Phuntsok; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM1812 , bdr:W1NLM1812 ;
+        :workIsAbout        bdr:T44 , bdr:T80 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1134 {
+    bda:LG87D32059AE2E0F0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGDE6859C7F19E0DBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-18T14:44:40.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1134"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1134  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1134 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "54/WA1NLM1134.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1134 ;
+        adm:logEntry        bda:LG87D32059AE2E0F0D , bda:LGDE6859C7F19E0DBF , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR746D091EC6BD9972
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1134  a       :Work ;
+        skos:prefLabel      "gtan tshigs rig pa'i sdom tshig rigs lam gsal ba'i me long sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed bla brgyud gsol 'debs smon lam/ 2 rang mtshang gsal bar ston pa'i me long / 3 'bras spungs chos skyong chen po rgyal po sku lnga'i bskang gso mchod gtor 'bul tshul 'dod pa'i re skong / 4 rgyal ba'i bstan srung rgyal chen sku lnga po'i gnam lcags thog mda' blzog bsgyur/ 5 gtsug lag rtsis kyi dkar nag gzhung las gshin rtsis las mnye mkho ba'i re 'don rdzong tshul rnams/ 6 ma gcig dpal ldan lha mo'i gtor chog mdor bsdus rlabs chen don 'grub/ 7 dam can chos rgyal phyi nang gsang gsum gyi tshogs mchod bde chen rol ba'i dga' byed/ 8 skyabs 'groi khrid yig phan bde'i gzhi 'dzin/ 9 brtan bzhugs/ 10 grub chen dril bu pa'i lags kyi bde mchog gi lha lnga'i sgrub thabs 'gros su bkod pa/ 11 mdun bskyed sgrub cing mchod pa/ 12 bstod pa/ 13 bsang mchod/ 14 rdor sems bsgom pa/ 15 khams gsum chos kyi rgyal po tsong kha pa chen po la bstod pa dpyid kyi rgyal mo'i glu dbyangs/ 16 mdo las byung ba'i nye bar mkho ba/ 17 gsol mchod/ 18 las rnam par 'byed pa'i mdo sogs dang tshe mtha'i mdo'i don bsdus nas bkod pa/ 19 hor bod ming don brda sprod/"@en , "Synopsis of valid knowledge by Akya Yongzin Losang Dhondrup; also included other text."@en ;
+        :creator            bdr:CR746D091EC6BD9972 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1134 , bdr:W1NLM1134 ;
+        :workIsAbout        bdr:T1900 , bdr:T370 .
+}

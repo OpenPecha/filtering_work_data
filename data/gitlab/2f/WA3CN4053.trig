@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4053 {
+    bda:LG29204D195C725AA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-26T10:57:15.106Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG60460C983A068774
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T17:10:37.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG868A048847F56813
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-17T15:35:30.437Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4053  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4053 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2f/WA3CN4053.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4053 ;
+        adm:logEntry        bda:LG29204D195C725AA0 , bda:LG60460C983A068774 , bda:LG868A048847F56813 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR476C4A303DD97648
+        a                   :AgentAsCreator ;
+        :agent              bdr:P705 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN4053  a        :Work ;
+        skos:prefLabel      "dag snang lasHdbang sdud zil gnon khros pa'i gad rgyangs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual text about power controlling by Terton Dudjom Dorje's pure visions."@en ;
+        :creator            bdr:CR476C4A303DD97648 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW3CN4053 , bdr:W3CN4053 ;
+        :workIsAbout        bdr:T003JR156 , bdr:T805 .
+}

@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM273 {
+    bda:LG1EE0EBA63D21E7E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:47.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG83EDDFC39A36173D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-23T14:27:56.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info, content"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF855022CBF8C0782
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM273"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM273  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM273 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/WA1NLM273.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM273 ;
+        adm:logEntry        bda:LG1EE0EBA63D21E7E9 , bda:LG83EDDFC39A36173D , bda:LGF855022CBF8C0782 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3F5C4373D42DA54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1PD117982 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM273  a        :Work ;
+        skos:prefLabel      "ba lang gi g.yang la brgyud nas zag med dpal 'byor la rtag tu rol tshul nam mkha' mdzod kyi char rgyun 'dzad med sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rnga mong gi g.yang 'gugs zag med dpal 'byor la rtag tu rol ba/ 2 ra yig cung du brgyud nas zad med dpal 'byor la rtag tu rol tshul nam mkha' mdzod kyi char rgyun 'dzad med/ 3 yi ge brgya pa'i sgo nas rnam byang 'gres rkang lnga bcu rtsa lnga dang mi rtag sogs bcu drug dang rten 'brel yan lag bcu gnyis dang phar phyin bcu dang mkhyen gsum gyi rnam pa brgya dang don gsum dang rnam rdzogs sbyor ba mtshon byed kyi mtshan nyid dgu bcu rtsa gcig dang 'brel bar bkru byabs bsrung gsum bya tshul bkra shis kun 'byung / 4 zab lam bla ma'i rnal 'byor la brten nas 'grel rkang brgya rtsa brgyad dang rnam rdzogs sbyor ba mtshon byed kyi shes khyad byed ngo'i mtshan nyid bzhi sogs dang 'brel bar khrus chog ji ltar bya tshul gsal bar bkod pa snod bdud dag par byed pa phan bde'i lo tog bskyed pa'i dge legs char 'bebs/ 5 ngu 'bod kyi 'khor bcu drug las/ lnga pa me'i phye ma srin bu'i dmyal ba/ 6 bsdus gzhom gyi 'khor bcu drug las/ gsum pa gnad gcod pa'i dmyal ba/"@bo-x-ewts , "Prosperity ritual by Tsepel Wangchuk Dorjee."@en ;
+        :creator            bdr:CRA3F5C4373D42DA54 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM273 , bdr:W1NLM273 ;
+        :workIsAbout        bdr:T22 .
+}

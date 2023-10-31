@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1GS1820 {
+    bda:LG046E4B483E13EFE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-23T11:15:04.987Z"^^xsd:dateTime ;
+        adm:logMessage      "correct spelling in title"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG25F2CF8AF910F671
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-19T15:21:13.942Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued completed"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2A3751537DFD32AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-25T13:24:50.995Z"^^xsd:dateTime ;
+        adm:logMessage      "mark as released series to make consistent with numberOf works"@en ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGD8AA97A68ECFA8A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-23T11:07:56.175Z"^^xsd:dateTime ;
+        adm:logMessage      "first published: series record"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE450E45287832C96
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-23T11:17:32.478Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaning up chris' mess"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1GS1820  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1GS1820 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "25/WA1GS1820.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1GS1820 ;
+        adm:logEntry        bda:LG046E4B483E13EFE3 , bda:LG25F2CF8AF910F671 , bda:LG2A3751537DFD32AE , bda:LGD8AA97A68ECFA8A5 , bda:LGE450E45287832C96 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1GS1820  skos:altLabel  "Bod kyi gso ba rig paʼi gnaʼ dpe phyogs bsgrigs dpe tshogs /"@en-x-mixed .
+
+    bdr:WA1GS1820  a        :Work ;
+        skos:prefLabel      "gso ba rig pa'i gna' dpe phyogs bsgrigs dpe tshogs/"@bo-x-ewts , "Bod kyi gso ba rig paʼi gnaʼ dpe phyogs bsgrigs dpe tshogs /"@en-x-mixed ;
+        :catalogInfo        "Comprehensive collection of rare texts on Tibetan ayurvedic medicine."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW1GS1820 ;
+        :workIsAbout        bdr:T85 .
+}

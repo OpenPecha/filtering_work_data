@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66789 {
+    bda:LG3957CB31908F312C
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-04T10:51:05.962Z"^^xsd:dateTime ;
+        adm:logMessage      "added series number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG93C43ACB9FF52A10
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-04T10:21:33.404Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, page number, series and series number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB2CF89C1D46F6A1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T09:21:07.76Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD648497BBBA602C3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-04T10:22:02.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFA4931440EE56627
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS66789  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66789 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "59/WA8LS66789.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66789 ;
+        adm:logEntry        bda:LG3957CB31908F312C , bda:LG93C43ACB9FF52A10 , bda:LGB2CF89C1D46F6A1A , bda:LGD648497BBBA602C3 , bda:LGFA4931440EE56627 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2B8AEA644E2F64DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2063 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66789  a       :Work ;
+        skos:prefLabel      "tshe smon gling rgyal thog dang po ngag dbang tshul dpal bzang po'i skyes rabs rnam thar dad pa'i sgo 'byed/ stod cha dang smad cha/"@bo-x-ewts ;
+        :catalogInfo        "Biography of the Regent Tsemonling Ngawang Tshultrim by Sermey Dadpa khenpo Palung Losang Thukje."@en ;
+        :creator            bdr:CR2B8AEA644E2F64DD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS66789 , bdr:W8LS66789 ;
+        :workIsAbout        bdr:P332 .
+}

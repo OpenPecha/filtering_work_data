@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4336 {
+    bda:LG415E3FBDDC82340E
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-28T11:35:48.819Z"^^xsd:dateTime ;
+        adm:logMessage      "detail catalopged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4C9B80C7A0AAD9EE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T16:47:32.195Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG633C6146413BE9F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-11-28T17:15:21.065Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG811B29D4CC295262
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T17:42:36.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4336  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4336 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "37/WA3CN4336.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4336 ;
+        adm:logEntry        bda:LG415E3FBDDC82340E , bda:LG4C9B80C7A0AAD9EE , bda:LG633C6146413BE9F8 , bda:LG811B29D4CC295262 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR085F5DE78E25126E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3JM153 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4336  a        :Work ;
+        skos:altLabel       "rgyal sras lag len gyi 'chad khrid thar ba'i gru gzings/"@bo-x-ewts ;
+        skos:prefLabel      "thar pa'i gru gzings/"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual on the practices of a bodhisattva by Larung Khenpo Chime Rigzin."@en ;
+        :creator            bdr:CR085F5DE78E25126E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW3CN4336 , bdr:W3CN4336 ;
+        :workIsAbout        bdr:WA13911 .
+}

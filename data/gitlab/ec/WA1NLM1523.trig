@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1523 {
+    bda:LG0EA320E16D59CF2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG5A8B03AE75A90766
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-23T10:25:26.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1523"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1523  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1523 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ec/WA1NLM1523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1523 ;
+        adm:logEntry        bda:LG0EA320E16D59CF2E , bda:LG5A8B03AE75A90766 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1474 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA114F6909BC45FA6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1523  a       :Work ;
+        skos:prefLabel      "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bla ma'i rnal 'byor dga' ldan lha brgya mar grags pa'i 'khrid yig dang 'brel ba dngos grub nor bu'i bang mdzod/ 2 'phags ma de bzhin gshegs pa'i gtsug tor nas byung ba'i gdugs dkar mo zhes bya ba'i Tik+ka 3 bcom ldan 'da dpal dus kyi 'khor lo dang dpal gsang ba 'dus pa gnyis kyi mngon rtogs/ 4 'phags pa bzang po spyod pa'i smon lam gyi rgyal po/ 5 'phags pa byams smon/ 6 spyod 'jug smon lam/ 7 mtha' yas ma/ 8 bde smon zhing mchog sgo 'byed ma/ 9 gsang 'dus smon lam/ 10 khyab bdag 'khor lo'i mgon po rje btsun blo bzang bstan pa'i rgyal mtshan dpal bzang po la bstod cing gsol ba 'debs pa'i tshul don gnyis lhun grub/ 11 sum cu pa dang rtags 'jug gi don nyung ngur bshad pa blo ldan dga' bskyed/ 12 dpal 'khor lo sdom pa dril bu lugs kyi sgo nas lho sgo'i cho ga bya tshul sdig sgrib sbyong byed zla ba'i 'od zer/ 13 kun rig bla brgyud gsol 'debs de'i smon lam shis brjod dang tshe chog sogs kyi smon lam shis brjod rnams gtor 'bul bcas/ 14 gtsug tor gdugs dkar mo can gyi gzungs kyi rgyas 'grel rab tu gsal bar byed pa'i sgron me/ 15 'jigs byed dpa' bo gcig gi sgo nas zhi khro sbrags sgrub byed tshul thun mong ma yin pa rgya ra lta khrid du grags pa/"@en , "Prayer to be reborn in Sukhavati, a compilation of recitation by Khalkha Ngawang Palden; other text also included."@en ;
+        :creator            bdr:CRA114F6909BC45FA6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T00JR690 , bdr:T2579 .
+}

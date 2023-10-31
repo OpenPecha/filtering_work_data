@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18233 {
+    bda:LG63B2D5B2E08D7656
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-13T12:09:09.543Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEB9DB652AB16A0B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-13T12:10:13.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS18233  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18233 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7d/WA8LS18233.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18233 ;
+        adm:logEntry        bda:LG63B2D5B2E08D7656 , bda:LGEB9DB652AB16A0B3 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD35049B8700BAB9E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016948 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18233  a       :Work ;
+        skos:prefLabel      "mdung rtse nas blangs pa'i shar phyogs rgyal bo'i sras mo/"@bo-x-ewts ;
+        :catalogInfo        "A collection of essays composed by Hortshang Legshed."@en ;
+        :creator            bdr:CRD35049B8700BAB9E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW1TLMTGA002060 , bdr:MW8LS18233 , bdr:W8LS18233 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16734 {
+    bda:LG1790C156C6DCCDAF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-21T11:01:03.041Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFA59F2F987149B01
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-21T11:05:55.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG16734  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16734 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d0/WA1KG16734.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16734 ;
+        adm:logEntry        bda:LG1790C156C6DCCDAF , bda:LGFA59F2F987149B01 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBE0F8D8720EFC4E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9902 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG16734  a       :Work ;
+        skos:altLabel       "the entrance gate for the wise (section III) : sa-skya pandita on indian and tibetan traditions of pramana and philosophical debate"@en ;
+        skos:prefLabel      "the entrance gate for the wise (section III)"@en ;
+        :catalogInfo        "Sakya Pandita on Indian and Tibetan traditions of pramana and philosophical debate"@en ;
+        :creator            bdr:CRBE0F8D8720EFC4E5 ;
+        :isRoot             true ;
+        :language           bdr:LangEn ;
+        :workHasInstance    bdr:MW1KG16734 , bdr:W1KG16734 ;
+        :workIsAbout        bdr:T1770 , bdr:T370 .
+}

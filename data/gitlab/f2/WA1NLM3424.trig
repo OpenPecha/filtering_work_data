@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3424 {
+    bda:LG202FC09B969EA0AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-19T09:20:20.261Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content. cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3424"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3424  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3424 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f2/WA1NLM3424.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3424 ;
+        adm:logEntry        bda:LG202FC09B969EA0AF , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3424  a       :Work ;
+        skos:prefLabel      "pan+Di ta spu ring tshe ring 'phel zhes bya ba'i rtsod yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsangs mchod 'dod dgur 'khyil ba'i dga' ston/ 2 skyabs 'gro'i khid yig 3 chos thams cad kyi sngon 'gro bslab bya dang bcas pa drang don gyi chos kyi rgya mtsho/ 4 rgan rgon pho mo'i lo rgyus dang sbyar ba'i bstan bcos dgra bo 'phrang sgug 5 blo sbyong nye bar mkho ba'i lung sna tshogs/ 6 las rnam par 'byed pa'i mdo sogs dang tshe mtha'i mdo'i don bsdus nas bkod pa/ 7 tshul khrims yang dag par bsrung ba'i man ngag 8 snod bcud mdo/ 9 mdo las byung ba'i nyer mkho/ 10 rje btsun bla ma'i rnal 'byor dang / nang gi khong skran 'don pa'i skyug sman/ 11 grub chenmi tra dzo ki'i thugs dam brgya rtsa'i nang nas slob dpon nyi ma sbas pa'i lugs kyi rje btsun sgrol ma nyer gcig gi bla brgyud gsol 'debs rim pa/ 12 bslab bya mdor bsdus 'chal ba'i klung rgyun bzlog bar byed pa'i chu len/ 13 'phags pa kha mchu nag po zhi bar byed pa zhes bya ba theg pa chen po'i mdo/"@en , "A narative and polemic writings of Pandita Puring Tsering Phel by author signed as Patu Sidhi; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3424 , bdr:W1NLM3424 ;
+        :workIsAbout        bdr:T100 , bdr:T102 .
+}

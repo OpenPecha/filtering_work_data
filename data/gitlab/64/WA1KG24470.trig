@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24470 {
+    bda:LG458E0B52A8AEB3B1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-21T11:03:45.111Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE0599D8276B4F3C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-21T11:11:40.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG24470  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24470 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "64/WA1KG24470.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24470 ;
+        adm:logEntry        bda:LG458E0B52A8AEB3B1 , bda:LGE0599D8276B4F3C7 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4F9BA67E707AF585
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24470  a       :Work ;
+        skos:altLabel       "dam pa'i chos mngon pa mdzod kyi dgongs 'grel gyi bstan bcos thub bstan nor bu'i gter mdzod dus gsum rgyal ba'i bzhed don kun gsal/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi dgongs 'grel gyi bstan bcos thub bstan nor bu'i gter mdzod/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on Abhidharmakosha of Vasubandhu by Jamyang Zhadpai Dorjee."@en ;
+        :creator            bdr:CR4F9BA67E707AF585 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG24470 , bdr:MW1NLM573 , bdr:MW4CZ302686 , bdr:W1KG24470 , bdr:W1NLM573 , bdr:W4CZ302686 ;
+        :workIsAbout        bdr:WA19720 .
+}

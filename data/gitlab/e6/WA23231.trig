@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23231 {
+    bda:LG05A2CFFC3652BDF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG4519345AC0FB62AD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG618121FDD77DCB88
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T15:21:39.961Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGBF682AF94D638C66
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-05T01:59:16.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added tshig 'grel as genre"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23231  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23231 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e6/WA23231.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23231 ;
+        adm:logEntry        bda:LG05A2CFFC3652BDF3 , bda:LG4519345AC0FB62AD , bda:LG618121FDD77DCB88 , bda:LGBF682AF94D638C66 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF7019ADA62AD4519
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6455 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23231  skos:altLabel  "klon chen snin thig gi skon bsags rdo rje'i thol glu'i tshig 'grel nin bsdus : a syllable by syllable exegesis of the skon bsags confessional text from the klon chen snin thig cycle of revelations of kun-mkhyen 'jigs-med-glin-pa"@en-x-mixed .
+
+    bdr:WA23231  a          :Work ;
+        skos:altLabel       "skong bshags kyi tshig 'grel nyung bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "klong chen snying thig gi skong bshags rdo rje'i thol glu'i tshig 'grel nyung bsdus/"@bo-x-ewts , "klon chen snin thig gi skon bsags rdo rje'i thol glu'i tshig 'grel nin bsdus : a syllable by syllable exegesis of the skon bsags confessional text from the klon chen snin thig cycle of revelations of kun-mkhyen 'jigs-med-glin-pa"@en-x-mixed ;
+        :catalogInfo        "Word-for-word commentary on the confessional text of the Longchen Nyingtig cycle of practice. Written by a student of Adzom Gyalse Gyurme Dorje, Pema Kunzang Rangdrol, alias Rango Choktrul Tubten Shedrup Gyatso."@en ;
+        :creator            bdr:CRF7019ADA62AD4519 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2397 ;
+        :workHasInstance    bdr:MW23231 , bdr:W23231 ;
+        :workIsAbout        bdr:T467 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3PD397 {
+    bda:LG068DE01ED14151B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG1B68CDA57A3F4606
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-09T11:24:06.724Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LG22D544F12A6BD699
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-08T23:28:12.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGC5170FD2EAFC2640
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-23T02:11:10.023Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3PD397  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3PD397 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a1/WA3PD397.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3PD397 ;
+        adm:logEntry        bda:LG068DE01ED14151B1 , bda:LG1B68CDA57A3F4606 , bda:LG22D544F12A6BD699 , bda:LGC5170FD2EAFC2640 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW3PD397  skos:altLabel  "廷牟尼神宗"@zh-hans .
+
+    bdr:WA3PD397  a         :Work ;
+        skos:altLabel       "ting mu ni shen zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mthing mu ni lha rdzong /"@bo-x-ewts , "廷牟尼神宗"@zh-hans ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3PD397 , bdr:W3PD397 ;
+        :workIsAbout        bdr:T248 .
+}

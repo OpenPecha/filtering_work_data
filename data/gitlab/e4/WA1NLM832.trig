@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM832 {
+    bda:LG0469B228C3210638
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-11T10:55:13.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG836B0B00331172C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG87810D831C24ECD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-27T12:39:41.354Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC416F92205453A35
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-11T11:00:45.794Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM832"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM832  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM832 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e4/WA1NLM832.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM832 ;
+        adm:logEntry        bda:LG0469B228C3210638 , bda:LG836B0B00331172C5 , bda:LG87810D831C24ECD6 , bda:LGC416F92205453A35 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBE95B78A98936E4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM832  a        :Work ;
+        skos:altLabel       "skabs brgyad pa'i mtha' dpyod 'khrul sel gang+gA'i chu rgyun ma pham zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin skabs brgyad pa'i mtha' dpyod/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of Prajnaparamita philosophy and practice : Exegesis of the eighth chapter (Dharmakayabhisambodha) of the Abhisamayalankara and its vrtti by Haribhadra"@en ;
+        :creator            bdr:CRBE95B78A98936E4D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG9409_15D3FF , bdr:MW1NLM832 , bdr:MW21503_E1DD4B , bdr:MW22186_F5EBFC , bdr:W1NLM832 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19716 .
+}

@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG09976 {
+    bda:LG1B3A26D06453EF06
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-01T15:27:11.439Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3CDE86CBE853B03B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-09-11T15:28:54.629Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC3CB2F869A898163
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:34:15.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00KG09976  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG09976 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c5/WA00KG09976.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG09976 ;
+        adm:logEntry        bda:LG1B3A26D06453EF06 , bda:LG3CDE86CBE853B03B , bda:LGC3CB2F869A898163 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8AFCE4094A00F93A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4853 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW00KG09976  skos:altLabel  "强巴赤列选集"@zh-hans .
+
+    bdr:WA00KG09976  a      :Work ;
+        skos:altLabel       "byams pa 'phrin las kyi gsung rtsom phyogs bsgrigs/"@bo-x-ewts , "qiang ba chi lie xuan ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsung rtsom/_byams pa 'phrin las/"@bo-x-ewts , "强巴赤列选集"@zh-hans ;
+        :catalogInfo        "Select works of the modern Tibetan scholar Jampa Trinley on the Tibetan medical system."@en ;
+        :creator            bdr:CR8AFCE4094A00F93A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW00KG09976 , bdr:W00KG09976 ;
+        :workIsAbout        bdr:T85 .
+}

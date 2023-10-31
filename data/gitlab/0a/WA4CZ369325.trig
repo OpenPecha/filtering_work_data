@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369325 {
+    bda:LG00DAAD5EF2671164
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-27T15:11:22.086Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG580E4BCDFE676A9B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:34:38.811Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369325  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369325 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0a/WA4CZ369325.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369325 ;
+        adm:logEntry        bda:LG00DAAD5EF2671164 , bda:LG580E4BCDFE676A9B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBA65ABEFB39C84FC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6677 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369325  a      :Work ;
+        skos:altLabel       "sdeb sbyor rig pa'i 'jug sgo legs bshad pad dkar phreng mdzes/"@bo-x-ewts ;
+        skos:prefLabel      "sdeb sbyor rig pa'i 'jug sgo"@bo-x-ewts ;
+        :catalogInfo        "The gateway to the learning chanda, poetic metrics"@en ;
+        :creator            bdr:CRBA65ABEFB39C84FC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW4CZ369325 , bdr:W4CZ369325 ;
+        :workIsAbout        bdr:T206 .
+}

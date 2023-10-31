@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355755 {
+    bda:LG175B1ABD2B467137
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG634763DB4AF248DA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-07T11:20:32.457Z"^^xsd:dateTime ;
+        adm:logMessage      "New catloged, reviewed and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG729ADD1FCAB1779D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T12:31:00.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8A21219B81DAC545
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:WA4CZ355755  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355755 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/WA4CZ355755.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355755 ;
+        adm:logEntry        bda:LG175B1ABD2B467137 , bda:LG634763DB4AF248DA , bda:LG729ADD1FCAB1779D , bda:LG8A21219B81DAC545 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ307769 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRFEFA2A8219C89E16
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6996 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ355755  a      :Work ;
+        skos:altLabel       "dmar nag khros pa yang zab/"@bo-x-ewts , "rol pa'i rdo rje'i gter ma/"@bo-x-ewts ;
+        skos:prefLabel      "gter chos/ rol pa'i rdo rje/"@bo-x-ewts ;
+        :catalogInfo        "Collection of treasure revelations by Rolpe Dorje"@en ;
+        :creator            bdr:CRFEFA2A8219C89E16 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 .
+}

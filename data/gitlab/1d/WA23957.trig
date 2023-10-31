@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23957 {
+    bda:LG25D55CE169C83BCA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG51CB48DC43032A17
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-10T13:33:16.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added titles"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE4230B854F89D7DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGF1EE959BAA0DD5F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T11:29:08.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23957  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23957 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1d/WA23957.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23957 ;
+        adm:logEntry        bda:LG25D55CE169C83BCA , bda:LG51CB48DC43032A17 , bda:LGE4230B854F89D7DE , bda:LGF1EE959BAA0DD5F7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR98C934480834CD5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P421 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23957  skos:altLabel  "baiDUr ser po : a history of dga'-ldan"@en-x-mixed .
+
+    bdr:WA23957  a          :Work ;
+        skos:altLabel       "dpal ldan mnyam med ri bo dge ldan pa'i chos 'byung baiDUr ser po/"@bo-x-ewts , "dpal ldan mnyam med ri bo dge ldan pa'i chos 'byung baiDUr ser po'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "bai DUr ser po/"@bo-x-ewts , "baiDUr ser po : a history of dga'-ldan"@en-x-mixed ;
+        :catalogInfo        "History of the Geluk order. Includes accounts of the monasteries of the order by Desi Sanggye Gyatso (1653-1705)."@en ;
+        :creator            bdr:CR98C934480834CD5A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW23957 , bdr:W23957 ;
+        :workIsAbout        bdr:T819 .
+}

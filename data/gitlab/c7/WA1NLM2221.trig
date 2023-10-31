@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2221 {
+    bda:LG3C1378568C702DF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-26T10:30:12.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG590C6167634DA966
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2221"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2221  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2221 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c7/WA1NLM2221.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2221 ;
+        adm:logEntry        bda:LG3C1378568C702DF5 , bda:LG590C6167634DA966 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2221  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das sman bla bde gshegs brgyad kyi sgo nas lho sgo byed pas cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje rnam par 'joms pa'i cho ga phan bde 'byung gnas/ 2 rje btusn bla ma 'phags ma gdugs dkar mo'i zhabs kyi pad+mor gus pas phyag byas te/ 3 bag ma gtong len la mkho ba'i cho ga bkra shis kun grub/ 4 bcom ldan 'das rig byed ma'i sgrub thabs srid gsum 'gug pa'i lcags kyu/ 5 rlung rta'i bcos thabs/ 6 myur mdzad ye shes mgon po'i glo bur las bcol gyi gtor ma 'phen chog nag po'i g.yul rgyal/ 7 'phags pa 'jam dpal nag po sgrub thabs/ 8 mkha' 'gro se lgna phyogs bzhi lam lha sangs/ 9 chu mchod bya tshul/ 10 rims nad zhi par byed pa'i gzungs sngags byin rlabs can 'dod gsol smon tshig dang bcas pa/ 11 seng gdong ma'i sgo nas bcos thabs/ 12 dga' ldan lha brgya ma'i bla brgud gsol debs 'dod gsol smon lam shis brjod gtor 'bul/ 13 mi 'khrugs pa'i mdo/"@en , "Ritual offering of eight medicine Buddha; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2221 , bdr:W1NLM2221 ;
+        :workIsAbout        bdr:T1855 .
+}

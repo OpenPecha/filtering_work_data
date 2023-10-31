@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5549 {
+    bda:LG0B6E8EF791BC3716
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-28T15:19:08.101Z"^^xsd:dateTime ;
+        adm:logMessage      "fully cataloged and realeased"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG81E304C08855F969
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGF3E975ECAA3D4851
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T12:39:06.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN5549  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5549 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "84/WA3CN5549.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5549 ;
+        adm:logEntry        bda:LG0B6E8EF791BC3716 , bda:LG81E304C08855F969 , bda:LGF3E975ECAA3D4851 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2C3F6348A9393503
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1046 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRD187A5CC0EC1F5A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7847 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5549  a        :Work ;
+        skos:altLabel       "bodhisattvavadanakalpalata/"@bo-x-ewts , "byang chub sems dpa'i rtogs pa brjod pa dpag bsam gyi 'khri shing /"@bo-x-ewts ;
+        skos:prefLabel      "dpag bsam 'khri shing /"@bo-x-ewts ;
+        :creator            bdr:CR2C3F6348A9393503 , bdr:CRD187A5CC0EC1F5A7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1779 ;
+        :workHasInstance    bdr:MW3CN5549 , bdr:W3CN5549 ;
+        :workIsAbout        bdr:T386 .
+}

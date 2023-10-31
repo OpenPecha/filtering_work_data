@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0TTBBC0038 {
+    bda:LG634BE0DCD0B4ED1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NGMPP"@en ;
+        adm:logWhoStr       "add-works-to-PR1NGMPP00" .
+
+    bda:LG7FD9B9797F539BAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:44:16.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to TiBET"@en ;
+        adm:logWhoStr       "add-works-to-PR1TIBET00" .
+
+    bda:LGIMD8DD6D40  a     adm:InitialDataImport ;
+        adm:logAgent        "NGMP Importer" ;
+        adm:logDate         "2020-07-20T16:08:04.18Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W0TTBBC0038"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA0TTBBC0038  a     adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0TTBBC0038 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "aa/WA0TTBBC0038.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0TTBBC0038 ;
+        adm:logEntry        bda:LG634BE0DCD0B4ED1F , bda:LG7FD9B9797F539BAA , bda:LGIMD8DD6D40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA0TTBBC0038  a     :Work ;
+        skos:prefLabel      "NGMPP L 189/2"@en ;
+        :catalogInfo        "Catalog will be imported from the NGMCP, TTBBC and TiBET projects"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW0TTBBC0038 , bdr:W0TTBBC0038 .
+}

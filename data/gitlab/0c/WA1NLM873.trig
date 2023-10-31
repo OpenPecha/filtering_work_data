@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM873 {
+    bda:LG4808531676FE14A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-05T14:55:27.534Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outlining"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG63633C6385500B1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T14:19:06.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBAAF78ADB5BCE982
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM873"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM873  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM873 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/WA1NLM873.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM873 ;
+        adm:logEntry        bda:LG4808531676FE14A9 , bda:LG63633C6385500B1A , bda:LGBAAF78ADB5BCE982 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM873  a        :Work ;
+        skos:prefLabel      "rtsa gsum dang gshin rje sbyor tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sadhana and rituals and liturgical texts from Gelug Order"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM873 , bdr:W1NLM873 .
+}

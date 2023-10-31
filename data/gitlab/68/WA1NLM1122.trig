@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1122 {
+    bda:LG03A75C41DAAC1515
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-17T11:18:03.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFC186B1028D7941D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T17:00:32.512Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFEE3DBC54423A6B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1122"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1122  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1122 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "68/WA1NLM1122.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1122 ;
+        adm:logEntry        bda:LG03A75C41DAAC1515 , bda:LGFC186B1028D7941D , bda:LGFEE3DBC54423A6B0 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR302DB26CEB7E02B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1122  a       :Work ;
+        skos:prefLabel      "myur mdzad ye shes kyi mgon po phyag drug pa'i thugs dam bskang ba'i mdos kyi cho ga bar chad kun sel sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo'i sgo nas maN+Dal bzhi par dgos 'dod kun 'byung dpag bsam ljon pa/ 2 pad kar 'phreng ba mdzes byed ban dzi ka'i do shal/ 3 yid dang kun gzhi'i dka' ba'i gnas kyi rtsa ba/ 4 zhi ba dkar po'i bsangs mchod byas byabs khrus god kha bzlog pa'i dmod sngags sbyin bsregs/ 5 rje btsun 'phags ma sgrol ma'i sgo nas dur ba'i sbyin sreg bya tshul tshe'i dngos grub kun gyi byung nas rdo rje'i srog btsugs pa/ 6 khyung nag gi sgo nas byis pa'i gdon chen nad tshan bya 'dre'i gdon chen spur chog rlung nag 'tshub ma/ 7 'bum bsangs bsdus pa nas bsang mchod bcu gsum ma/ 8 'phags pa gdugs dkar mo'i sgrub thabs dang bya khrus/ 9 rta mgrin gsang sgrub kyi chos skor las/ nad bdag stobs 'joms kyi cho ga 'khyer bde bar bkod pa kun phan bdud rtsi'i zeg ma/ 10 chos skyong bsrung ma'i dad gdon gegs 'byung po gzhi bdag 'khor dang bcas pa rnams kyis mdun gyi gnam mkhar spyan drangs nas mchod gtor ma 'bul ba'i lugs/ 11 bla tshe 'bod pa'i 'chi med tshe byin gser gyi rdo rje/ 12 dpal ye shes kyi mkha' 'gro ma seng'i gdong pa can gyi sgo nas phas rgol g.yul rgyal ru mtshon/ 13 chos 'khor bsam yas kyi bsgyur mdos bka' rgya ma bcu dgu pa/ 14 ma cig khros ma nag mo'i sgrub thabs mngon dkyil shin tu gsal ba go sla'i tshul du bkod pa/ 15 dgongs bskyod ma/ 16 mkhan chen chos kyi rgyal po'i gsung 'bum las sgron ma'i cho ga 'chi med bdud rtsi/ 17 rdo rje sems dpa'/"@en , "Thread-cross ritual of six armed Mahakala and other text included."@en ;
+        :creator            bdr:CR302DB26CEB7E02B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM1122 , bdr:W1NLM1122 ;
+        :workIsAbout        bdr:T2GS1129 .
+}

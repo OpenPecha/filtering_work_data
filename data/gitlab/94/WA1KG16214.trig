@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16214 {
+    bda:LG3A31152E78A66536
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-18T09:50:13.362Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6D54CEA8096A75E6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-18T09:50:34.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16214  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16214 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "94/WA1KG16214.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16214 ;
+        adm:logEntry        bda:LG3A31152E78A66536 , bda:LG6D54CEA8096A75E6 , bda:LGIM4394141E , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9469746F5E395BD2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6242 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG16214  a       :Work ;
+        skos:altLabel       "'dul ba mdo rtsa dang 'dul ba mdo rtsa'i mchan 'grel/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad 'od dkar 'phreng ba/ (14)"@bo-x-ewts ;
+        :catalogInfo        "Annotated commentary on the Vinaya Sutra."@en ;
+        :creator            bdr:CR9469746F5E395BD2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1KG16214 , bdr:MW1TLMTGA001385 , bdr:W1KG16214 ;
+        :workIsAbout        bdr:WA4CZ16829 .
+}

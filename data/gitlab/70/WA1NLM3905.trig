@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3905 {
+    bda:LG8EFFE8F9139EC8D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-13T13:30:36.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3905"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3905  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3905 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "70/WA1NLM3905.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3905 ;
+        adm:logEntry        bda:LG8EFFE8F9139EC8D7 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR771CAE6562CCCE9F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2AG1 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3905  a       :Work ;
+        skos:prefLabel      "dpal ldan lha mo dmag zor ma'i sgo nas rno mthong grub tshul dang de'i 'bras bshad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo'i sho mo lcags ra chos rjes gsungs la lhan thabs bgyis pa/ 2 lha mo'i sho gnad kyi dka' 'grel mdor bsdus mthong gsal mngon rno/ 3 dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa/ 4 dpal ldan lha mo'i sho mo 'debs tshul gyi lhan thabs/ 5 ka mo sum cu mngon shes 'phrul gyi mo gsal ba'i sgron me/ 5 lha mo'i sho mo rjes 'brel sho bca' tshul skye ba ngos 'dzin tshe tshad dang bar gcod che chung 'chi rkyen bar do'i phyi ma'i skye gnas bzang ngan spang blangs pa brtags pa dang bcas pa/ 6 'phags pa spyan ras gzigs kyi ma Ni sho mo/"@en , "A dice prognostication on the basis deity Shridevi by the 6th Cakra Ngawang Trinley Palzang."@en ;
+        :creator            bdr:CR771CAE6562CCCE9F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3905 , bdr:W1NLM3905 ;
+        :workIsAbout        bdr:T405 , bdr:T926 .
+}

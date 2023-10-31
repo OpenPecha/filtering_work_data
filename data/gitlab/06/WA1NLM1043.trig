@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1043 {
+    bda:LG2097E3A625453B72
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGC214EBD48F38D031
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T13:54:55.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD4417D3197DD9AEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-21T16:53:16.968Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDA1BE63D0C1D1D38
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1043"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1043  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1043 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "06/WA1NLM1043.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1043 ;
+        adm:logEntry        bda:LG2097E3A625453B72 , bda:LGC214EBD48F38D031 , bda:LGD4417D3197DD9AEF , bda:LGDA1BE63D0C1D1D38 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA0XLB62054B98CE8 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR101AAEE2116F8BFF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P251 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1043  a       :Work ;
+        skos:prefLabel      "bod kyi brda'i sprod pa sum cu pa dang rtags kyi 'jug pa'i mchan 'grel mdor btus te brjod pa ngo mtshar 'phrul kyi lde mig"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary on the root of Tibetan grammar by Sertog Lobsang Tsultril Gyatso."@en ;
+        :creator            bdr:CR101AAEE2116F8BFF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workIsAbout        bdr:T186 , bdr:WA19377 , bdr:WA19378 .
+}

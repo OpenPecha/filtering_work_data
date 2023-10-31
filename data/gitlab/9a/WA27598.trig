@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27598 {
+    bda:LG04CBC95CEE449637
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T10:26:56.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG19A2BB183C3A8735
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG49EE474CD8ED135D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-27T14:41:40.474Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6FC50375A110DA37
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD734E225718E4A44
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T12:42:01.908Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:WA27598  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27598 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9a/WA27598.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27598 ;
+        adm:logEntry        bda:LG04CBC95CEE449637 , bda:LG19A2BB183C3A8735 , bda:LG49EE474CD8ED135D , bda:LG6FC50375A110DA37 , bda:LGD734E225718E4A44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8996E1305B88A62E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P727 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW27598  skos:altLabel  "an introductory manual to the practice of rnin-ma-pa rdzogs-chen according to the tradition of rtogs-ldan sakya-sri"@en-x-mixed .
+
+    bdr:WA27598  a          :Work ;
+        skos:altLabel       "gnas lugs rdzogs pa chen po'i khrid yig yang zab yid bzhin nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs chen khrid yig yang zab yid bzhin nor bu/"@bo-x-ewts , "an introductory manual to the practice of rnin-ma-pa rdzogs-chen according to the tradition of rtogs-ldan sakya-sri"@en-x-mixed ;
+        :creator            bdr:CR8996E1305B88A62E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW27299_D1ABBC , bdr:MW27598 , bdr:W27598 ;
+        :workIsAbout        bdr:T354 .
+}

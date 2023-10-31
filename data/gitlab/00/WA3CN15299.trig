@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15299 {
+    bda:LG27965E9E3CD36E01
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-01T11:00:34.259Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG361EB863C564EE96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG5958C18D0873D9A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T16:13:49.62Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5FA2132A984AC654
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T16:08:24.469Z"^^xsd:dateTime ;
+        adm:logMessage      "added T2620"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFEBF594467E9D941
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:15:36.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15299  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15299 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "00/WA3CN15299.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15299 ;
+        adm:logEntry        bda:LG27965E9E3CD36E01 , bda:LG361EB863C564EE96 , bda:LG5958C18D0873D9A8 , bda:LG5FA2132A984AC654 , bda:LGFEBF594467E9D941 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE1ECBAAAAA2F4CA2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P460 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN15299  a       :Work ;
+        skos:altLabel       "grub chen brgyad cu'i byon tshul/"@bo-x-ewts ;
+        skos:prefLabel      "grub chen brgyad cu rtsa bzhi'i rnam thar sogs/"@bo-x-ewts ;
+        :catalogInfo        "Short biography of 84 mahasiddhas and a few small texts."@en ;
+        :creator            bdr:CRE1ECBAAAAA2F4CA2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN15299 , bdr:W3CN15299 ;
+        :workIsAbout        bdr:T1043 .
+}

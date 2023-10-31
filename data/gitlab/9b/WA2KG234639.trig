@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG234639 {
+    bda:LG6ED01F5152E22E75
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T12:31:59.332Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG92E786E33C097AF7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:39:52.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCCF42C897F6822A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-27T18:30:58.426Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG234639  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG234639 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9b/WA2KG234639.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG234639 ;
+        adm:logEntry        bda:LG6ED01F5152E22E75 , bda:LG92E786E33C097AF7 , bda:LGCCF42C897F6822A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0892BE1F09996CDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR564CBCA9E45E0B5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8183 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRE6F1DADC18A6F557
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6242 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG234639  a      :Work ;
+        skos:altLabel       "dam pa'i chos 'dul ba mdo rtsa ba/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba/"@bo-x-ewts ;
+        :catalogInfo        "The fundamental text of Vinaya by Gunaprabha."@en ;
+        :creator            bdr:CR0892BE1F09996CDF , bdr:CR564CBCA9E45E0B5A , bdr:CRE6F1DADC18A6F557 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG234639 , bdr:W2KG234639 ;
+        :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25115 {
+    bda:LG467DBB4BBE00E2D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-13T15:44:25.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4A9665A6EA493EFB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5E02E958109C7208
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG72A8BFAFFC854CBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-13T15:43:49.352Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA25115  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25115 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5d/WA25115.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25115 ;
+        adm:logEntry        bda:LG467DBB4BBE00E2D4 , bda:LG4A9665A6EA493EFB , bda:LG5E02E958109C7208 , bda:LG72A8BFAFFC854CBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5BB04CF63C06BDEA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7300 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW25115  skos:altLabel  "六个青年的故事注释"@zh-hans .
+
+    bdr:WA25115  a          :Work ;
+        skos:altLabel       "gzhon nu drug gi rtogs brjod kyi 'grel pa tshig don gsal ba'i sgron me/"@bo-x-ewts , "liu ge qing nian de gu shi zhu shi"@zh-hans ;
+        skos:prefLabel      "gzhon nu drug gi rtogs brjod gsar 'grel/"@bo-x-ewts , "六个青年的故事注释"@zh-hans ;
+        :catalogInfo        "Commentary on Jayasena’s Satkumaravadana, reflecting lives and activities of six Buddhist legendary characters; includes Tibetan version of root text."@en ;
+        :creator            bdr:CR5BB04CF63C06BDEA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW25115 , bdr:W25115 ;
+        :workIsAbout        bdr:WA1KG22640 .
+}

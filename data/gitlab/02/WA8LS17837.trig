@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17837 {
+    bda:LG5B4598B9316B0348
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8AB9283E1B57009C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-16T12:37:42.427Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG98FE28B5BC454551
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-16T12:38:11.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS17837  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17837 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/WA8LS17837.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17837 ;
+        adm:logEntry        bda:LG5B4598B9316B0348 , bda:LG8AB9283E1B57009C , bda:LG98FE28B5BC454551 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR738EBAC79C6C017B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4552 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17837  a       :Work ;
+        skos:altLabel       "mdzod 'brel dwogs gcod chos mngon dpag bsam 'dod 'jo/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod 'brel dwogs gcod/"@bo-x-ewts ;
+        :catalogInfo        "Clarification of difficult point in the Abhidharma by Geshe Namgyal Wangchen."@en ;
+        :creator            bdr:CR738EBAC79C6C017B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2023 ;
+        :workHasInstance    bdr:MW8LS17837 , bdr:W8LS17837 ;
+        :workIsAbout        bdr:T59 .
+}

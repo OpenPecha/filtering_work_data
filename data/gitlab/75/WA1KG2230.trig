@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG2230 {
+    bda:LG055A9B378FFC954E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-05-12T10:56:30.732Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1D795504F78CFFD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-05-25T14:00:50.864Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3867C01DD17DF30E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGB8E948A226517900
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-05-12T13:43:20.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG2230  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG2230 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "75/WA1KG2230.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG2230 ;
+        adm:logEntry        bda:LG055A9B378FFC954E , bda:LG1D795504F78CFFD5 , bda:LG3867C01DD17DF30E , bda:LGB8E948A226517900 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR148AD1D4E3784AEA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P840 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG2230  skos:altLabel  "bka' rgyud gser 'phreng rgyas pa the rdzong khul tradition"@en .
+
+    bdr:WA1KG2230  a        :Work ;
+        skos:altLabel       "don brgyud dpal ldan 'brug pa dkar brgyud kyi rnam thar gser 'phreng chen mo/"@bo-x-ewts , "bka' brgyud gser 'phreng rgyas pa : a reproduction of an incomplete manuscript of a collection of the lives of the successive masters of the 'brug pa dkar brgyud pa tradition reflecting the tradition of rdzong khul in zangs dkar established by grub dbang ngag dbang tshe ring"@en ;
+        skos:prefLabel      "bka' brgyud gser 'phreng rgyas pa/"@bo-x-ewts , "bka' rgyud gser 'phreng rgyas pa the rdzong khul tradition"@en ;
+        :catalogInfo        "Golden Rosary of the Kagyu. Anthology of the successive life stories of masters in the Drukpa Kagyu order. Reflects the order of Dzongkul in Zangskar, established by Drubwang Ngawang Tsering (1717-1794)."@en ;
+        :creator            bdr:CR148AD1D4E3784AEA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG2230 , bdr:W1KG2230 ;
+        :workIsAbout        bdr:T816 .
+}

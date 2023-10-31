@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14324 {
+    bda:LG27B812ADF0D70FB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-28T16:09:11.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2BA9B2928D50F7E8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-28T16:01:01.112Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB0F239C0FFC56D94
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA3CN14324  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14324 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ea/WA3CN14324.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14324 ;
+        adm:logEntry        bda:LG27B812ADF0D70FB6 , bda:LG2BA9B2928D50F7E8 , bda:LGB0F239C0FFC56D94 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR389F24C5758042F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN14324  a       :Work ;
+        skos:altLabel       "g.yu thog snying thig las byin rlabs bla ma sgrub pa'i chos skor sdug bsngal mun sel thugs rje'i nyi 'od ces pa'i thog mar lo rgyus dge ba'i lcags kyu/"@bo-x-ewts ;
+        skos:prefLabel      "g.yu thog snying thig las byin rlabs bla ma sgrub pa'i chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected rituals of a cycle of medical practice deriving from Yutok Yonten Gonpo."@en ;
+        :creator            bdr:CR389F24C5758042F4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN14324 , bdr:W3CN14324 ;
+        :workIsAbout        bdr:T4 , bdr:T85 .
+}

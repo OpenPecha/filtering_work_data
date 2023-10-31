@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22747 {
+    bda:LG2BCB8A1848DEFC24
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-30T23:53:37.707Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7146BF82AF79714D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-30T23:20:31.437Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAE647DC4054634E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBACB5698BC487F5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T14:44:50.205Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22747  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22747 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a2/WA3CN22747.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22747 ;
+        adm:logEntry        bda:LG2BCB8A1848DEFC24 , bda:LG7146BF82AF79714D , bda:LGAE647DC4054634E4 , bda:LGBACB5698BC487F5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4648509364AAB223
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22747  a       :Work ;
+        skos:prefLabel      "mngon rtogs rgyan gyi rnam bshad tshig don rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara of the Prajnaparamita by Sakya master Rongton Shakya Gyaltsen."@en ;
+        :creator            bdr:CR4648509364AAB223 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN22747 , bdr:MW8473 , bdr:W3CN22747 , bdr:W8473 ;
+        :workIsAbout        bdr:T36 , bdr:WA19716 .
+}

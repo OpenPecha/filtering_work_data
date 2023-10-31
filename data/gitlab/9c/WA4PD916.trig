@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD916 {
+    bda:LG3418A479FEEBE408
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-27T14:57:23.959Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG7390985E6AFC3AFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-08T22:32:10.605Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF6A8B8422F2E10C5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-08T22:33:08.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFD30F4E8F759E567
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4PD916  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD916 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9c/WA4PD916.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD916 ;
+        adm:logEntry        bda:LG3418A479FEEBE408 , bda:LG7390985E6AFC3AFB , bda:LGF6A8B8422F2E10C5 , bda:LGFD30F4E8F759E567 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR182B7C07BDF67D51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P795 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD916  a         :Work ;
+        skos:altLabel       "'jam mgon zhal gyi bum bzang las brgyad khri bzhi stong chos kyi sgra dbyangs legs par thos pa thub bstan srid mthar gsal ba'i sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "sa skya ngag dbang bsod nams dbang phyug gi gsan yig"@bo-x-ewts ;
+        :catalogInfo        "Record of teachings received by Sakya Ngakwang Sonam Wangchuk (1638-1685)."@en ;
+        :creator            bdr:CR182B7C07BDF67D51 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T192 ;
+        :workHasInstance    bdr:MW4PD916 , bdr:W4PD916 .
+}

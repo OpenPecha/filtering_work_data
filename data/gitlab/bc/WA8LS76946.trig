@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76946 {
+    bda:LG762434F00123E8BB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-29T12:59:17.297Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF8B45ADBAA429F18
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-29T12:59:40.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76946  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76946 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bc/WA8LS76946.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76946 ;
+        adm:logEntry        bda:LG762434F00123E8BB , bda:LGF8B45ADBAA429F18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC7DD1E0B56E4F749
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1982 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76946  a       :Work ;
+        skos:altLabel       "dbu ma rtsa ba shes rab kyi 'grel pa 'thad pa' rgyan/ stod cha/"@bo-x-ewts ;
+        skos:prefLabel      "rtsa she'i 'grel pa 'thad pa'i rgyan/ stod cha/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the root text of Madhyamaka by Maja Jangchub Tsondu."@en ;
+        :creator            bdr:CRC7DD1E0B56E4F749 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS76946 , bdr:W8LS76946 ;
+        :workIsAbout        bdr:T233 , bdr:WA23226 .
+}

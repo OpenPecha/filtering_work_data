@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG0620 {
+    bda:LG493BE1C684A1BF5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-03-23T09:51:44.099Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog works"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG51843114473F30B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-05T11:47:26.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCCAEB97D26F7875C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-27T11:17:10.535Z"^^xsd:dateTime ;
+        adm:logMessage      "released and published"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE3EBF9906F2F7DE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-05T11:47:58.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA00KG0620  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG0620 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8c/WA00KG0620.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG0620 ;
+        adm:logEntry        bda:LG493BE1C684A1BF5B , bda:LG51843114473F30B9 , bda:LGCCAEB97D26F7875C , bda:LGE3EBF9906F2F7DE1 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA00KG0620  a       :Work ;
+        skos:altLabel       "bod chol gsum gyi dmangs khrod dang chos 'brel gyi gtam dpe'i nying khu 'dems bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "bod chol gsum gyi dmangs khrod dang chos 'brel gyi gtam dpe/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Tibetan folk and Dharma related proverbs."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00KG0620 , bdr:W00KG0620 ;
+        :workIsAbout        bdr:T1113 , bdr:T190 .
+}

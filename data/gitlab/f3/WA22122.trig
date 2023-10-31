@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22122 {
+    bda:LG30800A5EDF3DDC63
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:03:10.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGC4614A41E25F2733
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-06-13T09:36:06.853Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC5472698809CA817
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-07T15:06:40.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC95AAC9482115829
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-12T20:16:34.969Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGCA5D2D1AA00A751E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22122  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22122 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f3/WA22122.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22122 ;
+        adm:logEntry        bda:LG30800A5EDF3DDC63 , bda:LGC4614A41E25F2733 , bda:LGC5472698809CA817 , bda:LGC95AAC9482115829 , bda:LGCA5D2D1AA00A751E , bda:LGIM320307B99D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6D96918E4CEFA268
+        a                   :AgentAsCreator ;
+        :agent              bdr:P805 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22122  skos:altLabel  "the homavidhi and rituals for the suppression of the sri through the practice of the vajarkila sadhana"@en .
+
+    bdr:WA22122  a          :Work ;
+        skos:prefLabel      "phur pa'i las bzhi'i sbyin sreg dang sri mnan/"@bo-x-ewts , "the homavidhi and rituals for the suppression of the sri through the practice of the vajarkila sadhana"@en ;
+        :creator            bdr:CR6D96918E4CEFA268 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T8 ;
+        :workHasInstance    bdr:MW22122 , bdr:W22122 ;
+        :workIsAbout        bdr:T1200 , bdr:T1786 .
+}

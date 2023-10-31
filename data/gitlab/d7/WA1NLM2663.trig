@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2663 {
+    bda:LG44152705DE91FE74
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG46B866AA6DF13C44
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:06:01.301Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC01432DD16BE4A80
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T09:20:34.581Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2663"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2663  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2663 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d7/WA1NLM2663.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2663 ;
+        adm:logEntry        bda:LG44152705DE91FE74 , bda:LG46B866AA6DF13C44 , bda:LGC01432DD16BE4A80 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2663  a       :Work ;
+        skos:altLabel       "dpal ldan rdo rje rnal 'byor ma phag mo lha lnga'i sgrub thabs rgyun 'khyer dngos grub bdud rtsi'i char rgyun sogs/"@bo-x-ewts ;
+        skos:prefLabel      "phag mo lha lnga'i sgrub thabs rgyun 'khyer dngos grub bdud rtsi'i char rgyun sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Sadhana and ritual texts concern to deities Vajravarahi 5 devatmaka, Sridevi, Vajra yogini and others"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2663 , bdr:W1NLM2663 ;
+        :workIsAbout        bdr:T1338 .
+}

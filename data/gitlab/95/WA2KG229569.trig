@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229569 {
+    bda:LG03FB310A064F62B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:05:31.387Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG30296B2E283662D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-24T19:29:31.216Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA2KG229569  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229569 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "95/WA2KG229569.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229569 ;
+        adm:logEntry        bda:LG03FB310A064F62B2 , bda:LG30296B2E283662D8 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW2KG229569  skos:altLabel  "damomurkha-namasutra"@sa-x-ndia .
+
+    bdr:WA2KG229569  a      :Work ;
+        skos:altLabel       "mdzangs blun zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "mdo mdzangs blun/"@bo-x-ewts , "damomurkha-namasutra"@sa-x-ndia ;
+        :catalogInfo        "The previous life stories of Buddha Shakya Muni. The sutra of the Wise and the Foolish. Canonical teaching."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 , bdr:T769 ;
+        :workHasInstance    bdr:MW2KG229569 , bdr:W2KG229569 ;
+        :workIsAbout        bdr:P7326 , bdr:T2126 .
+}

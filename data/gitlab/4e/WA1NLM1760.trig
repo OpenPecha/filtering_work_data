@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1760 {
+    bda:LG1D4E8628A4302CF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-30T11:28:06.138Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBB8E065B4409FA93
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1760"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1760  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1760 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4e/WA1NLM1760.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1760 ;
+        adm:logEntry        bda:LG1D4E8628A4302CF9 , bda:LGBB8E065B4409FA93 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR51A8629F63B479DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD04E4251297BA8FC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15246 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CREDF52159748249A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA1NLM1760  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje gcod pa zhes bya theg pa chen po'i mdo/"@bo-x-ewts , "Madhyamakavatara; other text also included."@en ;
+        :creator            bdr:CR51A8629F63B479DB , bdr:CRD04E4251297BA8FC , bdr:CREDF52159748249A5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1760 , bdr:W1NLM1760 ;
+        :workIsAbout        bdr:T233 .
+}

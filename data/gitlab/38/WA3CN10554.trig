@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN10554 {
+    bda:LG5C836C980E42EB7A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-19T11:32:56.805Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE1F14CC05F51F546
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-19T11:34:45.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA3CN10554  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN10554 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA3CN10554.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN10554 ;
+        adm:logEntry        bda:LG5C836C980E42EB7A , bda:LGE1F14CC05F51F546 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR68A934B6B5A4E770
+        a                   :AgentAsCreator ;
+        :agent              bdr:P11MS241 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN10554  a       :Work ;
+        skos:altLabel       "mtshungs med gter chen chos kyi rgyal po rigs 'dzin nyi ma grags pa mchog gi rnam par thar pa mu tig 'phreng ba'i mgul rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "gter chen rig 'dzin nyi ma grags pa mchog gi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of great Terton Nyima Drakpa by Shartul Damcho Gyatso."@en ;
+        :creator            bdr:CR68A934B6B5A4E770 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN10554 , bdr:W3CN10554 ;
+        :workIsAbout        bdr:P425 .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN630 {
+    bda:LG11A320309E0B9C95
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T17:39:23.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG601A5556068D0503
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T08:59:25.64Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB2F10C8DB75A43AA
+        a                   adm:InitialDataCreation ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN630  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN630 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7e/WA3CN630.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN630 ;
+        adm:logEntry        bda:LG11A320309E0B9C95 , bda:LG601A5556068D0503 , bda:LGB2F10C8DB75A43AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+
+    bdr:WA3CN630  a         :Work ;
+        skos:prefLabel      "bka' 'gyur/ (mtshal par pod zhe bdun bar/)"@bo-x-ewts ;
+        :catalogInfo        "Collection of canonical Buddhist literature. Printed in red ink woodblock version."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN630 ;
+        :workIsAbout        bdr:T2423 .
+}

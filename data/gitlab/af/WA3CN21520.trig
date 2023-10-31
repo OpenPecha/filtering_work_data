@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21520 {
+    bda:LG01FB16FD31FFD10E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG846F9ACBB49E231E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T16:02:04.708Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC3FCA137B7705772
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-10-29T11:17:01.501Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCE877D875B34C6BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-10-29T11:17:53.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN21520  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21520 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "af/WA3CN21520.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21520 ;
+        adm:logEntry        bda:LG01FB16FD31FFD10E , bda:LG846F9ACBB49E231E , bda:LGC3FCA137B7705772 , bda:LGCE877D875B34C6BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFB82EB9F1BE87DB2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6856 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21520  skos:altLabel  "西藏民间文化若干问题研究"@zh-hans .
+
+    bdr:WA3CN21520  a       :Work ;
+        skos:prefLabel      "bod kyi dmangs srol rig gnas kyi gnad don 'ga' zhig gleng ba/"@bo-x-ewts , "西藏民间文化若干问题研究"@zh-hans ;
+        :catalogInfo        "Research on some questions about Tibetan culture history by modern scholar Gyangkhor Tsephun."@en ;
+        :creator            bdr:CRFB82EB9F1BE87DB2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21520 , bdr:W3CN21520 ;
+        :workIsAbout        bdr:T1144 , bdr:T229 .
+}

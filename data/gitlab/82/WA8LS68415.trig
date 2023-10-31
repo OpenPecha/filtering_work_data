@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS68415 {
+    bda:LG1B4C6E5442A69F3F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-12T14:34:46.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2D8099C6A2FFF215
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T14:34:20.522Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGADFCC834465414A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE02CE3259510F410
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:44:24.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS68415  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS68415 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "82/WA8LS68415.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS68415 ;
+        adm:logEntry        bda:LG1B4C6E5442A69F3F , bda:LG2D8099C6A2FFF215 , bda:LGADFCC834465414A9 , bda:LGE02CE3259510F410 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6728F2886B7E047E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21288 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS68415  a       :Work ;
+        skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ khong nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
+        skos:prefLabel      "khong nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
+        :catalogInfo        "Text book on the Tibetan science of medicine; edited by Togyal."@en ;
+        :creator            bdr:CR6728F2886B7E047E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW8LS68415 , bdr:W8LS68415 ;
+        :workIsAbout        bdr:T234 , bdr:T85 .
+}

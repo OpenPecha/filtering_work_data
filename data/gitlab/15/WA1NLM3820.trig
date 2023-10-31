@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3820 {
+    bda:LG7F4160C8227C9EC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-24T08:08:58.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3820"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3820  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3820 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "15/WA1NLM3820.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3820 ;
+        adm:logEntry        bda:LG7F4160C8227C9EC6 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE0BA691193E4A5D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P280 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3820  a       :Work ;
+        skos:prefLabel      "legs par bshad pa'i ri chos nges 'byung skyo shas bskyed byed khu byug gi bskul dbyangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mkha' 'gro'i snyan brgyud zab mo las rdzogs rim bskyed rdzogs gnyis med kyi khrid yig zin bris tshe gcig zung 'jug 'grub pa'i nye lam/ 2 rje btsun sgrol ma'i maN+Dal bzhi pa'i cho ga nor bu dbang gi/ 3 yi dam rta mgrin gsang sgrub kyi sgo nas ma mo'i gdon 'dul mo 'dre kha bsgyur/ 4 pad dkar zhal lung dri med rgyal po las lo nag dang zla nag dang dus nag sogs sgrib tshul gyi mdos/ 5 lha mo'i cho ga'i go rim/ 6 'phags pa gnam sa snang brgyd/ 7 rgya nag 'grel chen gyi nang du drangs pa'i don dam yang dag 'phags kyi leu'i rtsa gzhung / 8 rje btsun sgrol ma dkar mo'i maN+Dal bzhi ba'i cho ga 'chi med dpal ster/ 9 skabs gsum pa/"@en , "A retreat manual by Thoyon Dondrup Gyaltshen."@en ;
+        :creator            bdr:CRE0BA691193E4A5D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3820 , bdr:W1NLM3820 ;
+        :workIsAbout        bdr:T1109 .
+}

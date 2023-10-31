@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM182 {
+    bda:LG0D092487B90EE3A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG93ADDAE53C4494CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-29T08:18:29.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA240B1F581F1ABFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-20T16:44:13.36Z"^^xsd:dateTime ;
+        adm:logMessage      "Full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM182"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM182  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM182 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0e/WA1NLM182.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM182 ;
+        adm:logEntry        bda:LG0D092487B90EE3A8 , bda:LG93ADDAE53C4494CF , bda:LGA240B1F581F1ABFF , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM182  a        :Work ;
+        skos:prefLabel      "dam can khrag 'thung gsol mchod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of rituals"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM182 , bdr:W1NLM182 .
+}

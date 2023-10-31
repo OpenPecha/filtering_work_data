@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20531 {
+    bda:LG7468B15A2C069707
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T12:14:35.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG7953752A43ED19F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:01:30.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG91ADEDC94C01D595
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-10T09:29:21.014Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGFA87B01A5B5B58C5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMDA3CC38EDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T17:27:14.339Z"^^xsd:dateTime ;
+        adm:logMessage      "removed erroneous titles from previous update"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA20531  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20531 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f1/WA20531.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20531 ;
+        adm:logEntry        bda:LG7468B15A2C069707 , bda:LG7953752A43ED19F3 , bda:LG91ADEDC94C01D595 , bda:LGFA87B01A5B5B58C5 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE35BD7B82979D9CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6900 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV7C54402464529E2C
+        a                   :CompletedEvent ;
+        :onYear             "1889"^^xsd:gYear .
+
+    bdr:MW20531  skos:altLabel  "dharmatala's annals of buddhism"@en .
+
+    bdr:WA20531  a          :Work ;
+        skos:altLabel       "chen po hor gyi yul du dam pa'i chos ji ltar dar ba'i tshul gsal bar brjod pa pad+ma dkar po'i phreng ba/"@bo-x-ewts , "annals of buddhism"@en , "Dharmatala's Annals of Buddhism."@en-x-mixed , "The history of Buddhism in Mongolia :Tibetan text in Roman transcription /Dharmatala Dam-chos-rgya-mtsho."@en-x-mixed ;
+        skos:prefLabel      "hor chos 'byung /"@bo-x-ewts , "dharmatala's annals of buddhism"@en ;
+        :creator            bdr:CRE35BD7B82979D9CC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV7C54402464529E2C ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW20531 , bdr:W20531 ;
+        :workIsAbout        bdr:G584 .
+}

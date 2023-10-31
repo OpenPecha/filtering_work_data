@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77273 {
+    bda:LG138319BAA9CDC612
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-28T13:50:12.323Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBB38199C7B633C04
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-28T13:50:46.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77273  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77273 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/WA8LS77273.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77273 ;
+        adm:logEntry        bda:LG138319BAA9CDC612 , bda:LGBB38199C7B633C04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR49D97FA7C09BA55C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR6BCEEFE1245CBFAF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5924 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77273  a       :Work ;
+        skos:prefLabel      "'dul ba rgya mtsho'i dka' gnas mdor bsdus pa nor bu'i phreng ba dang / de'i 'grel pa kun bzang zhing gi nyi ma gzhan phan snang ba'i mdzod/"@bo-x-ewts ;
+        :catalogInfo        "A short key points and commentary of Vinaya known as Dulwa Gyatsho by Gungthang Tenpe Dronme and Akhu Lhamo Tshultrim."@en ;
+        :creator            bdr:CR49D97FA7C09BA55C , bdr:CR6BCEEFE1245CBFAF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS77273 , bdr:W8LS77273 ;
+        :workIsAbout        bdr:T2339 , bdr:T55 .
+}

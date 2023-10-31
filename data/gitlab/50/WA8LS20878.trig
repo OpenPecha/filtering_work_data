@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20878 {
+    bda:LG1AD1A132EA4F1565
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-18T09:16:17.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3C4A8F54CE4A81EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-18T09:12:54.24Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS20878  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20878 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "50/WA8LS20878.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20878 ;
+        adm:logEntry        bda:LG1AD1A132EA4F1565 , bda:LG3C4A8F54CE4A81EB , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR01F0221A97430C81
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR325BF7E4719CB1B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P319 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20878  a       :Work ;
+        skos:altLabel       "rje karma pa brgyad pa mi bskyod rdo rje yab sras kyis mdzad pa'i gsang sngags rnying ma'i dgag lan/"@bo-x-ewts ;
+        skos:prefLabel      "gsang sngags snga 'gyur gyi brgal lan phyogs bsgrigs/ deb dang po/"@bo-x-ewts ;
+        :catalogInfo        "A collection of polemic writings by 8th Karmpa Mikyod Dorjee and Pawo Tsuklag Trengwa."@en ;
+        :creator            bdr:CR01F0221A97430C81 , bdr:CR325BF7E4719CB1B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS20878 , bdr:W8LS20878 ;
+        :workIsAbout        bdr:T102 , bdr:T1082 .
+}

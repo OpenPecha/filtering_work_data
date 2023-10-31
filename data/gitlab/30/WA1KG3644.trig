@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3644 {
+    bda:LG1B78A63F8C06F267
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG52D7B297E91E6892
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-22T12:51:21.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE48E8E8C79CDEE4B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-21T10:48:42.758Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG3644  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3644 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "30/WA1KG3644.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3644 ;
+        adm:logEntry        bda:LG1B78A63F8C06F267 , bda:LG52D7B297E91E6892 , bda:LGE48E8E8C79CDEE4B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG10019 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRAE9DBC30E6078167
+        a                   :AgentAsCreator ;
+        :agent              bdr:P16 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3644  a        :Work ;
+        skos:altLabel       "mnyam med 'bri gung pa chen po skyob pa 'jig rten mgon po'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ 'jig rten mgon po/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Jigten Gonpo (1143-1217), founder of the Drikung Kagyu order."@en ;
+        :creator            bdr:CRAE9DBC30E6078167 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1190 .
+}

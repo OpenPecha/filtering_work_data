@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18551 {
+    bda:LG1562F2B49B2000E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-28T10:44:36.391Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG4D5AB84F0A9C6D86
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGCE868452407FF79F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-28T15:57:27.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE3CB4EFA6E8B9669
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-18T15:26:40.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalog info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGFB85C10DF9C04818
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T19:31:37.17Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18551  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18551 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d4/WA3CN18551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18551 ;
+        adm:logEntry        bda:LG1562F2B49B2000E8 , bda:LG4D5AB84F0A9C6D86 , bda:LGCE868452407FF79F , bda:LGE3CB4EFA6E8B9669 , bda:LGFB85C10DF9C04818 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN18551  a       :Work ;
+        skos:prefLabel      "spyod 'jug smon lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Prayer of Bodhicaryavatara and some other daily practices ritual texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 , bdr:T34 ;
+        :workHasInstance    bdr:MW3CN18551 , bdr:W3CN18551 .
+}

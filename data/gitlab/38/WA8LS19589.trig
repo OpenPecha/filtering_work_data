@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS19589 {
+    bda:LG156752A45ADC8BE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-02-02T15:27:40.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, author, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG34D0E8A71B356860
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-07T15:29:38.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS19589  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS19589 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/WA8LS19589.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS19589 ;
+        adm:logEntry        bda:LG156752A45ADC8BE5 , bda:LG34D0E8A71B356860 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6788F07A7BDC19BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6162 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS19589  a       :Work ;
+        skos:prefLabel      "gter ston nyi zla 'od zer gyi gter chos/"@bo-x-ewts ;
+        :catalogInfo        "Rediscovered teachings of Terton Nyida Odzer."@en ;
+        :creator            bdr:CR6788F07A7BDC19BD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW8LS19589 , bdr:W8LS19589 .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS15840 {
+    bda:LG213B6D455A821DF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-21T14:47:31.22Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG56CF3751759770AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-03T11:18:49.738Z"^^xsd:dateTime ;
+        adm:logMessage      "changed wylie to phonetic in cat info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG69278BCF2D4B430C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-21T14:51:12.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG861832D56A3C355A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T09:53:01.896Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9332CD6796C8C940
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-02T09:16:23.042Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS15840  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS15840 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0f/WA8LS15840.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS15840 ;
+        adm:logEntry        bda:LG213B6D455A821DF5 , bda:LG56CF3751759770AC , bda:LG69278BCF2D4B430C , bda:LG861832D56A3C355A , bda:LG9332CD6796C8C940 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7CCD662E9679A8C2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS15840  a       :Work ;
+        skos:prefLabel      "mgon po'i sgrub skor/"@bo-x-ewts ;
+        :catalogInfo        "A collection of liturgical text concerning Mahakala composed by 8th Situ Chokyi Jungne ( 1699/1700-1774)."@en ;
+        :creator            bdr:CR7CCD662E9679A8C2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS15840 , bdr:W8LS15840 ;
+        :workIsAbout        bdr:T1181 , bdr:T950 .
+}

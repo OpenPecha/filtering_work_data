@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76035 {
+    bda:LG0CA4CDEAF41A9DEE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-17T14:30:02.874Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG0EC59AB890969010
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-17T14:30:30.854Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76035  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76035 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "88/WA8LS76035.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76035 ;
+        adm:logEntry        bda:LG0CA4CDEAF41A9DEE , bda:LG0EC59AB890969010 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5CABB3DF9A92DD80
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76036 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76035  a       :Work ;
+        skos:prefLabel      "mdo smad la gzhas thad kyi gleng brjod dang sgyu rtsal khyad chos rob tsam bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of love songs from Amdo region and its characteristic by Kangzhung Kherkye."@en ;
+        :creator            bdr:CR5CABB3DF9A92DD80 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW8LS76035 , bdr:W8LS76035 ;
+        :workIsAbout        bdr:G1202 , bdr:T251 .
+}

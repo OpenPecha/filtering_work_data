@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24551 {
+    bda:LGEA45DF410C37D8AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T12:34:42.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF2A9592F3139057D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T12:33:59.782Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG24551  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24551 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c0/WA1KG24551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24551 ;
+        adm:logEntry        bda:LGEA45DF410C37D8AD , bda:LGF2A9592F3139057D , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR977AE34C587E2DD7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6242 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRF0FEF47FD38D90B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1500 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:WA1KG24551  a       :Work ;
+        skos:altLabel       "'dul ba mdo rtsa ba'i mchan 'grel mthong ba don 'grub/ (dpe bsdur ma/)"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba'i mchan 'grel mthong ba don 'grub/"@bo-x-ewts ;
+        :catalogInfo        "Annotated commentary on root text of vinaya written by Indian master Gunaprabha."@en ;
+        :creator            bdr:CR977AE34C587E2DD7 , bdr:CRF0FEF47FD38D90B6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1KG24551 , bdr:MW1NLM177 , bdr:MW1NLM934 , bdr:MW4CZ302676 , bdr:W1KG24551 , bdr:W1NLM177 , bdr:W1NLM934 , bdr:W4CZ302676 ;
+        :workIsAbout        bdr:T1426 , bdr:WA4CZ16829 .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76880 {
+    bda:LGD8D89250B6E800E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-23T08:13:05.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEE34550F766BCE78
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-23T08:12:34.056Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76880  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76880 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "40/WA8LS76880.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76880 ;
+        adm:logEntry        bda:LGD8D89250B6E800E7 , bda:LGEE34550F766BCE78 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE8D24F266D125AF0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76881 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76880  a       :Work ;
+        skos:prefLabel      "nang chos dang 'brel ba'i dri lan blo gsar re skong dang / ston pa'i gsung gi bdud rtsi/"@bo-x-ewts ;
+        :catalogInfo        "Questions and answers concerning Buddhism by Geshe Losang Dawa."@en ;
+        :creator            bdr:CRE8D24F266D125AF0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW8LS76880 , bdr:W8LS76880 ;
+        :workIsAbout        bdr:T770 .
+}

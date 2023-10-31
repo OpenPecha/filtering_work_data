@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3002 {
+    bda:LG1BBC8EEDE19AB903
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-02T09:17:14.501Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7E88D380F329577C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3002"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3002  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3002 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a6/WA1NLM3002.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3002 ;
+        adm:logEntry        bda:LG1BBC8EEDE19AB903 , bda:LG7E88D380F329577C , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3002  a       :Work ;
+        skos:prefLabel      "snang brgyad du grags pa'i cho ga phan bde'i 'byung gnas kyi snying po bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 phyugs bzhi'i gzungs mdo/ 2 dbang mdzod rab gnas/ 3 lung tu ston pa sum cu ba dang rtags kyi 'jugs pa'i rtsa ba le tshan gnyis/ 4 dam tshig rdo rje bzlas pa/ 5 dam tshig rdo rje bzlas pa'i gnad dang sdig ltung sbyang ba'i thabs chog za byed mkha' 'gro'i sbyin sreg 6 ye shes kyi mkha' 'gro ma seng+ge gdong ma la mchod gotr gser skyems bsang mchod 'bul zhing 'phrin las bcol bar 'dod pa/ 7 bcom ldan 'das dpal rdo rje sems dpa'i sgrub thabs/ 8 dpal rdo rje 'jigs byed dpa' bo gcig pa la brten nas chos sku rnam 'byed kyi shes rab sgrub pa'i man ngag rdo rje'i tshig gi mdud 'grol/ 9 nang mchod kyi skabs su tshogs mchod 'bul tshul/ 10 glu len bya ba/ 11 chos kyi rgyal po la gtor 'bul bya tshul/ 12 srog glud bya thsul srog gi chad 'thud/ 13 gnod sbyin tsi'u dmar po'i gser skyems 'bul tshul/ 14 'phags pa spyan ras gzigs gsol 'debs/ 15 shi gson gnyis ka'i bsngo ba/ 16 sman bla'i klong rdol bla ma/ 17 rta mgrin gsang sgrub rgyun 'khyer sgrub thabs/ 18 sman bla'i lho'i rtsa ba'i bla ma dbyer ma mchigs pa'i bla ma'i rnal 'byor don gnyis lhun grub ma/ 19 gser 'od dam pa'i tshogs mchod/ 20 dge bsnyen du bsgrub pa chu bgyis chog a 'khyer bde kun phan/ 21 kun mkhyen 'jam dbyangs bzhad pa la gsol ba 'debs pa tshigs su bcad pa/"@en , "A summary of ritual known as Nanggyed author signed as Ngagchang Zhedpa Dorjee; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3002 , bdr:W1NLM3002 .
+}

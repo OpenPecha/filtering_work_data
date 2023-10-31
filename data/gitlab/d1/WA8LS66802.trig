@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66802 {
+    bda:LG1D9BBADF750F9B8C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-04T15:38:33.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA842D1FA1235C424
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-08T15:12:52.062Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB2AEB01989F651D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB32D6147C417D7B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T14:24:43.874Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCAF2166114AE6F45
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-04T15:36:33.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE0B814C5FE19B6EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T10:15:18.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66802  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66802 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d1/WA8LS66802.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66802 ;
+        adm:logEntry        bda:LG1D9BBADF750F9B8C , bda:LGA842D1FA1235C424 , bda:LGB2AEB01989F651D7 , bda:LGB32D6147C417D7B1 , bda:LGCAF2166114AE6F45 , bda:LGE0B814C5FE19B6EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C076EBB89CE45D0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75194 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8LS66802  skos:altLabel  "On the Top of the World"@en .
+
+    bdr:WA8LS66802  a       :Work ;
+        skos:altLabel       "bod ljongs ri 'dzegs nyen zhib ru khag gis 'dzam gling gi gangs ri mtho shos bcu bzhi'i dbu rtser 'dzegs pa'i mdzad rnam/"@bo-x-ewts ;
+        skos:prefLabel      "dbu rtse'i dpa' rtul/1993-2007"@bo-x-ewts , "On the Top of the World"@en ;
+        :catalogInfo        "An account of Tibetan mountaineers including author himself."@en ;
+        :creator            bdr:CR9C076EBB89CE45D0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T3 ;
+        :workHasInstance    bdr:MW8LS66802 , bdr:W8LS66802 ;
+        :workIsAbout        bdr:P8LS75194 , bdr:T2MS13270 .
+}

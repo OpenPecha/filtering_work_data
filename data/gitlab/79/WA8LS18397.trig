@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18397 {
+    bda:LG3482A90822191ADB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T09:58:16.8Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4979CA2ECDDACF78
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T09:59:26.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD71830443AE8B957
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-25T16:16:58.938Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS18397  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18397 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "79/WA8LS18397.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18397 ;
+        adm:logEntry        bda:LG3482A90822191ADB , bda:LG4979CA2ECDDACF78 , bda:LGD71830443AE8B957 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR090CEB6BD273CA59
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1656 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18397  a       :Work ;
+        skos:altLabel       "dbyangs can sgra mdo'i 'grel pa rgyal yum bzang bza' ring btsun gyi dgongs bcud dpyod ldan bye ba'i mgul rgyal srid gsum dga' ba'i snying nor/"@bo-x-ewts ;
+        skos:prefLabel      "dbyangs can sgra mdo'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Saraswati Vyakaran by Khyungtrul Jigme Namkhai Dorjee."@en ;
+        :creator            bdr:CR090CEB6BD273CA59 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS18397 , bdr:W8LS18397 ;
+        :workIsAbout        bdr:WA19723 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1EE32 {
+    bda:LG0CD189FC0304264D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-02-26T15:18:42.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3D377C15C88C507A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:51:10.761Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:LG6E32EC617F66C4AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-04T15:06:01.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# as sog yig chos dpe & CW#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEF18718F1AC80C43
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T15:14:42.825Z"^^xsd:dateTime ;
+        adm:logMessage      "first publish"@en ;
+        adm:logWho          bdu:U00034 .
+
+    bda:WA1EE32  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1EE32 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3f/WA1EE32.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1EE32 ;
+        adm:logEntry        bda:LG0CD189FC0304264D , bda:LG3D377C15C88C507A , bda:LG6E32EC617F66C4AE , bda:LGEF18718F1AC80C43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA466 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR8107C9FF4AC89772
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1EE32  a          :Work ;
+        skos:altLabel       "mnyam med tsong kha pa chen pos mdzad pa'i byang chub lam rim chen mo bzhugs so/"@bo-x-ewts , "yeke mor-un jerge"@mn-alalc97 ;
+        skos:prefLabel      "lam rim chen mo/(sog yig)"@bo-x-ewts , "sacalal ugei yeke congkapa-yin jokiyal yeke bodi mor-un jerge orusiba"@mn-alalc97 ;
+        :catalogInfo        "Tsongkhapa's Lamrim Chenmo in Mongolian language"@en ;
+        :creator            bdr:CR8107C9FF4AC89772 ;
+        :isRoot             true ;
+        :language           bdr:LangMn ;
+        :workGenre          bdr:T238 ;
+        :workIsAbout        bdr:WA466 .
+}

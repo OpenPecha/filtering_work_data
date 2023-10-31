@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS22428 {
+    bda:LG00250BB60A6322C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-25T16:01:12.859Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG1A424284F9695E17
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-25T16:02:14.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS22428  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS22428 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e2/WA8LS22428.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS22428 ;
+        adm:logEntry        bda:LG00250BB60A6322C3 , bda:LG1A424284F9695E17 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C9302ADBB17457E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P825 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA5EC7FE31DA7F9B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2666 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS22428  a       :Work ;
+        skos:altLabel       "shes rab snying po'i rnam bshad chos 'khor dwogs gcod/"@bo-x-ewts ;
+        skos:prefLabel      "shes rab snying po'i rnam bshad dang chos 'khor dwogs gcod/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of the Heart sutra and key points concerning the turning of the whelel of dharma."@en ;
+        :creator            bdr:CR9C9302ADBB17457E , bdr:CRA5EC7FE31DA7F9B8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2023 , bdr:T61 ;
+        :workHasInstance    bdr:MW8LS22428 , bdr:W8LS22428 ;
+        :workIsAbout        bdr:T308 , bdr:WA22339 .
+}

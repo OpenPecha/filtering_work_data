@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2984 {
+    bda:LG0EA0AC8855FE3536
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG7125D690755996C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-14T11:23:12.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2984"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2984  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2984 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/WA1NLM2984.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2984 ;
+        adm:logEntry        bda:LG0EA0AC8855FE3536 , bda:LG7125D690755996C3 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2984  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal dam tshig rdo rje'i byabs khrus chu dwangs nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chung sri mnan nam lcags thog phebs/ 2 dkor sgrib sbyong thabs zab mo brul gtor gtong tshul 'khyer bde/ 3 lus ngag yid gsum bcings pa las grol bar byed pa'i gzungs/ 4 rkong rtse'i byang chub sems dpa' gsol mchod/ 5 sgrol ma'i sgo nas 'bras bu 'bod phogs 'dod bu 'bugs/ 6 rdo rje sems dpa'i khrus tshul/ 7 btsan gyi tshogs la bsangs mchod 'bul tshul gnod tshe zhi byed/ 8 rta thugs dkar po bsangs mchod/ 9 mi 'khrugs pa'i sgo nas sgrib sbyong bya tshul bdud rtsi'i chu rgyun/ 10 dmigs brtse ma dar lcog/ dam can rdor legs kyi dar lcog 11 'brul gtor bsang pa'i mdo/ 12 byin rlabs mchog stsol ma/ 13 rnga mong gi srog glud rin chen gser gyi ka ba/ 14 pha me dur sa gsol mchod mtshun lha/ 15 mnol bsangs kyi grib sel bcos thabs/ 16 dpal ldan lha mo re ma ti 'chi bslu gtsang ma/ 17 mi kha dgra bzlog sogs bcos thabs/ 18 mi kha khrom bsgyur/ 19 sa chu me rlung sA ts+tsha 'debs pa'i gsal byed legs tshgos lhun grub/"@en , "Purification ritual of Damtshik Dorjee by author signed as Bhusukuwa Sumati mangala; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2984 , bdr:W1NLM2984 ;
+        :workIsAbout        bdr:T1447 , bdr:T876 .
+}

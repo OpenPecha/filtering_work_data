@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24032 {
+    bda:LG350F1C014B159D22
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-07T12:15:46.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5F8C71EB805B558F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-01T11:30:52.986Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG99075647ADC5B96A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:WA1KG24032  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24032 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/WA1KG24032.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24032 ;
+        adm:logEntry        bda:LG350F1C014B159D22 , bda:LG5F8C71EB805B558F , bda:LG99075647ADC5B96A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4E678B82D4585982
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24044 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7F0409938F8D816D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6971 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW1KG24032  skos:altLabel  "le avventure di pinocchio"@en , "木偶奇遇记"@zh-hans .
+
+    bdr:WA1KG24032  a       :Work ;
+        skos:altLabel       "shing byis/ phi nu'o tsha'o'i rtogs brjod/"@bo-x-ewts ;
+        skos:prefLabel      "shing byis/"@bo-x-ewts , "le avventure di pinocchio"@en , "木偶奇遇记"@zh-hans ;
+        :catalogInfo        "Translation of Le avventure di Pinocchio by Carlo Collodi, 1826-1890."@en ;
+        :creator            bdr:CR4E678B82D4585982 , bdr:CR7F0409938F8D816D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T257 ;
+        :workHasInstance    bdr:MW1KG24032 , bdr:W1KG24032 .
+}

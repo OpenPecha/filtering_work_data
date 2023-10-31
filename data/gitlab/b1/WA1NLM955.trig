@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM955 {
+    bda:LG82F5637553B64383
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG8CB0A4429B888DFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-23T13:37:46.588Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC0905128F08061D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T16:54:09.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF2FF8CF940DD2181
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:07:28.776Z"^^xsd:dateTime ;
+        adm:logMessage      "add CW-W4CZ369314"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM955"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM955  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM955 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b1/WA1NLM955.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM955 ;
+        adm:logEntry        bda:LG82F5637553B64383 , bda:LG8CB0A4429B888DFA , bda:LGC0905128F08061D1 , bda:LGF2FF8CF940DD2181 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM955  a        :Work ;
+        skos:prefLabel      "bla ma mchod pa'i khrid yig yid ches brgyud ldan zab gsal snying po rjen par byung ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Manual of instructions of guru yoga practice, Torma and petition offerings to deities, thread-cross ritual and reversing the sickness and death."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 , bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM955 , bdr:W1NLM955 ;
+        :workIsAbout        bdr:T249 , bdr:WA4CZ369314 .
+}

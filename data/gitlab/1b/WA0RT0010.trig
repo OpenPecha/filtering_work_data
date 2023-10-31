@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT0010 {
+    bda:WA0RT0010  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT0010 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:ID1984B1_WA0RT0010
+        a                   bdr:RefrKTsT ;
+        rdf:value           "10" .
+
+    bdr:ID830A13_WA0RT0010
+        a                   bdr:RefrKTsK ;
+        rdf:value           "1110" .
+
+    bdr:WA0RT0010  a        :Work ;
+        skos:altLabel       "chos kyi dbyings su bstod pa/"@bo-x-ewts , "dharmadhātustava"@sa-x-iast , "Nāgārjuna" ;
+        skos:prefLabel      "chos kyi dbyings su bstod pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1984B1_WA0RT0010 , bdr:ID830A13_WA0RT0010 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1KG13126_2010 , bdr:MW1KG13607_0244 , bdr:MW1KG13607_0394 , bdr:MW1PD95844_0010 , bdr:MW22704_0799 , bdr:MW23702_0010 , bdr:MW23703_1118 , bdr:MW2KG5015_0799 ;
+        :workHasParallelsIn  bdr:WA0RTI0010 ;
+        :workIsAbout        bdr:T2194 ;
+        owl:sameAs          <http://purl.rkts.eu/resource/WKT1110> , <http://purl.rkts.eu/resource/WTT0010> .
+}

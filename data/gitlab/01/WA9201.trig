@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9201 {
+    bda:LG689E5CCFAEC47EFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG6A9F32BB7E797307
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE9F36828861A9B1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-05T16:34:40.304Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA9201  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9201 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/WA9201.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9201 ;
+        adm:logEntry        bda:LG689E5CCFAEC47EFC , bda:LG6A9F32BB7E797307 , bda:LGE9F36828861A9B1A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR29FB2049E6601D4C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P669 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW9201  skos:altLabel  "klon gsal mkha' 'gro snin thig : a cycle of revelations of a sadhana focussing upon the dakini"@en-x-mixed .
+
+    bdr:WA9201  a           :Work ;
+        skos:prefLabel      "klong gsal mkha' 'gro snying thig"@bo-x-ewts , "klon gsal mkha' 'gro snin thig : a cycle of revelations of a sadhana focussing upon the dakini"@en-x-mixed ;
+        :catalogInfo        "Longsal Kandro Nyingtik. Cycle of revelations by Rongton Pema Dechen Lingpa (1663-1713). Influential in the century before Jigme Lingpa. Manuscript reproduced from Ladakha."@en ;
+        :creator            bdr:CR29FB2049E6601D4C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW9201 , bdr:W9201 ;
+        :workIsAbout        bdr:T1082 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30523 {
+    bda:LG3E601F32EF68B5CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T12:47:56.984Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD36AB0213611D257
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGEA294630FF7C269D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-02T15:13:49.024Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF5E6E28D9B183E6F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA30523  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30523 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "bf/WA30523.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30523 ;
+        adm:logEntry        bda:LG3E601F32EF68B5CB , bda:LGD36AB0213611D257 , bda:LGEA294630FF7C269D , bda:LGF5E6E28D9B183E6F , bda:LGIM8F5AC89D , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE8613F6813A5F5B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW30523  skos:altLabel  "藏医后续释难明鉴"@zh-hans .
+
+    bdr:WA30523  a          :Work ;
+        skos:altLabel       "bdud rtsi snying bo yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu bzhi ba phyi ma'i rgyud kyi mchan 'grel bka' phreng mun sel sgron me/"@bo-x-ewts , "zang yi hou xu shi nan ming jian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "phyi ma rgyud kyi mchan 'grel bka' phreng mun sel sgron me/"@bo-x-ewts , "藏医后续释难明鉴"@zh-hans ;
+        :catalogInfo        "Annotated commentary on the fourth of the Four Medical Ttantras."@en ;
+        :creator            bdr:CRE8613F6813A5F5B8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW30523 , bdr:W30523 ;
+        :workIsAbout        bdr:T85 , bdr:WA25390 .
+}

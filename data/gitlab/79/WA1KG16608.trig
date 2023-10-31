@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16608 {
+    bda:LG40C70AE7221270A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-01-29T13:40:23.784Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG69FAC0B263587BC3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-01-29T13:46:34.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD2961C4225A2D0A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16608  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16608 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "79/WA1KG16608.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16608 ;
+        adm:logEntry        bda:LG40C70AE7221270A6 , bda:LG69FAC0B263587BC3 , bda:LGD2961C4225A2D0A5 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9CC14FA4E8C49755
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16608  skos:altLabel  "劝亲友和弟子书本注"@zh-hans .
+
+    bdr:WA1KG16608  a       :Work ;
+        skos:altLabel       "gangs can rig brgya'i sgo 'byed lde mig (deb nyer gcig pa/)"@bo-x-ewts , "quan qin you he di zi shu ben zhu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bshes springs dang slob springs kyi rtsa 'grel/"@bo-x-ewts , "劝亲友和弟子书本注"@zh-hans ;
+        :catalogInfo        "Commentaries on Nagarjuna's Letter to a Friend and Chandragomin's Shisyalekha."@en ;
+        :creator            bdr:CR9CC14FA4E8C49755 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG16608 , bdr:W1KG16608 ;
+        :workIsAbout        bdr:WA22950 , bdr:WA4CZ16844 .
+}

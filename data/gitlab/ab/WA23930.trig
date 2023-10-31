@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23930 {
+    bda:LG49F1E96D4C25B80A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGB8371524C5C6416D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-18T11:34:16.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL12"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LGD5A8597659050576
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23930  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23930 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ab/WA23930.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23930 ;
+        adm:logEntry        bda:LG49F1E96D4C25B80A , bda:LGB8371524C5C6416D , bda:LGD5A8597659050576 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23930  skos:altLabel  "mnam med sen ge dgu tshar gyi bka' 'bum : collected writings on experiences and instights into buddist realization by the early masters of the rwa-lung of 'brug-pa dkar-brgyud-pa tradition"@en-x-mixed .
+
+    bdr:WA23930  a          :Work ;
+        skos:altLabel       "seng+ge dgu tshar gyi bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "mnyam med seng+ge dgu tshar gyi bka' 'bum/"@bo-x-ewts , "mnam med sen ge dgu tshar gyi bka' 'bum : collected writings on experiences and instights into buddist realization by the early masters of the rwa-lung of 'brug-pa dkar-brgyud-pa tradition"@en-x-mixed ;
+        :catalogInfo        "Writings of early masters of the Drukpa Kagyu order. Reproduced from the single surviving volume of a unique manuscript preserved in the library of Hemis Monastery."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW23930 , bdr:W23930 ;
+        :workIsAbout        bdr:T816 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25285 {
+    bda:LG30D937E9A773F02B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T15:12:35.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6FDEC9B96A9D139B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-05T12:33:17.823Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25285  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25285 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "75/WA1KG25285.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25285 ;
+        adm:logEntry        bda:LG30D937E9A773F02B , bda:LG6FDEC9B96A9D139B , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR543E5FBB4EE0C3D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRC5342D98B703FA74
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG25285  a       :Work ;
+        skos:prefLabel      "grub don sa gsum dang mdzod kyi sdoms tshig sogs/"@bo-x-ewts ;
+        :catalogInfo        "Presentation on various topics such as tenets, the contents of Abhisamayalamkara, the paths and the bhumis and summary of abhidharmakosha."@en ;
+        :creator            bdr:CR543E5FBB4EE0C3D4 , bdr:CRC5342D98B703FA74 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T385 ;
+        :workHasInstance    bdr:MW1KG25285 , bdr:W1KG25285 ;
+        :workIsAbout        bdr:T1091 , bdr:T2025 , bdr:T59 .
+}

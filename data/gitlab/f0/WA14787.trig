@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA14787 {
+    bda:LG593D9A34A4BDC725
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA14787  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA14787 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f0/WA14787.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA14787 ;
+        adm:logEntry        bda:LG593D9A34A4BDC725 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR342E1A57077AC016
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2666 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV77BE33C2E6FDAF88
+        a                   :CompletedEvent ;
+        :onYear             "1612"^^xsd:gYear .
+
+    bdr:WA14787  a          :Work ;
+        skos:altLabel       "thub pa'i bstan pa srung ba'i dpal ye shes kyi mgon po brgyad kyi zhal nye bar blta ba'i man ngag log 'dren tshar gcod dngos grub stsol ba'i nor bu dgos 'dod kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "mgon po brgyad kyi zhal nyer blta ba'i man ngag"@bo-x-ewts ;
+        :creator            bdr:CR342E1A57077AC016 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV77BE33C2E6FDAF88 ;
+        :workHasInstance    bdr:MW14787 .
+}

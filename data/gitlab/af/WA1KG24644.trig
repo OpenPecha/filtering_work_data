@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24644 {
+    bda:LG1B6E43FE2A5B8727
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-30T10:52:59.027Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD370096A53C72659
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T14:40:27.006Z"^^xsd:dateTime ;
+        adm:logMessage      "temporary released fro scanning"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDE9FF3C43954CF6D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T09:50:04.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG24644  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24644 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "af/WA1KG24644.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24644 ;
+        adm:logEntry        bda:LG1B6E43FE2A5B8727 , bda:LGD370096A53C72659 , bda:LGDE9FF3C43954CF6D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCC922332D5E6290E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3312 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24644  a       :Work ;
+        skos:altLabel       "phung po gzan sgyur gyi rnam bshad gcod kyi don gsal byed/"@bo-x-ewts ;
+        skos:prefLabel      "ma cig lab sgron gyi gcod kyi 'khrid yig"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary of the teaching of Chod practice."@en ;
+        :creator            bdr:CRCC922332D5E6290E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1KG24644 , bdr:W1KG24644 ;
+        :workIsAbout        bdr:T194 .
+}

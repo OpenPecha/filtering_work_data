@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS18127 {
+    bda:LG2CC282687E76DC24
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG570E26FE2F82DEAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T12:29:20.039Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA03B915538298CCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-17T15:54:09.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and titiles"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGD9C72BAE3615885F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-28T12:30:34.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS18127  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS18127 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e9/WA8LS18127.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS18127 ;
+        adm:logEntry        bda:LG2CC282687E76DC24 , bda:LG570E26FE2F82DEAE , bda:LGA03B915538298CCA , bda:LGD9C72BAE3615885F , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR12153FE179FAA076
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS18127  a       :Work ;
+        skos:altLabel       "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol ba'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi sgrub thabs rgyas pa/"@bo-x-ewts ;
+        :catalogInfo        "Hayagriva Sadhana according to Kergang tradition."@en ;
+        :creator            bdr:CR12153FE179FAA076 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS18127 , bdr:W8LS18127 ;
+        :workIsAbout        bdr:T50 .
+}

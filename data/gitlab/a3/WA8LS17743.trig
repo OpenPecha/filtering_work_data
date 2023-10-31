@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17743 {
+    bda:LG1A454756D06DC89F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-01T09:46:18.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDCE1C13EE70E4B47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGFA925B5A73193A0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-01T09:44:53.753Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS17743  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17743 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a3/WA8LS17743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17743 ;
+        adm:logEntry        bda:LG1A454756D06DC89F , bda:LGDCE1C13EE70E4B47 , bda:LGFA925B5A73193A0D , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR07A400BA6652758D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2388 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW8LS17743  skos:altLabel  "Candravyakarana"@sa-x-ndia .
+
+    bdr:WA8LS17743  a       :Work ;
+        skos:prefLabel      "lung ston pa tsan+dra pa'i mdo/"@bo-x-ewts , "Candravyakarana"@sa-x-ndia ;
+        :catalogInfo        "Root text of sanskrit grammar Candravyakarana translated into Tibetan by Lotsava Jangchub Tsemo."@en ;
+        :creator            bdr:CR07A400BA6652758D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1TLMTGA001113 , bdr:MW8LS17743 , bdr:W8LS17743 ;
+        :workIsAbout        bdr:T282 , bdr:WA29781 .
+}

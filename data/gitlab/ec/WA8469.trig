@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8469 {
+    bda:LG0D4F589E7976472E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG187B04CE8098316B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-07T15:06:40.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG666CF7B28B35DA79
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T09:26:57.873Z"^^xsd:dateTime ;
+        adm:logMessage      "addded print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAEBD894E3BECEC64
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-12T20:11:22.097Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGD38B3988524C6344
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-12T20:09:03.717Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFE30301A6444A74A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-06-13T09:33:35.953Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8469  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8469 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "ec/WA8469.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8469 ;
+        adm:logEntry        bda:LG0D4F589E7976472E , bda:LG187B04CE8098316B , bda:LG666CF7B28B35DA79 , bda:LGAEBD894E3BECEC64 , bda:LGD38B3988524C6344 , bda:LGFE30301A6444A74A , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR38F512ED7F4A287C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P431 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW8469  skos:altLabel  "a commentary on the vinayakarika of visakhadeva"@en .
+
+    bdr:WA8469  a           :Work ;
+        skos:altLabel       "'dul ba me tog phreng rgyud kyi rnam 'grel tshig don rab tu gsal ba'i nyi 'od/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba me tog phreng rgyud kyi rnam 'grel tshig don rab gsal nyi 'od/"@bo-x-ewts , "a commentary on the vinayakarika of visakhadeva"@en ;
+        :catalogInfo        "Commentary on the Vinayakarika of Visakhadeva."@en ;
+        :creator            bdr:CR38F512ED7F4A287C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8469 , bdr:W8469 ;
+        :workIsAbout        bdr:T55 , bdr:WA23389 .
+}

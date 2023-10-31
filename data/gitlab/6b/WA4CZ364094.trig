@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ364094 {
+    bda:LG75638A7920935689
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:06:28.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG7E526D86C516A540
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T12:35:18.079Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ364094  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ364094 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6b/WA4CZ364094.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ364094 ;
+        adm:logEntry        bda:LG75638A7920935689 , bda:LG7E526D86C516A540 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8B8A9BB47DAC479B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG16700 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ364094  a      :Work ;
+        skos:prefLabel      "gzan sham gyon pa'i g.yg rwa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of essays written by Cone Yumtsering"@en ;
+        :creator            bdr:CR8B8A9BB47DAC479B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1884 ;
+        :workHasInstance    bdr:MW4CZ364094 , bdr:W4CZ364094 .
+}

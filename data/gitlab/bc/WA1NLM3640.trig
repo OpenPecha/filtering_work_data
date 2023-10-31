@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3640 {
+    bda:LG3EF9BA1D6EACFEEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T16:05:11.044Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3640"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3640  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3640 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bc/WA1NLM3640.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3640 ;
+        adm:logEntry        bda:LG3EF9BA1D6EACFEEF , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0EC62121F0EEE6F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6418 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3640  a       :Work ;
+        skos:altLabel       "mkhan chen chos kyi rgyal po'i gsung 'bum las bla ma mchod pa'i 'khrid dngos grub kyi char 'bebs/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma mchod pa'i 'khrid dngos grub kyi char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the practice of the gurupuja of the Wensa Nyangyue tradition; based upon the Lama Choepa Detong Yermema and other related texts in Geluk orrder."@en ;
+        :creator            bdr:CR0EC62121F0EEE6F9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3640 , bdr:W1NLM3640 ;
+        :workIsAbout        bdr:T11MS11 , bdr:WA4CZ369314 .
+}

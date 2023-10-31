@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG1869 {
+    bda:LG90C7CF77E4E8542B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-04-06T11:04:04.521Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC01627BE956208DC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-04-06T11:05:54.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG1869  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG1869 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e3/WA1KG1869.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG1869 ;
+        adm:logEntry        bda:LG90C7CF77E4E8542B , bda:LGC01627BE956208DC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR211768C45D4C5CB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P139 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG1869  skos:altLabel  "jue nang shan ju fa . liao yi hai lun"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA1KG1869  a        :Work ;
+        skos:altLabel       "ri chos nges don rgya mtsho zhes bya ba mthar thug thun mong ma yin pa'i man ngag"@bo-x-ewts ;
+        skos:prefLabel      "ri chos nges don rgya mtsho/"@bo-x-ewts , "jue nang shan ju fa . liao yi hai lun"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Synthetic work on the zhentong philosophical view of emptiness by Jonang author, Dolpopa Sherab Gyaltsen (1292-1361). An anthology of sutra and tantra quotes. Considered a masterpiece of the Jonang order."@en ;
+        :creator            bdr:CR211768C45D4C5CB4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW00KG0638_7AA3E3 , bdr:MW1KG1869 , bdr:MW1KG89192 , bdr:MW23817 , bdr:MW2DB4612 , bdr:MW8LS23993 , bdr:W1KG1869 , bdr:W1KG89192 , bdr:W23817 , bdr:W2DB4612 , bdr:W8LS23993 ;
+        :workIsAbout        bdr:T1109 , bdr:T1169 , bdr:T360 .
+}

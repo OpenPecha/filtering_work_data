@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32703 {
+    bda:LG0018A0E4086650F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T16:29:25.682Z"^^xsd:dateTime ;
+        adm:logMessage      "created work title"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG69077EDBFBB3A1EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-08T16:11:32.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG715EEBB0863B3792
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8B05234D0820A356
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T16:12:07.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32703  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32703 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "04/WA8LS32703.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32703 ;
+        adm:logEntry        bda:LG0018A0E4086650F0 , bda:LG69077EDBFBB3A1EB , bda:LG715EEBB0863B3792 , bda:LG8B05234D0820A356 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS32703  a       :Work ;
+        skos:prefLabel      "snyan brgyud shog dril dgu pa srid rgyal dpon g.yog gi sgrub thabs dgra srog gcod pa'i spu gri/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of Sridgyal."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS32703 , bdr:W8LS32703 ;
+        :workIsAbout        bdr:T247 .
+}

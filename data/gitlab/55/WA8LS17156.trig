@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17156 {
+    bda:LG2F8476E53D9E4A2C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-26T09:43:53.96Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG778DA9AAF6BBE947
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-26T09:42:27.506Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB8C638C107126786
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS17156  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17156 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "55/WA8LS17156.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17156 ;
+        adm:logEntry        bda:LG2F8476E53D9E4A2C , bda:LG778DA9AAF6BBE947 , bda:LGB8C638C107126786 , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS17156  a       :Work ;
+        skos:altLabel       "bla ma'i thugs sgrub bar chad kun sel lasHdngos grub rgya mtsho'i cha lagHgzhi bdag rten la bkol ba dang bla ma drag po'i rgyun khyer/"@bo-x-ewts ;
+        skos:prefLabel      "gzhi bdag rten la bkol ba dang bla ma drag po'i rgyun khyer/"@bo-x-ewts ;
+        :catalogInfo        "A reverential petition of object of local deity and prayer of wrathful guru; author unknown."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17156 , bdr:W8LS17156 ;
+        :workIsAbout        bdr:T2471 , bdr:T408 , bdr:T544 .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD914 {
+    bda:LG27D5D159B63092C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBFFFE5B748D9D8F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-25T14:39:59.246Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF42BC8865A46FDE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T09:53:13.733Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD914  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD914 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b2/WA4PD914.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD914 ;
+        adm:logEntry        bda:LG27D5D159B63092C2 , bda:LGBFFFE5B748D9D8F4 , bda:LGF42BC8865A46FDE1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4PD914  a         :Work ;
+        skos:prefLabel      "bsang gzhung bkra shis 'khyil ba sogs bsang yig skor/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for burning fragrant substances."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4PD914 , bdr:W4PD914 ;
+        :workIsAbout        bdr:T173 .
+}

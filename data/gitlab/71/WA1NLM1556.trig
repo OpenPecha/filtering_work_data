@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1556 {
+    bda:LGB0330FA3C8C9D7F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGCCBB5619A1E039F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-06T11:02:10.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1556"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1556  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1556 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "71/WA1NLM1556.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1556 ;
+        adm:logEntry        bda:LGB0330FA3C8C9D7F8 , bda:LGCCBB5619A1E039F2 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1556  a       :Work ;
+        skos:prefLabel      "bla ma'i bka' drin dran nas gsol ba 'debs shing thugs rje bskul ba grub pa'i sprin sgra sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mkhan chen chos kyi rgyal po blo bzang dbang chen dpal 'bar dpal bzang po'i 'khrungs rabs gsol 'debs rnams/ 2 chos kyi rgyal po btsong kha pa chen po la gsang ba'i rnam thar gyi sgo nas gsol ba 'debs tshul dang / shar gangs ri ma/ 3 thams cad mkhyen pa blo bzang rgya mtsho'i dpal gyi zhal snga nas la skyes rabs kyi sgo nas gsol ba 'debs pa/ 4 mkhan chen no mi han gyi sprul sku'i zhabs brtan gsol 'debs bsam don lhun grub/ 5 chos sde che chung rnams su gsung ba'i chos spyod kyi rim pa blo gsal mgul brgyan/ 6 srid zhi yongs kyi gtsug rgyan skyabs mgon 7rgyal dbang thams cad mkhyen gzigs chen po'i zhabs brtan gsol 'debs 'dod don lhun grub dge legs bye ba'i gter mdzod/ 7 chos skyong spyi dang / dmag zor ma dang / be gtse rnams kyi gtor 'bul dang / gzhi bdag gtor ma btang tshul rnams/ 8 gnod sbyin chen po rdo rje bdud 'dul gyi bskang gso'i rim pa bar chad kun sel/ 9 bla ma'i rnal 'byor gyi gsol 'debs/ lam rim nyams mgur/ dus bstun gyi gsol 'debs rnams/ 10 tshe sgrub zab mo 'chi bdag 'joms pa'i dpa' bo/ 11 rje btsun dam pa blo bzang bstan pa'i sgron me'i gsol 'debs dang / rje de nyid kyi 'khrungs rabs gsol 'debs/ 12 phun tshogs sku gsum go 'phang mchog brnyes kyang / 13 phun sum tshogs pa b+haM ga la yi yul/ 14 chos kyi rgyal po btsong kha pa chen po la gsang ba'i rnam thar gyi sgo nas gsol ba 'debs tshul dang / shar gangs ri ma/ 15 'phags pa bzang po spyod pa'i smon lam kyi rgyal po/ 16 dge ldan lugs bzang rgyas pa'i smon lam grub pa'i bden tshig"@en , "A collection of reverential petition and exhortation of guru; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW1NLM1556 , bdr:W1NLM1556 ;
+        :workIsAbout        bdr:T1736 .
+}

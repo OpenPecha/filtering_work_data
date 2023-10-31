@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16977 {
+    bda:LG3F6017B6EC6F73CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-11T15:06:08.753Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG42B3F39FFB46DEC9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-11T15:11:05.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16977  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16977 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "98/WA8LS16977.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16977 ;
+        adm:logEntry        bda:LG3F6017B6EC6F73CE , bda:LG42B3F39FFB46DEC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4785D55CFAD0D605
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2589 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16977  a       :Work ;
+        skos:prefLabel      "bar du dge ba'i khrid/"@bo-x-ewts ;
+        :catalogInfo        "An instructional manual for preliminary practice of six session yoga by Yumo Mikyod Dorje."@en ;
+        :creator            bdr:CR4785D55CFAD0D605 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW8LS16977 , bdr:W8LS16977 ;
+        :workIsAbout        bdr:T1254 , bdr:T360 .
+}

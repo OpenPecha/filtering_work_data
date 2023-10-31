@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29365 {
+    bda:LG7871788B6C18BF6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-22T16:04:47.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBCA41222BDC518A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-22T14:37:35.789Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBEAD30CBAF056FEB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-07T09:13:06.004Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD9FA5CE18B956540
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NGMPP"@en ;
+        adm:logWhoStr       "add-works-to-PR1NGMPP00" .
+
+    bda:LGE495E7E56E95638D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-07T09:14:05.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29365  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29365 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0e/WA8LS29365.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29365 ;
+        adm:logEntry        bda:LG7871788B6C18BF6B , bda:LGBCA41222BDC518A3 , bda:LGBEAD30CBAF056FEB , bda:LGD9FA5CE18B956540 , bda:LGE495E7E56E95638D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR104C9CE7BD26CE36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5340 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29365  a       :Work ;
+        skos:altLabel       "u rgyan gu ru rin po che'i rnam thar rgyas pa gser gyi phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "bka' thang gser phreng ma/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Padmasambhava, rediscovered by Terton Sangye Lingpa."@en ;
+        :creator            bdr:CR104C9CE7BD26CE36 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS29365 , bdr:W8LS29365 ;
+        :workIsAbout        bdr:P4956 .
+}

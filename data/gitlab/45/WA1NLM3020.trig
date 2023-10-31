@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3020 {
+    bda:LG25B7C3C56FA254E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGA507DAB308D088D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-04T10:14:25.709Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3020"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3020  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3020 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "45/WA1NLM3020.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3020 ;
+        adm:logEntry        bda:LG25B7C3C56FA254E0 , bda:LGA507DAB308D088D0 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3020  a       :Work ;
+        skos:prefLabel      "ku ru kul+le'i bdag 'jug sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos kyi rgyal po btsong kha ba chen po la gsang ba'i rnam thar gyi sgo nas gsol ba 'debs tshul/ 2 rten 'brel bstod pa legs bshad snying po/ 3 lam rim gsol 'debs lam mchog sgo 'byed/ 4 tshogs bdag dang khol mo kun d+ha la'i sgrub thabs/ 5 rgyal ba'i yum mchog rje btsun sgrol ma dkar mo la bstod pa tshe dang ye shes spel par byed pa'i rin po che/ 6 ngan song sbyong ba'i gzungs sde lnga'i 'don thabs/ 7 tshe lha rnam gsum gyi mngon rtogs/ 8 mgon po sogs chos skyong gi rigs la rten rdzas su dmigs te/ rta g.yag ra lug bya khyi sogs 'bul bar 'dod pa/ 9 dang po gcod la yum gyi bsnyen pa bskyed pa'i tshul zab mo/"@en , "Self generation of Kurekule by author signes as Gelong Jampal; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T457 ;
+        :workHasInstance    bdr:MW1NLM3020 , bdr:W1NLM3020 ;
+        :workIsAbout        bdr:T00AG0325 .
+}

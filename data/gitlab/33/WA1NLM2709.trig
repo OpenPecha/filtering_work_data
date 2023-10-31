@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2709 {
+    bda:LGAE490E40D0CA95CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-07T09:28:34.97Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCF594DA5F3A813E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T10:37:45.859Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF3D925C05B2A5709
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2709"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2709  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2709 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "33/WA1NLM2709.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2709 ;
+        adm:logEntry        bda:LGAE490E40D0CA95CC , bda:LGCF594DA5F3A813E4 , bda:LGF3D925C05B2A5709 , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF2FBDA90EAA2AC90
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2709  a       :Work ;
+        skos:altLabel       "khri chen rdo rje 'chang chen pos bde lam stsal skabs kyi gsung bshad zin bris skal bzang pad+mo gsar du bzhad pa'i nyin byed/"@bo-x-ewts ;
+        skos:prefLabel      "bde lam stsal skabs kyi gsung bshad zin bris skal bzang pad+mo gsar du bzhad pa'i nyin byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "Notes written by Gyalwang Choeje Lobsang Trinle Namgyal andLObsang Jamyang on the lectures ofRadreng Tritul on the Delam instruction on the Lamrim chenmo; written at Gadhen Samtanling and other miscellaneous texts."@en ;
+        :creator            bdr:CRF2FBDA90EAA2AC90 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2709 , bdr:W1NLM2709 .
+}

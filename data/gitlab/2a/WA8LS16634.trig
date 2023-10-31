@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16634 {
+    bda:LG988AA2B43C673D0A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-07-06T11:49:05.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA38D6B4D17349034
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-06T11:47:55.19Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB6A136D300084DB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T11:47:13.228Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE40B471CC43605FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:47:19.765Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA8LS16634  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16634 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2a/WA8LS16634.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16634 ;
+        adm:logEntry        bda:LG988AA2B43C673D0A , bda:LGA38D6B4D17349034 , bda:LGB6A136D300084DB8 , bda:LGE40B471CC43605FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRF381508107DFD5D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7966 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16634  a       :Work ;
+        skos:altLabel       "man ngag zab don snying po'i bsdus don dang rdzogs pa chen po'i man ngag zab don snying po mun sel dpal gyi sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs chen man ngag zab don mun sel sgron me dang de'i bsdus don/"@bo-x-ewts ;
+        :catalogInfo        "A summary and instructional manual of the great perfection by Dong Jadrel Sonam Dondrup."@en ;
+        :creator            bdr:CRF381508107DFD5D6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 , bdr:T2398 ;
+        :workHasInstance    bdr:MW8LS16634 , bdr:W8LS16634 ;
+        :workIsAbout        bdr:T354 .
+}

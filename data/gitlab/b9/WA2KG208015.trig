@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG208015 {
+    bda:LG16FCBA4618CFD62D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG620FFD0C1B6AF767
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-18T14:58:47.873Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA5FD3BA2DEECDA47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-18T14:55:46.064Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD15157CA26967F0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-28T15:15:38.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG208015  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG208015 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b9/WA2KG208015.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG208015 ;
+        adm:logEntry        bda:LG16FCBA4618CFD62D , bda:LG620FFD0C1B6AF767 , bda:LGA5FD3BA2DEECDA47 , bda:LGD15157CA26967F0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG208015  a      :Work ;
+        skos:altLabel       "gangs can dol po khul gyi ris med kyi bstan 'dzin skyes chen dam pa rnams kyi rnam thar phyogs gcig tu bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "dol po khul du bka' drin can gyi dam pa gong ma'i rnam thar phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of biographies of the great masters from Dolpo area."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2KG208015 , bdr:W2KG208015 ;
+        :workIsAbout        bdr:G2084 , bdr:T1754 .
+}

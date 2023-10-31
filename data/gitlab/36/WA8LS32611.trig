@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32611 {
+    bda:LG3C243EDEB492F8EA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-24T11:30:27.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC47B6C3B344EBFCA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-24T11:29:24.585Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGE2AD7AEECD75D5A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA8LS32611  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32611 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "36/WA8LS32611.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32611 ;
+        adm:logEntry        bda:LG3C243EDEB492F8EA , bda:LGC47B6C3B344EBFCA , bda:LGE2AD7AEECD75D5A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM593 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR3993BB7AE077F4AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR514144A344E79560
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE07175F7EDC2C051
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA8LS32611  a       :Work ;
+        skos:prefLabel      "chos mngon pa mdzod/"@bo-x-ewts ;
+        :catalogInfo        "A root text of Abhidharmakosha by Vasubandhu."@en ;
+        :creator            bdr:CR3993BB7AE077F4AB , bdr:CR514144A344E79560 , bdr:CRE07175F7EDC2C051 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T59 .
+}

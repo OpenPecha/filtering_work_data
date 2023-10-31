@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM388 {
+    bda:LGD4E06B786E19BD3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-03T14:46:35.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEF584CC783FCDCF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGFAFC21AF2A80BC28
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-09T15:13:09.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM388"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM388  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM388 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/WA1NLM388.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM388 ;
+        adm:logEntry        bda:LGD4E06B786E19BD3E , bda:LGEF584CC783FCDCF8 , bda:LGFAFC21AF2A80BC28 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM388  a        :Work ;
+        skos:prefLabel      "'phongs sel sgrol ma'i maN+Dal bzhi pa'i bum sgrub rgyun 'dzin srid gzhi'i dpal 'gugs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Vessel burial ritual on the basis of four mandala Tara and other text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM388 , bdr:W1NLM388 ;
+        :workIsAbout        bdr:T35 , bdr:T619 .
+}

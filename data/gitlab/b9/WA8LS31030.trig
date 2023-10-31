@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31030 {
+    bda:LG5A03A671D7CF1159
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-07T12:30:34.611Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected author"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6D78A87466149CDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG9354D571E5E5B39E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-12T09:01:25.664Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB64FD618BAB1005A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-12T09:02:42.223Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31030  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31030 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b9/WA8LS31030.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31030 ;
+        adm:logEntry        bda:LG5A03A671D7CF1159 , bda:LG6D78A87466149CDC , bda:LG9354D571E5E5B39E , bda:LGB64FD618BAB1005A , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB0DC927B7ADA97F0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS31030  a       :Work ;
+        skos:altLabel       "'jam mgon kong sprul blo gros mtha' yas kyi gsung 'bum rgya chen bka' mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "rgya chen bka' mdzod/"@bo-x-ewts ;
+        :catalogInfo        "The collected writings of Kongtrul Lodro Thaye in expanded version."@en ;
+        :creator            bdr:CRB0DC927B7ADA97F0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS31030 , bdr:W8LS31030 ;
+        :workIsAbout        bdr:T808 .
+}

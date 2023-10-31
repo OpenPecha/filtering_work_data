@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM540 {
+    bda:LG64152FF3D896D74F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-25T12:30:52.543Z"^^xsd:dateTime ;
+        adm:logMessage      "completed catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGABEE5917FC2D48EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD6B4165A9D206401
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T11:25:41.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM540"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM540  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM540 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "54/WA1NLM540.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM540 ;
+        adm:logEntry        bda:LG64152FF3D896D74F , bda:LGABEE5917FC2D48EE , bda:LGD6B4165A9D206401 , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8A06FF4B7340242A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM540  a        :Work ;
+        skos:altLabel       "so sor thar pa'i mdo'i rnam bshad gzhung don gsal ba'i nyi ma/"@bo-x-ewts ;
+        skos:prefLabel      "sor mdo'i rnam bshad gzhung don gsal ba'i nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Pratimoksasutra"@en ;
+        :creator            bdr:CR8A06FF4B7340242A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM540 , bdr:MW24769_02A209 , bdr:MW759_190366 , bdr:W1NLM540 ;
+        :workIsAbout        bdr:WA4CZ16817 .
+}

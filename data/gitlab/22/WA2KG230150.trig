@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG230150 {
+    bda:LG7426BE129995D041
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-12-17T13:17:10.493Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8CC654C2F9A28C5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-12-17T13:19:31.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG230150  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG230150 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "22/WA2KG230150.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG230150 ;
+        adm:logEntry        bda:LG7426BE129995D041 , bda:LG8CC654C2F9A28C5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR87FAD5B708CA6306
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG230190 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG230150  a      :Work ;
+        skos:altLabel       "stong pa nyi kyi lo zla/"@bo-x-ewts ;
+        skos:prefLabel      "snyan ngag phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of poetry written by Lopon Tenzin Chophel."@en ;
+        :creator            bdr:CR87FAD5B708CA6306 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW2KG230150 , bdr:W2KG230150 ;
+        :workIsAbout        bdr:T281 .
+}

@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12543 {
+    bda:LG5DB562CF88EE0FB4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-06-28T10:50:29.416Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG87C8D1EC4F0A6BD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG9D6ED8A812A8099B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-07-05T13:59:27.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDFD38222EF63DC09
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-14T15:36:46.959Z"^^xsd:dateTime ;
+        adm:logMessage      "changed accessioned to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG12543  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12543 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "17/WA1KG12543.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12543 ;
+        adm:logEntry        bda:LG5DB562CF88EE0FB4 , bda:LG87C8D1EC4F0A6BD2 , bda:LG9D6ED8A812A8099B , bda:LGDFD38222EF63DC09 , bda:LGIM320307B99D , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRAF30D4CCCD289759
+        a                   :AgentAsCreator ;
+        :agent              bdr:P805 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG12543  skos:altLabel  "dpal sa skya'i mkha' spyod ma'i sgrub skor : a collection of sadhana practices focussing upon the realization of vajrayogini"@en .
+
+    bdr:WA1KG12543  a       :Work ;
+        skos:altLabel       "Sa skya paʼi lugs Mkhaʼ spyod maʼi sgrub skor :a collection of sādhana practices focussing upon the realization of Vajrayoginī /by Sa-skya-pa Goṅ-ma Kun-dgaʼ-blo-gros and other masters of the Sa-skya-pa tradition."@en-x-mixed ;
+        skos:prefLabel      "dpal sa skya'i mkha' spyod ma'i sgrub skor/"@bo-x-ewts , "dpal sa skya'i mkha' spyod ma'i sgrub skor : a collection of sadhana practices focussing upon the realization of vajrayogini"@en ;
+        :catalogInfo        "Collection of sadhana texts on the realization of Vajrayogini according to the Sakya order."@en ;
+        :creator            bdr:CRAF30D4CCCD289759 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG12543 , bdr:W1KG12543 ;
+        :workIsAbout        bdr:T1181 , bdr:T428 , bdr:T617 .
+}

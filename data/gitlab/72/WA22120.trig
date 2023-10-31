@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22120 {
+    bda:LGA63B7237135427AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-11T16:08:48.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGB7FE7256881BAFA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGDC12A3392F8B413E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-05T12:19:36.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added authorship statement and date of writing"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGF1F8A0167CDBE416
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-11T15:33:00.67Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00081 .
+
+    bda:LGF760C735E528FEF5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22120  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22120 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "72/WA22120.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22120 ;
+        adm:logEntry        bda:LGA63B7237135427AA , bda:LGB7FE7256881BAFA1 , bda:LGDC12A3392F8B413E , bda:LGF1F8A0167CDBE416 , bda:LGF760C735E528FEF5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC2AB5B35C4CF809D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7271 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV61F6AE1AB6C18A60
+        a                   :CompletedEvent ;
+        :eventWhen          "རྒྱལ་བ་ཞེས་པ་ཤིང་ཕོ་རྟའི་ལོ།སྒྲ་ཞུན་ཟླ་བའི་དཀར་པའི་ཕྱོགས་སུ་སྦྱར་བའི་ཡི་གེ་པ་ནི་ཀུན་དགའ་ཕན་དར་རོ༎"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:MW22120  skos:altLabel  "the autobiography of chos-skyabs-dpal-bzang, 1476-1565, of dol-po"@en .
+
+    bdr:WA22120  a          :Work ;
+        skos:prefLabel      "chos skyabs dpal bzang gi rnam thar/"@bo-x-ewts , "the autobiography of chos-skyabs-dpal-bzang, 1476-1565, of dol-po"@en ;
+        :catalogInfo        "Autobiography by Chokyab Pelzang, a master from the Dolpo region in northern Nepal."@en ;
+        :creator            bdr:CRC2AB5B35C4CF809D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV61F6AE1AB6C18A60 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW22120 , bdr:W22120 ;
+        :workIsAbout        bdr:P7271 .
+}

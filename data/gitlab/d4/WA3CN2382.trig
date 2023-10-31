@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN2382 {
+    bda:LG322C28E4D3ECD147
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-25T08:27:53.01Z"^^xsd:dateTime ;
+        adm:logMessage      "edited catainfo"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG3BF46C572D092CA2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-17T16:16:32.564Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5FFE8D7C9BC5B864
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF5BDB3CC816273A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-17T16:20:00.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN2382  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN2382 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d4/WA3CN2382.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN2382 ;
+        adm:logEntry        bda:LG322C28E4D3ECD147 , bda:LG3BF46C572D092CA2 , bda:LG5FFE8D7C9BC5B864 , bda:LGF5BDB3CC816273A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA17320 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRC4B1DD7CEB517FB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4943 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN2382  a        :Work ;
+        skos:prefLabel      "pad+ma bka' thang /"@bo-x-ewts ;
+        :catalogInfo        "Revealed account of Padmasambhava and the teachings of Buddhism during the Imperial Period of the 8th century. Rediscovered by the terton Orgyan Lingpa at 14th century. Handwritten in gold and silver ink old manuscript."@en ;
+        :creator            bdr:CRC4B1DD7CEB517FB8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P4956 .
+}

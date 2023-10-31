@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16566 {
+    bda:LG189ADF572B9E768E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-28T14:10:30.406Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG444DCF43C45FA22B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-28T14:11:25.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG609FAD96D6EFD087
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-29T12:23:49.959Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA8LS16566  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16566 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "81/WA8LS16566.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16566 ;
+        adm:logEntry        bda:LG189ADF572B9E768E , bda:LG444DCF43C45FA22B , bda:LG609FAD96D6EFD087 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1C847C9044CB47BE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM511 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16566  a       :Work ;
+        skos:altLabel       "'phags pa thugs rje chen po bcu gcig zhal gyi smyung gnas la brten nas sdig sgrib sbyong ba'i cho ga'i gsal byed puN+Da ri ka'i do shal blo gsal mos pa'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "thugs rje chen po bcu gcig zhal gyi smyung gnas cho ga'i gsal byed puN+Da ri ka'i do shal blo gsal mos pa'i rgyan/"@bo-x-ewts ;
+        :catalogInfo        "A detailed explanation on the fasting ritual according to eleven faced Avalokitesva by Troshul Getse Tulku Bedme Zhidrol; composition commenced in monkey year and completed in bird year at Tashi Dungkar hermitage near Senge Dzong."@en ;
+        :creator            bdr:CR1C847C9044CB47BE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 , bdr:T977 ;
+        :workHasInstance    bdr:MW8LS16566 , bdr:W8LS16566 ;
+        :workIsAbout        bdr:T147 , bdr:T525 .
+}

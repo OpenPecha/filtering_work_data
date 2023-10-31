@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG200022 {
+    bda:LGDE061E52AE76AC7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-02-28T16:15:23.532Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE06C8C503D12F08D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-04T09:40:36.05Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected the catalog info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE78EBB0665DCF3D1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-28T16:16:51.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG200022  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG200022 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "58/WA2KG200022.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG200022 ;
+        adm:logEntry        bda:LGDE061E52AE76AC7D , bda:LGE06C8C503D12F08D , bda:LGE78EBB0665DCF3D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2B949320902B09C3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG200019 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG200022  a      :Work ;
+        skos:prefLabel      "G. H. Luce Papers. Notebooks D-F"@en ;
+        :catalogInfo        "Notebook D, Listed Inscriptions , containing transliterations mainly from Amarapura and Sagaing, pp. 756-1149. Notebook E, Mostly Miscellaneous, containing listed and unlisted transcriptions, mostly from the Sagaing District. Also contains index of unlisted inscriptions in this and notebooks A and C, on pp. 1431-1432, pp. 1150-1433. Notebook F, Inscriptions of Burma, Portfolio III, plate CCXXIV, with transcriptions mainly from Pagan, pp. 1434-1721. Reproduction note: Microfilm. London : British Library, 26mm."@en ;
+        :creator            bdr:CR2B949320902B09C3 ;
+        :isRoot             true ;
+        :language           bdr:LangMy ;
+        :workHasInstance    bdr:MW2KG200022 , bdr:W2KG200022 ;
+        :workIsAbout        bdr:T2KG200020 , bdr:T2KG200021 .
+}

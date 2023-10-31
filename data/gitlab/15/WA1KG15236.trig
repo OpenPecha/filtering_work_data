@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG15236 {
+    bda:LG54FF8D0295EB04B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-09-19T10:25:20.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF608C526358F50A2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-19T10:24:45.761Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMB5991979B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 12"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG15236  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG15236 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "15/WA1KG15236.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG15236 ;
+        adm:logEntry        bda:LG54FF8D0295EB04B1 , bda:LGF608C526358F50A2 , bda:LGIMB5991979B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG15236  a       :Work ;
+        skos:altLabel       "'og min o rgyan smin grol gling gi dkar chag dran pa'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "o rgyan smin grol gling gi dkar chag"@bo-x-ewts ;
+        :catalogInfo        "Historical account of the Nyingma monastery Ogen Mindrol Ling"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW1KG15236 , bdr:W1KG15236 ;
+        :workIsAbout        bdr:G14 .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5053 {
+    bda:LG597DEBA42CBD38D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-04T12:36:21.732Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC399136ACD1401F2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T21:25:07.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC648281CEAED21DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-21T15:41:22.426Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG5053  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5053 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/WA2KG5053.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5053 ;
+        adm:logEntry        bda:LG597DEBA42CBD38D8 , bda:LGC399136ACD1401F2 , bda:LGC648281CEAED21DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA2KG5053  a        :Work ;
+        skos:prefLabel      "sgrol ma'i 'grel pa phyogs sgrig me tog ut+pala'i chun po/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on the praise to the twenty-one Taras."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T132 ;
+        :workHasInstance    bdr:MW2KG5053 , bdr:W2KG5053 ;
+        :workIsAbout        bdr:T619 , bdr:T744 .
+}

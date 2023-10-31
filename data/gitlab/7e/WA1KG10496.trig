@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG10496 {
+    bda:LG0B0E595162296690
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-15T09:14:00.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG106074A3FB7723E6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-05-15T17:11:41.141Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6941DA85A5806325
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-05-22T09:39:02.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9EA571B090D1664F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T13:43:52.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG10496  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG10496 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "7e/WA1KG10496.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG10496 ;
+        adm:logEntry        bda:LG0B0E595162296690 , bda:LG106074A3FB7723E6 , bda:LG6941DA85A5806325 , bda:LG9EA571B090D1664F , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC31FCCB9D81D7DDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG222136 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG10496  a       :Work ;
+        skos:altLabel       "smyung gnas rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "smyung gnas bla ma brgyud pa'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biographies of the lineage masters of Nyung-ney practice written by Tsunpa Chokyi Dragpa (15 cent.)."@en ;
+        :creator            bdr:CRC31FCCB9D81D7DDF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1KG10496 , bdr:MW1PD180878_03D5A4 , bdr:MW3PD988_50058C , bdr:W1KG10496 ;
+        :workIsAbout        bdr:T147 , bdr:T1702 .
+}

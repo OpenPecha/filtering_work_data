@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17416 {
+    bda:LG64F4349499EB8086
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-21T10:01:29.996Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6E4E89CCE4233289
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T15:02:37.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:LG78352F8F6756BB29
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-21T10:02:56.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS17416  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17416 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ce/WA8LS17416.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17416 ;
+        adm:logEntry        bda:LG64F4349499EB8086 , bda:LG6E4E89CCE4233289 , bda:LG78352F8F6756BB29 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR72AE03E9A86B18C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1297 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17416  a       :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i gzhung gi skabs su bab pa'i spyi don dang / lung 'dren dang / gtam rgyud dang / rgya dpe dang / 'grel pa kun las 'byung ba'i nang nas gzhung dka' ba'i bshad yams gsal bar byed pa mkhas pa'i rgyan rin po che'i gter/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i gzhung dka' ba'i bshad yams gsal bar byed pa mkhas pa'i rgyan rin po che'i gter/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of Bodhicaryavatara particularly on its exegesis of the general meaning, citation, narratives, sanskrit root text and commentaries. This explanation was composed by the 13th throne holder of Narthang monastery Kunga Gyaltsen; composed at his residence of Narthang monastery."@en ;
+        :creator            bdr:CR72AE03E9A86B18C4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
+        :workHasInstance    bdr:MW8LS17416 , bdr:W8LS17416 ;
+        :workIsAbout        bdr:T2339 , bdr:WA19740 .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23916 {
+    bda:LG21CC1391ED8F7112
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-11T15:49:02.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added to ctc 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG3F228465DAD2F923
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:19:05.326Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4F9930496C359567
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9E96895DD9125DC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23916  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23916 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ba/WA23916.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23916 ;
+        adm:logEntry        bda:LG21CC1391ED8F7112 , bda:LG3F228465DAD2F923 , bda:LG4F9930496C359567 , bda:LG9E96895DD9125DC7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW23916  skos:altLabel  "lcags zam ban gtsan 'dus sde'i zhal 'don thams cad mkhyen pa'i lam gyi 'jug sgo chos spyod kyi rim pa gser gyi 'phren ba : the collected prayers and ritual recitations of the monastery of gcun ri-bo che and the affiliates following the practices of than..."@en-x-mixed .
+
+    bdr:WA23916  a          :Work ;
+        skos:prefLabel      "lcags zam ban gtsang 'dus sde'i zhal 'don thams cad mkhyen pa'i lam gyi 'jug sgo chos spyod kyi rim pa gser gyi 'phreng ba/"@bo-x-ewts , "lcags zam ban gtsan 'dus sde'i zhal 'don thams cad mkhyen pa'i lam gyi 'jug sgo chos spyod kyi rim pa gser gyi 'phren ba : the collected prayers and ritual recitations of the monastery of gcun ri-bo che and the affiliates following the practices of than..."@en-x-mixed ;
+        :catalogInfo        "Collected prayers and liturgies recited at Chung Riwoche Monastery and the affiliates. Follows practices by Tangtong Gyalpo."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW23916 , bdr:W23916 ;
+        :workIsAbout        bdr:T383 .
+}

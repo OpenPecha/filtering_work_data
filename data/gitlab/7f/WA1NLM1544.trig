@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1544 {
+    bda:LG65D29943EAD448FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG900F09578FFCB315
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-30T15:18:19.486Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1544"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1544  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1544 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA1NLM1544.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1544 ;
+        adm:logEntry        bda:LG65D29943EAD448FB , bda:LG900F09578FFCB315 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8BF034F98C49FDEE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1544  a       :Work ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga'i zur rgyan thun mong ma yin pa kun 'dus nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rta mgrin yang gsang khros pa yab yum lhan skyes kyi sgrub thabs bdud las rnam rgyal/ 2 dpal rta mgrin yang gsang khros pa lha dgu'i sgrub thabs rgyun khyer 'jug bde gnad tshang ba'i snying po nyer bsags/ 3 thog mar blo sbyong gi dris lan brda don gsal ba'i me long / 4 gdungs shugs drag pos smre sngags gsol 'debs bya tshul/ 5 rgyal ba byams pa'i sgrub thabs dang 'brel ba'i mchod chog dga' ldan pad mtshor 'jug pa'i gru gzinngs/ 6 rgyal ba byams mgon gyi dang po thugs bskyed pa nas bzung sa lam rim par bgrod de mngon par byang chub pa'i tshul las brtsams shing ma 'ongs pa na sangs rgyas lnga ba'i mdzad pa ji ltar ston tshul gsal bar brjod pa'i sgo nas bstod cing gsol ba 'debs pa'i rab tu byed pa byams mgo zhal bzang lta ba'i dga' ston/ 7 gdung shugs drag pos smre sngags gsol 'debs bya tshul/ 8 bcom ldan 'das dpal rta mgrin yang gsang khros pa khrag 'thung lha dgu'i bsnyen sgrub bya tshul mdor bsdus skal ldan re skong / 9 theg pa mchog gi lam la slob par 'dod pa rnams kyis byang chub lam gyi rim pa la blo sbyangs nas/ 10 byang chub lam rim gyi cho ga sbyin bdag gi don dang spyi'i rim gro dmigs nas 'don par byed pa yin na khyad par ni skyabs 'gro nas bzung maN+Dal gyi 'dod gsol bar gzhung bzhin sngon du btan nas mjug tu/ 11 byang chub lam rim gyi cho ga sbyin bdag gi don dang spyi'i rim gro'i dmigs nas 'don byed pa'i tshul/ 12 drag po mi skar gyi gsol mchod bsangs mchod gser skyems/ 13 dpal dgyes pa rdo rje'i phyi dkyil lus dkyil gnyis kyi dbang gi bla brgyud gsol 'debs byin brlab char rgyun/ 14 gur gyi mgon po'i rjes gnang dang dbang gi bla ma brgyud pa'i gsol 'debs bsam don kun 'grub/ 15 dpal rdo rje nag po chen po'i bsrung 'khor rdo rje'i brag rdzong ma'i rjes gnang gi bla brgyud gsol 'debs phyi nang gsang ba'i lam gyi rim pa'i smon lam dang bcas pa/ 16 sa skya pa'i bka' bsrung rnams kyi gtor bsngos lo thams cad mkhyen pa'i phyag len gyi rim pa ji lta ba'i gtor chog 17 yang zab dkon mchog spyi 'dus 'phrin las rang gzhung kha skong dang bcas pa/"@en , "A supplementary ritual text of Gurupuja by Damtshik Dorjee; other text also included."@en ;
+        :creator            bdr:CR8BF034F98C49FDEE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1544 , bdr:MW1NLM1939 , bdr:W1NLM1544 , bdr:W1NLM1939 ;
+        :workIsAbout        bdr:T138 .
+}

@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9088 {
+    bda:LG0AEBD751311AEFDE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG4C264FD2A5CF3545
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T10:46:36.999Z"^^xsd:dateTime ;
+        adm:logMessage      "addded print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG712C52A587F52CB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-09-23T15:46:04.806Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCE7FEBC830EB5530
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-09-23T15:47:42.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDBE8B1AF8F6A3F3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T14:53:44.195Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA9088  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9088 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "bd/WA9088.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9088 ;
+        adm:logEntry        bda:LG0AEBD751311AEFDE , bda:LG4C264FD2A5CF3545 , bda:LG712C52A587F52CB3 , bda:LGCE7FEBC830EB5530 , bda:LGDBE8B1AF8F6A3F3C , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR76BEF6826AF8A2E1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV61EFDC89F3256733
+        a                   :CompletedEvent ;
+        :onYear             "1708"^^xsd:gYear .
+
+    bdr:MW9088  skos:altLabel  "Sdom pa gsum rṅam par ṅes paʼi ʼgrel pa legs bśad ṅo mtshar dpag bsam gyi sñe ma bźugs so /[Dharma-śrīs sbyar ba]."@en-x-mixed .
+
+    bdr:WA9088  a           :Work ;
+        skos:altLabel       "sdom gsum rnam par nges pa'i legs bshad ngo mtshar dpag bsam gyi snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "sdom gsum rnam nges kyi 'grel pa dpag bsam snye ma/"@bo-x-ewts , "Sdom pa gsum rṅam par ṅes paʼi ʼgrel pa legs bśad ṅo mtshar dpag bsam gyi sñe ma bźugs so /[Dharma-śrīs sbyar ba]."@en-x-mixed ;
+        :creator            bdr:CR76BEF6826AF8A2E1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV61EFDC89F3256733 ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW9088 , bdr:MW9140_5855F5 , bdr:W9088 ;
+        :workIsAbout        bdr:T201 , bdr:WA3JT13389 .
+}

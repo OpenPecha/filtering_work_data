@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN556 {
+    bda:LG219C7527CB5A22D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T17:04:57.548Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG44A811B41D9575D1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:20:25.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG786099BD87ACF890
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-06T17:23:11.698Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN556  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN556 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "5b/WA3CN556.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN556 ;
+        adm:logEntry        bda:LG219C7527CB5A22D3 , bda:LG44A811B41D9575D1 , bda:LG786099BD87ACF890 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9D7F7C6513C2AC5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P926 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN556  a         :Work ;
+        skos:prefLabel      "sdom gsum rtsa 'grel/ lhung bshags dang smon lam rnam lnga'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the root text of three vows, commentary of confession sutra and five prayers. Written by Karma Ngedon Tengye."@en ;
+        :creator            bdr:CR9D7F7C6513C2AC5A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T34 ;
+        :workHasInstance    bdr:MW3CN556 , bdr:W3CN556 ;
+        :workIsAbout        bdr:T1092 , bdr:T201 .
+}

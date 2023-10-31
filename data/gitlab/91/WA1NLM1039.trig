@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1039 {
+    bda:LG1D20121C24ED3AEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG93909F0969F5AE14
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-21T16:00:06.123Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB74107A4D852266C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T13:44:56.223Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1039"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1039  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1039 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "91/WA1NLM1039.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1039 ;
+        adm:logEntry        bda:LG1D20121C24ED3AEF , bda:LG93909F0969F5AE14 , bda:LGB74107A4D852266C , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG22610 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR94807D2D849171FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P194 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1039  a       :Work ;
+        skos:altLabel       "tshad ma'i gzhung don 'byed pa'i bsdus grwa'i rnam bzhag rigs lam 'phrul gyi lde mig"@bo-x-ewts ;
+        skos:prefLabel      "rigs lam 'phrul gyi lde mig"@bo-x-ewts ;
+        :catalogInfo        "Basic course of study of elementary logic and dialectrical studies of Tibetan Buddhism. Archive Information"@en ;
+        :creator            bdr:CR94807D2D849171FE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workIsAbout        bdr:T1235 , bdr:T1420 , bdr:T96 .
+}

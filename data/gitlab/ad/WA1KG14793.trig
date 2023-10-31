@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14793 {
+    bda:LG224AC0E608A814FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-02T16:28:34.848Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG66C1209BBC1BFDDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG8B6497209813318A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-09T14:32:37.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG14793  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14793 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ad/WA1KG14793.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14793 ;
+        adm:logEntry        bda:LG224AC0E608A814FE , bda:LG66C1209BBC1BFDDB , bda:LG8B6497209813318A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR52648251963CE2B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4708 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVB1056A38C1365508
+        a                   :CompletedEvent ;
+        :onYear             "2008"^^xsd:gYear .
+
+    bdr:MW1KG14793  skos:altLabel  "合作寺志"@zh-hans .
+
+    bdr:WA1KG14793  a       :Work ;
+        skos:altLabel       "he zuo si zhi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gtsos dga' ldan chos gling gi gdan rabs legs bshad nor bu'i phreng ba mdzes pa'i rgyan/"@bo-x-ewts , "合作寺志"@zh-hans ;
+        :catalogInfo        "History of the Tibetan Buddhist monastery dga'-ldan-chos-gling in gtsos (Ch. Hezuo) in Gannan Prefecture, Gansu Province with biographies of the successive reincarnations; includes photos of monastery and previous lamas"@en ;
+        :creator            bdr:CR52648251963CE2B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVB1056A38C1365508 ;
+        :workHasInstance    bdr:MW1KG14793 , bdr:W1KG14793 ;
+        :workIsAbout        bdr:G293 , bdr:T16 .
+}

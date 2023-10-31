@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS42304 {
+    bda:LG5F66F2EA3AEA082E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T14:20:56.26Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG65CC8E69E9635BDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-10T14:23:21.749Z"^^xsd:dateTime ;
+        adm:logMessage      "restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGA58E3191373E4C94
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-10T14:22:28.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS42304  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS42304 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "53/WA8LS42304.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS42304 ;
+        adm:logEntry        bda:LG5F66F2EA3AEA082E , bda:LG65CC8E69E9635BDE , bda:LGA58E3191373E4C94 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS42304  a       :Work ;
+        skos:altLabel       "dpal ldan srid srid skyong dang bka' shag nas spyi 'thus tshogs zur spen pa tshe ring byang a ri'i sku tshab don gcod kyi las 'gan mtshams 'jog skor gyi gsal bshad snga rjes la dngos don lan 'debs gsal bshad/"@bo-x-ewts ;
+        skos:prefLabel      "gsal bshad snga rjes la dngos don lan 'debs gsal bshad/"@bo-x-ewts ;
+        :catalogInfo        "Collection of responses made to Kashag by Pempa Tsering, the former speaker of exile parliament."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS42304 , bdr:W8LS42304 ;
+        :workIsAbout        bdr:T102 .
+}

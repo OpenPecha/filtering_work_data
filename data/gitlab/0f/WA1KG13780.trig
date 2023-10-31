@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13780 {
+    bda:LG033C715F5C53C1EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-05T15:42:29.862Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6EC73844AE01259D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T15:26:10.693Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB3A12EC4EB56BC00
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-05T12:36:46.485Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDF5C2BAD0DF8AA4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-29T10:39:32.617Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed problem and Released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF592DC1250AE5BE7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-09-23T16:38:54.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG13780  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13780 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "0f/WA1KG13780.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13780 ;
+        adm:logEntry        bda:LG033C715F5C53C1EA , bda:LG6EC73844AE01259D , bda:LGB3A12EC4EB56BC00 , bda:LGDF5C2BAD0DF8AA4C , bda:LGF592DC1250AE5BE7 , bda:LGIM206EC9B06D , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCEE0BE4332A33FAA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15269 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG13780  skos:altLabel  "Gtsug lag rtsis kyi rig pa nag rtsis snaṅ srid me loṅ daṅ ʼbras rtsis bden don sñiṅ po bźugs /Mkhas-grub Luṅ-rtogs-rgya-mtsho."@en-x-mixed .
+
+    bdr:WA1KG13780  a       :Work ;
+        skos:altLabel       "gtsug lag rtsis kyi rig pa nag rtsis snang srid me long dang / 'bras rtsis bden don snying po/"@bo-x-ewts ;
+        skos:prefLabel      "nag rtsis snang srid me long dang 'bras rtsis bden don snying po/"@bo-x-ewts , "Gtsug lag rtsis kyi rig pa nag rtsis snaṅ srid me loṅ daṅ ʼbras rtsis bden don sñiṅ po bźugs /Mkhas-grub Luṅ-rtogs-rgya-mtsho."@en-x-mixed ;
+        :catalogInfo        "Tibetan Bonpo astrological work based on Chinese tradition"@en ;
+        :creator            bdr:CRCEE0BE4332A33FAA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG13780 , bdr:W1KG13780 ;
+        :workIsAbout        bdr:T1835 , bdr:T1911 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1560 {
+    bda:LG364032DD9E1898BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB0078FA1D4678BBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-19T14:53:55.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1560"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1560  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1560 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/WA1NLM1560.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1560 ;
+        adm:logEntry        bda:LG364032DD9E1898BC , bda:LGB0078FA1D4678BBF , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA4D38539B4DD048B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1560  a       :Work ;
+        skos:prefLabel      "dpal o rgyan chen pos mdzad pa'i mnol bsang byin rlabs can sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal po chen po rnam thos sras kyi bsang / 2 dge sbyor gyi mjug tu 'don rgyu'i smon tshigs mdor bsdus/ 3 zhags pa yangs pa'i grong khyer du 'jug pa'i mdo/ 4 dpal ldan lha mo'i sho mo bshad bzang ngan mig 'khyud/ 5 kha byang / 6 ri rgyal lhun po byang phyogs nas/ 7 bgegs gtor/ 8 skra bsreg 9 ching su tsug the ma ni pra ny+dza'i yig cha'i steng nas rin 'byung nang gi mi g.yo ba sngon po pus btsugs ma'i rjes gnang legs par mnos pa'i brgyud rim/ 10 gza' 'dzin brtag lugs mkhas pa'i bzhad gad blun po'i yid 'phrog dga' rtsis gsar pa/ 11 gsol 'debs bar chad lam sel/ 12 bsam pa lhun grub ma/ 13 mgon po phyag drug gi tshogs mchod mdor bsdus/ 14 rgyu skar gyi bdag po sme bdun skar ma'i mchod pa/ 15 lha mo cong khrus kyi gzungs/ khrus kyi lha mo'i gzungs/ 16 rta mchog rol pa'i rnal 'byor pas/ mchog dman 'gron la gtor ma dang / /gser skyems bsangs sogs gtong pa'i skabs/ /'dod gsol kha bsgyur byed tshul// 17 rkang bzhi phyugs kyi pany+tsa rak+Sha 18 mchod pa phul ba'i mjug tu 'don rgyu smon lam/ 19 'byung bzhi'i gtor ma gtong tshul/ 20 'go ba'i lha lnga'i gsol mchod/ 21 shis brjod bkra shis don grub/ 22 rang bzhin gyi bkra shis kyis dge mtshan spel phyir byin 'bebs gsol 'debs e wam char 'bebs/ 23 chos 'phrul bstod pa/ 24 thub pa chen po'i bcom ldan 'das kyi bsrung bzlog 25 chos skyong dregs pa lcam sring gi tshogs mchod/ 26 ha cang zhAng zhi mchod pa/ 27 rkang bzhi phyugs kyi bhan mdzar gegs che zhi byas pa/ 28 rlung bskor tshul/ 29 kha 'bar ma dkar nag khra gsum gyi gtor maa'i cho ga klag pas don 'grub/ 30 mar me'i smon lam byin gyis brlabs tshul/ 31 skyabs gnas 'dul ba bla ma rdo rje 'chang / 32 gtor ma brgya rtsa shin tu bsdus pa/ 33 slob ma snod du rung bar bya bas gdams ngag gsung tshul/ 34 yum chen mo sher snying gi bzlog bsgyur/ 35 rje btsun rdo rje rnal 'byor ma la tshogs mchod 'bul tshul/"@en , "Incense burning ritual text composed by Padmasambhava; other text also included."@en ;
+        :creator            bdr:CRA4D38539B4DD048B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1560 , bdr:W1NLM1560 ;
+        :workIsAbout        bdr:T1PD92832 .
+}

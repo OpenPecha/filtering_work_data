@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2283 {
+    bda:LG41E48FEC77759476
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-19T09:16:50.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB270ED053653BE00
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM11768AC0  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2283"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2283  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2283 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "87/WA1NLM2283.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2283 ;
+        adm:logEntry        bda:LG41E48FEC77759476 , bda:LGB270ED053653BE00 , bda:LGIM11768AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBD10B0B0F6B29559
+        a                   :AgentAsCreator ;
+        :agent              bdr:P999 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2283  a       :Work ;
+        skos:prefLabel      "brgya bzhi'i cho ga bklags pas don grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags ma gtsug tor dkar mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal/ 2 bgegs gtor ma/ 3 chos skyong lcam sring gi tshogs mchod/ 4 bsangs kyi cho ga dngos grub yi gzi 'od 'bar ba ngo mtshar rin po che'i phreng ba/ 5 dpal ldan lha mo'i sgo nas maN+Dal bzhi ba/ 6 sa bdag ddan bcos/ 7 rlung rta lha mchod/ 8 rus sbal/ 9 phyag na rdo rje'i sgo nas grib sel bya tshul/ 10 dpal rdo rje rnam par 'joms pa'i cho ga phan bde 'byung gnas/"@en , "Four hundred offering ritual; other text also included."@en ;
+        :creator            bdr:CRBD10B0B0F6B29559 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2283 , bdr:W1NLM2283 ;
+        :workIsAbout        bdr:T1240 .
+}

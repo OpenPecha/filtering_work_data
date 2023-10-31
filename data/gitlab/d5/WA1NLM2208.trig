@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2208 {
+    bda:LG6823B4A45D50C676
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGD6C19FE48A80BC38
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-19T15:03:42.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2208"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2208  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2208 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d5/WA1NLM2208.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2208 ;
+        adm:logEntry        bda:LG6823B4A45D50C676 , bda:LGD6C19FE48A80BC38 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR674228AD8A60FABA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8182 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CR8611CDF2F572D6EB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG07267 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRE17E54CE9923A8CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2208  a       :Work ;
+        skos:prefLabel      "slob ma la springs pa'i spring yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sman bla bsdus pa'i kha bskong / 2 'go ba'i lha lnga'i gsol mchod phan bde'i 'dod 'jo/ 3 lha mo nor rgyun ma'i gzungs/ 4 brul gtor/ 5 bskang bshags bsdus pa/ 6 gtsug tor rnam rgyal gyi gzungs mdo/ 7 bsam ngan thams cad gnod sems can bzlog pa tsakra/ 8 maN+Dal 'bul ba/ 9 tshe 'das kyi ming nas bos la/ 10 'dul 'dzin grags pa rgyal mtshan gyis mdzad pa'i bye bral mdos/ 11 bgegs gtor gyi cho ga/ 12 sher snying gi sgo nas bdud bgegs sogs phyir blog cing 'gal rkyen bar gcod bsrung tshul/ 13 chos skyong dregs pa lcam sring gi gser skyems 'bul/ 14 mtshan bsrung man ngag 15 lan chags gtor ma gtong bar 'dod pa/ 16 sbyin sreg cho ga'i sdom tshig"@en , "Shishayalekha or letter to disciple by Acayra Candragomin; other text also included."@en ;
+        :creator            bdr:CR674228AD8A60FABA , bdr:CR8611CDF2F572D6EB , bdr:CRE17E54CE9923A8CA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T14 ;
+        :workHasInstance    bdr:MW1NLM2208 , bdr:W1NLM2208 ;
+        :workIsAbout        bdr:WA22731 .
+}

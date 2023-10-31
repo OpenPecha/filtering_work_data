@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229000 {
+    bda:LG2D15998D27D54289
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-25T14:21:21.837Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFB260AC10950ACAA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-25T14:25:51.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG229000  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229000 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "91/WA2KG229000.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229000 ;
+        adm:logEntry        bda:LG2D15998D27D54289 , bda:LGFB260AC10950ACAA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG1880 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRB2CA04430FDE9006
+        a                   :AgentAsCreator ;
+        :agent              bdr:P805 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG229000  a      :Work ;
+        skos:prefLabel      "gsung 'bum/_ngag dbang kun dga' blo gros/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by a prominent Sakya scholar of the Khon lineage, Ngawang Kunga Lodro (1729-1783)."@en ;
+        :creator            bdr:CRB2CA04430FDE9006 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T617 .
+}

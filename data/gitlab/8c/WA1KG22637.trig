@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22637 {
+    bda:LGBA37E1C0951BC104
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-01T11:57:42.566Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD48D2A54077A2400
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF5952EE4FBF361B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-01T11:57:05.416Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22637  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22637 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8c/WA1KG22637.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22637 ;
+        adm:logEntry        bda:LGBA37E1C0951BC104 , bda:LGD48D2A54077A2400 , bda:LGF5952EE4FBF361B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR857C151C63546C39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7746 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22637  a       :Work ;
+        skos:altLabel       "bka' rdzogs pa chen po bla ma kun 'dus kyi cha lag thos chog lta ba rang grol ngan song sgrib sbyang gi sngon du 'gro ba'i chos spyod/"@bo-x-ewts , "chos rgyal gling pa'i gter chos/"@bo-x-ewts ;
+        skos:prefLabel      "gter chos/ chos rgyal gling pa/"@bo-x-ewts ;
+        :catalogInfo        "Rediscovered teachings on Dzogchen, revealed by Chogyal Lingpa."@en ;
+        :creator            bdr:CR857C151C63546C39 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG22637 , bdr:MW1KG23033 , bdr:MW3PD1000 , bdr:W1KG22637 , bdr:W1KG23033 , bdr:W3PD1000 ;
+        :workIsAbout        bdr:T1082 , bdr:T354 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ354415 {
+    bda:LGB1F82D348A1E3865
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-27T15:00:45.856Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE211BF4A2CDA371F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-26T14:56:34.269Z"^^xsd:dateTime ;
+        adm:logMessage      "New catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE77F6073E1BD0B22
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ354415  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ354415 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "67/WA4CZ354415.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ354415 ;
+        adm:logEntry        bda:LGB1F82D348A1E3865 , bda:LGE211BF4A2CDA371F , bda:LGE77F6073E1BD0B22 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA4CZ354415  a      :Work ;
+        skos:altLabel       "mdo lung rgyud mdzod bzhi'i dbang lung khrid kyi rgyud rim gser gyi 'phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "mdo lung rgyud mdzod bzhi'i dbang lung khrid kyi rgyud rim/"@bo-x-ewts ;
+        :catalogInfo        "List of eminent Gurus in the transmission lineages of the teachings of Bon. Reproduced from manuscripts preserved at Samling Monastary in Dolpo (northwestern Nepal)"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T192 ;
+        :workHasInstance    bdr:MW4CZ354415 , bdr:W4CZ354415 ;
+        :workIsAbout        bdr:T247 .
+}

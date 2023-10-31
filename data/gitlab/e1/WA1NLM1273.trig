@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1273 {
+    bda:LGBD5FE4833AA0FB9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE91470359B299B39
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-03T09:37:34.769Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1273"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1273  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1273 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e1/WA1NLM1273.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1273 ;
+        adm:logEntry        bda:LGBD5FE4833AA0FB9D , bda:LGE91470359B299B39 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ301813 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR398377E21D86E1A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P442 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1273  a       :Work ;
+        skos:altLabel       "rnal 'byor gyi dbang phyug dam pa rje btsun mi la ras pa'i rnam thar/ thar pa dang thams cad mkhyen pa'i lam ston/"@bo-x-ewts ;
+        skos:prefLabel      "mi la ras pa'i rnam thar thams cad mkhyen pa'i lam ston/"@bo-x-ewts ;
+        :catalogInfo        "The Life of Milarepa"@en ;
+        :creator            bdr:CR398377E21D86E1A8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P1853 .
+}

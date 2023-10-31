@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14363 {
+    bda:LG1E0378E0238A79FF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-03T10:47:16.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG33ACA199CA529049
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-03T10:46:49.958Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG694608B27F3BEC2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA3CN14363  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14363 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "46/WA3CN14363.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14363 ;
+        adm:logEntry        bda:LG1E0378E0238A79FF , bda:LG33ACA199CA529049 , bda:LG694608B27F3BEC2B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR20E1143D1B8A00C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB13651 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN14363  a       :Work ;
+        skos:altLabel       "smin grol chos kyi rgyal pos mdzad pa'i man ngag rin chen 'byung gnas las sbyor sde 'ga' zhig gi tshad gsal bar brjod pa gnad don sgo brgya dbyed pa'i lde mig"@bo-x-ewts ;
+        skos:prefLabel      "man ngag rin chen 'byung gnas las sbyor sde 'ga' zhig gi tshad/"@bo-x-ewts ;
+        :catalogInfo        "Some special medicinal preparation according to man ngag rin chen 'byung gnas, by Jampal Tsondru."@en ;
+        :creator            bdr:CR20E1143D1B8A00C9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN14363 , bdr:W3CN14363 ;
+        :workIsAbout        bdr:T85 , bdr:T86 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ333399 {
+    bda:LG05D080DB34490EA2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-07T13:04:58.961Z"^^xsd:dateTime ;
+        adm:logMessage      "new cat"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB1E68A2C36A89BDA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-07T13:06:30.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB55128030C72C627
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-07T13:08:04.992Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to sealteaching"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ333399  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ333399 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a5/WA4CZ333399.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ333399 ;
+        adm:logEntry        bda:LG05D080DB34490EA2 , bda:LGB1E68A2C36A89BDA , bda:LGB55128030C72C627 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8C7762B0960B2D75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P432 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ333399  a      :Work ;
+        skos:altLabel       "gsang bde 'jig gsum gyi rdzogs rim zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ ba so chos kyi rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Lecture notes of the teachings of Baso Choekyi Gyaltsan on sadhana practice of Vajrabhairava, Guhyasamaja and Cakrasamvara 62 Devatmaka Luhipa Krama"@en ;
+        :creator            bdr:CR8C7762B0960B2D75 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T395 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW4CZ333399 , bdr:W4CZ333399 ;
+        :workIsAbout        bdr:T1345 , bdr:T163 .
+}

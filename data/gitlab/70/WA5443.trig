@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA5443 {
+    bda:LG458BAD1CE24CA517
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-24T13:01:45.414Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected spelling"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG59340B89D59D7096
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA5443  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA5443 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "70/WA5443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA5443 ;
+        adm:logEntry        bda:LG458BAD1CE24CA517 , bda:LG59340B89D59D7096 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR05A7CECD68D4EC1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA5443  a           :Work ;
+        skos:altLabel       "mthong grol zhwa dmar rin po che mjal kha'i skabs rgyu mtshan phan yon mdor bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "mthong grol zhwa bshad/"@bo-x-ewts ;
+        :creator            bdr:CR05A7CECD68D4EC1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW5443 ;
+        :workIsAbout        bdr:T1312 , bdr:T1829 .
+}

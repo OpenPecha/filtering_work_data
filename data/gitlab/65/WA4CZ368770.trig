@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368770 {
+    bda:LG01132C5D232CE132
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-24T09:18:37.206Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG0D1DB6B6E5057C42
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:56:53.47Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG599A9FB1794CBC89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T12:25:00.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368770  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368770 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "65/WA4CZ368770.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368770 ;
+        adm:logEntry        bda:LG01132C5D232CE132 , bda:LG0D1DB6B6E5057C42 , bda:LG599A9FB1794CBC89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR918F8CD60DD790AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ368771 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ368770  a      :Work ;
+        skos:altLabel       "bka' zur zur khang pa blo bzang chos 'byor bstan 'dzin snyan grags rgya mtsho'i rnam thar smad cha slob bu rnams kyi phyogs sdebs bgyis pa tshangs pa'i drang thig"@bo-x-ewts ;
+        skos:prefLabel      "bka'i gung blon gyi 'khur 'dzin pa'i rtogs brjod bung ba'i mgrin glu/"@bo-x-ewts ;
+        :catalogInfo        "Autobiographical reminiscences of cabinet officer early 19th century civil servant from Tibet, Zurkhang Sichoe Tsheten, compeleted by his son Tseten Dorje, Yougyal Dorje and Zim Tshewang Phuntshok"@en ;
+        :creator            bdr:CR918F8CD60DD790AB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW4CZ368770 , bdr:W4CZ368770 .
+}

@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20594 {
+    bda:LG019CDD7640710B45
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T14:59:10.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn, year of publication, authorship and edition"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG29C6ADD9F7D4D330
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T10:24:31.725Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9552E4FD85D873C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T10:21:31.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9BC56EA81156BD51
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:13:09.651Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC123E99B26937C6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T14:47:07.155Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF2748049E4ECE1F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20594  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20594 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "8d/WA8LS20594.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20594 ;
+        adm:logEntry        bda:LG019CDD7640710B45 , bda:LG29C6ADD9F7D4D330 , bda:LG9552E4FD85D873C8 , bda:LG9BC56EA81156BD51 , bda:LGC123E99B26937C6F , bda:LGF2748049E4ECE1F4 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD1E88E8C62216F1E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75303 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:WA8LS20594  a       :Work ;
+        skos:prefLabel      "byis pa'i nus pa skyed sring skor gyi dpe tshogs/"@bo-x-ewts ;
+        :catalogInfo        "A children's comic book compiled by group of France educationist; translated into Tibetan by Tashi Norbu."@en ;
+        :creator            bdr:CRD1E88E8C62216F1E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T1KG26395 ;
+        :workHasInstance    bdr:MW8LS20594 , bdr:W8LS20594 .
+}

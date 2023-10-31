@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77533 {
+    bda:LG41483F09A38A17E9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-28T08:49:11.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG5F403CCEB42EC549
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-28T08:48:47.164Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77533  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77533 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c0/WA8LS77533.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77533 ;
+        adm:logEntry        bda:LG41483F09A38A17E9 , bda:LG5F403CCEB42EC549 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS77533  a       :Work ;
+        skos:prefLabel      "thengs po'i rig pa'i gleng brjod thar lam gsal byed las brtsams pa'i dri ba dris lan phyogs bsdus su bkod pa lung rigs dbyangs snyan sgrogs pa'i dung sgra/"@bo-x-ewts ;
+        :catalogInfo        "A collection of essays written during the conference of Abhidharmakosha; edited by Kyorpon Tshultrim, A Samten, Tsekye Rikpe Phurda and Zho Ong Trinley."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T258 , bdr:T28 ;
+        :workHasInstance    bdr:MW8LS77533 , bdr:W8LS77533 ;
+        :workIsAbout        bdr:G3158 , bdr:T59 .
+}

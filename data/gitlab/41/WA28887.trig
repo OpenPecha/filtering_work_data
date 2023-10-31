@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28887 {
+    bda:LG0D0036BBFC382A2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGC3AC0665AFDF771F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA28887  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28887 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "41/WA28887.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28887 ;
+        adm:logEntry        bda:LG0D0036BBFC382A2B , bda:LGC3AC0665AFDF771F , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR35D35EEE64A76DD2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1382 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW28887  skos:altLabel  "ga ma ba qu ying duo ji wen ji"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA28887  a          :Work ;
+        skos:altLabel       "gsung 'bum/_chos dbyings rdo rje/"@bo-x-ewts , "rje karma bcu ba chos dbyings rdo rje'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal ba'i dbang po skyabs rje karma pa sku phreng bcu ba chos dbyings rdo rje mchog gi gsung 'bum legs bshad nor bu'i gtsug rgyan/"@bo-x-ewts , "ga ma ba qu ying duo ji wen ji"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR35D35EEE64A76DD2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW28887 , bdr:W28887 ;
+        :workIsAbout        bdr:T1386 .
+}

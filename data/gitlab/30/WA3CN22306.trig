@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22306 {
+    bda:LG0663DEA6B439D20C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-24T18:40:44.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG2D811F5C59751198
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG73A09918645C73EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-17T14:34:38.437Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB36BEE5AC8D7B595
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-24T18:39:26.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22306  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22306 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "30/WA3CN22306.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22306 ;
+        adm:logEntry        bda:LG0663DEA6B439D20C , bda:LG2D811F5C59751198 , bda:LG73A09918645C73EC , bda:LGB36BEE5AC8D7B595 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2ADFF0B998FA446C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4985 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22306  a       :Work ;
+        skos:altLabel       "rgya nag chos 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "rgya nag yul du dam pa'i chos dar tshul gtso bor bshad pa blo gsal kun tu dga' ba'i rna rgyan/"@bo-x-ewts ;
+        :catalogInfo        "History of Buddhism in China by Mongolian scholar Gonpo Kyab (18th cent.)"@en ;
+        :creator            bdr:CR2ADFF0B998FA446C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW3CN22306 , bdr:W3CN22306 ;
+        :workIsAbout        bdr:G3198 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22156 {
+    bda:LG2B5FE9998FBB0E2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG3872B51B788E3AD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:14.067Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEDCC781FB5E3555C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22156  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22156 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "83/WA22156.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22156 ;
+        adm:logEntry        bda:LG2B5FE9998FBB0E2D , bda:LG3872B51B788E3AD3 , bda:LGEDCC781FB5E3555C , bda:LGIM4599A38FCE , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW22156  skos:altLabel  "Gliṅ Ge-sar rgyal poʾi sgruṅ, gliṅ dpaʾ brtul brgyad bcuʾi rnam thar /[Bsod-bde daṅ Bde-skyid kyis bsgrigs ; Dkon-mchog-tshe-brtan gyis ye ge źus]."@en-x-mixed , "gesa'er wang zhuan. ling ba shi da jiang zhuan"@zh-latn-wadegile .
+
+    bdr:WA22156  a          :Work ;
+        skos:altLabel       "gling ge sar rgyal po'i sgrung gling dpa' brtul brgyad cu'i rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "gling dpa' brtul brgyad bcu'i rnam thar/"@bo-x-ewts , "Gliṅ Ge-sar rgyal poʾi sgruṅ, gliṅ dpaʾ brtul brgyad bcuʾi rnam thar /[Bsod-bde daṅ Bde-skyid kyis bsgrigs ; Dkon-mchog-tshe-brtan gyis ye ge źus]."@en-x-mixed , "gesa'er wang zhuan. ling ba shi da jiang zhuan"@zh-latn-wadegile ;
+        :catalogInfo        "Biographies of eighty Ling warriors"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22156 , bdr:W22156 ;
+        :workIsAbout        bdr:T248 .
+}

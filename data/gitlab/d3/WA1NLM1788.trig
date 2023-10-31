@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1788 {
+    bda:LG86EFD949D06DF21E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG92212780465352C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-08T09:07:08.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1788"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1788  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1788 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d3/WA1NLM1788.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1788 ;
+        adm:logEntry        bda:LG86EFD949D06DF21E , bda:LG92212780465352C7 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1788  a       :Work ;
+        skos:prefLabel      "dgu ling gser brtsis sdom pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje 'jigs byed kyi bsnyen yig dngos grub snye ma/ 2 byi lo pa ma'i sprul bya phag zla la gtar nas bsreg na lo gcig nang 'chi/ 3 rang gro sman rag pa'i gang mang 'ga' rgya ma la/ 4 'jam mgon bla ma bsten pa'i tshe sgrub bya tshul 'chi bdag 'jam pa'i rdo rje/ 5 lam rim smon lam/ yon tan zhir gyur/bla ma'i mtshan sngags/dga' ldan lha brgyad/ phun tshogs sku gsum/ 6 rang gi rtsa ba'i bla ma dang por chos la 'jug mkhan gang yin pa gsol ba 'debs pa ri khrod pa skal ldan rgya mtshos mdzad pa/ 7 grub chen gcer sgom pas mdzad 'chid brdungs gdong ba'i man ngag 'chi med dpal ster/ 8 bdag zhan mnyam brje'i sems sbyong tshul smon lam dang bcas pa/ 9 rje btsun sgrol dkar la brten nas maN+Dal bzhi ba bya bar 'dod pa/ 10 shAkya thub pa'i bdag bskyed/ 11 dad pa gsum sgom tshul mdor bsdus/"@en , "Method of examination according to Kalacakra tradition; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T203 ;
+        :workHasInstance    bdr:MW1NLM1788 , bdr:W1NLM1788 ;
+        :workIsAbout        bdr:T1234 , bdr:T74 .
+}

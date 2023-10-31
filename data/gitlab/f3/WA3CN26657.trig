@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN26657 {
+    bda:LG3F8769A16E41DE25
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-30T10:43:51.338Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG469703956DE1F32A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-27T15:59:59.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG986EA739F44E17CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-27T16:19:05.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC80FE96C4D288C29
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-31T20:58:08.397Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGEF5328D007345F3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-31T20:57:52.951Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN26657  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN26657 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f3/WA3CN26657.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN26657 ;
+        adm:logEntry        bda:LG3F8769A16E41DE25 , bda:LG469703956DE1F32A , bda:LG986EA739F44E17CE , bda:LGC80FE96C4D288C29 , bda:LGEF5328D007345F3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE03E2DB5760A9D61
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26854 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN26657  skos:altLabel  "文学之缘"@zh-hans .
+
+    bdr:WA3CN26657  a       :Work ;
+        skos:altLabel       "WEN XUE ZHI YUAN"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lcags mda' lcags gzhu/"@bo-x-ewts , "文学之缘"@zh-hans ;
+        :catalogInfo        "Personal prose collection by Donmig from Amdo."@en ;
+        :creator            bdr:CRE03E2DB5760A9D61 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW3CN26657 , bdr:W3CN26657 .
+}

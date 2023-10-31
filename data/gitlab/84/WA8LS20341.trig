@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20341 {
+    bda:LG408AFEC07A4DC2B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T09:59:21.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8A55CE2913571289
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-27T11:08:46.91Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB387314C4C6CF27E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-13T10:38:34.568Z"^^xsd:dateTime ;
+        adm:logMessage      "edited isbn and added edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDED9A43AA6FABFF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20341  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20341 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "84/WA8LS20341.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20341 ;
+        adm:logEntry        bda:LG408AFEC07A4DC2B2 , bda:LG8A55CE2913571289 , bda:LGB387314C4C6CF27E , bda:LGDED9A43AA6FABFF7 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREB0E762414AE8ED7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1033 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20341  a       :Work ;
+        skos:prefLabel      "lha bla ma ye shes 'od kyi rnam thar rgyas pa'i mchan 'grel ti se'i mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Lha Lama Yeshe Od written by Guge Pandita Drakpa Gyaltsen and annotated by Dartsha Khyungdak."@en ;
+        :creator            bdr:CREB0E762414AE8ED7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS20341 , bdr:W8LS20341 ;
+        :workIsAbout        bdr:P8344 .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA28917 {
+    bda:LGAC3E9926AC3D91F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:24:27.101Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF2721B0D7596B611
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA28917  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA28917 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "44/WA28917.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA28917 ;
+        adm:logEntry        bda:LGAC3E9926AC3D91F8 , bda:LGF2721B0D7596B611 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRBFE1314303EE089F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9371 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA28917  a          :Work ;
+        skos:prefLabel      "gu ru'i tshe chog"@bo-x-ewts ;
+        :creator            bdr:CRBFE1314303EE089F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW28917 ;
+        :workIsAbout        bdr:P4956 , bdr:T473 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355749 {
+    bda:LG0F742A212057A2F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T17:06:46.71Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBF28289F8999E594
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGD78F7A41764A24DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:31:22.17Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE0C15080F5A9858F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-30T11:42:53.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ355749  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355749 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a2/WA4CZ355749.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355749 ;
+        adm:logEntry        bda:LG0F742A212057A2F6 , bda:LGBF28289F8999E594 , bda:LGD78F7A41764A24DB , bda:LGE0C15080F5A9858F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR58BA0FE144030B39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7461 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:MW4CZ355749  skos:altLabel  "the prince"@en .
+
+    bdr:WA4CZ355749  a      :Work ;
+        skos:prefLabel      "rje dpon/"@bo-x-ewts , "the prince"@en ;
+        :catalogInfo        "The Prince, Written by Niccolo Machiavelli. Translated by Dorjee Tseten"@en ;
+        :creator            bdr:CR58BA0FE144030B39 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
+        :workHasInstance    bdr:MW4CZ355749 , bdr:W4CZ355749 ;
+        :workIsAbout        bdr:T2378 .
+}

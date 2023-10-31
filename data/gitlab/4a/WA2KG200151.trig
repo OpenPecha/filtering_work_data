@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG200151 {
+    bda:LG4616C2A525248080
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-28T12:14:45.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG52253A9F75E0447F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG5969139DF83477C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-21T16:42:36.36Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG200151  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG200151 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4a/WA2KG200151.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG200151 ;
+        adm:logEntry        bda:LG4616C2A525248080 , bda:LG52253A9F75E0447F , bda:LG5969139DF83477C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM155 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR4AD514CE0638C35C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG200151  a      :Work ;
+        skos:prefLabel      "sman bla'i mdo chog 'don ba zur du bkol ba yid bzhin dbang rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical recitation of medicine buddha, veterinary medicine and so on."@en ;
+        :creator            bdr:CR4AD514CE0638C35C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T536 ;
+        :workIsAbout        bdr:T568 , bdr:T870 .
+}

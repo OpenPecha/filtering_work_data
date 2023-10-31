@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM151 {
+    bda:LG04EBEABAE46DFFC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T17:36:04.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG246DEC47345A7943
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG84F483E6D23A2C5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-03-11T10:07:57.503Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM151"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM151  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM151 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/WA1NLM151.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM151 ;
+        adm:logEntry        bda:LG04EBEABAE46DFFC5 , bda:LG246DEC47345A7943 , bda:LG84F483E6D23A2C5E , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM151  a        :Work ;
+        skos:prefLabel      "bcom ldan 'das dpal rdo rje 'jigs byed bdud las rnam rgyal gyi sgo nas tshogs mchod bya tshul bde chen 'dzum zhal bzhad pa'i pad+mo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ganacakrapuja offering of vajrabairava and sadhana text."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM151 , bdr:W1NLM151 ;
+        :workIsAbout        bdr:T104 , bdr:T330 .
+}

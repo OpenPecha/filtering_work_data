@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20075 {
+    bda:LGC96FC651D8021F1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGEBE5141DE588BCC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-31T15:43:43.524Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGECFEBB057A7DEB9F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-31T15:44:17.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA20075  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20075 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2d/WA20075.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20075 ;
+        adm:logEntry        bda:LGC96FC651D8021F1F , bda:LGEBE5141DE588BCC0 , bda:LGECFEBB057A7DEB9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR52089E246351529D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6404 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA20075  a          :Work ;
+        skos:prefLabel      "dus sprin glal ba'i rang sgra/"@bo-x-ewts ;
+        :catalogInfo        "Collection of poetry."@en ;
+        :creator            bdr:CR52089E246351529D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20075 , bdr:W20075 ;
+        :workIsAbout        bdr:T281 .
+}

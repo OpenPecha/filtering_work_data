@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23442 {
+    bda:LG38B2DDE26EC12741
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-25T10:59:17.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG59FD36213E934991
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGC35199FEBBB63826
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:42:42.065Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed BY KG, CN, LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGC45C8025E787AA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-13T12:40:04.36Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEC6FDDDAC335FEA6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA23442  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23442 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "22/WA23442.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23442 ;
+        adm:logEntry        bda:LG38B2DDE26EC12741 , bda:LG59FD36213E934991 , bda:LGC35199FEBBB63826 , bda:LGC45C8025E787AA43 , bda:LGEC6FDDDAC335FEA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA23442  a          :Work ;
+        skos:prefLabel      "dam chos dgongs pa gcig pa dang theg chen bstan pa'i snying po'i rtsa 'grel/"@bo-x-ewts , "dgongs gcig and bstan snying texts of the 'bri-gung-pa tradition : a collection of rare texts on the two special teachings of the school"@en ;
+        :catalogInfo        "Collection of rare texts on the two special teachings of the Drikung Kagyu \"dgongs gcig and bstan snying\""@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW23442 , bdr:W23442 ;
+        :workIsAbout        bdr:WA3JT13395 , bdr:WA41 .
+}

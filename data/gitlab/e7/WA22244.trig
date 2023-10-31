@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22244 {
+    bda:LG3E8E051FB1950B1B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDFAE69D2D6535E2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T20:58:15.515Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T724 to T2GS1131"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA22244  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22244 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/WA22244.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22244 ;
+        adm:logEntry        bda:LG3E8E051FB1950B1B , bda:LGDFAE69D2D6535E2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR0D0CE49A0A4CDB68
+        a                   :AgentAsCreator ;
+        :agent              bdr:P382 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22244  a          :Work ;
+        skos:altLabel       "sa'i snying po la brten nas sa bdag snying gter 'bul tshul gyi cho ga"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa sa'i snying po la brten nas sa bdag snying gter 'bul tshul gyi cho ga dpag bsam ljon pa/"@bo-x-ewts ;
+        :creator            bdr:CR0D0CE49A0A4CDB68 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW22244 ;
+        :workIsAbout        bdr:T2GS1131 , bdr:T35 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27504 {
+    bda:LG45F77AC129E85F2E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG4AB039706A5CB960
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T11:45:01.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added Place of Production, authorship statement and date of writing"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA27504  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27504 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8b/WA27504.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27504 ;
+        adm:logEntry        bda:LG45F77AC129E85F2E , bda:LG4AB039706A5CB960 , bda:LGIM4BF5F96E12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7FA3C2FA5D057536
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVD27A45E51BBE3528
+        a                   :CompletedEvent ;
+        :eventWhen          "འཛིན་བྱེད་ཞེས་བྱ་བ་མེ་ཕོ་བྱི་བའི་ལོར།འདུལ་འཛིན་མཁན་པོ་ཀརྨ་རིན་ཆེན་དར་རྒྱས་དཔལ་བཟང་པོས་བསམ་པ་དག་ཅིང་སྦྱོར་བ་གུས་པ་ཆེན་པོས།ཀུན་མཁྱེན་མདོ་སྔགས་གླིང་པའི་ཞལ་ཁྲིད་ཇི་ལྟ་བ་བཞིན་དུ།འཇིག་རྟེན་དབང་ཕྱུག་དཔལ་ཀརྨ་པ་རིམ་བྱོན་གྱི་གདན་ས།འོག་མིན་སྟོད་ལུང་མཚུར་ཕུའི་ཆོས་གྲྭ་ཆེན་པོར།འབུམ་འགྱུར་ཟླ་བའི་གྲལ་ཚེས་བཟང་པོར་བྲིས་པའོ།།"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:MW27504  skos:altLabel  "a detailed commentary on the yang gsang thugs kyi phur gcig revelations of mchog-gyur-glin-pa"@en-x-mixed .
+
+    bdr:WA27504  a          :Work ;
+        skos:altLabel       "gu ru'i thogs dam zab pa skor bdun las mngon spyod drag po'i las kyi zab pa yan gsan thugs kyi phur gcig gi spyi don rnam bsad rig 'dzin rtsal chan rnam gnis kyi zal lung zab don ban mdzod/"@bo-x-ewts , "thugs kyi phur gcig gi spyi don/"@bo-x-ewts ;
+        skos:prefLabel      "gu ru'i thugs dam zab pa skor bdun las mngon spyod drag po'i las kyi zab pa yang gsang thugs kyi phur gcig gi spyi don rnam bshad rig 'dzin rtsal chang rnam gnyis kyi zhal lung zab don bang mdzod/"@bo-x-ewts , "a detailed commentary on the yang gsang thugs kyi phur gcig revelations of mchog-gyur-glin-pa"@en-x-mixed ;
+        :creator            bdr:CR7FA3C2FA5D057536 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVD27A45E51BBE3528 ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW27504 , bdr:W27504 ;
+        :workIsAbout        bdr:T2140 .
+}

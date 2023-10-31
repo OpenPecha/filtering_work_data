@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN14295 {
+    bda:LG3169A4CE33F63C5E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-22T10:44:49.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG973542CC50021AD3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-22T10:42:11.461Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDB9ED542D0921F29
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:WA3CN14295  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN14295 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4c/WA3CN14295.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN14295 ;
+        adm:logEntry        bda:LG3169A4CE33F63C5E , bda:LG973542CC50021AD3 , bda:LGDB9ED542D0921F29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN14295  a       :Work ;
+        skos:prefLabel      "sog yul nas byung ba'i tsak+li dang thang ka sogs nang chos kyi dpe ris sna tshogs phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Tsaklis and Thangkas picture from Mongolia."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN14295 , bdr:W3CN14295 ;
+        :workIsAbout        bdr:T00AG01412 , bdr:T1125 , bdr:T1845 .
+}

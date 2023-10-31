@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2139 {
+    bda:LG16F5C0687C940819
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGF3BB5560EBA67909
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-28T09:15:37.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2139"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2139  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2139 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "89/WA1NLM2139.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2139 ;
+        adm:logEntry        bda:LG16F5C0687C940819 , bda:LGF3BB5560EBA67909 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0BEAB3C2588E81FA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3342 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2139  a       :Work ;
+        skos:prefLabel      "ma cig mkha' 'gro snyan brgyud lam zab rgyun gyi rnal 'byor 'khyer bde bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mhta' gtad 'byung ba'i gzer bu/ 2 'go ba'i lha lnga 'brol bsnyigs mchod tshul/ 3 ge sar rgyal po'i bsang / 4 sdig sgrub kun sel/ 5 dpal ldan lha mo'i bsang / 6 'phags pa phyogs bcu'i mun pa rnam par sel ba/ 7 dur khrod bdag po'i dar cog 8 'phags pa tshogs kyi bdg ma'i gzungs/ 9 'phags pa byams pa'i smon lam/ 10 rje btsun ma 'phags ma sgrol ma'i gsol 'debs dge legs chu gter/ 11 bla ma thams cad mkhyen pas mdzad pa las sdig sgrib sogs/ 12 rje btsun 'phags ma sgrol ma'i sgrub thabs/ 13 mgon dkar yid bzhin nor bu'i gtor chog 14 ma gcig khros ma nag mo'i gsur/ 15 lus sbyin gyi dgug"@en , "Yoga practice of Dakini's oral instruction by Bhikshu Jampa Lhawang Rigzin; other text also included."@en ;
+        :creator            bdr:CR0BEAB3C2588E81FA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2139 , bdr:W1NLM2139 ;
+        :workIsAbout        bdr:T2614 , bdr:T2MS13267 , bdr:T439 .
+}

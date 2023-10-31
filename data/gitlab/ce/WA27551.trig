@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27551 {
+    bda:LG0143B0A5E8BC2B26
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T13:21:34.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added Place of Production"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG2C6E39AB3478E6EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-24T11:46:37.917Z"^^xsd:dateTime ;
+        adm:logMessage      "bskyar bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG5E86D3C59B5AF6B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-08T15:04:21.762Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG639F0ECC4923B24A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-03-12T14:02:38.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGBCC8BF8390A1745C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA27551  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27551 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ce/WA27551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27551 ;
+        adm:logEntry        bda:LG0143B0A5E8BC2B26 , bda:LG2C6E39AB3478E6EC , bda:LG5E86D3C59B5AF6B0 , bda:LG639F0ECC4923B24A , bda:LGBCC8BF8390A1745C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR75D8E64654D9C629
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2010 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA27551  a          :Work ;
+        skos:prefLabel      "'od gsal gyi rgyan yid kyi mun sel/"@bo-x-ewts ;
+        :catalogInfo        "On the Two Truths in Buddhism."@en ;
+        :creator            bdr:CR75D8E64654D9C629 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW27551 , bdr:W27551 ;
+        :workIsAbout        bdr:T1593 .
+}

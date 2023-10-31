@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA11064 {
+    bda:LG78801814C13CD675
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-18T12:18:06.64Z"^^xsd:dateTime ;
+        adm:logMessage      "restored"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA73D9DA968B52115
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-17T15:49:21.656Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE9BA8E4C63FF647C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA11064  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA11064 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "99/WA11064.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA11064 ;
+        adm:logEntry        bda:LG78801814C13CD675 , bda:LGA73D9DA968B52115 , bda:LGE9BA8E4C63FF647C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR5AB5EF3BA7D0D397
+        a                   :AgentAsCreator ;
+        :agent              bdr:P996 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE0728FA96A247166
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA11064  a          :Work ;
+        skos:prefLabel      "dbu ma'i rnam bshad blo gsal sgron me/"@bo-x-ewts ;
+        :creator            bdr:CR5AB5EF3BA7D0D397 , bdr:CRE0728FA96A247166 ;
+        :isRoot             true ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW11064 , bdr:W11064 ;
+        :workIsAbout        bdr:T233 .
+}

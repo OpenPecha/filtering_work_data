@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21712 {
+    bda:LG162D42323B565D54
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T21:00:08.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8056F8F3DA03F003
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-02T13:42:55.106Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAAB47298DA42D84A
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-06T20:54:54.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDE1B153756D0EBCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA3CN21712  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21712 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/WA3CN21712.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21712 ;
+        adm:logEntry        bda:LG162D42323B565D54 , bda:LG8056F8F3DA03F003 , bda:LGAAB47298DA42D84A , bda:LGDE1B153756D0EBCB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR19F04C1D0D6B49F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7911 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN21712  skos:altLabel  "现代教诲"@zh-hans .
+
+    bdr:WA3CN21712  a       :Work ;
+        skos:altLabel       "blang dor lam ston/"@bo-x-ewts ;
+        skos:prefLabel      "deng rabs bslab bya'i bshad 'grel/"@bo-x-ewts , "现代教诲"@zh-hans ;
+        :catalogInfo        "Modern education and instrctions by Larung Khenpo Tshultrim Gyatso."@en ;
+        :creator            bdr:CR19F04C1D0D6B49F7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN21712 , bdr:W3CN21712 ;
+        :workIsAbout        bdr:T234 , bdr:T58 .
+}

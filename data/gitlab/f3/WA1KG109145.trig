@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG109145 {
+    bda:LG144D6D86EA866DBB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-02-13T11:07:10.015Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG87AC3A247FFEC071
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-13T12:02:46.511Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAF01F9ED557CA4B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-02-13T11:20:52.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG109145  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG109145 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f3/WA1KG109145.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG109145 ;
+        adm:logEntry        bda:LG144D6D86EA866DBB , bda:LG87AC3A247FFEC071 , bda:LGAF01F9ED557CA4B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR47441C92752A42E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016724 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG109145  a      :Work ;
+        skos:prefLabel      "gtam gyi mdzod/"@en ;
+        :catalogInfo        "Collection of writings by Chamdo Sherab (b. 1969) on various subjects."@en ;
+        :creator            bdr:CR47441C92752A42E0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1KG109145 , bdr:W1KG109145 ;
+        :workIsAbout        bdr:T217 .
+}

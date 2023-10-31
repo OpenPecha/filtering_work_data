@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2889 {
+    bda:LG9B13BB3037525C7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-04T13:10:28.708Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF8C93AAF9177EC7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIMD3D03661  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2889"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2889  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2889 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3c/WA1NLM2889.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2889 ;
+        adm:logEntry        bda:LG9B13BB3037525C7D , bda:LGF8C93AAF9177EC7C , bda:LGIMD3D03661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7415347113B9A018
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3893 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRAF50BD49A438BD4F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRE85FCB6917111078
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6116 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2889  a       :Work ;
+        skos:prefLabel      "rgyal po zla ba bzang po'i rnam 'phrul ta'i si tu chen po rnam rgyal grags pa'i dri ba'i lan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Questions put by Jangdak Taisitu Namgyal Drakpa to the 1st Dalai Lama; Responses to author's student about the difficult points in Panchen Sonam Dakpa's writing of Madhyamika, Paramita, and Vinaya by Geshe Tsultrim Namgyal; praise to Tsongkhapa and included other texts."@en ;
+        :creator            bdr:CR7415347113B9A018 , bdr:CRAF50BD49A438BD4F , bdr:CRE85FCB6917111078 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM2889 , bdr:W1NLM2889 ;
+        :workIsAbout        bdr:P64 , bdr:T1215 , bdr:T2005 .
+}

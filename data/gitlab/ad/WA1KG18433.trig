@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG18433 {
+    bda:LG64CDF0EBC9020843
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-03T09:59:17.705Z"^^xsd:dateTime ;
+        adm:logMessage      "temp released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA81A64A6BB1ABAF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-20T17:05:07.212Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGACC7BA6631435104
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-20T17:06:30.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG18433  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG18433 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ad/WA1KG18433.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG18433 ;
+        adm:logEntry        bda:LG64CDF0EBC9020843 , bda:LGA81A64A6BB1ABAF2 , bda:LGACC7BA6631435104 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1KG18433  a       :Work ;
+        skos:prefLabel      "skul ba'i gtam/ (dus deb/)"@bo-x-ewts ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW1KG18433 , bdr:W1KG18433 .
+}

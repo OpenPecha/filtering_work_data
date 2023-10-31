@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2087 {
+    bda:LG04F93019B45F8358
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG9FEA8BEDD3B4BD6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-13T09:30:20.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2087"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2087  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2087 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a4/WA1NLM2087.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2087 ;
+        adm:logEntry        bda:LG04F93019B45F8358 , bda:LG9FEA8BEDD3B4BD6D , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFFB0619D327598D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2087  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa zhes bya ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsangs mchod brka shis char 'bebs/ 2 rgyal mtshan gyi rtse mo'i dpung rgyan gzungs/ 3 gnas brtan bcu drug 4 lo zla spar sme legs kyi bgegs sel spyi bcos/ 5 byang chog glud du spyad pa/ 6 ma mo'i glud rdzong 'phral rkyen phyir bkyog gdon bgegs tshar gcod/"@bo-x-ewts , "Root text of Madhyamakavatara by Candrakirit; other text also included."@en ;
+        :creator            bdr:CRFFB0619D327598D2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2087 , bdr:W1NLM2087 ;
+        :workIsAbout        bdr:T233 , bdr:WA19458 .
+}

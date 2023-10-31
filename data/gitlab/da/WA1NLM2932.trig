@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2932 {
+    bda:LG05250640C21F6B72
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LG6BD30971C7179596
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-23T09:13:58.217Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2932"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2932  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2932 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "da/WA1NLM2932.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2932 ;
+        adm:logEntry        bda:LG05250640C21F6B72 , bda:LG6BD30971C7179596 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2932  a       :Work ;
+        skos:prefLabel      "chos brgyad bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bla ma lnga bcu pa/ 2 lho sgo'i lhan thabs rje bla ma'i gsung rgyun/ 3 lha mo lngas grib gsal 'byung bzhi gnas lnga grib phog pa'i grib gsal/ 4 dpal ldan lha mo'i sgo nas maN+Dal bzhi pa byed tshul dgos 'dod kun 'byung / 5 blto mchog san tshogs lto sgro las rlung rta bskyed pa'i mdos/ 6 gsang ba'i bdag po gnas pa dgra lha dbang bstod brten 'dzugs/ 7 dpal ldan lha mo la brten pa'i ma mo'i glud rdzongs 'phral rkyen phyir bzlog gdon bgegs tshar gcod/ 8 tshe dpag med tshe'i rig 'dzin dngos grub ster ba'i gdam pa/ 9 klu dbang rgal po'i sgrub thabs byin rlabs char 'bebs/ 10 za yi rnam ma'i byabs khrus/"@en , "A eight short version of sutra and tantra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2932 , bdr:W1NLM2932 ;
+        :workIsAbout        bdr:WA22003 .
+}

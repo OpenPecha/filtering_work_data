@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1013 {
+    bda:LG1BE80C13F8F9D3BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-16T10:34:54.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGAC0625EEA566CF57
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-07T13:29:40.124Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF0CE22C8C3976C09
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1013"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1013  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1013 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "72/WA1NLM1013.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1013 ;
+        adm:logEntry        bda:LG1BE80C13F8F9D3BC , bda:LGAC0625EEA566CF57 , bda:LGF0CE22C8C3976C09 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1013  a       :Work ;
+        skos:prefLabel      "byang chub lam gyi rim pa'i zab 'khrid byang chub bde lam gyi dmigs rnam snying po dril te nyams su len tshul phan bde'i lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction to the practice of Tsongkhapa's gradual path; the general meaning of Abhisamayalankara's commentary by Gyaltsab Darma Rinchen; and aspiration prayers."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T238 , bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM1013 , bdr:W1NLM1013 ;
+        :workIsAbout        bdr:T1215 , bdr:T541 , bdr:WA648 .
+}

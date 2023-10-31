@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ58526 {
+    bda:LG3D623B94FEFA2125
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-27T11:52:30.026Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGB787A50229A5C3A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-27T11:51:43.565Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGBF5B45FF87773920
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-10T20:39:49.246Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE901175E630A66A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ58526  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ58526 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/WA4CZ58526.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ58526 ;
+        adm:logEntry        bda:LG3D623B94FEFA2125 , bda:LGB787A50229A5C3A1 , bda:LGBF5B45FF87773920 , bda:LGE901175E630A66A8 , bda:LGIM569A8014B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREDF00780FC7F44F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4158 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ58526  a       :Work ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa mchan bu dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud bzhi mchan bu dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "The Four Tibetan Medical Tantras with annotation by the 16th century medical commentator Lhunteng Duetsi Gyurme."@en ;
+        :creator            bdr:CREDF00780FC7F44F1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW4CZ58526 , bdr:W4CZ58526 ;
+        :workIsAbout        bdr:WA21667 .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29204 {
+    bda:LG0628A9682E073854
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29204  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29204 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c5/WA29204.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29204 ;
+        adm:logEntry        bda:LG0628A9682E073854 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR1E79E2C33001FC05
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6036 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR7FFE72BAF53272FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9571 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA29204  a          :Work ;
+        skos:altLabel       "the teachings of chatral rinpoche"@en ;
+        skos:prefLabel      "compassionate action"@en ;
+        :creator            bdr:CR1E79E2C33001FC05 , bdr:CR7FFE72BAF53272FE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29204 ;
+        :workIsAbout        bdr:T2413 , bdr:T58 .
+}

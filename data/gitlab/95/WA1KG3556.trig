@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG3556 {
+    bda:LG7ADABEE92A94EFFB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-24T16:17:15.876Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7B46608D4733D13D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-24T16:21:48.682Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG3556  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG3556 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "95/WA1KG3556.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG3556 ;
+        adm:logEntry        bda:LG7ADABEE92A94EFFB , bda:LG7B46608D4733D13D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE5D0C43BA693B084
+        a                   :AgentAsCreator ;
+        :agent              bdr:P748 ;
+        :role               bdr:R0ER0014 .
+
+    bdr:CRE7A5E6B492D622BE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5788 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG3556  a        :Work ;
+        skos:altLabel       "lung ston pa rtsa ba sum cu pa dang rtags kyi 'jug pa/ sum rtags 'grel ba nor bu'i me long /"@bo-x-ewts ;
+        skos:prefLabel      "sum rtags rtsa ba dang 'grel ba nor bu'i me long /"@bo-x-ewts ;
+        :catalogInfo        "Commentary on root texts of Tibetan grammar, the Sumcupa and Takkyi jugpa. Written by Dzogchen Khenpo Tupten Tsondru (1920-1979)."@en ;
+        :creator            bdr:CRE5D0C43BA693B084 , bdr:CRE7A5E6B492D622BE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG3556 , bdr:W1KG3556 ;
+        :workIsAbout        bdr:WA6507 .
+}

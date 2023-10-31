@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23444 {
+    bda:LG3D2F94BE22DA03F5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG444C29E3DD76FD0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG475E7CCEF557EB4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-30T09:47:13.637Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title and topics"@en ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LG803C06572C8DAE66
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-12-09T10:43:07.457Z"^^xsd:dateTime ;
+        adm:logMessage      "changed bibliographc title"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGDCF96ECACB1A20E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-15T16:34:25.281Z"^^xsd:dateTime ;
+        adm:logMessage      "inclusion on TBRC Core Text Collection 4"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMC3134826EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23444  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23444 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8c/WA23444.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23444 ;
+        adm:logEntry        bda:LG3D2F94BE22DA03F5 , bda:LG444C29E3DD76FD0A , bda:LG475E7CCEF557EB4C , bda:LG803C06572C8DAE66 , bda:LGDCF96ECACB1A20E6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA22393 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR368BDF8093F40CB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1844 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23444  skos:altLabel  "collected works (gsun 'bum) of sgam-po-pa bsod-nams-rin-chen"@en-x-mixed .
+
+    bdr:WA23444  a          :Work ;
+        skos:altLabel       "gsung 'bum/_bsod nams rin chen/"@bo-x-ewts , "Collected works (gsuṅ ʾbum) of Sgam-po-pa Bsod-nams-rin-chen."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_sgam po pa/"@bo-x-ewts , "collected works (gsun 'bum) of sgam-po-pa bsod-nams-rin-chen"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Gampopa Sonam Rinchen (1079-1153), founder of the Dakpo Kagyu order. Reproduced from a manuscript from Lahul."@en ;
+        :creator            bdr:CR368BDF8093F40CB4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1187 .
+}

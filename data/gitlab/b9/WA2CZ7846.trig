@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ7846 {
+    bda:LG114CBB0C515B4E36
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T11:17:57.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG11BE5046441BDADF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-06-23T10:43:40.849Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG91FAB531C56FF451
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-09T11:05:45.532Z"^^xsd:dateTime ;
+        adm:logMessage      "updated title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9B27783880F694C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-07-09T11:13:00.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ7846  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ7846 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "b9/WA2CZ7846.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ7846 ;
+        adm:logEntry        bda:LG114CBB0C515B4E36 , bda:LG11BE5046441BDADF , bda:LG91FAB531C56FF451 , bda:LG9B27783880F694C7 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3BAF44F2D79CD259
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV2BBBA332F38E5421
+        a                   :CompletedEvent ;
+        :eventWhen          "merta"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:WA2CZ7846  a        :Work ;
+        skos:altLabel       "rgyal ba'i dbang po thams cad mkhyen gzigs bcu pa chen po ngag dbang blo bzang 'jam dpal bstan 'dzin tshul khrims rgya mtsho dpal bzang po'i rnam par thar pa ngo mtshar nor bu'i 'phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "tshul khrims rgya mtsho'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Dalai Lama 10 Tsultrim Gyatso (1816-1836)."@en ;
+        :creator            bdr:CR3BAF44F2D79CD259 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV2BBBA332F38E5421 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2CZ7846 , bdr:W2CZ7846 ;
+        :workIsAbout        bdr:P260 , bdr:T819 .
+}

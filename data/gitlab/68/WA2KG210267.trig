@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG210267 {
+    bda:LG12E941E26CF220D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG37E926DCC451495B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-13T15:40:52.794Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarily removed tbrc holdings note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8C1547C7F6E4CFCA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-02-12T10:24:41.404Z"^^xsd:dateTime ;
+        adm:logMessage      "work number for chungdak la"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC2B2937ED365F2D0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-21T11:49:49.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF84CAFEDC4E68764
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-13T14:23:41.565Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA2KG210267  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG210267 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "68/WA2KG210267.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG210267 ;
+        adm:logEntry        bda:LG12E941E26CF220D5 , bda:LG37E926DCC451495B , bda:LG8C1547C7F6E4CFCA , bda:LGC2B2937ED365F2D0 , bda:LGF84CAFEDC4E68764 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRDE053AAB19EB32D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P357 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG210267  a      :Work ;
+        skos:prefLabel      "gsung thor bu/ blo gros rgyal po/"@bo-x-ewts ;
+        :catalogInfo        "Miscellaneous Writings by Zurkhar Lodro Gyalpo (1509-?) from Zucker school of Tibetan medicine"@en ;
+        :creator            bdr:CRDE053AAB19EB32D8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW2KG210267 , bdr:W2KG210267 ;
+        :workIsAbout        bdr:T85 .
+}

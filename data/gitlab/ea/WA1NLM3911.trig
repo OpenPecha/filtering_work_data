@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3911 {
+    bda:LG48E0C1214CA99621
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-14T13:26:43.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3911"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3911  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3911 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ea/WA1NLM3911.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3911 ;
+        adm:logEntry        bda:LG48E0C1214CA99621 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9EF522D207731706
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3911  a       :Work ;
+        skos:prefLabel      "dngos grub kun stsol bar chad sgrib sel ba'i bsangs mchod rab gnas rta thogs ma/ 'gegs gtor ma grib sel ma gto nyes kun sel ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mthu stobs dbang phyug ge ser rgyal po'i bsangs mchod/ 2 dpal ldan dur khrod bdag po gser skyems/ 3 dge slong gi phyir bcos/ 4 ye shes mkha' 'gro ma'i sgo nas sho mo 'debs tshul/ 5 dpal ldan lha mo la brten pa'i las bzhi sgrub pa'i maN+Dal bzhi pa'i cho ga 'dod dgu'i mchog stsol/ 6 las bzhi lha mo'i mngon rtogs/ 7 phyag bzhi spyan ras gzigs kyi bla ma'i rnal 'byor bden chen zhing du bgrod pa'i 'them skas/ 8 yongs 'dzin dam pa rje btsun blo bzang tshul khrims dpal bzang po'i gsung las rje bla ma'i bsnyen sgrub bya ba'i rim pa bla ma'i byin rlabs 'gugs pa'i lcags kyu/ 9 u rgyan rin po che gsol 'debs bsam pa myur grub ma/ 10 gu ru'i pad+ma gsol 'debs gser gyi 'phreng ba/"@en , "A consecration and bali offering for repelling obasctacles."@en ;
+        :creator            bdr:CR9EF522D207731706 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 ;
+        :workHasInstance    bdr:MW1NLM3911 , bdr:W1NLM3911 ;
+        :workIsAbout        bdr:T1AT306 .
+}

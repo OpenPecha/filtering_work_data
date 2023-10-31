@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1703 {
+    bda:LG5DA04B1678DEB978
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG6B212C4E7030739C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:44:30.876Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG775CE8758D6330B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T15:16:00.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content. cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1703"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1703  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1703 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3d/WA1NLM1703.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1703 ;
+        adm:logEntry        bda:LG5DA04B1678DEB978 , bda:LG6B212C4E7030739C , bda:LG775CE8758D6330B8 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1703  a       :Work ;
+        skos:prefLabel      "'jigs byed kyi sgrub thabs bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dregs pa sde brgyad la gser skyems gtong ba'i tshul/ 2 klu dbang rgyal po'i mngon rtogs mchod par bsgom par 'dod na/ 3 rje btsun sgrol ma la yang dag par rdzogs pa'i sangs rgyas rnam par snang mdzad chen po'i bstod pa/ 4 bla ma mchod pa'i 'don 'grigs dang rje bdag nyid chen po la ji ltar gsol ba 'debs pa'i dmigs rim le tshan gnyis bcas/ 5 byang chub sems dpa'i ltung bshags/ 6 lha mo dbyangs can ma'i sgrub thabs/ 7 chu glu gdon chen bco lnga / 8 'phags pa snang brgyad thub chod kun 'dul byed bkra shis nyi ma/ 9 gdugs dkar la brten nas glud rdzongs bya tshul bya mun sel sgron me/ 10 bkra shis brtsegs pa'i mdo/ 11 'phags pa phyogs bcu mun pa sel ba/ 12 byad grol chang khrus gdams ngag shin tu zab pa mkha' 'gro rnams kyi snying thig 13 lo ma gyon ma rigs gsum gyi bsgom bzlas rgyun 'khyer ma/ 14 'jigs byed dpa' bo gcig pa'i mngon rtogs mdor sdus/ 15 dam can bsangs/ 16 lha mo lcam srig ma'i bsangs/ 17 bsngo ba smon lam/"@bo-x-ewts , "A short sadhana of Bairava; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM1703 , bdr:W1NLM1703 ;
+        :workIsAbout        bdr:T104 .
+}

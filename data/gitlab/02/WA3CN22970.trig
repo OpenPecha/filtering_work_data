@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22970 {
+    bda:LG336F1DBA8DE38EE2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-16T11:32:12.341Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG39A21EC9D8C89232
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG67817C3FA06E1284
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-07-30T19:31:19.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG9A36CC29D9BA0A7A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-30T22:30:48.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22970  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22970 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/WA3CN22970.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22970 ;
+        adm:logEntry        bda:LG336F1DBA8DE38EE2 , bda:LG39A21EC9D8C89232 , bda:LG67817C3FA06E1284 , bda:LG9A36CC29D9BA0A7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR119B4DF261FF91C5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3639 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22970  a       :Work ;
+        skos:altLabel       "bcol ldan 'das dpal chen rdo rje phur pa'i 'phrin las kyi rnam par bshad pa he ru ka dpal bzhad pa'i zhal lung /"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje phur pa'i 'phrin las kyi rnam bshad he ru ka dpal bzhad pa'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on the Vajra Kilaya practice by Nyingma master Kunzang Tobten Wangpo (1781-1826)."@en ;
+        :creator            bdr:CR119B4DF261FF91C5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN22970 , bdr:W3CN22970 ;
+        :workIsAbout        bdr:T1786 .
+}

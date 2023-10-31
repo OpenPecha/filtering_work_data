@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD5183 {
+    bda:LG0AC4388E7FC1B3C8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-09-20T16:54:30.883Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG2D49A99E68D71C8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T11:25:03.354Z"^^xsd:dateTime ;
+        adm:logMessage      "removed product information since there is no images"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG69781635AE0EFB83
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-07-23T12:23:56.422Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as editing"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA4PD5183  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD5183 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e1/WA4PD5183.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD5183 ;
+        adm:logEntry        bda:LG0AC4388E7FC1B3C8 , bda:LG2D49A99E68D71C8F , bda:LG69781635AE0EFB83 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA26741 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR3B4067DAF53E32B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P663 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA4PD5183  a        :Work ;
+        skos:altLabel       "bod kyi jo mo ye shes mtsho rgyal gyi mdzad tshul rnam par thar pa gab pa mngon phyung rgyud mang dri za'i glu 'phreng /"@bo-x-ewts ;
+        skos:prefLabel      "ye shes mtsho rgyal gyi rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Revealed biography of Padmasambhava and his consort Yeshe Tsogyal."@en ;
+        :creator            bdr:CR3B4067DAF53E32B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P7695 .
+}

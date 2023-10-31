@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368810 {
+    bda:LG38998594D29E35A0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T10:04:50.688Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG593A5F872F06B489
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T10:05:14.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGDF006EAE89FB21F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-27T11:16:28.364Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog and realesed"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ368810  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368810 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "40/WA4CZ368810.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368810 ;
+        adm:logEntry        bda:LG38998594D29E35A0 , bda:LG593A5F872F06B489 , bda:LGDF006EAE89FB21F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusProvisional .
+
+    bdr:CRB6DDEB38553F8AAC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5117 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ368810  a      :Work ;
+        skos:altLabel       "chos kyi rnam grangs shes bya'i nor gling 'jug pa'i gru gzings/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts ;
+        :catalogInfo        "Dictionary of Buddhist terminology arranged in numerical enumeration."@en ;
+        :creator            bdr:CRB6DDEB38553F8AAC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1231 ;
+        :workHasInstance    bdr:MW4CZ368810 , bdr:W4CZ368810 .
+}

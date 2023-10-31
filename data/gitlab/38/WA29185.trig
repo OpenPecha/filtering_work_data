@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29185 {
+    bda:LG08B86DAB18EF603B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-07T09:13:53.497Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG40C83FD967144530
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-03-01T10:44:55.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGAEE1B6FE13E397E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGD0ADE07EA5412254
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-12T11:14:04.566Z"^^xsd:dateTime ;
+        adm:logMessage      "marked copyright"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDC10F76C9A8E671C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-23T15:00:29.504Z"^^xsd:dateTime ;
+        adm:logMessage      "note sogs bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA29185  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29185 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "38/WA29185.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29185 ;
+        adm:logEntry        bda:LG08B86DAB18EF603B , bda:LG40C83FD967144530 , bda:LGAEE1B6FE13E397E4 , bda:LGD0ADE07EA5412254 , bda:LGDC10F76C9A8E671C , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA29185  a          :Work ;
+        skos:altLabel       "Bod Rgya Dbyin skad kyi rtsis ʼkhor tshig mdzod =Zang Han Ying ji suan ji ci dian = Tibetan-Chinese-English computer dictionary /[rtsom sgrig gtso bo, Zla-ba-blo-gros ; rtsom sgrig gźon pa, Skal-bzaṅ-ʼphrin-las, Bum-pa-tshe-brtan ; rtsom sgrig pa, Btsun-thar-rgyal, Saṅs-rgyas-don-grub, Rin-chen-rdo-rje]."@en-x-mixed ;
+        skos:prefLabel      "bod rgya dbyin skad kyi rtsis 'khor tshig mdzod/"@bo-x-ewts , "tibetan-chinese-english computer dictionary"@en , "zang han ying ji suan ji ci dian"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
+        :workGenre          bdr:T220 , bdr:T240 ;
+        :workHasInstance    bdr:MW29185 , bdr:W29185 ;
+        :workIsAbout        bdr:T2412 .
+}

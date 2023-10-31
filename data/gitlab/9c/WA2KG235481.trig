@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG235481 {
+    bda:LG233DE55204052A3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T09:35:19.85Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6A4FC0E8AEDF48B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-08T21:54:33.393Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7C5BC5F141CB5035
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T06:30:16.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG235481  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG235481 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9c/WA2KG235481.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG235481 ;
+        adm:logEntry        bda:LG233DE55204052A3E , bda:LG6A4FC0E8AEDF48B0 , bda:LG7C5BC5F141CB5035 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC127B4BBB8D83FB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG235481  a      :Work ;
+        skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan gyi 'grel chung don gsal ba'i mchan 'grel kun bzang zhing gi nyi ma thar 'dod kun sel/"@bo-x-ewts ;
+        skos:prefLabel      "'grel ba don gsal gyi mchan 'grel kun bzang zhing gi nyi ma thar 'dod mun sel/"@bo-x-ewts ;
+        :catalogInfo        "Supplementary Geluk commentary on the Abhisamayalamkara used at the Gomang College of Drepung and its affiliates. Written by Lodro Gyatso (1851-1928/1930)."@en ;
+        :creator            bdr:CRC127B4BBB8D83FB8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW2KG235481 , bdr:W2KG235481 ;
+        :workIsAbout        bdr:T2005 , bdr:WA19716 .
+}

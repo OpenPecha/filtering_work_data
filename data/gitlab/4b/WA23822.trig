@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23822 {
+    bda:LG15E37582D199A6D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T12:32:48.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAF39B6A320B944CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGC18D188FF52ECA6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T14:34:37.124Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGD45EC59656A938E6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA23822  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23822 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4b/WA23822.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23822 ;
+        adm:logEntry        bda:LG15E37582D199A6D1 , bda:LGAF39B6A320B944CD , bda:LGC18D188FF52ECA6E , bda:LGD45EC59656A938E6 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR22FD2B3A4A905204
+        a                   :AgentAsCreator ;
+        :agent              bdr:P882 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23822  skos:altLabel  "autobiographical writings of 'ja'-tshon-snin-po"@en-x-mixed .
+
+    bdr:WA23822  a          :Work ;
+        skos:altLabel       "autobiographical writings of rig-'dzin 'ja'-tshon-snin-po"@en-x-mixed ;
+        skos:prefLabel      "'ja' tshon snying po'i rang rnam/"@bo-x-ewts , "autobiographical writings of 'ja'-tshon-snin-po"@en-x-mixed ;
+        :catalogInfo        "Autobiography by the Nyingma visionary Jatson Nyingpo."@en ;
+        :creator            bdr:CR22FD2B3A4A905204 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ60 , bdr:T3 ;
+        :workHasInstance    bdr:MW23822 , bdr:MW2CZ6024 , bdr:W23822 , bdr:W2CZ6024 ;
+        :workIsAbout        bdr:P882 , bdr:T1082 .
+}

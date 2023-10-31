@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3933 {
+    bda:LG9529F8CCB7B9AA03
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-21T09:06:49.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3933"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3933  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3933 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5a/WA1NLM3933.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3933 ;
+        adm:logEntry        bda:LG9529F8CCB7B9AA03 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3933  a       :Work ;
+        skos:prefLabel      "'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rdo rje gcod pa'i nang nas sho lo ka gsum gyi blangs pa bris pa/ 2 'phags pa byams pa'i smon lam gyi rgyal po/ 3 sdig sgrib kun sel/ 4 rgya nag skag bzlog 5 sme ba dgu'i gzhung bcos thabs/ 6 dzam+b+ha la dkar po'i chu sbyin/ 7 dzam+b+ha la dkar po'i chu sbyin/ 8 dge ldan lugs bzang rgyas pa'i smon lam/ grub pa'i bden tshig 9 smon lam 'di gsum par du bskrun pai mthus/ 10 bla ma thams mkhyen pa'i mnol bsangs ma/ 11 'brum nad bsun phyin sna tshogs yum bsgrub par 'dod pa/ 12 rlung rta bsangs/ 13 lto 'phye gser skyems la mdo/ 14 gzhi bdag dge bsnyen chen po'i gser skyems/ 15 mig 'byed spyan ras gzigs yi sgrub thabs/ 16 thar pa chen po 'khor/ 17 dkar po rkang po bsang / 18 'phags pa gser 'od dam pa'i mdo/ 19 g.ya' yab gzungs/ 20 'phags pa rgyal mtshan gyi rtse mo'i dpung rgyan/ 21 zur rgyan/"@en , "Mahayana sutra known as Arya Aparimita Ayurhnana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3933 , bdr:W1NLM3933 ;
+        :workIsAbout        bdr:T1KG3717 .
+}

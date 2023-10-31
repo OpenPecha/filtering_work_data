@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21745 {
+    bda:LGAAC451464B431942
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA21745  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21745 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "58/WA21745.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21745 ;
+        adm:logEntry        bda:LGAAC451464B431942 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR29B6D868B1BE3388
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7332 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRC4D1B37E8FAB46E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7331 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA21745  a          :Work ;
+        skos:prefLabel      "theses on tibetology in china/"@bo-x-ewts ;
+        :creator            bdr:CR29B6D868B1BE3388 , bdr:CRC4D1B37E8FAB46E5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T298 ;
+        :workHasInstance    bdr:MW21745 ;
+        :workIsAbout        bdr:T212 .
+}

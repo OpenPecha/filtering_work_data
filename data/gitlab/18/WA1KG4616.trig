@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG4616 {
+    bda:LG10CC9583F5386407
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T16:21:14.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added print"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG60145B8CB6FB157D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-04-14T09:58:04.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCB2ECD08FA9F9E7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-13T16:11:43.482Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG4616  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG4616 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "18/WA1KG4616.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG4616 ;
+        adm:logEntry        bda:LG10CC9583F5386407 , bda:LG60145B8CB6FB157D , bda:LGCB2ECD08FA9F9E7C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5E95F5F02BAE21B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P651 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:MW1KG4616  skos:altLabel  "the collected rediscovered teachings (gter chos) of of spo-bo gter-ston bdud-'dul rdo-rje"@en .
+
+    bdr:WA1KG4616  a        :Work ;
+        skos:altLabel       "gter chen rig 'dzin bdud 'dul rdo rje'i gter chos/"@bo-x-ewts ;
+        skos:prefLabel      "gter chos/_bdud 'dul rdo rje/"@bo-x-ewts , "the collected rediscovered teachings (gter chos) of of spo-bo gter-ston bdud-'dul rdo-rje"@en ;
+        :catalogInfo        "Collected Treasure Revelations by Nyingma master Powo Terton Dundul Dorje (1615-1672), restorer of the ancient Katok order."@en ;
+        :creator            bdr:CR5E95F5F02BAE21B6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW1KG4616 , bdr:MW22123 , bdr:MW2KG210269 , bdr:MW3PD1098 , bdr:W1KG4616 , bdr:W22123 , bdr:W2KG210269 , bdr:W3PD1098 ;
+        :workIsAbout        bdr:T1082 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS26564 {
+    bda:LG5F866F14FEBBE50D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T10:34:21.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGC1E2929A7CFF8191
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-25T10:51:20.071Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGCC91CBD5C0FC05E8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-25T10:50:19.121Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS26564  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS26564 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c8/WA8LS26564.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS26564 ;
+        adm:logEntry        bda:LG5F866F14FEBBE50D , bda:LGC1E2929A7CFF8191 , bda:LGCC91CBD5C0FC05E8 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBC3F7565115E213A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9044 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRDB7BF4E6478C2072
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7322 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:WA8LS26564  a       :Work ;
+        skos:prefLabel      "mi tshe'i lo rgyus dang 'brel yod sna tshogs/"@bo-x-ewts ;
+        :catalogInfo        "The life account of Namling Peljor Jigme and related history; supplemented and annotated by Tashi Tsering."@en ;
+        :creator            bdr:CRBC3F7565115E213A , bdr:CRDB7BF4E6478C2072 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS26564 , bdr:W8LS26564 ;
+        :workIsAbout        bdr:P9044 .
+}

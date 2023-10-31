@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA9209 {
+    bda:LG4C720F057D2FBCF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-01-14T11:40:39.789Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation corrected"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG7E7996CE9221A6DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T11:35:01.721Z"^^xsd:dateTime ;
+        adm:logMessage      "addded print type and source printrey"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGAC6E9540FA286F4F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGC13E587620E5F322
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-17T10:32:50.012Z"^^xsd:dateTime ;
+        adm:logMessage      "spelling"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGF75219ED1A341BB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA9209  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA9209 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "1c/WA9209.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA9209 ;
+        adm:logEntry        bda:LG4C720F057D2FBCF9 , bda:LG7E7996CE9221A6DD , bda:LGAC6E9540FA286F4F , bda:LGC13E587620E5F322 , bda:LGF75219ED1A341BB3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8FF768AE6B78D3D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P675 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW9209  skos:altLabel  "gsan ba ye ses kyi chos skor : extraordinary teachings from the cycle devoted to the Dakini Guhyajnana"@en .
+
+    bdr:WA9209  a           :Work ;
+        skos:altLabel       "gsang ba ye shes kyi chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro gsang ba ye shes kyi chos skor/"@bo-x-ewts , "gsan ba ye ses kyi chos skor : extraordinary teachings from the cycle devoted to the Dakini Guhyajnana"@en ;
+        :catalogInfo        "Cycle of Nyingma teachings on a form of Vajrayogini. Revealed by Terdak Lingpa Gyurme Dorje. Scanned from a set of Lelung blockprints from the library of Dudjom Rinpoche."@en ;
+        :creator            bdr:CR8FF768AE6B78D3D3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW9209 , bdr:W9209 ;
+        :workIsAbout        bdr:T1082 , bdr:T697 .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM265 {
+    bda:LG19B27403BFADF34D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-29T17:06:44.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8C3215CE081BA334
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGFDA080D6B711E8E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-08-22T14:58:14.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM265"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM265  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM265 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7b/WA1NLM265.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM265 ;
+        adm:logEntry        bda:LG19B27403BFADF34D , bda:LG8C3215CE081BA334 , bda:LGFDA080D6B711E8E9 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM265  a        :Work ;
+        skos:prefLabel      "gza' dang rgyu skar gyi mdos sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 de nas spar kha brgyad kyi gto ba bskul bya ba/ 2 mkhyen pa'i gting mtha' mi mngon zhing / 3 'byung rtsis lugs kyi lo skeg brtag pa man ngag don bsdus/ 4 chos skyong lcam sring la 'phrin las bcol ba'i tshul las bzhi lhun gyis 'grub pa'i sgra dbyangs/ 5 dur gyi rdzongs 'debs/ 6 dur rdzongs kyi them bur them kha 7 'phags pa mdo sde rgyan pa'i mdo/ 8 rtsun rig pa chen mo'i bdag bskyed/ 9 rje btsun 'phags ma sgrol ma'i sgrub thabs/ 10 rje btsun sgrol ma la brten pa'i nang cha chen po la glur gtong ba'i tshul/ 11 rje btsun 'phags ma sgrol ma'i mtshan brgya rtsa brgyad pa/ 12 rgyal ba'i yab cig 'jam pa'i dbyangs/ 13 rten 'brel snying po'i gzungs sngags kyi sgo nas yul khrus sogs bya tshul gyi cho ga dge legs char 'bebs/ 14 dpal ldan lha mo ma mo mdor glud/ 15 btsan mdos bar chad kun sel/ 16 skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs bgegs dpung kun 'joms/ 17 bla tshe 'bos pa'i 'chi med tshe byin gser gyi rdo rje/ 18 rgyal chen rnam mang thos kyi gtang rag rgyas pa 'bul chog srid zhi'i 'dod dgu'i char 'bebs/"@bo-x-ewts , "Thread-crossed ritual of Rahula and constellation."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM265 , bdr:W1NLM265 ;
+        :workIsAbout        bdr:T2630 , bdr:T502 .
+}

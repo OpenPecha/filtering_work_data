@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29658 {
+    bda:LGC47DE171DEA1A7AD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA29658  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29658 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/WA29658.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29658 ;
+        adm:logEntry        bda:LGC47DE171DEA1A7AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR258E3129442B83B3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9900 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR3742360624D6CB2C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9899 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CRCFD9C93DF5C13D8B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9901 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29658  a          :Work ;
+        skos:altLabel       "the memoirs of trulku ugyen rinpoche"@en ;
+        skos:prefLabel      "blazing splendor"@en ;
+        :creator            bdr:CR258E3129442B83B3 , bdr:CR3742360624D6CB2C , bdr:CRCFD9C93DF5C13D8B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW29658 ;
+        :workIsAbout        bdr:P9901 .
+}

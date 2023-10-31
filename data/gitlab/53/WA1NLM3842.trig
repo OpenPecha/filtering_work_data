@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3842 {
+    bda:LGF8608E9C1AFC630F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-29T14:14:28.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3842"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3842  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3842 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "53/WA1NLM3842.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3842 ;
+        adm:logEntry        bda:LGF8608E9C1AFC630F , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREB422F7A44974F30
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3842  a       :Work ;
+        skos:prefLabel      "bde ba can gyi zhing du skye ba 'dzin pa'i smon lam zhing mchog sgo 'byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bslab bya thor bu/ 2 'phrin bcol bsangs mchod/ 3 hang ka'i rgyal po'i gser skyems 'phrin las myur du stsol/ 4 chos skyong dregs pa lcam sring gi gser skyems/ 5 skyes lha yul lha'i gsol mchod ma/ 6 gnam sa snang brgyad kyi gser skyems/ 7 rlung rta dar ba'i bsangs/ 8 dge 'dun thugs mthun pa'i phyir du rje bla ma la gsol 'debs tshul/ 9 byin rlabs ma/ 10 byias pas phyug god kha bcos thabs/ 11 byis kyi dar glud bcos thabs/ byis pa'i bgegs grol/ 12 dngos grub zhu ba'i phyir dpyid kyi dpa' bo'i glu/ 13 bla ma mgon po dbyer med kyi snying zhugs kyi rgyun 'khyer/ 14 dzA ha bir gyi rlung khrid bcud len 'ja' lung mngon gyur/ 15 gser 'od bsangs mchod/ gser 'od g.yang skyabs/ 16 byams pa'i cho ga'i go rim/ 17 'go ba'i lha lnga'i bsangs mchod/"@en , "Prayer to be reborn in the Sukhavati by Tsongkhyapa Losang Dakpa."@en ;
+        :creator            bdr:CREB422F7A44974F30 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3842 , bdr:W1NLM3842 ;
+        :workIsAbout        bdr:T00JR690 , bdr:T1353 .
+}

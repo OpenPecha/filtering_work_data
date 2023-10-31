@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA29915 {
+    bda:LG5A65BDD9393C6F5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG9F3459E4030A74F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-02T15:38:28.137Z"^^xsd:dateTime ;
+        adm:logMessage      "subject class changed from T1812 to T1239"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA29915  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA29915 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "de/WA29915.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA29915 ;
+        adm:logEntry        bda:LG5A65BDD9393C6F5A , bda:LG9F3459E4030A74F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRCE5BD024421AB069
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4799 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA29915  a          :Work ;
+        skos:prefLabel      "phur pa yang gsang bla med la brten pa'i gtor bzlog sri mnan dbal mdos dang bcas pa'i phrin las kyi 'grigs rim bdud 'joms rdo rje thog mda'"@bo-x-ewts ;
+        :creator            bdr:CRCE5BD024421AB069 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW29915 ;
+        :workIsAbout        bdr:T1200 , bdr:T1239 , bdr:T905 .
+}

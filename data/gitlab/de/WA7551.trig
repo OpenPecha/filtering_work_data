@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA7551 {
+    bda:LG13CF08BC37F40E58
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG867F4CB55FBFFBB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA7551  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA7551 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "de/WA7551.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA7551 ;
+        adm:logEntry        bda:LG13CF08BC37F40E58 , bda:LG867F4CB55FBFFBB9 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3CN4841 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRD86076090B4F8D80
+        a                   :AgentAsCreator ;
+        :agent              bdr:P334 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVD06F2FFBB9A5DF64
+        a                   :CompletedEvent ;
+        :onYear             "1757"^^xsd:gYear .
+
+    bdr:WA7551  a           :Work ;
+        skos:altLabel       "dus gsum sangs rgyas thams cad kyi thugs rje ma lus pa gcig tu bsdus pa'i ngo bor gyur pa 'phags pa 'jig brten gyi dbang phyug mi'i gzugs kyi rnam par rol pa thams cad mkhyen pa ngag dbang chos grags rgya mtsho dpal bzang po'i rtogs pa brjod pa..."@bo-x-ewts ;
+        skos:prefLabel      "tshangs dbyangs rgya mtsho'i gsang rnam/"@bo-x-ewts ;
+        :creator            bdr:CRD86076090B4F8D80 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVD06F2FFBB9A5DF64 ;
+        :workGenre          bdr:T3 ;
+        :workIsAbout        bdr:P352 .
+}

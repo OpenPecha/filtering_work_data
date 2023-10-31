@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17256 {
+    bda:LG0B41A7B784BCDE33
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-10T11:49:12.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBD8E80E68B224CC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGEDD4F77AF512394D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-10T11:47:47.069Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS17256  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17256 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ca/WA8LS17256.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17256 ;
+        adm:logEntry        bda:LG0B41A7B784BCDE33 , bda:LGBD8E80E68B224CC4 , bda:LGEDD4F77AF512394D , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFCAE44EECEFE188F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P425 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17256  a       :Work ;
+        skos:altLabel       "sgrol ma phyag 'tshal nyer gcig gi bstod pa'i rnam bshad yid 'phrog uta+pa la'i chun po/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma phyag 'tshal nyer gcig gi bstod pa'i rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "An exposition of verses in the praise of 21 forms of Tara revealed by Chagri Nyima Dakpa."@en ;
+        :creator            bdr:CRFCAE44EECEFE188F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 , bdr:T67 ;
+        :workHasInstance    bdr:MW8LS17256 , bdr:W8LS17256 ;
+        :workIsAbout        bdr:T744 .
+}

@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN21552 {
+    bda:LG2705CA472EB4B840
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG8F431B6B98DBFAE4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T19:25:52.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD0B359467B33FF3C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-10T22:17:53.616Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDA07338FE99E4600
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:WA3CN21552  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN21552 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fc/WA3CN21552.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN21552 ;
+        adm:logEntry        bda:LG2705CA472EB4B840 , bda:LG8F431B6B98DBFAE4 , bda:LGD0B359467B33FF3C , bda:LGDA07338FE99E4600 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA3916 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF404AA6DFC45E76B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P235 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN21552  a       :Work ;
+        skos:prefLabel      "gsung 'bum/ 'gyur med pad+ma rnam rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of Nyingma master Shichen Gyaltsab Gyurmey Pema Namgyal (1871-1926)."@en ;
+        :creator            bdr:CRF404AA6DFC45E76B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workIsAbout        bdr:T1082 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN8033 {
+    bda:LG766A0AD8D220BB92
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-31T14:30:06.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9BD8474898F66BF5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:35:21.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDE45E5090CD61E6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-02-20T16:57:24.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN8033  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN8033 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6c/WA3CN8033.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN8033 ;
+        adm:logEntry        bda:LG766A0AD8D220BB92 , bda:LG9BD8474898F66BF5 , bda:LGDE45E5090CD61E6E , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3BB377A94732DA4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18754 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN8033  a        :Work ;
+        skos:altLabel       "ston pa tshad grub las 'phros te lta grub spyi'i dka' gnas la rnam par dpyad pa dogs pa'i tshoms/"@bo-x-ewts ;
+        skos:prefLabel      "dogs pa'i tshoms/"@bo-x-ewts ;
+        :catalogInfo        "Clarification of key points of philosophical views."@en ;
+        :creator            bdr:CRE3BB377A94732DA4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2023 , bdr:T385 ;
+        :workHasInstance    bdr:MW3CN8033 , bdr:W3CN8033 .
+}

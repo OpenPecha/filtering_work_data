@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3443 {
+    bda:LGD86A382BF8CEE1BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-21T14:19:46.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM03915F22  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3443"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3443  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3443 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9b/WA1NLM3443.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3443 ;
+        adm:logEntry        bda:LGD86A382BF8CEE1BA , bda:LGIM03915F22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3443  a       :Work ;
+        skos:prefLabel      "dpal gsang ba 'dus pa'i bdag bskyed ngag 'don bkra shis lhun po rgyud pa grwa tshang gi 'don rgyun la rje thams cad mkhyen pas zhus dag mdzad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 myur mdzad ye shes kyi mgon po phyag drug pa'i tshogs mchod/ 2 dpal dur khrod kyi bdag po'i bskang gso dngos grub 'bar ba'i 'od dang / de'i gser skyems dang / tshogs mchod dang / gshegs gtor la sogs/ 3 rta mgrin gsang sgrub kyi gtor mas bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga / 4 bskangs mdos glud/ 5 chos skyong dregs pa lcam sring gi tshogs mchod/ 6 byang chub lam gyi rim pa'i sngon 'gro bla ma'i rnal 'byor thun mong ma yin pa kun mkhyen lam bzang /"@bo-x-ewts , "Liturgical recitation of Guhyasamaja's generation stage according to the upper tantric college, edited by the second Dalai Lama; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T457 , bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM3443 , bdr:W1NLM3443 ;
+        :workIsAbout        bdr:T417 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20766 {
+    bda:LG8374174C64BA33D5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-06-08T12:06:03.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9D35263FD9921E18
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-08T12:04:25.097Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS20766  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20766 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "08/WA8LS20766.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20766 ;
+        adm:logEntry        bda:LG8374174C64BA33D5 , bda:LG9D35263FD9921E18 , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA8LS19999 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR373DDC6FB54E0B8E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20766  a       :Work ;
+        skos:altLabel       "dpal snga 'gyur rnying ma'i gzhung lugs chen mo'i skor/ mkhas pa'i tshul la 'jug pa'i sgo"@bo-x-ewts ;
+        skos:prefLabel      "mkhas pa'i tshul la 'jug pa'i sgo"@bo-x-ewts ;
+        :catalogInfo        "Ju Mipham's interpretation of scholarship."@en ;
+        :creator            bdr:CR373DDC6FB54E0B8E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS20766 ;
+        :workIsAbout        bdr:T1770 .
+}

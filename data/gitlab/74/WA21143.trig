@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21143 {
+    bda:LG21B1C43BF090006F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-20T10:06:18.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4727F1ED04EABEBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-20T10:05:48.128Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC0EDEDCE763B5334
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-21T12:00:51.589Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD24D5673B3ECAD1D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21143  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21143 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "74/WA21143.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21143 ;
+        adm:logEntry        bda:LG21B1C43BF090006F , bda:LG4727F1ED04EABEBC , bda:LGC0EDEDCE763B5334 , bda:LGD24D5673B3ECAD1D , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9A117B93286F823D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P843 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW21143  skos:altLabel  "a detailed exegesis of the utpattikrama of Cakrasamvara, according to the mkha' 'gro snyan brgyud oral transmission of the 'brug-pa dkar-brgyud-pa"@en .
+
+    bdr:WA21143  a          :Work ;
+        skos:altLabel       "dpal mkha' 'gro snyan brgyud kyi yab bka' rgyas pa'i bskyed rim rnam bshad grub gnyis rin chen 'byung gnas/"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog snyan rgyud kyi bskyed rim rnam bshad/"@bo-x-ewts , "a detailed exegesis of the utpattikrama of Cakrasamvara, according to the mkha' 'gro snyan brgyud oral transmission of the 'brug-pa dkar-brgyud-pa"@en ;
+        :catalogInfo        "Detailed exegesis of the utpattikrama of Cakrasamvara, according to the mkha' 'gro snyan brgyud oral transmission of the Drugpa Kagyu tradition."@en ;
+        :creator            bdr:CR9A117B93286F823D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW21143 , bdr:W21143 ;
+        :workIsAbout        bdr:T1281 , bdr:T164 .
+}

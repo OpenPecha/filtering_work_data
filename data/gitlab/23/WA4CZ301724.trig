@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ301724 {
+    bda:LG27526E9AA779AE5E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:08:18.204Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG439452B3DFB3C657
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-25T15:00:33.726Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works Images from the DVDs of Paltsek, 2013 scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG7A421638C921383A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T13:24:05.836Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG9A38A776222DCE79
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:52:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:WA4CZ301724  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ301724 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "23/WA4CZ301724.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ301724 ;
+        adm:logEntry        bda:LG27526E9AA779AE5E , bda:LG439452B3DFB3C657 , bda:LG7A421638C921383A , bda:LG9A38A776222DCE79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA4CZ301723 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRF3AC479BFDD9F9EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2627 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ301724  a      :Work ;
+        skos:altLabel       "'jigs bral gyi slob dpon phyogs thams cad las rnam par rgyal ba'i zhabs kyis mdzad pa'i dpal de kho na nyid 'dus pa'i snying po/"@bo-x-ewts , "de kho na nyid bsdus pa las rgyud sde spyi'i rnam gzhag"@bo-x-ewts ;
+        skos:prefLabel      "rgyud sde spyi'i rnam gzhag bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "Detailed explanation on general classification of Tantra."@en ;
+        :creator            bdr:CRF3AC479BFDD9F9EE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 , bdr:T4CZ71 ;
+        :workIsAbout        bdr:T1431 .
+}

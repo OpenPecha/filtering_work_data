@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ8046 {
+    bda:LG2367D0E56491465F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-06T12:11:41.616Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG51BF6E69B09601C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-22T12:37:21.725Z"^^xsd:dateTime ;
+        adm:logMessage      "adde colophon title"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD01CAD0A4B274275
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-08-22T12:37:57.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD21B63A0B4D5E76D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA2CZ8046  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ8046 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "41/WA2CZ8046.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ8046 ;
+        adm:logEntry        bda:LG2367D0E56491465F , bda:LG51BF6E69B09601C3 , bda:LGD01CAD0A4B274275 , bda:LGD21B63A0B4D5E76D , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR753618EB37FA96DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ8045 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2CZ8046  skos:altLabel  "因明逻辑概要"@zh-hans .
+
+    bdr:WA2CZ8046  a        :Work ;
+        skos:prefLabel      "rtags rigs kyi go don gnad bsdus gzur gnas dgyes pa'i mchod sprin/"@bo-x-ewts , "因明逻辑概要"@zh-hans ;
+        :catalogInfo        "Summary of work on Buddhist reasoning."@en ;
+        :creator            bdr:CR753618EB37FA96DD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2CZ8046 , bdr:W2CZ8046 ;
+        :workIsAbout        bdr:T1235 .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA26932 {
+    bda:LG06B51D8F9BAC126E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGDCACF8D7FE5C6041
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-04-24T08:57:21.267Z"^^xsd:dateTime ;
+        adm:logMessage      "removed archive info"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA26932  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA26932 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3d/WA26932.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA26932 ;
+        adm:logEntry        bda:LG06B51D8F9BAC126E , bda:LGDCACF8D7FE5C6041 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR28EDF2A4DE7EA29C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA26932  a          :Work ;
+        skos:prefLabel      "bde ba can gyi zhing la bsngags pa dad pa'i chu gter 'byung ba/"@bo-x-ewts ;
+        :creator            bdr:CR28EDF2A4DE7EA29C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW26932 ;
+        :workIsAbout        bdr:T1353 , bdr:T901 .
+}

@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC284 {
+    bda:LG383033C62C71A116
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T22:25:41.964Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3C6E509C44771BC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:56.56Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG520CA5495CA1B0BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-17T22:58:41.543Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG6A0DA8F7FC96F718
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG91AEB48EE99C3A9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-22T18:23:09.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# for food"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE7A5D418D3B9867A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T20:31:44.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGF2E57D7D1164B2FD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-04T11:56:36.405Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC284  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC284 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "a1/WA1AC284.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC284 ;
+        adm:logEntry        bda:LG383033C62C71A116 , bda:LG3C6E509C44771BC5 , bda:LG520CA5495CA1B0BF , bda:LG6A0DA8F7FC96F718 , bda:LG91AEB48EE99C3A9A , bda:LGE7A5D418D3B9867A , bda:LGF2E57D7D1164B2FD , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1AC284  skos:altLabel  "饮食文化卷"@zh-hans .
+
+    bdr:WA1AC284  a         :Work ;
+        skos:altLabel       "yin shi wen hua juan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bza' btung 'o ma'i rgya mtsho/"@bo-x-ewts , "饮食文化卷"@zh-hans ;
+        :catalogInfo        "Instruction on theTibetan traditional food and drink."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T297 ;
+        :workHasInstance    bdr:MW1AC284 , bdr:W1AC284 ;
+        :workIsAbout        bdr:T1979 , bdr:T424 .
+}

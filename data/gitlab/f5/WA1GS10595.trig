@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1GS10595 {
+    bda:LG4D601EEA472804A5
+        a                   adm:UpdateData .
+
+    bda:LG5119B021A5726FB2
+        a                   adm:InitialDataCreation .
+
+    bda:W1GS10595  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W1GS10595 ;
+        adm:replaceWith     bdr:WA1GS10595 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA1GS10595  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1GS10595 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f5/WA1GS10595.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1GS10595 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0B611B50ED75FD70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16819 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT97E20B0FB0838AEB
+        a                   :Note ;
+        :noteText           "attributed in most sources to nagarjuna; toh no. 4124 attributes to shakya 'od (shakyaprabha)"@en .
+
+    bdr:WA1GS10595  a       :Work ;
+        skos:prefLabel      "gzhi thams cad yod par smra ba'i dge tshul gyi tshig le'ur byas pa/"@bo-x-ewts , "mulasarvastivadisramanera-karika"@sa-x-ndia ;
+        :creator            bdr:CR0B611B50ED75FD70 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT97E20B0FB0838AEB .
+}

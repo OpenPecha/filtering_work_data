@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22185 {
+    bda:LG012153B3F2EDE4FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T11:47:08.401Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG74FD73E4BE4CBC1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-01T12:36:37.882Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAD1ACFD173FB64BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-07-01T12:37:11.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF3194A45A8CB9E20
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T15:59:32.985Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG22185  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22185 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/WA1KG22185.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22185 ;
+        adm:logEntry        bda:LG012153B3F2EDE4FC , bda:LG74FD73E4BE4CBC1A , bda:LGAD1ACFD173FB64BA , bda:LGF3194A45A8CB9E20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR31808406CA0976D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG22224 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22185  a       :Work ;
+        skos:prefLabel      "rang btsan ni bod mi mang gi thob thang red/"@bo-x-ewts ;
+        :catalogInfo        "Freedom is rights of Tibetan peoples."@en ;
+        :creator            bdr:CR31808406CA0976D4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG22185 , bdr:W1KG22185 ;
+        :workIsAbout        bdr:T1113 , bdr:T1151 .
+}

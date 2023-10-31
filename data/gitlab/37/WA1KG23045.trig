@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23045 {
+    bda:LG4BA740C8FD5B28EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-22T09:30:34.597Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG79B68CBCAAF70A84
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGB6BE06A432626DAB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-22T09:31:45.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG23045  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23045 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/WA1KG23045.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23045 ;
+        adm:logEntry        bda:LG4BA740C8FD5B28EB , bda:LG79B68CBCAAF70A84 , bda:LGB6BE06A432626DAB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR464146C13DFC11CB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1853 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23045  a       :Work ;
+        skos:altLabel       "rje btsun bzhad pa rdo rje'i mgur 'bum las zhal gdams zab skor phyogs su bsdebs pa/"@bo-x-ewts ;
+        skos:prefLabel      "lha btsan yid bzhin nor bu'i mchod thabs dang zhal gdams sogs/"@bo-x-ewts ;
+        :catalogInfo        "Selection of profound instructions from the hundred thousand songs of Milarapa and offering text of deity Yishin Norbu."@en ;
+        :creator            bdr:CR464146C13DFC11CB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1KG23045 , bdr:W1KG23045 ;
+        :workIsAbout        bdr:T58 .
+}

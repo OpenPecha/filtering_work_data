@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA00KG01652 {
+    bda:LG4B3DA28DD2818B01
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-05-29T13:38:05.151Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog work"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG97730369C4196721
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-03-05T12:57:13.421Z"^^xsd:dateTime ;
+        adm:logMessage      "QC"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC7B2B1B6E64C9F34
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-27T15:15:14.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD3F1A6E02E6981BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-24T16:04:14.202Z"^^xsd:dateTime ;
+        adm:logMessage      "released first time"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA00KG01652  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA00KG01652 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "18/WA00KG01652.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA00KG01652 ;
+        adm:logEntry        bda:LG4B3DA28DD2818B01 , bda:LG97730369C4196721 , bda:LGC7B2B1B6E64C9F34 , bda:LGD3F1A6E02E6981BE , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD7A6EF8BF9DAC1F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P29 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA00KG01652  a      :Work ;
+        skos:altLabel       "yon tan gzhir gyur ma'i bsdus 'grel 'jam mgon bla ma dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "yon tan gzhir gyur ma'i bsdus 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Yontan zhi gyurma, a teaching of the Geluk order. Written by the famous reformer and communist Sherab Gyatso (1884-1968)."@en ;
+        :creator            bdr:CRD7A6EF8BF9DAC1F5 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW00KG01652 , bdr:W00KG01652 .
+}

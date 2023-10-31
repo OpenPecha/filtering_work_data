@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM46 {
+    bda:LG86B0BB92488FD9BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA70CE0E400F79404
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-19T23:22:46.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF3CC0C7155263A48
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-12-11T15:50:39.866Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM46"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM46  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM46 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "66/WA1NLM46.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM46 ;
+        adm:logEntry        bda:LG86B0BB92488FD9BA , bda:LGA70CE0E400F79404 , bda:LGF3CC0C7155263A48 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM46  a         :Work ;
+        skos:altLabel       "bcom ldan 'das thams cad rig pa'i bum chog lha lnga ma sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bum chog lha lnga ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of vase ritual of sarvavid form of Vairocana from the Sarvadurgatiparisodhana."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM46 , bdr:W1NLM46 ;
+        :workIsAbout        bdr:T2517 , bdr:T976 .
+}

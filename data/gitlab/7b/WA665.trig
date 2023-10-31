@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA665 {
+    bda:LG9922E480FB8B8E99
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA665  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA665 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7b/WA665.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA665 ;
+        adm:logEntry        bda:LG9922E480FB8B8E99 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR12D4FA9314DEA062
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW665  skos:altLabel  "shi liang lun shu jie"@zh-latn-pinyin-x-ndia .
+
+    bdr:WA665  a            :Work ;
+        skos:altLabel       "rnam 'grel thar lam gsal byed/"@bo-x-ewts , "tshad ma rnam 'grel gyi tshig le'ur byas pa'i rnam bshad thar lam phyin ci ma log par gsal bar byed pa/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rnam 'grel gyi rnam bshad/"@bo-x-ewts , "shi liang lun shu jie"@zh-latn-pinyin-x-ndia ;
+        :creator            bdr:CR12D4FA9314DEA062 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW665 , bdr:W665 ;
+        :workIsAbout        bdr:T370 , bdr:WA19721 .
+}

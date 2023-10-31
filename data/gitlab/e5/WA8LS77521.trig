@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77521 {
+    bda:LG382FDCBFD112250E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-27T08:14:42.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB4DD48C231364A30
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-27T08:14:14.504Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77521  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77521 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e5/WA8LS77521.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77521 ;
+        adm:logEntry        bda:LG382FDCBFD112250E , bda:LGB4DD48C231364A30 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR64764709AEB8462E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4773 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR815BB8F621973547
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4772 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77521  a       :Work ;
+        skos:prefLabel      "blo rig gi rnam bzhag rigs pa'i gter mdzod ma rig mun sel dang / rtags rigs gsal ba'i me long blo gsla dga' bskyed/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of types of awareness and reasons by Drungchen Lekpa Zangpo and Lingmed Zhabdrung Ngawang Paljor."@en ;
+        :creator            bdr:CR64764709AEB8462E , bdr:CR815BB8F621973547 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS77521 , bdr:W8LS77521 ;
+        :workIsAbout        bdr:T1235 , bdr:T1420 .
+}

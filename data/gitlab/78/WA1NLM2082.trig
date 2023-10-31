@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2082 {
+    bda:LG4E60115EFF0A1DD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG7D42D82598402E86
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-07T10:53:42.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2082"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2082  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2082 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "78/WA1NLM2082.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2082 ;
+        adm:logEntry        bda:LG4E60115EFF0A1DD5 , bda:LG7D42D82598402E86 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2082  a       :Work ;
+        skos:prefLabel      "dam can rdo rje legs pa'i mchod cing thugs dam bskang ba'i rim pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi sgrub thabs/ 2 byin brlabs mchog stsol ma 'grel bu/ 3 dzam+b+ha la dkar chu sbyin rgyas bsdus pa yid bzhin gyi nor bu/ 4 'phags pa phyogs bcu'i mun sel pa rnam par sel ba/ 5 me lha'i bsangs mchod/ 6 'byung ba'i gtor ma gtong bar 'dod na/ 7 gu gul yungs dkar sgrub tshul/ 8 mi kha dgra mchu'i mdos glud/ 9 drag po gsum dril gyi mngon rtogs/ 10 hang kal bsangs mchod/ 11 dga' ldan gyi zhing khas su pad+mo las rdzus te skye ba'i smon lam/ 12 rlung rta bskyed pa'i 'dod gsol/ 13 dpal mgon po lnga'i gser skyems 'bul tshul/ 14 dpal rdo rje 'jigs byed kyi bsgom bzlas mdor bsdus bya tshul/ 15 bcom ldan 'das ma shes rab kyi pha rol tu phyin pa'i snying po/ 16 so sor thar ba 'dul ba'i las cho ga 17 maN+Dala'i 'dod gsol/ 18 thub pa chen po bcom ldan 'das kyi nyal chog 19 mi rgod rnam par 'joms pa/ 20 sgrol ma'i maN+Dal bzhi ba'i cho ga phan bde'i dpal ster/"@en , "A regular propitiation of Vajrasadhu by author signed as Pedma Thodtreng and Sonam Yeshe Gyatsho; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM2082 , bdr:W1NLM2082 ;
+        :workIsAbout        bdr:T19 , bdr:T504 .
+}

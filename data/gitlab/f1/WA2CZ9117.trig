@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2CZ9117 {
+    bda:LG2B6465837790CDFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-08T09:53:01.976Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2E0A1D6DBE7D9934
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-02-10T11:27:17.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG42697498D0501525
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG622C15F5D52F7E33
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-02-05T16:39:59.628Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGCF6E068C451970B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-10T11:26:50.826Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIME8C00CAB64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-14T15:56:26.693Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2CZ9117  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2CZ9117 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "f1/WA2CZ9117.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2CZ9117 ;
+        adm:logEntry        bda:LG2B6465837790CDFB , bda:LG2E0A1D6DBE7D9934 , bda:LG42697498D0501525 , bda:LG622C15F5D52F7E33 , bda:LGCF6E068C451970B8 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR2CCF89D0E051B96D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ9123 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2CZ9117  a        :Work ;
+        skos:altLabel       "me zhes pa 'byung ba bzhi ldan me pho 'brug gi lo'i lo tho shin tu rgyas pa byed grub zung 'brel mkhas dbang nor bu'i do shal/"@bo-x-ewts ;
+        skos:prefLabel      "me zhes pa me pho 'brug gi lo tho/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan calendar for the Fire Dragon Year, 1976."@en ;
+        :creator            bdr:CR2CCF89D0E051B96D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T222 ;
+        :workHasInstance    bdr:MW2CZ9117 , bdr:W2CZ9117 .
+}

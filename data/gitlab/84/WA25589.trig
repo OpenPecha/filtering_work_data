@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA25589 {
+    bda:LG1C1C4599EFFE1F40
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG2B46CACDED4EC643
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-10-20T14:53:33.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG4590308A8FCEEC05
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T09:56:01.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG69D5C8777905FA33
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-08T09:54:50.98Z"^^xsd:dateTime ;
+        adm:logMessage      "add more info"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA25589  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25589 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "84/WA25589.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25589 ;
+        adm:logEntry        bda:LG1C1C4599EFFE1F40 , bda:LG2B46CACDED4EC643 , bda:LG4590308A8FCEEC05 , bda:LG69D5C8777905FA33 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7A01975E463C0E7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1317 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA25589  a          :Work ;
+        skos:altLabel       "rje btsun lho brag phyag rdor ba'i rnam thar phyi nang gsang gsum cha lag dang bcas pa bzhugs pa las phyi'i rnam thar 'bring /"@bo-x-ewts ;
+        skos:prefLabel      "nam mkha' rgyal mtshan gyi phyi rnam thar 'bring po/"@bo-x-ewts ;
+        :creator            bdr:CR7A01975E463C0E7A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW25589 , bdr:W25589 ;
+        :workIsAbout        bdr:P1317 , bdr:T791 .
+}

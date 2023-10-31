@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23627 {
+    bda:LG6448394BF288ECC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-08T16:19:28.161Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG665ADC1DF940A4CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-12T12:00:07.428Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG80A542E99D976630
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-08T16:03:40.854Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGFFCE80DFD2D58828
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23627  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23627 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "bc/WA23627.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23627 ;
+        adm:logEntry        bda:LG6448394BF288ECC4 , bda:LG665ADC1DF940A4CC , bda:LG80A542E99D976630 , bda:LGFFCE80DFD2D58828 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB4EBDD162F88850F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P248 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23627  skos:altLabel  "the collected works (gsun 'bum) of rdo grub chen 'jigs-med-bstan-pa'i-ni-ma"@en-x-mixed .
+
+    bdr:WA23627  a          :Work ;
+        skos:altLabel       "rdo grub 'jigs med bstan pa'i ni ma dpal bzan po'i gsung 'bum/"@bo-x-ewts , "The collected works (gsuṅ ʾbum) of Rdo Grub-chen ʾJigs-med-bstan-paʾi-ñi-ma."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_'jigs med bstan pa'i nyi ma/(bdud 'joms rin po che'i dpe mdzod khang du bzhugs pa'i shing par dang lag bris 'dres ma/)"@bo-x-ewts , "the collected works (gsun 'bum) of rdo grub chen 'jigs-med-bstan-pa'i-ni-ma"@en-x-mixed ;
+        :catalogInfo        "Collected Works by Nyingma master Dodrubchen 03 Jigme Tenpai Nyima (1865-1926)."@en ;
+        :creator            bdr:CRB4EBDD162F88850F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:IE25007 , bdr:MW23627 , bdr:MW23907 , bdr:MW25007 , bdr:W23627 , bdr:W23907 , bdr:W25007 ;
+        :workIsAbout        bdr:T1082 .
+}

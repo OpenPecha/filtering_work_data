@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29392 {
+    bda:LG3018E15F2539E1F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-08T09:05:19.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG4F1F6C3FDE7A53CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-08T09:03:55.689Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29392  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29392 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c2/WA8LS29392.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29392 ;
+        adm:logEntry        bda:LG3018E15F2539E1F7 , bda:LG4F1F6C3FDE7A53CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA6E7C031291A96C1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1132 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29392  a       :Work ;
+        skos:altLabel       "dpal kun rig gi cho ga gzhan phan mtha' yas/"@bo-x-ewts ;
+        skos:prefLabel      "kun rig gi cho ga gzhan phan mtha' yas/"@bo-x-ewts ;
+        :catalogInfo        "Sarvavid ritual text according to Sakya Tradition by Ngorchen Kunga Zangpo."@en ;
+        :creator            bdr:CRA6E7C031291A96C1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW8LS29392 , bdr:W8LS29392 ;
+        :workIsAbout        bdr:T976 .
+}

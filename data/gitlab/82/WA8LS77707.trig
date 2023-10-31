@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS77707 {
+    bda:LG00B324F76417558F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-08T09:55:23.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG0AC8F15565DC066C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-08T09:54:59.316Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS77707  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS77707 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "82/WA8LS77707.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS77707 ;
+        adm:logEntry        bda:LG00B324F76417558F , bda:LG0AC8F15565DC066C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA9EC6BEC5B302167
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS77707  a       :Work ;
+        skos:altLabel       "byang chub spyod tshul snying por dril ba rgyas sras lag len so bdun/"@bo-x-ewts ;
+        skos:prefLabel      "rgyas sras lag len so bdun/"@bo-x-ewts ;
+        :catalogInfo        "The thirty seven practices of a Bodhisattava by Ngulchu Thokmey Zangpo."@en ;
+        :creator            bdr:CRA9EC6BEC5B302167 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
+        :workGenre          bdr:T238 , bdr:T240 ;
+        :workHasInstance    bdr:MW8LS77707 , bdr:W8LS77707 ;
+        :workIsAbout        bdr:T1078 , bdr:T393 .
+}

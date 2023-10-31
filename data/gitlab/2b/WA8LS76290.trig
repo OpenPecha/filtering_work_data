@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76290 {
+    bda:LGB5923702BE2D9409
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-30T14:39:00.795Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGECCB10ABAD3B3925
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-30T14:38:36.582Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76290  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76290 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2b/WA8LS76290.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76290 ;
+        adm:logEntry        bda:LGB5923702BE2D9409 , bda:LGECCB10ABAD3B3925 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS76290  a       :Work ;
+        skos:prefLabel      "bla brang bkra shis 'khyil gyi phyag bzhes brdung tshig dang dbyangs yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "A musical notation of Labrang Tashi Khyil, Drepung Gomang, Upper and Lower trantric monastery."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1746 ;
+        :workHasInstance    bdr:MW8LS76290 , bdr:W8LS76290 ;
+        :workIsAbout        bdr:G109 , bdr:G162 , bdr:G236 , bdr:G394 .
+}

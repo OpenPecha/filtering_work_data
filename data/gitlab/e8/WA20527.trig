@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA20527 {
+    bda:LG5EE79315ADB64B1B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA20527  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA20527 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e8/WA20527.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA20527 ;
+        adm:logEntry        bda:LG5EE79315ADB64B1B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRED7631A295C68B0F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P825 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CREDB6F47A10F66724
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5504 ;
+        :role               bdr:R0ER0028 .
+
+    bdr:WA20527  a          :Work ;
+        skos:altLabel       "chos drug bsdus pa'i zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "nA ro chos drug bsdus pa/"@bo-x-ewts ;
+        :creator            bdr:CRED7631A295C68B0F , bdr:CREDB6F47A10F66724 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW20527 ;
+        :workIsAbout        bdr:T394 .
+}

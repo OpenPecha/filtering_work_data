@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22280 {
+    bda:LG2946411F91E6DFEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-02T14:33:46.339Z"^^xsd:dateTime ;
+        adm:logMessage      "changed onhold to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAB636E7D09020F23
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGAD86C0444C2A83A9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-10-25T16:42:47.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA22280  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22280 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0e/WA22280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22280 ;
+        adm:logEntry        bda:LG2946411F91E6DFEC , bda:LGAB636E7D09020F23 , bda:LGAD86C0444C2A83A9 , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA10431 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR59B82F7F6C8EFD22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P821 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW22280  skos:altLabel  "a treatise on the corpus of syllogistic pramana literature"@en .
+
+    bdr:WA22280  a          :Work ;
+        skos:altLabel       "tshad ma legs par bshad pa thams cad kyi chu bo yongs su 'du ba rigs pa'i gzhung lugs kyi rgya mtsho/"@bo-x-ewts , "Tshad ma legs par bśad pa thams cad kyi yoṅs su ʾdu ba rigs paʾi gźuṅ lugs kyi rgya mtsho źes bya ba bźugs so /Karma-pa sku phreṅ bdun pa Chos-grags-rgya-mtsho = A treatise on the corpus of syllogistics pramana literature / by 7th Karmapa Chodrak Gyatso."@en-x-mixed ;
+        skos:prefLabel      "tshad ma rigs gzhung rgya mtsho/"@bo-x-ewts , "a treatise on the corpus of syllogistic pramana literature"@en ;
+        :creator            bdr:CR59B82F7F6C8EFD22 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T370 .
+}

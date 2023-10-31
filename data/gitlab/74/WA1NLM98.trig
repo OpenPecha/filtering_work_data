@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM98 {
+    bda:LG3468CD90C7784387
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-11-28T15:22:53.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added creator, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG3B94D1A069FACEAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LG41AAB0646E14DB72
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-24T08:20:13.152Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note of sponsor"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM98"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM98  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM98 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "74/WA1NLM98.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM98 ;
+        adm:logEntry        bda:LG3468CD90C7784387 , bda:LG3B94D1A069FACEAD , bda:LG41AAB0646E14DB72 , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA05BCAE156357C70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM98  a         :Work ;
+        skos:prefLabel      "bcom ldan 'das sman pa'i rgyal po'i gsol 'debs sogs/"@bo-x-ewts ;
+        :catalogInfo        "A reverenttial petition of medicine buddha by Kachen Yeshe Gyaltsen."@en ;
+        :creator            bdr:CRA05BCAE156357C70 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW1NLM98 , bdr:W1NLM98 ;
+        :workIsAbout        bdr:T568 .
+}

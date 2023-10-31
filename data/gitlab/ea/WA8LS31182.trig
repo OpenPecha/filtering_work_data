@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS31182 {
+    bda:LG0BAF4468E91B4BBD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-24T09:23:09.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG993D6D1FEADF1D48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-24T09:21:45.257Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGEA883804D29040AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-12T09:49:09.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added terton and topics"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA8LS31182  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS31182 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ea/WA8LS31182.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS31182 ;
+        adm:logEntry        bda:LG0BAF4468E91B4BBD , bda:LG993D6D1FEADF1D48 , bda:LGEA883804D29040AE , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG15807 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR27D4F7C7840CAF31
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CR6FD65F6888979795
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CRD636461BB8596773
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:CREBD46C7BAEE4F36F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8067 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS31182  a       :Work ;
+        skos:altLabel       "chos skyong ba'i rgyal po srong btsan sgam po'i bka' 'bum las/ bla ma brgyud pa'i gsol 'debs lo rgyus dkar chag"@bo-x-ewts ;
+        skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
+        :catalogInfo        "A rediscovered teaching cycle focussing upon the tutelary deity Avalokiteshvara attributed to Songtsen Gampo."@en ;
+        :creator            bdr:CR27D4F7C7840CAF31 , bdr:CR6FD65F6888979795 , bdr:CRD636461BB8596773 , bdr:CREBD46C7BAEE4F36F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T3 , bdr:T448 ;
+        :workIsAbout        bdr:P8067 , bdr:T106 , bdr:T58 .
+}

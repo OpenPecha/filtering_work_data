@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN5117 {
+    bda:LG150B8F11A43D960A
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-26T14:58:39.894Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG2B2B24225FEB16AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T15:11:19.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF55BBEFD1E73E725
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-26T14:16:27.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN5117  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN5117 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3b/WA3CN5117.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN5117 ;
+        adm:logEntry        bda:LG150B8F11A43D960A , bda:LG2B2B24225FEB16AD , bda:LGF55BBEFD1E73E725 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6BFA2C838ED80A2D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS20818 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN5117  a        :Work ;
+        skos:prefLabel      "spyan ras gzigs kyi sgrub thabs kyi 'grel pa pad dkar dgyes pa'i rang gdangs/ deb phreng bzhi pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Avalokiteshvara Sadhana by Khenpo Jangpa Jamyang Namgyal."@en ;
+        :creator            bdr:CR6BFA2C838ED80A2D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T132 ;
+        :workHasInstance    bdr:MW3CN5117 , bdr:W3CN5117 ;
+        :workIsAbout        bdr:T106 .
+}

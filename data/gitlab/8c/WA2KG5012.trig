@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5012 {
+    bda:LG8FD52C3AA67C866D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-23T14:44:56.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB3F3978F84D300A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGF34BFE9C3F8A7362
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-23T13:31:23.768Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG5012  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5012 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8c/WA2KG5012.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5012 ;
+        adm:logEntry        bda:LG8FD52C3AA67C866D , bda:LGB3F3978F84D300A1 , bda:LGF34BFE9C3F8A7362 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4D27636649586D20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P845 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG5012  a        :Work ;
+        skos:prefLabel      "rje btsun bla ma bstan 'dzin pad+ma'i rgyan mtshan mchog gi zhal snga nas kyi rnam par thar pa mdo tsam brjod pa mthong grol bdud rtsi'i dga' ston/"@bo-x-ewts ;
+        :catalogInfo        "A biography of a Drikhung Kagyu master Tenzin Pema'i Gyaltsen (1770-1826)."@en ;
+        :creator            bdr:CR4D27636649586D20 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW2KG5012 , bdr:W2KG5012 ;
+        :workIsAbout        bdr:P845 .
+}

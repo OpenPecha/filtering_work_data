@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1481 {
+    bda:LG6C7B107E36BC356E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-05T14:11:10.07Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6 annotate"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGBC9CE20D47110745
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-06T11:05:14.411Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEB603483BF2AB3B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-06T11:05:55.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGEBB73BE6CC851FB3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-06T11:04:12.27Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1CZ1481  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1481 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cb/WA1CZ1481.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1481 ;
+        adm:logEntry        bda:LG6C7B107E36BC356E , bda:LGBC9CE20D47110745 , bda:LGEB603483BF2AB3B2 , bda:LGEBB73BE6CC851FB3 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRBB4129ED64AFD602
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2090 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1CZ1481  a        :Work ;
+        skos:altLabel       "chos rje rgod tshang pa'i gsung sgros gser gyi 'phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal ba rgod tshang pa'i zhal gdams/"@bo-x-ewts ;
+        :catalogInfo        "Instructions by Gotsangpa, master of the Drukpa Kagyu order."@en ;
+        :creator            bdr:CRBB4129ED64AFD602 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1CZ1481 , bdr:W1CZ1481 ;
+        :workIsAbout        bdr:T58 .
+}

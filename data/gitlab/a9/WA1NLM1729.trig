@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1729 {
+    bda:LG3407237B4F57F723
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-20T13:44:04.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3C307663ED65AE79
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGA1D8F46204324D64
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-17T10:13:51.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1729"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1729  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1729 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a9/WA1NLM1729.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1729 ;
+        adm:logEntry        bda:LG3407237B4F57F723 , bda:LG3C307663ED65AE79 , bda:LGA1D8F46204324D64 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM1625 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:WA1NLM1729  a       :Work ;
+        skos:prefLabel      "'phags pa gdugs dkar mchog grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gdugs dkar mchog tu grub pa/ 2 bkra shis don grub/ 3 lha mo 'od zer can ma'i gzungs/ 4 dpal mgon klu grub klu'i bsang / 5 dgra lha chen po khang ka'i rgyal po'i gsol kha bsdus pa/ 6 pad+ma sam+b+ha wa mnol bsangs/ 7 grib bsangs/"@en , "Sadhana of Sitatapatra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workIsAbout        bdr:T1725 .
+}

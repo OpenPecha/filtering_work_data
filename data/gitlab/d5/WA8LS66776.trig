@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66776 {
+    bda:LG2A357B2A5E743085
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-07T10:48:59.416Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG332F1766A0897DCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-27T10:16:46.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, title page title and page number"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG78670C4EE672C74D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T09:34:43.692Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGBD02625499FF7C25
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGE6D7FBA007C4FD60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T10:17:12.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS66776  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66776 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d5/WA8LS66776.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66776 ;
+        adm:logEntry        bda:LG2A357B2A5E743085 , bda:LG332F1766A0897DCB , bda:LG78670C4EE672C74D , bda:LGBD02625499FF7C25 , bda:LGE6D7FBA007C4FD60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR33DE8476888087E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75486 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS66776  a       :Work ;
+        skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/gus lugs dang 'dzem bya/"@bo-x-ewts ;
+        skos:prefLabel      "gus lugs dang 'dzem bya/"@bo-x-ewts ;
+        :catalogInfo        "Questions and responses concering etiquette and modesty."@en ;
+        :creator            bdr:CR33DE8476888087E3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T28 ;
+        :workHasInstance    bdr:MW8LS66776 , bdr:W8LS66776 ;
+        :workIsAbout        bdr:T00EGS1017187 .
+}

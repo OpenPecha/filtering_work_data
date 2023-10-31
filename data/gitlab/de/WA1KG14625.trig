@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14625 {
+    bda:LG263EB98D3420A5FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-08T15:27:23.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyright titles"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG3B43C8B26B48EFE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG79E9E5A430101931
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-24T14:30:25.856Z"^^xsd:dateTime ;
+        adm:logMessage      "released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD490DA0B5906D7DA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-10-24T14:30:48.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG14625  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14625 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/WA1KG14625.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14625 ;
+        adm:logEntry        bda:LG263EB98D3420A5FE , bda:LG3B43C8B26B48EFE3 , bda:LG79E9E5A430101931 , bda:LGD490DA0B5906D7DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG14625  skos:altLabel  "录入《甘珠尔》的医著选集"@zh-hant .
+
+    bdr:WA1KG14625  a       :Work ;
+        skos:altLabel       "lu ru <<gan zhu er>> de yi zhu xuan ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bka' 'gyur gso rig gces btus/"@bo-x-ewts , "录入《甘珠尔》的医著选集"@zh-hant ;
+        :catalogInfo        "Selection of medical texts from Kangyur"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1PD128746 ;
+        :workHasInstance    bdr:MW1KG14625 , bdr:W1KG14625 ;
+        :workIsAbout        bdr:T85 .
+}

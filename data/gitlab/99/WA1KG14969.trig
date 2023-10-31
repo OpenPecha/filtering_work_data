@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14969 {
+    bda:LG62DA433DCFCE6799
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-08-29T15:04:32.811Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEE1A94CF97EF83A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGF7895D3A787B93AB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-29T15:05:00.853Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8F5AC89D  a     adm:UpdateData ;
+        adm:logAgent        "add-works-to-PR1CTC16" ;
+        adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 16"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG14969  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14969 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "99/WA1KG14969.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14969 ;
+        adm:logEntry        bda:LG62DA433DCFCE6799 , bda:LGEE1A94CF97EF83A0 , bda:LGF7895D3A787B93AB , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4D7D88DD1952A576
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG14969  skos:altLabel  "Rgyal-baʼi Bkaʼ-ʼgyur rin po cheʼi bźugs byaṅ dkar chag ces bya ba bźugs so /Si-tu Paṇ-chen Chos-kyi-ʼbyuṅ-gnas kyis brtsams."@en-x-mixed , "甘珠尔编纂史显密文库"@zh-hans .
+
+    bdr:WA1KG14969  a       :Work ;
+        skos:altLabel       "bde bar gshegs pa'i bka' gangs can gyi brdas drangs pa'i phyi mo'i tshogs ji snyed pa par du bsgrub pa'i tshul las nye bar brtsams pa'i gtam bzang po blo ldan mos pa'i kun+da yongs su kha bye ba'i zla 'od gzhon nu'i 'khri shing /"@bo-x-ewts , "gan zhuer bian zhuan shi xian mi wen ku"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal ba'i bka' 'gyur rin po che'i bzhugs byang dkar chag"@bo-x-ewts , "Rgyal-baʼi Bkaʼ-ʼgyur rin po cheʼi bźugs byaṅ dkar chag ces bya ba bźugs so /Si-tu Paṇ-chen Chos-kyi-ʼbyuṅ-gnas kyis brtsams."@en-x-mixed , "甘珠尔编纂史显密文库"@zh-hans ;
+        :catalogInfo        "History and brief catalog of Kanjur, Buddhist canonical texts"@en ;
+        :creator            bdr:CR4D7D88DD1952A576 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T13 ;
+        :workHasInstance    bdr:MW1KG14969 , bdr:W1KG14969 ;
+        :workIsAbout        bdr:WA22084 .
+}

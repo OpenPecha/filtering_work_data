@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10486 {
+    bda:LG55BA10296CFC307D
+        a                   adm:UpdateData .
+
+    bda:LGF9FA734C33ECBA9A
+        a                   adm:InitialDataCreation .
+
+    bda:W10486  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W10486 ;
+        adm:replaceWith     bdr:WA10486 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bda:WA10486  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10486 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/WA10486.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10486 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1D62404ABAB86F88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P825 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:NT95029E3FC569C473
+        a                   :Note ;
+        :noteText           "created new conceptual work"@en .
+
+    bdr:NTA5C059B34798242B
+        a                   :Note ;
+        :noteText           "cha. nga. pp. 579-625, v. 6, in Collected works (gsun-'bum) of Kun-mkhyen Padma-dkar-po. -- Reproduced photographically from prints from the 1920-1928 Gnam 'Brug Se-ba Byan-chub-glin blocks. -- Darjeeling : Kargyud Sungrab Nyamso Khang, 1973-1974.  24 v.\n\nga. ka. 24 ff. in Gnam 'brug Byang-chub-gling edition.\nMHTL 2431.\nCopy in TBRC.\n\nga. ka. 23 ff. in the 1979 National Library of Bhutan edition. Has title: 'Dul ba kun las btus pa sdom pa gsum gyi rgyan."@en .
+
+    bdr:WA10486  a          :Work ;
+        skos:altLabel       "'dul ba kun las btus pa sdom pa gsum gyi rgyan/"@bo-x-ewts , "sdom pa gsum gyi rgyan ces bya ba'i bstan bcos/"@bo-x-ewts ;
+        skos:prefLabel      "sdom gsum rgyan gyi rtsa ba/"@bo-x-ewts ;
+        :creator            bdr:CR1D62404ABAB86F88 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT95029E3FC569C473 , bdr:NTA5C059B34798242B .
+}

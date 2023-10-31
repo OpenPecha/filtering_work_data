@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12220 {
+    bda:LG4D1F16440BC0B1BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-04-17T15:54:55.842Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD79AF37BC9EE03E8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-04-18T16:43:42.088Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDFCAF8719FECCE27
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T11:15:06.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGECCD33C1B26672F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-18T16:42:18.012Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12220  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12220 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "94/WA1KG12220.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12220 ;
+        adm:logEntry        bda:LG4D1F16440BC0B1BC , bda:LGD79AF37BC9EE03E8 , bda:LGDFCAF8719FECCE27 , bda:LGECCD33C1B26672F6 , bda:LGIM320307B99D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR656D4BE42439359D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9141 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:CR740BDD9C63CE24B7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4902 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG12220  skos:altLabel  "rites of propitiation of the protective deities and medicine buddhas accroding to the tradition of the stat-lun bka'-brgyud-pa"@en .
+
+    bdr:WA1KG12220  a       :Work ;
+        skos:altLabel       "rites of the stat-lun dka'-brgyud-pa tradition"@en ;
+        skos:prefLabel      "stag lung bka' brgyud kyi chos srung rnams kyi gsol mchod sogs/"@bo-x-ewts , "rites of propitiation of the protective deities and medicine buddhas accroding to the tradition of the stat-lun bka'-brgyud-pa"@en ;
+        :creator            bdr:CR656D4BE42439359D , bdr:CR740BDD9C63CE24B7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG12220 , bdr:W1KG12220 ;
+        :workIsAbout        bdr:T1855 , bdr:T249 , bdr:T406 , bdr:T869 .
+}

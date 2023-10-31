@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT2220 {
+    bda:WA0RT2220  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT2220 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:ID42199B_WA0RT2220
+        a                   bdr:RefrKTsT ;
+        rdf:value           "2220" .
+
+    bdr:NT08A217_WA0RT2220
+        a                   :Note ;
+        :noteText           "The title for this is a little confusing as the incipit of the text gives a Tibetan and Sanskrit title but it's the one for a collection of sadhanas that starts with this one. The title of this text in particular is found in the colophon." .
+
+    bdr:WA0RT2220  a        :Work ;
+        skos:altLabel       "Kumudākaramati" ;
+        skos:prefLabel      "dam tshig gsum gyi rgyal po'i sgrub thabs/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID42199B_WA0RT2220 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :note               bdr:NT08A217_WA0RT2220 ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG13126_4221 , bdr:MW1PD95844_2097 , bdr:MW22704_3015 , bdr:MW23702_2223 , bdr:MW23703_3400 , bdr:MW2KG5015_3015 ;
+        :workHasParallelsIn  bdr:WA0RTI2220 ;
+        :workIsAbout        bdr:T2GS1201 ;
+        owl:sameAs          <http://purl.rkts.eu/resource/WTT2220> .
+}

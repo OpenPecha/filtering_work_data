@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1679 {
+    bda:LG447D3F1B106EAFED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:10:17.687Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG964FA17F510326BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGDA8959F6EC5DC380
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T14:50:32.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1679"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1679  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1679 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1d/WA1NLM1679.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1679 ;
+        adm:logEntry        bda:LG447D3F1B106EAFED , bda:LG964FA17F510326BF , bda:LGDA8959F6EC5DC380 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0E5F571ACA37637C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1679  a       :Work ;
+        skos:prefLabel      "bla ma gung thang rin po che'i gsung 'bum las/_tshe gcig gi nyams len bya tshul rnams khrig chags su bsdebs pa chos spyod gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan lha mo'icho ga dang 'brel bar ma mo'i 'khrug skongs gtong tshul/ 2 nyin zhag phrugs gcig la dge sbyong ji ltar bya ba'i tshul/ 3 ngan song sbyong ba la ched bsngags pa gzungs chen sde lnga'i 'don thabs/"@en , "A compilation of recitation text by Gunthang Konchok Tenpe Dronme; other text also included."@en ;
+        :creator            bdr:CR0E5F571ACA37637C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM1679 , bdr:W1NLM1679 ;
+        :workIsAbout        bdr:T541 .
+}

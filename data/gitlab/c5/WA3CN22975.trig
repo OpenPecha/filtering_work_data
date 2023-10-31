@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN22975 {
+    bda:LG4DEE599035E148C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGBAB4EF9ECE0F79F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-10T09:56:54.868Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE203233BCD6877F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-21T13:59:48.236Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF580D3D091177407
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-08-28T19:53:24.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN22975  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN22975 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c5/WA3CN22975.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN22975 ;
+        adm:logEntry        bda:LG4DEE599035E148C3 , bda:LGBAB4EF9ECE0F79F2 , bda:LGE203233BCD6877F1 , bda:LGF580D3D091177407 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1923 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRFC23CE91B2D90224
+        a                   :AgentAsCreator ;
+        :agent              bdr:P155 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN22975  a       :Work ;
+        skos:altLabel       "bde bar gshegs pa'i bstan pa'i gsal byed chos kyi 'byung gnas gsung rab rin po che'i mdzod/"@bo-x-ewts , "bu ston chos 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "bde gshegs bstan pa'i gsal byed chos kyi 'byung gnas/"@bo-x-ewts ;
+        :catalogInfo        "General history of Buddhism by Zhalu tradition founding master Buton Rinchen Drup (1290-1364)."@en ;
+        :creator            bdr:CRFC23CE91B2D90224 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workIsAbout        bdr:T770 .
+}

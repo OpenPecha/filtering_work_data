@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG13819 {
+    bda:LG10A2D99BDFB6F4A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-08-15T09:23:32.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG465B0FA0ABCA1A35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-05T12:37:48.513Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG781E3A88DF92FB97
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-15T09:22:24.126Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG13819  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG13819 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/WA1KG13819.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG13819 ;
+        adm:logEntry        bda:LG10A2D99BDFB6F4A6 , bda:LG465B0FA0ABCA1A35 , bda:LG781E3A88DF92FB97 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR69FEC65A13E53BB1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1778 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG13819  a       :Work ;
+        skos:altLabel       "don bdun cu dang rten 'brel skor/"@bo-x-ewts , "kun mkhyen blo gros legs bzang gi gsung las dbu ma la 'jug pa'i spyi don dgongs pa rab gsal gyi rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma la 'jug pa'i spyi don dgongs pa rab gsal gyi rgyan/"@bo-x-ewts ;
+        :catalogInfo        "General exegesis on Madhyamakavatara"@en ;
+        :creator            bdr:CR69FEC65A13E53BB1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1763 ;
+        :workHasInstance    bdr:MW1KG13819 , bdr:W1KG13819 ;
+        :workIsAbout        bdr:WA19458 .
+}

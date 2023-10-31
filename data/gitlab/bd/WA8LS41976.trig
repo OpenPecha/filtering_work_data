@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS41976 {
+    bda:LG531676DC6D10A499
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-07T08:53:37.169Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7ABCF1508B1673A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T12:01:37.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD3059638D8B6709C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-07T08:51:36.168Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS41976  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS41976 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bd/WA8LS41976.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS41976 ;
+        adm:logEntry        bda:LG531676DC6D10A499 , bda:LG7ABCF1508B1673A9 , bda:LGD3059638D8B6709C , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS41976  a       :Work ;
+        skos:altLabel       "tshangs thig sprul sku ched sbyong 'dzin grwa'i mthar phyin dran rten/"@bo-x-ewts ;
+        skos:prefLabel      "tshangs thig"@bo-x-ewts ;
+        :catalogInfo        "A collection of poetry and essays."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T258 ;
+        :workHasInstance    bdr:MW8LS41976 , bdr:W8LS41976 ;
+        :workIsAbout        bdr:T281 .
+}

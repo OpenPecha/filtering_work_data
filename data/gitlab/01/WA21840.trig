@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21840 {
+    bda:LG252CAC166A24A838
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG660360F2D185C0E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG6667E9A011007557
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-12T14:41:59.089Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old sr"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG784CA6F572BDC0FB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T14:42:29.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA165AD26B11CD22B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-04-11T09:13:10.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGB577E08279A84C8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-11T09:12:38.041Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM569A8014B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 13"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21840  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21840 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "01/WA21840.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21840 ;
+        adm:logEntry        bda:LG252CAC166A24A838 , bda:LG660360F2D185C0E4 , bda:LG6667E9A011007557 , bda:LG784CA6F572BDC0FB , bda:LGA165AD26B11CD22B , bda:LGB577E08279A84C8A , bda:LGIM569A8014B1 , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG16570 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW21840  skos:altLabel  "格萨尔王传"@zh-hans .
+
+    bdr:WA21840  a          :Work ;
+        skos:altLabel       "gling ge sar rgyal po'i sgrung shang shang sman rdzong /"@bo-x-ewts , "ge sa er wang zhuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "shang shang sman rdzong /"@bo-x-ewts , "格萨尔王传"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T248 .
+}

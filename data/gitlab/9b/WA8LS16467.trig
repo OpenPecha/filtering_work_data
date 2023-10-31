@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16467 {
+    bda:LG1FE448492931F891
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-11T10:46:35.874Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG845A77E5F9DD6D77
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-11T10:47:23.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGFD0ED169D0A74E59
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-15T15:24:16.381Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cn, kg"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16467  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16467 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9b/WA8LS16467.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16467 ;
+        adm:logEntry        bda:LG1FE448492931F891 , bda:LG845A77E5F9DD6D77 , bda:LGFD0ED169D0A74E59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3E8DC3426F4F6EE6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5245 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA8LS16467  a       :Work ;
+        skos:altLabel       "zab chos zhi khro dgongs pa rang grol lasH btags grol phung po rang grol gyi don bsdus rang grol snying po/"@bo-x-ewts ;
+        skos:prefLabel      "btags grol phung po rang grol gyi don bsdus/"@bo-x-ewts ;
+        :catalogInfo        "A summary of liberation by wearing from the zhitro teaching of Karma Lingpa, scribed and wood block curved by Lobsang Tashi."@en ;
+        :creator            bdr:CR3E8DC3426F4F6EE6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T2398 ;
+        :workHasInstance    bdr:MW8LS16467 , bdr:W8LS16467 ;
+        :workIsAbout        bdr:T2270 , bdr:T351 .
+}

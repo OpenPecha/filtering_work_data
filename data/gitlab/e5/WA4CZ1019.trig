@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ1019 {
+    bda:LG072C32F199E45300
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-05T16:29:21.052Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG4BBB62EC0AD59C39
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-18T15:48:35.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8D09C658D2F7CC3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T14:00:11.328Z"^^xsd:dateTime ;
+        adm:logMessage      "refreshed"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF98229F7D35A49CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-17T11:52:56.459Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA4CZ1019  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ1019 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e5/WA4CZ1019.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ1019 ;
+        adm:logEntry        bda:LG072C32F199E45300 , bda:LG4BBB62EC0AD59C39 , bda:LG8D09C658D2F7CC3F , bda:LGF98229F7D35A49CF , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB446E6EEA473AE5A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1618 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ1019  a        :Work ;
+        skos:altLabel       "sa skya bka' 'bum las bsod nams rtse mo'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "bsod nams rtse mo'i gsung 'bum/"@bo-x-ewts ;
+        :catalogInfo        "Collected writings of the Lobpon Sonam Tsemo (1142-1182) which are the part of the Sakya Kabum volumes ca and cha."@en ;
+        :creator            bdr:CRB446E6EEA473AE5A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW4CZ1019 , bdr:W4CZ1019 ;
+        :workIsAbout        bdr:T617 .
+}

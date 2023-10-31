@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG25195 {
+    bda:LG11419550CAB8D123
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:41:25.524Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as withdrawn"@en ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LG2D133A7EC97B1D3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-28T15:48:09.49Z"^^xsd:dateTime ;
+        adm:logMessage      "completed cataloging and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA9537458429A7DCB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:58:18.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG25195  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG25195 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "44/WA1KG25195.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG25195 ;
+        adm:logEntry        bda:LG11419550CAB8D123 , bda:LG2D133A7EC97B1D3F , bda:LGA9537458429A7DCB , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5ED61DE62DD46610
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG25195  a       :Work ;
+        skos:prefLabel      "tshad ma rig gter dar TIk dang bden gnyis kyi dar TIk"@bo-x-ewts ;
+        :catalogInfo        "Commentary on a fundamental work on Buddhist epistemology of Sakya Pandita; and commentary on satyadvayavibhangakarika of Indian master Janagarbha."@en ;
+        :creator            bdr:CR5ED61DE62DD46610 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG25195 , bdr:W1KG25195 ;
+        :workIsAbout        bdr:WA11391 , bdr:WA4CZ16750 .
+}

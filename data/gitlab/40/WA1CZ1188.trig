@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1CZ1188 {
+    bda:LG097B9018840E21F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-07-03T14:44:10.506Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar pa"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1168AB16556BD9FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-31T12:08:24.915Z"^^xsd:dateTime ;
+        adm:logMessage      "scanned compeleted"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG1DB51A1A1A49A4A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-08-13T16:38:19.677Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG2425E0A6D6589546
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-13T10:16:24.497Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG6CF2E58BC58CEEC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-29T11:25:03.787Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGA7480E987A9C47F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-13T16:39:32.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE9852AFA18EB1C20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+
+    bda:WA1CZ1188  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1CZ1188 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "40/WA1CZ1188.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1CZ1188 ;
+        adm:logEntry        bda:LG097B9018840E21F2 , bda:LG1168AB16556BD9FD , bda:LG1DB51A1A1A49A4A5 , bda:LG2425E0A6D6589546 , bda:LG6CF2E58BC58CEEC5 , bda:LGA7480E987A9C47F9 , bda:LGE9852AFA18EB1C20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR17E7F7F7768A2CA4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3874 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV4981EE221AF86249
+        a                   :CompletedEvent ;
+        :onYear             "1398"^^xsd:gYear .
+
+    bdr:WA1CZ1188  a        :Work ;
+        skos:altLabel       "'phags pa gnas brtan bcu drug la phyag mchod bya tshul/"@bo-x-ewts ;
+        skos:prefLabel      "gnas brtan phyag mchod/"@bo-x-ewts ;
+        :creator            bdr:CR17E7F7F7768A2CA4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV4981EE221AF86249 ;
+        :workHasInstance    bdr:MW1CZ1188 , bdr:W1CZ1188 ;
+        :workIsAbout        bdr:T1154 , bdr:T859 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN538 {
+    bda:LG3F5BC2835E29917F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T16:28:27.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG55C188FDE9A34FF1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T08:38:46.117Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG78A036C735EFC47D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T11:48:09.728Z"^^xsd:dateTime ;
+        adm:logMessage      "modified"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF095395884D76564
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-31T12:37:59.864Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN538  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN538 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ae/WA3CN538.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN538 ;
+        adm:logEntry        bda:LG3F5BC2835E29917F , bda:LG55C188FDE9A34FF1 , bda:LG78A036C735EFC47D , bda:LGF095395884D76564 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN538  a         :Work ;
+        skos:altLabel       "gdan sa chen po sa skya dgon gyi gtor dpe blo gsal 'jug sgo"@bo-x-ewts ;
+        skos:prefLabel      "sa skya dgon gyi gtor dpe/"@bo-x-ewts ;
+        :catalogInfo        "Torma model from seat of Sakya monastic tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN538 , bdr:W3CN538 ;
+        :workIsAbout        bdr:T170 , bdr:T617 .
+}

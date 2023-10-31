@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG1671 {
+    bda:LG03A7981D26EE3DA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-28T20:47:35.779Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG1E450FDAC21F97C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LG35C8C93B71F3183E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-03T17:20:56.678Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8E238EDC3A77D4FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-09T15:29:24.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA2KG1671  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG1671 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f1/WA2KG1671.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG1671 ;
+        adm:logEntry        bda:LG03A7981D26EE3DA7 , bda:LG1E450FDAC21F97C4 , bda:LG35C8C93B71F3183E , bda:LG8E238EDC3A77D4FA , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3BBECBCBAEF2F156
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG1684 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW2KG1671  skos:altLabel  "history of the shree gaden dhargay-ling monastery-2019"@en .
+
+    bdr:WA2KG1671  a        :Work ;
+        skos:altLabel       "dar gling chos 'byung dpag bsam khri shing / shrI dga' ldan dar rgyas gling grwa tshang /"@bo-x-ewts , "stod sa dga' shrI dga' ldan dar rgyas gling grwa tshang dang 'brel chags kyi byung ba brjod pa chos 'byung dpag bsam khri shing /"@bo-x-ewts ;
+        skos:prefLabel      "dar gling chos 'byung dpag bsam khri shing /"@bo-x-ewts , "history of the shree gaden dhargay-ling monastery-2019"@en ;
+        :catalogInfo        "Religious history of the shree gaden dhargay-ling monastery aka Shelri Dhargay ling monastery."@en ;
+        :creator            bdr:CR3BBECBCBAEF2F156 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW2KG1671 , bdr:W2KG1671 ;
+        :workIsAbout        bdr:G1KR1649 .
+}

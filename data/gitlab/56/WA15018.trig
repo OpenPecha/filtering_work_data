@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA15018 {
+    bda:LGE5D925F5E2812E98
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:WA15018  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA15018 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "56/WA15018.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA15018 ;
+        adm:logEntry        bda:LGE5D925F5E2812E98 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CR72A881E6EFCAF74B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2666 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA15018  a          :Work ;
+        skos:altLabel       "khro chu dug gdong nag po'i bsnyen sgrub las gsum gyi bca' gzhi lag len gyi shog dril bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "khro chu dug gdong nag po'i bsnyen sgrub las gsum bca' gzhi/"@bo-x-ewts ;
+        :creator            bdr:CR72A881E6EFCAF74B ;
+        :isRoot             true ;
+        :workHasInstance    bdr:MW15018 .
+}

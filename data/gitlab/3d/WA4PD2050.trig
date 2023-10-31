@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4PD2050 {
+    bda:LG2262D09FDA0FF0DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-26T21:16:23.605Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3C9EAED5B6D1D5B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-26T21:09:23.133Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG3F7B0C7FB30AB30D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG58E4E70AC40A1764
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-26T21:17:24.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:WA4PD2050  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4PD2050 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3d/WA4PD2050.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4PD2050 ;
+        adm:logEntry        bda:LG2262D09FDA0FF0DC , bda:LG3C9EAED5B6D1D5B2 , bda:LG3F7B0C7FB30AB30D , bda:LG58E4E70AC40A1764 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB47EF545F14D68BF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG010086 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4PD2050  a        :Work ;
+        skos:altLabel       "ra chung gter ston pad+ma 'phrin las gling pa'i gter chos/"@bo-x-ewts ;
+        skos:prefLabel      "gter chos/_ra chung gter ston pad+ma 'phrin las gling pa/"@bo-x-ewts ;
+        :catalogInfo        "Complete revelations of Rachung Terton Padma Thine Lingpa (1943-)."@en ;
+        :creator            bdr:CRB47EF545F14D68BF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW4PD2050 , bdr:W4PD2050 ;
+        :workIsAbout        bdr:T1082 .
+}

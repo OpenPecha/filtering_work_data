@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1280 {
+    bda:LG1471D5E97EE3396F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB221A6C503974DCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-02T11:22:51.751Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGED8D0E8DB23DEE33
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-03T09:37:38.959Z"^^xsd:dateTime ;
+        adm:logMessage      "fully catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM15986367  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1280"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1280  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1280 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a1/WA1NLM1280.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1280 ;
+        adm:logEntry        bda:LG1471D5E97EE3396F , bda:LGB221A6C503974DCA , bda:LGED8D0E8DB23DEE33 , bda:LGIM15986367 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRACD4A2631E9A7EC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P482 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1280  a       :Work ;
+        skos:altLabel       "mchog gi dang po'i sangs rgyas las byung ba dpal dus kyi 'khor lo zhes bya ba rgyud kyi rgyal po sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dus 'khor phyogs bsgrigs dang legs bshad snying po'i dka' 'grel bstan pa'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on Kalacakra Tantra, the Vimalaprabha and Survey of Madhyamaka philosophy. Textbook used at Sera Je College and its affiliates by Nyalton Paljor Lhundrub"@en ;
+        :creator            bdr:CRACD4A2631E9A7EC2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM1280 , bdr:W1NLM1280 ;
+        :workIsAbout        bdr:T74 .
+}

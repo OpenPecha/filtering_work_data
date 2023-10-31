@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3140 {
+    bda:LG35F61178DA7EEA61
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGDD901F3635458B47
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T10:01:49.755Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3140"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3140  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3140 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c8/WA1NLM3140.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3140 ;
+        adm:logEntry        bda:LG35F61178DA7EEA61 , bda:LGDD901F3635458B47 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3140  a       :Work ;
+        skos:prefLabel      "'phags pa gnam sa snang brgyad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun sgrol ma phyag 'tshal nyi shu rtsa gcig ma/ 2 sgrol dkar yid bzhin 'khor lo'i bstod pa/ 3 bcom ldan 'das ma shes rab kyi pha rol tu phyin pa'i snying po/ 4 bkra shis brtsegs pa/ 5 shis brjod bkra shis don grub/ 6 rje btsun 'jam pa'i dbyangs la bstod pa 'jam dbyangs mnyes par byed pa'i bstod sprin rgya mtsho/ 7 po ti lnga'i smon lam/ 8 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs bzhengs pa'i smon lam/"@bo-x-ewts , "Paryang Gyangdra Mahayan sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3140 , bdr:W1NLM3140 ;
+        :workIsAbout        bdr:T1KG3717 .
+}

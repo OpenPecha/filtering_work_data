@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25700 {
+    bda:LG36132DCD947DF76C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-30T18:36:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG88FF5092B1E17341
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG9FC488798A09DF52
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-11T21:58:36.044Z"^^xsd:dateTime ;
+        adm:logMessage      "catloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA2DE9C818A8E7A0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-05T17:48:29.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC39E44EB0F817F6B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-11T23:39:11.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25700  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25700 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e1/WA3CN25700.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25700 ;
+        adm:logEntry        bda:LG36132DCD947DF76C , bda:LG88FF5092B1E17341 , bda:LG9FC488798A09DF52 , bda:LGA2DE9C818A8E7A0E , bda:LGC39E44EB0F817F6B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9C36577BF819B166
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN25731 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN25700  skos:altLabel  "藏族历史与文化论集（藏文）"@zh-hans .
+
+    bdr:WA3CN25700  a       :Work ;
+        skos:prefLabel      "bod kyi lo rgyus yig cha dang rig gnas skor gyi dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "藏族历史与文化论集（藏文）"@zh-hans ;
+        :catalogInfo        "Collections of research papers on Tibetan History and Culture by Rinchen Drolma."@en ;
+        :creator            bdr:CR9C36577BF819B166 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 , bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN25700 , bdr:W3CN25700 ;
+        :workIsAbout        bdr:T229 .
+}

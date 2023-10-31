@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG763 {
+    bda:LG72C6D93833F06149
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T15:55:33.089Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE732A13272CF1E46
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-11-21T16:00:26.046Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in china"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF14A0ED1121625FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-21T15:58:59.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG763  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG763 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/WA2KG763.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG763 ;
+        adm:logEntry        bda:LG72C6D93833F06149 , bda:LGE732A13272CF1E46 , bda:LGF14A0ED1121625FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR468916A5517CE123
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8638 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR79A073003A310187
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21171 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG763  a         :Work ;
+        skos:prefLabel      "sgrub brgyud kyi snying po dpal gya ba 'brong ngur pa chen por bka' babs pa'i chos skor phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Compilation of Drong Ngur's rare ancient books."@en ;
+        :creator            bdr:CR468916A5517CE123 , bdr:CR79A073003A310187 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW2KG763 , bdr:W2KG763 ;
+        :workIsAbout        bdr:G2044 , bdr:T1187 .
+}

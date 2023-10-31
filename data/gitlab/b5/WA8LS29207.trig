@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS29207 {
+    bda:LG40E42BFF236A8EE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-01T08:51:36.432Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG641A4E3CF8D7CDD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T08:03:11.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG814900C40DA5A1CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-01T08:52:42.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS29207  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS29207 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b5/WA8LS29207.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS29207 ;
+        adm:logEntry        bda:LG40E42BFF236A8EE0 , bda:LG641A4E3CF8D7CDD1 , bda:LG814900C40DA5A1CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRD75F6E44883D9569
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7843 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS29207  a       :Work ;
+        skos:altLabel       "dpal ldan bla ma rdo rje 'chang ngag dbang mkhas grub dbang phyug gi rnam thar in+dra nA la'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "ngag dbang mkhas grub dbang phyug gi rnam thar in+dra nA la'i phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "1 rig 'dzin rnam dag snang rdo rje rnam par thar ba bskal bzang dwangs ba 'dren pa'i lcags kyu/ 2 rong ston shes bya kun gzigs lho ba thugs rje dpal gnyis kyis sa skya'i gtsug lag khang du rtsod pa mdzad pa'i rtsod yig bstan pa'i nyin byed/ 3 phyag drug ye shes mgon po'i bskang gso sangs rgyas gnyan ston zhabs kyis mdzad pa/ 4 bstan rtsis mdor bsdus grags pa dpal bzang gis sbyar ba/ 5 nags sman rgyal mo'i mchod sprin bdud rtsi'i thigs pa/"@bo-x-ewts , "Biography of Ngawang Khedrup Wangchuk by Tsoknyi Gyatsho."@en ;
+        :creator            bdr:CRD75F6E44883D9569 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS29207 , bdr:W8LS29207 ;
+        :workIsAbout        bdr:P8933 , bdr:T360 .
+}

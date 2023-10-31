@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66718 {
+    bda:LG26864A1D86AAA645
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-09-27T10:31:56.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDFC0525A83BDA663
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-09-27T10:30:01.078Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF6300987486D6732
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T09:48:54.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS66718  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66718 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b2/WA8LS66718.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66718 ;
+        adm:logEntry        bda:LG26864A1D86AAA645 , bda:LGDFC0525A83BDA663 , bda:LGF6300987486D6732 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW8LS66718  skos:altLabel  "History And Doctrine Of Bon-Po Nispanna-Yoga"@en .
+
+    bdr:WA8LS66718  a       :Work ;
+        skos:prefLabel      "rdzogs pa chen po zhang zhung snyan rgyud/"@bo-x-ewts , "History And Doctrine Of Bon-Po Nispanna-Yoga"@en ;
+        :catalogInfo        "History, transmission, teaching, rites and deities of Bonpo Zhangzhung Nyengyud."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW8LS66718 , bdr:W8LS66718 ;
+        :workIsAbout        bdr:T247 , bdr:T354 .
+}

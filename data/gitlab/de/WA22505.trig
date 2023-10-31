@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA22505 {
+    bda:LG211887AF799CB95E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-17T10:07:35.895Z"^^xsd:dateTime ;
+        adm:logMessage      "accessioned"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG5A387E75C1FC0BF1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-07-18T10:03:21.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6B873169FA74BE38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG6D642A0802D79ECF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-17T16:07:35.878Z"^^xsd:dateTime ;
+        adm:logMessage      "rleased"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGEDD4DFCAF89941AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LGIM320307B99D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA22505  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA22505 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "de/WA22505.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA22505 ;
+        adm:logEntry        bda:LG211887AF799CB95E , bda:LG5A387E75C1FC0BF1 , bda:LG6B873169FA74BE38 , bda:LG6D642A0802D79ECF , bda:LGEDD4DFCAF89941AC , bda:LGIM320307B99D , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREB73477F6D63F1CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P827 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA22505  a          :Work ;
+        skos:altLabel       "phyag rgya chen po'i khrid yig chen mo gnyug ma'i de nyid gsal ba/"@bo-x-ewts ;
+        skos:prefLabel      "phyag chen khrid yig gnyug ma'i de nyid gsal ba/"@bo-x-ewts , "phyag rgya chen po'i khrid yig chen mo gnug ma'i de nid gsal ba : a famous commentary to the mahamudra teachings of the dwags-po bka'-brgyud-pa with a collection of other khrid material from the o-rgyan-chos-gling monastery in bhutan"@en ;
+        :catalogInfo        "Commentary on the Mahamudra teachings of the Dagpo Kagyu tradition with a collection of other material from the Orgyen Choling monastery in Bhutan."@en ;
+        :creator            bdr:CREB73477F6D63F1CC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW22505 , bdr:W22505 ;
+        :workIsAbout        bdr:T199 .
+}

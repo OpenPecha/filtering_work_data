@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN12924 {
+    bda:LG1B31CA5B35ECC041
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-22T14:41:07.831Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG32BF8B51A5120CE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-22T14:50:16.823Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD80C7C975080128D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-22T14:48:57.135Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDB0A6EA5CDED3E86
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 17"@en ;
+        adm:logWhoStr       "add-works-to-PR1CTC17" .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN12924  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN12924 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6e/WA3CN12924.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN12924 ;
+        adm:logEntry        bda:LG1B31CA5B35ECC041 , bda:LG32BF8B51A5120CE3 , bda:LGD80C7C975080128D , bda:LGDB0A6EA5CDED3E86 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR0F19196F9380A0DC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2090 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN12924  a       :Work ;
+        skos:altLabel       "rgod tshang pa'i rnam thar dang gsung sgros sogs/"@bo-x-ewts , "rgyal ba rgod tshang pa'i gsung thor bu/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ rgod tshang pa/"@bo-x-ewts ;
+        :catalogInfo        "Miscellany manuccript wrtings by Gotsangpa Gonpo Dorje (1189-1258), a contemplative master of the upper branch of the Drukpa Kagyu order."@en ;
+        :creator            bdr:CR0F19196F9380A0DC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW3CN12924 , bdr:W3CN12924 ;
+        :workIsAbout        bdr:T816 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16767 {
+    bda:LG1DE4AA0B811CDA6F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-13T11:10:12.476Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG380D020A1DFEDB01
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-13T11:11:21.203Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG6DC4189DC5412EE8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS16767  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16767 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "80/WA8LS16767.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16767 ;
+        adm:logEntry        bda:LG1DE4AA0B811CDA6F , bda:LG380D020A1DFEDB01 , bda:LG6DC4189DC5412EE8 , bda:LGIM206EC9B06D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR83A8872272210877
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1670 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS16767  a       :Work ;
+        skos:altLabel       "rtsa rgyud chen po gsang ba bsen thub kyi 'grel pa rin po che yid bzhin rnam par bkod pa'i rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "rtsa rgyud gsang ba bsen thub kyi 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the root Bopo tantra known as Senthub by Aton Lodro Gyaltsen on the request of Yilton Khyung God at the foothill of Tashi Menri situated near Pakshu river. The author was a student of great Bonpo master Dudtsi Gyaltsen, detail is unknown."@en ;
+        :creator            bdr:CR83A8872272210877 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW8LS16767 , bdr:W8LS16767 ;
+        :workIsAbout        bdr:T1PD95 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355737 {
+    bda:LG522EDD92AFC4DE70
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-28T16:27:35.458Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG83C1C5C9696620CF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-29T14:29:40.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LG8B75793A8FA98D29
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA4CZ355737  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355737 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "83/WA4CZ355737.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355737 ;
+        adm:logEntry        bda:LG522EDD92AFC4DE70 , bda:LG83C1C5C9696620CF , bda:LG8B75793A8FA98D29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCD9115A909C8C824
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG1684 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ355737  a      :Work ;
+        skos:altLabel       "(sa skya legs bshad) kyi rab 'byed dang po'i sgra bshus/"@bo-x-ewts ;
+        skos:prefLabel      "blang dor lta tshul/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on first Chapter of Elegant Sayings, by Sakya Pandita."@en ;
+        :creator            bdr:CRCD9115A909C8C824 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ355737 , bdr:W4CZ355737 ;
+        :workIsAbout        bdr:WA11399 .
+}

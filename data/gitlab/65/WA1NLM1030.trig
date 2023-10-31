@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1030 {
+    bda:LG05AFDF2004271712
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-05-08T17:27:23.15Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7CF992EBE0FA4CAF
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-12T13:44:52.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9904969AE7839FA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGB390125E2B811861
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:07:23.185Z"^^xsd:dateTime ;
+        adm:logMessage      "add CW-W4CZ369314"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1030"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1030  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1030 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "65/WA1NLM1030.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1030 ;
+        adm:logEntry        bda:LG05AFDF2004271712 , bda:LG7CF992EBE0FA4CAF , bda:LG9904969AE7839FA6 , bda:LGB390125E2B811861 , bda:LGIMEDE14CA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1803D13FD1D33C47
+        a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR48994C00AD3850B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P58 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9EAD496A7FBF4DF7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P38 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1030  a       :Work ;
+        skos:prefLabel      "bla ma mchod pa'i khrid yig yid ches brgyud ldan zab gsal snying po rjen par phyung ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Manual of instructions of guru yoga practice, few letter writers, the core meaning of Suhrllekha, Instruction on the view, table of contents of the chapters 2 and 3 of the collected work of Chenga Lodro Gyaltsen."@en ;
+        :creator            bdr:CR1803D13FD1D33C47 , bdr:CR48994C00AD3850B0 , bdr:CR9EAD496A7FBF4DF7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T200 , bdr:T2123 , bdr:T395 ;
+        :workHasInstance    bdr:MW1NLM1030 , bdr:W1NLM1030 ;
+        :workIsAbout        bdr:T207 , bdr:WA19721 , bdr:WA4CZ369314 .
+}

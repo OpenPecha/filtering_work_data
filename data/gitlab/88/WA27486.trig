@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27486 {
+    bda:LG428A0443066E9179
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-04-19T02:19:31.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added WMDL and WMDL12"@en ;
+        adm:logWho          bdu:U00032 .
+
+    bda:LG4A8E19238348DBA0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG5B57602865326E2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-18T09:44:43.203Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG88AAB9DC2ECB4C36
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG909A2FE929632B07
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-29T10:57:25.919Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc7"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGF50EA6B45DDF311E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-02T15:51:07.064Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:WA27486  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27486 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "88/WA27486.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27486 ;
+        adm:logEntry        bda:LG428A0443066E9179 , bda:LG4A8E19238348DBA0 , bda:LG5B57602865326E2E , bda:LG88AAB9DC2ECB4C36 , bda:LG909A2FE929632B07 , bda:LGF50EA6B45DDF311E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR98ABF38252099997
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8753 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRA209099CA07FED87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8754 ;
+        :role               bdr:R0ER0016 .
+
+    bdr:MW27486  skos:altLabel  "the collected works of karma-mi-'gyur (1914-1974)"@en .
+
+    bdr:WA27486  a          :Work ;
+        skos:altLabel       "mkhas dang grub pa'i khyu mchog skyo brag mi 'gyur gyi gsung 'bum nor bu'i phreng ba thos pa rang grol/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_karma mi 'gyur/"@bo-x-ewts , "the collected works of karma-mi-'gyur (1914-1974)"@en ;
+        :creator            bdr:CR98ABF38252099997 , bdr:CRA209099CA07FED87 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW27486 , bdr:W27486 ;
+        :workIsAbout        bdr:T1082 , bdr:T807 .
+}

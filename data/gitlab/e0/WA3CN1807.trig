@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1807 {
+    bda:LG30B53F72E0098ED1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-08T17:03:15.598Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG37364C49374ACC40
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-09T11:44:31.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added more info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG661A61B746799019
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-12T12:51:29.181Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9BBC32C3A7578BB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGF4EFAC4523F5672A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-08T17:01:49.152Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN1807  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1807 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e0/WA3CN1807.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1807 ;
+        adm:logEntry        bda:LG30B53F72E0098ED1 , bda:LG37364C49374ACC40 , bda:LG661A61B746799019 , bda:LG9BBC32C3A7578BB4 , bda:LGF4EFAC4523F5672A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG12670 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:MW3CN1807  skos:altLabel  "梵藏金刚经"@zh-hans .
+
+    bdr:WA3CN1807  a        :Work ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts , "fan zang jin gang jing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo rje gcod pa/ (saM bod shan sbyar/)"@bo-x-ewts , "梵藏金刚经"@zh-hans ;
+        :catalogInfo        "Vajrachedika or Diamond Cutter Sutra in Sanskrit and Tibetan. Printed at Mongolia in gold written manuscript."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T240 , bdr:T769 ;
+        :workIsAbout        bdr:T2005 .
+}

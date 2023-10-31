@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12765 {
+    bda:LG70E41307EDD7C60B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-03-20T10:29:16.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7B6D18C2AA75B78B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-16T12:15:32.531Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG864FDC314E90D12A
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-02-26T12:54:47.883Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGE174E425B15122C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:LGF8FFEF12E692A436
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-20T10:49:05.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG12765  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12765 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "74/WA1KG12765.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12765 ;
+        adm:logEntry        bda:LG70E41307EDD7C60B , bda:LG7B6D18C2AA75B78B , bda:LG864FDC314E90D12A , bda:LGE174E425B15122C9 , bda:LGF8FFEF12E692A436 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR14505A49DF64AA1A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG12765  a       :Work ;
+        skos:altLabel       "rgyal sras dngul chu pa chen po thogs med bzang po'i gsung thor bu phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/_thogs med bzang po dpal/"@bo-x-ewts ;
+        :catalogInfo        "Collection of minor writings of Kadampa Master, Gyalse Thogme Zangpopal (1295-1985)"@en ;
+        :creator            bdr:CR14505A49DF64AA1A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW1KG12765 , bdr:W1KG12765 ;
+        :workIsAbout        bdr:T791 .
+}

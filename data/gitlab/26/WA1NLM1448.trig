@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1448 {
+    bda:LG4FCF6E43B8F5AE47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGFDAEEAB7C14323F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-25T13:39:00.318Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIMA07EBF90  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1448"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1448  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1448 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "26/WA1NLM1448.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1448 ;
+        adm:logEntry        bda:LG4FCF6E43B8F5AE47 , bda:LGFDAEEAB7C14323F2 , bda:LGIMA07EBF90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM1448  a       :Work ;
+        skos:prefLabel      "bcom ldan 'das khro bo'i rgyal po rta mgrin gsang sgrub kyi sgrub dkyil dbang chog dang bcas pa bgegs dpung kun 'joms dbang gi rgyal po'i do shal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscelenaous texts in various subjects such as rituals, commentaries, sutras, and instructions."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1448 , bdr:W1NLM1448 ;
+        :workIsAbout        bdr:T104 , bdr:T194 , bdr:T1CZ11 , bdr:T492 .
+}

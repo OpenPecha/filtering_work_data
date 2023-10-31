@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA10308 {
+    bda:LG7AAF4C3F9943DE1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T11:18:45.603Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG828247AA7E733A60
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-17T14:43:43.092Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG90288B1C3454E355
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG931A2A803C3EC48B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-04T15:38:58.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added Print type and sourcePrintery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA10308  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA10308 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f4/WA10308.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA10308 ;
+        adm:logEntry        bda:LG7AAF4C3F9943DE1B , bda:LG828247AA7E733A60 , bda:LG90288B1C3454E355 , bda:LG931A2A803C3EC48B , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR7A0ADC9C3F0456C1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EVC39955C72924EE97
+        a                   :CompletedEvent ;
+        :onYear             "1621"^^xsd:gYear .
+
+    bdr:MW10308  skos:altLabel  "lam 'bras khog phub ; bde mchog chos 'byung : two historical studies of the sa-skya-pa lam 'bras and chakrasamvara traditions"@en-x-mixed .
+
+    bdr:WA10308  a          :Work ;
+        skos:altLabel       "gsung ngag rin po che lam 'bras bu dang bcas pa'i khog phub chos 'byung legs bshad chu bo 'dus pa'i rgya mtsho/"@bo-x-ewts , "yongs rdzogs bstan pa rin po che'i nyams len gyi man ngag gsung ngag rin po chei byon tshul khog phub dang bcas pa rgyas par bshad pa legs bshad 'dus pa'i rgya mtsho/"@bo-x-ewts , "Lam ʼbras khog phub [and] Bde mchog chos ʼbyuṅ :two historical studies of the Sa-skya-pa Lam ʼbras and Chakrasamvara traditions /by ʼJam-mgon A-myes-źabs Ṅag-dbaṅ-kun-dgaʼ-bsod-nams."@en-x-mixed ;
+        skos:prefLabel      "lam 'bras khog phub/"@bo-x-ewts , "lam 'bras khog phub ; bde mchog chos 'byung : two historical studies of the sa-skya-pa lam 'bras and chakrasamvara traditions"@en-x-mixed ;
+        :creator            bdr:CR7A0ADC9C3F0456C1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVC39955C72924EE97 ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW10308 , bdr:W10308 ;
+        :workIsAbout        bdr:T1543 , bdr:T423 , bdr:T617 .
+}

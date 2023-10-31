@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24885 {
+    bda:LGE1873E406BFB353C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGE935DEF23668BFED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-05-29T16:16:20.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIMA1F3FB78EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added ALA-LC title variant from Hollis spreadsheet"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA24885  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24885 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e4/WA24885.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24885 ;
+        adm:logEntry        bda:LGE1873E406BFB353C , bda:LGE935DEF23668BFED , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRC5FED5D12A2B8AB0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8018 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW24885  skos:altLabel  "ʾBri-guṅ- mtshams pa grub thob A-mgon Rin-po-cheʾi rnam thar /ʾBri-gun-pa Chos-ʾbyor."@en-x-mixed .
+
+    bdr:WA24885  a          :Work ;
+        skos:prefLabel      "'bri gung mtshams pa grub thob a mgon rin po che'i rnam thar/"@bo-x-ewts , "ʾBri-guṅ- mtshams pa grub thob A-mgon Rin-po-cheʾi rnam thar /ʾBri-gun-pa Chos-ʾbyor."@en-x-mixed ;
+        :creator            bdr:CRC5FED5D12A2B8AB0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW24885 , bdr:W24885 ;
+        :workIsAbout        bdr:P8017 .
+}

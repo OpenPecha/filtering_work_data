@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17091 {
+    bda:LG96D02BC508284840
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-14T09:25:33.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG99A05D40197B46AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-14T09:23:45.473Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB774687177660698
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA8LS17091  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17091 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "02/WA8LS17091.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17091 ;
+        adm:logEntry        bda:LG96D02BC508284840 , bda:LG99A05D40197B46AF , bda:LGB774687177660698 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3C6B4485DE9FDC62
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17091  a       :Work ;
+        skos:prefLabel      "skabs gsum pa/"@bo-x-ewts ;
+        :catalogInfo        "A reverential petition of Shakyamuni Buddha, praising incamparable wisdom and qualities by Tsongkhapa."@en ;
+        :creator            bdr:CR3C6B4485DE9FDC62 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T140 , bdr:T67 ;
+        :workHasInstance    bdr:MW8LS17091 , bdr:W8LS17091 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369304 {
+    bda:LG8D12F553805776BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-26T16:20:02.142Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE6CEC84EDC603F9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T16:33:10.626Z"^^xsd:dateTime ;
+        adm:logMessage      "check and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ369304  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369304 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1d/WA4CZ369304.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369304 ;
+        adm:logEntry        bda:LG8D12F553805776BD , bda:LGE6CEC84EDC603F9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR33F6D0128FD20218
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1646 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ369304  a      :Work ;
+        skos:altLabel       "rje 'jigs med rigs pa'i blo gros kyi gsung rtsom pod bzhi pa las rnal 'byor bla med gyi kha skong gsang chen nyi zla 'i dkyil 'khor sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rnal 'byor bla med gyi kha skong gsang chen nyi zla'i dkyil 'khor sogs/"@bo-x-ewts ;
+        :catalogInfo        "A supplementary to the Anuttarayoga tantra and other miscellaneous writting"@en ;
+        :creator            bdr:CR33F6D0128FD20218 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 ;
+        :workHasInstance    bdr:MW4CZ369304 , bdr:W4CZ369304 ;
+        :workIsAbout        bdr:T1460 .
+}

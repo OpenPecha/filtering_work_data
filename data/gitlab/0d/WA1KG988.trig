@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG988 {
+    bda:LG07F6C20BB068F411
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-11-17T12:41:10.365Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged and released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG130BBD57F20A68EB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-11-17T12:49:18.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG61268989B44E6B76
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+
+    bda:LG902AF18123C2623C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-13T08:47:02.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9C5EE61AF6E6149F
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-11-17T12:46:39.786Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCB86CCC025EF3082
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-04T17:58:14.27Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+
+    bda:LGF06B7283ACFE0019
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T11:06:33.335Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc6"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LGFD4772C0BA998F4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T14:58:46.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG988  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG988 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "0d/WA1KG988.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG988 ;
+        adm:logEntry        bda:LG07F6C20BB068F411 , bda:LG130BBD57F20A68EB , bda:LG61268989B44E6B76 , bda:LG902AF18123C2623C , bda:LG9C5EE61AF6E6149F , bda:LGCB86CCC025EF3082 , bda:LGF06B7283ACFE0019 , bda:LGFD4772C0BA998F4B , bda:LGIM4394141E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1KG988  skos:altLabel  "the collected liturgical texts of stag lung brag"@en .
+
+    bdr:WA1KG988  a         :Work ;
+        skos:altLabel       "dgon gsas stag brag bsam gtan gling gi phyag bzhes mdo sngags chos spyod/"@bo-x-ewts , "the ollected ritual texts used in the stag lung brag bsam gtan gling monastery/"@bo-x-ewts ;
+        skos:prefLabel      "stag brag bsam gtan gling gi phyag bzhes mdo sngags chos spyod/"@bo-x-ewts , "the collected liturgical texts of stag lung brag"@en ;
+        :catalogInfo        "The collected liturgical texts of Tagdrak Samten Ling monastery near Lhasa."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1KG988 , bdr:W1KG988 ;
+        :workIsAbout        bdr:T819 .
+}

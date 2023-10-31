@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1AC408 {
+    bda:LG1E5F7A5F609018AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-23T08:43:26.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAE3E82DFA360A4A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-27T10:08:06.788Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00029 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1AC408  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1AC408 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "71/WA1AC408.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1AC408 ;
+        adm:logEntry        bda:LG1E5F7A5F609018AF , bda:LGAE3E82DFA360A4A6 , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:MW1AC408  skos:altLabel  "格萨尔王传. 父叔三尊诞生"@zh-hans .
+
+    bdr:WA1AC408  a         :Work ;
+        skos:altLabel       "ge sa er wang zhuan fu shu san zun dan sheng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gling rje ge sar rgyal po'i sgrung / pha khu rnam gsum 'khrungs skor/"@bo-x-ewts , "格萨尔王传. 父叔三尊诞生"@zh-hans ;
+        :catalogInfo        "An episode from the epic of Gesar. An account of the father and paternal uncle was born."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1AC408 , bdr:W1AC408 ;
+        :workIsAbout        bdr:T1863 , bdr:T248 .
+}

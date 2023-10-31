@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2215 {
+    bda:LGAA83C68C0CFF8DB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-24T14:58:31.795Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGD335A08FFB5DABE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2215"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2215  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2215 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d9/WA1NLM2215.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2215 ;
+        adm:logEntry        bda:LGAA83C68C0CFF8DB9 , bda:LGD335A08FFB5DABE0 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR04DED67029B28C9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P280 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2215  a       :Work ;
+        skos:prefLabel      "ye shes kyi mkha' 'gro ma seng+ge gdong pa can gyi bskang gso'i lhan thabs rig gzig tu 'god pa 'phrin las dngos grub kun gyi 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lha lnga'i gsol mchod bsod nams dpal bskyed/ 2 rje btsun byams pa mgon po'i bstod pa rin po che gsal ba'i sgron me/ 3 bu ston zhabs kyis mdzad pa'i bslab bya snying gi thur ma bdud mo'i dmod 'khor bcas/ 4 sku 'bum byams pa gling gi rten gyi gtso bo tsan dan ljon shing gi lo rgyus/ 5 myur byon gsol 'debs re 'bras lhun grub ma/ 6 bskal bzang 'dren mchog kun mkhyen shAkya'i tog 7 dge tshul gyi phyir bcos gso sbyong dbyang gnas dgag dbye bslab bya mdor bsdus rnams/ 8 o rgyan pad+mas mdzad pa'i bka' thang bsdus pa/"@en , "A supplementary to the regular propitiation of Jnanadakini; other text also included."@en ;
+        :creator            bdr:CR04DED67029B28C9C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1453 ;
+        :workHasInstance    bdr:MW1NLM2215 , bdr:W1NLM2215 ;
+        :workIsAbout        bdr:T19 , bdr:T400 .
+}

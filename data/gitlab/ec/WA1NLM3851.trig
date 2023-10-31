@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3851 {
+    bda:LG92C2173BD425A217
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-31T08:24:39.542Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3851"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3851  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3851 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ec/WA1NLM3851.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3851 ;
+        adm:logEntry        bda:LG92C2173BD425A217 , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM3851  a       :Work ;
+        skos:prefLabel      "gzungs sngags dang /_de bzhin gshegs pa'i mtshan/_bka' 'gyur snying po sogs kha 'don byed rgyu zab mo'i rigs phyogs gcig tu bkod pa don gnyis lhun grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bkra shis brtsegs pa/ 2 ston pa shAkya thub pa la rten cing 'brel bar 'byung ba gsung ba'i sgo nas bstod pa legs bshad snying po/ 3 dkon mchog rjes dran/ 4 thun drug rnal 'byor skong tshul/ 5 rje btsun tsong kha ba la mchod pa 'bul tshul yongs 'dzin shing za rin po che'i gsung rgyun/ 6 kun gzigs paN chen thams cad mkhyen pa nas gnang ba'i sham+bHa la'i smon tshig 7 'phags pa gtsug tor rnam par rgyal ma'i gzungs rtogs pa dang bcas pa/ 8 lam rim gsol 'debs/ 9 gnas rten cho ga 10 skabs gsum pa/ 11 rten 'brel bstod pa legs par bshad pa'i snying po/ 12 thabs mkhas thugs rje ma/ 13 mkha' mnyam ma/ 14 blo bzang rgyal ba ma/ 15 bla ma'i bka' drin cing thugs rje bskul ba'i gsol 'debs byin rlabs 'phreng ba/ 16 dmag zor rgyal mo'i gsol 'debs/ 17 klu sgrub kyi mdzad pa lhag pa'i smon lam/"@en , "A collection of prayer recitation text such as mantras, name of Tathagatas, essence of Kagyur etc."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T01JR185 , bdr:T1081 , bdr:T225 , bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM3851 , bdr:W1NLM3851 .
+}

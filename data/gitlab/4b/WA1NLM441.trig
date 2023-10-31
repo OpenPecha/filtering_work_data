@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM441 {
+    bda:LG4FA6E85C79AAA891
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-09-10T15:58:40.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG92D6C72F4B620B54
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGE57CAB413BC6E5DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-10T14:05:37.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM48AAB853  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2018-10-28T18:29:33.12Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM441"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM441  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM441 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4b/WA1NLM441.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM441 ;
+        adm:logEntry        bda:LG4FA6E85C79AAA891 , bda:LG92D6C72F4B620B54 , bda:LGE57CAB413BC6E5DD , bda:LGIM48AAB853 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9CF7EC41C0390BF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM441  a        :Work ;
+        skos:prefLabel      "shAkya'i btsun pa dge slong blo bzang dpal ldan ye shes kyi mdzad pa'i smon lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Prayer composed by Panchen Palden Yeshe; other text also included."@en ;
+        :creator            bdr:CR9CF7EC41C0390BF8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM441 , bdr:W1NLM441 .
+}

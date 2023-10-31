@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG24479 {
+    bda:LG3FB178E101D0586C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-30T15:41:34.889Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF6BEEE10B4053443
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-30T15:42:13.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM84B17F7EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG24479  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG24479 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/WA1KG24479.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG24479 ;
+        adm:logEntry        bda:LG3FB178E101D0586C , bda:LGF6BEEE10B4053443 , bda:LGIM84B17F7EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4C43184E46FB221F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG20648 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG24479  a       :Work ;
+        skos:altLabel       "a ma'i bkrin dang bud med kyi yon tan/"@bo-x-ewts ;
+        skos:prefLabel      "a ma'i bka' drin dang bud med kyi yon tan/"@bo-x-ewts ;
+        :catalogInfo        "Kindness of mother and good qualities of women written by Lobsang Jinpa."@en ;
+        :creator            bdr:CR4C43184E46FB221F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW1KG24479 , bdr:W1KG24479 ;
+        :workIsAbout        bdr:T2419 .
+}

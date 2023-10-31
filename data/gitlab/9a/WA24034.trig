@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA24034 {
+    bda:LG58C7D7246AE0E0D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-13T10:25:04.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added authorship statement, scribe and date of writing"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG89289C76723D6DAC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA24034  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA24034 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9a/WA24034.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA24034 ;
+        adm:logEntry        bda:LG58C7D7246AE0E0D4 , bda:LG89289C76723D6DAC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA3F9172EE43BD87A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7679 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:EV0C8792A04274E441
+        a                   :CompletedEvent ;
+        :eventWhen          "བ་རྒྱལ་ལྕགས་སྤྲེལ་མགོ་ཟླ་བའི་ཡར་ཚེས་བཅུ་བཞི།ཆོས་རྗེ་ས་སྐྱ་པཎྜི་ཏ་ཆེན་པོ་དགོངས་པ་ཆོས་དབྱིངས་སུ་ཐིམ་ཚུལ་བསྟན་པའི་དུས་ཆེན་ཉིན།ཕྱི་གླིང་ཨ་མེ་རི་ཀའི་རྒྱལ་ཁམས།གྲོང་ཁྱེར་སི་ཨེ་ཀྲལ་དུ་རྫོགས་པར་སྦྱར་བ་སརྦ་དཱ་ཀ་ལྱ་ཎཾ་བྷ་ཝནྟུ༎"^^<http://id.loc.gov/datatypes/edtf> .
+
+    bdr:MW24034  skos:altLabel  "rje btsun bla ma dam pa 'jam dbyans rgyal mthan gi rnam thar mdor bsdus skal bzan rna rgyan : a brief biography of bla-ma 'jam-dbyans-mtshan of sga"@en-x-mixed .
+
+    bdr:WA24034  a          :Work ;
+        skos:altLabel       "sga 'dzin mda' bla ma 'jam dbyangs rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun bla ma dam pa 'jam dbyangs rgyal mtshan gyi rnam thar mdor sdus skal bzang rna rgyan/"@bo-x-ewts , "rje btsun bla ma dam pa 'jam dbyans rgyal mthan gi rnam thar mdor bsdus skal bzan rna rgyan : a brief biography of bla-ma 'jam-dbyans-mtshan of sga"@en-x-mixed ;
+        :catalogInfo        "Biography of a Sakya master from Kham, Jetsun Lama Dampa Jamyang Gyaltsen. Known as the editor of the Collected Works by Gorampa Sonam Sengge."@en ;
+        :creator            bdr:CRA3F9172EE43BD87A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EV0C8792A04274E441 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW24034 , bdr:W24034 ;
+        :workIsAbout        bdr:P970 , bdr:T617 .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3097 {
+    bda:LGB1967E5C4B25FA15
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGC889CDBBADEBEE82
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-22T09:27:47.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3097"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3097  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3097 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/WA1NLM3097.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3097 ;
+        adm:logEntry        bda:LGB1967E5C4B25FA15 , bda:LGC889CDBBADEBEE82 , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRE3E3900FBB52A56D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P290 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3097  a       :Work ;
+        skos:prefLabel      "bsangs rnam dag ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gsol kha 'jam dpal gshin rje ma/ 2 lhag pa'i smon lam them skas/ 3 bsau mi skan lnga mchod tshul yid bzhin nor bu/ 4 ston pa shAkya thub pa'i mchod rten brgyad kyi phyag byas pa/ 5 sa sgo'i cho ga la/ nam sgo'i cho ga la/ 6 rje btsun seng ldeng nags kyi sgrol ma'i bstod pa mkhas pa'i gtsug rgyan/ 7 bkra shis brtsegs pa/ 8 cha gsum gyi gtor ma/ 9 'phags pa gsang zhing yangs pa'i snang brgyad ces bya ba'i mdo/ 10 byang sems dang rig pa 'dzin pa'i phyir bcos/ 11 rta mgrin gsang sgrub kyi chos skor las/ mchog dman gyi mgron la gtor ma dang / gser skyems bsangs sogs gtong ba'i skabs/ 'dod gsol kha bsgyur byed tshul/ 12 gsang ba man ngag gi mdo sngags/ 13 bsans bcu gsum/ 14 rlung gnon man ngag 15 dpal dur khrod drag po kham chu nag po gser skyems 'bul tshul/ 16 dpal ldan sa gsum ma/ 17 rkang bzhi phyugs kyi g.yang 'bod/ 18 nag phyogs mtshun gsol/ 19 bltung bshags 'don pas chog a'i go rim/ 20 jo bo a ti sha'i sgrol ma'i 'chi bslu/ 21 lug gi 'bru 'o ma'i mchod 'bul ma/ 22 'go ba'i lha lnga'i gsol mchod kyi rim pa bya tshul/"@en , "Incense offering text; other text also included."@en ;
+        :creator            bdr:CRE3E3900FBB52A56D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM3097 , bdr:W1NLM3097 ;
+        :workIsAbout        bdr:T173 .
+}

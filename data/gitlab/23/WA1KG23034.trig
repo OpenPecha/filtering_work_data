@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG23034 {
+    bda:LG28B3C8750527BDAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-17T10:42:18.753Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE3C3CDB993388AA5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-17T10:42:52.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE89E11CADAA32EF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:WA1KG23034  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG23034 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "23/WA1KG23034.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG23034 ;
+        adm:logEntry        bda:LG28B3C8750527BDAE , bda:LGE3C3CDB993388AA5 , bda:LGE89E11CADAA32EF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR39853C41165BBFCC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P293 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG23034  a       :Work ;
+        skos:altLabel       "rdzogs pa chen po klong chen snying thig las: bla ma rig 'dzin 'dus pa dang / yum ka bde chen rgyal mo'i tshogs dang cho ga sbyin sreg gtor lugs las 'grigs tshig thor bkod pa ma rig mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs pa chen po klong chen snying thig las: bla ma rig 'dzin 'dus pa dang yum ka bde chen rgyal mo'i tshogs dang cho ga sbyin sreg gtor lugs sogs/"@bo-x-ewts ;
+        :catalogInfo        "A liturgical recitation and rituals according to the preliminary practice of Longchen Nyingthik by Kunkhyen Jigme Lingpa."@en ;
+        :creator            bdr:CR39853C41165BBFCC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1KG23034 , bdr:W1KG23034 ;
+        :workIsAbout        bdr:T179 , bdr:T328 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17242 {
+    bda:LG7C342A56718A2775
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-05T09:08:47.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGDBA2C01FBC38F0E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-05T09:07:24.505Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF9901C96AD9F4FA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA8LS17242  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17242 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ee/WA8LS17242.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17242 ;
+        adm:logEntry        bda:LG7C342A56718A2775 , bda:LGDBA2C01FBC38F0E2 , bda:LGF9901C96AD9F4FA7 , bda:LGIM4599A38FCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CREF240740916E43A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS17242  a       :Work ;
+        skos:altLabel       "rgyal po chen po rnam thos sras la mchod gtor 'bul ba'i rim pa dngos grub kyi bang mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "rnam sras la mchod gtor 'bul ba'i rim pa dngos grub kyi bang mdzod/"@bo-x-ewts ;
+        :catalogInfo        "A detailed explanation of the Vaishrava or Kubera's sadhana with the puja and bali offering by the second Dalai Lama Gedun Gyatso."@en ;
+        :creator            bdr:CREF240740916E43A6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW8LS17242 , bdr:W8LS17242 ;
+        :workIsAbout        bdr:T1367 , bdr:T197 .
+}

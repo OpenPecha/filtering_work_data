@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN1879 {
+    bda:LG169B17B28DFC39CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-30T13:03:33.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG491F7FC5A7F403C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-30T12:06:06.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8F4D0D0FE87DABE6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-30T11:56:22.444Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB80D788E97FB69B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-07T11:21:34.7Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGE8CF1D3BAA7E10DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:40:32.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01" .
+
+    bda:WA3CN1879  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN1879 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "2d/WA3CN1879.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN1879 ;
+        adm:logEntry        bda:LG169B17B28DFC39CF , bda:LG491F7FC5A7F403C1 , bda:LG8F4D0D0FE87DABE6 , bda:LGB80D788E97FB69B6 , bda:LGE8CF1D3BAA7E10DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3BB9F4EE2EB0D0BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRB78EDB26A294B7AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16819 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:CRC1392E65523E5313
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRECEAF7DE571DC2F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8222 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:MW3CN1879  skos:altLabel  "Mahamayurividyarajni"@sa-x-ndia , "大孔雀佛母陀罗尼经"@zh-hans .
+
+    bdr:WA3CN1879  a        :Work ;
+        skos:altLabel       "da kong que fo mu tuo luo ni jing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rig sngags kyi rgyal mo rma bya chen mo/"@bo-x-ewts , "Mahamayurividyarajni"@sa-x-ndia , "大孔雀佛母陀罗尼经"@zh-hans ;
+        :catalogInfo        "The Sutra of Mahamayurividyarajni."@en ;
+        :creator            bdr:CR3BB9F4EE2EB0D0BB , bdr:CRB78EDB26A294B7AD , bdr:CRC1392E65523E5313 , bdr:CRECEAF7DE571DC2F3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW2PD19899_2AD91D , bdr:MW3CN1879 , bdr:W3CN1879 ;
+        :workIsAbout        bdr:T867 .
+}

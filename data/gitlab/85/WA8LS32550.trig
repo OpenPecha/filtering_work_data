@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS32550 {
+    bda:LG0A8B67971EAD06C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-17T15:28:48.742Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG1F8505AF203CAF93
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG314345ABCCBDD767
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-17T14:34:24.922Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG52E22E89C721E4A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-17T14:35:27.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS32550  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS32550 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "85/WA8LS32550.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS32550 ;
+        adm:logEntry        bda:LG0A8B67971EAD06C4 , bda:LG1F8505AF203CAF93 , bda:LG314345ABCCBDD767 , bda:LG52E22E89C721E4A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1NLM769 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRB31DD34AF84FDB3B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6263 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS32550  a       :Work ;
+        skos:prefLabel      "snyan ngag me long gi zin tho dran pa'i gsal 'debs/"@bo-x-ewts ;
+        :catalogInfo        "A note on the Kavyadarsha by Topden Rabjam."@en ;
+        :creator            bdr:CRB31DD34AF84FDB3B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workIsAbout        bdr:WA22919 .
+}

@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16574 {
+    bda:LG5B42A62D4705C988
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LG8ACE2E44DD0DA7EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T18:59:33.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCDC2F6FE1B53A20B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-03T11:46:51.167Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGD0299E2C422057E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T06:00:53.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16574  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16574 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d9/WA1KG16574.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16574 ;
+        adm:logEntry        bda:LG5B42A62D4705C988 , bda:LG8ACE2E44DD0DA7EC , bda:LGCDC2F6FE1B53A20B , bda:LGD0299E2C422057E7 , bda:LGIM6C9E48233B , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR4E984564F845C08F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228817 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG16574  skos:altLabel  "绿野仙踪"@zh-hans .
+
+    bdr:WA1KG16574  a       :Work ;
+        skos:altLabel       "'dzam gling gsung rtsom grags chen bod bsgyur dpe tshogs/ g.yu gcal lha lam/"@bo-x-ewts , "lu yie xian zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.yu gcal lha lam/"@bo-x-ewts , "绿野仙踪"@zh-hans ;
+        :catalogInfo        "Tibetan translation of renowed an American children's novel \"The Wonderful Wizard of Oz\" written by Lyman Frank Baum (1856-1919) and translated by Dranyan Tsegyal (b. 1990)."@en ;
+        :creator            bdr:CR4E984564F845C08F ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T257 ;
+        :workHasInstance    bdr:MW1KG16574 , bdr:W1KG16574 .
+}

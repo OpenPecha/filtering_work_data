@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16133 {
+    bda:LG8D7EAC73D71653BA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-04T10:40:08.126Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGBBDBC095AB9D4E2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-13T11:04:11.922Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized series number"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGC7A9B3AC971451C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-12-04T10:41:37.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGCAE70F22F734E46F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-05T13:05:19.106Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG16133  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16133 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1d/WA1KG16133.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16133 ;
+        adm:logEntry        bda:LG8D7EAC73D71653BA , bda:LGBBDBC095AB9D4E2C , bda:LGC7A9B3AC971451C1 , bda:LGCAE70F22F734E46F , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1CZ1011 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR4B9A68BF428A593B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG16133  a       :Work ;
+        skos:altLabel       "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos legs bshad snying po/"@bo-x-ewts ;
+        skos:prefLabel      "drang nges legs bshad snying po/"@bo-x-ewts ;
+        :catalogInfo        "Critical and systematic exposition of the philosophic systems of the Mahayana; the fundamental philosophic view of Tsongkhapa (1357-1419) on two truths."@en ;
+        :creator            bdr:CR4B9A68BF428A593B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG16133 ;
+        :workIsAbout        bdr:T1441 , bdr:T36 .
+}

@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN18496 {
+    bda:LG0E94AA380308A084
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-10-16T18:37:13.391Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG19513792EF09379F
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-02-28T15:32:08.923Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG1D9FB3A5718B6B56
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG2AF047193517A3D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-06-07T16:48:13.067Z"^^xsd:dateTime ;
+        adm:logMessage      "checkedout"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGB734AD52B492C5AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-05-26T13:39:29.08Z"^^xsd:dateTime ;
+        adm:logMessage      "temporarilyRestricted"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC10BECBF5771EA5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-01T15:42:33.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN18496  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN18496 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "77/WA3CN18496.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN18496 ;
+        adm:logEntry        bda:LG0E94AA380308A084 , bda:LG19513792EF09379F , bda:LG1D9FB3A5718B6B56 , bda:LG2AF047193517A3D5 , bda:LGB734AD52B492C5AC , bda:LGC10BECBF5771EA5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR76ABB00AC42A35EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P0RK1295 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN18496  a       :Work ;
+        skos:altLabel       "rngog rin chen bzang po'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ rin chen dpal bzang /"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Ngok lineage master Rinchen Palsang (1243-1319)."@en ;
+        :creator            bdr:CR76ABB00AC42A35EA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN18496 , bdr:W3CN18496 ;
+        :workIsAbout        bdr:T1682 .
+}

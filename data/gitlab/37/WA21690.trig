@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21690 {
+    bda:LG259FD2409D9CF3EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-01T12:50:00.645Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted T874"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG703B7AF7BA419CC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-12T11:42:14.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG8DC741BB599017EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG950E4C501E55EB30
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM206EC9B06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 15"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA21690  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21690 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "37/WA21690.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21690 ;
+        adm:logEntry        bda:LG259FD2409D9CF3EA , bda:LG703B7AF7BA419CC2 , bda:LG8DC741BB599017EB , bda:LG950E4C501E55EB30 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA04066DFA13C3820
+        a                   :AgentAsCreator ;
+        :agent              bdr:P644 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA21690  a          :Work ;
+        skos:altLabel       "dpal grub pa'i dbang phyug brtson 'grus bzang po'i rnam par thar pa kun gsal nor bu'i me long /"@bo-x-ewts , "thang rgyal rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "thang stong rgyal po'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Thangtong Gyalpo by Lochen Gyurme Dechen."@en ;
+        :creator            bdr:CRA04066DFA13C3820 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW21690 , bdr:MW8LS32726 , bdr:W21690 , bdr:W8LS32726 ;
+        :workIsAbout        bdr:P2778 .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG22265 {
+    bda:LG3766F4BBA5ED55A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-07-20T12:31:31.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG62DFD3415CA88622
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-20T12:30:25.323Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG6E346F59DD0EE437
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-25T11:47:10.84Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewd by KG, LS, CN and KL"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA1KG22265  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG22265 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "24/WA1KG22265.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG22265 ;
+        adm:logEntry        bda:LG3766F4BBA5ED55A6 , bda:LG62DFD3415CA88622 , bda:LG6E346F59DD0EE437 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR1DC52609742E4B48
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG22265  a       :Work ;
+        skos:altLabel       "bstan bcos dbu ma la 'jug pa'i rnam bshad dgongs pa rab gsal gyi dka' gnad gsal bar byed pa'i spyi don legs bshad skal bzang mgul rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma 'jug pa'i spyi don legs bshad skal bzang mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Madhyamika philosophy according to the Gelug tradition; the textbooks used in Sera Je Monastery and its affiliates."@en ;
+        :creator            bdr:CR1DC52609742E4B48 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1763 ;
+        :workHasInstance    bdr:MW1KG22265 , bdr:MW1NLM846 , bdr:MW8601 , bdr:W1KG22265 , bdr:W1NLM846 , bdr:W8601 ;
+        :workIsAbout        bdr:G155 , bdr:T233 , bdr:T447 , bdr:WA19458 .
+}

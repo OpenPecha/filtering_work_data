@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG8473 {
+    bda:LG0A0A613CB5370F33
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-01-25T10:10:55.244Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG0AF6B544EA4AAAFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-11-04T12:41:43.657Z"^^xsd:dateTime ;
+        adm:logMessage      "mtshan byang bcos"@en ;
+        adm:logWho          bdu:U00021 .
+
+    bda:LG1AF1F186C9967FDF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-01-31T15:50:36.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG7630A7B40B051E80
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-08-04T11:22:17.53Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMF03D5361F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA1KG8473  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG8473 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "78/WA1KG8473.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG8473 ;
+        adm:logEntry        bda:LG0A0A613CB5370F33 , bda:LG0AF6B544EA4AAAFE , bda:LG1AF1F186C9967FDF , bda:LG7630A7B40B051E80 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9ACD1D7869CB91F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6177 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG8473  a        :Work ;
+        skos:prefLabel      "snyan 'grel yang gsal snang mdzod kyi zur rgyan ngag rig sgyu 'phrul 'gugs pa'i lcags kyu/"@bo-x-ewts ;
+        :catalogInfo        "Addendum to the Nyendrel yang sel nangdzo by Muge Samten Gyatso (1914-1993)."@en ;
+        :creator            bdr:CR9ACD1D7869CB91F9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 ;
+        :workHasInstance    bdr:IE1KG8473 , bdr:MW1KG8473 , bdr:W1KG8473 ;
+        :workIsAbout        bdr:WA30433 .
+}

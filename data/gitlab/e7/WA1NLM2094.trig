@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2094 {
+    bda:LG0795D61482DF8AAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T10:45:24.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8C494D16EE7D89E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2094"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2094  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2094 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e7/WA1NLM2094.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2094 ;
+        adm:logEntry        bda:LG0795D61482DF8AAB , bda:LG8C494D16EE7D89E6 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA1NLM2094  a       :Work ;
+        skos:prefLabel      "'phags pa tshe dpag tu med mdo sde sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 byad phur gyi nyer 'tshe'i mtshan ma bzlog ched rgyun 'don du byas chog pa/ 2 dgun gyi rgyal mo bsangs/ 3 maN+Dal 'bul ba sogs/ 4 sgrol ma'i bstod pa blo gros rgya mtshos mdzad pa/ 5 rje btsun dam pa'i brtan bzhugs kyi tshigs bcad dang bkra shis kyi rim pa brjod tshul/ 6 lha dng bla ma la gsol ba 'debs tshul shin tu bsdus pa/ 9 lug 'phel ba'i gzungs/ 10 gzhi bdag gtor ma btang ba/ 11 dpal rdo rje 'jigs byed kyi bka' sgo/ 12 phyag na rdo rje drag po gsum dril gyi sgrub thabs/ 13 gnyis nag gi gser skyems/ 14 phun sum tshogs pa'i dge 'dun rnams kyi bsngo ba'i mthun 'gyur thugs la 'dogs pa/ 15 gnam sgo sa sgo gcod sa/ 16 mtshun lha gsol gtor ma gtor tshul/ 17 bsang ba man ngag rgyud khas/ bsangs ni/ 18 rta mgrin gsang sgrub la brten nas ku su lu si thsogs sogs sam/ bdud rtsi dkar 'gyed zhes grags pa/ rang lus mchod sbyin byed tshul/ 19 ma mo mdos glud/ 20 rtsis la nye bar mkho ba'i yang snying gtso ma gser mdog mkhas khyung mdzod/ 21 myur mdzad ye shes kyi mgon sgo nas sho mo 'degs tshul/ 22 dpal mgon don lnga'i gser skyems 'bul tshul legs tshogs lhun grub ma/ 23 pho lha dung skyong dkar po'i chos skor las char rigs zhi ba'i gser skyems/ 24 brjed tho g.yang Ti'i za ma tog gi thyen kAng thu'i pU lU bzhin zhi kha'i ni/ 25 bcom ldan 'das mi g.yo ba ljon po'i sgrub thabs rgyal dbang dge 'dun rgya mtsho'i gsung 'thor bu las byung ba/ 26 rje btsun mi g.yo mgon po la bstod pa byin rlabs kyi chu gter/ 27 dpal ldan lha mo'i 'phrin bcol/"@en , "Arya Aparimita Ayurjnana sutra; other text also included."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2094 , bdr:W1NLM2094 .
+}

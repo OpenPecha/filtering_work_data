@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76306 {
+    bda:LG4D2D23F12E47828D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-27T14:36:16.192Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG7CB2EB5A466ACA1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-28T09:13:29.048Z"^^xsd:dateTime ;
+        adm:logMessage      "page number changed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG8D237A8DB4A898AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-27T14:36:47.525Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF8326F939E016896
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-27T14:51:58.582Z"^^xsd:dateTime ;
+        adm:logMessage      "author changed"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76306  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76306 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "63/WA8LS76306.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76306 ;
+        adm:logEntry        bda:LG4D2D23F12E47828D , bda:LG7CB2EB5A466ACA1C , bda:LG8D237A8DB4A898AD , bda:LGF8326F939E016896 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRCD6FB82C9E17FECB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76310 ;
+        :role               bdr:R0ER0012 .
+
+    bdr:WA8LS76306  a       :Work ;
+        skos:altLabel       "sgrung mkhan grags pas gsungs pa'i gling rje ge sar rgyal po'i sgrung las/ gangs ri shel rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "gangs ri shel rdzong /"@bo-x-ewts ;
+        :catalogInfo        "Gesar epic story by Drakpa."@en ;
+        :creator            bdr:CRCD6FB82C9E17FECB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS76306 , bdr:W8LS76306 ;
+        :workIsAbout        bdr:T248 .
+}

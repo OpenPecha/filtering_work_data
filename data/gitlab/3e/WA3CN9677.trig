@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN9677 {
+    bda:LG5F41BE4DA7D478A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-15T12:56:10.237Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGC51ACF44CBAC78C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-15T13:00:01.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN9677  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN9677 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3e/WA3CN9677.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN9677 ;
+        adm:logEntry        bda:LG5F41BE4DA7D478A4 , bda:LGC51ACF44CBAC78C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3F7939FD2FBDE2E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P489 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW3CN9677  skos:altLabel  "俱舍论语意解明“善说阳光”"@zh-hans .
+
+    bdr:WA3CN9677  a        :Work ;
+        skos:altLabel       "dam pa'i chos mngon pa mdzod kyi tshig gi don gsal bar byed pa'i bstan bcos legs par bshad pa nyi ma'i 'od zer/"@bo-x-ewts ;
+        skos:prefLabel      "legs par bshad pa nyi ma'i 'od zer/"@bo-x-ewts , "俱舍论语意解明“善说阳光”"@zh-hans ;
+        :catalogInfo        "A commentary on vasubandhu's abhidharmakosa by Buntrak Sumpa."@en ;
+        :creator            bdr:CR3F7939FD2FBDE2E6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN9677 , bdr:W3CN9677 ;
+        :workIsAbout        bdr:T59 .
+}

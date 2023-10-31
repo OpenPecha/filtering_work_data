@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN13122 {
+    bda:LGC4F40C4E06ABF077
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-07T15:50:23.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGDC86DE450F7315DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-02-07T15:49:08.354Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN13122  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN13122 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "77/WA3CN13122.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN13122 ;
+        adm:logEntry        bda:LGC4F40C4E06ABF077 , bda:LGDC86DE450F7315DC , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN13122  a       :Work ;
+        skos:altLabel       "byang gter lugs kyi bla ma'i rnal 'byor brgyud pa'i gsol 'debs/ bsgrub chen bka' brgyad kyi sngon 'gro'i rim pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrub chen bka' brgyad skor gyi lag bris chos tshan 'ga' zhig"@bo-x-ewts ;
+        :catalogInfo        "Some Kabgyey texts that teachings of the eight classes of sadhanas of the rnying ma bka' ma and gter ma traditions."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T413 ;
+        :workHasInstance    bdr:MW3CN13122 , bdr:W3CN13122 ;
+        :workIsAbout        bdr:T1193 .
+}

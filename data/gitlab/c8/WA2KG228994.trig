@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG228994 {
+    bda:LG28DB3D968A7F48C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T12:31:42.729Z"^^xsd:dateTime ;
+        adm:logMessage      "marked temp restricted"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG9887A40668C0E557
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-07-06T12:24:03.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGEA7F24928BBCD893
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-06T12:22:56.876Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA2KG228994  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG228994 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/WA2KG228994.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG228994 ;
+        adm:logEntry        bda:LG28DB3D968A7F48C3 , bda:LG9887A40668C0E557 , bda:LGEA7F24928BBCD893 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA1KG15906 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CRA52F91302D7F58FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA2KG228994  a      :Work ;
+        skos:altLabel       "rje gung thang bstan pa'i sgron me'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ gung thang dkon mchog bstan pa'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works of a Geluk scholar Gungtang Konchok Tenpai Dronme (1762-1823) of the Gomang tradition of Labrang Tashi Khyil Monastery."@en ;
+        :creator            bdr:CRA52F91302D7F58FD ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG228994 ;
+        :workIsAbout        bdr:T819 .
+}

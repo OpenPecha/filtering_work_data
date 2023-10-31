@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA27431 {
+    bda:LG440F5285A3080CAF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA27431  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA27431 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "82/WA27431.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA27431 ;
+        adm:logEntry        bda:LG440F5285A3080CAF , bda:LGIM7CC15F8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+
+    bdr:CRB3E9A506AC873516
+        a                   :AgentAsCreator ;
+        :agent              bdr:P654 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA27431  a          :Work ;
+        skos:altLabel       "pad+ma ba dz+ra grub thob rgya mtsho'i dkyil 'khor las rim brgya rtsa'i cha lag dzambha la nag po'i sgrub thabs rdo rje nam mkha'i mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "dzambha la nag po'i sgrub thabs nam mkha'i mdzod/"@bo-x-ewts ;
+        :creator            bdr:CRB3E9A506AC873516 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW27431 ;
+        :workIsAbout        bdr:T1833 , bdr:T399 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN13466 {
+    bda:LGBAE76ECFCC111159
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-26T13:10:37.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGD31EC4F8FBE045F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-02-26T12:14:51.458Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIMECF1E61D  a     adm:UpdateData ;
+        adm:logAgent        "admin/works-rXivInfo-UPDATE-from-list.xql" ;
+        adm:logDate         "2020-06-26T20:10:58.998Z"^^xsd:dateTime ;
+        adm:logMessage      "updating access"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA3CN13466  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN13466 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bf/WA3CN13466.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN13466 ;
+        adm:logEntry        bda:LGBAE76ECFCC111159 , bda:LGD31EC4F8FBE045F7 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA3CN13466  a       :Work ;
+        skos:altLabel       "snga 'gyur rnying ma ba dang phyi rab gsar phyogs kyi grub mtha' 'dzin pa rnams la mdo sngags sogs kyi 'dod tshul mi 'dra ba'i khyad par dbye ba cung zad zhig brjod pa/"@bo-x-ewts ;
+        skos:prefLabel      "gsar rnying grub mtha'i mdo sngags sogs kyi 'dod tshul mi 'dra ba'i khyad par/"@bo-x-ewts ;
+        :catalogInfo        "Difference of philosophy point of view between Nyingma tradition and Sarma tradition."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T385 ;
+        :workHasInstance    bdr:MW3CN13466 , bdr:W3CN13466 ;
+        :workIsAbout        bdr:T1082 , bdr:T1688 .
+}

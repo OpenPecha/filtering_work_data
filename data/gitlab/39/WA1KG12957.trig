@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12957 {
+    bda:LG31B76062E7983A60
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1NLM00"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
+
+    bda:LG8C6569C74034C3E6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-08T15:03:07.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGFFD552A0EEF25FF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-08T15:01:30.554Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:WA1KG12957  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12957 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "39/WA1KG12957.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12957 ;
+        adm:logEntry        bda:LG31B76062E7983A60 , bda:LG8C6569C74034C3E6 , bda:LGFFD552A0EEF25FF6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR00CFE33E5590899F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3816 ;
+        :role               bdr:R0ER0026 .
+
+    bdr:CRFEAB593E7AAD2198
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10575 ;
+        :role               bdr:R0ER0018 .
+
+    bdr:WA1KG12957  a       :Work ;
+        skos:prefLabel      "dpal rdo rje 'jigs byed kyi lo rgyus/"@bo-x-ewts ;
+        :catalogInfo        "History of the Vajrabhairava."@en ;
+        :creator            bdr:CR00CFE33E5590899F , bdr:CRFEAB593E7AAD2198 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW1KG12957 , bdr:W1KG12957 ;
+        :workIsAbout        bdr:T104 .
+}

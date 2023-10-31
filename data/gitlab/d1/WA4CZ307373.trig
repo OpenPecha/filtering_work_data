@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ307373 {
+    bda:LG4B503C0F27C027A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG726B6B46D27BF0A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-23T12:40:56.271Z"^^xsd:dateTime ;
+        adm:logMessage      "newly catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE0D7844EA0F11982
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-17T11:36:23.57Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in China"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGF16B10447BCCE07F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-23T12:56:38.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:WA4CZ307373  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ307373 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d1/WA4CZ307373.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ307373 ;
+        adm:logEntry        bda:LG4B503C0F27C027A8 , bda:LG726B6B46D27BF0A3 , bda:LGE0D7844EA0F11982 , bda:LGF16B10447BCCE07F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR39F3B55193D036EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1618 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CR9F721C025E3CD938
+        a                   :AgentAsCreator ;
+        :agent              bdr:P787 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CZ307373  a      :Work ;
+        skos:altLabel       "byang chub sems pa'i spyod pa la 'jug pa'i bshad pa/"@bo-x-ewts , "shangs pa bka' brgyud kyi gsung sgrub skor gsum gyi byin brlabs."@bo-x-ewts ;
+        skos:prefLabel      "gsang sgrub skor gsum/"@bo-x-ewts ;
+        :catalogInfo        "Anthology of teachings from the Shangpa Kagyu order on miscellaneous topics"@en ;
+        :creator            bdr:CR39F3B55193D036EE , bdr:CR9F721C025E3CD938 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW4CZ307373 , bdr:W4CZ307373 ;
+        :workIsAbout        bdr:T1181 , bdr:T874 , bdr:WA19740 .
+}

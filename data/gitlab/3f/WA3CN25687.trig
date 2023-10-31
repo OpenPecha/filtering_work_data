@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN25687 {
+    bda:LG2784B6A36EC57A1B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-20T00:51:18.157Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG5AD15A777E8421CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T00:41:51.561Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGF70AAA751D371299
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-30T11:15:22.977Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN25687  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN25687 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/WA3CN25687.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN25687 ;
+        adm:logEntry        bda:LG2784B6A36EC57A1B , bda:LG5AD15A777E8421CD , bda:LGF70AAA751D371299 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR8F6355E436469A99
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN25687  a       :Work ;
+        skos:prefLabel      "blo sbyong snyan brgyud chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Teachings on mind training by Gyalse Thogme Sangpopal (1295-1369)."@en ;
+        :creator            bdr:CR8F6355E436469A99 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW3CN25687 , bdr:W3CN25687 ;
+        :workIsAbout        bdr:T2MS13267 , bdr:T393 .
+}

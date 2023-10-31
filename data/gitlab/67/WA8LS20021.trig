@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS20021 {
+    bda:LG3183977BEEAF6EEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-03-28T12:49:34.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat info, topic and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF1F46FED45AB617F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T16:40:26.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA8LS20021  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS20021 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "67/WA8LS20021.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS20021 ;
+        adm:logEntry        bda:LG3183977BEEAF6EEF , bda:LGF1F46FED45AB617F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA5FFA65265BC91B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P657 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS20021  a       :Work ;
+        skos:prefLabel      "thugs sgrub yang tig gces sgron khrid kyi zin bris gzhung don rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "Notes on the instructional manual of great perfection text by 2nd Dodrak Rigzin Pedma Trinley."@en ;
+        :creator            bdr:CRA5FFA65265BC91B4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 , bdr:T200 ;
+        :workHasInstance    bdr:MW1KG14_39732F , bdr:MW23453_8C5821 , bdr:MW8LS20021 , bdr:W8LS20021 ;
+        :workIsAbout        bdr:T1713 .
+}

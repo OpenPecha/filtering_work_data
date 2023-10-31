@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS16990 {
+    bda:LG0A1889D2809A77D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-14T12:39:25.54Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG89BE01AEA4321EA9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-14T12:41:02.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS16990  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS16990 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8b/WA8LS16990.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS16990 ;
+        adm:logEntry        bda:LG0A1889D2809A77D4 , bda:LG89BE01AEA4321EA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:WA8LS16990  a       :Work ;
+        skos:altLabel       "'od gsal rdo rje gsang mdzod las/ 'gro 'dul 'phags pa spyan ras gzigs 'khor ba dong sprugs kyi cha lag grol chos rnams kyi zin bris shel dkar me long /"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa spyan ras gzigs 'khor ba dong sprugs kyi cha lag grol chos rnams kyi zin bris shel dkar me long /"@bo-x-ewts ;
+        :catalogInfo        "Notes on the liberation teachings from the Avalokitesvara Khorwa dongdruk cycle of teachings, author unknown."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW8LS16990 , bdr:W8LS16990 ;
+        :workIsAbout        bdr:T106 .
+}

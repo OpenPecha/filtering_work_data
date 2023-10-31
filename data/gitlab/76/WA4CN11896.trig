@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CN11896 {
+    bda:LG7255012848C04A90
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T18:13:46.909Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG7F0502DA60C2B55C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-01T19:30:53.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LG8B653402CB22A05B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T14:45:13.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGCD8E68287D1206B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-02-23T09:23:16.108Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged & released"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA4CN11896  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CN11896 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "76/WA4CN11896.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CN11896 ;
+        adm:logEntry        bda:LG7255012848C04A90 , bda:LG7F0502DA60C2B55C , bda:LG8B653402CB22A05B , bda:LGCD8E68287D1206B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRA311CF3F9F408C23
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6304 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA4CN11896  a       :Work ;
+        skos:altLabel       "dpal yon gyi grub tshul dang rnam pa/"@bo-x-ewts ;
+        skos:prefLabel      "spyi tshogs rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "Social theory. Civilization structure and type by Palden Nyima. Translated to Tibetan by Drolmakyab."@en ;
+        :creator            bdr:CRA311CF3F9F408C23 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW4CN11896 , bdr:W4CN11896 ;
+        :workIsAbout        bdr:T8LS16960 .
+}

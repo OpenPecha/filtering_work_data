@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM1791 {
+    bda:LG6312C080827B90B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-08T10:04:08.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content. cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG646A1CB2AA450549
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM1791"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM1791  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM1791 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "93/WA1NLM1791.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM1791 ;
+        adm:logEntry        bda:LG6312C080827B90B9 , bda:LG646A1CB2AA450549 , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRB95E09E81234E6B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM1791  a       :Work ;
+        skos:prefLabel      "rje yab sras kyi bla ma'i rnal 'byor zab gnad can dga' ldan lha brgya mar grags pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 yi dam lha srung ma dang bcas pa'i sgrub thabs dang rjes gnang zur kha brgya rtsa dngos grub 'byung gnas zhes bya ba'i dkar chag 2 sangs rgyas bstan bsrung / 3 dag pa'i zhing mchog lho nub dpal ri nas/ 4 sde brgyad springs yig 5 lha rdzas bzang po'i snyan dar phul ba/ 6 bar chad bzlog pa'i smon lam/ 7 sa 'dul rdo rje rtse gsum/ 8 rje btsun 'phags ma sgrol ma gtor 'bul bde gshegs gtsug gtor ma/ 9 skyes lha gsol mchod/ 10 lus g.yeng gsum bcongs pa las grol bar byed pa'i gzungs/ 11 ngag byin gyi rlabs pa/ 12 rta mgrin gyi yang gsang bsangs mchod gtor/ 13 jo bo rjes mdzad pa mtshan 'bum/ 14 bar do'i gsol 'debs/ 15 dpal ldan lha mo bsang gtong bar 'dod pa/ 15 dge legs bye ba'i ma/ 16 bla ma yi dam dam can chos skyong rgyal gnyer gtad/"@bo-x-ewts , "Practice of gelukpa's guru yoga by Ngulchu Dharmabhadra; other text also included."@en ;
+        :creator            bdr:CRB95E09E81234E6B9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM1791 , bdr:W1NLM1791 ;
+        :workIsAbout        bdr:T4 , bdr:T430 .
+}

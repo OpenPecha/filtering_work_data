@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM2201 {
+    bda:LG43B85020CC941691
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-19T09:05:49.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG57223D93A8FADC0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGIM57C6901C  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM2201"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM2201  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM2201 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6c/WA1NLM2201.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM2201 ;
+        adm:logEntry        bda:LG43B85020CC941691 , bda:LG57223D93A8FADC0F , bda:LGIM57C6901C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR5ACDB178D03529D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P675 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM2201  a       :Work ;
+        skos:prefLabel      "dam can rdo rje legs pa'i 'gyu dus kyi man ngag rnam bzhag kun gsal sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bcom ldan 'das dpal dam tshig rdo rje yab yum gyi bum sgrub bya tshul gyi cho ga dag byed bdud rtsi'i bum bzang / 2 dpal mgon trak+shad/ 3 bsangs mchog bkra shis char 'bebs/ 4 sdig sgrub kun sel bsangs/ 5 bar do 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 6 bsangs mchod/ 7 dregs pa sde brgyad la gser skyems gtong ba'i cho ga bdud rtsi'i rlabs 'phreng / 8 rta mchog rol ba'i sgyor bsangs/ mchog dman mgron la gtor ma/ gser skyems bsngos sos gtong ba'i skabs/ 'dod gsol kha bsgyur byed tshul/ 9 rgya nag sbas 'brum ma'i bsangs/ 10 'go ba'i lha lnga la bsangs mchod ma/ 11 rta mgrin gsang sgrub kyi sgo nas bka' bsgos byed tshul bsdus pa/ 12 maN+Dal gyi bshad pa/ 13 dbang chen thugs sprul chos skyong dregs pa lcam sring gi nor sgrub dbang phyug dpal ster dbang bsdus ma bsha' rgya maH 14 gsang sngags lam rim gyi smon lam/ 15 lam rim chen mo'i smon lam/ 16 dga' ldan phyag rgya chen po'i smon tshig dngos grub kun 'byung / 17 dpal gsang bdag phyag na rdo rje drag po sum sgril gyi sgrub thabs rdo rje pha lam/ 18 phyag rdor drag po gsum sgril gyi byabs khrus gdon bgegs gnam lcags thog 19 rdo rje sems dpa'i sgo nas shes rab sgrub tshul/"@en , "Practice method of Vajrasadhu's movement by Zhedpe Dorjee; other text also included."@en ;
+        :creator            bdr:CR5ACDB178D03529D7 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM2201 , bdr:W1NLM2201 ;
+        :workIsAbout        bdr:T2570 , bdr:T504 .
+}

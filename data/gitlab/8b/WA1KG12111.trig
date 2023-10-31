@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12111 {
+    bda:LGF48901DAE48E55ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-04-02T16:11:06.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGF54FE94E5CCAC1BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-15T16:33:19.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LGF7FDB7641C56EB47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-04-02T16:10:42.751Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA1KG12111  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12111 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "8b/WA1KG12111.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12111 ;
+        adm:logEntry        bda:LGF48901DAE48E55ED , bda:LGF54FE94E5CCAC1BB , bda:LGF7FDB7641C56EB47 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR6809F31D8D1F416C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1KG12111  a       :Work ;
+        skos:altLabel       "bsdus grwa/"@bo-x-ewts , "tshad ma'i dgongs 'grel gyi bstan bcos chen po rnam 'grel gyi don gcig tu dril ba blo rab 'bring tha gsum du ston pa legs bshad chen po mkhas pa'i mgul rgyan skal bzang re ba kun skong /"@bo-x-ewts ;
+        skos:prefLabel      "sras ngag dbang bkra shis kyis mdzad pa'i bsdus grwa/"@bo-x-ewts ;
+        :catalogInfo        "Texbook manual for study at Drepung Gomang College. Contains pedagogical presentation of the forms of Buddhist logical argument (bsdus grwa) by Tukse Ngawang Tashi (1678-1783). Condenses meaning of the Pramanavartika treatise by Dharmakriti."@en ;
+        :creator            bdr:CR6809F31D8D1F416C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS12837 ;
+        :workHasInstance    bdr:MW1KG12111 , bdr:MW1KG1940 , bdr:W1KG12111 , bdr:W1KG1940 ;
+        :workIsAbout        bdr:G109 , bdr:T1235 , bdr:T370 , bdr:T447 , bdr:T96 , bdr:WA19721 .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA13852 {
+    bda:LG9D04EAED12CF8617
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-11T10:30:57.561Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGA16197DDC40A6BB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-11T10:57:59.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGAC5CE4BD91E77460
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LGIM4BF5F96E12
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 11"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+
+    bda:WA13852  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA13852 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8a/WA13852.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA13852 ;
+        adm:logEntry        bda:LG9D04EAED12CF8617 , bda:LGA16197DDC40A6BB6 , bda:LGAC5CE4BD91E77460 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00EGS1017462 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR5EE14BF882F79ABB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1791 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA13852  a          :Work ;
+        skos:altLabel       "gdams ngag lag len gyi snying po bsdus pa'i man ngag bka' rgya ma/"@bo-x-ewts , "man ngag zab mo kun gyi snying khu bsdus pa dar mo sman rams pa'i gdams ngag bka' rgya ma/"@bo-x-ewts ;
+        skos:prefLabel      "man ngag bka' rgya ma/"@bo-x-ewts ;
+        :catalogInfo        "Collection of profound instructions on the rituals and techniques of healing of the Tibetan medical tradition by a physician active during the time of the 5th Dalai Lama"@en ;
+        :creator            bdr:CR5EE14BF882F79ABB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workIsAbout        bdr:T85 , bdr:T94 .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA23707 {
+    bda:LG0B02C4D4DD65FE8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T10:10:08.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+
+    bda:LG39C6DB778FC91481
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-12-09T15:15:45.465Z"^^xsd:dateTime ;
+        adm:logMessage      "ctc"@en ;
+        adm:logWho          bdu:U00026 .
+
+    bda:LG6B5AC631A26C4AF2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+
+    bda:LG8AFFF8ECF18FFC6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-23T10:39:49.39Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typos"@en ;
+        adm:logWho          bdu:U00009 .
+
+    bda:LGIM5A753E00B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIMAEA9B78D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA23707  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA23707 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a1/WA23707.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA23707 ;
+        adm:logEntry        bda:LG0B02C4D4DD65FE8B , bda:LG39C6DB778FC91481 , bda:LG6B5AC631A26C4AF2 , bda:LG8AFFF8ECF18FFC6C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR74B19B59808FD22D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P782 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW23707  skos:altLabel  "four works elucidating the proper interpretation of the sa-skya-pa approach to buddhist tantra"@en-x-mixed .
+
+    bdr:WA23707  a          :Work ;
+        skos:altLabel       "rgyud sde spyi yi rnam par bzag pa'i gsal byed ni ma'i 'od zer, mnon par rtogs pa rin po che ljon sin gi gsal byed rin chen sgron me, spyi rnam brgal lan 'og min gsal byed gon ma'i dgons rgyan, sdom pa gsum gyi rab tu dbye ba'i dris lan lun gi tshad ma"@bo-alalc97 ;
+        skos:prefLabel      "rgyud sde spyi rnam gsal byed sogs/"@bo-x-ewts , "four works elucidating the proper interpretation of the sa-skya-pa approach to buddhist tantra"@en-x-mixed ;
+        :catalogInfo        "Exegesis of the classification of tantras according to the Sakya order with other miscellaneous texts by Lowo Khenchen Sonam Lhundrub (1456-1532)."@en ;
+        :creator            bdr:CR74B19B59808FD22D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23707 , bdr:W23707 ;
+        :workIsAbout        bdr:T307 , bdr:T617 .
+}

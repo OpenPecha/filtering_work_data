@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3937 {
+    bda:LGCA467D111B7B9C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-21T13:23:09.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGIM4F552576  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3937"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3937  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3937 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "25/WA1NLM3937.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3937 ;
+        adm:logEntry        bda:LGCA467D111B7B9C9F , bda:LGIM4F552576 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9111430EC5EFA083
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA1NLM3937  a       :Work ;
+        skos:prefLabel      "oM 'phags pa gu ru pad+ma 'byung gnas gter bka'/_rin po che gzungs bsdus bka' 'gyur dang bstan 'gyur bshad pa le'u zhes bya ba gzungs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 snyan rgyud 'pho ba'i yig bla ma'i gsungs bzhin yi ger bkod pa/ 2 dam can chos rgyal kyi gser skyems gnyer gtad/ 3 rdo rje sems dpa'i sgom bzlas/ bum grub/ byabs khrus sogs/ 4 shing gi tshe thar/ 5 'jigs byed kyi sgrub thabs bsdus pa/ 6 thugs rje chen po'i sgrub thabs dng ngan song kun sgrol yid bzhin nor bu/ 7 bla ma'i thugs rje bskul ba'i rgyang 'bod/ 8 rab gnas rta thog ma/ 9 lam rim smon lam/ 10 lhun grub gsol 'debs/ 11 paN chen nA ro pa'i mchog sprul rin po che'i zhabs brtan gsol 'debs/ 12 'dod dgur 'chal ba bsangs ma/ 13 dmu chu'i nad gdon spo ba'i man ngag 14 'phags pa bzang spyod smon lam gyi rgyal po'i gser skyems/ 15 bka' sko/ 16 thugs rje chen po'i man ngag mig gsal bar byed pa'i sgrub thabs/ 17 'phags pa dzam+b+h la'i lug nad thams cad rab tu zhi bar byed pa'i gzungs/ 18 rta mgrin gsang sgrub kyi sgrub thabs dregs pa kun 'dul/ 19 dpal ldan lha mo'i 'chi bslu ba/ 20 mgon po phyag drug pa la brten pa'i bzlog pa stobs chen zur bzlog gi nyams len tshul/ 21 sngags kyi rtsa ltung dang spom po'i bcad pa sdig ltung mun sel/ 22 lha mo dmag gzor ma'i sgo nas bzang spyod rta thog ma/ 23 dpal rdo rje 'jigs byed kyi sgo nas byad grol bya tshul/ 24 khro rgyal yang gsang khros pa'i sgrub thabs/"@en , "Dharanis from Kagyur and Tengyur."@en ;
+        :creator            bdr:CR9111430EC5EFA083 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM3937 , bdr:W1NLM3937 .
+}

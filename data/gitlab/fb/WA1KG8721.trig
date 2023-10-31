@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG8721 {
+    bda:LG009B7BF6047995B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-07T21:20:48.581Z"^^xsd:dateTime ;
+        adm:logMessage      "released from edit"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG2D790B6D25F00D9D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-06T09:31:03.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LG47CC184FC62141DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-06T09:30:24.489Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGDBA6152320753096
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-02-10T09:31:16.191Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1KG8721  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG8721 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fb/WA1KG8721.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG8721 ;
+        adm:logEntry        bda:LG009B7BF6047995B0 , bda:LG2D790B6D25F00D9D , bda:LG47CC184FC62141DD , bda:LGDBA6152320753096 , bda:LGIM8A299A84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR21F29478DFAFE7E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3389 ;
+        :role               bdr:R0ER0028 .
+
+    bdr:CRBB347431A2FB02C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:MW1KG8721  skos:altLabel  "biography of atisa and his disciple 'brom-ston (old tashilhunpo edition)"@en .
+
+    bdr:WA1KG8721  a        :Work ;
+        skos:prefLabel      "jo bo rje lha gcig dpal ldan a ti sha'i rnam thar bla ma'i yon tan chos kyi 'byung gnas sogs bka' gdams rin po che'i gleg bam/ (bkra shis lhun po'i par rnying /)"@bo-x-ewts , "biography of atisa and his disciple 'brom-ston (old tashilhunpo edition)"@en ;
+        :catalogInfo        "Collection teachings and stories of a great Indain master atisha (982-1054) and his disciples on the precious practice of Kadampa tradition."@en ;
+        :creator            bdr:CR21F29478DFAFE7E9 , bdr:CRBB347431A2FB02C0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 ;
+        :workHasInstance    bdr:MW1KG8721 , bdr:W1KG8721 ;
+        :workIsAbout        bdr:P2557 , bdr:T791 .
+}

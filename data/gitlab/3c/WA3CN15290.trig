@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN15290 {
+    bda:LG6CBBFDCF73C13210
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+
+    bda:LG972ABAD65CF3943E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:05:58.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGA41FB5E633D98160
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-19T14:39:23.037Z"^^xsd:dateTime ;
+        adm:logMessage      "ctaloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGE754CED6F48292B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-04-24T10:28:57.433Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:WA3CN15290  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN15290 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3c/WA3CN15290.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN15290 ;
+        adm:logEntry        bda:LG6CBBFDCF73C13210 , bda:LG972ABAD65CF3943E , bda:LGA41FB5E633D98160 , bda:LGE754CED6F48292B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR3F49046C41A9976C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P659 ;
+        :role               bdr:R0ER0025 .
+
+    bdr:WA3CN15290  a       :Work ;
+        skos:altLabel       "u pa ra tsa'i them byang nor bu'i bang mdzod kyi lde mig gser zhun snying po/"@bo-x-ewts ;
+        skos:prefLabel      "gnam chos thugs gter las u pa rA tsa dang nA ga rak+sha'i chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Teaching cycle of deity Uparaca and Nagaraksha from Namcho Terma tradition."@en ;
+        :creator            bdr:CR3F49046C41A9976C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN15290 , bdr:W3CN15290 ;
+        :workIsAbout        bdr:T1GS124512 , bdr:T3CN15347 .
+}

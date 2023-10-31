@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN4963 {
+    bda:LG19D923CE745E7EC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-05-30T15:33:44.977Z"^^xsd:dateTime ;
+        adm:logMessage      "detail cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGAF802ABB1A478BC5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:10:32.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+
+    bda:LGIM095CC38C9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:LGIM6C9E48233B
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as accessioned"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+
+    bda:WA3CN4963  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN4963 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "da/WA3CN4963.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN4963 ;
+        adm:logEntry        bda:LG19D923CE745E7EC6 , bda:LGAF802ABB1A478BC5 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:WA00KG02677 ;
+        adm:status          bda:StatusWithdrawn .
+
+    bdr:CR9967E1D42C8A22E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA3CN4963  a        :Work ;
+        skos:prefLabel      "yid bzhin rin po che'i mdzod rtsa 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Root text and its commentary of Yizhindzod, which is one of the seven great philosophical masterpieces of the famed Nyingma philosopher, Longchen Rabjam."@en ;
+        :creator            bdr:CR9967E1D42C8A22E3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA12630 .
+}

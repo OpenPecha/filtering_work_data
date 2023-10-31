@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM908 {
+    bda:LG0A3019AE55FAF6A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-15T14:52:15.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LG9E9801CAA6D60446
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00" .
+
+    bda:LGCEAA69BB67B84D30
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-25T09:58:47.088Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog , outline and released"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGE65DB6A01087489A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-03-17T15:41:57.968Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+
+    bda:LGIM567371A3  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM908"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM908  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM908 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e1/WA1NLM908.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM908 ;
+        adm:logEntry        bda:LG0A3019AE55FAF6A9 , bda:LG9E9801CAA6D60446 , bda:LGCEAA69BB67B84D30 , bda:LGE65DB6A01087489A , bda:LGIM567371A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CRFE4BDE5AA6C98AF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM908  a        :Work ;
+        skos:altLabel       "myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso cha lag dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes kyi mgon po'i sgrub skor sogs/"@bo-x-ewts ;
+        :catalogInfo        "Directions for the performance of the bali with regular propitation rituals for the six-armed Jnanamahakala and other related texts."@en ;
+        :creator            bdr:CRFE4BDE5AA6C98AF6 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1NLM908 , bdr:W1NLM908 ;
+        :workIsAbout        bdr:T1181 , bdr:T411 .
+}

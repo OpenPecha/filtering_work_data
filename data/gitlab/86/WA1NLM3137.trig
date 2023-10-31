@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1NLM3137 {
+    bda:LG306A2516B0B64711
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T15:36:24.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGB01B2D38BAB561FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to NLM"@en ;
+        adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+
+    bda:LGIM63F77742  a     adm:InitialDataImport ;
+        adm:logAgent        "NLM Importer" ;
+        adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
+        adm:logMessage      "imported W1NLM3137"@en ;
+        adm:logMethod       bda:BatchMethod .
+
+    bda:WA1NLM3137  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1NLM3137 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "86/WA1NLM3137.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1NLM3137 ;
+        adm:logEntry        bda:LG306A2516B0B64711 , bda:LGB01B2D38BAB561FA , bda:LGIM63F77742 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR955636A5204CCC1D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:CRD67B9D89EEDC530A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4480 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA1NLM3137  a       :Work ;
+        skos:prefLabel      "lta ba'i nyams mgur a ma dngos 'dzin gyi 'grel pa nyams mgur tshigs gsal sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lta ba'i nyams mgur a ma dngos 'dzin gyi 'grel pa bdag 'dzin dgra dpung 'joms pa'i mtshon cha skal ldan pad+mo bzhad pa'i nyin byed/ 2 chos skyong dregs pa lcam sring gi gsol mchod/ 3 phongs sel sgrol ma'i sgo nas bum gter yid bzhin 'dod 'jo ba ngo mtshar tshogs gnyis rlung rta/ 4 dge bsnyen gyi sdom pa/ 5 shi ba gso ba'i man ngag bum sgrub rab dkar bum bzang / 6 rje btsun sgrol ma'i maN+Dal bzhi ba'i sgo nas dge mtshan spel pa'i cho ga phywa g.yang bya tshul dus ngan 'tsho pa'i lag cha/ 7 pad+ma sam+b+ha wa mdzad pa rgya nag spas 'brum bsangs/ 8 sde brgyad gser skyems bde legs char 'bebs/ 9 dpal mgon don lnga gser skyems 'bul tshul legs tshogs lhun grub ma/ 10 rlung rta bskyed pa'i 'dod gsol/ 11 dpal ldan lha mo'i bzlog bsgyur gtor ma/"@en , "A commentary of songs of realisation; other text also included."@en ;
+        :creator            bdr:CR955636A5204CCC1D , bdr:CRD67B9D89EEDC530A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T6 ;
+        :workHasInstance    bdr:MW1NLM3137 , bdr:W1NLM3137 .
+}

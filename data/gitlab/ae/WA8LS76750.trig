@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76750 {
+    bda:LGB9E91C9F0B0F91D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-14T08:31:27.267Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:LGF7F28D2F87EA9601
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-14T08:31:59.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+
+    bda:WA8LS76750  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76750 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ae/WA8LS76750.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76750 ;
+        adm:logEntry        bda:LGB9E91C9F0B0F91D4 , bda:LGF7F28D2F87EA9601 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+
+    bdr:CR9F75DCE0D728B45A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0019 .
+
+    bdr:WA8LS76750  a       :Work ;
+        skos:altLabel       "zhugs pa dang gnas pa'i 'phags pa'i dge 'dun gyi rnam bzhag mtha' dpyod skal bzang 'jug ngogs zhes bya ba dge 'dun nyi shu'i rnam bzhag tshig nyung go bde don gsal nor bu'i me long mtshon bya don gyi dge 'dun gyi rnam bzhag khyab mtha' blo gsal sgo 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "zhugs pa dang gnas pa'i 'phags pa'i dge 'dun gyi rnam bzhag mtha' dpyod skal bzang 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the twenty Sangha by Se Ngawang Tashi."@en ;
+        :creator            bdr:CR9F75DCE0D728B45A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW8LS76750 , bdr:W8LS76750 ;
+        :workIsAbout        bdr:T1215 , bdr:T1748 .
+}
