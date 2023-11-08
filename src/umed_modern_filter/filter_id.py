@@ -1,46 +1,40 @@
 import json
 import os
+from typing import Dict, List, Optional, Union
 
 
-# Function to recursively traverse a JSON object and check conditions
-def traverse_and_check(json_obj, parent_key=None):
-    filter_dict = {}
-    if isinstance(json_obj, dict):
-        if "printMethod" in json_obj and "script" in json_obj:
-            # Ensure that json_obj.get("printMethod") and json_obj.get("script") are not None
-            print_method_list = json_obj.get("printMethod", [])
-            script_list = json_obj.get("script", [])
+def traverse_and_check(
+    directory_path: str,
+) -> Dict[str, List[Dict[str, Union[str, Dict[str, List[Optional[str]]]]]]]:
+    """
+    Recursively traverses a directory containing JSON files and checks conditions within the JSON objects.
 
-            # Check if "PrintMethod_Modern" is in print_method_list
-            # and "ScriptDbuMed" is in script_list
-            if (
-                "PrintMethod_Modern" in print_method_list
-                and "ScriptDbuMed" in script_list
-            ):
-                print(
-                    f"work_id: {parent_key}, instance_id: {json_obj.get('instanceOf')}"
-                )
-                filter_dict[parent_key] = {
-                    "modern_print_instance": [json_obj.get("instanceOf")],
-                    "umen_instance": [json_obj.get("instanceOf")],
-                }
-                # File path to save the JSON data
-                file_path = "../../data/filter_list.json"
-                # Write the dictionary to a JSON file
-                with open(file_path, "a") as json_file:
-                    json.dump(filter_dict, json_file, indent=4)
-        for key, value in json_obj.items():
-            new_key = f"{parent_key}.{key}" if parent_key else key
-            traverse_and_check(value, new_key)
-    elif isinstance(json_obj, list):
-        for item in json_obj:
-            new_key = parent_key
-            traverse_and_check(item, new_key)
+    Args:
+        directory_path (str): The path to the directory containing JSON files.
 
+    Returns:
+        Dict[str, List[Dict[str, Union[str, Dict[str, List[Optional[str]]]]]]]: A dictionary containing filtered data.
+            The dictionary has keys representing work IDs and values as lists of dictionaries containing filtered data.
 
-if __name__ == "__main__":
-    # Directory containing JSON files
-    directory_path = "../../data/json/"  # Replace with your directory path
+    Example:
+        {
+            "work_id_1": [
+                {
+                    "inner_key_1": {
+                        "modern_print_instance": ["instance_id_1"],
+                        "umen_instance": ["instance_id_1"]
+                    }
+                },
+                # More dictionaries with filtered data...
+            ],
+            # More work IDs and filtered data...
+        }
+    """
+    filter_dict: Dict[
+        str, List[Dict[str, Union[str, Dict[str, List[Optional[str]]]]]]
+    ] = {}
+
+    # Rest of your code...
 
     # Iterate through JSON files in the directory
     for filename in os.listdir(directory_path):
@@ -49,7 +43,64 @@ if __name__ == "__main__":
 
             # Load JSON data from the file
             with open(file_path) as json_file:
-                json_data = json.load(json_file)
+                json_obj = json.load(json_file)
 
-            # Start the traversal from the root of the JSON data and check conditions
-            traverse_and_check(json_data)
+            for key, value_list in json_obj.items():
+                for value_item in value_list:
+                    if isinstance(
+                        value_item, dict
+                    ):  # Ensure value_item is a dictionary
+                        for inner_key, inner_obj in value_item.items():
+                            if isinstance(
+                                inner_obj, dict
+                            ):  # Ensure inner_obj is a dictionary
+                                print_method_list = inner_obj.get("printMethod", [])
+                                script_list = inner_obj.get("script", [])
+
+                                # Check your conditions here
+                                if (
+                                    "PrintMethod_Manuscript" in print_method_list
+                                    and "ScriptDbuCan" in script_list
+                                ):
+                                    if key not in filter_dict:
+                                        filter_dict[key] = []
+
+                                    # Check if the inner_obj already exists in the list
+                                    if {
+                                        inner_key: {
+                                            "modern_print_instance": [
+                                                inner_obj.get("instanceOf")
+                                            ],
+                                            "umen_instance": [
+                                                inner_obj.get("instanceOf")
+                                            ],
+                                        }
+                                    } not in filter_dict[key]:
+                                        filter_dict[key].append(
+                                            {
+                                                inner_key: {
+                                                    "modern_print_instance": [
+                                                        inner_obj.get("instanceOf")
+                                                    ],
+                                                    "umen_instance": [
+                                                        inner_obj.get("instanceOf")
+                                                    ],
+                                                }
+                                            }
+                                        )
+                                        print(
+                                            f"work_id: {key}, instance_id: {inner_obj.get('instanceOf')}"
+                                        )
+    return filter_dict
+
+
+if __name__ == "__main__":
+    # Directory containing JSON files
+    directory_path = "../../data/json"  # Replace with your directory path
+    # Start the traversal from the root of the JSON data and check conditions
+    final_dict = traverse_and_check(directory_path)
+    # File path to save the JSON data
+    file_path = "../../data/filter_list.json"
+    # Write the dictionary to a JSON file
+    with open(file_path, "a") as json_file:
+        json.dump(final_dict, json_file, indent=4)
