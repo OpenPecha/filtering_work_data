@@ -59,8 +59,8 @@ def traverse_and_check(
 
                                 # Check your conditions here
                                 if (
-                                    "PrintMethod_Manuscript" in print_method_list
-                                    and "ScriptDbuCan" in script_list
+                                    "PrintMethod_Modern" in print_method_list
+                                    and "ScriptDbuMed" in script_list
                                 ):
                                     if key not in filter_dict:
                                         filter_dict[key] = []
