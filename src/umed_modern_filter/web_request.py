@@ -7,7 +7,8 @@ BDO = Namespace("http://purl.bdrc.io/ontology/core/")
 
 def get_ttl(work_id):
     try:
-        ttl = requests.get(f"http://purl.bdrc.io/graph/{work_id}.ttl")
+        # ttl = requests.get(f"http://purl.bdrc.io/graph/{work_id}.ttl")
+        ttl = requests.get(f"https://ldspdi.bdrc.io/resource/{work_id}.ttl")
         return ttl.text
     except Exception as e:
         print(" TTL not Found!!!", e)
